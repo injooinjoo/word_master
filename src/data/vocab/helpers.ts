@@ -1,5 +1,11 @@
 import { v4 as uuidv4 } from 'uuid';
-import type { LearningTipEntry, LearningTips, VocabItem } from '../models/vocab';
+import type {
+  ExampleSentence,
+  LearningTipEntry,
+  LearningTips,
+  PartOfSpeech,
+  VocabItem,
+} from '../models/vocab';
 
 export function tip(text: string, imageUrl?: string | null): LearningTipEntry {
   return { text, imageUrl: imageUrl ?? null };
@@ -31,24 +37,46 @@ export function tips({
   };
 }
 
-/** Shorthand to build a VocabItem */
+/** Optional extra fields for enriched vocab items */
+export interface WordExtra {
+  definition?: string;
+  wordDistractors?: string[];
+  definitionDistractors?: string[];
+  exampleSentences?: ExampleSentence[];
+  audioUrl?: string;
+  imageUrl?: string;
+  pronunciationUrl?: string;
+}
+
+/**
+ * Shorthand to build a VocabItem.
+ *
+ * The `extra` parameter is optional — existing batch files that omit it
+ * continue to work without changes.
+ */
 export function word(
   w: string,
   meaning: string,
   level: number,
-  partOfSpeech: string,
+  partOfSpeech: PartOfSpeech,
   distractors: string[],
   learningTips: LearningTips,
-  pronunciationUrl?: string | null,
+  extra?: WordExtra,
 ): VocabItem {
   return {
     id: uuidv4(),
     word: w,
     meaning,
-    pronunciationUrl: pronunciationUrl ?? null,
-    level,
+    definition: extra?.definition ?? null,
     partOfSpeech,
+    level,
     distractors,
+    wordDistractors: extra?.wordDistractors,
+    definitionDistractors: extra?.definitionDistractors,
+    exampleSentences: extra?.exampleSentences,
+    pronunciationUrl: extra?.pronunciationUrl ?? null,
+    audioUrl: extra?.audioUrl ?? null,
+    imageUrl: extra?.imageUrl ?? null,
     learningTips,
   };
 }

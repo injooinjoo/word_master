@@ -9,7 +9,8 @@ import {
   SafeAreaView,
   Animated,
 } from 'react-native';
-import type { QuizQuestion } from '../../../services/quizService';
+import type { QuizQuestion, QuizType, AnswerContext } from '../../../services/quizService';
+import { QUIZ_TYPE_LABELS, ALL_QUIZ_TYPES } from '../../../services/quizService';
 import type { QuizService } from '../../../services/quizService';
 import type { AudioService } from '../../../services/audioService';
 import { getLearningTipEntries } from '../../../data/models/vocab';
@@ -34,6 +35,12 @@ const cardRadius = Math.max(12, Math.min(24, shortest * 0.04));
 const PRIMARY = '#1CB0F6';
 const CORRECT_GREEN = '#58CC02';
 const WRONG_RED = '#FF4B4B';
+
+const TAB_COLORS: Record<QuizType, string> = {
+  e2k: '#1CB0F6',
+  k2e: '#FF9600',
+  e2e: '#A435F0',
+};
 
 /** Delay (ms) to show feedback highlights before advancing */
 const FEEDBACK_DELAY = 5000;
@@ -71,8 +78,24 @@ interface QuizScreenProps {
   onSessionEnd: () => void;
 }
 
+/** Pick a random quiz type that has available words */
+function pickRandomType(quizService: QuizService): QuizType {
+  const shuffled = [...ALL_QUIZ_TYPES].sort(() => Math.random() - 0.5);
+  for (const t of shuffled) {
+    // Quick probe: try to generate a question of this type
+    if (t === 'e2e') {
+      // Only if any word has a definition
+      const hasDefinition = quizService.vocabItems.some((v) => !!v.definition);
+      if (!hasDefinition) continue;
+    }
+    return t;
+  }
+  return 'e2k';
+}
+
 export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScreenProps) {
   const [current, setCurrent] = useState<QuizQuestion | null>(null);
+  const [questionNum, setQuestionNum] = useState(0);
 
   // --- feedback state ---
   const [answered, setAnswered] = useState(false);
@@ -102,6 +125,9 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   // Ref for the hint timeout so we can clear it
   const hintTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // Ref to record when each question was presented (for elapsed time calc)
+  const startTimeRef = useRef<number>(Date.now());
+
   const resetFeedback = useCallback(() => {
     setAnswered(false);
     answeredRef.current = false;
@@ -118,13 +144,22 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   }, [feedbackOpacity, hintOpacity]);
 
   const loadNext = useCallback(() => {
-    const q = quizService.nextQuestion();
+    // Round complete → show results
+    if (quizService.isRoundComplete) {
+      quizService.endSession();
+      onSessionEnd();
+      return;
+    }
+
+    const type = pickRandomType(quizService);
+    const q = quizService.nextQuestion(type);
     if (q == null) {
       quizService.endSession();
       onSessionEnd();
       return;
     }
     resetFeedback();
+    setQuestionNum(quizService.roundTotal + 1);
 
     // Pre-pick a random hint for this question
     const entries = getLearningTipEntries(q.vocabItem.learningTips);
@@ -139,8 +174,10 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
 
     setCurrent(q);
 
+    // Record when the question was presented (for elapsed time measurement)
+    startTimeRef.current = Date.now();
+
     // Schedule hint to appear at (1 - HINT_THRESHOLD) of the timer duration
-    // e.g. 60% of 10s = hint appears at 6s (when 40% remains)
     const hintDelayMs = Math.round(duration * (1 - HINT_THRESHOLD));
     hintTimeoutRef.current = setTimeout(() => {
       if (!answeredRef.current) {
@@ -168,14 +205,28 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
     const q = current;
     if (!q) return;
 
-    // Clear hint timeout
     if (hintTimeoutRef.current) {
       clearTimeout(hintTimeoutRef.current);
       hintTimeoutRef.current = null;
     }
 
-    // Treat as incorrect
-    quizService.submitAnswer(false, q.vocabItem.id);
+    const answerCtx: AnswerContext = {
+      correct: false,
+      wordId: q.vocabItem.id,
+      quizType: q.quizType,
+      elapsedMs: timerDuration, // timed out → full duration
+      totalMs: timerDuration,
+      selectedChoice: null,
+      correctAnswer: q.correctAnswer,
+      distractorRanking: q.distractorRanking,
+    };
+    quizService.submitAnswer(answerCtx, {
+      word: q.vocabItem.word,
+      prompt: q.prompt,
+      correctAnswer: q.correctAnswer,
+      userAnswer: null,
+      quizType: q.quizType,
+    });
 
     setAnswered(true);
     answeredRef.current = true;
@@ -186,18 +237,16 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
 
     Vibration.vibrate([0, 80, 60, 80]);
 
-    // Show feedback banner
     Animated.timing(feedbackOpacity, {
       toValue: 1,
       duration: 200,
       useNativeDriver: true,
     }).start();
 
-    // Advance after delay
     setTimeout(() => {
       loadNext();
     }, FEEDBACK_DELAY);
-  }, [current, quizService, loadNext, feedbackOpacity]);
+  }, [current, quizService, loadNext, feedbackOpacity, timerDuration]);
 
   // --- Choice selection handler ---
   const onChoiceSelected = useCallback(
@@ -205,38 +254,50 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       const q = current;
       if (!q || answeredRef.current) return;
 
-      // Clear hint timeout
       if (hintTimeoutRef.current) {
         clearTimeout(hintTimeoutRef.current);
         hintTimeoutRef.current = null;
       }
 
-      const correct = choice === q.correctMeaning;
-      quizService.submitAnswer(correct, q.vocabItem.id);
+      const correct = choice === q.correctAnswer;
+      const elapsedMs = Date.now() - startTimeRef.current;
+      const answerCtx: AnswerContext = {
+        correct,
+        wordId: q.vocabItem.id,
+        quizType: q.quizType,
+        elapsedMs,
+        totalMs: timerDuration,
+        selectedChoice: choice,
+        correctAnswer: q.correctAnswer,
+        distractorRanking: q.distractorRanking,
+      };
+      quizService.submitAnswer(answerCtx, {
+        word: q.vocabItem.word,
+        prompt: q.prompt,
+        correctAnswer: q.correctAnswer,
+        userAnswer: choice,
+        quizType: q.quizType,
+      });
 
-      // Lock in the answer and show visual feedback
       setAnswered(true);
       answeredRef.current = true;
       setTimerRunning(false);
       setSelectedChoice(choice);
       setIsCorrect(correct);
 
-      // Vibrate: short for correct, longer for wrong
       Vibration.vibrate(correct ? 50 : [0, 80, 60, 80]);
 
-      // Fade in the feedback banner
       Animated.timing(feedbackOpacity, {
         toValue: 1,
         duration: 200,
         useNativeDriver: true,
       }).start();
 
-      // Advance to next question after feedback delay
       setTimeout(() => {
         loadNext();
       }, FEEDBACK_DELAY);
     },
-    [current, quizService, loadNext, feedbackOpacity]
+    [current, quizService, loadNext, feedbackOpacity, timerDuration],
   );
 
   /** Determine card style based on feedback state */
@@ -244,7 +305,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
     (choice: string) => {
       if (!answered) return styles.choiceCard;
 
-      if (choice === current?.correctMeaning) {
+      if (choice === current?.correctAnswer) {
         return [styles.choiceCard, styles.choiceCorrect];
       }
       if (choice === selectedChoice && !isCorrect) {
@@ -252,14 +313,14 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       }
       return [styles.choiceCard, styles.choiceDimmed];
     },
-    [answered, current, selectedChoice, isCorrect]
+    [answered, current, selectedChoice, isCorrect],
   );
 
   const getChoiceTextStyle = useCallback(
     (choice: string) => {
       if (!answered) return styles.choiceText;
 
-      if (choice === current?.correctMeaning) {
+      if (choice === current?.correctAnswer) {
         return [styles.choiceText, styles.choiceTextHighlight];
       }
       if (choice === selectedChoice && !isCorrect) {
@@ -267,7 +328,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       }
       return [styles.choiceText, styles.choiceTextDimmed];
     },
-    [answered, current, selectedChoice, isCorrect]
+    [answered, current, selectedChoice, isCorrect],
   );
 
   if (current == null) {
@@ -283,17 +344,26 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   }
 
   const q = current;
-  const userRating = quizService.rating;
+  const activeType = q.quizType;
+  const userRating = quizService.getRating(activeType);
   const userTier = GradeTable.gradeLabel(userRating);
   const topPct = getTopPercentile(userRating);
   const topPctDisplay = topPct < 10 ? topPct.toFixed(1) : String(Math.round(topPct));
   const wElo = q.wordElo;
   const diffLabel = difficultyLabel(wElo);
   const diffColor = difficultyColor(wElo);
+  const typeColor = TAB_COLORS[activeType];
+  const typeLabel = QUIZ_TYPE_LABELS[activeType];
+
+  // Prompt font size: smaller for longer text (Korean meaning, English definition)
+  const promptIsLong = q.prompt.length > 15;
+  const promptFontSize = promptIsLong
+    ? Math.max(20, Math.min(36, shortest * 0.07))
+    : wordFontSize;
 
   return (
     <SafeAreaView style={styles.safe}>
-      {/* Timer bar at the very top */}
+      {/* Timer bar */}
       <TimerBar
         key={timerKey}
         durationMs={timerDuration}
@@ -301,24 +371,45 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
         onTimeUp={onTimeUp}
       />
 
-      {/* Info bar: user ELO/tier (left) + word difficulty (right) */}
+      {/* Round progress counter */}
+      <View style={styles.roundProgressBar}>
+        <Text style={styles.roundProgressText}>
+          <Text style={styles.roundProgressCurrent}>{questionNum}</Text>
+          <Text style={styles.roundProgressSlash}> / {quizService.roundSize}</Text>
+        </Text>
+      </View>
+
+      {/* Info bar: quiz type + user ELO/tier (left) + word difficulty (right) */}
       <View style={styles.infoBar}>
         <View style={styles.infoLeft}>
-          <Text style={styles.infoElo}>{userRating}</Text>
-          <View style={styles.tierBadge}>
-            <Text style={styles.tierText}>{userTier}</Text>
+          <View style={[styles.typeBadge, { backgroundColor: typeColor }]}>
+            <Text style={styles.typeBadgeText}>{typeLabel}</Text>
           </View>
-          <Text style={styles.infoPct}>상위 {topPctDisplay}%</Text>
+          <Text style={[styles.infoElo, { color: typeColor }]}>{userRating}</Text>
+          <View style={[styles.tierBadge, { backgroundColor: typeColor + '18' }]}>
+            <Text style={[styles.tierText, { color: typeColor }]}>{userTier}</Text>
+          </View>
         </View>
         <View style={styles.infoRight}>
-          <View style={[styles.diffBadge, { backgroundColor: diffColor }]}>  
+          <Text style={styles.infoPct}>상위 {topPctDisplay}%</Text>
+          <View style={[styles.diffBadge, { backgroundColor: diffColor }]}>
             <Text style={styles.diffText}>{diffLabel}</Text>
           </View>
         </View>
       </View>
 
       <View style={styles.wordSection}>
-        <Text style={styles.wordText}>{q.vocabItem.word}</Text>
+        {/* Prompt: word or meaning depending on quiz type */}
+        <Text
+          style={[
+            styles.wordText,
+            { fontSize: promptFontSize, lineHeight: promptFontSize * 1.2 },
+          ]}
+          numberOfLines={3}
+          adjustsFontSizeToFit
+        >
+          {q.prompt}
+        </Text>
 
         {/* Inline hint (appears when timer < 40%) */}
         {showHint && hintEntry && !answered && (
@@ -337,9 +428,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
             ]}
           >
             <Text style={styles.feedbackText}>
-              {isCorrect
-                ? '정답!'
-                : `오답 — 정답: ${q.correctMeaning}`}
+              {isCorrect ? '정답!' : `오답 — 정답: ${q.correctAnswer}`}
             </Text>
           </Animated.View>
         )}
@@ -347,15 +436,15 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
 
       <View style={[styles.choicesSection, { height: bottomSectionHeight }]}>
         <View style={styles.grid}>
-          {q.choices.map((choice) => (
+          {q.choices.map((choice, idx) => (
             <TouchableOpacity
-              key={choice}
+              key={`${choice}-${idx}`}
               style={getChoiceStyle(choice)}
               onPress={() => onChoiceSelected(choice)}
               activeOpacity={0.8}
               disabled={answered}
             >
-              <Text style={getChoiceTextStyle(choice)} numberOfLines={3}>
+              <Text style={getChoiceTextStyle(choice)} numberOfLines={3} adjustsFontSizeToFit>
                 {choice}
               </Text>
             </TouchableOpacity>
@@ -371,7 +460,38 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
+  // ── Round progress ──
+  roundProgressBar: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 6,
+    backgroundColor: '#FAFAFA',
+  },
+  roundProgressText: {
+    textAlign: 'center',
+  },
+  roundProgressCurrent: {
+    fontSize: 16,
+    fontWeight: '800',
+    color: PRIMARY,
+  },
+  roundProgressSlash: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#BBB',
+  },
   // ── Info bar ──
+  typeBadge: {
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    borderRadius: 6,
+  },
+  typeBadgeText: {
+    fontSize: 11,
+    fontWeight: '800',
+    color: '#fff',
+    letterSpacing: 0.5,
+  },
   infoBar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -410,6 +530,7 @@ const styles = StyleSheet.create({
   infoRight: {
     flexDirection: 'row',
     alignItems: 'center',
+    gap: 8,
   },
   diffBadge: {
     paddingHorizontal: 10,
