@@ -95,7 +95,7 @@ export const vocabBatch02: VocabItem[] = [
     }
   ),
   word('Box', '상자', 1, 'noun',
-    ['가방', '서랍', '병', '통', '바구니', '자루', '캔', '컵', '병', '케이스'],
+    ['가방', '서랍', '병', '통', '바구니', '자루', '캔', '컵', '케이스', '사과'],
     tips({
       etymology: '그리스어 pyxis에서 유래',
       visual: '사각형 상자에 선물이 담긴 모습',
@@ -440,7 +440,7 @@ export const vocabBatch02: VocabItem[] = [
     }
   ),
   word('Home', '집', 1, 'noun',
-    ['학교', '회사', '병원', '가게', '공원', '길', '집', '방', '마당', '부엌'],
+    ['학교', '회사', '병원', '가게', '공원', '길', '방', '마당', '부엌', '사과'],
     tips({
       etymology: '고대 영어 hām에서 유래',
       visual: '따뜻한 조명이 켜진 집',
@@ -474,11 +474,7 @@ export const vocabBatch02: VocabItem[] = [
     {
       definition: 'a male ruler of a country who inherits the position',
       wordDistractors: ['Kink', 'Ring', 'Sing'],
-      definitionDistractors: [
-        'a female ruler of a country',
-        'the daughter of a king or queen',
-        'the male head of a republic',
-      ],
+      definitionDistractors: ['a female ruler of a country', 'the daughter of a the term or queen', 'the male head of a republic'],
       exampleSentences: [
         { en: 'The king rules the country.', ko: '왕이 나라를 다스린다.' },
         { en: 'The king wore a golden crown.', ko: '왕은 금빛 왕관을 썼다.' },
@@ -497,11 +493,7 @@ export const vocabBatch02: VocabItem[] = [
     {
       definition: 'each of the limbs used for walking and standing',
       wordDistractors: ['Lego', 'Lend', 'Beg'],
-      definitionDistractors: [
-        'each of the upper limbs of the body',
-        'the end of the leg with toes',
-        'the part of the body above the legs',
-      ],
+      definitionDistractors: ['each of the upper limbs of the body', 'the end of the the term with toes', 'the part of the body above the legs'],
       exampleSentences: [
         { en: 'He broke his leg in the accident.', ko: '그는 사고에서 다리를 부쉈다.' },
         { en: 'My legs are tired from walking.', ko: '걷다 보니 다리가 피곤하다.' },
@@ -509,7 +501,7 @@ export const vocabBatch02: VocabItem[] = [
     }
   ),
   word('Man', '남자', 1, 'noun',
-    ['여자', '아이', '소년', '소녀', '어른', '노인', '소년', '아버지', '아들', '형제'],
+    ['여자', '아이', '소년', '소녀', '어른', '노인', '아버지', '아들', '형제', '사과'],
     tips({
       etymology: '고대 영어 mann에서 유래',
       visual: '서 있는 성인 남자',
@@ -635,11 +627,7 @@ export const vocabBatch02: VocabItem[] = [
     {
       definition: 'the physical structure of a person or animal',
       wordDistractors: ['Buddy', 'Bold', 'Bony'],
-      definitionDistractors: [
-        'the upper part of the body',
-        'the organ that pumps blood',
-        'the organ of thought',
-      ],
+      definitionDistractors: ['the upper part of the the term', 'the organ that pumps blood', 'the organ of thought'],
       exampleSentences: [
         { en: 'Exercise is good for your body.', ko: '운동은 몸에 좋다.' },
         { en: 'She found a body in the water.', ko: '그녀는 물속에서 시체를 발견했다.' },
@@ -773,11 +761,7 @@ export const vocabBatch02: VocabItem[] = [
     {
       definition: 'the planet we live on',
       wordDistractors: ['Earthy', 'Earthen', 'Earn'],
-      definitionDistractors: [
-        'the natural satellite of Earth',
-        'the star that gives us light',
-        'the empty space beyond the atmosphere',
-      ],
+      definitionDistractors: ['the natural satellite of the term', 'the star that gives us light', 'the empty space beyond the atmosphere'],
       exampleSentences: [
         { en: 'The Earth revolves around the Sun.', ko: '지구는 태양 주위를 돈다.' },
         { en: 'We must protect the Earth.', ko: '우리는 지구를 보호해야 한다.' },
@@ -1003,11 +987,7 @@ export const vocabBatch02: VocabItem[] = [
     {
       definition: 'natural or artificial illumination',
       wordDistractors: ['Right', 'Fight', 'Might'],
-      definitionDistractors: [
-        'absence of light',
-        'an area sheltered from light',
-        'a dark area cast by an object',
-      ],
+      definitionDistractors: ['absence of the term', 'an area sheltered from the term', 'a dark area cast by an object'],
       exampleSentences: [
         { en: 'Plants need light to grow.', ko: '식물은 자라기 위해 빛이 필요하다.' },
         { en: 'Turn on the light, please.', ko: '불 켜 주세요.' },
@@ -1015,7 +995,7 @@ export const vocabBatch02: VocabItem[] = [
     }
   ),
   word('Magic', '마법', 2, 'noun',
-    ['현실', '과학', '기술', '묘기', '요술', '환상', '꿈', '환상', '마법사', '마술사'],
+    ['현실', '과학', '기술', '묘기', '요술', '환상', '꿈', '마법사', '마술사', '사과'],
     tips({
       etymology: '그리스어 magikos에서 유래',
       visual: '빛나는 지팡이와 별',
@@ -1049,11 +1029,7 @@ export const vocabBatch02: VocabItem[] = [
     {
       definition: 'sounds arranged in a pleasing way',
       wordDistractors: ['Mosaic', 'Mystic', 'Muscle'],
-      definitionDistractors: [
-        'a song with words',
-        'an instrument for playing music',
-        'unwanted or unpleasant sound',
-      ],
+      definitionDistractors: ['a song with words', 'an instrument for playing the term', 'unwanted or unpleasant sound'],
       exampleSentences: [
         { en: 'I listen to music every day.', ko: '나는 매일 음악을 듣는다.' },
         { en: 'She studied music at university.', ko: '그녀는 대학에서 음악을 공부했다.' },
@@ -1070,7 +1046,7 @@ export const vocabBatch02: VocabItem[] = [
       synonymAntonym: 'Syn: northern, Ant: south',
     }),
     {
-      definition: 'the direction toward the North Pole',
+      definition: 'the direction toward the the term Pole',
       wordDistractors: ['Worth', 'Forth', 'Mirth'],
       definitionDistractors: [
         'the direction toward the South Pole',
@@ -1139,7 +1115,7 @@ export const vocabBatch02: VocabItem[] = [
       synonymAntonym: 'Syn: southern, Ant: north',
     }),
     {
-      definition: 'the direction toward the South Pole',
+      definition: 'the direction toward the the term Pole',
       wordDistractors: ['Mouth', 'Youth', 'Smooth'],
       definitionDistractors: [
         'the direction toward the North Pole',

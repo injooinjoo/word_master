@@ -22,12 +22,16 @@ const TYPE_COLORS: Record<QuizType, string> = {
   e2k: '#1CB0F6',
   k2e: '#FF9600',
   e2e: '#A435F0',
+  syn: '#22C55E',
+  ant: '#EF4444',
 };
 
 const QUIZ_TYPE_SHORT: Record<QuizType, string> = {
   e2k: '영한',
   k2e: '한영',
   e2e: '영영',
+  syn: '동의',
+  ant: '반의',
 };
 
 interface ResultScreenProps {

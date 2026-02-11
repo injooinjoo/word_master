@@ -26,7 +26,7 @@ export const vocabBatch08: VocabItem[] = [
     }
   ),
   word('Employ', '고용하다', 4, 'verb',
-    ['해고하다', '해임하다', '거절하다', ' 퇴직하다', '사임하다', '그만두다', '포기하다', '방치하다', '무시하다', '기권하다'],
+    ['해고하다', '해임하다', '거절하다', '퇴직하다', '사임하다', '그만두다', '포기하다', '방치하다', '무시하다', '기권하다'],
     tips({
       etymology: 'em(안에) + ploy(접다) -> 일에 참여시키다',
       visual: '계약서에 서명하는 신입 직원',
@@ -118,7 +118,7 @@ export const vocabBatch08: VocabItem[] = [
     }
   ),
   word('Enormous', '거대한', 4, 'adjective',
-    ['미세한', '작은', '조그마한', '미미한', '작은', '소형', '소규모', '적은', '보통', '평범한'],
+    ['미세한', '작은', '조그마한', '미미한', '소형', '소규모', '적은', '보통', '평범한', '좋은'],
     tips({
       etymology: 'e(밖으로) + norm(규모) + -ous -> 규모를 벗어난',
       visual: '작은 사람 옆에 서 있는 거대한 고래',
@@ -221,11 +221,7 @@ export const vocabBatch08: VocabItem[] = [
     {
       definition: 'the same in amount, size, or value',
       wordDistractors: ['Equip', 'Equate', 'Echo'],
-      definitionDistractors: [
-        'to supply with necessary items',
-        'to consider one thing as equal to another',
-        'a sound that is reflected back',
-      ],
+      definitionDistractors: ['to supply with necessary items', 'to consider one thing as the term to another', 'a sound that is reflected back'],
       exampleSentences: [
         { en: 'All people should be treated as equal.', ko: '모든 사람은 동등하게 대우받아야 한다.' },
         { en: 'Divide the cake into equal portions.', ko: '케이크를 같은 크기로 나누어라.' },
@@ -1038,7 +1034,7 @@ export const vocabBatch08: VocabItem[] = [
     }
   ),
   word('Failure', '실패', 4, 'noun',
-    ['성공', '달성', '성취', '승리', '달성', '완수', '성과', '업적', '명예', '영광'],
+    ['성공', '달성', '성취', '승리', '완수', '성과', '업적', '명예', '영광', '사과'],
     tips({
       etymology: 'fail(실패하다) + -ure -> 실패한 상태',
       visual: 'X 표시가 된 시험지',
@@ -1130,7 +1126,7 @@ export const vocabBatch08: VocabItem[] = [
     }
   ),
   word('Fantasy', '환상', 4, 'noun',
-    ['현실', '사실', '실제', '진실', '확실', '일상', '보통', '현실', '실용', '논리'],
+    ['현실', '사실', '실제', '진실', '확실', '일상', '보통', '실용', '논리', '사과'],
     tips({
       etymology: '그리스어 phantasia(상상)에서 유래',
       visual: '용과 성이 있는 환상의 세계',

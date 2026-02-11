@@ -26,7 +26,7 @@ export const vocabBatch05: VocabItem[] = [
     }
   ),
   word('Admire', '존경하다', 3, 'verb',
-    ['무시하다', '비난하다', '싫어하다', '경멸하다', '질시하다', '부러워하다', '질투하다', '모욕하다', '비난하다', '불신하다'],
+    ['무시하다', '비난하다', '싫어하다', '경멸하다', '질시하다', '부러워하다', '질투하다', '모욕하다', '불신하다', '먹다'],
     tips({
       etymology: 'ad(~에게) + mir(경이) -> 경이로 바라보다',
       visual: '연설하는 영웅을 바라보는 군중',
@@ -509,7 +509,7 @@ export const vocabBatch05: VocabItem[] = [
     }
   ),
   word('Bow', '인사하다', 3, 'verb',
-    ['서다', '고개 들다', '등지다', '무시하다', '거절하다', '돌아서다', '얼굴 숙이다', '무례히', '무시하다', '지나가다'],
+    ['서다', '고개 들다', '등지다', '무시하다', '거절하다', '돌아서다', '얼굴 숙이다', '무례히', '지나가다', '먹다'],
     tips({
       etymology: '고대 영어 bugan(굽다)에서 유래',
       visual: '무대에서 관객에게 인사하는 배우',
@@ -635,11 +635,7 @@ export const vocabBatch05: VocabItem[] = [
     {
       definition: 'to determine a number or amount using mathematical operations',
       wordDistractors: ['Circulate', 'Speculate', 'Miscalculate'],
-      definitionDistractors: [
-        'to move or spread in a circular path',
-        'to form opinions without definite knowledge',
-        'to calculate wrongly or inaccurately',
-      ],
+      definitionDistractors: ['to move or spread in a circular path', 'to form opinions without definite knowledge', 'to the term wrongly or inaccurately'],
       exampleSentences: [
         { en: 'Please calculate the total cost.', ko: '총 비용을 계산해 주세요.' },
         { en: 'Scientists calculated the distance to the moon.', ko: '과학자들이 달까지의 거리를 계산했다.' },
@@ -1107,7 +1103,7 @@ export const vocabBatch05: VocabItem[] = [
     }
   ),
   word('Complain', '불평하다', 3, 'verb',
-    ['칭찬하다', '감사하다', '만족하다', '찬성하다', '동의하다', '수용하다', '인정하다', '기뻐하다', '즐기다', '감사하다'],
+    ['칭찬하다', '감사하다', '만족하다', '찬성하다', '동의하다', '수용하다', '인정하다', '기뻐하다', '즐기다', '먹다'],
     tips({
       etymology: 'com(강조) + plain(슬픔) -> 슬픔을 표현하다',
       visual: '화난 표정으로 말하는 사람',

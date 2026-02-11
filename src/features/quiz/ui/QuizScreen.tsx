@@ -10,7 +10,7 @@ import {
   Animated,
 } from 'react-native';
 import type { QuizQuestion, QuizType, AnswerContext } from '../../../services/quizService';
-import { QUIZ_TYPE_LABELS, ALL_QUIZ_TYPES } from '../../../services/quizService';
+import { QUIZ_TYPE_LABELS } from '../../../services/quizService';
 import type { QuizService } from '../../../services/quizService';
 import type { AudioService } from '../../../services/audioService';
 import { getLearningTipEntries } from '../../../data/models/vocab';
@@ -40,6 +40,8 @@ const TAB_COLORS: Record<QuizType, string> = {
   e2k: '#1CB0F6',
   k2e: '#FF9600',
   e2e: '#A435F0',
+  syn: '#22C55E',
+  ant: '#EF4444',
 };
 
 /** Delay (ms) to show feedback highlights before advancing */
@@ -78,21 +80,6 @@ interface QuizScreenProps {
   onSessionEnd: () => void;
 }
 
-/** Pick a random quiz type that has available words */
-function pickRandomType(quizService: QuizService): QuizType {
-  const shuffled = [...ALL_QUIZ_TYPES].sort(() => Math.random() - 0.5);
-  for (const t of shuffled) {
-    // Quick probe: try to generate a question of this type
-    if (t === 'e2e') {
-      // Only if any word has a definition
-      const hasDefinition = quizService.vocabItems.some((v) => !!v.definition);
-      if (!hasDefinition) continue;
-    }
-    return t;
-  }
-  return 'e2k';
-}
-
 export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScreenProps) {
   const [current, setCurrent] = useState<QuizQuestion | null>(null);
   const [questionNum, setQuestionNum] = useState(0);
@@ -128,6 +115,19 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   // Ref to record when each question was presented (for elapsed time calc)
   const startTimeRef = useRef<number>(Date.now());
 
+  // --- ELO delta animation state ---
+  const [eloDelta, setEloDelta] = useState<number | null>(null);
+  const eloDeltaAnim = useRef(new Animated.Value(0)).current; // 0→1 for slide-up + fade
+  const prevRatingRef = useRef<number>(0);
+
+  // --- Word ELO delta animation state ---
+  const [wordEloDelta, setWordEloDelta] = useState<number | null>(null);
+  const wordEloDeltaAnim = useRef(new Animated.Value(0)).current;
+
+  // --- Remaining time animation state ---
+  const [remainingSec, setRemainingSec] = useState<number | null>(null);
+  const timeBonusAnim = useRef(new Animated.Value(0)).current; // 0→1 for slide-up + fade
+
   const resetFeedback = useCallback(() => {
     setAnswered(false);
     answeredRef.current = false;
@@ -137,11 +137,17 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
     setShowHint(false);
     hintOpacity.setValue(0);
     feedbackOpacity.setValue(0);
+    setEloDelta(null);
+    eloDeltaAnim.setValue(0);
+    setWordEloDelta(null);
+    wordEloDeltaAnim.setValue(0);
+    setRemainingSec(null);
+    timeBonusAnim.setValue(0);
     if (hintTimeoutRef.current) {
       clearTimeout(hintTimeoutRef.current);
       hintTimeoutRef.current = null;
     }
-  }, [feedbackOpacity, hintOpacity]);
+  }, [feedbackOpacity, hintOpacity, eloDeltaAnim, wordEloDeltaAnim, timeBonusAnim]);
 
   const loadNext = useCallback(() => {
     // Round complete → show results
@@ -151,7 +157,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       return;
     }
 
-    const type = pickRandomType(quizService);
+    const type = quizService.pickAdaptiveType();
     const q = quizService.nextQuestion(type);
     if (q == null) {
       quizService.endSession();
@@ -210,6 +216,11 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       hintTimeoutRef.current = null;
     }
 
+    // Capture ratings before submit
+    const ratingBefore = quizService.getRating(q.quizType);
+    prevRatingRef.current = ratingBefore;
+    const wordEloBefore = quizService.getWordElo(q.vocabItem.id, q.quizType);
+
     const answerCtx: AnswerContext = {
       correct: false,
       wordId: q.vocabItem.id,
@@ -227,6 +238,34 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       userAnswer: null,
       quizType: q.quizType,
     });
+
+    // User ELO delta animation
+    const ratingAfter = quizService.getRating(q.quizType);
+    const delta = ratingAfter - ratingBefore;
+    setEloDelta(delta);
+    eloDeltaAnim.setValue(0);
+
+    // Word ELO delta animation
+    const wordEloAfter = quizService.getWordElo(q.vocabItem.id, q.quizType);
+    const wDelta = wordEloAfter - wordEloBefore;
+    setWordEloDelta(wDelta);
+    wordEloDeltaAnim.setValue(0);
+
+    Animated.parallel([
+      Animated.timing(eloDeltaAnim, {
+        toValue: 1,
+        duration: 1200,
+        useNativeDriver: true,
+      }),
+      Animated.timing(wordEloDeltaAnim, {
+        toValue: 1,
+        duration: 1200,
+        useNativeDriver: true,
+      }),
+    ]).start();
+
+    // No remaining time for timeout
+    setRemainingSec(0);
 
     setAnswered(true);
     answeredRef.current = true;
@@ -246,7 +285,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
     setTimeout(() => {
       loadNext();
     }, FEEDBACK_DELAY);
-  }, [current, quizService, loadNext, feedbackOpacity, timerDuration]);
+  }, [current, quizService, loadNext, feedbackOpacity, timerDuration, eloDeltaAnim, wordEloDeltaAnim]);
 
   // --- Choice selection handler ---
   const onChoiceSelected = useCallback(
@@ -261,6 +300,12 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
 
       const correct = choice === q.correctAnswer;
       const elapsedMs = Date.now() - startTimeRef.current;
+
+      // Capture ratings before submit
+      const ratingBefore = quizService.getRating(q.quizType);
+      prevRatingRef.current = ratingBefore;
+      const wordEloBefore = quizService.getWordElo(q.vocabItem.id, q.quizType);
+
       const answerCtx: AnswerContext = {
         correct,
         wordId: q.vocabItem.id,
@@ -278,6 +323,41 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
         userAnswer: choice,
         quizType: q.quizType,
       });
+
+      // User ELO delta animation
+      const ratingAfter = quizService.getRating(q.quizType);
+      const delta = ratingAfter - ratingBefore;
+      setEloDelta(delta);
+      eloDeltaAnim.setValue(0);
+
+      // Word ELO delta animation
+      const wordEloAfter = quizService.getWordElo(q.vocabItem.id, q.quizType);
+      const wDelta = wordEloAfter - wordEloBefore;
+      setWordEloDelta(wDelta);
+      wordEloDeltaAnim.setValue(0);
+
+      Animated.parallel([
+        Animated.timing(eloDeltaAnim, {
+          toValue: 1,
+          duration: 1200,
+          useNativeDriver: true,
+        }),
+        Animated.timing(wordEloDeltaAnim, {
+          toValue: 1,
+          duration: 1200,
+          useNativeDriver: true,
+        }),
+      ]).start();
+
+      // Remaining time animation
+      const remaining = Math.max(0, (timerDuration - elapsedMs) / 1000);
+      setRemainingSec(remaining);
+      timeBonusAnim.setValue(0);
+      Animated.timing(timeBonusAnim, {
+        toValue: 1,
+        duration: 1200,
+        useNativeDriver: true,
+      }).start();
 
       setAnswered(true);
       answeredRef.current = true;
@@ -297,7 +377,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
         loadNext();
       }, FEEDBACK_DELAY);
     },
-    [current, quizService, loadNext, feedbackOpacity, timerDuration],
+    [current, quizService, loadNext, feedbackOpacity, timerDuration, eloDeltaAnim, wordEloDeltaAnim, timeBonusAnim],
   );
 
   /** Determine card style based on feedback state */
@@ -385,15 +465,81 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
           <View style={[styles.typeBadge, { backgroundColor: typeColor }]}>
             <Text style={styles.typeBadgeText}>{typeLabel}</Text>
           </View>
-          <Text style={[styles.infoElo, { color: typeColor }]}>{userRating}</Text>
+          <View style={styles.eloContainer}>
+            <Text style={[styles.infoElo, { color: typeColor }]}>{userRating}</Text>
+            {/* ELO delta floating badge */}
+            {answered && eloDelta !== null && eloDelta !== 0 && (
+              <Animated.View
+                style={[
+                  styles.eloDeltaBadge,
+                  {
+                    opacity: eloDeltaAnim.interpolate({
+                      inputRange: [0, 0.2, 0.7, 1],
+                      outputRange: [0, 1, 1, 0],
+                    }),
+                    transform: [
+                      {
+                        translateY: eloDeltaAnim.interpolate({
+                          inputRange: [0, 1],
+                          outputRange: [0, -28],
+                        }),
+                      },
+                    ],
+                  },
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.eloDeltaText,
+                    { color: eloDelta > 0 ? CORRECT_GREEN : WRONG_RED },
+                  ]}
+                >
+                  {eloDelta > 0 ? `+${eloDelta}` : `${eloDelta}`}
+                </Text>
+              </Animated.View>
+            )}
+          </View>
           <View style={[styles.tierBadge, { backgroundColor: typeColor + '18' }]}>
             <Text style={[styles.tierText, { color: typeColor }]}>{userTier}</Text>
           </View>
         </View>
         <View style={styles.infoRight}>
           <Text style={styles.infoPct}>상위 {topPctDisplay}%</Text>
-          <View style={[styles.diffBadge, { backgroundColor: diffColor }]}>
-            <Text style={styles.diffText}>{diffLabel}</Text>
+          <View style={styles.diffContainer}>
+            <View style={[styles.diffBadge, { backgroundColor: diffColor }]}>
+              <Text style={styles.diffText}>{diffLabel}</Text>
+            </View>
+            {/* Word ELO delta floating badge */}
+            {answered && wordEloDelta !== null && wordEloDelta !== 0 && (
+              <Animated.View
+                style={[
+                  styles.wordEloDeltaBadge,
+                  {
+                    opacity: wordEloDeltaAnim.interpolate({
+                      inputRange: [0, 0.2, 0.7, 1],
+                      outputRange: [0, 1, 1, 0],
+                    }),
+                    transform: [
+                      {
+                        translateY: wordEloDeltaAnim.interpolate({
+                          inputRange: [0, 1],
+                          outputRange: [0, -26],
+                        }),
+                      },
+                    ],
+                  },
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.wordEloDeltaText,
+                    { color: wordEloDelta > 0 ? WRONG_RED : CORRECT_GREEN },
+                  ]}
+                >
+                  {wordEloDelta > 0 ? `+${wordEloDelta}` : `${wordEloDelta}`}
+                </Text>
+              </Animated.View>
+            )}
           </View>
         </View>
       </View>
@@ -432,6 +578,39 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
             </Text>
           </Animated.View>
         )}
+
+        {/* Remaining time floating badge */}
+        {answered && remainingSec !== null && remainingSec > 0 && (
+          <Animated.View
+            style={[
+              styles.timeBonusBadge,
+              {
+                opacity: timeBonusAnim.interpolate({
+                  inputRange: [0, 0.15, 0.6, 1],
+                  outputRange: [0, 1, 1, 0],
+                }),
+                transform: [
+                  {
+                    translateY: timeBonusAnim.interpolate({
+                      inputRange: [0, 1],
+                      outputRange: [6, -10],
+                    }),
+                  },
+                  {
+                    scale: timeBonusAnim.interpolate({
+                      inputRange: [0, 0.15, 0.5, 1],
+                      outputRange: [0.6, 1.15, 1, 0.9],
+                    }),
+                  },
+                ],
+              },
+            ]}
+          >
+            <Text style={styles.timeBonusText}>
+              ⏱ {remainingSec.toFixed(1)}초 남음
+            </Text>
+          </Animated.View>
+        )}
       </View>
 
       <View style={[styles.choicesSection, { height: bottomSectionHeight }]}>
@@ -444,7 +623,12 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
               activeOpacity={0.8}
               disabled={answered}
             >
-              <Text style={getChoiceTextStyle(choice)} numberOfLines={3} adjustsFontSizeToFit>
+              <Text
+                style={getChoiceTextStyle(choice)}
+                numberOfLines={4}
+                adjustsFontSizeToFit
+                minimumFontScale={0.8}
+              >
                 {choice}
               </Text>
             </TouchableOpacity>
@@ -506,10 +690,27 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 8,
   },
+  eloContainer: {
+    position: 'relative',
+  },
   infoElo: {
     fontSize: 15,
     fontWeight: '700',
     color: PRIMARY,
+  },
+  eloDeltaBadge: {
+    position: 'absolute',
+    top: -4,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  eloDeltaText: {
+    fontSize: 13,
+    fontWeight: '800',
+    textShadowColor: 'rgba(255,255,255,0.9)',
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 4,
   },
   tierBadge: {
     backgroundColor: '#EAF4FE',
@@ -532,6 +733,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 8,
   },
+  diffContainer: {
+    position: 'relative',
+  },
   diffBadge: {
     paddingHorizontal: 10,
     paddingVertical: 4,
@@ -541,6 +745,20 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontWeight: '700',
     color: '#fff',
+  },
+  wordEloDeltaBadge: {
+    position: 'absolute',
+    top: -2,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  wordEloDeltaText: {
+    fontSize: 12,
+    fontWeight: '800',
+    textShadowColor: 'rgba(255,255,255,0.9)',
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 4,
   },
   // ── Word section ──
   wordSection: {
@@ -590,6 +808,22 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     textAlign: 'center',
   },
+  timeBonusBadge: {
+    marginTop: 10,
+    paddingVertical: 6,
+    paddingHorizontal: 16,
+    backgroundColor: '#F0F8FF',
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: '#1CB0F622',
+    alignSelf: 'center',
+  },
+  timeBonusText: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: '#1CB0F6',
+    letterSpacing: 0.3,
+  },
   choicesSection: {
     paddingHorizontal: horizontalPadding,
     paddingTop: topPadding,
@@ -606,7 +840,8 @@ const styles = StyleSheet.create({
     height: maxCellHeight,
     backgroundColor: '#fff',
     borderRadius: cardRadius,
-    padding: gap,
+    paddingVertical: Math.max(10, gap * 0.8),
+    paddingHorizontal: Math.max(12, gap),
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 2,
@@ -638,6 +873,8 @@ const styles = StyleSheet.create({
     fontSize: choiceFontSize,
     color: '#333',
     textAlign: 'center',
+    lineHeight: Math.round(choiceFontSize * 1.35),
+    paddingHorizontal: 4,
   },
   choiceTextHighlight: {
     fontWeight: '700',

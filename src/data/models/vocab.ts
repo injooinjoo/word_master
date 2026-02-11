@@ -58,6 +58,8 @@ export interface VocabItem {
   word: string;                            // 영단어
   meaning: string;                         // 한국어 뜻 (1차)
   definition?: string | null;              // 영어 정의 (영영 퀴즈용)
+  synonyms?: string[];                     // 동의어 (동의어 퀴즈용)
+  antonyms?: string[];                     // 반의어 (반의어 퀴즈용)
   partOfSpeech: PartOfSpeech;             // union type
   level: number;                           // 1-10
 

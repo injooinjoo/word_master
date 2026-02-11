@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 320" role="img" aria-label="Anchor vocabulary illustration">
+  <defs>
+    <linearGradient id="seaSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7ec8ff"/>
+      <stop offset="55%" stop-color="#bde9ff"/>
+      <stop offset="56%" stop-color="#3f8fd9"/>
+      <stop offset="100%" stop-color="#1c5fa8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="320" fill="url(#seaSky)"/>
+
+  <!-- Sun -->
+  <circle cx="88" cy="66" r="24" fill="#ffd768"/>
+
+  <!-- Waves -->
+  <g fill="none" stroke="#ffffff" stroke-width="4" opacity="0.45">
+    <path d="M0 190 Q32 176 64 190 T128 190 T192 190 T256 190 T320 190 T384 190 T448 190 T512 190"/>
+    <path d="M0 218 Q32 204 64 218 T128 218 T192 218 T256 218 T320 218 T384 218 T448 218 T512 218"/>
+    <path d="M0 246 Q32 232 64 246 T128 246 T192 246 T256 246 T320 246 T384 246 T448 246 T512 246"/>
+  </g>
+
+  <!-- Anchor -->
+  <g transform="translate(256 170)" stroke="#1f2f45" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="0" cy="-70" r="18" fill="#e8eff7"/>
+    <line x1="0" y1="-52" x2="0" y2="52"/>
+    <path d="M-74 30 C-74 78 -34 104 0 104 C34 104 74 78 74 30"/>
+    <path d="M-74 30 L-96 30 L-86 52"/>
+    <path d="M74 30 L96 30 L86 52"/>
+    <line x1="-46" y1="30" x2="46" y2="30"/>
+  </g>
+
+  <!-- Rope -->
+  <path d="M256 0 C250 36 266 70 256 102" fill="none" stroke="#c9a066" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Label -->
+  <rect x="182" y="18" width="148" height="38" rx="19" fill="#ffffff" opacity="0.94"/>
+  <text x="256" y="43" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#1f2f45">anchor</text>
+</svg>

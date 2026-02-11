@@ -532,7 +532,7 @@ export const vocabBatch07: VocabItem[] = [
     }
   ),
   word('Discuss', '논의하다', 3, 'verb',
-    ['침묵하다', '무시하다', '회피하다', '거절하다', '단독 결정', '일방통행', '무시', '생략', '회피', '회피하다'],
+    ['침묵하다', '무시하다', '회피하다', '거절하다', '단독 결정', '일방통행', '무시', '생략', '회피', '먹다'],
     tips({
       etymology: 'dis(분리) + cuss(두드리다) -> 의견을 부딪치다',
       visual: '회의실에서 논의하는 사람들',
@@ -865,11 +865,7 @@ export const vocabBatch07: VocabItem[] = [
     {
       definition: 'a moral or legal obligation to do something',
       wordDistractors: ['Beauty', 'Safety', 'Pity'],
-      definitionDistractors: [
-        'the power to act without constraint',
-        'something one may choose to do',
-        'freedom from duty or obligation',
-      ],
+      definitionDistractors: ['the power to act without constraint', 'something one may choose to do', 'freedom from the term or obligation'],
       exampleSentences: [
         { en: 'It is our duty to help those in need.', ko: '도움이 필요한 사람을 돕는 것은 우리의 의무이다.' },
         { en: 'He is on duty until midnight.', ko: '그는 자정까지 근무 중이다.' },
@@ -1107,7 +1103,7 @@ export const vocabBatch07: VocabItem[] = [
     }
   ),
   word('Embarrass', '부끄럽게 하다', 4, 'verb',
-    ['자신감 있게 하다', '칭찬하다', '기쁘게 하다', '만족시키다', '격려하다', '위무하다', '격려하다', '존중하다', '존엄을 주다', '긍지심'],
+    ['자신감 있게 하다', '칭찬하다', '기쁘게 하다', '만족시키다', '격려하다', '위무하다', '존중하다', '존엄을 주다', '긍지심', '먹다'],
     tips({
       etymology: 'em(안에) + barren(막다) -> 막혀 당황하다',
       visual: '얼굴이 빨개진 당황한 사람',
@@ -1130,7 +1126,7 @@ export const vocabBatch07: VocabItem[] = [
     }
   ),
   word('Emerge', '나타나다', 4, 'verb',
-    ['사라지다', '숨다', '가라앉다', '실종되다', '퇴장하다', '은퇴하다', '물러나다', '빠지다', '가라앉다', '잠수하다'],
+    ['사라지다', '숨다', '가라앉다', '실종되다', '퇴장하다', '은퇴하다', '물러나다', '빠지다', '잠수하다', '먹다'],
     tips({
       etymology: 'e(밖으로) + merge(잠기다) -> 물속에서 올라오다',
       visual: '물속에서 수면 위로 올라오는 사람',

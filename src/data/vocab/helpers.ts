@@ -40,6 +40,8 @@ export function tips({
 /** Optional extra fields for enriched vocab items */
 export interface WordExtra {
   definition?: string;
+  synonyms?: string[];
+  antonyms?: string[];
   wordDistractors?: string[];
   definitionDistractors?: string[];
   exampleSentences?: ExampleSentence[];
@@ -68,6 +70,8 @@ export function word(
     word: w,
     meaning,
     definition: extra?.definition ?? null,
+    synonyms: extra?.synonyms,
+    antonyms: extra?.antonyms,
     partOfSpeech,
     level,
     distractors,

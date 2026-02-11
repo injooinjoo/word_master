@@ -37,11 +37,7 @@ export const vocabBatch03: VocabItem[] = [
     {
       definition: 'either of the two long parts of the body from the shoulder to the hand',
       wordDistractors: ['limb', 'elbow', 'wrist'],
-      definitionDistractors: [
-        'the part of the body at the end of the arm',
-        'one of the two limbs used for walking',
-        'the part of the body that connects the head to the torso',
-      ],
+      definitionDistractors: ['the part of the body at the end of the the term', 'one of the two limbs used for walking', 'the part of the body that connects the head to the torso'],
       exampleSentences: [
         { en: 'He broke his arm in the accident.', ko: '그는 사고로 팔을 부쉈다.' },
         { en: 'She held the baby in her arms.', ko: '그녀는 아기를 팔에 안았다.' },
@@ -302,7 +298,7 @@ export const vocabBatch03: VocabItem[] = [
     }
   ),
   word('Day', '날', 1, 'noun',
-    ['밤', '아침', '낮', '저녁', '시간', '주', '달', '년', '시간', '순간'],
+    ['밤', '아침', '낮', '저녁', '시간', '주', '달', '년', '순간', '사과'],
     tips({
       etymology: '고대 영어 dæg에서 유래',
       visual: '해가 뜨는 아침의 하루',
@@ -313,11 +309,7 @@ export const vocabBatch03: VocabItem[] = [
     {
       definition: 'a period of twenty-four hours',
       wordDistractors: ['night', 'week', 'month'],
-      definitionDistractors: [
-        'the dark part of the day when we sleep',
-        'a period of seven days',
-        'a unit of time equal to sixty minutes',
-      ],
+      definitionDistractors: ['the dark part of the the term when we sleep', 'a period of seven days', 'a unit of time equal to sixty minutes'],
       exampleSentences: [
         { en: 'It is a beautiful day today.', ko: '오늘은 아름다운 날이다.' },
         { en: 'We spent the day at the beach.', ko: '우리는 해변에서 하루를 보냈다.' },
@@ -348,7 +340,7 @@ export const vocabBatch03: VocabItem[] = [
     }
   ),
   word('Dry', '마른', 1, 'adjective',
-    ['젖은', '습한', '축축한', '물기 있는', '비에 젖은', '이슬에 젖은', '땀에 젖은', '눈물에 젖은', '젖은', '습함'],
+    ['젖은', '습한', '축축한', '물기 있는', '비에 젖은', '이슬에 젖은', '땀에 젖은', '눈물에 젖은', '습함', '좋은'],
     tips({
       etymology: '고대 영어 drȳge에서 유래',
       visual: '비가 그친 후 마른 도로',
@@ -394,7 +386,7 @@ export const vocabBatch03: VocabItem[] = [
     }
   ),
   word('End', '끝', 1, 'noun',
-    ['시작', '중간', '중앙', '처음', '첫째', '마지막', '끝', '종료', '완료', '결과'],
+    ['시작', '중간', '중앙', '처음', '첫째', '마지막', '종료', '완료', '결과', '사과'],
     tips({
       etymology: '고대 영어 ende에서 유래',
       visual: '선의 끝에 도달한 점',
@@ -740,7 +732,7 @@ export const vocabBatch03: VocabItem[] = [
     }
   ),
   word('Bottle', '병', 2, 'noun',
-    ['병', '컵', '통', '상자', '자루', '캔', '수조', '항아리', '그릇', '주전자'],
+    ['컵', '통', '상자', '자루', '캔', '수조', '항아리', '그릇', '주전자', '사과'],
     tips({
       etymology: '라틴어 buttis에서 유래',
       visual: '물이 담긴 투명한 유리병',
@@ -774,11 +766,7 @@ export const vocabBatch03: VocabItem[] = [
     {
       definition: 'the lowest part of something',
       wordDistractors: ['base', 'floor', 'foundation'],
-      definitionDistractors: [
-        'the highest point of something',
-        'the point halfway between top and bottom',
-        'the line where two surfaces meet',
-      ],
+      definitionDistractors: ['the highest point of something', 'the point halfway between top and the term', 'the line where two surfaces meet'],
       exampleSentences: [
         { en: 'The keys fell to the bottom of the bag.', ko: '열쇠가 가방 바닥에 떨어졌다.' },
         { en: 'We swam to the bottom of the pool.', ko: '우리는 수영장 바닥까지 헤엄쳤다.' },

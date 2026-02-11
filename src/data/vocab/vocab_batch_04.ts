@@ -60,11 +60,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'the sister of one\'s parent or the wife of one\'s uncle',
       wordDistractors: ['uncle', 'cousin', 'niece'],
-      definitionDistractors: [
-        'the brother of one\'s parent',
-        'a child of one\'s uncle or aunt',
-        'a daughter of one\'s sibling',
-      ],
+      definitionDistractors: ['the brother of one\'s parent', 'a child of one\'s uncle or the term', 'a daughter of one\'s sibling'],
       exampleSentences: [
         { en: 'My aunt lives in Seoul.', ko: '내 이모는 서울에 산다.' },
         { en: 'Her aunt baked cookies for the party.', ko: '그녀의 고모가 파티용 쿠키를 구웠다.' },
@@ -267,11 +263,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'the red fluid that flows through the body\'s veins and arteries',
       wordDistractors: ['fluid', 'plasma', 'vein'],
-      definitionDistractors: [
-        'a liquid that flows freely',
-        'the liquid part of blood',
-        'a vessel that carries blood',
-      ],
+      definitionDistractors: ['a liquid that flows freely', 'the liquid part of the term', 'a vessel that carries the term'],
       exampleSentences: [
         { en: 'Blood was dripping from the wound.', ko: '상처에서 피가 흘렀다.' },
         { en: 'She donates blood every month.', ko: '그녀는 매달 헌혈을 한다.' },
@@ -336,11 +328,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'food made from flour, water, and yeast, baked into a loaf',
       wordDistractors: ['loaf', 'roll', 'bun'],
-      definitionDistractors: [
-        'a shaped mass of baked bread',
-        'a small rounded bread',
-        'a sweet baked dessert',
-      ],
+      definitionDistractors: ['a shaped mass of baked the term', 'a small rounded the term', 'a sweet baked dessert'],
       exampleSentences: [
         { en: 'I bought fresh bread this morning.', ko: '오늘 아침에 빵을 샀다.' },
         { en: 'Bread and butter is a simple breakfast.', ko: '빵과 버터는 간단한 아침 식사다.' },
@@ -451,11 +439,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'a structure of bars or wires for confining animals',
       wordDistractors: ['enclosure', 'pen', 'aviary'],
-      definitionDistractors: [
-        'an area surrounded by a barrier',
-        'a fenced area for keeping animals',
-        'a large cage for keeping birds',
-      ],
+      definitionDistractors: ['an area surrounded by a barrier', 'a fenced area for keeping animals', 'a large the term for keeping birds'],
       exampleSentences: [
         { en: 'The bird escaped from its cage.', ko: '새가 새장에서 탈출했다.' },
         { en: 'He cleaned the hamster cage every week.', ko: '그는 매주 햄스터 우리를 청소했다.' },
@@ -589,11 +573,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'a natural hollow space under the ground or in a cliff',
       wordDistractors: ['cavern', 'grotto', 'cavern'],
-      definitionDistractors: [
-        'a large underground chamber',
-        'a small picturesque cave',
-        'a steep rock face',
-      ],
+      definitionDistractors: ['a large underground chamber', 'a small picturesque the term', 'a steep rock face'],
       exampleSentences: [
         { en: 'Bats live in dark caves.', ko: '박쥐는 어두운 동굴에 산다.' },
         { en: 'They discovered ancient paintings in the cave.', ko: '그들은 동굴에서 고대 그림을 발견했다.' },
@@ -612,11 +592,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'a series of connected metal rings used for fastening or pulling',
       wordDistractors: ['link', 'series', 'sequence'],
-      definitionDistractors: [
-        'a single ring in a chain',
-        'a number of things in order',
-        'a thick twisted cord',
-      ],
+      definitionDistractors: ['a single ring in a the term', 'a number of things in order', 'a thick twisted cord'],
       exampleSentences: [
         { en: 'He wore a gold chain around his neck.', ko: '그는 목에 금 사슬을 걸고 있었다.' },
         { en: 'The prisoner was bound in chains.', ko: '그 죄수는 사슬에 묶여 있었다.' },
@@ -658,11 +634,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'to make or become different',
       wordDistractors: ['alter', 'modify', 'transform'],
-      definitionDistractors: [
-        'to make a partial change',
-        'to make small adjustments',
-        'to convert into something else',
-      ],
+      definitionDistractors: ['to make a partial the term', 'to make small adjustments', 'to convert into something else'],
       exampleSentences: [
         { en: 'Things will change for the better.', ko: '일이 더 나아질 것이다.' },
         { en: 'She changed her mind about the trip.', ko: '그녀는 여행에 대한 마음을 바꿨다.' },
@@ -704,11 +676,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'a food made from pressed milk curds',
       wordDistractors: ['dairy', 'cheddar', 'mozzarella'],
-      definitionDistractors: [
-        'products made from milk',
-        'a type of hard cheese',
-        'a soft stretchy cheese',
-      ],
+      definitionDistractors: ['products made from milk', 'a type of hard the term', 'a soft stretchy the term'],
       exampleSentences: [
         { en: 'I love cheese on pizza.', ko: '나는 피자에 치즈를 좋아한다.' },
         { en: 'She ordered a cheese sandwich.', ko: '그녀는 치즈 샌드위치를 주문했다.' },
@@ -773,11 +741,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'to pick out from a number of possibilities',
       wordDistractors: ['select', 'pick', 'elect'],
-      definitionDistractors: [
-        'to choose from options',
-        'to take or gather',
-        'to vote for someone',
-      ],
+      definitionDistractors: ['to the term from options', 'to take or gather', 'to vote for someone'],
       exampleSentences: [
         { en: 'You can choose any color you like.', ko: '원하는 색을 골라도 된다.' },
         { en: 'She chose to study abroad.', ko: '그녀는 유학을 하기로 했다.' },
@@ -796,11 +760,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'a building used for Christian religious services',
       wordDistractors: ['chapel', 'cathedral', 'temple'],
-      definitionDistractors: [
-        'a small place of worship',
-        'a large important church',
-        'a building for non-Christian worship',
-      ],
+      definitionDistractors: ['a small place of worship', 'a large important the term', 'a building for non-Christian worship'],
       exampleSentences: [
         { en: 'The church bells rang at noon.', ko: '정오에 교회 종이 울렸다.' },
         { en: 'They got married in the old church.', ko: '그들은 그 오래된 교회에서 결혼했다.' },
@@ -819,11 +779,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'a device that shows the time, typically with hands or digits',
       wordDistractors: ['watch', 'timepiece', 'timer'],
-      definitionDistractors: [
-        'a clock worn on the wrist',
-        'any device that tells time',
-        'a device that measures intervals',
-      ],
+      definitionDistractors: ['a the term worn on the wrist', 'any device that tells time', 'a device that measures intervals'],
       exampleSentences: [
         { en: 'The clock struck twelve.', ko: '시계가 12시를 알렸다.' },
         { en: 'I glanced at the clock on the wall.', ko: '나는 벽에 걸린 시계를 흘끗 보았다.' },
@@ -842,11 +798,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'to move something so as to cover an opening',
       wordDistractors: ['shut', 'seal', 'lock'],
-      definitionDistractors: [
-        'to close with force',
-        'to fasten securely',
-        'to move apart or uncover',
-      ],
+      definitionDistractors: ['to the term with force', 'to fasten securely', 'to move apart or uncover'],
       exampleSentences: [
         { en: 'Please close the door.', ko: '문을 닫아주세요.' },
         { en: 'The store closes at 9 PM.', ko: '그 가게는 오후 9시에 문을 닫는다.' },
@@ -957,11 +909,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'to make a duplicate or reproduction of something',
       wordDistractors: ['duplicate', 'replicate', 'reproduce'],
-      definitionDistractors: [
-        'to make an exact copy',
-        'to create a copy of something',
-        'to produce again',
-      ],
+      definitionDistractors: ['to make an exact the term', 'to create a the term of something', 'to produce again'],
       exampleSentences: [
         { en: 'Please copy this document.', ko: '이 문서를 복사해주세요.' },
         { en: 'He copied the answers from his friend.', ko: '그는 친구에게서 답을 베꼈다.' },
@@ -1003,11 +951,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'a violent collision, typically of vehicles',
       wordDistractors: ['collision', 'impact', 'accident'],
-      definitionDistractors: [
-        'a crash between two objects',
-        'a forceful contact',
-        'an unexpected harmful event',
-      ],
+      definitionDistractors: ['a the term between two objects', 'a forceful contact', 'an unexpected harmful event'],
       exampleSentences: [
         { en: 'There was a crash on the highway.', ko: '고속도로에서 충돌 사고가 있었다.' },
         { en: 'We heard a loud crash from the kitchen.', ko: '부엌에서 큰 충돌 소리가 났다.' },
@@ -1072,11 +1016,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'a large number of people gathered together',
       wordDistractors: ['multitude', 'throng', 'mob'],
-      definitionDistractors: [
-        'a very large number',
-        'a dense crowd of people',
-        'a disorderly group',
-      ],
+      definitionDistractors: ['a very large number', 'a dense the term of people', 'a disorderly group'],
       exampleSentences: [
         { en: 'A crowd gathered in the square.', ko: '군중이 광장에 모였다.' },
         { en: 'She disappeared into the crowd.', ko: '그녀는 군중 속으로 사라졌다.' },
@@ -1084,7 +1024,7 @@ export const vocabBatch04: VocabItem[] = [
     }
   ),
   word('Cry', '울다', 2, 'verb',
-    ['웃다', '미소짓다', '환호하다', '기뻐하다', '축하하다', '만족하다', '흐뭇해하다', '만족하다', '평온하다', '차분하다'],
+    ['웃다', '미소짓다', '환호하다', '기뻐하다', '축하하다', '만족하다', '흐뭇해하다', '평온하다', '차분하다', '먹다'],
     tips({
       etymology: '라틴어 quiritare(부르짖다)에서 유래',
       visual: '눈물을 흘리는 아이',
@@ -1095,11 +1035,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'to shed tears, typically from sorrow or pain',
       wordDistractors: ['weep', 'sob', 'wail'],
-      definitionDistractors: [
-        'to cry quietly',
-        'to cry with convulsive gasps',
-        'to make spontaneous sounds of amusement',
-      ],
+      definitionDistractors: ['to the term quietly', 'to the term with convulsive gasps', 'to make spontaneous sounds of amusement'],
       exampleSentences: [
         { en: 'The baby started to cry.', ko: '아기가 울기 시작했다.' },
         { en: 'She cried when she heard the news.', ko: '그녀는 그 소식을 듣고 울었다.' },
@@ -1141,11 +1077,7 @@ export const vocabBatch04: VocabItem[] = [
     {
       definition: 'a piece of fabric hung to cover a window or divide a room',
       wordDistractors: ['drape', 'blind', 'shade'],
-      definitionDistractors: [
-        'a curtain made of heavy fabric',
-        'a covering that blocks light',
-        'something that provides partial cover',
-      ],
+      definitionDistractors: ['a the term made of heavy fabric', 'a covering that blocks light', 'something that provides partial cover'],
       exampleSentences: [
         { en: 'Draw the curtains at night.', ko: '밤에는 커튼을 치세요.' },
         { en: 'The curtain fell at the end of the play.', ko: '연극이 끝날 때 막이 내렸다.' },

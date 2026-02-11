@@ -426,7 +426,7 @@ export const vocabBatch06: VocabItem[] = [
       synonymAntonym: 'Syn: fabric, fiber',
     }),
     {
-      definition: 'a soft white fiber from the cotton plant used to make fabric',
+      definition: 'a soft white fiber from the the term plant used to make fabric',
       wordDistractors: ['Button', 'Mutton', 'Kitten'],
       definitionDistractors: [
         'a small fastener for clothing',

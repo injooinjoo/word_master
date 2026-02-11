@@ -1,0 +1,166 @@
+import 'package:uuid/uuid.dart';
+
+import 'models/vocab_model.dart';
+
+const _uuid = Uuid();
+
+LearningTipEntry _tip(String text, [String? imageUrl]) =>
+    LearningTipEntry(text: text, imageUrl: imageUrl);
+
+LearningTips _tips({
+  required String etymology,
+  required String visual,
+  required String soundAlike,
+  required String context,
+  required String synonymAntonym,
+  String? etymologyImg,
+  String? visualImg,
+}) =>
+    LearningTips(
+      etymology: _tip(etymology, etymologyImg),
+      visualAssociation: _tip(visual, visualImg),
+      soundAlike: _tip(soundAlike),
+      context: _tip(context),
+      synonymAntonym: _tip(synonymAntonym),
+    );
+
+final List<VocabItem> sampleVocabData = [
+  VocabItem(
+    id: _uuid.v4(),
+    word: 'Reluctant',
+    meaning: '꺼리는, 마음 내키지 않는',
+    pronunciationUrl:
+        'https://api.dictionaryapi.dev/media/pronunciations/en/reluctant-us.mp3',
+    level: 6,
+    partOfSpeech: 'adjective',
+    distractors: [
+      '자신 있는',
+      '열정적인',
+      '사소한',
+      '거대한',
+      '모호한',
+      '단호한',
+      '공통의',
+      '희귀한',
+      '급격한',
+      '유연한',
+    ],
+    learningTips: _tips(
+      etymology: 're(뒤로) + luct(싸우다) -> 뒤로 물러나며 싸우기 싫어함',
+      visual: '억지로 끌려가는 강아지 이미지 연상',
+      soundAlike: "내 뒤로 '너럭(reluct)'지 마! (뒤로 빼지 마)",
+      context: 'She was reluctant to leave the party.',
+      synonymAntonym: 'Syn: Unwilling, Ant: Eager',
+      etymologyImg: 'https://via.placeholder.com/300?text=Etymology',
+      visualImg: 'https://via.placeholder.com/300?text=Visual+Tip',
+    ),
+  ),
+  VocabItem(
+    id: _uuid.v4(),
+    word: 'Persistent',
+    meaning: '끈질긴, 끈기 있는',
+    pronunciationUrl: null,
+    level: 5,
+    partOfSpeech: 'adjective',
+    distractors: [
+      '무관심한',
+      '덧없는',
+      '일시적인',
+      '우유부단한',
+      '게으른',
+      '냉담한',
+      '변덕스러운',
+      '나약한',
+      '피상적인',
+      '산만한',
+    ],
+    learningTips: _tips(
+      etymology: 'per(완전히) + sist(서다) -> 끝까지 서 있다',
+      visual: '마라톤에서 포기하지 않고 달리는 모습',
+      soundAlike: '퍼시스턴트 = "퍼지 말고 시스터!" (포기하지 마)',
+      context: 'His persistent efforts paid off in the end.',
+      synonymAntonym: 'Syn: Tenacious, Ant: Yielding',
+    ),
+  ),
+  VocabItem(
+    id: _uuid.v4(),
+    word: 'Abandon',
+    meaning: '버리다, 포기하다',
+    pronunciationUrl: null,
+    level: 4,
+    partOfSpeech: 'verb',
+    distractors: [
+      '수용하다',
+      '유지하다',
+      '보존하다',
+      '채택하다',
+      '지키다',
+      '고수하다',
+      '붙들다',
+      '돌보다',
+      '계속하다',
+      '복구하다',
+    ],
+    learningTips: _tips(
+      etymology: 'a-(~에게) + bandon(지배) -> 지배를 넘겨버리다',
+      visual: '배를 버리고 내려가는 선원',
+      soundAlike: '"어? 밴던?" 버리고 간 거야',
+      context: 'They had to abandon the ship.',
+      synonymAntonym: 'Syn: Desert, Ant: Keep',
+    ),
+  ),
+  VocabItem(
+    id: _uuid.v4(),
+    word: 'Ambiguous',
+    meaning: '모호한, 애매한',
+    pronunciationUrl: null,
+    level: 6,
+    partOfSpeech: 'adjective',
+    distractors: [
+      '명확한',
+      '뚜렷한',
+      '단호한',
+      '확실한',
+      '솔직한',
+      '투명한',
+      '직설적인',
+      '결정적인',
+      '엄격한',
+      '정확한',
+    ],
+    learningTips: _tips(
+      etymology: 'ambi(둘) + ag(몰다) -> 두 갈래로 몰다',
+      visual: '갈래길 앞에서 망설이는 사람',
+      soundAlike: '"앰비귀어스" = 앰비(둘) + 귀어스(모호)',
+      context: 'The instructions were ambiguous.',
+      synonymAntonym: 'Syn: Vague, Ant: Clear',
+    ),
+  ),
+  VocabItem(
+    id: _uuid.v4(),
+    word: 'Efficient',
+    meaning: '효율적인, 능률적인',
+    pronunciationUrl: null,
+    level: 5,
+    partOfSpeech: 'adjective',
+    distractors: [
+      '비효율적인',
+      '산만한',
+      '느린',
+      '낭비적인',
+      '무능한',
+      '어수선한',
+      '불필요한',
+      '복잡한',
+      '비생산적인',
+      '느슨한',
+    ],
+    learningTips: _tips(
+      etymology: 'ex(밖으로) + fic(만들다) -> 결과를 만들어 내다',
+      visual: '정리된 책상에서 일하는 모습',
+      soundAlike: '"이피션트" = 이만 하면 피션트(충분)',
+      context: 'We need a more efficient method.',
+      synonymAntonym: 'Syn: Productive, Ant: Wasteful',
+    ),
+  ),
+];

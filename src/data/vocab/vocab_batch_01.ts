@@ -83,11 +83,7 @@ export const vocabBatch01: VocabItem[] = [
     {
       definition: 'a domesticated animal that barks and is often kept as a pet or for guarding',
       wordDistractors: ['Fog', 'Dig', 'Dug'],
-      definitionDistractors: [
-        'a fluffy animal that purrs and hunts mice',
-        'a wild animal similar to a dog that howls',
-        'a farm animal raised for meat and bristles',
-      ],
+      definitionDistractors: ['a fluffy animal that purrs and hunts mice', 'a wild animal similar to a the term that howls', 'a farm animal raised for meat and bristles'],
       exampleSentences: [
         { en: 'The dog wagged its tail when I came home.', ko: '내가 집에 오자 개가 꼬리를 흔들었다.' },
         { en: 'We adopted a dog from the shelter.', ko: '우리는 보호소에서 개를 입양했다.' },
@@ -175,11 +171,7 @@ export const vocabBatch01: VocabItem[] = [
     {
       definition: 'the end part of the arm with fingers used for grasping',
       wordDistractors: ['Sand', 'Band', 'Land'],
-      definitionDistractors: [
-        'the end part of the leg used for walking',
-        'the upper limb from shoulder to hand',
-        'the part of the body used for thinking',
-      ],
+      definitionDistractors: ['the end part of the leg used for walking', 'the upper limb from shoulder to the term', 'the part of the body used for thinking'],
       exampleSentences: [
         { en: 'She raised her hand to ask a question.', ko: '그녀는 질문하려고 손을 들었다.' },
         { en: 'He held the baby\'s hand as they crossed the street.', ko: '그는 길을 건널 때 아기의 손을 잡았다.' },
@@ -290,11 +282,7 @@ export const vocabBatch01: VocabItem[] = [
     {
       definition: 'a white liquid produced by mammals to feed their young',
       wordDistractors: ['Silk', 'Ilk', 'Milky'],
-      definitionDistractors: [
-        'a sweet drink made from fruit',
-        'a hot drink made from roasted beans',
-        'a solid dairy product made from curdled milk',
-      ],
+      definitionDistractors: ['a sweet drink made from fruit', 'a hot drink made from roasted beans', 'a solid dairy product made from curdled the term'],
       exampleSentences: [
         { en: 'I drink milk every morning.', ko: '나는 매일 아침 우유를 마신다.' },
         { en: 'The baby needs warm milk before bed.', ko: '아기는 자기 전에 따뜻한 우유가 필요하다.' },
@@ -520,11 +508,7 @@ export const vocabBatch01: VocabItem[] = [
     {
       definition: 'a clear liquid without color or taste that forms seas, rivers, and lakes',
       wordDistractors: ['Later', 'Waiter', 'Waters'],
-      definitionDistractors: [
-        'water frozen solid',
-        'a large body of salt water',
-        'a natural flow of water across land',
-      ],
+      definitionDistractors: ['the term frozen solid', 'a large body of salt the term', 'a natural flow of the term across land'],
       exampleSentences: [
         { en: 'Drink plenty of water.', ko: '물을 많이 마시세요.' },
         { en: 'The water in the lake is very clear.', ko: '호수의 물이 매우 맑다.' },
@@ -934,11 +918,7 @@ export const vocabBatch01: VocabItem[] = [
     {
       definition: 'a father or mother; one who has a child',
       wordDistractors: ['Patient', 'Parcel', 'Pendant'],
-      definitionDistractors: [
-        'a son or daughter',
-        'a person who teaches',
-        'the mother or father of one\'s parent',
-      ],
+      definitionDistractors: ['a son or daughter', 'a person who teaches', 'the mother or father of one\'s the term'],
       exampleSentences: [
         { en: 'My parents work in the city.', ko: '우리 부모님은 도시에서 일하신다.' },
         { en: 'Both parents attended the school meeting.', ko: '양쪽 부모님이 학교 회의에 참석했다.' },
@@ -1003,11 +983,7 @@ export const vocabBatch01: VocabItem[] = [
     {
       definition: 'an institution where children are educated',
       wordDistractors: ['Scoop', 'Shoot', 'Smooth'],
-      definitionDistractors: [
-        'a place where books are kept for reading',
-        'a building for higher education',
-        'a place for young children before school age',
-      ],
+      definitionDistractors: ['a place where books are kept for reading', 'a building for higher education', 'a place for young children before the term age'],
       exampleSentences: [
         { en: 'I go to school by bus.', ko: '나는 버스로 학교에 간다.' },
         { en: 'School starts at eight in the morning.', ko: '학교는 아침 8시에 시작한다.' },
