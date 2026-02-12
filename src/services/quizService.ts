@@ -684,12 +684,15 @@ export class QuizService {
     usedLower.add((item.definition ?? '').toLowerCase());
 
     const pool = this.vocabItems.filter(
-      (v) => v.id !== item.id && !!v.definition && !usedLower.has(v.definition!.toLowerCase()),
+      (v) => v.id !== item.id && !!v.definition,
     );
     for (const v of shuffle(pool, this._random)) {
       if (chosen.length >= count) break;
-      chosen.push(v.definition!);
-      usedLower.add(v.definition!.toLowerCase());
+      const def = v.definition!;
+      const defLower = def.toLowerCase();
+      if (usedLower.has(defLower)) continue;
+      chosen.push(def);
+      usedLower.add(defLower);
     }
     return chosen.slice(0, count);
   }
