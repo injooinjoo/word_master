@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import {
   View,
   Text,
   StyleSheet,
   TouchableOpacity,
   Vibration,
-  Dimensions,
   SafeAreaView,
   Animated,
+  useWindowDimensions,
 } from 'react-native';
 import type { QuizQuestion, QuizType, AnswerContext } from '../../../services/quizService';
 import { QUIZ_TYPE_LABELS } from '../../../services/quizService';
@@ -16,21 +16,67 @@ import type { AudioService } from '../../../services/audioService';
 import { getLearningTipEntries } from '../../../data/models/vocab';
 import type { LearningTipEntry } from '../../../data/models/vocab';
 import { GradeTable } from '../../../shared/constants/gradeTable';
-import { getTopPercentile } from '../../../services/rankingService';
 import { TimerBar } from '../components/TimerBar';
 
-const { width: W, height: H } = Dimensions.get('window');
-const horizontalPadding = W * 0.05;
-const topPadding = H * 0.02;
-const bottomPadding = H * 0.03;
-const shortest = Math.min(W, H);
-const gap = Math.max(8, Math.min(20, shortest * 0.03));
-const bottomSectionHeight = H * (1 / 3);
-const cellWidth = (W - horizontalPadding * 2 - gap) / 2;
-const maxCellHeight = (bottomSectionHeight - topPadding - bottomPadding - gap) / 2;
-const wordFontSize = Math.max(28, Math.min(56, shortest * 0.12));
-const choiceFontSize = Math.max(14, Math.min(20, shortest * 0.04));
-const cardRadius = Math.max(12, Math.min(24, shortest * 0.04));
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(max, Math.max(min, value));
+}
+
+interface ChoiceLayoutMetrics {
+  horizontalPadding: number;
+  topPadding: number;
+  bottomPadding: number;
+  gap: number;
+  bottomSectionHeight: number;
+  cellWidth: number;
+  cardHeight: number;
+  cardRadius: number;
+  cardPaddingVertical: number;
+  cardPaddingHorizontal: number;
+  cardShadowRadius: number;
+  choiceFontSize: number;
+  choiceLineHeight: number;
+  wordFontSize: number;
+  longPromptFontSize: number;
+}
+
+function getChoiceLayoutMetrics(width: number, height: number): ChoiceLayoutMetrics {
+  const shortest = Math.min(width, height);
+  const horizontalPadding = clamp(width * 0.05, 12, 32);
+  const topPadding = clamp(height * 0.015, 8, 18);
+  const bottomPadding = clamp(height * 0.025, 10, 22);
+  const gap = clamp(shortest * 0.028, 8, 18);
+  const bottomSectionHeight = clamp(height * 0.34, 220, 420);
+  const cellWidth = Math.max(120, (width - horizontalPadding * 2 - gap) / 2);
+  const availableGridHeight = bottomSectionHeight - topPadding - bottomPadding - gap;
+  const cardHeight = clamp(availableGridHeight / 2, 90, 210);
+  const cardRadius = clamp(shortest * 0.04, 12, 24);
+  const cardPaddingVertical = clamp(cardHeight * 0.12, 8, 18);
+  const cardPaddingHorizontal = clamp(cellWidth * 0.08, 8, 16);
+  const cardShadowRadius = clamp(gap * 0.6, 3, 8);
+  const choiceFontSize = clamp(Math.min(cellWidth * 0.13, cardHeight * 0.22), 12, 22);
+  const choiceLineHeight = Math.round(choiceFontSize * 1.3);
+  const wordFontSize = clamp(shortest * 0.12, 28, 56);
+  const longPromptFontSize = clamp(shortest * 0.07, 20, 36);
+
+  return {
+    horizontalPadding,
+    topPadding,
+    bottomPadding,
+    gap,
+    bottomSectionHeight,
+    cellWidth,
+    cardHeight,
+    cardRadius,
+    cardPaddingVertical,
+    cardPaddingHorizontal,
+    cardShadowRadius,
+    choiceFontSize,
+    choiceLineHeight,
+    wordFontSize,
+    longPromptFontSize,
+  };
+}
 
 const PRIMARY = '#1CB0F6';
 const CORRECT_GREEN = '#58CC02';
@@ -81,6 +127,11 @@ interface QuizScreenProps {
 }
 
 export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScreenProps) {
+  const { width: windowWidth, height: windowHeight } = useWindowDimensions();
+  const layout = useMemo(
+    () => getChoiceLayoutMetrics(windowWidth, windowHeight),
+    [windowWidth, windowHeight],
+  );
   const [current, setCurrent] = useState<QuizQuestion | null>(null);
   const [questionNum, setQuestionNum] = useState(0);
 
@@ -427,19 +478,28 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   const activeType = q.quizType;
   const userRating = quizService.getRating(activeType);
   const userTier = GradeTable.gradeLabel(userRating);
-  const topPct = getTopPercentile(userRating);
-  const topPctDisplay = topPct < 10 ? topPct.toFixed(1) : String(Math.round(topPct));
+  const compositeRating = quizService.compositeRating;
   const wElo = q.wordElo;
   const diffLabel = difficultyLabel(wElo);
   const diffColor = difficultyColor(wElo);
   const typeColor = TAB_COLORS[activeType];
   const typeLabel = QUIZ_TYPE_LABELS[activeType];
+  const longestChoiceLength = Math.max(...q.choices.map((choice) => choice.length));
+  const longChoiceFactor = clamp((longestChoiceLength - 18) / 22, 0, 1);
+  const choiceSectionHeight = clamp(
+    layout.bottomSectionHeight + longChoiceFactor * 80,
+    layout.bottomSectionHeight,
+    Math.min(500, windowHeight * 0.5),
+  );
+  const availableChoiceGridHeight =
+    choiceSectionHeight - layout.topPadding - layout.bottomPadding - layout.gap;
+  const choiceCardHeight = clamp(availableChoiceGridHeight / 2, layout.cardHeight, layout.cardHeight + 36);
+  const choiceTextFontSize = clamp(layout.choiceFontSize - longChoiceFactor * 2.5, 11, 22);
+  const choiceTextLineHeight = Math.round(choiceTextFontSize * 1.28);
 
   // Prompt font size: smaller for longer text (Korean meaning, English definition)
   const promptIsLong = q.prompt.length > 15;
-  const promptFontSize = promptIsLong
-    ? Math.max(20, Math.min(36, shortest * 0.07))
-    : wordFontSize;
+  const promptFontSize = promptIsLong ? layout.longPromptFontSize : layout.wordFontSize;
 
   return (
     <SafeAreaView style={styles.safe}>
@@ -460,7 +520,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       </View>
 
       {/* Info bar: quiz type + user ELO/tier (left) + word difficulty (right) */}
-      <View style={styles.infoBar}>
+      <View style={[styles.infoBar, { paddingHorizontal: layout.horizontalPadding }]}>
         <View style={styles.infoLeft}>
           <View style={[styles.typeBadge, { backgroundColor: typeColor }]}>
             <Text style={styles.typeBadgeText}>{typeLabel}</Text>
@@ -504,7 +564,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
           </View>
         </View>
         <View style={styles.infoRight}>
-          <Text style={styles.infoPct}>상위 {topPctDisplay}%</Text>
+          <Text style={styles.infoPct}>종합 {compositeRating}</Text>
           <View style={styles.diffContainer}>
             <View style={[styles.diffBadge, { backgroundColor: diffColor }]}>
               <Text style={styles.diffText}>{diffLabel}</Text>
@@ -544,12 +604,12 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
         </View>
       </View>
 
-      <View style={styles.wordSection}>
+      <View style={[styles.wordSection, { paddingHorizontal: layout.horizontalPadding }]}>
         {/* Prompt: word or meaning depending on quiz type */}
         <Text
           style={[
             styles.wordText,
-            { fontSize: promptFontSize, lineHeight: promptFontSize * 1.2 },
+            { fontSize: promptFontSize, lineHeight: Math.round(promptFontSize * 1.3) + 1 },
           ]}
           numberOfLines={3}
           adjustsFontSizeToFit
@@ -613,21 +673,41 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
         )}
       </View>
 
-      <View style={[styles.choicesSection, { height: bottomSectionHeight }]}>
-        <View style={styles.grid}>
+      <View
+        style={[
+          styles.choicesSection,
+          {
+            height: choiceSectionHeight,
+            paddingHorizontal: layout.horizontalPadding,
+            paddingTop: layout.topPadding,
+            paddingBottom: layout.bottomPadding,
+          },
+        ]}
+      >
+        <View style={[styles.grid, { gap: layout.gap }]}>
           {q.choices.map((choice, idx) => (
             <TouchableOpacity
               key={`${choice}-${idx}`}
-              style={getChoiceStyle(choice)}
+              style={[
+                getChoiceStyle(choice),
+                {
+                  width: layout.cellWidth,
+                  height: choiceCardHeight,
+                  borderRadius: layout.cardRadius,
+                  paddingVertical: layout.cardPaddingVertical,
+                  paddingHorizontal: layout.cardPaddingHorizontal,
+                  shadowRadius: layout.cardShadowRadius,
+                },
+              ]}
               onPress={() => onChoiceSelected(choice)}
               activeOpacity={0.8}
               disabled={answered}
             >
               <Text
-                style={getChoiceTextStyle(choice)}
-                numberOfLines={4}
-                adjustsFontSizeToFit
-                minimumFontScale={0.8}
+                style={[
+                  getChoiceTextStyle(choice),
+                  { fontSize: choiceTextFontSize, lineHeight: choiceTextLineHeight },
+                ]}
               >
                 {choice}
               </Text>
@@ -680,7 +760,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: horizontalPadding,
+    paddingHorizontal: 16,
     paddingVertical: 8,
     borderBottomWidth: 1,
     borderBottomColor: '#F0F0F0',
@@ -765,14 +845,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingHorizontal: horizontalPadding,
+    paddingHorizontal: 16,
   },
   wordText: {
-    fontSize: wordFontSize,
+    fontSize: 40,
     fontWeight: '700',
     textAlign: 'center',
     letterSpacing: -0.5,
-    lineHeight: wordFontSize * 1.1,
+    lineHeight: 44,
+    includeFontPadding: true,
   },
   hintContainer: {
     marginTop: 16,
@@ -794,7 +875,8 @@ const styles = StyleSheet.create({
   hintText: {
     fontSize: 14,
     color: '#555',
-    lineHeight: 20,
+    lineHeight: 22,
+    includeFontPadding: true,
   },
   feedbackBanner: {
     marginTop: 16,
@@ -825,32 +907,32 @@ const styles = StyleSheet.create({
     letterSpacing: 0.3,
   },
   choicesSection: {
-    paddingHorizontal: horizontalPadding,
-    paddingTop: topPadding,
-    paddingBottom: bottomPadding,
+    paddingHorizontal: 16,
+    paddingTop: 10,
+    paddingBottom: 12,
   },
   grid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    gap,
+    gap: 12,
   },
   choiceCard: {
-    width: cellWidth,
-    height: maxCellHeight,
-    backgroundColor: '#fff',
-    borderRadius: cardRadius,
-    paddingVertical: Math.max(10, gap * 0.8),
-    paddingHorizontal: Math.max(12, gap),
+    width: 160,
+    height: 120,
+    backgroundColor: '#FCFDFF',
+    borderRadius: 16,
+    paddingVertical: 12,
+    paddingHorizontal: 12,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 2,
-    borderColor: 'transparent',
+    borderColor: '#EAF1F8',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.08,
-    shadowRadius: gap * 1.2,
-    elevation: 2,
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.012,
+    shadowRadius: 4,
+    elevation: 0,
   },
   choiceCorrect: {
     borderColor: CORRECT_GREEN,
@@ -870,11 +952,14 @@ const styles = StyleSheet.create({
     elevation: 0,
   },
   choiceText: {
-    fontSize: choiceFontSize,
+    fontSize: 16,
     color: '#333',
     textAlign: 'center',
-    lineHeight: Math.round(choiceFontSize * 1.35),
+    lineHeight: 22,
     paddingHorizontal: 4,
+    width: '100%',
+    maxWidth: '100%',
+    flexShrink: 1,
   },
   choiceTextHighlight: {
     fontWeight: '700',

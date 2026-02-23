@@ -21,8 +21,8 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('gang', '한', 4, 'adjective',
-    ['여러', '다양한', '책', '달리다', '의사', '슬픔', '냉장고', '산', '토요일', '연필'],
+  word('gang', '무리', 4, 'noun',
+    ['개인', '한 사람', '독립체', '외톨이', '지도자', '귀족', '학자', '고객', '관중', '손님'],
     tips({
       etymology: '고대 영어에서 \'길\'이나 \'여정\'을 뜻하던 단어가 현대에 와서 \'무리\'나 \'한 패\'를 뜻하게 되었습니다.',
       visual: '똑같은 옷을 입고 몰려다니는 한 무리의 사람들을 상상해 보세요.',
@@ -40,7 +40,7 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('gap', '갈라진', 5, 'noun',
+  word('gap', '간격, 틈', 5, 'noun',
     ['연결', '다리', '완성', '밀착', '결합', '일치', '충만', '연속', '통합', '조화'],
     tips({
       etymology: '고대 노르웨이어 \'gap\'에서 유래하여 입을 크게 벌린 모양이나 갈라진 틈을 의미하게 되었습니다.',
@@ -97,7 +97,7 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('gate', '문', 2, 'verb',
+  word('gate', '문', 2, 'noun',
     ['확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다'],
     tips({
       etymology: '고대 노르웨이어 \'gata\'에서 유래하여 길이나 통로를 의미하며, 오늘날에는 출입구를 뜻하게 되었습니다.',
@@ -116,7 +116,7 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('gather', '그러모으다', 7, 'noun',
+  word('gather', '그러모으다', 7, 'verb',
     ['분산시키다', '흩뿌리다', '제외하다', '무시하다', '거절하다', '파괴하다', '분리하다', '낭비하다', '삭제하다', '방치하다'],
     tips({
       etymology: '고대 영어 \'gadrian\'에서 유래되었으며, \'함께(together)\'라는 의미의 \'good\'과 어원이 닿아 있어 여럿을 하나로 합친다는 느낌을 줍니다.',
@@ -192,7 +192,7 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('gene', '유전', 6, 'noun',
+  word('gene', '유전자', 6, 'noun',
     ['세포', '혈액', '근육', '신경', '조직', '뼈대', '장기', '피부', '호르몬', '면역'],
     tips({
       etymology: '그리스어 \'genos(탄생, 기원)\'에서 유래하여 생명의 근원을 의미합니다.',
@@ -534,7 +534,7 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('glad', '기쁜', 2, 'noun',
+  word('glad', '기쁜', 2, 'adjective',
     ['슬픈', '화난', '지루한', '피곤한', '두려운', '놀라운', '우울한', '부끄러운', '질투하는', '심각한'],
     tips({
       etymology: '고대 영어 \'glæd\'에서 유래했으며 원래는 \'빛나는\' 또는 \'매끄러운\'이라는 뜻을 가지고 있었습니다. 얼굴이 환하게 빛나는 상태를 상상해 보세요.',
@@ -572,7 +572,7 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('glare', '번쩍이는', 9, 'noun',
+  word('glare', '눈부신 빛', 9, 'noun',
     ['그늘', '어둠', '희미함', '속삭임', '부드러움', '침묵', '그림자', '평온', '안개', '습기'],
     tips({
       etymology: '중세 영어 \'glaren\'에서 유래했으며, \'밝게 빛나다\'라는 뜻을 가진 네덜란드어와 독일어 어근에서 파생되었습니다.',
@@ -610,22 +610,22 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('global', '공모양의', 4, 'adjective',
-    ['평평한', '사각형의', '직선의', '불규칙한', '삼각형의', '납작한', '뾰족한', '거친', '매끄러운', '투명한'],
+  word('global', '세계적인', 4, 'adjective',
+    ['국지적인', '지역의', '제한된', '편협한', '좁은 범위의', '국내용의', '부분적인', '개별적인', '국내의', '한정된'],
     tips({
-      etymology: '라틴어 \'globus\'에서 유래했으며, 이는 둥근 덩어리나 공을 의미합니다.',
-      visual: '지구본이나 축구공처럼 완벽하게 둥근 구체를 머릿속에 그려보세요.',
-      soundAlike: '\'글로벌\' 발음이 \'굴러볼\'과 비슷하죠? 공처럼 굴러가는 모습을 상상하세요.',
-      context: '현대에는 세계적인이라는 뜻으로 주로 쓰이지만, 기하학적으로는 구형의 물체를 묘사할 때 씁니다.',
-      synonymAntonym: '둥근 모양을 뜻하는 spherical과 평평한 모양인 flat을 대조해서 기억하세요.',
+      etymology: '라틴어 \'globus\'에서 유래해 지구 전체를 포괄한다는 뜻으로 확장되어, 오늘날에는 \'전 세계적인\' 의미로 널리 쓰입니다.',
+      visual: '여러 대륙을 선으로 연결한 세계지도 위에 동시에 뜨는 뉴스 알림을 상상해 보세요.',
+      soundAlike: '\'글로벌\'이라는 외래어 자체가 전 세계를 뜻하는 기업명·서비스명에 자주 쓰여 의미를 떠올리기 쉽습니다.',
+      context: '국가 하나가 아니라 여러 나라에 동시에 영향을 주는 경제, 환경, 기술 이슈를 설명할 때 자주 사용됩니다.',
+      synonymAntonym: 'worldwide, international과 유사하며, local, regional과는 반대되는 개념입니다.',
     }),
     {
-      definition: 'Relating to or shaped like a sphere or a ball.',
-      synonyms: ['spherical', 'orbicular', 'globular'],
-      antonyms: ['flat', 'planar', 'linear'],
+      definition: 'relating to the whole world; involving or affecting many countries',
+      synonyms: ['worldwide', 'international', 'universal'],
+      antonyms: ['local', 'regional', 'domestic'],
       exampleSentences: [
-        { en: 'The ancient map was displayed on a large global surface to represent the earth.', ko: '고대 지도는 지구를 나타내기 위해 커다란 공 모양의 표면에 표시되었습니다.' },
-        { en: 'Astronomers observed a global cluster of stars through the telescope.', ko: '천문학자들은 망원경을 통해 공 모양으로 모여 있는 성단을 관측했습니다.' },
+        { en: 'Climate change is a global issue that requires cooperation among many countries.', ko: '기후 변화는 많은 국가의 협력이 필요한 세계적인 문제다.' },
+        { en: 'The company launched a global marketing campaign in more than 30 countries.', ko: '그 회사는 30개국 이상에서 세계적인 마케팅 캠페인을 시작했다.' },
       ],
     }
   ),
@@ -667,7 +667,7 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('glow', '타다', 6, 'noun',
+  word('glow', '타다', 6, 'verb',
     ['어둠', '그림자', '냉기', '소멸', '침묵', '공허', '얼음', '먼지', '파편', '흔적'],
     tips({
       etymology: '고대 영어 \'glowan\'에서 유래했으며, 이는 뜨거운 금속이 붉게 달아올라 빛을 내는 상태를 의미합니다.',
@@ -705,7 +705,7 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('go', '가다', 2, 'noun',
+  word('go', '가다', 2, 'verb',
     ['오다', '멈추다', '머무르다', '앉다', '눕다', '기다리다', '돌아오다', '서다', '잠자다', '먹다'],
     tips({
       etymology: '고대 영어 \'gan\'에서 유래하여 한 장소에서 다른 장소로 이동하는 움직임을 나타냅니다.',
@@ -724,8 +724,8 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('goal', '결승점', 3, 'noun',
-    ['기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과'],
+  word('goal', '목표', 3, 'noun',
+    ['기회', '기준', '방법', '사물', '행동', '사건', '상태', '개념', '원인', '결과'],
     tips({
       etymology: '중세 영어 \'gol\'에서 유래하여 경계선이나 한계점을 의미하며, 오늘날 경기의 끝 지점을 뜻하게 되었습니다.',
       visual: '마라톤 선수가 땀을 흘리며 마지막 테이프를 끊고 들어오는 경기장의 마지막 라인을 상상해 보세요.',
@@ -800,7 +800,7 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('goodbye', '안녕히', 3, 'adverb',
+  word('goodbye', '안녕, 작별 인사', 3, 'interjection',
     ['점차', '반복적으로', '우선', '빠르게', '천천히', '자주', '가끔', '항상', '이미', '곧'],
     tips({
       etymology: '원래 \'God be with ye\'(신이 당신과 함께하기를)라는 문장이 축약되어 만들어진 인사말입니다.',
@@ -857,7 +857,7 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('govern', '다스리다', 6, 'noun',
+  word('govern', '다스리다', 6, 'verb',
     ['복종하다', '방치하다', '파괴하다', '무시하다', '관찰하다', '기다리다', '제조하다', '소비하다', '발견하다', '이동하다'],
     tips({
       etymology: '라틴어 gubernare에서 유래되었으며, 원래는 배의 키를 잡아 조종한다는 의미를 담고 있습니다.',
@@ -876,7 +876,7 @@ export const vocabBatch36: VocabItem[] = [
       ],
     }
   ),
-  word('grab', '붙잡다', 7, 'noun',
+  word('grab', '붙잡다', 7, 'verb',
     ['놓치다', '던지다', '기다리다', '무시하다', '밀다', '숨기다', '부수다', '빌리다', '고치다', '나누다'],
     tips({
       etymology: '중세 네덜란드어 \'grabben\'에서 유래하여 손으로 무언가를 낚아채는 동작을 의미합니다.',

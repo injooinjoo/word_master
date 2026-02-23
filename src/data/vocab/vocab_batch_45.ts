@@ -59,7 +59,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('medieval', '의', 10, 'adjective',
+  word('medieval', '중세의', 10, 'adjective',
     ['현대적인', '미래의', '고대의', '원시적인', '산업의', '디지털의', '우주적인', '도시의', '전통적인', '혁신적인'],
     tips({
       etymology: '라틴어 \'medium(중간)\'과 \'aevum(시대)\'이 합쳐져 \'중간 시대\' 즉 중세를 의미하게 되었습니다.',
@@ -97,7 +97,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('meet', '-을', 3, 'noun',
+  word('meet', '만나다', 3, 'verb',
     ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
     tips({
       etymology: '고대 영어 \'metan\'에서 유래하여 누군가와 마주하거나 한 지점에서 합쳐지는 것을 의미합니다.',
@@ -116,7 +116,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('melt', '녹다', 6, 'noun',
+  word('melt', '녹다', 6, 'verb',
     ['얼다', '굳다', '증발하다', '응고하다', '섞이다', '부서지다', '타다', '흐르다', '팽창하다', '수축하다'],
     tips({
       etymology: '고대 영어 mĕltan에서 유래하여 \'액체가 되다\'라는 근본적인 의미를 담고 있습니다.',
@@ -363,7 +363,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('microwave', '요리하다', 7, 'verb',
+  word('microwave', '전자레인지', 7, 'noun',
     ['반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다'],
     tips({
       etymology: '작은을 뜻하는 micro와 파동을 뜻하는 wave가 결합되어 전자기파로 음식을 데우는 원리를 담고 있습니다.',
@@ -572,7 +572,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('minimal', '의', 6, 'adjective',
+  word('minimal', '최소한의', 6, 'adjective',
     ['최대한의', '복잡한', '화려한', '거대한', '중요한', '명확한', '부적절한', '긍정적인', '기본적인', '대표적인'],
     tips({
       etymology: '라틴어 \'minimus\'에서 유래하여 \'가장 작은\'이라는 의미를 담고 있습니다.',
@@ -610,7 +610,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('ministry', '장관', 4, 'noun',
+  word('ministry', '부처, 부서', 4, 'noun',
     ['대통령', '의회', '법원', '시장', '도지사', '대사관', '위원회', '정당', '시민단체', '공무원'],
     tips({
       etymology: '라틴어 \'minister\'에서 유래했으며, 이는 \'봉사자\'나 \'조력자\'를 의미하여 국가를 위해 봉사하는 부처나 장관직을 뜻하게 되었습니다.',
@@ -629,7 +629,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('minor', '편의', 5, 'adjective',
+  word('minor', '소수의, 덜 중요한', 5, 'adjective',
     ['주요한', '거대한', '심각한', '결정적인', '필수적인', '우세한', '막대한', '최고의', '근본적인', '중대한'],
     tips({
       etymology: '라틴어 \'minus\'에서 유래하여 \'더 적은\' 또는 \'작은\'이라는 의미를 담고 있습니다.',
@@ -762,7 +762,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('mistake', '틀리다', 6, 'noun',
+  word('mistake', '실수', 6, 'noun',
     ['성공', '정답', '계획', '의도', '규칙', '결과', '습관', '진실', '이해', '완성'],
     tips({
       etymology: '잘못을 뜻하는 mis-와 잡다라는 뜻의 take가 합쳐져 \'잘못 잡다\' 즉, 실수하다라는 의미가 되었습니다.',
@@ -781,7 +781,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('mix', '섞다', 7, 'noun',
+  word('mix', '혼합', 7, 'noun',
     ['분리', '구분', '정렬', '배제', '단절', '고립', '추출', '여과', '정제', '파편'],
     tips({
       etymology: '라틴어 \'miscere\'에서 유래하여 여러 요소가 하나로 합쳐지는 과정을 의미합니다.',
@@ -800,7 +800,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('mobile', '움직이기', 4, 'noun',
+  word('mobile', '이동 가능한', 4, 'adjective',
     ['기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건'],
     tips({
       etymology: '라틴어 \'mobilis\'에서 유래하여 \'움직이기 쉬운\'이라는 핵심 의미를 담고 있습니다.',

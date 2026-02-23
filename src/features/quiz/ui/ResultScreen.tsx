@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import {
   View,
   Text,
@@ -10,7 +10,13 @@ import {
 } from 'react-native';
 import { GradeTable } from '../../../shared/constants/gradeTable';
 import { AdIds } from '../../../shared/constants/adIds';
-import { getTopPercentile, getRank, TOTAL_USERS } from '../../../services/rankingService';
+import {
+  fetchRanking,
+  getRankingUserId,
+  isRankingApiConfigured,
+  submitRanking,
+  type RankingSnapshot,
+} from '../../../services/rankingService';
 import type { QuizService } from '../../../services/quizService';
 import { ALL_QUIZ_TYPES, QUIZ_TYPE_LABELS } from '../../../services/quizService';
 import type { QuizType, RoundRecord } from '../../../services/quizService';
@@ -54,13 +60,56 @@ interface ResultScreenProps {
 }
 
 export function ResultScreen({ quizService, onBackToQuiz, onBackToPicker }: ResultScreenProps) {
-  const ratings = quizService.ratings;
-  const avgRating = Math.round(
-    ALL_QUIZ_TYPES.reduce((sum, t) => sum + ratings[t], 0) / ALL_QUIZ_TYPES.length,
-  );
-  const avgGrade = GradeTable.gradeLabel(avgRating);
-  const avgTopPct = getTopPercentile(avgRating);
-  const avgRank = getRank(avgRating);
+  const summary = quizService.resultSummary;
+  const avgRating = summary.compositeRating;
+  const localTier = GradeTable.gradeLabel(avgRating);
+  const userId = useMemo(() => getRankingUserId(), []);
+  const [ranking, setRanking] = useState<RankingSnapshot | null>(null);
+  const [rankingLoading, setRankingLoading] = useState(false);
+  const [rankingError, setRankingError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let mounted = true;
+    const loadRanking = async () => {
+      if (!isRankingApiConfigured()) {
+        if (!mounted) return;
+        setRanking(null);
+        setRankingError('랭킹 서버가 아직 연결되지 않았습니다.');
+        return;
+      }
+
+      setRankingLoading(true);
+      setRankingError(null);
+      try {
+        const payload = {
+          userId,
+          ratings: quizService.trackedRatings,
+          compositeRating: avgRating,
+        };
+        const latest = await submitRanking(payload);
+        if (!mounted) return;
+        setRanking(latest);
+      } catch (submitError) {
+        try {
+          const fallback = await fetchRanking({ userId, compositeRating: avgRating });
+          if (!mounted) return;
+          setRanking(fallback);
+        } catch {
+          if (!mounted) return;
+          const message =
+            submitError instanceof Error ? submitError.message : '랭킹을 불러오지 못했습니다.';
+          setRankingError(message);
+        }
+      } finally {
+        if (mounted) setRankingLoading(false);
+      }
+    };
+
+    loadRanking();
+    return () => {
+      mounted = false;
+    };
+  }, [quizService, userId, avgRating]);
 
   const roundHistory = quizService.roundHistory;
   const roundCorrect = quizService.roundCorrect;
@@ -132,13 +181,14 @@ export function ResultScreen({ quizService, onBackToQuiz, onBackToPicker }: Resu
         <View style={styles.ratingSection}>
           <Text style={styles.label}>종합 Rating</Text>
           <Text style={styles.ratingValue}>{avgRating}</Text>
-          <Text style={styles.gradeValue}>{avgGrade}</Text>
+          <Text style={styles.gradeValue}>{ranking?.tierLabel ?? localTier}</Text>
 
           {/* Per-type rating cards */}
           <View style={styles.typeCardsRow}>
             {ALL_QUIZ_TYPES.map((t) => {
-              const r = ratings[t];
-              const tier = GradeTable.gradeLabel(r);
+              const typeSummary = summary.byType[t];
+              const r = typeSummary.rating;
+              const tier = typeSummary.tierLabel;
               const color = TYPE_COLORS[t];
               return (
                 <View key={t} style={[styles.typeCard, { borderColor: color + '44' }]}>
@@ -153,19 +203,30 @@ export function ResultScreen({ quizService, onBackToQuiz, onBackToPicker }: Resu
           {/* Ranking section */}
           <View style={styles.rankingCard}>
             <Text style={styles.rankingTitle}>나의 랭킹 (종합)</Text>
-            <View style={styles.rankingRow}>
-              <View style={styles.rankingItem}>
-                <Text style={styles.rankingNumber}>
-                  {avgTopPct < 10 ? avgTopPct.toFixed(1) : Math.round(avgTopPct)}%
-                </Text>
-                <Text style={styles.rankingCaption}>상위</Text>
+            {rankingLoading ? (
+              <Text style={styles.rankingCaption}>랭킹 정보를 불러오는 중...</Text>
+            ) : ranking ? (
+              <View style={styles.rankingRow}>
+                <View style={styles.rankingItem}>
+                  <Text style={styles.rankingNumber}>
+                    {ranking.topPercentile < 10
+                      ? ranking.topPercentile.toFixed(1)
+                      : Math.round(ranking.topPercentile)}
+                    %
+                  </Text>
+                  <Text style={styles.rankingCaption}>상위</Text>
+                </View>
+                <View style={styles.rankingDivider} />
+                <View style={styles.rankingItem}>
+                  <Text style={styles.rankingNumber}>{ranking.rank.toLocaleString()}위</Text>
+                  <Text style={styles.rankingCaption}>/ {ranking.totalUsers.toLocaleString()}명</Text>
+                </View>
               </View>
-              <View style={styles.rankingDivider} />
-              <View style={styles.rankingItem}>
-                <Text style={styles.rankingNumber}>{avgRank.toLocaleString()}위</Text>
-                <Text style={styles.rankingCaption}>/ {TOTAL_USERS.toLocaleString()}명</Text>
-              </View>
-            </View>
+            ) : (
+              <Text style={styles.rankingCaption}>
+                {rankingError ?? '랭킹 데이터를 아직 받을 수 없습니다.'}
+              </Text>
+            )}
           </View>
         </View>
       </ScrollView>

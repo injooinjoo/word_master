@@ -1,4 +1,5 @@
 import type { PartOfSpeech, VocabItem } from '../data/models/vocab';
+import { GradeTable } from '../shared/constants/gradeTable';
 
 // ── Quiz types ───────────────────────────────────────────────
 
@@ -13,8 +14,28 @@ export const QUIZ_TYPE_LABELS: Record<QuizType, string> = {
   ant: '반의어',
 };
 
-/** All quiz types, used for iteration */
-export const ALL_QUIZ_TYPES: QuizType[] = ['e2k', 'k2e', 'e2e', 'syn', 'ant'];
+/** All quiz types used for adaptive questioning (antonym excluded by product decision) */
+export const TRACKED_QUIZ_TYPES = ['e2k', 'k2e', 'e2e', 'syn'] as const;
+export type TrackedQuizType = (typeof TRACKED_QUIZ_TYPES)[number];
+export const ALL_QUIZ_TYPES: TrackedQuizType[] = [...TRACKED_QUIZ_TYPES];
+
+export interface TypePerformance {
+  attempts: number;
+  correct: number;
+}
+
+export interface QuizTypeSummary {
+  rating: number;
+  tierLabel: string;
+  attempts: number;
+  correct: number;
+  accuracyPercent: number;
+}
+
+export interface QuizResultSummary {
+  byType: Record<TrackedQuizType, QuizTypeSummary>;
+  compositeRating: number;
+}
 
 // ── QuizQuestion ─────────────────────────────────────────────
 
@@ -199,9 +220,20 @@ const TEMPLATE_ANTONYM_POOLS: Record<PartOfSpeech, string[]> = {
 // ── Per-type ELO record ──────────────────────────────────────
 
 type EloByType = Record<QuizType, number>;
+type PerformanceByType = Record<QuizType, TypePerformance>;
 
 function makeElo(value: number): EloByType {
   return { e2k: value, k2e: value, e2e: value, syn: value, ant: value };
+}
+
+function makePerformance(): PerformanceByType {
+  return {
+    e2k: { attempts: 0, correct: 0 },
+    k2e: { attempts: 0, correct: 0 },
+    e2e: { attempts: 0, correct: 0 },
+    syn: { attempts: 0, correct: 0 },
+    ant: { attempts: 0, correct: 0 },
+  };
 }
 
 // ── QuizService ──────────────────────────────────────────────
@@ -215,6 +247,7 @@ export class QuizService {
   private readonly _random = () => Math.random();
   private readonly _vocabWordSet: Set<string>;
   private readonly _meaningByWord: Map<string, string>;
+  private _typePerformance: PerformanceByType = makePerformance();
 
   /** Word ELO map: vocabItem.id → ELO per quiz type */
   private readonly _wordElo: Map<string, EloByType> = new Map();
@@ -246,6 +279,43 @@ export class QuizService {
   /** Get all ratings */
   get ratings(): Readonly<EloByType> {
     return { ...this._ratings };
+  }
+
+  /** Tracked ratings used by result/ranking (e2k, k2e, e2e, syn only) */
+  get trackedRatings(): Readonly<Record<TrackedQuizType, number>> {
+    return {
+      e2k: this._ratings.e2k,
+      k2e: this._ratings.k2e,
+      e2e: this._ratings.e2e,
+      syn: this._ratings.syn,
+    };
+  }
+
+  get compositeRating(): number {
+    const sum = ALL_QUIZ_TYPES.reduce((acc, type) => acc + this._ratings[type], 0);
+    return Math.round(sum / ALL_QUIZ_TYPES.length);
+  }
+
+  get resultSummary(): QuizResultSummary {
+    const byType = ALL_QUIZ_TYPES.reduce((acc, type) => {
+      const perf = this._typePerformance[type];
+      const attempts = perf.attempts;
+      const correct = perf.correct;
+      const accuracyPercent = attempts > 0 ? Math.round((correct / attempts) * 100) : 0;
+      acc[type] = {
+        rating: this._ratings[type],
+        tierLabel: GradeTable.gradeLabel(this._ratings[type]),
+        attempts,
+        correct,
+        accuracyPercent,
+      };
+      return acc;
+    }, {} as Record<TrackedQuizType, QuizTypeSummary>);
+
+    return {
+      byType,
+      compositeRating: this.compositeRating,
+    };
   }
 
   /** Unified rating used to pick questions by difficulty regardless of type */
@@ -299,6 +369,7 @@ export class QuizService {
     this._roundTotal = 0;
     this._roundCorrect = 0;
     this._roundHistory = [];
+    this._typePerformance = makePerformance();
   }
 
   // ── Word ELO initialisation ──────────────────────────────
@@ -832,6 +903,8 @@ export class QuizService {
     // Track round progress
     this._roundTotal++;
     if (ctx.correct) this._roundCorrect++;
+    this._typePerformance[type].attempts++;
+    if (ctx.correct) this._typePerformance[type].correct++;
     if (roundRecord) {
       this._roundHistory.push({ ...roundRecord, correct: ctx.correct });
     }

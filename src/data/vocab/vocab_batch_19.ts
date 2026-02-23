@@ -149,8 +149,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['elucidate', 'elaborate', 'explicate'],
       antonyms: ['summarize', 'abbreviate', 'condense'],
       exampleSentences: [
-        { en: 'The scholar was invited to the conference to further his views on economic reform.', ko: '그 학자는 경제 개혁에 대한 자신의 견해를 더 상세히 설명하기 위해 컨퍼런스에 초대되었다.' },
-        { en: 'During the interview, the candidate began to on her vision for the company\'s future.', ko: '면접 중에 그 후보자는 회사의 미래에 대한 자신의 비전을 상세히 풀어서 설명하기 시작했다.' },
+        { en: 'The scholar was invited to the conference to expound his views on economic reform.', ko: '그 학자는 경제 개혁에 대한 자신의 견해를 상세히 설명하기 위해 컨퍼런스에 초대되었다.' },
+        { en: 'During the interview, the candidate began to expound on her vision for the company\'s future.', ko: '면접 중에 그 후보자는 회사의 미래에 대한 자신의 비전을 상세히 풀어서 설명하기 시작했다.' },
       ],
     }
   ),
@@ -339,8 +339,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['denounce', 'rail', 'berate'],
       antonyms: ['praise', 'commend', 'approve'],
       exampleSentences: [
-        { en: 'The activist continued to against the injustice of the new law during the protest.', ko: '그 활동가는 시위 도중 새 법안의 부당함에 대해 계속해서 격렬히 비난했다.' },
-        { en: 'Many citizens took to social media to against the sudden tax increase.', ko: '많은 시민들이 갑작스러운 세금 인상에 대해 격렬히 비난하기 위해 소셜 미디어를 이용했다.' },
+        { en: 'The activist continued to fulminate against the injustice of the new law during the protest.', ko: '그 활동가는 시위 도중 새 법안의 부당함에 대해 계속해서 격렬히 비난했다.' },
+        { en: 'Many citizens took to social media to fulminate against the sudden tax increase.', ko: '많은 시민들이 갑작스러운 세금 인상에 대해 격렬히 비난하기 위해 소셜 미디어를 이용했다.' },
       ],
     }
   ),

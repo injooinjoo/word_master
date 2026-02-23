@@ -40,7 +40,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('haunt', '자주가다', 8, 'noun',
+  word('haunt', '자주가다', 8, 'verb',
     ['사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보'],
     tips({
       etymology: '프랑스어 \'hanter\'에서 유래하여 특정 장소에 습관적으로 머물거나 거주한다는 의미를 담고 있습니다.',
@@ -59,22 +59,22 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('have', '가지', 2, 'noun',
-    ['관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표'],
+  word('have', '가지다', 2, 'verb',
+    ['잃다', '포기하다', '버리다', '놓치다', '없다', '비우다', '반환하다', '취소하다', '거절하다', '중단하다'],
     tips({
       etymology: '고대 영어 \'habban\'에서 유래하여 소유하거나 붙잡고 있는 상태를 나타냅니다.',
-      visual: '나무에 여러 개의 \'가지\'가 뻗어 나와 열매를 맺고 있는 풍성한 모습을 상상해 보세요.',
-      soundAlike: '\'해브\' 발음이 무언가를 \'해부\'해서 속을 들여다보듯 낱낱이 소유한 느낌과 연결해 보세요.',
-      context: '주로 종류나 가닥을 세는 단위로 쓰이며, 여러 선택지 중 하나를 지칭할 때 사용됩니다.',
-      synonymAntonym: '유형이나 종류를 뜻하는 type과 유사하며, 전체를 뜻하는 whole과는 반대되는 개념입니다.',
+      visual: '손에 책이나 열쇠를 꼭 쥐고 있어서 내 소유임이 분명한 장면을 상상해 보세요.',
+      soundAlike: '\'해브(have)\'는 무언가를 손에 \'확\' 쥐고 있다고 연상하면 기억하기 쉽습니다.',
+      context: '물건, 시간, 기회처럼 내가 소유하거나 보유하고 있는 상태를 말할 때 가장 자주 사용됩니다.',
+      synonymAntonym: 'possess와 유사하며, lose와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'A specific branch, kind, or category of something that can be counted or distinguished.',
-      synonyms: ['branch', 'sort', 'variety'],
-      antonyms: ['whole', 'entirety', 'total'],
+      definition: 'to own, hold, or possess something',
+      synonyms: ['possess', 'own', 'hold'],
+      antonyms: ['lack', 'lose', 'forfeit'],
       exampleSentences: [
-        { en: 'The researcher identified a new branch of the theory during the experiment.', ko: '연구원은 실험 도중 그 이론의 새로운 한 가지 갈래를 확인했습니다.' },
-        { en: 'There are several types of solutions available for this particular problem.', ko: '이 특정한 문제에 대해 몇 가지 종류의 해결책이 준비되어 있습니다.' },
+        { en: 'I have a new notebook for studying English.', ko: '나는 영어 공부를 위한 새 공책을 가지고 있다.' },
+        { en: 'Do you have enough time to finish this task?', ko: '이 일을 끝낼 충분한 시간이 있나요?' },
       ],
     }
   ),
@@ -97,7 +97,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('he', '그', 3, 'noun',
+  word('he', '그', 3, 'pronoun',
     ['그녀', '그들', '우리', '너', '나', '그것', '누구', '모두', '아무도', '자기'],
     tips({
       etymology: '고대 영어 \'hē\'에서 유래한 대명사로, 남성 단수 주어를 가리키는 가장 기본적인 단어입니다.',
@@ -154,7 +154,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('heal', '고치다', 6, 'noun',
+  word('heal', '고치다', 6, 'verb',
     ['파괴하다', '상처입히다', '무시하다', '거절하다', '지연시키다', '낭비하다', '공격하다', '방해하다', '오염시키다', '분리하다'],
     tips({
       etymology: '고대 영어 \'hælan\'에서 유래했으며, \'전체(whole)\'를 의미하는 단어와 어원이 같아 몸을 다시 온전하게 만든다는 뜻을 가집니다.',
@@ -192,7 +192,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('hear', '듣다', 4, 'noun',
+  word('hear', '듣다', 4, 'verb',
     ['보다', '말하다', '만지다', '냄새맡다', '맛보다', '생각하다', '걷다', '쓰다', '읽다', '달리다'],
     tips({
       etymology: '고대 영어 \'hieran\'에서 유래했으며, 귀를 통해 소리를 지각하는 감각을 의미합니다.',
@@ -249,7 +249,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('heavy', '무거운', 1, 'noun',
+  word('heavy', '무거운', 1, 'adjective',
     ['가벼운', '얇은', '빠른', '작은', '부드러운', '밝은', '약한', '좁은', '낮은', '단순한'],
     tips({
       etymology: '고대 영어 \'hefig\'에서 유래했으며, \'들기 힘들 정도로 무게가 나가는\' 상태를 의미합니다.',
@@ -363,7 +363,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('hello', '여보', 3, 'noun',
+  word('hello', '안녕하세요', 3, 'interjection',
     ['안녕', '반가워', '잘가', '고마워', '미안해', '사랑해', '축하해', '부탁해', '실례해', '조심해'],
     tips({
       etymology: '전화기 발명 초기에는 상대를 부르는 소리로 쓰였으며, 한국어의 \'여보세요\'와 같은 맥락에서 \'여보\'라는 호칭으로 확장되었습니다.',
@@ -382,7 +382,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('help', '돕다', 1, 'noun',
+  word('help', '돕다', 1, 'verb',
     ['방해', '거절', '무시', '지연', '파괴', '공격', '포기', '침묵', '실수', '고립'],
     tips({
       etymology: '고대 영어 \'helpan\'에서 유래하여 누군가에게 힘을 보태어 일을 수월하게 만든다는 핵심 의미를 가집니다.',
@@ -401,7 +401,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('hence', '그러므로', 8, 'noun',
+  word('hence', '그러므로', 8, 'adverb',
     ['그럼에도', '오히려', '게다가', '마침내', '비록', '때때로', '결코', '대신에', '아마도', '반대로'],
     tips({
       etymology: '고대 영어 \'henan\'에서 유래하여 \'이곳으로부터\'라는 뜻이 논리적 결과인 \'그러므로\'로 발전했습니다.',
@@ -420,7 +420,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('here', '여기에', 2, 'noun',
+  word('here', '여기에', 2, 'adverb',
     ['거기에', '저기에', '어디에', '언제나', '나중에', '멀리서', '가까이', '밖으로', '안으로', '위쪽으로'],
     tips({
       etymology: '고대 영어 \'her\'에서 유래되었으며 \'이 장소에\'라는 의미를 담고 있습니다.',
@@ -439,7 +439,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('heritage', '세습', 9, 'noun',
+  word('heritage', '유산, 문화유산', 9, 'noun',
     ['변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념'],
     tips({
       etymology: '라틴어 \'heres(상속인)\'에서 유래하여 조상으로부터 물려받은 유산이나 전통을 뜻합니다.',
@@ -496,7 +496,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('hide', '감추다', 5, 'noun',
+  word('hide', '감추다', 5, 'verb',
     ['가죽', '껍질', '표면', '털가죽', '외피', '장막', '보호막', '덮개', '껍데기', '피부'],
     tips({
       etymology: '고대 영어 \'hyd\'에서 유래했으며, 동물을 감싸고 있는 질긴 껍질이나 가죽을 의미합니다.',
@@ -534,7 +534,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('highway', '대도', 6, 'noun',
+  word('highway', '고속도로', 6, 'noun',
     ['골목길', '산책로', '지하도', '막다른 길', '비포장도로', '철길', '횡단보도', '육교', '정거장', '주차장'],
     tips({
       etymology: 'high(높은/주요한)와 way(길)가 합쳐져 도시를 잇는 주요 도로라는 의미가 되었습니다.',
@@ -667,7 +667,7 @@ export const vocabBatch38: VocabItem[] = [
       ],
     }
   ),
-  word('hold', '손에', 3, 'noun',
+  word('hold', '잡다', 3, 'verb',
     ['놓다', '던지다', '부수다', '숨기다', '달리다', '말하다', '듣다', '먹다', '자다', '가다'],
     tips({
       etymology: '고대 영어 \'healdan\'에서 유래하여 무언가를 지키거나 소유하고 있다는 의미를 담고 있습니다.',

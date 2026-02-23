@@ -306,7 +306,7 @@ export const vocabBatch25: VocabItem[] = [
       ],
     }
   ),
-  word('bin', '궤', 4, 'noun',
+  word('bin', '쓰레기통, 통', 4, 'noun',
     ['선반', '책장', '탁자', '상자', '서랍', '옷장', '수납장', '진열대', '바구니', '포대'],
     tips({
       etymology: '고대 영어 \'binne\'에서 유래했으며, 원래는 가축의 먹이통이나 큰 바구니를 의미했습니다.',

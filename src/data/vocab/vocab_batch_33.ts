@@ -724,7 +724,7 @@ export const vocabBatch33: VocabItem[] = [
       ],
     }
   ),
-  word('fasten', '단단히', 5, 'adverb',
+  word('fasten', '잠그다, 고정하다', 5, 'verb',
     ['헐겁게', '느슨하게', '빠르게', '천천히', '곧', '이미', '직접', '간접적으로', '즉시', '뒤늦게'],
     tips({
       etymology: '고정된 상태를 뜻하는 fast에 \'만들다\'라는 의미의 접미사 en이 붙어 단단히 고정한다는 뜻이 되었습니다.',

@@ -21,7 +21,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('regard', '주목해서', 4, 'noun',
+  word('regard', '고려, 관심', 4, 'noun',
     ['무시', '소홀', '망각', '부주의', '경멸', '냉대', '외면', '방치', '거절', '혐오'],
     tips({
       etymology: '프랑스어 \'regarder\'에서 유래했으며, \'다시(re-)\' \'지켜보다(garder)\'라는 의미가 합쳐져 누군가를 주의 깊게 살피는 마음을 뜻합니다.',
@@ -211,7 +211,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('relax', '늦추다', 4, 'noun',
+  word('relax', '늦추다', 4, 'verb',
     ['강화하다', '조이다', '서두르다', '긴장하다', '집중하다', '압박하다', '고정하다', '확대하다', '가속하다', '단단히하다'],
     tips({
       etymology: '라틴어 \'relaxare\'에서 유래했으며, \'re-\'(다시)와 \'laxus\'(느슨한)가 합쳐져 팽팽하던 것을 다시 풀어준다는 의미를 담고 있습니다.',
@@ -230,7 +230,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('release', '도와주다', 5, 'verb',
+  word('release', '놓아주다, 출시하다', 5, 'verb',
     ['구속하다', '보유하다', '억제하다', '수집하다', '감금하다', '숨기다', '차단하다', '거부하다', '고정하다', '지연시키다'],
     tips({
       etymology: '라틴어 \'relaxare\'에서 유래하여 팽팽하던 줄을 늦추어 풀어준다는 의미를 담고 있습니다.',
@@ -249,7 +249,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('relevant', '관련된', 8, 'noun',
+  word('relevant', '관련된', 8, 'adjective',
     ['독립적인', '무관한', '복잡한', '사소한', '일시적인', '추상적인', '확고한', '희박한', '거대한', '불필요한'],
     tips({
       etymology: '라틴어 relevare에서 유래했으며, 원래 \'들어 올리다\'라는 뜻에서 \'도움이 되거나 관계가 있다\'는 의미로 발전했습니다.',
@@ -306,7 +306,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('reluctant', '마음이', 9, 'noun',
+  word('reluctant', '내키지 않는', 9, 'adjective',
     ['열정적인', '적극적인', '자발적인', '확고한', '신속한', '대담한', '성실한', '명확한', '유연한', '낙관적인'],
     tips({
       etymology: '라틴어 re-(반대)와 luctari(싸우다)가 합쳐져, 어떤 일을 하기 싫어 마음속으로 저항하며 싸우는 상태를 나타냅니다.',
@@ -325,7 +325,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('rely', '믿다', 4, 'adverb',
+  word('rely', '의지하다', 4, 'verb',
     ['의심하다', '거절하다', '무시하다', '독립하다', '방해하다', '포기하다', '속이다', '비난하다', '피하다', '반대하다'],
     tips({
       etymology: '라틴어 \'religare\'에서 유래하여 \'단단히 묶다\'라는 의미가 \'의지하다\'로 발전했습니다.',
@@ -344,7 +344,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('remain', '남다', 5, 'noun',
+  word('remain', '남다', 5, 'verb',
     ['사라지다', '떠나다', '변하다', '시작하다', '파괴하다', '이동하다', '증발하다', '포기하다', '거절하다', '완성하다'],
     tips({
       etymology: '라틴어 remanere에서 유래하며, \'뒤에(re)\' \'머물다(manere)\'라는 의미가 합쳐져 어떤 일이 끝난 후에도 여전히 남아 있는 상태를 뜻합니다.',
@@ -363,7 +363,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('remark', '깨닫다', 6, 'noun',
+  word('remark', '언급하다', 6, 'verb',
     ['침묵', '무시', '경청', '비밀', '망각', '관찰', '수집', '거절', '수락', '부인'],
     tips({
       etymology: '다시(re) 표시하다(mark)라는 어원에서 유래하여 의견을 밖으로 내뱉는 것을 의미합니다.',
@@ -401,7 +401,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('remember', '기억하고', 3, 'noun',
+  word('remember', '기억하다', 3, 'verb',
     ['망각하다', '무시하다', '예측하다', '관찰하다', '조직하다', '설명하다', '비교하다', '수집하다', '창조하다', '포기하다'],
     tips({
       etymology: '라틴어 \'re-\'(다시)와 \'memor\'(기억하는)가 결합하여 마음속에 다시 불러온다는 의미를 가집니다.',
@@ -420,7 +420,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('remind', '하다', 4, 'verb',
+  word('remind', '상기시키다', 4, 'verb',
     ['결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다'],
     tips({
       etymology: '다시를 뜻하는 re-와 마음을 뜻하는 mind가 합쳐져 잊었던 것을 다시 마음속에 불러일으킨다는 의미입니다.',
@@ -439,7 +439,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('remote', '먼', 5, 'noun',
+  word('remote', '먼', 5, 'adjective',
     ['가까운', '친밀한', '직접적인', '인접한', '중심의', '복잡한', '명확한', '최근의', '내부의', '평범한'],
     tips({
       etymology: '라틴어 \'remotus\'에서 유래했으며, \'re(뒤로)\'와 \'movere(움직이다)\'가 합쳐져 멀리 떨어져 있다는 뜻이 되었습니다.',
@@ -458,7 +458,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('remove', '옮기다', 6, 'noun',
+  word('remove', '옮기다', 6, 'verb',
     ['개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화'],
     tips({
       etymology: '접두사 re-(다시/뒤로)와 move(움직이다)가 결합하여 원래 있던 자리에서 멀리 옮겨놓는다는 느낌을 줍니다.',
@@ -496,7 +496,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('repair', '하다', 4, 'verb',
+  word('repair', '수리하다', 4, 'verb',
     ['설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다'],
     tips({
       etymology: '라틴어 \'re-\'(다시)와 \'parare\'(준비하다)가 합쳐져 망가진 것을 다시 준비된 상태로 만든다는 의미입니다.',
@@ -534,7 +534,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('replace', '되돌려', 6, 'noun',
+  word('replace', '대체하다', 6, 'verb',
     ['결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회'],
     tips({
       etymology: '다시를 뜻하는 re-와 장소를 뜻하는 place가 합쳐져 원래 자리로 되돌려 놓는다는 느낌을 줍니다.',
@@ -591,7 +591,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('represent', '하다', 5, 'verb',
+  word('represent', '대표하다', 5, 'verb',
     ['시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다'],
     tips({
       etymology: 're(다시) + present(제시하다)가 합쳐져 대상을 다시 보여주거나 상징한다는 의미에서 출발했습니다.',
@@ -724,7 +724,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('resemble', '닮다', 7, 'noun',
+  word('resemble', '닮다', 7, 'verb',
     ['차이', '구별', '반대', '거절', '무시', '파괴', '창조', '이동', '소유', '기억'],
     tips({
       etymology: '라틴어 \'re-\'(강조)와 \'similis\'(비슷한)가 합쳐져 누군가와 아주 비슷하다는 느낌을 줍니다.',
@@ -743,7 +743,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('reserve', '따로', 4, 'noun',
+  word('reserve', '예비, 보유', 4, 'noun',
     ['공급', '소비', '낭비', '파괴', '혼란', '거절', '출발', '도착', '실패', '무시'],
     tips({
       etymology: '라틴어 \'re-(뒤에)\'와 \'servare(지키다)\'가 합쳐져 나중에 쓰려고 뒤에 따로 남겨둔다는 의미를 가집니다.',
@@ -838,7 +838,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('resort', '가다', 7, 'noun',
+  word('resort', '휴양지', 7, 'noun',
     ['변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념'],
     tips({
       etymology: '프랑스어 \'resortir\'에서 유래하여 \'다시(re-) 나가다(sortir)\'라는 의미에서 도움을 청하러 가는 곳을 뜻하게 되었습니다.',
@@ -933,7 +933,7 @@ export const vocabBatch55: VocabItem[] = [
       ],
     }
   ),
-  word('responsible', '책임을', 7, 'noun',
+  word('responsible', '책임이 있는', 7, 'adjective',
     ['무관심한', '게으른', '부주의한', '위험한', '불안정한', '이기적인', '무능한', '가벼운', '무모한', '소극적인'],
     tips({
       etymology: '라틴어 respondere에서 유래하여, 어떤 일에 대해 \'응답할 의무가 있는\' 상태를 의미합니다.',

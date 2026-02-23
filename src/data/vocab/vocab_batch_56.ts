@@ -135,7 +135,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('resume', '다시', 10, 'noun',
+  word('resume', '재개하다', 10, 'verb',
     ['중단', '포기', '삭제', '거절', '연기', '실패', '종료', '지연', '무시', '파괴'],
     tips({
       etymology: '라틴어 \'resumere\'에서 유래했으며, \'re(다시)\'와 \'sumere(취하다)\'가 결합되어 중단된 것을 다시 시작한다는 의미를 가집니다.',
@@ -230,7 +230,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('return', '돌아가다', 3, 'noun',
+  word('return', '돌아가다', 3, 'verb',
     ['출발', '정지', '전진', '상승', '하락', '소멸', '확장', '축소', '거부', '지연'],
     tips({
       etymology: '접두사 re-(다시)와 turn(돌다)이 결합하여 원래의 자리나 상태로 다시 돌아오는 것을 의미합니다.',
@@ -439,7 +439,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('rich', '부자인', 1, 'noun',
+  word('rich', '부자인, 풍부한', 1, 'adjective',
     ['가난한', '부족한', '평범한', '검소한', '궁핍한', '단순한', '희박한', '초라한', '메마른', '부실한'],
     tips({
       etymology: '고대 영어 \'rice\'에서 유래했으며 원래 \'강력한\' 또는 \'고귀한\'이라는 뜻을 가졌습니다.',
@@ -477,7 +477,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('ride', '타다', 4, 'noun',
+  word('ride', '타다', 4, 'verb',
     ['걷기', '비행', '정지', '추락', '보행', '수영', '등산', '달리기', '운전', '항해'],
     tips({
       etymology: '고대 영어 \'ridan\'에서 유래하여 말이나 탈것을 타고 이동하는 행위를 뜻합니다.',
@@ -515,7 +515,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('right', '올바른', 2, 'noun',
+  word('right', '권리', 2, 'noun',
     ['왼쪽', '틀린', '부정', '의무', '책임', '허가', '금지', '반대', '거절', '실수'],
     tips({
       etymology: '고대 영어 \'riht\'에서 유래하여 직선처럼 곧고 바르다는 의미를 담고 있습니다.',
@@ -610,7 +610,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('rival', '경쟁하다', 7, 'verb',
+  word('rival', '경쟁자', 7, 'noun',
     ['협력하다', '포기하다', '중단하다', '동의하다', '무시하다', '보조하다', '의존하다', '관찰하다', '수용하다', '방관하다'],
     tips({
       etymology: '라틴어 rivalis에서 유래했으며, 원래 같은 강(river)을 사용하는 이웃들이 물 권리를 두고 다투던 모습에서 유래했습니다.',
@@ -648,7 +648,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('roar', '으르렁거리다', 10, 'noun',
+  word('roar', '으르렁거리다', 10, 'verb',
     ['속삭임', '침묵', '미소', '걸음', '평화', '그림자', '흔적', '기억', '비밀', '노래'],
     tips({
       etymology: '고대 영어 \'rarian\'에서 유래했으며, 크고 깊은 소리를 내는 행위를 묘사합니다.',
@@ -667,7 +667,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('roast', '불에', 4, 'noun',
+  word('roast', '굽다', 4, 'verb',
     ['튀김', '찜', '조림', '무침', '볶음', '전골', '편육', '숙회', '나물', '찌개'],
     tips({
       etymology: '고대 프랑스어 \'rostir\'에서 유래하여 열을 가해 익히는 조리법을 의미합니다.',
@@ -762,7 +762,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('roll', '구르다', 7, 'noun',
+  word('roll', '구르다', 7, 'verb',
     ['멈추다', '미끄러지다', '떨어지다', '부서지다', '날다', '헤엄치다', '던지다', '잡다', '밀다', '당기다'],
     tips({
       etymology: '라틴어 \'rota(바퀴)\'에서 유래하여 둥근 물체가 회전하며 움직이는 동작을 나타냅니다.',
@@ -781,7 +781,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('romantic', '전기소설적인', 4, 'adjective',
+  word('romantic', '낭만적인', 4, 'adjective',
     ['모호한', '적절한', '부적절한', '긍정적인', '부정적인', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인'],
     tips({
       etymology: '중세 프랑스어 \'romanz\'에서 유래하여, 라틴어가 아닌 속어로 쓰인 기사도 이야기나 모험담의 성격을 뜻하게 되었습니다.',
@@ -857,7 +857,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('rope', '새끼', 6, 'noun',
+  word('rope', '밧줄', 6, 'noun',
     ['사슬', '철사', '그물', '막대기', '가죽', '천', '실', '고무', '금속', '나무'],
     tips({
       etymology: '고대 영어 \'rap\'에서 유래되었으며, 여러 가닥을 꼬아 만든 굵은 줄을 의미합니다.',
@@ -876,7 +876,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('rot', '썩다', 9, 'noun',
+  word('rot', '썩다', 9, 'verb',
     ['성장', '번영', '신선', '건조', '보존', '결합', '창조', '정화', '냉동', '수리'],
     tips({
       etymology: '고대 영어 \'rotian\'에서 유래했으며, 유기물이 분해되는 과정을 의미합니다.',
@@ -895,7 +895,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('rough', '거친', 7, 'noun',
+  word('rough', '거친', 7, 'adjective',
     ['부드러운', '매끄러운', '정교한', '완벽한', '차분한', '평탄한', '섬세한', '온화한', '유연한', '깔끔한'],
     tips({
       etymology: '고대 영어 ruh에서 유래되었으며, 털이 많거나 고르지 않은 표면을 묘사하던 것에서 시작되었습니다.',
@@ -914,7 +914,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('round', '둥근', 4, 'noun',
+  word('round', '둥근', 4, 'adjective',
     ['네모난', '뾰족한', '평평한', '거친', '직선의', '좁은', '길쭉한', '단단한', '부드러운', '가벼운'],
     tips({
       etymology: '라틴어 \'rotundus\'에서 유래하여 바퀴처럼 회전하거나 구르는 모양을 뜻합니다.',

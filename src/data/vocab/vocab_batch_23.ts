@@ -173,7 +173,7 @@ export const vocabBatch23: VocabItem[] = [
       ],
     }
   ),
-  word('apply', '대다', 6, 'verb',
+  word('apply', '적용하다, 신청하다', 6, 'verb',
     ['제거하다', '벗기다', '닦다', '씻다', '뿌리다', '발라넣다', '덮다', '가리다', '마르게하다', '건조시키다'],
     tips({
       etymology: '라틴어 applicāre(붙이다, 가까이 대다)에서 유래',

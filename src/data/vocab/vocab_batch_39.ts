@@ -21,7 +21,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('hostile', '반대하는', 10, 'noun',
+  word('hostile', '반대하는', 10, 'adjective',
     ['우호적인', '친절한', '협력적인', '온화한', '환영하는', '무관심한', '유연한', '낙관적인', '수동적인', '평화로운'],
     tips({
       etymology: '라틴어 hostis(적)에서 유래하여 상대방을 적으로 간주하고 공격적인 태도를 보이는 것을 의미합니다.',
@@ -40,7 +40,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('hot', '뜨거운', 1, 'noun',
+  word('hot', '뜨거운', 1, 'adjective',
     ['차가운', '미지근한', '단단한', '부드러운', '무거운', '가벼운', '어두운', '밝은', '빠른', '느린'],
     tips({
       etymology: '고대 영어 \'hat\'에서 유래되었으며, 열기가 가득한 상태를 의미합니다.',
@@ -135,8 +135,8 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('however', '아무리', 2, 'noun',
-    ['그럼에도', '하지만', '따라서', '결국', '마침내', '오히려', '게다가', '비록', '반면에', '때문에'],
+  word('however', '그러나, 하지만', 2, 'adverb',
+    ['그럼에도', '따라서', '결국', '마침내', '오히려', '게다가', '비록', '반면에', '때문에', '물론'],
     tips({
       etymology: '어떤 방법으로든지를 뜻하는 how와 강조의 ever가 결합하여 \'아무리 ~해도\'라는 양보의 의미를 만듭니다.',
       visual: '거대한 벽 앞에서 아무리 망치질을 해도 끄떡없는 장면을 상상하며 한계를 나타내는 느낌을 기억하세요.',
@@ -154,7 +154,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('hug', '꼭', 4, 'noun',
+  word('hug', '포옹', 4, 'noun',
     ['악수', '미소', '눈물', '인사', '대화', '약속', '거절', '선물', '축하', '위로'],
     tips({
       etymology: '16세기경 북유럽 언어에서 유래된 것으로 추정되며 \'소중히 여기다\' 혹은 \'위로하다\'라는 의미를 담고 있습니다.',
@@ -211,7 +211,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('humor', '유우머', 1, 'noun',
+  word('humor', '유머', 1, 'noun',
     ['슬픔', '분노', '진지함', '공포', '지루함', '침묵', '비극', '엄격', '냉소', '불안'],
     tips({
       etymology: '라틴어 \'humor\'에서 유래했으며 원래는 몸 안의 액체(체액)를 뜻했는데, 이것이 기분과 성격을 결정한다고 믿으면서 현재의 의미가 되었습니다.',
@@ -249,7 +249,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('hungry', '배고픈', 3, 'noun',
+  word('hungry', '배고픈', 3, 'adjective',
     ['피곤한', '행복한', '슬픈', '화난', '목마른', '졸린', '지루한', '놀란', '긴장한', '부끄러운'],
     tips({
       etymology: '고대 영어 \'hungrig\'에서 유래했으며, 음식을 갈망하는 신체적 상태를 나타냅니다.',
@@ -287,7 +287,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('hurry', '서두르다', 2, 'noun',
+  word('hurry', '서두르다', 2, 'verb',
     ['여유', '지체', '휴식', '평온', '정지', '침착', '신중', '지연', '망설임', '안정'],
     tips({
       etymology: '중세 영어 \'huryen\'에서 유래했으며, 원래는 \'거칠게 몰아붙이다\'라는 뜻에서 \'서두름\'으로 발전했습니다.',
@@ -325,7 +325,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('husband', '절약하다', 3, 'verb',
+  word('husband', '남편', 3, 'noun',
     ['설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다'],
     tips({
       etymology: '집(house)을 관리하는 사람(bondi)이라는 어원에서 유래하여 자원을 아껴 쓰는 행위를 뜻하게 되었습니다.',
@@ -382,7 +382,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('I', '나는', 1, 'noun',
+  word('I', '나는', 1, 'pronoun',
     ['너는', '그는', '그녀는', '우리는', '그들은', '그것은', '누구', '무엇', '어디', '언제'],
     tips({
       etymology: '고대 영어 \'ic\'에서 유래하여 독일어 \'ich\'와 같은 뿌리를 가진 1인칭 대명사입니다.',
@@ -439,7 +439,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('identical', '아주', 5, 'noun',
+  word('identical', '동일한', 5, 'adjective',
     ['다양한', '독특한', '복잡한', '거대한', '사소한', '우연한', '반대되는', '불규칙한', '인공적인', '일시적인'],
     tips({
       etymology: '라틴어 \'identicus\'에서 유래했으며, \'idem\'은 \'똑같은 것\'을 의미합니다.',
@@ -477,7 +477,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('ideology', '공리', 9, 'noun',
+  word('ideology', '이념', 9, 'noun',
     ['결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회'],
     tips({
       etymology: 'Idea(생각)와 -logy(학문/이론)가 결합되어 사회나 집단의 근본적인 생각 체계를 뜻합니다.',
@@ -496,7 +496,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('if', '만일', 3, 'noun',
+  word('if', '만일', 3, 'conjunction',
     ['상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미'],
     tips({
       etymology: '고대 영어 \'gif\'에서 유래하여 어떤 일이 일어날 가능성이나 가정을 나타내는 뿌리를 가집니다.',
@@ -534,7 +534,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('ill', '병든', 4, 'noun',
+  word('ill', '병든', 4, 'adjective',
     ['건강한', '튼튼한', '활기찬', '신선한', '깨끗한', '강력한', '빠른', '행복한', '정상적인', '유익한'],
     tips({
       etymology: '고대 노르웨이어 \'illr\'에서 유래되었으며, 원래 \'나쁜\' 또는 \'사악한\'이라는 뜻에서 점차 신체적 상태가 좋지 않음을 뜻하게 되었습니다.',
@@ -548,8 +548,8 @@ export const vocabBatch39: VocabItem[] = [
       synonyms: ['sick', 'unwell', 'ailing'],
       antonyms: ['healthy', 'well', 'robust'],
       exampleSentences: [
-        { en: 'The young child fell suddenly during the cold winter night.', ko: '그 어린 아이는 추운 겨울 밤에 갑자기 병이 났다.' },
-        { en: 'She has been for several days and cannot attend the meeting.', ko: '그녀는 며칠 동안 몸이 아파서 회의에 참석할 수 없다.' },
+        { en: 'The young child fell ill suddenly during the cold winter night.', ko: '그 어린 아이는 추운 겨울 밤에 갑자기 병이 났다.' },
+        { en: 'She has been ill for several days and cannot attend the meeting.', ko: '그녀는 며칠 동안 몸이 아파서 회의에 참석할 수 없다.' },
       ],
     }
   ),
@@ -838,7 +838,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('impress', '인상지우다', 5, 'noun',
+  word('impress', '인상을 주다', 5, 'verb',
     ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
     tips({
       etymology: '라틴어 \'im-(안으로)\'와 \'premere(누르다)\'가 합쳐져 마음속에 깊은 자국을 남긴다는 의미에서 유래했습니다.',
@@ -876,7 +876,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('in', '-속에', 2, 'noun',
+  word('in', '~속에', 2, 'preposition',
     ['밖으로', '위에', '아래에', '옆에', '사이', '뒤에', '앞에', '건너편', '주변', '너머'],
     tips({
       etymology: '고대 영어 \'inn\'에서 유래하여 공간의 내부나 경계 안쪽을 뜻하는 핵심 전치사입니다.',
@@ -890,12 +890,12 @@ export const vocabBatch39: VocabItem[] = [
       synonyms: ['inside', 'within', 'into'],
       antonyms: ['out', 'outside', 'exterior'],
       exampleSentences: [
-        { en: 'The keys are sitting right there the small wooden box.', ko: '열쇠는 바로 저기 작은 나무 상자 안에 들어 있습니다.' },
-        { en: 'She lives a quiet neighborhood located the heart of the city.', ko: '그녀는 도시 중심부에 위치한 조용한 동네에 삽니다.' },
+        { en: 'The keys are sitting right there in the small wooden box.', ko: '열쇠는 바로 저기 작은 나무 상자 안에 들어 있습니다.' },
+        { en: 'She lives in a quiet neighborhood located in the heart of the city.', ko: '그녀는 도시 중심부에 위치한 조용한 동네에 삽니다.' },
       ],
     }
   ),
-  word('incentive', '자극적인', 7, 'adjective',
+  word('incentive', '동기 부여, 인센티브', 7, 'noun',
     ['기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인', '불안정한', '효율적인', '비효율적인', '직접적인'],
     tips({
       etymology: '라틴어 \'incantare(노래를 부르다)\'에서 유래하여, 누군가를 부추기거나 열정을 불러일으키는 힘을 뜻하게 되었습니다.',
@@ -933,7 +933,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('incline', '기울이다', 10, 'noun',
+  word('incline', '기울이다', 10, 'verb',
     ['평지', '수평', '하락', '정체', '직선', '곡선', '심연', '절벽', '장벽', '균형'],
     tips({
       etymology: '라틴어 \'inclinare\'에서 유래했으며, \'in-\'(안으로/쪽으로)과 \'clinare\'(굽히다/기울이다)가 합쳐져 특정 방향으로 기우는 것을 의미합니다.',

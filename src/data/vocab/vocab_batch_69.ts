@@ -97,7 +97,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('we', '우리가', 2, 'noun',
+  word('we', '우리', 2, 'pronoun',
     ['그들', '너희들', '나', '그녀', '그것', '누구', '아무도', '모두', '당신', '그'],
     tips({
       etymology: '고대 영어 \'we\'에서 유래했으며, 나를 포함한 여러 사람을 가리키는 가장 기본적인 대명사입니다.',
@@ -173,7 +173,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('wear', '입다', 3, 'noun',
+  word('wear', '입다', 3, 'verb',
     ['상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미'],
     tips({
       etymology: '고대 영어 \'werian\'에서 유래되었으며, 몸을 덮거나 보호하기 위해 무언가를 걸치는 행위를 의미합니다.',
@@ -211,7 +211,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('weave', '짜다', 8, 'noun',
+  word('weave', '짜다', 8, 'verb',
     ['풀다', '자르다', '태우다', '던지다', '부수다', '숨기다', '빌리다', '멈추다', '고치다', '나누다'],
     tips({
       etymology: '고대 영어 \'wefan\'에서 유래했으며, 실을 교차시켜 천을 만드는 동작을 의미합니다.',
@@ -306,7 +306,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('weigh', '무게를', 4, 'noun',
+  word('weigh', '무게를 달다', 4, 'verb',
     ['가볍다', '길이', '부피', '속도', '높이', '거리', '온도', '밀도', '각도', '넓이'],
     tips({
       etymology: '고대 영어 \'wegan\'에서 유래했으며, 이는 \'운반하다\' 혹은 \'움직이다\'라는 뜻을 가지고 있어 무게를 재기 위해 물건을 들어 올리는 동작과 연결됩니다.',
@@ -325,7 +325,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('weight', '무게', 2, 'adverb',
+  word('weight', '무게', 2, 'noun',
     ['가벼움', '부피', '길이', '속도', '거리', '높이', '넓이', '밀도', '온도', '압력'],
     tips({
       etymology: '고대 영어 \'wiht\'에서 유래했으며, \'운반하다\'라는 뜻의 \'weigh\'에 명사형 접미사 \'t\'가 붙어 만들어졌습니다.',
@@ -401,7 +401,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('well', '잘', 1, 'noun',
+  word('well', '잘', 1, 'adverb',
     ['구멍', '상자', '나무', '바다', '하늘', '바닥', '동굴', '그릇', '연못', '강물'],
     tips({
       etymology: '고대 영어 \'wielle\'에서 유래했으며, 땅에서 물이 솟아오르는 근원을 의미합니다.',
@@ -477,7 +477,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('what', '무엇', 1, 'noun',
+  word('what', '무엇', 1, 'pronoun',
     ['문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인'],
     tips({
       etymology: '고대 영어 \'hwæt\'에서 유래했으며, 의문을 제기하거나 특정 대상을 지칭할 때 사용됩니다.',
@@ -534,7 +534,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('when', '언제', 2, 'noun',
+  word('when', '언제', 2, 'adverb',
     ['문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인'],
     tips({
       etymology: '고대 영어 \'hwanne\'에서 유래했으며, 의문과 시간을 나타내는 \'wh-\' 계열의 핵심 단어입니다.',
@@ -553,7 +553,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('where', '어디에', 3, 'noun',
+  word('where', '어디에', 3, 'adverb',
     ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
     tips({
       etymology: '고대 영어 \'hwær\'에서 유래했으며, \'어느 곳에\'라는 위치를 묻는 의문사로 발전했습니다.',
@@ -572,7 +572,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('whereas', 'cnj', 10, 'noun',
+  word('whereas', '반면에', 10, 'conjunction',
     ['변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념'],
     tips({
       etymology: 'where와 as가 결합된 형태로, 두 가지 사실을 나란히 놓고 비교할 때 사용됩니다.',
@@ -591,7 +591,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('whether', '-인지', 6, 'noun',
+  word('whether', '~인지', 6, 'conjunction',
     ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
     tips({
       etymology: '고대 영어 \'hwæther\'에서 유래했으며, \'둘 중 어느 쪽\'을 의미하는 의문 대명사에서 접속사로 발전했습니다.',
@@ -605,12 +605,12 @@ export const vocabBatch69: VocabItem[] = [
       synonyms: ['if', 'either', 'whichever'],
       antonyms: ['certainly', 'definitely', 'surely'],
       exampleSentences: [
-        { en: 'The committee has not yet decided to proceed with the project or cancel it.', ko: '위원회는 프로젝트를 진행할지 아니면 취소할지 아직 결정하지 않았습니다.' },
-        { en: 'Success depends on you are willing to put in the necessary effort every day.', ko: '성공은 당신이 매일 필요한 노력을 기울일 의지가 있는지에 달려 있습니다.' },
+        { en: 'The committee has not yet decided whether to proceed with the project or cancel it.', ko: '위원회는 프로젝트를 진행할지 아니면 취소할지 아직 결정하지 않았습니다.' },
+        { en: 'Success depends on whether you are willing to put in the necessary effort every day.', ko: '성공은 당신이 매일 필요한 노력을 기울일 의지가 있는지에 달려 있습니다.' },
       ],
     }
   ),
-  word('which', '어느', 7, 'noun',
+  word('which', '어느, 어떤', 7, 'pronoun',
     ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
     tips({
       etymology: '고대 영어 hwilc에서 유래되었으며, \'어떤 종류의\'라는 뜻을 가진 hwi(누구/무엇)와 lic(형태)가 결합된 형태입니다.',
@@ -667,7 +667,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('whisper', '속삭이다', 5, 'noun',
+  word('whisper', '속삭이다', 5, 'verb',
     ['고함', '소음', '연설', '침묵', '비명', '노래', '토론', '발표', '명령', '속보'],
     tips({
       etymology: '바람이 부는 소리를 흉내 낸 의성어에서 유래하여 아주 작은 목소리를 뜻하게 되었습니다.',
@@ -705,7 +705,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('white', '흰', 1, 'noun',
+  word('white', '흰', 1, 'adjective',
     ['검은색', '빨간색', '파란색', '노란색', '초록색', '보라색', '주황색', '회색', '분홍색', '갈색'],
     tips({
       etymology: '고대 영어 \'hwit\'에서 유래했으며, 빛이나 밝음을 뜻하는 인도유럽어 어근에서 파생되었습니다.',
@@ -724,7 +724,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('who', '누구', 2, 'noun',
+  word('who', '누구', 2, 'pronoun',
     ['무엇', '어디', '언제', '어떻게', '왜', '어느 것', '이것', '저것', '모두', '아무도'],
     tips({
       etymology: '고대 영어 \'hwa\'에서 유래되었으며, 의문을 나타내는 인도유럽어족의 뿌리를 공유합니다.',
@@ -762,7 +762,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('why', '왜', 3, 'noun',
+  word('why', '왜', 3, 'adverb',
     ['기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건'],
     tips({
       etymology: '고대 영어 hwi에서 유래되었으며, \'어떤 수단으로\' 혹은 \'무엇 때문에\'라는 의문을 나타내는 도구격에서 발전했습니다.',
@@ -819,7 +819,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('widespread', '널리', 5, 'noun',
+  word('widespread', '광범위한', 5, 'adjective',
     ['제한된', '희귀한', '국지적인', '일시적인', '사소한', '밀집된', '부족한', '고립된', '내부의', '편협한'],
     tips({
       etymology: '넓다는 뜻의 \'wide\'와 퍼지다라는 뜻의 \'spread\'가 결합되어 광범위하게 퍼진 상태를 나타냅니다.',
@@ -914,7 +914,7 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('win', '이기다', 3, 'noun',
+  word('win', '이기다', 3, 'verb',
     ['패배', '무승부', '시도', '포기', '참가', '훈련', '거절', '실패', '연습', '중단'],
     tips({
       etymology: '고대 영어 \'winnan\'에서 유래했으며, 원래 \'노력하다\'나 \'투쟁하다\'라는 의미에서 성취의 결과로 발전했습니다.',

@@ -21,7 +21,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('search', '찾다', 4, 'noun',
+  word('search', '찾다', 4, 'verb',
     ['절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동'],
     tips({
       etymology: '라틴어 \'circare\'에서 유래하여 \'원을 그리며 돌아다니다\'라는 의미에서 샅샅이 뒤지는 행위로 발전했습니다.',
@@ -192,7 +192,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('seek', '찾다', 7, 'noun',
+  word('seek', '찾다', 7, 'verb',
     ['포기하다', '숨기다', '거절하다', '파괴하다', '무시하다', '보호하다', '제공하다', '소유하다', '완성하다', '기다리다'],
     tips({
       etymology: '고대 영어 \'secan\'에서 유래했으며, 무언가를 향해 가거나 추적한다는 의미를 담고 있습니다.',
@@ -211,7 +211,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('seem', '-으로', 4, 'noun',
+  word('seem', '~처럼 보이다', 4, 'verb',
     ['개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화'],
     tips({
       etymology: '고대 노르드어 \'sœma\'에서 유래하여 \'적합하다\' 혹은 \'어울리다\'라는 뜻에서 \'보이다\'로 발전했습니다.',
@@ -249,7 +249,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('select', '고르다', 5, 'noun',
+  word('select', '고르다', 5, 'verb',
     ['거절하다', '무시하다', '제거하다', '포기하다', '방치하다', '혼합하다', '분리하다', '배제하다', '누락하다', '유지하다'],
     tips({
       etymology: '라틴어 \'se-\'(따로)와 \'legere\'(모으다)가 합쳐져 여러 개 중 따로 떼어 모은다는 의미에서 유래했습니다.',
@@ -287,7 +287,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('sell', '팔다', 2, 'noun',
+  word('sell', '팔다', 2, 'verb',
     ['구매하다', '빌리다', '교환하다', '기부하다', '수리하다', '전달하다', '보관하다', '전시하다', '포장하다', '배달하다'],
     tips({
       etymology: '고대 영어 sellan에서 유래했으며 본래 \'주다\' 혹은 \'양도하다\'라는 의미에서 상업적인 거래로 발전했습니다.',
@@ -382,7 +382,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('sensible', '분별있는', 6, 'noun',
+  word('sensible', '분별있는', 6, 'adjective',
     ['민감한', '감각적인', '어리석은', '무모한', '감정적인', '화려한', '단순한', '복잡한', '희미한', '강력한'],
     tips({
       etymology: '라틴어 sentire(느끼다)에서 유래하여, 상황을 제대로 느끼고 판단할 수 있다는 의미를 담고 있습니다.',
@@ -439,7 +439,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('separate', '분리된', 4, 'verb',
+  word('separate', '분리하다', 4, 'verb',
     ['결합하다', '융합하다', '연결하다', '부착하다', '혼합하다', '포함하다', '조립하다', '통합하다', '수집하다', '동반하다'],
     tips({
       etymology: '라틴어 \'separatus\'에서 유래했으며, \'se-\'(멀리)와 \'parare\'(준비하다/배치하다)가 합쳐져 따로 떼어놓는다는 의미가 되었습니다.',
@@ -515,7 +515,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('serve', '섬기다', 7, 'noun',
+  word('serve', '섬기다', 7, 'verb',
     ['무시하다', '지배하다', '파괴하다', '거절하다', '방해하다', '숨기다', '공격하다', '낭비하다', '멈추다', '비난하다'],
     tips({
       etymology: '라틴어 servire에서 유래하여 \'노예가 되다\' 혹은 \'시중을 들다\'라는 의미에서 시작되었습니다.',
@@ -534,7 +534,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('session', '개회', 4, 'noun',
+  word('session', '회기', 4, 'noun',
     ['결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회'],
     tips({
       etymology: '라틴어 \'sedere(앉다)\'에서 유래하여 사람들이 함께 모여 앉아 회의를 하는 시간을 의미합니다.',
@@ -553,7 +553,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('settle', '등받이가', 5, 'noun',
+  word('settle', '정착하다', 5, 'verb',
     ['소파', '식탁', '침대', '서랍장', '책꽂이', '화장대', '옷장', '흔들의자', '벤치', '발판'],
     tips({
       etymology: '고대 영어 \'setl\'에서 유래했으며, 앉을 수 있는 자리나 좌석을 의미하는 단어에서 발전했습니다.',
@@ -591,7 +591,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('severe', '호된', 7, 'noun',
+  word('severe', '심각한, 가혹한', 7, 'adjective',
     ['온화한', '가벼운', '유연한', '관대한', '사소한', '쾌적한', '부드러운', '희미한', '친절한', '평범한'],
     tips({
       etymology: '라틴어 severus에서 유래되었으며, 이는 \'엄격한\' 또는 \'진지한\'이라는 의미를 담고 있어 가차 없는 상태를 나타냅니다.',
@@ -610,7 +610,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('sew', '꿰매다', 4, 'noun',
+  word('sew', '꿰매다', 4, 'verb',
     ['자르다', '붙이다', '그리다', '접다', '씻다', '닦다', '던지다', '밀다', '당기다', '태우다'],
     tips({
       etymology: '고대 영어 \'siwian\'에서 유래했으며, 바늘과 실을 사용하여 무언가를 결합한다는 고유의 의미를 유지해 왔습니다.',
@@ -686,7 +686,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('shake', '흔들어', 4, 'noun',
+  word('shake', '흔들다', 4, 'verb',
     ['멈춤', '고정', '안정', '침묵', '평화', '직진', '상승', '하강', '결합', '분리'],
     tips({
       etymology: '고대 영어 \'sceacan\'에서 유래하여 \'빠르게 앞뒤로 움직이다\'라는 뜻을 가집니다.',
@@ -705,7 +705,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('shall', 'au-하겠다', 5, 'noun',
+  word('shall', '~하겠다', 5, 'verb',
     ['이미', '결코', '아마도', '자주', '거의', '때때로', '오직', '매우', '항상', '전혀'],
     tips({
       etymology: '고대 영어 \'sceal\'에서 유래하여 의무나 필연적인 미래를 나타내는 조동사로 발전했습니다.',
@@ -719,8 +719,8 @@ export const vocabBatch58: VocabItem[] = [
       synonyms: ['must', 'will', 'should'],
       antonyms: ['may', 'might', 'can'],
       exampleSentences: [
-        { en: 'The parties to this agreement agree that they observe all the rules mentioned above.', ko: '이 계약의 당사자들은 위에 언급된 모든 규칙을 준수할 것에 동의한다.' },
-        { en: 'We go to the theater tonight if the weather permits our travel.', ko: '날씨가 허락한다면 우리는 오늘 밤 영화관에 갈 것이다.' },
+        { en: 'The parties to this agreement agree that they shall observe all the rules mentioned above.', ko: '이 계약의 당사자들은 위에 언급된 모든 규칙을 준수할 것에 동의한다.' },
+        { en: 'We shall go to the theater tonight if the weather permits our travel.', ko: '날씨가 허락한다면 우리는 오늘 밤 영화관에 갈 것이다.' },
       ],
     }
   ),
@@ -819,7 +819,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('shave', '깎다', 7, 'noun',
+  word('shave', '깎다', 7, 'verb',
     ['목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계'],
     tips({
       etymology: '고대 영어 scafan에서 유래하여 표면을 긁어내거나 깎아내는 동작을 의미합니다.',
@@ -838,7 +838,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('she', '그녀는', 1, 'noun',
+  word('she', '그녀', 1, 'pronoun',
     ['그는', '그것은', '나의', '우리는', '그들의', '당신은', '누구', '무엇', '어디', '언제'],
     tips({
       etymology: '고대 영어 \'sēo\'에서 유래하여 여성 한 명을 가리키는 대명사로 정착되었습니다.',
@@ -876,7 +876,7 @@ export const vocabBatch58: VocabItem[] = [
       ],
     }
   ),
-  word('sheet', '깔천', 5, 'noun',
+  word('sheet', '시트, 침대보', 5, 'noun',
     ['베개', '이불', '침대', '커튼', '수건', '담요', '방석', '매트리스', '카펫', '천막'],
     tips({
       etymology: '고대 영어 \'sciete\'에서 유래되었으며, 이는 \'천\'이나 \'옷감\'을 의미하는 단어에서 발전했습니다.',

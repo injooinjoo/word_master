@@ -135,7 +135,7 @@ export const vocabBatch20: VocabItem[] = [
       ],
     }
   ),
-  word('Malfeasance', '직무 태만', 10, 'noun',
+  word('Malfeasance', '직무상 부정행위', 10, 'noun',
     ['정직', '성실', '충실', '부지런함', '충성', '준법', '청렴', '도덕', '책임', '공정'],
     tips({
       etymology: '라틴어 어근 mal(나쁜)과 facere(행하다)에서 유래하여 \'나쁜 짓을 행함\'이라는 의미를 가집니다.',
@@ -187,8 +187,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['disciplinarian', 'stickler', 'tyrant'],
       antonyms: ['libertine', 'easygoer', 'permissivist'],
       exampleSentences: [
-        { en: 'The army captain was a known for punishing soldiers for even the slightest uniform imperfection.', ko: '그 육군 대위는 제복의 아주 작은 결점에도 병사들을 처벌하는 것으로 알려진 군기반장이었다.' },
-        { en: 'Our music teacher was such a that she expected us to arrive ten minutes before every rehearsal.', ko: '우리 음악 선생님은 모든 리허설 10분 전에 도착하기를 요구할 정도로 엄격한 원칙주의자였다.' },
+        { en: 'The army captain was a martinet known for punishing soldiers for even the slightest uniform imperfection.', ko: '그 육군 대위는 제복의 아주 작은 결점에도 병사들을 처벌하는 것으로 알려진 군기반장이었다.' },
+        { en: 'Our music teacher was such a martinet that she expected us to arrive ten minutes before every rehearsal.', ko: '우리 음악 선생님은 모든 리허설 10분 전에 도착하기를 요구할 정도로 엄격한 원칙주의자였다.' },
       ],
     }
   ),
@@ -225,8 +225,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['dishonest', 'deceitful', 'fallacious'],
       antonyms: ['truthful', 'veracious', 'honest'],
       exampleSentences: [
-        { en: 'The newspaper was sued for publishing reports about the celebrity\'s private life.', ko: '그 신문사는 연예인의 사생활에 대한 허위 보도를 게재한 혐의로 고소당했다.' },
-        { en: 'He gave a account of his whereabouts on the night of the crime.', ko: '그는 범행 당일 밤 자신의 행방에 대해 거짓 진술을 했다.' },
+        { en: 'The newspaper was sued for publishing mendacious reports about the celebrity\'s private life.', ko: '그 신문사는 연예인의 사생활에 대한 허위 보도를 게재한 혐의로 고소당했다.' },
+        { en: 'He gave a mendacious account of his whereabouts on the night of the crime.', ko: '그는 범행 당일 밤 자신의 행방에 대해 거짓 진술을 했다.' },
       ],
     }
   ),
@@ -895,7 +895,7 @@ export const vocabBatch20: VocabItem[] = [
       ],
     }
   ),
-  word('Pedantic', '학구적인', 10, 'adjective',
+  word('Pedantic', '현학적인', 10, 'adjective',
     ['대충하는', '느슨한', '실용적인', '유연한', '관대한', '무심한', '털털한', '단순한', '허술한', '직관적인'],
     tips({
       etymology: '이탈리아어 pedante(교사)에서 유래하여, 학생을 가르치듯 사소한 규칙에 집착함을 뜻합니다.',

@@ -249,7 +249,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('spill', '엎지르다', 10, 'noun',
+  word('spill', '엎지르다', 10, 'verb',
     ['채우다', '닦다', '던지다', '숨기다', '고치다', '마시다', '섞다', '얼리다', '태우다', '자르다'],
     tips({
       etymology: '고대 영어 \'spillan\'에서 유래했으며 본래 \'죽이다\'나 \'파괴하다\'라는 뜻이었으나 시간이 흐르며 액체를 흘려 낭비한다는 의미로 변했습니다.',
@@ -268,7 +268,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('spin', '잣다', 5, 'noun',
+  word('spin', '잣다', 5, 'verb',
     ['직조하다', '바느질하다', '뜨개질하다', '자수하다', '염색하다', '다듬다', '수선하다', '재단하다', '누비다', '꼬다'],
     tips({
       etymology: '고대 영어 spinnan에서 유래하여 실을 뽑아내기 위해 회전시키는 동작을 의미합니다.',
@@ -306,7 +306,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('spit', '침을', 8, 'noun',
+  word('spit', '침을 뱉다', 8, 'verb',
     ['땀', '눈물', '콧물', '혈액', '소변', '먼지', '거품', '점액', '수분', '증기'],
     tips({
       etymology: '고대 영어 \'spittan\'에서 유래했으며, 입 밖으로 무언가를 강하게 내뱉는 소리를 흉내 낸 의성어적 성격이 강합니다.',
@@ -325,7 +325,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('spite', '악의', 9, 'adjective',
+  word('spite', '악의', 9, 'noun',
     ['친절', '관용', '자비', '호의', '존경', '협력', '평화', '우정', '배려', '칭찬'],
     tips({
       etymology: '라틴어 despectus에서 유래하여 \'내려다보다\' 혹은 \'경멸하다\'라는 의미가 담겨 있습니다.',
@@ -344,7 +344,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('splash', '튀기다', 10, 'noun',
+  word('splash', '튀기다', 10, 'verb',
     ['물방울', '파도', '강물', '소리', '바닥', '그림자', '먼지', '조각', '거품', '안개'],
     tips({
       etymology: '물이 튀는 소리를 흉내 낸 의성어에서 유래하여 액체가 흩뿌려지는 동작을 나타냅니다.',
@@ -363,7 +363,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('split', '쪼개다', 8, 'noun',
+  word('split', '쪼개다', 8, 'verb',
     ['결합', '융합', '통합', '연결', '고정', '부착', '조립', '수집', '보존', '유지'],
     tips({
       etymology: '네덜란드어 \'splitten\'에서 유래하여 무언가를 날카롭게 가르거나 나누는 동작을 의미합니다.',
@@ -382,7 +382,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('spoil', '망쳐놓다', 7, 'noun',
+  word('spoil', '망쳐놓다', 7, 'verb',
     ['보존하다', '개선하다', '수리하다', '창조하다', '정돈하다', '보호하다', '강화하다', '유지하다', '건설하다', '회복하다'],
     tips({
       etymology: '라틴어 \'spoliare\'에서 유래되었으며, 원래는 전쟁에서 전리품을 빼앗아 엉망으로 만드는 행위를 의미했습니다.',
@@ -458,7 +458,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('spread', '펴다', 5, 'noun',
+  word('spread', '펴다', 5, 'verb',
     ['상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미'],
     tips({
       etymology: '게르만어권에서 유래하여 \'흩뿌리다\' 혹은 \'확장하다\'라는 의미를 담고 있습니다.',
@@ -515,7 +515,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('stable', '안정된', 4, 'noun',
+  word('stable', '안정된', 4, 'adjective',
     ['불안정한', '일시적인', '변덕스러운', '위태로운', '유동적인', '혼란스러운', '급격한', '취약한', '불확실한', '가변적인'],
     tips({
       etymology: '라틴어 \'stare(서 있다)\'에서 유래하여, 흔들림 없이 똑바로 서 있는 상태를 의미합니다.',
@@ -572,7 +572,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('stain', '더럽히다', 6, 'noun',
+  word('stain', '더럽히다', 6, 'verb',
     ['청결', '세탁', '광택', '투명', '순수', '보호', '장식', '수리', '복구', '정화'],
     tips({
       etymology: '라틴어 \'distingere\'에서 유래하여 색을 입히거나 변색시킨다는 의미에서 \'얼룩\'으로 발전했습니다.',
@@ -629,7 +629,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('stand', '서다', 1, 'noun',
+  word('stand', '서다', 1, 'verb',
     ['의자', '테이블', '바닥', '천장', '벽면', '창문', '계단', '복도', '입구', '출구'],
     tips({
       etymology: '고대 영어 \'standan\'에서 유래하여 \'고정된 위치에 똑바로 있다\'는 의미를 가집니다.',
@@ -705,7 +705,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('starve', '굶어', 8, 'noun',
+  word('starve', '굶주리다', 8, 'verb',
     ['배부르다', '풍족하다', '성장하다', '공급하다', '저장하다', '낭비하다', '소비하다', '수확하다', '요리하다', '식사하다'],
     tips({
       etymology: '고대 영어 \'steorfan\'(죽다)에서 유래하여, 현대에는 음식 부족으로 고통받는 의미로 굳어졌습니다.',
@@ -724,7 +724,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('state', '상태', 7, 'verb',
+  word('state', '진술하다', 7, 'verb',
     ['확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다'],
     tips({
       etymology: '라틴어 \'status\'에서 유래하여 \'서 있는 모습\'이나 \'정해진 방식\'을 뜻하며, 공식적으로 의견을 세워 말한다는 의미로 확장되었습니다.',
@@ -762,7 +762,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('statistic', '통계의', 9, 'adjective',
+  word('statistic', '통계', 9, 'noun',
     ['효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한', '적절한', '부적절한', '긍정적인', '부정적인'],
     tips({
       etymology: '국가를 뜻하는 state에서 유래하여, 국가 운영에 필요한 수치 자료를 모으는 것에서 시작되었습니다.',
@@ -781,7 +781,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('statue', '조상', 5, 'noun',
+  word('statue', '동상', 5, 'noun',
     ['그림', '사진', '건물', '풍경', '지도', '도구', '기계', '의복', '음식', '가구'],
     tips({
       etymology: '라틴어 \'statuere(세우다)\'에서 유래하여 똑바로 서 있는 형상을 의미합니다.',
@@ -819,7 +819,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('stay', '머무르다', 3, 'noun',
+  word('stay', '체류', 3, 'noun',
     ['출발', '이동', '변화', '속도', '거리', '방향', '도착', '여행', '방문', '거주'],
     tips({
       etymology: '라틴어 \'stare(서 있다)\'에서 유래하여 한 장소에 멈춰 서 있는 상태를 의미합니다.',
@@ -857,7 +857,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('steal', '훔치다', 4, 'noun',
+  word('steal', '훔치다', 4, 'verb',
     ['구매하다', '빌려주다', '기부하다', '교환하다', '보상하다', '수리하다', '발견하다', '포기하다', '저축하다', '투자하다'],
     tips({
       etymology: '고대 영어 \'stelan\'에서 유래했으며, 허락 없이 남의 것을 가져가는 행위를 뜻합니다.',
@@ -914,7 +914,7 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('steep', '가파른', 10, 'noun',
+  word('steep', '가파른', 10, 'adjective',
     ['평평한', '완만한', '부드러운', '얕은', '수평의', '매끄러운', '낮은', '넓은', '희미한', '무딘'],
     tips({
       etymology: '고대 영어 \'steap\'에서 유래하여 \'높이 솟아오른\' 또는 \'돌출된\'이라는 의미를 담고 있습니다.',

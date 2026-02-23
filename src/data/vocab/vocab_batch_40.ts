@@ -59,7 +59,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('increase', '늘다', 7, 'noun',
+  word('increase', '늘다', 7, 'verb',
     ['감소', '축소', '삭감', '하락', '감소분', '줄어듦', '축소분', '감소세', '둔화', '감소율'],
     tips({
       etymology: '라틴어 \'increscere\'에서 유래하며, \'안에서(in)\' \'자라나다(crescere)\'라는 의미가 합쳐져 양이 커짐을 뜻합니다.',
@@ -78,7 +78,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('incredible', '믿을', 4, 'noun',
+  word('incredible', '믿을 수 없는', 4, 'adjective',
     ['평범한', '흔한', '의심스러운', '그럴듯한', '예상 가능한', '지루한', '단조로운', '보통의', '일반적인', '당연한'],
     tips({
       etymology: '접두사 in-(not)과 cred(believe)가 합쳐져 \'믿을 수 없을 정도로 놀라운\'이라는 의미가 되었습니다.',
@@ -97,7 +97,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('indeed', '참으로', 5, 'noun',
+  word('indeed', '참으로', 5, 'adverb',
     ['아마', '결코', '거의', '별로', '전혀', '도리어', '오히려', '실제로는', '그렇지 않고', '반대로'],
     tips({
       etymology: 'in(안에)과 deed(행위)가 합쳐져 \'실제 행동 안에\' 즉, 사실임을 강조하는 의미가 되었습니다.',
@@ -192,7 +192,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('induce', '꾀다', 10, 'noun',
+  word('induce', '꾀다', 10, 'verb',
     ['방해하다', '억제하다', '중단하다', '거절하다', '무시하다', '파괴하다', '보존하다', '고정하다', '분리하다', '축소하다'],
     tips({
       etymology: '라틴어 \'inducere\'에서 유래하며, \'안으로(in)\' \'이끌다(ducere)\'라는 의미가 합쳐져 어떤 행동을 하도록 유도한다는 뜻이 되었습니다.',
@@ -230,7 +230,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('inevitable', '피할', 8, 'noun',
+  word('inevitable', '피할 수 없는', 8, 'adjective',
     ['우연한', '선택적인', '회피가능한', '불확실한', '일시적인', '가변적인', '의도적인', '예외적인', '부수적인', '희박한'],
     tips({
       etymology: '라틴어 \'evitabilis(피할 수 있는)\'에 부정 접두사 \'in-\'이 붙어 \'피할 수 없는\'이라는 뜻이 되었습니다.',
@@ -306,7 +306,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('inflate', '하다', 8, 'verb',
+  word('inflate', '부풀리다', 8, 'verb',
     ['수축시키다', '축소하다', '압축하다', '방전하다', '감소시키다', '절약하다', '요약하다', '진정시키다', '냉각하다', '비우다'],
     tips({
       etymology: '라틴어 \'inflare\'에서 유래했으며, \'in(안으로)\'과 \'flare(불다)\'가 합쳐져 공기를 불어넣는다는 의미를 가집니다.',
@@ -344,7 +344,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('inform', '알리다', 4, 'noun',
+  word('inform', '알리다', 4, 'verb',
     ['숨기다', '무시하다', '거절하다', '망각하다', '침묵하다', '방해하다', '지연시키다', '혼란시키다', '반대하다', '삭제하다'],
     tips({
       etymology: '안(in)에 형태(form)를 잡아준다는 뜻에서 지식을 머릿속에 넣어주는 이미지를 떠올리세요.',
@@ -401,7 +401,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('inhabit', '살다', 7, 'noun',
+  word('inhabit', '살다', 7, 'verb',
     ['방해하다', '금지하다', '상속하다', '전시하다', '억제하다', '조사하다', '거절하다', '발생하다', '포함하다', '방치하다'],
     tips({
       etymology: '안을 뜻하는 \'in\'과 살다를 뜻하는 라틴어 \'habitare\'가 합쳐져 특정 장소 내부에 거주한다는 의미가 되었습니다.',
@@ -420,7 +420,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('inherent', '생태의', 9, 'adjective',
+  word('inherent', '고유의', 9, 'adjective',
     ['부적절한', '긍정적인', '부정적인', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인'],
     tips({
       etymology: '라틴어 \'inhaerere\'에서 유래했으며, \'안에(in) 달라붙어 있다(stick)\'는 의미가 합쳐져 본질적인 특성을 뜻하게 되었습니다.',
@@ -515,7 +515,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('injure', '해치다', 7, 'noun',
+  word('injure', '해치다', 7, 'verb',
     ['치료하다', '보호하다', '회복하다', '건설하다', '개선하다', '도와주다', '유지하다', '수리하다', '강화하다', '축하하다'],
     tips({
       etymology: '라틴어 \'in-\'(부정)과 \'jus\'(법/권리)가 합쳐져 타인의 권리를 침해하거나 해를 끼친다는 의미에서 유래했습니다.',
@@ -572,7 +572,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('innovate', '하다', 6, 'verb',
+  word('innovate', '혁신하다', 6, 'verb',
     ['관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다'],
     tips({
       etymology: '라틴어 \'novus(새로운)\'에서 유래하여 안에서부터 새롭게 만든다는 의미를 담고 있습니다.',
@@ -610,7 +610,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('inquire', '묻다', 8, 'noun',
+  word('inquire', '묻다', 8, 'verb',
     ['대답하다', '무시하다', '명령하다', '침묵하다', '수락하다', '거절하다', '발표하다', '기록하다', '보관하다', '수정하다'],
     tips({
       etymology: '라틴어 \'quaerere(찾다, 구하다)\'에서 유래하여 안으로(in) 정보를 찾아 들어간다는 의미를 담고 있습니다.',
@@ -648,7 +648,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('insert', '끼워넣다', 5, 'noun',
+  word('insert', '끼워넣다', 5, 'verb',
     ['삭제', '추출', '배제', '분리', '거부', '이동', '복사', '수정', '정지', '파괴'],
     tips({
       etymology: '라틴어 \'inserere\'에서 유래했으며, \'in(안으로)\'과 \'serere(결합하다)\'가 합쳐져 안으로 끼워 넣는다는 의미가 되었습니다.',
@@ -743,7 +743,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('inspire', '영감을', 5, 'noun',
+  word('inspire', '영감을 주다', 5, 'verb',
     ['억제하다', '낙담시키다', '방해하다', '무시하다', '파괴하다', '중단하다', '거절하다', '비난하다', '지루하게하다', '포기하다'],
     tips({
       etymology: '라틴어 \'inspirare\'에서 유래했으며, \'안으로(in)\' \'숨을 불어넣다(spirare)\'라는 의미를 담고 있습니다.',
@@ -819,8 +819,8 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('instead', '그', 5, 'noun',
-    ['대신에', '오히려', '결국', '비록', '게다가', '따라서', '마침내', '갑자기', '반대로', '드물게'],
+  word('instead', '대신에', 5, 'adverb',
+    ['그러나', '오히려', '결국', '비록', '게다가', '따라서', '마침내', '갑자기', '반대로', '드물게'],
     tips({
       etymology: '고대 영어 \'stede(장소)\'에서 유래하여 \'어떤 장소나 자리를 대신하여\'라는 의미를 가집니다.',
       visual: '메뉴판에서 원래 고르려던 커피 대신 주스를 가리키는 손가락을 상상해 보세요.',
@@ -857,7 +857,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('institute', '만들다', 7, 'noun',
+  word('institute', '만들다', 7, 'verb',
     ['기관', '협회', '연구소', '학원', '설립', '제도', '학회', '시설', '단체', '기구'],
     tips({
       etymology: '라틴어 \'instituere\'에서 유래하여 \'세우다\' 혹은 \'설립하다\'라는 의미를 담고 있습니다.',
@@ -876,7 +876,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('instruct', '가르치다', 4, 'noun',
+  word('instruct', '가르치다', 4, 'verb',
     ['결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회'],
     tips({
       etymology: '라틴어 \'instruere\'에서 유래하며, \'안에(in) 쌓아 올리다(struere)\'라는 뜻으로 지식을 쌓아주는 것을 의미합니다.',

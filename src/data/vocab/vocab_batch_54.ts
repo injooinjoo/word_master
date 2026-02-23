@@ -21,7 +21,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('quick', '빠른', 3, 'noun',
+  word('quick', '빠른', 3, 'adjective',
     ['느린', '무거운', '조용한', '단단한', '부드러운', '어두운', '거친', '깊은', '넓은', '높은'],
     tips({
       etymology: '고대 영어 \'cwic\'에서 유래했으며 본래 \'살아있는\'이라는 뜻이었으나, 생기 있게 움직이는 모습에서 \'빠른\'이라는 의미로 발전했습니다.',
@@ -40,7 +40,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('quit', '벗어난', 4, 'noun',
+  word('quit', '그만두다', 4, 'verb',
     ['도착', '시작', '계속', '유지', '참여', '진입', '수용', '결합', '복귀', '전진'],
     tips({
       etymology: '라틴어 quietus에서 유래하여 \'조용해지다\' 혹은 \'의무에서 자유로워지다\'라는 의미를 담고 있습니다.',
@@ -59,7 +59,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('quite', '아주', 5, 'noun',
+  word('quite', '아주', 5, 'adverb',
     ['조금', '전혀', '거의', '가끔', '자주', '항상', '절대', '아마도', '드물게', '보통'],
     tips({
       etymology: '중세 영어 \'quit\'에서 유래하여 \'완전히 자유로운\' 혹은 \'깨끗하게 끝난\' 상태를 의미하다가 현재의 강조 부사로 발전했습니다.',
@@ -135,7 +135,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('racial', '의', 6, 'adjective',
+  word('racial', '인종의', 6, 'adjective',
     ['일반적인', '예외적인', '안정적인', '불안정한', '효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한'],
     tips({
       etymology: '인종을 뜻하는 race에 형용사형 접미사 -ial이 붙어 형성된 단어입니다.',
@@ -249,7 +249,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('random', '대로의', 5, 'adjective',
+  word('random', '무작위의', 5, 'adjective',
     ['체계적인', '의도적인', '계획된', '고정된', '정기적인', '일관된', '정밀한', '연속적인', '예측가능한', '구조적인'],
     tips({
       etymology: '중세 영어 \'randoun\'에서 유래했으며, 원래 \'빠른 속도\'나 \'통제되지 않는 힘\'을 의미하던 것이 현대의 \'무작위\'라는 뜻으로 발전했습니다.',
@@ -306,7 +306,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('rapid', '빠른', 4, 'noun',
+  word('rapid', '빠른', 4, 'adjective',
     ['느린', '점진적인', '정체된', '완만한', '지연된', '거대한', '복잡한', '사소한', '영구적인', '희귀한'],
     tips({
       etymology: '라틴어 \'rapidus\'에서 유래되었으며, \'낚아채다\' 또는 \'휩쓸어가다\'라는 의미의 \'rapere\'와 연결되어 물살이 몰아치듯 빠른 속도를 나타냅니다.',
@@ -363,7 +363,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('rate', '율', 7, 'verb',
+  word('rate', '율, 비율', 7, 'noun',
     ['분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다'],
     tips({
       etymology: '라틴어 \'ratus\'에서 유래하여 사물의 가치를 계산하거나 판단한다는 의미를 담고 있습니다.',
@@ -382,7 +382,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('rather', '오히려', 4, 'noun',
+  word('rather', '오히려', 4, 'adverb',
     ['절대로', '가끔', '항상', '이미', '아직', '거의', '매우', '전혀', '함께', '따로'],
     tips({
       etymology: '고대 영어 \'hrathor\'에서 유래했으며, \'더 빨리\' 혹은 \'더 기꺼이\'라는 의미가 발전하여 현재의 대조적 의미가 되었습니다.',
@@ -458,7 +458,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('react', '반응을', 7, 'noun',
+  word('react', '반응하다', 7, 'verb',
     ['무시하다', '예측하다', '조절하다', '관찰하다', '생각하다', '기다리다', '준비하다', '이해하다', '결정하다', '포기하다'],
     tips({
       etymology: '다시를 뜻하는 re-와 행동을 뜻하는 act가 합쳐져 자극에 대해 다시 행동한다는 의미를 가집니다.',
@@ -477,7 +477,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('read', '읽다', 1, 'noun',
+  word('read', '읽다', 1, 'verb',
     ['쓰다', '말하다', '듣다', '보다', '걷다', '먹다', '자다', '달리다', '앉다', '서다'],
     tips({
       etymology: '고대 영어 rædan에서 유래하여 \'조언하다\'나 \'해석하다\'라는 의미에서 문자를 해석하는 \'읽다\'로 발전했습니다.',
@@ -496,7 +496,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('real', '실재하는', 4, 'noun',
+  word('real', '실재하는', 4, 'adjective',
     ['가상의', '인공적인', '거짓의', '상상속의', '모조의', '추상적인', '환상적인', '꾸며낸', '일시적인', '불확실한'],
     tips({
       etymology: '라틴어 \'res\'에서 유래되었으며, 이는 \'물건\'이나 \'사실\'을 의미하여 실제로 존재하는 상태를 나타냅니다.',
@@ -591,7 +591,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('recall', '되부르다', 7, 'noun',
+  word('recall', '리콜, 회수', 7, 'noun',
     ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
     tips({
       etymology: '다시를 뜻하는 re-와 부르다를 뜻하는 call이 합쳐져 물건을 다시 불러들이는 상황을 나타냅니다.',
@@ -762,7 +762,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('recover', '되찾다', 4, 'noun',
+  word('recover', '되찾다', 4, 'verb',
     ['상실', '파괴', '망각', '포기', '손실', '거절', '지연', '중단', '삭제', '방치'],
     tips({
       etymology: '라틴어 recuperare에서 유래했으며, re(다시)와 capere(잡다)가 합쳐져 잃어버린 것을 다시 손에 넣는다는 의미를 가집니다.',
@@ -838,7 +838,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('reduce', '줄이다', 6, 'noun',
+  word('reduce', '줄이다', 6, 'verb',
     ['증가시키다', '확장하다', '유지하다', '보존하다', '건설하다', '강화하다', '축적하다', '연장하다', '번영하다', '창조하다'],
     tips({
       etymology: '라틴어 \'re-(뒤로)\'와 \'ducere(이끌다)\'가 합쳐져 양이나 크기를 뒤로 물려 줄인다는 의미가 되었습니다.',
@@ -914,7 +914,7 @@ export const vocabBatch54: VocabItem[] = [
       ],
     }
   ),
-  word('reform', '하다', 5, 'verb',
+  word('reform', '개혁하다', 5, 'verb',
     ['파괴하다', '유지하다', '방치하다', '무시하다', '반복하다', '수행하다', '확인하다', '시작하다', '처리하다', '적용하다'],
     tips({
       etymology: '다시를 뜻하는 re와 형태를 뜻하는 form이 합쳐져 모양을 다시 고쳐 만든다는 어원을 가집니다.',

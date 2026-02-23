@@ -21,7 +21,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('neglect', '하다', 6, 'verb',
+  word('neglect', '소홀히 하다', 6, 'verb',
     ['돌보다', '주의하다', '보살피다', '존중하다', '수행하다', '기억하다', '보호하다', '성취하다', '집중하다', '준수하다'],
     tips({
       etymology: '라틴어 \'neg(부정)\'와 \'legere(선택하다/모으다)\'가 합쳐져 \'선택하지 않고 내버려 두다\'라는 의미에서 유래했습니다.',
@@ -78,7 +78,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('neither', '어느쪽도', 5, 'noun',
+  word('neither', '어느 쪽도 아니다', 5, 'conjunction',
     ['모두', '전부', '어느 하나', '각각', '둘 다', '어떤 것', '무엇이든', '상당수', '절반', '대부분'],
     tips({
       etymology: '고대 영어 \'nāhwæther\'에서 유래했으며, \'not\'을 뜻하는 ne와 \'either\'가 결합하여 \'둘 중 어느 것도 아니다\'라는 의미가 되었습니다.',
@@ -92,8 +92,8 @@ export const vocabBatch47: VocabItem[] = [
       synonyms: ['none', 'not either', 'no one'],
       antonyms: ['both', 'either', 'each'],
       exampleSentences: [
-        { en: 'The two candidates were interviewed, but the manager liked of them for the position.', ko: '두 명의 후보자가 면접을 보았지만, 매니저는 그들 중 어느 쪽도 직책에 마음에 들어 하지 않았다.' },
-        { en: 'One twin wanted pizza and the other wanted pasta, so they settled on a burger which was of those.', ko: '쌍둥이 중 한 명은 피자를 원하고 다른 한 명은 파스타를 원해서, 결국 둘 다 아닌 버거로 결정했다.' },
+        { en: 'The two candidates were interviewed, but the manager liked neither of them for the position.', ko: '두 명의 후보자가 면접을 보았지만, 매니저는 그들 중 어느 쪽도 직책에 마음에 들어 하지 않았다.' },
+        { en: 'One twin wanted pizza and the other wanted pasta, so they settled on a burger which was neither of those.', ko: '쌍둥이 중 한 명은 피자를 원하고 다른 한 명은 파스타를 원해서, 결국 둘 다 아닌 버거로 결정했다.' },
       ],
     }
   ),
@@ -211,7 +211,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('never', '결코', 1, 'noun',
+  word('never', '결코', 1, 'adverb',
     ['항상', '자주', '가끔', '이미', '아직', '보통', '매일', '일찍', '갑자기', '전혀'],
     tips({
       etymology: '고대 영어 \'ne\'(not)와 \'æfre\'(ever)가 합쳐져 \'단 한 번도 ~않다\'는 강력한 부정이 되었습니다.',
@@ -230,7 +230,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('nevertheless', '그럼에도', 4, 'noun',
+  word('nevertheless', '그럼에도 불구하고', 4, 'adverb',
     ['따라서', '게다가', '마침내', '오히려', '결국', '비록', '반면에', '즉시', '완전히', '특별히'],
     tips({
       etymology: 'never(결코), the(그), less(덜함)가 합쳐져 \'그것보다 결코 덜하지 않게\'라는 의미에서 유래했습니다.',
@@ -306,7 +306,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('nice', '니스', 2, 'noun',
+  word('nice', '좋은, 멋진', 2, 'adjective',
     ['광택제', '페인트', '코팅', '마감재', '붓', '목재', '가구', '수리', '장식', '도구'],
     tips({
       etymology: '프랑스의 도시 이름인 니스(Nice)에서 유래한 명칭으로, 가구의 광택을 내는 도료를 뜻합니다.',
@@ -382,7 +382,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('nobody', '아무도', 7, 'noun',
+  word('nobody', '아무도', 7, 'pronoun',
     ['누군가', '모두', '사람들', '군중', '동료', '친구', '이웃', '가족', '직원', '손님'],
     tips({
       etymology: 'no(없음)와 body(사람)가 합쳐져 \'사람이 한 명도 없음\'을 뜻합니다.',
@@ -401,7 +401,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('nod', '끄덕이다', 4, 'noun',
+  word('nod', '끄덕임', 4, 'noun',
     ['부정', '거절', '침묵', '응시', '미소', '눈물', '한숨', '외침', '속삭임', '도약'],
     tips({
       etymology: '중세 영어 \'nodden\'에서 유래하여 머리를 아래로 툭 떨어뜨리는 동작을 의미합니다.',
@@ -420,7 +420,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('noise', '소리', 5, 'verb',
+  word('noise', '소음', 5, 'noun',
     ['침묵', '평화', '고요', '정적', '음악', '노래', '대화', '속삭임', '환호', '박수'],
     tips({
       etymology: '라틴어 \'nausea(메스꺼움)\'에서 유래하여 초기에는 불쾌한 소동이나 구토를 유발하는 소음을 의미했습니다.',
@@ -458,7 +458,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('none', '아무도', 6, 'noun',
+  word('none', '아무것도 없다', 6, 'pronoun',
     ['모두', '일부', '전체', '다수', '절반', '약간', '상당수', '대부분', '누군가', '무엇'],
     tips({
       etymology: '고대 영어 \'nan\'에서 유래했으며, \'not one\' 즉 \'하나도 없음\'을 뜻하는 결합어입니다.',
@@ -477,8 +477,8 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('nonetheless', '역시', 9, 'noun',
-    ['그럼에도 불구하고', '결과적으로', '마침내', '게다가', '오히려', '반대로', '동시에', '확실히', '비록', '따라서'],
+  word('nonetheless', '그럼에도 불구하고', 9, 'adverb',
+    ['따라서', '결과적으로', '마침내', '게다가', '오히려', '반대로', '동시에', '확실히', '비록', '그리하여'],
     tips({
       etymology: 'none(전혀) + the(그만큼) + less(덜하지 않은)가 합쳐져 \'그럼에도 불구하고 여전히\'라는 의미를 형성합니다.',
       visual: '비가 쏟아지는 창밖을 보면서도 우산을 쓰고 꿋꿋이 길을 나서는 사람의 모습을 상상해 보세요.',
@@ -496,7 +496,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('nonsense', '허튼', 7, 'noun',
+  word('nonsense', '헛소리, 터무니없는 말', 7, 'noun',
     ['논리', '진실', '사실', '증거', '이성', '상식', '지혜', '정답', '현실', '체계'],
     tips({
       etymology: '부정을 뜻하는 non과 의미를 뜻하는 sense가 결합하여 \'의미가 없음\'을 나타냅니다.',
@@ -534,7 +534,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('nor', '-도', 4, 'noun',
+  word('nor', '~도 아니다', 4, 'conjunction',
     ['그리고', '하지만', '또는', '그래서', '때문에', '비록', '만약', '동안', '너머', '대신에'],
     tips({
       etymology: '고대 영어 \'nother\'에서 유래했으며, \'not\'과 \'either\'가 결합된 형태입니다.',
@@ -572,7 +572,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('normal', '표준', 5, 'noun',
+  word('normal', '정상적인', 5, 'adjective',
     ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
     tips({
       etymology: '라틴어 \'norma\'에서 유래했으며, 이는 목수가 사용하는 \'직각자\'를 의미하여 올바른 기준이나 척도를 뜻하게 되었습니다.',
@@ -591,7 +591,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('not', '아니다', 2, 'noun',
+  word('not', '아니다', 2, 'adverb',
     ['목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계'],
     tips({
       etymology: '고대 영어 \'nawiht\'에서 유래하여 \'아무것도 아님\'을 뜻하던 것이 부정의 의미로 굳어졌습니다.',
@@ -705,7 +705,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('now', '지금', 2, 'noun',
+  word('now', '지금', 2, 'adverb',
     ['과거', '미래', '어제', '내일', '나중', '이전', '역사', '기한', '순간', '영원'],
     tips({
       etymology: '고대 영어 \'nu\'에서 유래하여 아주 오래전부터 \'현재의 시점\'을 뜻하는 핵심 단어로 쓰였습니다.',
@@ -724,7 +724,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('nowadays', '오늘날에는', 4, 'noun',
+  word('nowadays', '오늘날에는', 4, 'adverb',
     ['옛날에', '미래에', '가끔씩', '영원히', '갑자기', '드물게', '동시에', '이전에', '나중에', '결코'],
     tips({
       etymology: '중세 영어 \'now adays\'에서 유래하여 \'현재의 나날들\'이라는 의미가 합쳐진 단어입니다.',
@@ -743,7 +743,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('nowhere', '아무데도', 5, 'noun',
+  word('nowhere', '아무데도', 5, 'adverb',
     ['어딘가', '모든곳', '장소', '방향', '위치', '도착지', '출발점', '중심', '주변', '공간'],
     tips({
       etymology: 'no(없음)와 where(장소)가 결합되어 어떤 장소도 존재하지 않음을 뜻합니다.',
@@ -800,7 +800,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('numerous', '다', 9, 'noun',
+  word('numerous', '수많은', 9, 'adjective',
     ['희박한', '부족한', '유일한', '희귀한', '결핍된', '고갈된', '단순한', '제한된', '사소한', '빈약한'],
     tips({
       etymology: '숫자를 뜻하는 \'number\'에 가득함을 뜻하는 접미사 \'-ous\'가 결합되어 수가 아주 많음을 나타냅니다.',
@@ -895,7 +895,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('obey', '따르다', 5, 'noun',
+  word('obey', '따르다', 5, 'verb',
     ['무시하다', '반항하다', '거절하다', '질문하다', '창조하다', '파괴하다', '기다리다', '도착하다', '설명하다', '방해하다'],
     tips({
       etymology: '라틴어 \'ob- (~을 향해)\'와 \'audire (듣다)\'가 합쳐져, 상대의 말을 주의 깊게 듣고 그대로 행한다는 의미에서 유래했습니다.',

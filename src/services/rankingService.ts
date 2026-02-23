@@ -1,67 +1,153 @@
-/**
- * Simulated ranking service.
- *
- * Assumes user ratings follow a normal distribution:
- *   mean = 1200, stddev = 400
- * and a virtual population of 10 000 users.
- *
- * The distribution is calibrated so that:
- *   - ~50% of users are in Silver–Gold range (800–1449)
- *   - Top 1% are Diamond I+ (~2130+)
- *   - Bottom 5% are below Bronze II (~540)
- *
- * In production this would be replaced by a real backend query.
- */
+import type { QuizType } from './quizService';
 
-const MEAN = 1200;
-const STDDEV = 400;
-const SIMULATED_TOTAL_USERS = 10_000;
+export type RankingTrackedType = Exclude<QuizType, 'ant'>;
 
-// ── Normal CDF approximation (Abramowitz & Stegun) ──────────
-
-/** Standard normal CDF Φ(x) — maximum error ~1.5 × 10⁻⁷ */
-function standardNormalCdf(x: number): number {
-  const a1 = 0.254829592;
-  const a2 = -0.284496736;
-  const a3 = 1.421413741;
-  const a4 = -1.453152027;
-  const a5 = 1.061405429;
-  const p = 0.3275911;
-
-  const sign = x < 0 ? -1 : 1;
-  const absX = Math.abs(x);
-  const t = 1.0 / (1.0 + p * absX);
-  const y =
-    1.0 - ((((a5 * t + a4) * t + a3) * t + a2) * t + a1) * t * Math.exp((-absX * absX) / 2);
-
-  return 0.5 * (1.0 + sign * y);
+export interface TrackedRatings {
+  e2k: number;
+  k2e: number;
+  e2e: number;
+  syn: number;
 }
 
-/** CDF of N(mean, stddev) evaluated at x */
-function normalCdf(x: number, mean: number, stddev: number): number {
-  return standardNormalCdf((x - mean) / stddev);
+export interface RankingSubmitPayload {
+  userId: string;
+  ratings: TrackedRatings;
+  compositeRating: number;
 }
 
-// ── Public API ──────────────────────────────────────────────
-
-/**
- * Returns the top-percentile for a given rating.
- * e.g. rating 1600 → roughly top 15.9% → returns 15.9
- * Lower number = better (top 1% is elite).
- */
-export function getTopPercentile(rating: number): number {
-  const cdf = normalCdf(rating, MEAN, STDDEV);
-  const topPct = (1 - cdf) * 100;
-  return Math.max(0.1, Math.min(99.9, topPct));
+export interface RankingSnapshot {
+  rank: number;
+  totalUsers: number;
+  topPercentile: number;
+  tierLabel: string;
+  updatedAt?: string;
 }
 
-/**
- * Returns the estimated rank out of `totalUsers`.
- */
-export function getRank(rating: number, totalUsers: number = SIMULATED_TOTAL_USERS): number {
-  const pct = getTopPercentile(rating) / 100;
-  return Math.max(1, Math.ceil(pct * totalUsers));
+const RANKING_ANON_USER_ID_KEY = 'wm_ranking_user_id';
+const GLOBAL_ANON_USER_ID_KEY = '__WM_RANKING_USER_ID__';
+interface StorageLike {
+  getItem: (key: string) => string | null;
+  setItem: (key: string, value: string) => void;
 }
 
-/** Convenience: total simulated user count (for display) */
-export const TOTAL_USERS = SIMULATED_TOTAL_USERS;
+interface RankingApiResponse {
+  rank?: number;
+  totalUsers?: number;
+  total_users?: number;
+  topPercentile?: number;
+  top_percentile?: number;
+  tierLabel?: string;
+  tier_label?: string;
+  updatedAt?: string;
+  updated_at?: string;
+}
+
+const RANKING_API_BASE_URL = (process.env.EXPO_PUBLIC_RANKING_API_BASE_URL ?? '').trim();
+
+function createAnonymousUserId(): string {
+  const time = Date.now().toString(36);
+  const random = Math.random().toString(36).slice(2, 10);
+  return `anon-${time}-${random}`;
+}
+
+export function getRankingUserId(): string {
+  const globalObj = globalThis as Record<string, unknown>;
+  const existing = globalObj[GLOBAL_ANON_USER_ID_KEY];
+  if (typeof existing === 'string' && existing.length > 0) {
+    return existing;
+  }
+
+  const localStorageLike = (globalObj.localStorage as StorageLike | undefined) ?? undefined;
+  if (localStorageLike) {
+    try {
+      const stored = localStorageLike.getItem(RANKING_ANON_USER_ID_KEY);
+      if (stored && stored.length > 0) {
+        globalObj[GLOBAL_ANON_USER_ID_KEY] = stored;
+        return stored;
+      }
+      const created = createAnonymousUserId();
+      localStorageLike.setItem(RANKING_ANON_USER_ID_KEY, created);
+      globalObj[GLOBAL_ANON_USER_ID_KEY] = created;
+      return created;
+    } catch {
+      // localStorage can fail in private mode or restricted environments.
+    }
+  }
+
+  const created = createAnonymousUserId();
+  globalObj[GLOBAL_ANON_USER_ID_KEY] = created;
+  return created;
+}
+
+export function isRankingApiConfigured(): boolean {
+  return RANKING_API_BASE_URL.length > 0;
+}
+
+function assertApiConfigured(): string {
+  if (!isRankingApiConfigured()) {
+    throw new Error('EXPO_PUBLIC_RANKING_API_BASE_URL is not configured.');
+  }
+  return RANKING_API_BASE_URL;
+}
+
+function clampPercentile(value: number): number {
+  if (!Number.isFinite(value)) return 99.9;
+  return Math.max(0.1, Math.min(99.9, value));
+}
+
+function normalizeSnapshot(raw: RankingApiResponse): RankingSnapshot {
+  const rank = Math.max(1, Number(raw.rank ?? 0) || 1);
+  const totalUsers = Math.max(1, Number(raw.totalUsers ?? raw.total_users ?? 0) || 1);
+  const topPercentile = clampPercentile(
+    Number(raw.topPercentile ?? raw.top_percentile ?? 99.9) || 99.9,
+  );
+  const tierLabel = String(raw.tierLabel ?? raw.tier_label ?? 'Unranked');
+  const updatedAt = raw.updatedAt ?? raw.updated_at;
+  return { rank, totalUsers, topPercentile, tierLabel, updatedAt };
+}
+
+async function parseResponse(response: Response): Promise<RankingApiResponse> {
+  let body: unknown = null;
+  try {
+    body = await response.json();
+  } catch {
+    body = null;
+  }
+
+  if (!response.ok) {
+    const detail =
+      body && typeof body === 'object' && 'message' in body
+        ? String((body as Record<string, unknown>).message)
+        : `HTTP ${response.status}`;
+    throw new Error(`Ranking API request failed: ${detail}`);
+  }
+
+  if (!body || typeof body !== 'object') {
+    throw new Error('Ranking API returned an invalid response body.');
+  }
+
+  return body as RankingApiResponse;
+}
+
+export async function submitRanking(payload: RankingSubmitPayload): Promise<RankingSnapshot> {
+  const baseUrl = assertApiConfigured();
+  const response = await fetch(`${baseUrl}/ranking/submit`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  const raw = await parseResponse(response);
+  return normalizeSnapshot(raw);
+}
+
+export async function fetchRanking(
+  params: Pick<RankingSubmitPayload, 'userId' | 'compositeRating'>,
+): Promise<RankingSnapshot> {
+  const baseUrl = assertApiConfigured();
+  const query = `userId=${encodeURIComponent(params.userId)}&compositeRating=${encodeURIComponent(
+    String(params.compositeRating),
+  )}`;
+  const response = await fetch(`${baseUrl}/ranking/summary?${query}`);
+  const raw = await parseResponse(response);
+  return normalizeSnapshot(raw);
+}

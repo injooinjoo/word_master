@@ -21,7 +21,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('shift', '옮기다', 4, 'noun',
+  word('shift', '옮기다', 4, 'verb',
     ['관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표'],
     tips({
       etymology: '고대 영어 sciftan에서 유래하여 \'나누다\' 혹은 \'정렬하다\'라는 의미에서 위치를 바꾸는 동작으로 발전했습니다.',
@@ -40,7 +40,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('shine', '빛나다', 5, 'noun',
+  word('shine', '빛나다', 5, 'verb',
     ['그림자', '어둠', '먼지', '안개', '습기', '소음', '진동', '냄새', '무게', '깊이'],
     tips({
       etymology: '고대 영어 scinan에서 유래하여 표면에서 빛이 반사되거나 스스로 빛을 내는 상태를 의미합니다.',
@@ -116,7 +116,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('shoot', '쏘다', 6, 'noun',
+  word('shoot', '쏘다', 6, 'verb',
     ['방패', '과녁', '활시위', '화살통', '방아쇠', '조준경', '탄창', '포탄', '방어', '후퇴'],
     tips({
       etymology: '고대 영어 sceotan에서 유래하여 무언가를 빠르게 내던지거나 발사한다는 핵심 의미를 가집니다.',
@@ -192,7 +192,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('should', 'aushall의', 1, 'adjective',
+  word('should', '~해야 한다', 1, 'verb',
     ['부정적인', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인', '불안정한', '효율적인'],
     tips({
       etymology: '고대 영어 sculan에서 유래하여 의무나 당연한 이치를 나타내는 조동사로 굳어졌습니다.',
@@ -206,8 +206,8 @@ export const vocabBatch59: VocabItem[] = [
       synonyms: ['ought to', 'must', 'befit'],
       antonyms: ['must not', 'prohibit', 'avoid'],
       exampleSentences: [
-        { en: 'Everyone ought to follow the safety regulations to prevent accidents.', ko: '사고를 예방하기 위해 모든 사람은 안전 규정을 준수해야 합니다.' },
-        { en: 'The package arrived at the post office yesterday, so it arrive today.', ko: '소포가 어제 우체국에 도착했으니 오늘 도착하는 것이 당연합니다.' },
+        { en: 'Everyone should follow the safety regulations to prevent accidents.', ko: '사고를 예방하기 위해 모든 사람은 안전 규정을 준수해야 합니다.' },
+        { en: 'The package arrived at the post office yesterday, so it should arrive today.', ko: '소포가 어제 우체국에 도착했으니 오늘 도착하는 것이 당연합니다.' },
       ],
     }
   ),
@@ -230,7 +230,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('shout', '외치다', 5, 'noun',
+  word('shout', '외치다', 5, 'verb',
     ['속삭임', '침묵', '미소', '걸음', '생각', '눈물', '노래', '질문', '대답', '거절'],
     tips({
       etymology: '고대 영어 scūtan에서 유래하여 강하게 내뱉는 소리를 의미하게 되었습니다.',
@@ -249,7 +249,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('show', '보이다', 2, 'noun',
+  word('show', '보이다', 2, 'verb',
     ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
     tips({
       etymology: '고대 영어 \'sceawian\'에서 유래하여 \'바라보다\' 혹은 \'전시하다\'라는 의미를 담고 있습니다.',
@@ -287,7 +287,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('shrink', '줄어들다', 8, 'noun',
+  word('shrink', '줄어들다', 8, 'verb',
     ['확장', '팽창', '성장', '증가', '연장', '부풀기', '강화', '발전', '상승', '축적'],
     tips({
       etymology: '고대 영어 \'scrincan\'에서 유래하여 건조해지거나 시들어서 쪼그라드는 모습을 나타냅니다.',
@@ -297,16 +297,16 @@ export const vocabBatch59: VocabItem[] = [
       synonymAntonym: 'contract는 수축하다는 뜻으로 비슷하고, expand는 넓어지거나 커진다는 반대 의미입니다.',
     }),
     {
-      definition: 'a clinical psychologist or psychiatrist who provides mental health treatment and therapy',
-      synonyms: ['psychiatrist', 'therapist', 'analyst'],
-      antonyms: ['patient', 'client', 'layperson'],
+      definition: 'to become smaller in size, amount, or value; to contract',
+      synonyms: ['contract', 'decrease', 'diminish'],
+      antonyms: ['expand', 'grow', 'increase'],
       exampleSentences: [
-        { en: 'After struggling with anxiety for months, he finally decided to see a professional shrink.', ko: '몇 달 동안 불안 증세로 고생한 끝에 그는 마침내 전문 정신과 의사를 찾아가기로 결심했다.' },
-        { en: 'The movie features a scene where the protagonist lies on a couch talking to her shrink.', ko: '그 영화에는 주인공이 소파에 누워 자신의 상담사에게 이야기하는 장면이 나온다.' },
+        { en: 'My wool sweater shrank after I washed it in hot water.', ko: '내 울 스웨터는 뜨거운 물에 세탁한 뒤 줄어들었다.' },
+        { en: 'The local market began to shrink during the long recession.', ko: '긴 경기 침체 동안 지역 시장 규모가 줄어들기 시작했다.' },
       ],
     }
   ),
-  word('shut', '닫다', 7, 'noun',
+  word('shut', '닫다', 7, 'verb',
     ['열다', '부수다', '고치다', '만들다', '던지다', '숨기다', '찾다', '기다리다', '움직이다', '멈추다'],
     tips({
       etymology: '고대 영어 \'scyttan\'에서 유래하여 빗장을 걸어 잠그거나 통로를 막는다는 의미에서 시작되었습니다.',
@@ -344,7 +344,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('sick', '병난', 1, 'noun',
+  word('sick', '병든', 1, 'adjective',
     ['건강한', '행복한', '빠른', '무거운', '조용한', '깨끗한', '부유한', '용감한', '친절한', '똑똑한'],
     tips({
       etymology: '고대 영어 \'seoc\'에서 유래했으며, 몸이 좋지 않거나 기운이 없는 상태를 뜻합니다.',
@@ -496,7 +496,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('silly', '바보', 6, 'adverb',
+  word('silly', '어리석은', 6, 'adjective',
     ['진지한', '엄격한', '현명한', '논리적인', '복잡한', '우울한', '정중한', '용감한', '신중한', '공식적인'],
     tips({
       etymology: '고대 영어 \'sælig\'에서 유래했으며 원래는 \'행복한\'이나 \'축복받은\'이라는 긍정적인 뜻이었으나 시간이 흐르며 \'순진한\'을 거쳐 현재의 \'어리석은\'이라는 뜻으로 변했습니다.',
@@ -515,7 +515,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('silver', '은', 7, 'adjective',
+  word('silver', '은', 7, 'noun',
     ['금색의', '동색의', '투명한', '불투명한', '거친', '매끄러운', '화려한', '수수한', '단단한', '부드러운'],
     tips({
       etymology: '고대 영어 \'seolfor\'에서 유래했으며, 수천 년 동안 귀금속과 그 색상을 나타내는 형용사로 쓰였습니다.',
@@ -591,7 +591,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('simultaneous', '동시에', 10, 'noun',
+  word('simultaneous', '동시의', 10, 'adjective',
     ['순차적인', '점진적인', '간헐적인', '일시적인', '영구적인', '우연한', '의도적인', '복잡한', '단순한', '신속한'],
     tips({
       etymology: '라틴어 \'simul\'에서 유래했으며, 이는 \'함께\' 또는 \'동시에\'라는 뜻을 담고 있습니다.',
@@ -610,7 +610,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('sin', '사인', 6, 'noun',
+  word('sin', '죄', 6, 'noun',
     ['축복', '미덕', '정의', '친절', '정직', '용서', '은혜', '순결', '도덕', '희생'],
     tips({
       etymology: '고대 영어 \'synn\'에서 유래했으며, 도덕적 기준이나 신의 법을 어기는 행위를 뜻합니다.',
@@ -629,7 +629,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('since', '-이래', 7, 'noun',
+  word('since', '~이래', 7, 'preposition',
     ['이후', '때문에', '동안', '이전', '결국', '비록', '만약', '대신에', '오히려', '따라서'],
     tips({
       etymology: '고대 영어 \'siththan\'에서 유래되었으며, \'그때 이후로\'라는 시간적 흐름을 담고 있습니다.',
@@ -643,8 +643,8 @@ export const vocabBatch59: VocabItem[] = [
       synonyms: ['after', 'subsequently', 'thereafter'],
       antonyms: ['before', 'previously', 'until'],
       exampleSentences: [
-        { en: 'They have lived in this small village ever the end of the great war.', ko: '그들은 대전쟁이 끝난 이래로 이 작은 마을에서 살아왔다.' },
-        { en: 'The company has seen significant growth the new CEO took over the leadership.', ko: '그 회사는 새로운 CEO가 경영권을 승계한 이래로 상당한 성장을 보였다.' },
+        { en: 'They have lived in this small village ever since the end of the great war.', ko: '그들은 대전쟁이 끝난 이래로 이 작은 마을에서 살아왔다.' },
+        { en: 'The company has seen significant growth since the new CEO took over the leadership.', ko: '그 회사는 새로운 CEO가 경영권을 승계한 이래로 상당한 성장을 보였다.' },
       ],
     }
   ),
@@ -686,7 +686,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('sink', '가라앉다', 5, 'noun',
+  word('sink', '가라앉다', 5, 'verb',
     ['부유하다', '상승하다', '솟구치다', '떠오르다', '팽창하다', '비상하다', '날아가다', '도약하다', '분출하다', '솟아나다'],
     tips({
       etymology: '고대 영어 \'sincan\'에서 유래했으며, 물속으로 깊이 내려가는 동작을 의미합니다.',
@@ -724,7 +724,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('sit', '앉다', 2, 'noun',
+  word('sit', '앉다', 2, 'verb',
     ['서다', '걷다', '뛰다', '눕다', '날다', '먹다', '자다', '읽다', '쓰다', '보다'],
     tips({
       etymology: '인도유럽어족의 \'sed-\'에서 유래하여 \'앉다\'라는 기본 동작을 뜻하게 되었습니다.',
@@ -762,7 +762,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('situation', '장소', 7, 'noun',
+  word('situation', '상황', 7, 'noun',
     ['결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회'],
     tips({
       etymology: '라틴어 \'situs\'에서 유래하여 \'놓여 있는 자리\'나 \'위치\'를 뜻하며, 현재는 처해 있는 형편을 의미합니다.',
@@ -781,7 +781,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('size', '크기', 3, 'verb',
+  word('size', '크기', 3, 'noun',
     ['확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다'],
     tips({
       etymology: '라틴어 \'assisa\'에서 유래하여 물건의 치수나 분량을 정하는 행위를 뜻하게 되었습니다.',
@@ -838,7 +838,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('skip', '도약', 5, 'noun',
+  word('skip', '건너뛰다', 5, 'verb',
     ['정체', '하락', '후퇴', '고정', '반복', '지연', '축소', '소멸', '침체', '거부'],
     tips({
       etymology: '가볍게 뛰는 동작을 나타내는 중세 영어 \'skippen\'에서 유래하여 물리적 점프나 단계의 건너뜀을 의미하게 되었습니다.',
@@ -857,7 +857,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('skirt', '스커어트', 2, 'noun',
+  word('skirt', '스커트', 2, 'noun',
     ['바지', '셔츠', '모자', '장갑', '양말', '코트', '넥타이', '안경', '구두', '벨트'],
     tips({
       etymology: '고대 노르웨이 어원인 \'skyrta\'에서 유래했으며, 원래는 짧은 셔츠나 겉옷을 의미했습니다.',
@@ -914,7 +914,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('slave', '일하다', 6, 'verb',
+  word('slave', '노예', 6, 'noun',
     ['반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다'],
     tips({
       etymology: '라틴어 \'slavus\'에서 유래하여 본래 노예를 뜻하지만, 동사로 쓰이면 노예처럼 몹시 힘들게 일한다는 의미로 확장됩니다.',
@@ -933,7 +933,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('sleep', '잠자다', 1, 'noun',
+  word('sleep', '잠자다', 1, 'verb',
     ['식사', '운동', '공부', '대화', '여행', '노동', '독서', '운전', '쇼핑', '청소'],
     tips({
       etymology: '고대 영어 \'slæp\'에서 유래했으며, 신체 활동이 멈춘 휴식 상태를 의미합니다.',

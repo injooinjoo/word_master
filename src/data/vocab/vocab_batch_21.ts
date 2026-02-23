@@ -59,7 +59,7 @@ export const vocabBatch21: VocabItem[] = [
       ],
     }
   ),
-  word('aboard', '배', 6, 'preposition',
+  word('aboard', '(배·비행기에) 탑승하여', 6, 'preposition',
     ['~위에', '~안에', '~를 타고', '~에 올라', '~로', '~을 따라', '~쪽으로', '~까지', '~에서 내려', '~밖에'],
     tips({
       etymology: 'aboard의 접두/어근/접미를 확인하며 "배" 의미와 연결해 암기하자.',

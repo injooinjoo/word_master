@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch48: VocabItem[] = [
-  word('oblige', '-하게하다', 8, 'verb',
+  word('oblige', '~하게 하다', 8, 'verb',
     ['유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다'],
     tips({
       etymology: '라틴어 \'obligare\'에서 유래되었으며, \'ob(~에 대하여)\'와 \'ligare(묶다)\'가 합쳐져 누군가를 의무로 묶어두는 느낌을 줍니다.',
@@ -40,7 +40,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('obsess', '늘러붙다', 9, 'noun',
+  word('obsess', '집착하게 하다', 9, 'verb',
     ['무시하다', '포기하다', '분산시키다', '망각하다', '방관하다', '조절하다', '해방되다', '무관심하다', '단념하다', '이해하다'],
     tips({
       etymology: '라틴어 \'obsidere\'에서 유래했으며 \'앞에 앉아 있다\'는 뜻이 \'마음을 점령하다\'로 발전했습니다.',
@@ -73,8 +73,8 @@ export const vocabBatch48: VocabItem[] = [
       synonyms: ['acquire', 'procure', 'attain'],
       antonyms: ['forfeit', 'relinquish', 'surrender'],
       exampleSentences: [
-        { en: 'The researcher managed to collect enough data to a valid result for the study.', ko: '연구원은 연구를 위한 유효한 결과를 얻기에 충분한 데이터를 수집해냈습니다.' },
-        { en: 'You must present a valid identification card to a security clearance for the building.', ko: '건물 출입 허가를 받으려면 유효한 신분증을 제시해야 합니다.' },
+        { en: 'The researcher managed to obtain enough data to produce a valid result for the study.', ko: '연구원은 연구를 위한 유효한 결과를 얻기에 충분한 데이터를 수집해냈습니다.' },
+        { en: 'You must present a valid identification card to obtain security clearance for the building.', ko: '건물 출입 허가를 받으려면 유효한 신분증을 제시해야 합니다.' },
       ],
     }
   ),
@@ -116,7 +116,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('occupation', '일직업', 4, 'noun',
+  word('occupation', '직업, 일', 4, 'noun',
     ['목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계'],
     tips({
       etymology: '라틴어 \'occupare\'에서 유래하여 어떤 공간이나 시간을 \'차지하고 있는 상태\'를 뜻하며, 생계를 위해 시간을 쏟는 일을 의미하게 되었습니다.',
@@ -154,7 +154,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('occur', '일어나다', 6, 'noun',
+  word('occur', '일어나다', 6, 'verb',
     ['결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회'],
     tips({
       etymology: '라틴어 occurrere에서 유래했으며, ob(~을 향해)와 currere(달리다)가 합쳐져 \'눈앞에 달려오다\', 즉 \'일어나다\'라는 뜻이 되었습니다.',
@@ -192,7 +192,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('of', '출신의', 2, 'adjective',
+  word('of', '~의', 2, 'preposition',
     ['예외적인', '안정적인', '불안정한', '효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한', '적절한'],
     tips({
       etymology: '고대 영어 \'of\'에서 유래하여 분리나 기원을 나타내는 의미로 발전했습니다.',
@@ -211,7 +211,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('off', '떨어져', 3, 'noun',
+  word('off', '떨어져', 3, 'adverb',
     ['켜짐', '부착', '연결', '가까운', '내부', '중심', '포함', '진행', '상승', '고정'],
     tips({
       etymology: '고대 영어 \'of\'에서 유래하여 무언가로부터 분리되거나 멀어지는 움직임을 나타냅니다.',
@@ -230,7 +230,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('offend', '하다', 4, 'verb',
+  word('offend', '기분을 상하게 하다', 4, 'verb',
     ['칭찬하다', '존중하다', '도와주다', '기쁘게하다', '동의하다', '위로하다', '보호하다', '환영하다', '이해하다', '격려하다'],
     tips({
       etymology: '라틴어 \'offendere\'에서 유래했으며, \'ob(~에 맞서)\'와 \'fendere(치다)\'가 결합되어 누군가의 감정을 치거나 거스른다는 의미를 담고 있습니다.',
@@ -325,7 +325,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('often', '자주', 2, 'noun',
+  word('often', '자주', 2, 'adverb',
     ['가끔', '드물게', '절대로', '항상', '갑자기', '천천히', '빠르게', '이미', '아직', '함께'],
     tips({
       etymology: '고대 영어 \'oft\'에서 유래했으며, \'빈번하게\'라는 의미가 수 세기 동안 유지되었습니다.',
@@ -382,7 +382,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('on', '위에', 1, 'noun',
+  word('on', '위에', 1, 'preposition',
     ['아래에', '안에', '옆에', '뒤에', '사이에', '앞에', '너머에', '근처에', '멀리에', '밖으로'],
     tips({
       etymology: '고대 영어 \'on\'에서 유래하여 접촉하고 있는 상태를 나타냅니다.',
@@ -401,7 +401,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('once', '한번', 5, 'noun',
+  word('once', '한번', 5, 'adverb',
     ['두번', '항상', '절대', '자주', '가끔', '먼저', '나중에', '이미', '아직', '함께'],
     tips({
       etymology: '숫자 1을 뜻하는 \'one\'에서 유래하여 \'한 번\'이라는 의미를 가집니다.',
@@ -743,7 +743,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('orient', '하다', 7, 'verb',
+  word('orient', '방향을 정하다', 7, 'verb',
     ['중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다'],
     tips({
       etymology: '라틴어 \'oriens\'에서 유래하여 해가 뜨는 \'동쪽\'을 향하게 한다는 의미에서 시작되었습니다.',
@@ -781,7 +781,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('other', '다른', 5, 'noun',
+  word('other', '다른', 5, 'adjective',
     ['사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획'],
     tips({
       etymology: '고대 영어 \'other\'에서 유래했으며, \'둘 중 두 번째\'라는 의미에서 \'다른 것\'으로 확장되었습니다.',
@@ -800,7 +800,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('otherwise', '딴', 6, 'verb',
+  word('otherwise', '그렇지 않으면', 6, 'adverb',
     ['선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다'],
     tips({
       etymology: '다른(other) 방식(wise)이라는 결합어로, 현재 상황과 다른 대안이나 결과를 나타낼 때 쓰입니다.',
@@ -819,7 +819,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('ought', '하다', 7, 'verb',
+  word('ought', '~해야 한다', 7, 'verb',
     ['설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다'],
     tips({
       etymology: '고대 영어 \'ahte\'에서 유래했으며, 원래는 \'소유하다\'나 \'빚지다\'라는 의미에서 도덕적 의무로 발전했습니다.',
@@ -838,7 +838,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('ounce', '삵괭이', 8, 'noun',
+  word('ounce', '온스 (무게 단위)', 8, 'noun',
     ['호랑이', '표범', '치타', '사자', '늑대', '여우', '너구리', '오소리', '수달', '고양이'],
     tips({
       etymology: '라틴어 \'uncia\'에서 유래했으며, 무게 단위와는 별개로 중앙아시아의 설표(snow leopard)를 지칭하는 고어에서 왔습니다.',
@@ -857,7 +857,7 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('out', '밖으로', 2, 'noun',
+  word('out', '밖으로', 2, 'adverb',
     ['안으로', '위로', '아래로', '옆으로', '뒤로', '가운데', '사이', '근처', '멀리', '함께'],
     tips({
       etymology: '고대 영어 \'ut\'에서 유래하여 중심부에서 멀어지거나 경계 밖으로 나가는 움직임을 뜻합니다.',

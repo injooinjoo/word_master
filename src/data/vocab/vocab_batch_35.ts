@@ -40,8 +40,8 @@ export const vocabBatch35: VocabItem[] = [
       ],
     }
   ),
-  word('for', '대신에', 3, 'noun',
-    ['반대로', '역으로', '대비하여', '맞서', '위해', '대가로', '덕분에', '때문에', '대신', '대조적으로'],
+  word('for', '~을 위해', 3, 'preposition',
+    ['반대로', '역으로', '대비하여', '맞서', '위로', '아래로', '안쪽으로', '바깥으로', '옆으로', '뒤로'],
     tips({
       etymology: '고대 영어 \'for\'에서 유래하여 누군가를 향하거나 무언가를 대체하는 방향성을 나타냅니다.',
       visual: '축구 경기에서 부상당한 선수 대신 교체 선수가 경기장으로 들어가는 장면을 상상해 보세요.',
@@ -154,7 +154,7 @@ export const vocabBatch35: VocabItem[] = [
       ],
     }
   ),
-  word('forget', '잊다', 3, 'noun',
+  word('forget', '잊다', 3, 'verb',
     ['기억하다', '상기하다', '떠올리다', '생각나다', '암기하다', '외우다', '명심하다', '염두에 두다', '기록하다', '회상하다'],
     tips({
       etymology: '고대 영어 \'for-\'(멀리)와 \'gietan\'(잡다)이 합쳐져, 잡고 있던 기억을 멀리 놓아버린다는 의미에서 유래했습니다.',
@@ -168,8 +168,8 @@ export const vocabBatch35: VocabItem[] = [
       synonyms: ['overlook', 'neglect', 'omit'],
       antonyms: ['remember', 'recall', 'recollect'],
       exampleSentences: [
-        { en: 'Please do not leave your umbrella behind or leave it in the taxi by mistake.', ko: '우산을 두고 내리거나 실수로 택시에 두고 내리지 않도록 주의하세요.' },
-        { en: 'Many people often lose track of names shortly after meeting someone new at a party.', ko: '많은 사람들이 파티에서 새로운 사람을 만난 직후에 이름을 종종 까먹곤 합니다.' },
+        { en: 'Please do not forget your umbrella in the taxi by mistake.', ko: '실수로 택시에 우산을 두고 내리는 일을 잊지 않도록 주의하세요.' },
+        { en: 'Many people often forget names shortly after meeting someone new at a party.', ko: '많은 사람들이 파티에서 새로운 사람을 만난 직후에 이름을 종종 까먹곤 합니다.' },
       ],
     }
   ),
@@ -287,7 +287,7 @@ export const vocabBatch35: VocabItem[] = [
       ],
     }
   ),
-  word('forth', '앞으로', 5, 'noun',
+  word('forth', '앞으로', 5, 'adverb',
     ['뒤로', '후방으로', '되돌아', '역으로', '등지고', '물러나', '후퇴하여', '뒤쪽으로', '안으로', '멈춤'],
     tips({
       etymology: '고대 영어 \'forth\'에서 유래하여 \'앞으로 나아가는\' 움직임을 뜻합니다.',
@@ -363,7 +363,7 @@ export const vocabBatch35: VocabItem[] = [
       ],
     }
   ),
-  word('forward', '앞쪽에', 5, 'noun',
+  word('forward', '앞으로', 5, 'adverb',
     ['뒤쪽에', '후방에', '등 뒤에', '후미에', '말미에', '뒤로', '후퇴하여', '등지고', '과거의', '정지된'],
     tips({
       etymology: '앞을 뜻하는 \'for\'와 방향을 나타내는 접미사 \'ward\'가 결합되어 앞을 향하는 움직임을 나타냅니다.',
@@ -458,7 +458,7 @@ export const vocabBatch35: VocabItem[] = [
       ],
     }
   ),
-  word('freeze', '얼다', 5, 'noun',
+  word('freeze', '얼다', 5, 'verb',
     ['녹다', '녹이다', '끓다', '데우다', '가열하다', '해동', '용해', '증발', '연소', '팽창'],
     tips({
       etymology: '고대 영어 \'freosan\'에서 유래되었으며, 아주 차가운 기온으로 인해 액체가 고체로 변하는 현상을 뜻합니다.',
@@ -553,7 +553,7 @@ export const vocabBatch35: VocabItem[] = [
       ],
     }
   ),
-  word('from', '-로', 2, 'noun',
+  word('from', '~에서', 2, 'preposition',
     ['까지', '에게', '에서', '위해', '대신', '관하여', '대해', '맞은', '향하여', '쪽으로'],
     tips({
       etymology: '고대 영어 \'fram\'에서 유래하여 \'앞으로 나아가다\' 혹은 \'멀어지다\'라는 출발의 의미를 담고 있습니다.',
@@ -610,7 +610,7 @@ export const vocabBatch35: VocabItem[] = [
       ],
     }
   ),
-  word('frown', '눈살을', 4, 'noun',
+  word('frown', '찌푸린 얼굴', 4, 'noun',
     ['미소', '웃음', '환한 얼굴', '기쁨', '만족', '웃는 얼굴', '밝은 표정', '환하게', '미소짓다', '웃다'],
     tips({
       etymology: '고대 프랑스어 \'froignier\'에서 유래하여 코를 찡그리거나 얼굴을 찌푸리는 행위를 뜻하게 되었습니다.',
@@ -724,7 +724,7 @@ export const vocabBatch35: VocabItem[] = [
       ],
     }
   ),
-  word('fun', '즐거운', 3, 'noun',
+  word('fun', '즐거움', 3, 'noun',
     ['지루함', '심각성', '고통', '슬픔', '피로', '분노', '공포', '무관심', '우울', '단조로움'],
     tips({
       etymology: '17세기경 \'속이다\'라는 뜻의 \'fon\'에서 유래하여, 가벼운 장난이나 즐거움을 뜻하게 되었습니다.',
@@ -819,7 +819,7 @@ export const vocabBatch35: VocabItem[] = [
       ],
     }
   ),
-  word('furious', '노하여', 9, 'noun',
+  word('furious', '격노한', 9, 'adjective',
     ['침착한', '냉정한', '기쁜', '만족한', '평온한', '차분한', '유쾌한', '편안한', '냉담한', '온화한'],
     tips({
       etymology: '라틴어 \'furia\'에서 유래했으며, 이는 로마 신화의 복수의 여신 \'퓨리(Fury)\'와 연결되어 걷잡을 수 없는 분노를 뜻합니다.',
@@ -876,7 +876,7 @@ export const vocabBatch35: VocabItem[] = [
       ],
     }
   ),
-  word('furthermore', '더우기', 5, 'noun',
+  word('furthermore', '게다가', 5, 'adverb',
     ['반대로', '그러나', '오히려', '대신', '한편', '그런데', '단', '다만', '그럼에도', '하지만'],
     tips({
       etymology: '더 멀리 나아간다는 뜻의 further와 더한다는 뜻의 more가 합쳐져 정보가 추가됨을 나타냅니다.',

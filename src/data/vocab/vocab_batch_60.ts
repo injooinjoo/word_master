@@ -78,8 +78,8 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('slip', '어느덧', 6, 'noun',
-    ['미끄러짐', '실수', '종이 조각', '속옷', '하락', '간격', '부주의', '이동', '탈출', '변화'],
+  word('slip', '미끄러짐', 6, 'noun',
+    ['넘어짐', '실수', '종이 조각', '속옷', '하락', '간격', '부주의', '이동', '탈출', '변화'],
     tips({
       etymology: '부드럽게 미끄러지듯 지나가는 동작에서 유래하여 시간이 소리 없이 흘러가는 느낌을 줍니다.',
       visual: '모래시계의 모래가 아주 미세하게 빠져나가 어느새 바닥을 드러내는 모습을 상상하세요.',
@@ -116,7 +116,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('slow', '느린', 2, 'noun',
+  word('slow', '느린', 2, 'adjective',
     ['빠른', '급한', '신속한', '즉각적인', '민첩한', '활발한', '바쁜', '날카로운', '거대한', '단단한'],
     tips({
       etymology: '고대 영어 \'slāw\'에서 유래했으며, 원래 \'둔한\'이나 \'게으른\'이라는 의미에서 속도가 낮은 상태로 발전했습니다.',
@@ -135,7 +135,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('small', '적게', 3, 'adverb',
+  word('small', '작은', 3, 'adjective',
     ['정확히', '대략', '차근차근', '집중해서', '즉시', '뒤늦게', '점차', '반복적으로', '우선', '빠르게'],
     tips({
       etymology: '고대 영어 smæl에서 유래하여 본래 \'좁은\' 혹은 \'가느다란\' 상태를 의미했습니다.',
@@ -154,7 +154,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('smart', '재치있는', 1, 'noun',
+  word('smart', '재치있는', 1, 'adjective',
     ['어리석은', '느린', '둔한', '평범한', '지루한', '무거운', '어두운', '조용한', '거친', '서투른'],
     tips({
       etymology: '고대 영어 smeortan에서 유래하여 원래는 \'날카로운 통증\'을 의미했으나, 점차 정신이 날카롭고 기민하다는 뜻으로 확장되었습니다.',
@@ -211,7 +211,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('smile', '미소짓다', 3, 'noun',
+  word('smile', '미소짓다', 3, 'verb',
     ['눈물', '분노', '슬픔', '고통', '절망', '침묵', '공포', '질투', '한숨', '불안'],
     tips({
       etymology: '중세 영어 \'smilen\'에서 유래되었으며, 즐거움이나 친절함을 나타내는 표정을 의미합니다.',
@@ -249,7 +249,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('smooth', '매끄러운', 5, 'noun',
+  word('smooth', '매끄러운', 5, 'adjective',
     ['거친', '울퉁불퉁한', '날카로운', '단단한', '끈적이는', '축축한', '건조한', '희미한', '복잡한', '무거운'],
     tips({
       etymology: '고대 영어 smōth에서 유래하여 마찰이 없는 평평한 상태를 의미합니다.',
@@ -287,7 +287,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('snap', '덥석', 7, 'noun',
+  word('snap', '딱 부러뜨리다', 7, 'verb',
     ['천천히', '조심스럽게', '머뭇거리며', '부드럽게', '지루하게', '꾸준히', '조용히', '멀리', '깊게', '가볍게'],
     tips({
       etymology: '중세 네덜란드어 \'snappen\'에서 유래하여 무언가를 재빨리 낚아채거나 부러뜨리는 소리를 나타냅니다.',
@@ -306,7 +306,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('sneak', '몰래', 8, 'noun',
+  word('sneak', '몰래 움직이다', 8, 'verb',
     ['정직', '공개', '당당', '발각', '추적', '허락', '감시', '질서', '신뢰', '보호'],
     tips({
       etymology: '중세 영어 \'sniken\'에서 유래하여 기어다니거나 조용히 움직이는 동작을 의미합니다.',
@@ -325,7 +325,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('sniff', '코를', 9, 'noun',
+  word('sniff', '냄새를 맡다', 9, 'verb',
     ['한숨', '기침', '재채기', '하품', '호흡', '미소', '눈물', '침묵', '속삭임', '외침'],
     tips({
       etymology: '코를 킁킁거리는 소리를 흉내 낸 의성어에서 유래했습니다.',
@@ -363,7 +363,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('so', '그와', 2, 'noun',
+  word('so', '그래서, 그렇게', 2, 'adverb',
     ['사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획'],
     tips({
       etymology: '고대 영어 \'swa\'에서 유래하여 \'그와 같이\' 또는 \'그렇게\'라는 상태나 방식을 나타냅니다.',
@@ -382,7 +382,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('soak', '담그다', 4, 'noun',
+  word('soak', '담그다', 4, 'verb',
     ['건조하다', '말리다', '태우다', '얼리다', '닦다', '털다', '자르다', '던지다', '부수다', '밀다'],
     tips({
       etymology: '고대 영어 \'socian\'에서 유래하여 액체를 빨아들이다라는 의미에서 시작되었습니다.',
@@ -496,26 +496,26 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('sock', '짧은', 1, 'adjective',
-    ['긴', '높은', '넓은', '깊은', '두꺼운', '무거운', '빠른', '강한', '밝은', '거대한'],
+  word('sock', '양말', 1, 'noun',
+    ['장갑', '신발', '모자', '바지', '치마', '코트', '셔츠', '벨트', '목도리', '가방'],
     tips({
-      etymology: '발을 감싸는 짧은 의류를 뜻하는 명사에서 유래하여 길이가 길지 않음을 연상하세요.',
-      visual: '발목까지만 오는 짧은 양말의 길이를 머릿속으로 그려보세요.',
-      soundAlike: '속(sock)이 보일 정도로 바지 밑단이 짧아진 모습을 상상하면 쉽습니다.',
-      context: '패션이나 길이 측정 시 표준보다 길이가 모자란 상황에서 주로 쓰입니다.',
-      synonymAntonym: '길이가 짧은 brief와 대조되는 긴 long을 함께 기억하세요.',
+      etymology: '고대 영어 socc에서 유래했으며, 발을 보호하기 위해 신발 안에 신는 의류를 뜻합니다.',
+      visual: '신발을 신기 전에 발목까지 올라오는 양말 한 짝을 신는 장면을 떠올려 보세요.',
+      soundAlike: 'sock은 \'삭\' 하고 신는 발 덮개라고 연상하면 기억하기 쉽습니다.',
+      context: '운동을 하거나 외출할 때 신발과 함께 꼭 착용하는 기본 의류를 말할 때 자주 쓰입니다.',
+      synonymAntonym: 'stocking은 긴 양말을 뜻해 유사하고, 맨발을 뜻하는 barefoot와는 반대됩니다.',
     }),
     {
-      definition: 'measuring a small distance from one end to the other; not long.',
-      synonyms: ['brief', 'short', 'limited'],
-      antonyms: ['long', 'extended', 'lengthy'],
+      definition: 'a piece of clothing worn on the foot and often covering the ankle or part of the calf',
+      synonyms: ['stocking', 'hosiery', 'anklet'],
+      antonyms: ['barefoot', 'shoe', 'sandal'],
       exampleSentences: [
-        { en: 'The tailor made the trousers slightly too short for the client.', ko: '재단사는 고객의 바지를 약간 너무 짧게 만들었습니다.' },
-        { en: 'A brief meeting was held to discuss the urgent matter.', ko: '긴급한 문제를 논의하기 위해 짧은 회의가 열렸습니다.' },
+        { en: 'I need a clean pair of socks before going out.', ko: '나가기 전에 깨끗한 양말 한 켤레가 필요하다.' },
+        { en: 'He wore thick wool socks in the winter.', ko: '그는 겨울에 두꺼운 울 양말을 신었다.' },
       ],
     }
   ),
-  word('soft', '부드러운', 2, 'noun',
+  word('soft', '부드러운', 2, 'adjective',
     ['딱딱한', '거친', '날카로운', '무거운', '빠른', '어두운', '시끄러운', '차가운', '단단한', '강력한'],
     tips({
       etymology: '고대 영어 \'sefte\'에서 유래했으며, 이는 \'편안한\' 또는 \'온화한\' 상태를 의미합니다.',
@@ -667,7 +667,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('some', '얼만가의', 3, 'adjective',
+  word('some', '약간의', 3, 'adjective',
     ['전체의', '하나의', '모든', '전혀없는', '정확한', '거대한', '사소한', '복잡한', '단순한', '특별한'],
     tips({
       etymology: '고대 영어 \'sum\'에서 유래하여 \'어떤 특정한 하나\' 혹은 \'일부분\'을 가리키는 의미로 발전했습니다.',
@@ -686,7 +686,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('somewhat', '약간', 7, 'noun',
+  word('somewhat', '약간', 7, 'adverb',
     ['완전히', '전혀', '상당히', '절대적으로', '매우', '정확히', '결코', '거의', '충분히', '가득히'],
     tips({
       etymology: 'some(어느 정도)과 what(무엇)이 결합하여 \'어느 정도의 양\'을 나타내는 부사적 명사로 발전했습니다.',
@@ -743,7 +743,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('soon', '얼마', 4, 'noun',
+  word('soon', '곧', 4, 'adverb',
     ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
     tips({
       etymology: '고대 영어 sona에서 유래하여 \'즉시\'라는 뜻을 가졌으나 현대에는 \'머지않아\'라는 시간적 양을 나타냅니다.',
@@ -762,7 +762,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('sophisticated', '물정에', 8, 'noun',
+  word('sophisticated', '세련된', 8, 'adjective',
     ['단순한', '투박한', '순진한', '원시적인', '거친', '평범한', '무식한', '촌스러운', '기초적인', '직설적인'],
     tips({
       etymology: '그리스어 \'sophos(지혜로운)\'에서 유래하여, 세상 물정에 밝고 지식이 풍부함을 뜻합니다.',
@@ -781,7 +781,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('sore', '슬픈', 5, 'noun',
+  word('sore', '아픈', 5, 'adjective',
     ['기쁨', '즐거움', '행복', '만족', '평화', '분노', '공포', '용기', '희망', '열정'],
     tips({
       etymology: '고대 영어 \'sar\'에서 유래하여 신체적 통증이나 마음의 상처를 의미하게 되었습니다.',
@@ -933,7 +933,7 @@ export const vocabBatch60: VocabItem[] = [
       ],
     }
   ),
-  word('span', '한', 9, 'adjective',
+  word('span', '기간, 범위', 9, 'noun',
     ['직접적인', '간접적인', '명확한', '모호한', '적절한', '부적절한', '긍정적인', '부정적인', '대표적인', '기본적인'],
     tips({
       etymology: '고대 영어 \'spann\'에서 유래하여 손가락 끝에서 끝까지의 거리를 의미하던 것이 시간이나 공간의 전체 범위를 뜻하게 되었습니다.',

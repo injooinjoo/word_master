@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch57: VocabItem[] = [
-  word('routine', '정해진', 6, 'noun',
+  word('routine', '일상적인 일, 루틴', 6, 'noun',
     ['불규칙', '우연', '혼란', '충동', '변화', '예외', '무작위', '중단', '혁신', '모험'],
     tips({
       etymology: '프랑스어 \'route(길)\'에서 유래하여 매일 다니는 길처럼 익숙한 순서를 의미합니다.',
@@ -78,7 +78,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('rubber', '맛사지사', 6, 'noun',
+  word('rubber', '고무', 6, 'noun',
     ['운동선수', '요리사', '운전기사', '정원사', '목수', '회계사', '변호사', '간호사', '비서', '건축가'],
     tips({
       etymology: '동사 rub(문지르다)에 행위자를 뜻하는 접미사 -er이 붙어 근육을 문질러 풀어주는 사람을 뜻하게 되었습니다.',
@@ -97,7 +97,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('rude', '버릇없는', 7, 'noun',
+  word('rude', '버릇없는', 7, 'adjective',
     ['친절한', '공손한', '정중한', '사려깊은', '온화한', '겸손한', '관대한', '예의바른', '상냥한', '차분한'],
     tips({
       etymology: '라틴어 \'rudis\'에서 유래했으며, 가공되지 않은 거친 상태를 의미하던 것이 무례한 태도로 발전했습니다.',
@@ -173,7 +173,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('run', '달리다', 2, 'noun',
+  word('run', '달리다', 2, 'verb',
     ['걷기', '멈춤', '휴식', '수영', '비행', '점프', '등산', '수면', '식사', '독서'],
     tips({
       etymology: '고대 영어 rinnan에서 유래하여 액체가 흐르거나 발을 빠르게 움직여 이동하는 움직임을 뜻합니다.',
@@ -287,7 +287,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('sad', '슬픈', 3, 'noun',
+  word('sad', '슬픈', 3, 'adjective',
     ['기쁜', '화난', '즐거운', '평온한', '지루한', '놀라운', '두려운', '활기찬', '당황한', '자랑스러운'],
     tips({
       etymology: '고대 영어 \'sæd\'에서 유래했으며, 원래는 \'배부른\' 혹은 \'만족한\'이라는 뜻이었으나 시간이 흐르며 \'무거운 마음\'을 뜻하게 되었습니다.',
@@ -553,7 +553,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('scan', '시의', 4, 'adjective',
+  word('scan', '훑어보다, 스캔하다', 4, 'verb',
     ['기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인', '불안정한', '효율적인', '비효율적인', '직접적인'],
     tips({
       etymology: '라틴어 scandere(오르다)에서 유래하여 시의 운율을 하나하나 짚어가며 읽는 행위와 연결됩니다.',
@@ -629,7 +629,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('scatter', '뿔뿔이', 10, 'noun',
+  word('scatter', '흩어지다', 10, 'verb',
     ['집중', '수집', '결합', '보존', '축적', '정렬', '고정', '통합', '압축', '밀집'],
     tips({
       etymology: '중세 영어 \'scateren\'에서 유래하여 사방으로 흩뿌려지는 동작을 나타냅니다.',
@@ -743,7 +743,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('scold', '꾸짖다', 6, 'noun',
+  word('scold', '꾸짖다', 6, 'verb',
     ['칭찬하다', '격려하다', '위로하다', '방관하다', '응원하다', '감사하다', '존경하다', '무시하다', '용서하다', '환영하다'],
     tips({
       etymology: '고대 노르웨이어 \'skald(시인)\'에서 유래하여, 원래는 비꼬는 시를 쓰는 사람을 의미하다가 꾸짖는 행위로 변했습니다.',
@@ -800,7 +800,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('scramble', '기다', 7, 'noun',
+  word('scramble', '기어오르다', 7, 'verb',
     ['정지', '질서', '평온', '하락', '침묵', '고정', '후퇴', '안정', '조화', '직진'],
     tips({
       etymology: '16세기경 \'기어오르다\'라는 뜻의 스칸디나비아어 계열에서 유래하여 급하게 움직이는 동작을 나타냅니다.',
@@ -819,7 +819,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('scratch', '할퀴다', 4, 'noun',
+  word('scratch', '할퀴다', 4, 'verb',
     ['문지르다', '두드리다', '던지다', '부수다', '닦다', '누르다', '흔들다', '비틀다', '당기다', '밀다'],
     tips({
       etymology: '중세 영어 \'scratten\'에서 유래하여 날카로운 것으로 표면을 긁거나 할퀴는 동작을 의미하게 되었습니다.',
@@ -838,7 +838,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('scream', '비명을', 5, 'noun',
+  word('scream', '비명', 5, 'noun',
     ['침묵', '속삭임', '미소', '한숨', '노래', '웃음', '침착', '평화', '질서', '안정'],
     tips({
       etymology: '고대 노르웨이어 \'skræma\'에서 유래하여 공포나 고통으로 인해 내지르는 날카로운 소리를 뜻합니다.',
@@ -857,7 +857,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('screen', '병풍', 6, 'noun',
+  word('screen', '화면, 스크린', 6, 'noun',
     ['창문', '벽지', '커튼', '천장', '바닥', '기둥', '계단', '지붕', '현관', '복도'],
     tips({
       etymology: '중세 네덜란드어 \'scherm\'에서 유래하여 무언가를 가리거나 보호하는 칸막이라는 의미를 가집니다.',
@@ -895,7 +895,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('scrub', '숲', 10, 'noun',
+  word('scrub', '덤불', 10, 'noun',
     ['도시', '사막', '바다', '건물', '도로', '하늘', '광장', '동굴', '공장', '시장'],
     tips({
       etymology: '낮은 나무들이 빽빽하게 자란 땅을 뜻하는 중세 네덜란드어 \'schrobbe\'에서 유래했습니다.',
@@ -914,7 +914,7 @@ export const vocabBatch57: VocabItem[] = [
       ],
     }
   ),
-  word('sculpture', '조각하다', 8, 'verb',
+  word('sculpture', '조각품', 8, 'noun',
     ['그리다', '색칠하다', '복사하다', '파괴하다', '조립하다', '수집하다', '전시하다', '발굴하다', '연마하다', '설계하다'],
     tips({
       etymology: '라틴어 \'sculpere\'에서 유래했으며, 이는 \'깎다\' 또는 \'새기다\'라는 의미를 담고 있습니다.',

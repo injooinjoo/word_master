@@ -135,7 +135,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('prominent', '두드러진', 10, 'noun',
+  word('prominent', '두드러진', 10, 'adjective',
     ['미미한', '평범한', '숨겨진', '모호한', '내성적인', '일반적인', '사소한', '희미한', '부수적인', '열등한'],
     tips({
       etymology: '라틴어 \'pro(앞으로)\'와 \'minere(솟아나다)\'가 합쳐져 남들보다 앞으로 툭 튀어나와 있다는 뜻에서 유래했습니다.',
@@ -154,7 +154,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('promise', '약속', 7, 'verb',
+  word('promise', '약속하다', 7, 'verb',
     ['중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다'],
     tips({
       etymology: '라틴어 \'pro(앞으로)\'와 \'mittere(보내다)\'가 합쳐져, 상대방에게 미리 말을 내보낸다는 의미에서 유래했습니다.',
@@ -192,7 +192,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('prompt', '재빠른', 8, 'noun',
+  word('prompt', '신속한', 8, 'adjective',
     ['느린', '지연된', '망설이는', '영구적인', '복잡한', '거대한', '사소한', '엄격한', '희미한', '유연한'],
     tips({
       etymology: '라틴어 \'pro-\'(앞으로)와 \'emere\'(가져오다)가 합쳐져 \'준비된 상태로 내놓다\'라는 의미에서 유래했습니다.',
@@ -382,7 +382,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('protein', 'IG1s', 4, 'noun',
+  word('protein', '단백질', 4, 'noun',
     ['탄수화물', '지방', '비타민', '무기질', '섬유질', '칼로리', '포도당', '효소', '호르몬', '아미노산'],
     tips({
       etymology: '그리스어 \'proteios\'에서 유래했으며 \'가장 중요한 것\'이라는 의미를 담고 있습니다.',
@@ -401,7 +401,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('protest', '단언하다', 5, 'verb',
+  word('protest', '항의하다', 5, 'verb',
     ['보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다'],
     tips({
       etymology: '라틴어 \'pro(앞에서)\'와 \'testari(증언하다)\'가 합쳐져 대중 앞에서 자신의 주장을 강하게 내세우는 느낌을 줍니다.',
@@ -420,7 +420,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('proud', '뽐내는', 6, 'noun',
+  word('proud', '뽐내는', 6, 'adjective',
     ['겸손한', '슬픈', '부끄러운', '평범한', '지루한', '화난', '불안한', '조용한', '어색한', '비겁한'],
     tips({
       etymology: '고대 프랑스어 \'prud\'에서 유래했으며, 가치 있고 용기 있다는 긍정적인 의미에서 점차 자신감이 넘치는 상태로 발전했습니다.',
@@ -496,7 +496,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('provoke', '하다', 8, 'verb',
+  word('provoke', '자극하다, 유발하다', 8, 'verb',
     ['진정시키다', '억제하다', '방지하다', '무시하다', '위로하다', '중단하다', '칭찬하다', '동의하다', '포기하다', '수용하다'],
     tips({
       etymology: '라틴어 \'pro(앞으로)\'와 \'vocare(부르다)\'가 합쳐져 상대방을 앞으로 불러내어 싸움을 거는 느낌을 줍니다.',
@@ -553,8 +553,8 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('public', '심리', 4, 'noun',
-    ['개인', '비밀', '사생활', '내면', '정신', '의식', '감정', '사고', '본능', '무의식'],
+  word('public', '대중,공공', 4, 'noun',
+    ['개인', '사적', '비공개', '기밀', '소수', '내부', '독점', '사유화', '폐쇄성', '개인영역'],
     tips({
       etymology: '라틴어 publicus에서 유래하여 \'사람들\' 또는 \'공동체\'를 의미하며, 개인적인 것과 반대되는 개념입니다.',
       visual: '공원에 모여 있는 수많은 시민들의 모습을 상상하며 대중적인 이미지를 떠올려 보세요.',
@@ -572,7 +572,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('publish', '발표', 5, 'noun',
+  word('publish', '출판하다', 5, 'verb',
     ['은폐', '삭제', '보류', '수정', '거절', '침묵', '비밀', '중단', '연기', '폐기'],
     tips({
       etymology: '라틴어 \'publicare\'에서 유래하여 \'대중에게 널리 알리다\'라는 의미를 담고 있습니다.',
@@ -591,7 +591,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('pull', '끌다', 6, 'noun',
+  word('pull', '끌다', 6, 'verb',
     ['밀기', '정지', '거절', '해방', '방출', '압박', '회피', '고정', '상승', '분리'],
     tips({
       etymology: '고대 영어 \'pullian\'에서 유래하여 무언가를 움켜쥐고 자기 쪽으로 당기는 동작을 의미합니다.',
@@ -610,7 +610,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('pump', '펌프스', 7, 'noun',
+  word('pump', '펌프', 7, 'noun',
     ['운동화', '슬리퍼', '장화', '샌들', '등산화', '덧신', '고무신', '축구화', '발레슈즈', '실내화'],
     tips({
       etymology: '16세기경 네덜란드어 \'pomp\'에서 유래했으며, 원래는 배의 물을 퍼내는 펌프 장치와 관련이 있었으나 나중에 끈 없는 신발의 형태를 지칭하게 되었습니다.',
@@ -667,7 +667,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('pupil', '흔히', 6, 'adverb',
+  word('pupil', '학생, 제자', 6, 'noun',
     ['빠르게', '천천히', '자주', '가끔', '항상', '이미', '곧', '직접', '간접적으로', '정확히'],
     tips({
       etymology: '라틴어 pupilla에서 유래하여 \'작은 인형\'을 뜻하며, 눈동자에 비친 작은 모습이나 가르침을 받는 어린 학생을 의미합니다.',
@@ -819,7 +819,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('put', '놓다', 3, 'noun',
+  word('put', '놓다', 3, 'verb',
     ['가져오다', '던지다', '부수다', '숨기다', '찾다', '만들다', '지우다', '빌리다', '팔다', '사다'],
     tips({
       etymology: '고대 영어 \'putian\'에서 유래하여 무언가를 밀거나 특정 위치로 옮기는 동작을 의미합니다.',
@@ -914,7 +914,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('quarter', '1', 7, 'noun',
+  word('quarter', '4분의 1, 25센트 동전', 7, 'noun',
     ['전체', '절반', '세 배', '합계', '단위', '조각', '비율', '수량', '부분', '나머지'],
     tips({
       etymology: '라틴어 \'quartus\'에서 유래되었으며, 이는 숫자 4를 의미하는 \'quattuor\'와 연결되어 전체를 넷으로 나눈 것 중 하나를 뜻합니다.',
@@ -933,7 +933,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('question', '질의', 2, 'adjective',
+  word('question', '질문, 질의', 2, 'noun',
     ['답변', '결론', '확신', '증명', '침묵', '동의', '허가', '명령', '결과', '무시'],
     tips({
       etymology: '라틴어 \'quaerere(묻다, 찾다)\'에서 유래하여 무언가를 알아내기 위해 던지는 물음을 뜻합니다.',

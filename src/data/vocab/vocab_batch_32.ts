@@ -193,7 +193,7 @@ export const vocabBatch32: VocabItem[] = [
     }
   ),
   word('efficient', '효율적인', 4, 'adjective',
-    ['불안정한', '효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한', '적절한', '부적절한', '긍정적인'],
+    ['불안정한', '산만한', '직접적인', '간접적인', '명확한', '모호한', '적절한', '느린', '긍정적인', '복잡한'],
     tips({
       etymology: 'efficient의 접두/어근/접미를 확인하며 "효율적인" 의미와 연결해 암기하자.',
       visual: '"효율적인" 상황을 머릿속 한 장면으로 만들고 단어 efficient를 함께 떠올리자.',
@@ -203,11 +203,11 @@ export const vocabBatch32: VocabItem[] = [
     }),
     {
       definition: 'achieving maximum productivity with minimum waste',
-      synonyms: ['standard', 'general', 'basic'],
-      antonyms: ['minor', 'rare', 'atypical'],
+      synonyms: ['productive', 'effective', 'capable'],
+      antonyms: ['inefficient', 'wasteful', 'unproductive'],
       exampleSentences: [
-        { en: 'The adjective "efficient" conveys "능률적인".', ko: '형용사 "efficient"는 "능률적인"의 의미를 전달한다.' },
-        { en: 'This object can be described as "efficient".', ko: '이 대상을 "efficient"라고 묘사할 수 있다.' },
+        { en: 'She found a more efficient way to organize her files.', ko: '그녀는 파일을 정리하는 더 효율적인 방법을 찾았다.' },
+        { en: 'The new machine is very efficient and saves a lot of energy.', ko: '새 기계는 매우 효율적이어서 에너지를 많이 절약한다.' },
       ],
     }
   ),

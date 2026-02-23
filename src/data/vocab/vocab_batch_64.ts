@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch64: VocabItem[] = [
-  word('take', '잡다', 1, 'noun',
+  word('take', '잡다', 1, 'verb',
     ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
     tips({
       etymology: '고대 노르드어 \'taka\'에서 유래하여 손으로 무언가를 움켜쥐거나 획득하는 동작을 나타냅니다.',
@@ -78,7 +78,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('tall', '키큰', 3, 'noun',
+  word('tall', '키큰', 3, 'adjective',
     ['작은', '낮은', '짧은', '평평한', '좁은', '가벼운', '느린', '얇은', '부드러운', '희미한'],
     tips({
       etymology: '고대 영어 \'teall\'에서 유래했으며 원래는 \'빠른\'이나 \'용감한\'이라는 뜻이었으나 시간이 흐르며 \'높이가 높은\'이라는 뜻으로 정착되었습니다.',
@@ -97,7 +97,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('tap', '가볍게', 6, 'adverb',
+  word('tap', '가볍게 두드리다', 6, 'verb',
     ['천천히', '자주', '가끔', '항상', '이미', '곧', '직접', '간접적으로', '정확히', '대략'],
     tips({
       etymology: '가볍게 두드리는 소리나 동작을 나타내는 의성어에서 유래하여 부사적으로 쓰일 때도 그 가벼운 느낌이 유지됩니다.',
@@ -192,7 +192,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('tattoo', '귀영나팔', 5, 'noun',
+  word('tattoo', '문신', 5, 'noun',
     ['기상나팔', '행군', '군가', '검문소', '병영', '군수품', '보초', '훈련소', '전투화', '방독면'],
     tips({
       etymology: '네덜란드어 \'tap toe\'에서 유래했으며, 술집 문을 닫고 군인들이 귀대할 시간임을 알리는 북소리를 의미했습니다.',
@@ -249,7 +249,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('teach', '가르치다', 3, 'noun',
+  word('teach', '가르치다', 3, 'verb',
     ['배우다', '공부하다', '연구하다', '연습하다', '시험하다', '졸업하다', '입학하다', '발표하다', '토론하다', '기록하다'],
     tips({
       etymology: '고대 영어 \'tæcan\'에서 유래했으며, 원래 \'보여주다\' 또는 \'지시하다\'라는 의미를 담고 있습니다.',
@@ -287,7 +287,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('tease', '괴롭히다', 9, 'noun',
+  word('tease', '괴롭히다', 9, 'verb',
     ['칭찬하다', '위로하다', '격려하다', '존경하다', '보호하다', '무시하다', '순응하다', '협력하다', '용서하다', '응원하다'],
     tips({
       etymology: '양모의 결을 고르기 위해 빗질하며 잡아당기던 행위에서 유래하여, 누군가를 자극하거나 괴롭히는 의미로 발전했습니다.',
@@ -306,7 +306,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('teen', '슬픔', 1, 'noun',
+  word('teen', '십 대', 1, 'noun',
     ['기쁨', '분노', '희망', '용기', '평화', '공포', '질투', '호기심', '만족', '열정'],
     tips({
       etymology: '고대 영어 \'teona\'에서 유래하여 고통, 상처, 괴로움을 뜻하게 되었습니다.',
@@ -477,7 +477,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('tenant', '차지인', 10, 'noun',
+  word('tenant', '임차인', 10, 'noun',
     ['건물주', '관리인', '중개인', '소유주', '경비원', '방문객', '상속인', '거주지', '임대료', '계약서'],
     tips({
       etymology: '라틴어 tenere(잡다, 보유하다)에서 유래하여 땅이나 건물을 빌려 점유하고 있는 사람을 뜻합니다.',
@@ -496,7 +496,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('tend', '경향이', 4, 'noun',
+  word('tend', '경향이 있다', 4, 'verb',
     ['변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념'],
     tips({
       etymology: '라틴어 tendere(뻗다, 향하다)에서 유래하여 마음이나 행동이 특정 방향으로 기울어지는 것을 의미합니다.',
@@ -610,7 +610,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('terrace', '계단모양의', 9, 'adjective',
+  word('terrace', '테라스', 9, 'noun',
     ['평평한', '가파른', '구불구불한', '직선형의', '불규칙한', '매끄러운', '거친', '둥근', '뾰족한', '수직의'],
     tips({
       etymology: '라틴어 \'terra(땅)\'에서 유래하여 땅을 깎아 만든 계단식 대지를 의미합니다.',
@@ -648,7 +648,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('terrific', '무서운', 6, 'noun',
+  word('terrific', '무서운', 6, 'adjective',
     ['훌륭한', '멋진', '굉장한', '평범한', '지루한', '친절한', '조용한', '빠른', '가벼운', '익숙한'],
     tips({
       etymology: '라틴어 \'terrere(겁주다)\'에서 유래하여 원래는 공포를 불러일으킬 만큼 거대하고 압도적인 상태를 의미했습니다.',
@@ -762,7 +762,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('than', '-보다도', 3, 'noun',
+  word('than', '~보다', 3, 'conjunction',
     ['그리고', '하지만', '때문에', '만약', '동안', '너머에', '사이에', '아래에', '함께', '대신에'],
     tips({
       etymology: '고대 영어 \'thanne\'에서 유래했으며, 원래 \'그때\'를 의미하던 단어가 비교의 의미로 발전했습니다.',
@@ -776,8 +776,8 @@ export const vocabBatch64: VocabItem[] = [
       synonyms: ['compared to', 'in contrast to', 'rather than'],
       antonyms: ['equal to', 'same as', 'identical to'],
       exampleSentences: [
-        { en: 'She can run much faster today after practicing for months.', ko: '그녀는 몇 달 동안 연습한 덕분에 오늘 훨씬 더 빨리 달릴 수 있습니다.' },
-        { en: 'This new laptop is significantly lighter and more portable.', ko: '이 새 노트북은 이전 모델보다 훨씬 가볍고 휴대하기 좋습니다.' },
+        { en: 'She can run much faster than before after practicing for months.', ko: '그녀는 몇 달 동안 연습한 덕분에 전보다 훨씬 더 빨리 달릴 수 있습니다.' },
+        { en: 'This new laptop is significantly lighter than the previous model.', ko: '이 새 노트북은 이전 모델보다 훨씬 가볍습니다.' },
       ],
     }
   ),
@@ -800,7 +800,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('that', '저', 2, 'noun',
+  word('that', '그것, 저것', 2, 'pronoun',
     ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
     tips({
       etymology: '고대 영어 \'thæt\'에서 유래하여 특정한 대상을 지목하는 지시어로 발전했습니다.',
@@ -819,7 +819,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('the', 'art', 3, 'adjective',
+  word('the', '(정관사)', 3, 'adjective',
     ['불안정한', '효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한', '적절한', '부적절한', '긍정적인'],
     tips({
       etymology: '고대 영어에서 유래한 정관사로, 특정한 대상을 지칭할 때 사용되어 문맥상 \'예술적인\' 가치를 지닌 대상을 한정합니다.',
@@ -838,7 +838,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('theater', '=theatre', 5, 'noun',
+  word('theater', '극장', 5, 'noun',
     ['도서관', '박물관', '경기장', '공원', '학교', '병원', '은행', '식당', '서점', '우체국'],
     tips({
       etymology: '그리스어 \'theatron\'에서 유래되었으며, 이는 \'보는 장소\'라는 의미를 담고 있습니다.',
@@ -876,7 +876,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('then', '그때', 7, 'noun',
+  word('then', '그때', 7, 'adverb',
     ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
     tips({
       etymology: '고대 영어 \'thanne\'에서 유래하여 시간의 흐름이나 특정 시점을 가리키는 부사적 성격이 명사화된 형태입니다.',
@@ -933,7 +933,7 @@ export const vocabBatch64: VocabItem[] = [
       ],
     }
   ),
-  word('there', '거기에', 1, 'noun',
+  word('there', '거기에', 1, 'adverb',
     ['여기', '어디', '언제', '누구', '무엇', '어떻게', '왜', '가끔', '항상', '전혀'],
     tips({
       etymology: '고대 영어 \'thær\'에서 유래했으며, \'the\'와 같은 뿌리를 공유하여 특정한 위치를 지칭합니다.',

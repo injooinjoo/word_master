@@ -59,7 +59,7 @@ export const vocabBatch50: VocabItem[] = [
       ],
     }
   ),
-  word('peak', '끝', 4, 'noun',
+  word('peak', '정점', 4, 'noun',
     ['골짜기', '심해', '바닥', '평지', '기초', '시작', '중간', '내리막', '구덩이', '평원'],
     tips({
       etymology: '뾰족한 끝을 의미하는 고대 영어 \'pīc\'에서 유래하여 산꼭대기나 정점을 뜻하게 되었습니다.',
@@ -116,7 +116,7 @@ export const vocabBatch50: VocabItem[] = [
       ],
     }
   ),
-  word('peel', '껍질을', 5, 'noun',
+  word('peel', '껍질', 5, 'noun',
     ['알맹이', '씨앗', '뿌리', '줄기', '나뭇잎', '꽃잎', '열매', '껍데기', '가죽', '조각'],
     tips({
       etymology: '라틴어 \'pilare(털을 뽑다)\'에서 유래하여 표면을 벗겨낸다는 의미로 확장되었습니다.',
@@ -230,7 +230,7 @@ export const vocabBatch50: VocabItem[] = [
       ],
     }
   ),
-  word('per', '-에', 5, 'noun',
+  word('per', '~당', 5, 'preposition',
     ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
     tips({
       etymology: '라틴어에서 유래하여 \'통과하여\' 혹은 \'수단에 의하여\'라는 의미를 담고 있습니다.',
@@ -244,8 +244,8 @@ export const vocabBatch50: VocabItem[] = [
       synonyms: ['each', 'every', 'for every'],
       antonyms: ['total', 'aggregate', 'sum'],
       exampleSentences: [
-        { en: 'The speed limit on this highway is sixty-five miles hour.', ko: '이 고속도로의 제한 속도는 시간당 65마일입니다.' },
-        { en: 'The gym membership costs fifty dollars month.', ko: '체육관 회원권 비용은 한 달에 50달러입니다.' },
+        { en: 'The speed limit on this highway is sixty-five miles per hour.', ko: '이 고속도로의 제한 속도는 시간당 65마일입니다.' },
+        { en: 'The gym membership costs fifty dollars per month.', ko: '체육관 회원권 비용은 한 달에 50달러입니다.' },
       ],
     }
   ),
@@ -306,7 +306,7 @@ export const vocabBatch50: VocabItem[] = [
       ],
     }
   ),
-  word('perhaps', '아마', 5, 'noun',
+  word('perhaps', '아마', 5, 'adverb',
     ['확실히', '절대로', '분명히', '결코', '당연히', '반드시', '이미', '항상', '전혀', '오직'],
     tips({
       etymology: '라틴어 \'per\'(~을 통하여)와 \'hap\'(운, 우연)이 결합되어 \'우연히 일어날 수도 있는\'이라는 의미에서 유래했습니다.',
@@ -439,7 +439,7 @@ export const vocabBatch50: VocabItem[] = [
       ],
     }
   ),
-  word('perspective', '원근법의', 10, 'adjective',
+  word('perspective', '관점, 시각', 10, 'noun',
     ['평면적인', '추상적인', '입체적인', '일시적인', '장식적인', '고전적인', '현대적인', '사실적인', '왜곡된', '단편적인'],
     tips({
       etymology: '라틴어 \'perspicere(꿰뚫어 보다)\'에서 유래하여, 공간을 꿰뚫어 보듯 깊이감을 표현하는 기법을 뜻합니다.',
@@ -629,7 +629,7 @@ export const vocabBatch50: VocabItem[] = [
       ],
     }
   ),
-  word('pick', '따다', 1, 'noun',
+  word('pick', '따다', 1, 'verb',
     ['버리다', '심다', '던지다', '부수다', '숨기다', '고치다', '기다리다', '빌리다', '태우다', '섞다'],
     tips({
       etymology: '고대 영어 \'pican\'에서 유래하여 뾰족한 도구로 콕 찍어 들어올리는 동작을 의미합니다.',
@@ -667,7 +667,7 @@ export const vocabBatch50: VocabItem[] = [
       ],
     }
   ),
-  word('piece', '한', 7, 'adjective',
+  word('piece', '조각', 7, 'noun',
     ['일반적인', '예외적인', '안정적인', '불안정한', '효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한'],
     tips({
       etymology: '라틴어 \'pettia\'에서 유래하여 전체에서 떨어져 나온 일부분이나 조각을 의미합니다.',
@@ -705,7 +705,7 @@ export const vocabBatch50: VocabItem[] = [
       ],
     }
   ),
-  word('pile', '쌓아', 4, 'noun',
+  word('pile', '더미', 4, 'noun',
     ['구멍', '조각', '평면', '간격', '분산', '파편', '먼지', '바닥', '균열', '흐름'],
     tips({
       etymology: '라틴어 \'pila\'에서 유래되었으며, 이는 돌로 만든 기둥이나 지지대를 의미하여 무언가 차곡차곡 쌓인 형상을 나타냅니다.',
@@ -762,7 +762,7 @@ export const vocabBatch50: VocabItem[] = [
       ],
     }
   ),
-  word('pinch', '꼬집다', 9, 'noun',
+  word('pinch', '꼬집다', 9, 'verb',
     ['쓰다듬다', '두드리다', '문지르다', '할퀴다', '찌르다', '밀치다', '당기다', '흔들다', '누르다', '때리다'],
     tips({
       etymology: '프랑스어 \'pincer\'에서 유래하여 손가락 끝으로 꽉 쥐는 동작을 의미합니다.',
@@ -857,7 +857,7 @@ export const vocabBatch50: VocabItem[] = [
       ],
     }
   ),
-  word('pity', '불쌍히', 5, 'adverb',
+  word('pity', '연민', 5, 'noun',
     ['반복적으로', '우선', '빠르게', '천천히', '자주', '가끔', '항상', '이미', '곧', '직접'],
     tips({
       etymology: '라틴어 pietas에서 유래하여 경건함과 자비심을 뜻하며, 타인의 고통을 함께 느끼는 마음과 연결됩니다.',

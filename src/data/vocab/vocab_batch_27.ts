@@ -154,7 +154,7 @@ export const vocabBatch27: VocabItem[] = [
       ],
     }
   ),
-  word('celebrity', '명성', 4, 'noun',
+  word('celebrity', '유명인, 연예인', 4, 'noun',
     ['무명', '악명', '오명', '망신', '침묵', '은둔', '비밀', '익명', '저평가', '무시'],
     tips({
       etymology: '라틴어 celebrare(자주 방문하다, 기리다)에서 유래하여 많은 사람에게 알려진 상태를 뜻합니다.',

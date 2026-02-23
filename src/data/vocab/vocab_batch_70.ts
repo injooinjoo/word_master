@@ -21,7 +21,7 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('wipe', '닦다', 4, 'noun',
+  word('wipe', '닦다', 4, 'verb',
     ['던지다', '부수다', '숨기다', '기다리다', '빌리다', '고치다', '나누다', '태우다', '흔들다', '채우다'],
     tips({
       etymology: '고대 영어 \'wipian\'에서 유래하여 표면을 문질러 깨끗하게 만드는 동작을 의미합니다.',
@@ -78,7 +78,7 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('wish', '바라다', 2, 'noun',
+  word('wish', '바라다', 2, 'verb',
     ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
     tips({
       etymology: '고대 영어 \'wyscan\'에서 유래했으며, 무언가를 간절히 원하고 바라는 마음을 담고 있습니다.',
@@ -135,7 +135,7 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('withdraw', '물러나다', 8, 'noun',
+  word('withdraw', '물러나다', 8, 'verb',
     ['전진하다', '삽입하다', '기탁하다', '참여하다', '유지하다', '확장하다', '연결하다', '제공하다', '승인하다', '가속하다'],
     tips({
       etymology: '접두사 with(뒤로)와 draw(끌다)가 합쳐져 \'뒤로 끌어당기다\'라는 의미에서 유래했습니다.',
@@ -154,7 +154,7 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('within', '-의', 4, 'preposition',
+  word('within', '~안에', 4, 'preposition',
     ['너머에', '근처에', '맞은편에', '이전에', '이후에', '대신에', '통해서', '기준으로', '관하여', '바깥에'],
     tips({
       etymology: 'with(함께)와 in(안에)이 결합된 형태로, 어떤 범위나 경계의 안쪽을 의미합니다.',
@@ -173,7 +173,7 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('without', '-없이', 5, 'preposition',
+  word('without', '~없이', 5, 'preposition',
     ['근처에', '맞은편에', '동안', '이전에', '이후에', '대신에', '통해', '기준으로', '관하여', '대하여'],
     tips({
       etymology: '고대 영어 \'with\'와 \'out\'이 결합되어 \'바깥에 있다\'는 의미에서 \'결핍\'의 뜻으로 발전했습니다.',
@@ -187,8 +187,8 @@ export const vocabBatch70: VocabItem[] = [
       synonyms: ['lacking', 'minus', 'excluding'],
       antonyms: ['with', 'including', 'possessing'],
       exampleSentences: [
-        { en: 'Plants cannot grow properly for a long time excluding water.', ko: '식물은 물 없이는 오랫동안 제대로 자랄 수 없습니다.' },
-        { en: 'He managed to solve the complex puzzle no help from others.', ko: '그는 타인의 도움 없이 복잡한 퍼즐을 스스로 풀어냈습니다.' },
+        { en: 'Plants cannot grow properly for a long time without water.', ko: '식물은 물 없이는 오랫동안 제대로 자랄 수 없습니다.' },
+        { en: 'He managed to solve the complex puzzle without any help from others.', ko: '그는 타인의 도움 없이 복잡한 퍼즐을 스스로 풀어냈습니다.' },
       ],
     }
   ),
@@ -382,7 +382,7 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('worth', '가치가', 6, 'noun',
+  word('worth', '가치가 있는', 6, 'adjective',
     ['관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표'],
     tips({
       etymology: '고대 영어 \'weorth\'에서 유래하여 물건의 가격이나 가액을 의미하게 되었습니다.',
@@ -401,7 +401,7 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('would', 'will의 과거', 7, 'adjective',
+  word('would', '~할 것이다', 7, 'verb',
     ['핵심적인', '일반적인', '예외적인', '안정적인', '불안정한', '효율적인', '비효율적인', '직접적인', '간접적인', '명확한'],
     tips({
       etymology: '고대 영어 \'wolde\'에서 유래했으며, 의지를 나타내는 \'will\'의 과거 형태입니다.',
@@ -439,7 +439,7 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('wrap', '싸다', 5, 'noun',
+  word('wrap', '싸다', 5, 'verb',
     ['풀다', '벗기다', '드러내다', '노출하다', '펼치다', '제거하다', '분리하다', '개방하다', '해체하다', '버리다'],
     tips({
       etymology: '중세 영어 \'wrappen\'에서 유래했으며 무언가를 덮거나 둘러싸는 동작을 의미합니다.',
@@ -496,7 +496,7 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('wrong', '나쁜', 2, 'noun',
+  word('wrong', '잘못된', 2, 'adjective',
     ['옳음', '정의', '진실', '공정', '정답', '도덕', '규칙', '이익', '성공', '칭찬'],
     tips({
       etymology: '고대 노르웨이어 \'rangr\'에서 유래되었으며, 원래 \'구부러진\' 또는 \'비틀린\'이라는 의미에서 \'올바르지 않은\'이라는 뜻으로 발전했습니다.',
@@ -534,7 +534,7 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('yell', '고함치다', 6, 'noun',
+  word('yell', '고함치다', 6, 'verb',
     ['속삭임', '침묵', '미소', '걸음', '생각', '관찰', '거절', '수락', '포옹', '응시'],
     tips({
       etymology: '고대 영어 gellan에서 유래되었으며, 이는 동물의 울음소리나 날카로운 비명 소리를 의미했습니다.',
@@ -572,7 +572,7 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('yet', '아직', 7, 'noun',
+  word('yet', '아직', 7, 'adverb',
     ['이미', '벌써', '항상', '결코', '자주', '가끔', '전혀', '드디어', '방금', '나중에'],
     tips({
       etymology: '고대 영어 \'git\'에서 유래하여 \'지금까지\' 또는 \'그럼에도 불구하고\'라는 시간의 지속성을 나타냅니다.',
@@ -610,7 +610,7 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('you', '당신', 2, 'noun',
+  word('you', '당신', 2, 'pronoun',
     ['나', '그들', '우리', '그녀', '그', '그것', '누구', '모두', '아무도', '자신'],
     tips({
       etymology: '고대 영어 \'eow\'에서 유래하여 상대방을 지칭하는 2인칭 대명사로 정착되었습니다.',

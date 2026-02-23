@@ -59,7 +59,7 @@ export const vocabBatch41: VocabItem[] = [
       ],
     }
   ),
-  word('intend', '-할', 6, 'noun',
+  word('intend', '의도하다', 6, 'verb',
     ['포기하다', '무시하다', '잊어버리다', '반대하다', '실패하다', '거절하다', '중단하다', '후회하다', '방해하다', '지연시키다'],
     tips({
       etymology: '라틴어 \'intendere\'에서 유래했으며, \'어딘가를 향해 마음을 뻗치다\'라는 의미를 담고 있습니다.',
@@ -73,8 +73,8 @@ export const vocabBatch41: VocabItem[] = [
       synonyms: ['plan', 'aim', 'mean'],
       antonyms: ['neglect', 'disregard', 'forget'],
       exampleSentences: [
-        { en: 'We fully to finish the renovation project by the end of this month.', ko: '우리는 이번 달 말까지 개보수 작업을 끝낼 계획입니다.' },
-        { en: 'The author did not to offend anyone with his controversial remarks.', ko: '작가는 자신의 논란이 되는 발언으로 누군가를 불쾌하게 할 의도는 없었습니다.' },
+        { en: 'We fully intend to finish the renovation project by the end of this month.', ko: '우리는 이번 달 말까지 개보수 작업을 끝낼 계획입니다.' },
+        { en: 'The author did not intend to offend anyone with his controversial remarks.', ko: '작가는 자신의 논란이 되는 발언으로 누군가를 불쾌하게 할 의도는 없었습니다.' },
       ],
     }
   ),
@@ -249,7 +249,7 @@ export const vocabBatch41: VocabItem[] = [
       ],
     }
   ),
-  word('interrupt', '훼방놓다', 4, 'noun',
+  word('interrupt', '훼방놓다', 4, 'verb',
     ['계속하다', '유지하다', '관찰하다', '동의하다', '허락하다', '수행하다', '보호하다', '발전하다', '조절하다', '존중하다'],
     tips({
       etymology: '라틴어 \'inter(사이에)\'와 \'rumpere(깨다)\'가 합쳐져 흐름을 깨고 들어온다는 의미가 되었습니다.',
@@ -287,7 +287,7 @@ export const vocabBatch41: VocabItem[] = [
       ],
     }
   ),
-  word('intervene', '사이에', 10, 'noun',
+  word('intervene', '개입하다', 10, 'verb',
     ['방해', '중재', '간섭', '조정', '개입', '차단', '중단', '협상', '관여', '화해'],
     tips({
       etymology: '라틴어 \'inter(사이에)\'와 \'venire(오다)\'가 합쳐져 어떤 상황의 중간에 끼어든다는 의미를 가집니다.',
@@ -325,7 +325,7 @@ export const vocabBatch41: VocabItem[] = [
       ],
     }
   ),
-  word('into', '-안으로', 1, 'noun',
+  word('into', '~안으로', 1, 'preposition',
     ['밖으로', '위로', '아래로', '옆에', '너머로', '사이에', '뒤에', '앞에', '주위에', '가로질러'],
     tips({
       etymology: '안을 뜻하는 in과 방향을 뜻하는 to가 결합되어 내부로 향하는 움직임을 나타냅니다.',
@@ -363,7 +363,7 @@ export const vocabBatch41: VocabItem[] = [
       ],
     }
   ),
-  word('introduce', '안으로', 2, 'noun',
+  word('introduce', '소개하다', 2, 'verb',
     ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
     tips({
       etymology: '라틴어 \'intro(안으로)\'와 \'ducere(이끌다)\'가 합쳐져 누군가를 안으로 데려온다는 의미에서 유래했습니다.',
@@ -477,7 +477,7 @@ export const vocabBatch41: VocabItem[] = [
       ],
     }
   ),
-  word('involve', '말아넣다', 7, 'noun',
+  word('involve', '포함하다', 7, 'verb',
     ['제외하다', '분리하다', '거절하다', '방치하다', '해방하다', '무시하다', '삭제하다', '단절하다', '정지하다', '배제하다'],
     tips({
       etymology: '라틴어 \'in(안으로)\'과 \'volvere(굴리다/말다)\'가 합쳐져 무언가를 안으로 말아 넣는다는 느낌을 줍니다.',
@@ -534,7 +534,7 @@ export const vocabBatch41: VocabItem[] = [
       ],
     }
   ),
-  word('irritate', '하다', 6, 'verb',
+  word('irritate', '짜증나게 하다', 6, 'verb',
     ['진정시키다', '위로하다', '칭찬하다', '격려하다', '동의하다', '기쁘게하다', '환영하다', '무시하다', '이해하다', '존중하다'],
     tips({
       etymology: '라틴어 irritare에서 유래했으며 \'자극하다\' 혹은 \'흥분시키다\'라는 의미를 뿌리에 두고 있습니다.',
@@ -572,7 +572,7 @@ export const vocabBatch41: VocabItem[] = [
       ],
     }
   ),
-  word('it', '그것은', 1, 'adjective',
+  word('it', '그것', 1, 'pronoun',
     ['그곳에', '그들은', '이것은', '저것은', '누구든지', '어디서나', '언제든지', '무엇이든', '그녀는', '우리는'],
     tips({
       etymology: '고대 영어 \'hit\'에서 유래하여 중성 대명사로 정착되었습니다.',
@@ -724,7 +724,7 @@ export const vocabBatch41: VocabItem[] = [
       ],
     }
   ),
-  word('jog', '살짝', 5, 'noun',
+  word('jog', '조깅하다', 5, 'verb',
     ['질주', '정지', '도약', '충돌', '회전', '낙하', '가속', '감속', '수평', '수직'],
     tips({
       etymology: '중세 영어에서 유래하여 \'가볍게 흔들다\' 혹은 \'툭 치다\'라는 의미에서 시작되었습니다.',
@@ -933,7 +933,7 @@ export const vocabBatch41: VocabItem[] = [
       ],
     }
   ),
-  word('just', '올바른', 3, 'noun',
+  word('just', '올바른', 3, 'adjective',
     ['불공평한', '사악한', '편파적인', '부당한', '그릇된', '치우친', '부도덕한', '불법의', '악의적인', '왜곡된'],
     tips({
       etymology: '라틴어 \'jus\'에서 유래되었으며, 이는 법(law)이나 권리(right)를 의미하여 법에 따라 공정함을 나타냅니다.',

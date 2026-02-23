@@ -563,7 +563,7 @@ export const vocabBatch01: VocabItem[] = [
       synonyms: ['tidy', 'spotless', 'pure'],
       antonyms: ['dirty', 'filthy', 'messy'],
       exampleSentences: [
-        { en: 'Make sure your hands are before you start cooking.', ko: '요리를 시작하기 전에 손이 깨끗한지 확인하세요.' },
+        { en: 'Make sure your hands are clean before you start cooking.', ko: '요리를 시작하기 전에 손이 깨끗한지 확인하세요.' },
         { en: 'The air in the mountains is very fresh and pure.', ko: '산속의 공기는 매우 신선하고 깨끗합니다.' },
       ],
     }

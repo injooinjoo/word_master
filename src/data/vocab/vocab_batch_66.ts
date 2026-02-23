@@ -21,7 +21,7 @@ export const vocabBatch66: VocabItem[] = [
       ],
     }
   ),
-  word('total', '합계하다', 5, 'verb',
+  word('total', '합계, 전체', 5, 'noun',
     ['나누다', '빼다', '할인하다', '분할하다', '평균내다', '추정하다', '반올림하다', '버리다', '무시하다', '삭감하다'],
     tips({
       etymology: '라틴어 \'totus\'에서 유래되었으며 \'전체\' 또는 \'완전한\'이라는 의미를 담고 있습니다.',
@@ -97,7 +97,7 @@ export const vocabBatch66: VocabItem[] = [
       ],
     }
   ),
-  word('toward', '-쪽으로', 7, 'noun',
+  word('toward', '~쪽으로', 7, 'preposition',
     ['반대로', '멀리', '뒤로', '위로', '아래로', '옆으로', '안쪽으로', '밖으로', '거꾸로', '역방향으로'],
     tips({
       etymology: '고대 영어 tōweard에서 유래하였으며, \'~를 향한\'이라는 지향성을 담고 있습니다.',
@@ -173,7 +173,7 @@ export const vocabBatch66: VocabItem[] = [
       ],
     }
   ),
-  word('toy', '장난하다', 3, 'verb',
+  word('toy', '장난감', 3, 'noun',
     ['진지하게 하다', '결심하다', '확정하다', '집중하다', '착수하다', '실행하다', '완수하다', '헌신하다', '몰두하다', '진지히 대하다'],
     tips({
       etymology: '명사 \'장난감\'에서 파생되어, 어떤 대상이나 아이디어를 장난감처럼 가볍게 다룬다는 의미에서 동사로 쓰이게 되었습니다.',
@@ -344,7 +344,7 @@ export const vocabBatch66: VocabItem[] = [
       ],
     }
   ),
-  word('transfer', '옮기다', 6, 'noun',
+  word('transfer', '옮기다', 6, 'verb',
     ['정지', '유지', '고정', '삭제', '거절', '수집', '파괴', '관찰', '생성', '보존'],
     tips({
       etymology: '라틴어 \'trans(가로질러)\'와 \'ferre(나르다)\'가 합쳐져 한 곳에서 다른 곳으로 옮긴다는 의미가 되었습니다.',
@@ -363,7 +363,7 @@ export const vocabBatch66: VocabItem[] = [
       ],
     }
   ),
-  word('transform', '변형', 7, 'noun',
+  word('transform', '변형시키다', 7, 'verb',
     ['유지', '정체', '고정', '보존', '파괴', '생성', '이동', '관찰', '분석', '결합'],
     tips({
       etymology: '접두사 trans(가로질러)와 form(형태)이 합쳐져 형태를 완전히 바꾼다는 의미가 됩니다.',
@@ -572,7 +572,7 @@ export const vocabBatch66: VocabItem[] = [
       ],
     }
   ),
-  word('tremendous', '엄청난', 9, 'noun',
+  word('tremendous', '엄청난', 9, 'adjective',
     ['미미한', '사소한', '부족한', '평범한', '일시적인', '정적인', '섬세한', '간결한', '희박한', '규칙적인'],
     tips({
       etymology: '라틴어 \'tremere(떨다)\'에서 유래하여, 너무 거대하거나 강렬해서 몸이 떨릴 정도라는 의미를 담고 있습니다.',
@@ -838,7 +838,7 @@ export const vocabBatch66: VocabItem[] = [
       ],
     }
   ),
-  word('true', '진실', 2, 'noun',
+  word('true', '사실인, 진실된', 2, 'adjective',
     ['거짓', '가짜', '허구', '오류', '환상', '착각', '위조', '모순', '조작', '왜곡'],
     tips({
       etymology: '고대 영어 \'treowe\'에서 유래했으며, 이는 \'신뢰할 수 있는\' 또는 \'충성스러운\'이라는 의미를 담고 있습니다.',

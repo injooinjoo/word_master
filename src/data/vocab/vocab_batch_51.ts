@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch51: VocabItem[] = [
-  word('plant', '실물', 4, 'noun',
+  word('plant', '식물', 4, 'noun',
     ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
     tips({
       etymology: '라틴어 \'planta\'에서 유래하여 땅에 심어 뿌리를 내린 생명체라는 의미에서 시작되었습니다.',
@@ -21,7 +21,7 @@ export const vocabBatch51: VocabItem[] = [
       ],
     }
   ),
-  word('plate', '판', 5, 'verb',
+  word('plate', '도금하다', 5, 'verb',
     ['분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다'],
     tips({
       etymology: '라틴어 \'plattus(평평한)\'에서 유래하여 금속이나 유리를 얇고 평평한 층으로 덮는 동작을 의미합니다.',
@@ -59,7 +59,7 @@ export const vocabBatch51: VocabItem[] = [
       ],
     }
   ),
-  word('play', '놀다', 1, 'noun',
+  word('play', '놀다', 1, 'verb',
     ['공부', '업무', '휴식', '운동', '연습', '대화', '식사', '수면', '여행', '청소'],
     tips({
       etymology: '고대 영어 \'plegan\'에서 유래하여 움직임, 운동, 즐거움을 뜻하게 되었습니다.',
@@ -78,7 +78,7 @@ export const vocabBatch51: VocabItem[] = [
       ],
     }
   ),
-  word('pleasant', '기분', 7, 'noun',
+  word('pleasant', '기분 좋은', 7, 'adjective',
     ['불쾌한', '지루한', '끔찍한', '평범한', '복잡한', '위험한', '어두운', '시끄러운', '차가운', '무거운'],
     tips({
       etymology: '기쁘게 하다라는 뜻의 프랑스어 \'plaisir\'에서 유래하여 남을 기분 좋게 만드는 성질을 뜻합니다.',
@@ -97,7 +97,7 @@ export const vocabBatch51: VocabItem[] = [
       ],
     }
   ),
-  word('please', '하다', 2, 'verb',
+  word('please', '기쁘게 하다', 2, 'verb',
     ['유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다'],
     tips({
       etymology: '라틴어 placere에서 유래하여 누군가를 기쁘게 하거나 만족시킨다는 본래의 의미를 가지고 있습니다.',
@@ -325,7 +325,7 @@ export const vocabBatch51: VocabItem[] = [
       ],
     }
   ),
-  word('pole', '폴란드사람', 4, 'noun',
+  word('pole', '장대, 극', 4, 'noun',
     ['독일인', '러시아인', '프랑스인', '영국인', '이탈리아인', '스페인인', '체코인', '헝가리인', '오스트리아인', '스웨덴인'],
     tips({
       etymology: '슬라브어 \'pole(들판)\'에서 유래하여 \'들판에 사는 사람\'이라는 의미를 담고 있습니다.',
@@ -344,7 +344,7 @@ export const vocabBatch51: VocabItem[] = [
       ],
     }
   ),
-  word('police', '경비하다', 3, 'verb',
+  word('police', '경찰', 3, 'noun',
     ['적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다'],
     tips({
       etymology: '그리스어 \'polis(도시)\'에서 유래하여 도시의 질서를 유지하고 관리한다는 의미를 담고 있습니다.',
@@ -382,7 +382,7 @@ export const vocabBatch51: VocabItem[] = [
       ],
     }
   ),
-  word('polish', '닦다', 8, 'noun',
+  word('polish', '닦다', 8, 'verb',
     ['먼지', '거칠음', '얼룩', '흠집', '무광택', '부식', '균열', '파편', '오염', '마모'],
     tips({
       etymology: '라틴어 \'polire\'에서 유래되었으며, 이는 \'매끄럽게 만들다\'라는 의미를 담고 있습니다.',
@@ -458,7 +458,7 @@ export const vocabBatch51: VocabItem[] = [
       ],
     }
   ),
-  word('pollute', '-을', 5, 'noun',
+  word('pollute', '오염시키다', 5, 'verb',
     ['정화하다', '보존하다', '개선하다', '치료하다', '보호하다', '청소하다', '복구하다', '유지하다', '강화하다', '건설하다'],
     tips({
       etymology: '라틴어 \'polluere\'에서 유래되었으며, \'더럽히다\'라는 의미를 담고 있습니다.',
@@ -553,7 +553,7 @@ export const vocabBatch51: VocabItem[] = [
       ],
     }
   ),
-  word('pope', '로마', 9, 'noun',
+  word('pope', '교황', 9, 'noun',
     ['추기경', '수도사', '신부', '수녀', '주교', '신도', '성당', '사제', '선교사', '신학자'],
     tips({
       etymology: '그리스어 \'pappas\'에서 유래했으며, 이는 \'아버지\'를 뜻하는 친근한 표현입니다.',
@@ -572,7 +572,7 @@ export const vocabBatch51: VocabItem[] = [
       ],
     }
   ),
-  word('popular', '의', 5, 'adjective',
+  word('popular', '인기 있는', 5, 'adjective',
     ['모호한', '적절한', '부적절한', '긍정적인', '부정적인', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인'],
     tips({
       etymology: '라틴어 populus(사람들)에서 유래하여 많은 사람들에게 속하거나 사랑받는다는 뜻을 가집니다.',
@@ -876,7 +876,7 @@ export const vocabBatch51: VocabItem[] = [
       ],
     }
   ),
-  word('pour', '따르다', 7, 'noun',
+  word('pour', '따르다', 7, 'verb',
     ['섞다', '자르다', '굽다', '튀기다', '볶다', '얼리다', '녹이다', '휘젓다', '데우다', '씻다'],
     tips({
       etymology: '중세 영어 \'pouren\'에서 유래했으며, 액체가 쏟아져 나오는 움직임을 나타냅니다.',

@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch49: VocabItem[] = [
-  word('outstanding', '눈에', 7, 'noun',
+  word('outstanding', '눈에 띄는', 7, 'adjective',
     ['평범한', '부족한', '숨겨진', '열등한', '일반적인', '사소한', '내부의', '지루한', '희미한', '고정된'],
     tips({
       etymology: '밖으로(out) 서 있는(standing) 상태를 의미하여 남들보다 툭 튀어나와 보인다는 어원을 가집니다.',
@@ -21,7 +21,7 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('over', '위쪽', 3, 'noun',
+  word('over', '~위에', 3, 'preposition',
     ['아래', '옆', '뒤', '안쪽', '바닥', '중심', '구석', '사이', '근처', '너머'],
     tips({
       etymology: '고대 영어 \'ofer\'에서 유래하여 무엇인가의 위를 덮거나 가로지르는 움직임을 나타냅니다.',
@@ -40,7 +40,7 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('overall', '포괄', 4, 'noun',
+  word('overall', '전반적인', 4, 'adjective',
     ['목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계'],
     tips({
       etymology: 'over(넘어서)와 all(모든 것)이 합쳐져 모든 것을 아우르는 포괄적인 상태를 나타냅니다.',
@@ -50,16 +50,16 @@ export const vocabBatch49: VocabItem[] = [
       synonymAntonym: '전체를 뜻하는 whole과 비슷하지만, 부분적인 것들을 합친 총합의 느낌이 강합니다.',
     }),
     {
-      definition: 'a general summary or a comprehensive view that includes all parts or aspects of something',
-      synonyms: ['totality', 'aggregate', 'summation'],
-      antonyms: ['fragment', 'detail', 'segment'],
+      definition: 'including everything or considering all parts of something together',
+      synonyms: ['total', 'general', 'comprehensive'],
+      antonyms: ['partial', 'specific', 'fragmentary'],
       exampleSentences: [
-        { en: 'The manager looked at the project\'s progress to assess the overall of the operation.', ko: '매니저는 운영의 포괄적인 상태를 평가하기 위해 프로젝트의 진행 상황을 살펴보았습니다.' },
-        { en: 'Despite some minor errors, the overall of the performance was quite impressive.', ko: '몇몇 사소한 실수에도 불구하고, 공연의 전체적인 모습은 꽤 인상적이었습니다.' },
+        { en: 'The manager looked at the project\'s progress to assess the overall performance of the operation.', ko: '매니저는 운영의 전반적인 성과를 평가하기 위해 프로젝트의 진행 상황을 살펴보았습니다.' },
+        { en: 'Despite some minor errors, the overall performance was quite impressive.', ko: '몇몇 사소한 실수에도 불구하고, 전반적인 성과는 꽤 인상적이었습니다.' },
       ],
     }
   ),
-  word('overcome', '이기다', 5, 'noun',
+  word('overcome', '극복하다', 5, 'verb',
     ['포기하다', '굴복하다', '회피하다', '무시하다', '실패하다', '망설이다', '지연하다', '거절하다', '악화되다', '순응하다'],
     tips({
       etymology: 'Over(넘어서)와 come(오다)이 합쳐져 장애물을 넘어 목적지에 도달한다는 의미에서 유래했습니다.',
@@ -97,7 +97,7 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('overlap', '겹치다', 7, 'noun',
+  word('overlap', '겹침', 7, 'noun',
     ['분리', '간격', '차이', '독립', '공백', '단절', '경계', '이탈', '소멸', '확장'],
     tips({
       etymology: 'over(~위에)와 lap(무릎, 덮개)이 합쳐져 한 물건이 다른 것 위를 덮으며 포개지는 모습을 나타냅니다.',
@@ -116,8 +116,8 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('overlook', '내려다', 4, 'noun',
-    ['관찰', '전망대', '지하도', '내부', '바닥', '심연', '그림자', '벽면', '천장', '입구'],
+  word('overlook', '전망대', 4, 'noun',
+    ['관찰', '지하도', '내부', '바닥', '심연', '그림자', '벽면', '천장', '입구', '통로'],
     tips({
       etymology: '위(over)에서 아래를 보다(look)라는 구조가 합쳐져 높은 곳에서 경치를 감상하는 장소를 뜻하게 되었습니다.',
       visual: '산 정상이나 절벽 끝에 설치된 난간에서 탁 트인 도시 전경을 감상하는 모습을 상상해 보세요.',
@@ -154,7 +154,7 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('oversea', '의', 6, 'adjective',
+  word('oversea', '해외의', 6, 'adjective',
     ['국내의', '내륙의', '인접한', '가까운', '지방의', '도시의', '전통적인', '현대적인', '일시적인', '영구적인'],
     tips({
       etymology: '바다(sea)를 건너(over) 간다는 의미에서 유래하여 외국이나 해외를 뜻하게 되었습니다.',
@@ -192,7 +192,7 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('owe', '지불할', 7, 'noun',
+  word('owe', '빚지다', 7, 'verb',
     ['빌려주다', '소유하다', '구매하다', '저축하다', '투자하다', '낭비하다', '기부하다', '교환하다', '판매하다', '거절하다'],
     tips({
       etymology: '고대 영어 \'agan\'에서 유래하여 \'소유하다\'에서 \'남의 것을 가지고 있어 돌려줄 의무가 있다\'는 뜻으로 변했습니다.',
@@ -287,7 +287,7 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('pad', '덧대는', 4, 'noun',
+  word('pad', '패드, 메모장', 4, 'noun',
     ['충격', '보호', '쿠션', '완충재', '받침대', '메모지', '발바닥', '거처', '발사대', '소음'],
     tips({
       etymology: '중세 네덜란드어 \'pad\'에서 유래하여 부드러운 물건이나 길을 의미하게 되었습니다.',
@@ -686,7 +686,7 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('pass', '지나가다', 1, 'noun',
+  word('pass', '출입증', 1, 'noun',
     ['정지', '실패', '거절', '차단', '후퇴', '고정', '금지', '방해', '지연', '회피'],
     tips({
       etymology: '라틴어 \'passus(걸음)\'에서 유래하여 한 걸음씩 나아가거나 옆을 스쳐 가는 움직임을 나타냅니다.',
@@ -819,7 +819,7 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('patch', '깁는', 10, 'noun',
+  word('patch', '조각, 패치', 10, 'noun',
     ['구멍', '전체', '파괴', '분열', '확장', '소멸', '거절', '이동', '성장', '침묵'],
     tips({
       etymology: '중세 영어 \'pacche\'에서 유래하여 조각을 덧대어 수선한다는 의미를 가집니다.',
@@ -857,7 +857,7 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('path', '작은', 4, 'adjective',
+  word('path', '길, 경로', 4, 'noun',
     ['거대한', '웅장한', '방대한', '광활한', '막대한', '무거운', '길쭉한', '단단한', '복잡한', '화려한'],
     tips({
       etymology: '고대 영어 \'pæth\'에서 유래하여 발이 닿는 좁은 길을 의미하며, 이는 큰 도로와 대비되는 작고 소박한 통로를 연상시킵니다.',
@@ -876,7 +876,7 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('patient', '인내심이', 5, 'noun',
+  word('patient', '환자', 5, 'noun',
     ['성급한', '무례한', '활발한', '게으른', '냉정한', '불안한', '용감한', '신중한', '엄격한', '관대한'],
     tips({
       etymology: '라틴어 \'pati\'에서 유래하여 \'고통을 견디는 사람\'이라는 의미에서 시작되었습니다.',

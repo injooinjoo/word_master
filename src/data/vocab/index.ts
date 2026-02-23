@@ -70,6 +70,31 @@ import { vocabBatch67 } from './vocab_batch_67';
 import { vocabBatch68 } from './vocab_batch_68';
 import { vocabBatch69 } from './vocab_batch_69';
 import { vocabBatch70 } from './vocab_batch_70';
+// Generated from normalized excel (deduped)
+// 초급
+import { vocabBatch71 } from './vocab_batch_71';
+import { vocabBatch72 } from './vocab_batch_72';
+import { vocabBatch73 } from './vocab_batch_73';
+import { vocabBatch74 } from './vocab_batch_74';
+import { vocabBatch75 } from './vocab_batch_75';
+import { vocabBatch76 } from './vocab_batch_76';
+import { vocabBatch77 } from './vocab_batch_77';
+import { vocabBatch78 } from './vocab_batch_78';
+import { vocabBatch79 } from './vocab_batch_79';
+// 초중급 혼합
+import { vocabBatch80 } from './vocab_batch_80';
+// 중급
+import { vocabBatch81 } from './vocab_batch_81';
+import { vocabBatch82 } from './vocab_batch_82';
+import { vocabBatch83 } from './vocab_batch_83';
+import { vocabBatch84 } from './vocab_batch_84';
+// 중고급 혼합
+import { vocabBatch85 } from './vocab_batch_85';
+// 고급
+import { vocabBatch86 } from './vocab_batch_86';
+import { vocabBatch87 } from './vocab_batch_87';
+import { vocabBatch88 } from './vocab_batch_88';
+import { vocabBatch89 } from './vocab_batch_89';
 
 export const allVocabData: VocabItem[] = [
   ...vocabBatch01,
@@ -142,4 +167,29 @@ export const allVocabData: VocabItem[] = [
   ...vocabBatch68,
   ...vocabBatch69,
   ...vocabBatch70,
+  // Generated from normalized excel (deduped)
+  // 초급
+  ...vocabBatch71,
+  ...vocabBatch72,
+  ...vocabBatch73,
+  ...vocabBatch74,
+  ...vocabBatch75,
+  ...vocabBatch76,
+  ...vocabBatch77,
+  ...vocabBatch78,
+  ...vocabBatch79,
+  // 초중급 혼합
+  ...vocabBatch80,
+  // 중급
+  ...vocabBatch81,
+  ...vocabBatch82,
+  ...vocabBatch83,
+  ...vocabBatch84,
+  // 중고급 혼합
+  ...vocabBatch85,
+  // 고급
+  ...vocabBatch86,
+  ...vocabBatch87,
+  ...vocabBatch88,
+  ...vocabBatch89,
 ];

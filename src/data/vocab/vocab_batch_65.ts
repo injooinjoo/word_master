@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch65: VocabItem[] = [
-  word('therefore', '그런', 5, 'noun',
+  word('therefore', '그러므로', 5, 'adverb',
     ['하지만', '그러나', '그럼에도', '오히려', '게다가', '마침내', '비록', '만약', '때때로', '결코'],
     tips({
       etymology: 'there(거기)와 fore(앞서/때문에)가 합쳐져 \'그것 때문에\'라는 결론을 이끌어냅니다.',
@@ -21,7 +21,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('they', '그들', 2, 'noun',
+  word('they', '그들', 2, 'pronoun',
     ['우리', '너희', '누구', '무엇', '어디', '언제', '어떻게', '이것', '저것', '모두'],
     tips({
       etymology: '고대 노르웨이어 \'þeir\'에서 유래하여 \'그 사람들\'을 가리키는 대명사로 정착되었습니다.',
@@ -40,7 +40,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('thick', '두꺼운', 6, 'noun',
+  word('thick', '두꺼운', 6, 'adjective',
     ['얇은', '가느다란', '투명한', '부드러운', '날카로운', '거친', '단단한', '희미한', '좁은', '가벼운'],
     tips({
       etymology: '고대 영어 \'thicce\'에서 유래했으며, 밀도가 높거나 부피가 큰 상태를 묘사하는 데 쓰여왔습니다.',
@@ -154,7 +154,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('this', '이', 3, 'noun',
+  word('this', '이것', 3, 'pronoun',
     ['저것', '그것', '무엇', '어느', '모두', '일부', '전체', '다른', '같은', '어떤'],
     tips({
       etymology: '고대 영어 \'thes\'에서 유래하여 말하는 사람과 가까운 대상을 가리키는 지시어로 발전했습니다.',
@@ -192,7 +192,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('though', '-임에도', 6, 'noun',
+  word('though', '~임에도', 6, 'conjunction',
     ['조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준'],
     tips({
       etymology: '고대 영어 \'theah\'에서 유래했으며, \'그럼에도 불구하고\'라는 양보의 의미를 담고 있습니다.',
@@ -306,7 +306,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('through', '직통의', 7, 'adjective',
+  word('through', '~을 통해', 7, 'preposition',
     ['우회하는', '정지된', '복잡한', '간접적인', '막힌', '일시적인', '단절된', '우연한', '수동적인', '불투명한'],
     tips({
       etymology: '고대 영어 \'thurh\'에서 유래하여 한쪽 끝에서 다른 쪽 끝까지 뚫고 지나가는 움직임을 나타냅니다.',
@@ -439,7 +439,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('tie', '매다', 5, 'noun',
+  word('tie', '매다', 5, 'verb',
     ['단추', '지퍼', '벨트', '단추구멍', '옷걸이', '주머니', '소매', '깃', '바늘', '실'],
     tips({
       etymology: '고대 영어 \'teag\'에서 유래하여 밧줄이나 끈으로 묶는 행위를 의미합니다.',
@@ -496,7 +496,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('till', '-까지', 7, 'noun',
+  word('till', '~까지', 7, 'preposition',
     ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
     tips({
       etymology: '고대 노르드어 \'til\'에서 유래하여 목표나 지점에 도달함을 의미합니다.',
@@ -610,7 +610,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('tire', '하다', 7, 'verb',
+  word('tire', '지치게 하다', 7, 'verb',
     ['처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다'],
     tips({
       etymology: '라틴어 \'terere(문지르다, 닳게 하다)\'에서 유래하여 에너지가 소진되는 느낌을 담고 있습니다.',
@@ -667,7 +667,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('to', '-로', 3, 'noun',
+  word('to', '~로', 3, 'preposition',
     ['기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과'],
     tips({
       etymology: '고대 영어 \'tō\'에서 유래하여 방향이나 도달점을 나타내는 전치사로 굳어졌습니다.',
@@ -705,7 +705,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('today', '오늘은', 1, 'adjective',
+  word('today', '오늘', 1, 'noun',
     ['내일', '어제', '모레', '그저께', '지난주', '다음달', '작년', '미래', '과거', '매일'],
     tips({
       etymology: '고대 영어 \'to dæge\'에서 유래했으며, \'to\'는 \'~에\', \'dæg\'는 \'날\'을 의미하여 \'이 날에\'라는 뜻이 되었습니다.',
@@ -743,7 +743,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('together', '같이', 2, 'noun',
+  word('together', '같이', 2, 'adverb',
     ['혼자', '따로', '각자', '멀리', '반대로', '따로따로', '홀로', '개별적으로', '고립되어', '단독으로'],
     tips({
       etymology: '고대 영어 \'togædere\'에서 유래했으며, \'to\'와 \'gather(모으다)\'가 합쳐져 \'한곳에 모인\' 상태를 뜻합니다.',
@@ -838,7 +838,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('tonight', '오늘밤에', 1, 'noun',
+  word('tonight', '오늘밤', 1, 'noun',
     ['어젯밤', '내일밤', '새벽', '정오', '오후', '아침', '황혼', '주말', '평일', '작년'],
     tips({
       etymology: '고대 영어 \'to\'(~에)와 \'niht\'(밤)가 결합하여 \'오늘의 밤에\'라는 의미가 되었습니다.',
@@ -857,7 +857,7 @@ export const vocabBatch65: VocabItem[] = [
       ],
     }
   ),
-  word('too', '또한', 2, 'adjective',
+  word('too', '또한', 2, 'adverb',
     ['매우', '거의', '전혀', '이미', '아직', '항상', '자주', '가끔', '결코', '오직'],
     tips({
       etymology: '고대 영어 \'to\'에서 유래했으며, \'더하여\'라는 의미가 강조되면서 별도의 철자 \'too\'로 분리되었습니다.',

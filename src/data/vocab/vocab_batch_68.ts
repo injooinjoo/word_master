@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch68: VocabItem[] = [
-  word('vary', '바꾸다', 7, 'noun',
+  word('vary', '변화하다', 7, 'verb',
     ['고정하다', '유지하다', '반복하다', '동일하다', '정지하다', '결정하다', '보존하다', '일치하다', '지속하다', '확정하다'],
     tips({
       etymology: '라틴어 \'varius\'에서 유래하여 \'다양한\' 또는 \'얼룩덜룩한\' 상태를 만드는 동작을 의미합니다.',
@@ -40,7 +40,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('vegetable', '식물', 3, 'noun',
+  word('vegetable', '채소', 3, 'noun',
     ['고기', '과일', '곡물', '유제품', '해산물', '견과류', '조미료', '음료수', '설탕', '소금'],
     tips({
       etymology: '라틴어 \'vegetabilis\'에서 유래했으며 \'활기차게 하다\'라는 뜻을 담고 있어 생명력 있게 자라는 식물을 의미합니다.',
@@ -59,7 +59,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('vehicle', '운반', 5, 'noun',
+  word('vehicle', '차량', 5, 'noun',
     ['사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보'],
     tips({
       etymology: '라틴어 \'vehere(나르다)\'에서 유래하여 무언가를 실어 나르는 수단을 의미합니다.',
@@ -116,7 +116,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('verse', '시의', 8, 'adjective',
+  word('verse', '시, 운문', 8, 'noun',
     ['산문의', '소설의', '수필의', '희곡의', '논픽션의', '직설적인', '딱딱한', '사실적인', '객관적인', '논리적인'],
     tips({
       etymology: '라틴어 \'versus\'에서 유래했으며, 밭을 갈 때 고랑을 따라 \'방향을 돌리는 것\'에서 행이 바뀌는 시의 구절을 뜻하게 되었습니다.',
@@ -154,7 +154,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('versus', '…대', 4, 'noun',
+  word('versus', '~대', 4, 'preposition',
     ['의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태'],
     tips({
       etymology: '라틴어 \'vertere(돌리다)\'에서 유래하여, 서로 마주 보고 대치하는 상황을 뜻합니다.',
@@ -192,7 +192,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('very', '매우', 1, 'noun',
+  word('very', '매우', 1, 'adverb',
     ['조금', '전혀', '가끔', '드물게', '약간', '보통', '항상', '결코', '이미', '아직'],
     tips({
       etymology: '라틴어 \'verus(진실한)\'에서 유래하여, 어떤 성질이 \'진실로\' 그러하다는 강조의 의미를 담고 있습니다.',
@@ -268,7 +268,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('via', '…을', 5, 'noun',
+  word('via', '~을 통해', 5, 'preposition',
     ['목표', '기준', '결과', '원인', '상태', '개념', '조건', '행동', '사물', '사건'],
     tips({
       etymology: '라틴어에서 유래하여 \'길\' 또는 \'통로\'를 의미하며 현대 영어에서는 수단이나 경로를 나타낼 때 쓰입니다.',
@@ -458,7 +458,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('visible', '눈에', 6, 'noun',
+  word('visible', '눈에 보이는', 6, 'adjective',
     ['투명한', '희미한', '가려진', '추상적인', '내면의', '비밀스러운', '모호한', '잠재적인', '무형의', '가상의'],
     tips({
       etymology: '라틴어 \'videre(보다)\'에서 유래하여 \'볼 수 있는\'이라는 의미를 가집니다.',
@@ -629,7 +629,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('vote', '찬부', 7, 'noun',
+  word('vote', '투표', 7, 'noun',
     ['문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인'],
     tips({
       etymology: '라틴어 votum에서 유래하여 \'서약\'이나 \'소원\'을 뜻하며, 현대에서는 자신의 의사를 공식적으로 표현하는 행위를 의미합니다.',
@@ -705,7 +705,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('wait', '기다리다', 3, 'noun',
+  word('wait', '기다리다', 3, 'verb',
     ['출발', '도착', '서두름', '포기', '결정', '이동', '거절', '수락', '무시', '반복'],
     tips({
       etymology: '고대 프랑스어 \'waitier\'에서 유래하여 \'지켜보다\' 혹은 \'매복하다\'라는 의미에서 시작되었습니다.',
@@ -724,7 +724,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('wake', '잠깨다', 1, 'noun',
+  word('wake', '잠에서 깨다', 1, 'verb',
     ['잠', '수면', '휴식', '꿈', '침대', '이불', '밤', '졸음', '피로', '명상'],
     tips({
       etymology: '고대 영어 \'wacan\'에서 유래하여 \'일어나다\' 혹은 \'살아나다\'라는 의미를 담고 있습니다.',
@@ -743,7 +743,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('walk', '걷다', 2, 'noun',
+  word('walk', '걷다', 2, 'verb',
     ['달리기', '점프', '수영', '비행', '정지', '운전', '휴식', '식사', '수면', '공부'],
     tips({
       etymology: '고대 영어 \'wealcan\'에서 유래했으며 본래 \'구르다\'나 \'헤매다\'라는 뜻에서 발을 옮겨 이동하는 의미로 발전했습니다.',
@@ -781,7 +781,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('wander', '헤매다', 10, 'noun',
+  word('wander', '헤매다', 10, 'verb',
     ['정착', '질주', '고정', '직진', '도착', '거주', '대기', '관찰', '계획', '집중'],
     tips({
       etymology: '독일어 \'wandern\'에서 유래했으며, 정해진 길 없이 걷는다는 의미를 담고 있습니다.',
@@ -800,7 +800,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('want', '결핍', 1, 'noun',
+  word('want', '원하다', 1, 'verb',
     ['풍요', '과잉', '잉여', '만족', '충족', '성공', '소유', '완성', '증가', '확장'],
     tips({
       etymology: '고대 노르웨이어 \'vanta\'에서 유래하여 \'부족하다\'는 의미를 뿌리에 두고 있습니다.',
@@ -933,7 +933,7 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('wash', '씻다', 1, 'noun',
+  word('wash', '씻다', 1, 'verb',
     ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
     tips({
       etymology: '고대 영어 \'wascan\'에서 유래했으며, 물을 사용하여 깨끗하게 만드는 동작을 의미합니다.',

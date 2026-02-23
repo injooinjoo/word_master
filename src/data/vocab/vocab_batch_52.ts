@@ -21,7 +21,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('praise', '칭찬', 7, 'verb',
+  word('praise', '칭찬하다', 7, 'verb',
     ['비난하다', '무시하다', '꾸짖다', '조롱하다', '거절하다', '의심하다', '방해하다', '처벌하다', '비판하다', '외면하다'],
     tips({
       etymology: '가치를 매기다라는 뜻의 라틴어 pretium에서 유래하여 누군가의 가치를 높게 평가한다는 의미를 담고 있습니다.',
@@ -40,7 +40,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('pray', '빌다', 4, 'noun',
+  word('pray', '빌다', 4, 'verb',
     ['놀이', '회색', '먹이', '자랑', '지불', '광선', '점토', '쟁반', '지연', '분무'],
     tips({
       etymology: '라틴어 precari에서 유래되었으며, 이는 \'간절히 요청하다\'라는 의미를 담고 있습니다.',
@@ -78,7 +78,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('precede', '-에', 9, 'noun',
+  word('precede', '앞서다', 9, 'verb',
     ['따르다', '중단하다', '결합하다', '무시하다', '반복하다', '연기하다', '도착하다', '동의하다', '포함하다', '완성하다'],
     tips({
       etymology: '접두사 pre-(미리)와 cede(가다)가 합쳐져 \'미리 가다\'라는 의미에서 유래했습니다.',
@@ -97,7 +97,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('precious', '비싼', 5, 'noun',
+  word('precious', '소중한', 5, 'adjective',
     ['저렴한', '흔한', '무가치한', '평범한', '일반적인', '거친', '더러운', '위험한', '차가운', '단단한'],
     tips({
       etymology: '라틴어 pretiosus에서 유래했으며, \'가치\'를 뜻하는 pretium(price)이 어근입니다.',
@@ -173,7 +173,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('prefer', '오히려', 4, 'noun',
+  word('prefer', '선호하다', 4, 'verb',
     ['거절하다', '무시하다', '포기하다', '비교하다', '증오하다', '연기하다', '제안하다', '반대하다', '결정하다', '조사하다'],
     tips({
       etymology: '라틴어 \'prae(앞에)\'와 \'ferre(두다)\'가 합쳐져 남들보다 앞에 둔다는 의미에서 유래했습니다.',
@@ -268,7 +268,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('prepare', '준비하', 6, 'noun',
+  word('prepare', '준비하다', 6, 'verb',
     ['파괴하다', '무시하다', '지연시키다', '망치다', '거절하다', '중단하다', '방해하다', '잊어버리다', '낭비하다', '반대하다'],
     tips({
       etymology: '라틴어 \'prae(미리)\'와 \'parare(준비하다)\'가 결합되어 어떤 일이 일어나기 전에 미리 챙긴다는 의미를 가집니다.',
@@ -325,7 +325,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('present', '있는', 1, 'noun',
+  word('present', '선물, 현재', 1, 'noun',
     ['과거', '미래', '부재', '결석', '삭제', '이동', '종료', '취소', '연기', '거절'],
     tips({
       etymology: '라틴어 \'praesent-\'에서 유래되었으며, \'앞에(pre-) 있다(esse)\'는 의미가 합쳐져 현재 눈앞에 있는 상태를 나타냅니다.',
@@ -420,7 +420,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('pretend', '핑계삼다', 4, 'noun',
+  word('pretend', '핑계삼다', 4, 'verb',
     ['의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태'],
     tips({
       etymology: '라틴어 \'praetendere\'에서 유래했으며, \'앞으로(pre) 내밀다(tend)\'라는 뜻이 합쳐져 사실이 아닌 것을 겉으로 내세우는 행위를 의미합니다.',
@@ -439,7 +439,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('pretty', '예쁜', 2, 'noun',
+  word('pretty', '예쁜', 2, 'adjective',
     ['추한', '거친', '평범한', '어두운', '무거운', '빠른', '조용한', '복잡한', '단단한', '날카로운'],
     tips({
       etymology: '고대 영어 \'prættig\'에서 유래했으며, 원래는 \'교활한\'이라는 뜻이었으나 시간이 흐르며 \'매력적인\'이라는 긍정적인 의미로 변했습니다.',
@@ -458,7 +458,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('prevail', '이기다', 9, 'noun',
+  word('prevail', '우세하다', 9, 'verb',
     ['굴복하다', '실패하다', '포기하다', '양보하다', '패배하다', '중단하다', '망설이다', '후퇴하다', '사라지다', '약화되다'],
     tips({
       etymology: '라틴어 \'praevalere\'에서 유래했으며, \'prae(앞서다)\'와 \'valere(강하다)\'가 합쳐져 남들보다 더 강한 상태를 뜻합니다.',
@@ -762,7 +762,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('privacy', '남의', 5, 'adjective',
+  word('privacy', '사생활, 프라이버시', 5, 'noun',
     ['공개', '공유', '노출', '감시', '개방', '홍보', '발표', '전시', '연결', '소통'],
     tips({
       etymology: '라틴어 \'privatus\'에서 유래하여 \'개인적인 것\' 혹은 \'공적인 것에서 분리된 상태\'를 의미합니다.',
@@ -819,7 +819,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('prize', '상', 2, 'verb',
+  word('prize', '상, 상품', 2, 'noun',
     ['무시하다', '버리다', '경시하다', '파괴하다', '거절하다', '잊다', '비난하다', '낭비하다', '숨기다', '포기하다'],
     tips({
       etymology: '라틴어 \'pretium(가치)\'에서 유래하여 어떤 대상을 매우 가치 있게 여기는 마음을 담고 있습니다.',
@@ -895,7 +895,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('proceed', '나아가다', 4, 'noun',
+  word('proceed', '나아가다', 4, 'verb',
     ['멈추다', '후퇴하다', '거절하다', '지연시키다', '방해하다', '포기하다', '금지하다', '망설이다', '취소하다', '반대하다'],
     tips({
       etymology: '앞을 뜻하는 pro-와 가다를 뜻하는 ceed가 합쳐져 앞으로 나아간다는 의미가 됩니다.',

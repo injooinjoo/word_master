@@ -135,7 +135,7 @@ export const vocabBatch44: VocabItem[] = [
       ],
     }
   ),
-  word('mad', '미친', 3, 'noun',
+  word('mad', '미친', 3, 'adjective',
     ['행복한', '차분한', '똑똑한', '조용한', '평범한', '친절한', '지루한', '우울한', '정상적인', '신중한'],
     tips({
       etymology: '고대 영어 \'gemæded\'에서 유래하여 정신이 나갔거나 통제력을 잃은 상태를 의미하게 되었습니다.',
@@ -306,7 +306,7 @@ export const vocabBatch44: VocabItem[] = [
       ],
     }
   ),
-  word('make', '만들다', 2, 'noun',
+  word('make', '만들다', 2, 'verb',
     ['파괴', '해체', '소멸', '방치', '거절', '무시', '중단', '실패', '손실', '망각'],
     tips({
       etymology: '고대 영어 macian에서 유래하여 \'모양을 갖추다\' 혹은 \'준비하다\'라는 의미에서 시작되었습니다.',
@@ -363,7 +363,7 @@ export const vocabBatch44: VocabItem[] = [
       ],
     }
   ),
-  word('manifest', '하다', 10, 'verb',
+  word('manifest', '나타내다', 10, 'verb',
     ['은폐하다', '억제하다', '모호하게하다', '무시하다', '지연시키다', '거부하다', '망설이다', '포기하다', '방해하다', '왜곡하다'],
     tips({
       etymology: '라틴어 \'manifestus\'에서 유래했으며, \'손(manus)\'으로 \'잡을 수 있을(festus)\' 만큼 분명하다는 뜻에서 시작되었습니다.',
@@ -629,7 +629,7 @@ export const vocabBatch44: VocabItem[] = [
       ],
     }
   ),
-  word('mate', '상대', 5, 'verb',
+  word('mate', '상대, 짝', 5, 'noun',
     ['확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다'],
     tips({
       etymology: '고대 영어 \'gemaca\'에서 유래하여 \'동료\'나 \'짝\'을 의미하며, 동사로는 짝짓기를 하거나 결합한다는 뜻으로 확장되었습니다.',
@@ -743,7 +743,7 @@ export const vocabBatch44: VocabItem[] = [
       ],
     }
   ),
-  word('may', '5월', 1, 'noun',
+  word('may', '~할 수 있다', 1, 'verb',
     ['행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차'],
     tips({
       etymology: '로마 신화의 성장의 여신 마이아(Maia)의 이름에서 유래하여 만물이 자라나는 시기를 뜻합니다.',
@@ -762,7 +762,7 @@ export const vocabBatch44: VocabItem[] = [
       ],
     }
   ),
-  word('maybe', '아마', 6, 'noun',
+  word('maybe', '아마', 6, 'adverb',
     ['확실히', '절대로', '항상', '결코', '이미', '아직', '자주', '가끔', '보통', '매우'],
     tips({
       etymology: 'may(일지도 모른다)와 be(이다)가 합쳐져 \'그럴 수도 있다\'는 가능성을 나타냅니다.',
@@ -857,7 +857,7 @@ export const vocabBatch44: VocabItem[] = [
       ],
     }
   ),
-  word('meanwhile', '그동안', 9, 'noun',
+  word('meanwhile', '그동안', 9, 'adverb',
     ['갑자기', '마침내', '따라서', '비록', '오히려', '게다가', '반대로', '거의', '결코', '이미'],
     tips({
       etymology: '중간을 뜻하는 mean과 시간의 한 단위를 뜻하는 while이 결합되어 두 사건 사이의 시간을 나타냅니다.',
@@ -876,7 +876,7 @@ export const vocabBatch44: VocabItem[] = [
       ],
     }
   ),
-  word('measure', '재다', 7, 'noun',
+  word('measure', '재다', 7, 'verb',
     ['문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인'],
     tips({
       etymology: '라틴어 mensura에서 유래하여 \'길이나 양을 재는 행위\'라는 핵심 의미를 가집니다.',

@@ -230,7 +230,7 @@ export const vocabBatch34: VocabItem[] = [
       ],
     }
   ),
-  word('fill', '가득', 2, 'noun',
+  word('fill', '채우다', 2, 'verb',
     ['비움', '공백', '빈자리', '부족', '결손', '텅 빔', '공허', '빈틈', '공간', '여유'],
     tips({
       etymology: '고대 영어 fyllan에서 유래하여 \'가득 채우다\'라는 동작이 명사화되어 \'충분한 양\'을 뜻하게 되었습니다.',
@@ -382,7 +382,7 @@ export const vocabBatch34: VocabItem[] = [
       ],
     }
   ),
-  word('finite', '한정되어', 6, 'noun',
+  word('finite', '유한한', 6, 'adjective',
     ['무한한', '끝없는', '무제한', '영원한', '방대한', '막대한', '지속적인', '불멸의', '광활한', '끊임없는'],
     tips({
       etymology: '라틴어 \'finis(끝)\'에서 유래했습니다. 끝이 있다는 것은 범위가 정해져 있다는 뜻입니다.',
@@ -439,7 +439,7 @@ export const vocabBatch34: VocabItem[] = [
       ],
     }
   ),
-  word('fit', '맞는', 5, 'noun',
+  word('fit', '맞는', 5, 'adjective',
     ['불일치', '부적합', '어긋남', '모순', '괴리', '충돌', '격차', '불균형', '이격', '오차'],
     tips({
       etymology: '중세 영어 \'fitten\'에서 유래하여 사물들이 서로 질서 있게 배열되거나 어울리는 상태를 의미합니다.',
@@ -591,7 +591,7 @@ export const vocabBatch34: VocabItem[] = [
       ],
     }
   ),
-  word('flee', '달아나다', 9, 'noun',
+  word('flee', '달아나다', 9, 'verb',
     ['맞서다', '남다', '돌진하다', '다가가다', '접근하다', '대기하다', '기다리다', '맞이하다', '향하다', '들어가다'],
     tips({
       etymology: '고대 영어 fleon에서 유래되었으며, \'날다\'라는 뜻의 fly와 어원이 같아 빠르게 움직여 벗어나는 느낌을 줍니다.',
@@ -629,7 +629,7 @@ export const vocabBatch34: VocabItem[] = [
       ],
     }
   ),
-  word('flexible', '구부리기', 4, 'noun',
+  word('flexible', '유연한', 4, 'adjective',
     ['뻣뻣한', '경직된', '단단한', '굽히기 어려운', '고정된', '딱딱한', '불굴', '경직', '경직성', '뻣뻣함'],
     tips({
       etymology: '라틴어 \'flectere(구부리다)\'에서 유래하여, 물리적으로나 상황적으로 잘 휘어지는 성질을 나타냅니다.',
@@ -667,7 +667,7 @@ export const vocabBatch34: VocabItem[] = [
       ],
     }
   ),
-  word('flip', '튀기다', 10, 'noun',
+  word('flip', '튀기다', 10, 'verb',
     ['받다', '놓다', '굴리다', '밀다', '당기다', '고정하다', '누르다', '붙들다', '던지지 않다', '그냥 두다'],
     tips({
       etymology: '16세기경 가볍게 치는 소리를 흉내 낸 의성어에서 유래하여 공중에서 홱 뒤집히는 동작을 뜻하게 되었습니다.',
@@ -686,7 +686,7 @@ export const vocabBatch34: VocabItem[] = [
       ],
     }
   ),
-  word('float', '뜨다', 6, 'noun',
+  word('float', '뜨다', 6, 'verb',
     ['가라앉다', '침몰하다', '떨어지다', '내려가다', '침강', '침수', '잠기다', '가라앉음', '침몰', '침강하다'],
     tips({
       etymology: '고대 영어 \'flotian\'에서 유래되었으며, 흐르다(flow)와 어원이 같아 물 위에 머무는 이미지를 줍니다.',
@@ -762,7 +762,7 @@ export const vocabBatch34: VocabItem[] = [
       ],
     }
   ),
-  word('flow', '흐르다', 5, 'noun',
+  word('flow', '흐르다', 5, 'verb',
     ['멈추다', '막히다', '고이다', '정체하다', '말라붙다', '얼다', '굳다', '막힘', '정체', '저지'],
     tips({
       etymology: '인도유럽어근 \'pleu-\'(흐르다, 헤엄치다)에서 유래하여 물의 움직임을 뜻하게 되었습니다.',
@@ -819,7 +819,7 @@ export const vocabBatch34: VocabItem[] = [
       ],
     }
   ),
-  word('flush', '왈칵흐르다', 9, 'noun',
+  word('flush', '왈칵 흐름', 9, 'noun',
     ['멈추다', '적시다', '닦다', '말리다', '흡수하다', '빼다', '막다', '고이게 하다', '천천히', '뚝뚝'],
     tips({
       etymology: '라틴어 \'fluxus(흐름)\'에서 유래하여 물이 한꺼번에 쏟아져 나오는 움직임을 나타냅니다.',
@@ -933,7 +933,7 @@ export const vocabBatch34: VocabItem[] = [
       ],
     }
   ),
-  word('fond', '좋아하는', 10, 'noun',
+  word('fond', '좋아하는', 10, 'adjective',
     ['싫어하는', '혐오하는', '무관심한', '냉담한', '미워하는', '질색하는', '싫은', '밉상', '역겨운', '불호'],
     tips({
       etymology: '중세 영어 \'fonned(어리석은)\'에서 유래하여, 누군가에게 푹 빠져 바보처럼 보일 정도로 좋아한다는 의미로 발전했습니다.',

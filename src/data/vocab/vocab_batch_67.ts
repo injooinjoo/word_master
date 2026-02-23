@@ -40,7 +40,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('turn', '돌리다', 1, 'noun',
+  word('turn', '차례', 1, 'noun',
     ['직진', '정지', '출발', '도착', '상승', '하강', '가속', '감속', '후진', '유지'],
     tips({
       etymology: '라틴어 \'tornare\'에서 유래했으며, 물레를 돌려 둥글게 깎는 동작에서 시작되었습니다.',
@@ -97,7 +97,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('twice', '두', 2, 'noun',
+  word('twice', '두 번', 2, 'adverb',
     ['한 번', '세 번', '절반', '가끔', '항상', '전혀', '모두', '조금', '자주', '매일'],
     tips({
       etymology: '고대 영어 \'twiges\'에서 유래했으며, 숫자 2를 뜻하는 \'two\'와 횟수를 나타내는 접미사가 결합된 형태입니다.',
@@ -135,7 +135,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('twist', '꼬이다', 7, 'noun',
+  word('twist', '꼬이다', 7, 'verb',
     ['직선', '평면', '안정', '단순', '질서', '고정', '일관', '해결', '순서', '조화'],
     tips({
       etymology: '고대 영어 \'twis\'에서 유래하여 \'둘\' 혹은 \'두 가닥을 꼬다\'라는 의미에서 시작되었습니다.',
@@ -268,7 +268,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('underlie', '-의', 8, 'adjective',
+  word('underlie', '기저를 이루다', 8, 'verb',
     ['덮다', '무시하다', '완성하다', '파괴하다', '분리하다', '가로막다', '증명하다', '반대하다', '무너뜨리다', '초월하다'],
     tips({
       etymology: 'under(아래에)와 lie(놓여 있다)가 결합되어 어떤 현상의 바닥에 깔려 있다는 의미를 형성합니다.',
@@ -287,7 +287,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('undermine', '-밑을', 9, 'noun',
+  word('undermine', '약화시키다', 9, 'verb',
     ['강화하다', '지지하다', '보호하다', '건설하다', '확립하다', '승인하다', '보충하다', '격려하다', '유지하다', '창조하다'],
     tips({
       etymology: 'under(아래)와 mine(파다)이 합쳐져 건물의 기초 아래를 파서 무너뜨린다는 뜻에서 유래했습니다.',
@@ -325,7 +325,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('undertake', '떠맡다', 10, 'noun',
+  word('undertake', '떠맡다', 10, 'verb',
     ['포기하다', '무시하다', '거절하다', '완성하다', '파괴하다', '지연시키다', '관찰하다', '예측하다', '망설이다', '방해하다'],
     tips({
       etymology: 'under(아래에)와 take(잡다)가 결합하여, 어떤 일의 아래에 들어가서 그 무게를 직접 손으로 잡고 들어 올리는 모습을 상상하세요.',
@@ -363,7 +363,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('unify', '하다', 7, 'verb',
+  word('unify', '통합하다', 7, 'verb',
     ['분리하다', '해체하다', '분산시키다', '나누다', '차별하다', '거절하다', '파괴하다', '무시하다', '방해하다', '고립시키다'],
     tips({
       etymology: '숫자 1을 뜻하는 \'uni\'와 만들다라는 의미의 \'fy\'가 결합되어 하나로 만든다는 의미가 됩니다.',
@@ -496,7 +496,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('unless', '-하지', 6, 'noun',
+  word('unless', '~하지 않는 한', 6, 'conjunction',
     ['만약', '때문에', '비록', '동안', '대신에', '게다가', '따라서', '그럼에도', '오히려', '결국'],
     tips({
       etymology: 'on less than이라는 표현에서 유래되어, 특정 조건이 충족되지 않는 상황을 나타냅니다.',
@@ -515,7 +515,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('until', '-까지', 7, 'noun',
+  word('until', '~까지', 7, 'preposition',
     ['이후에', '동안에', '이전에', '때문에', '비록', '너머로', '사이에', '가까이', '대신에', '관하여'],
     tips({
       etymology: '고대 노르웨이어 \'und\'(~까지)와 \'til\'(~에 이르러)이 결합된 형태로, 시간의 한계점을 나타냅니다.',
@@ -529,12 +529,12 @@ export const vocabBatch67: VocabItem[] = [
       synonyms: ['up to', 'till', 'before'],
       antonyms: ['after', 'from', 'since'],
       exampleSentences: [
-        { en: 'The library will remain open to the public for study purposes late into the night midnight.', ko: '도서관은 자정까지 학습 목적으로 대중에게 개방된 상태를 유지할 것입니다.' },
-        { en: 'Please wait in the lobby area the manager arrives to conduct your interview.', ko: '매니저가 면접을 진행하러 도착할 때까지 로비 구역에서 기다려 주십시오.' },
+        { en: 'The library will remain open to the public for study purposes until midnight.', ko: '도서관은 자정까지 학습 목적으로 대중에게 개방된 상태를 유지할 것입니다.' },
+        { en: 'Please wait in the lobby area until the manager arrives to conduct your interview.', ko: '매니저가 면접을 진행하러 도착할 때까지 로비 구역에서 기다려 주십시오.' },
       ],
     }
   ),
-  word('up', '위로', 1, 'noun',
+  word('up', '위로', 1, 'adverb',
     ['아래', '옆', '뒤', '안', '밖', '중간', '바닥', '끝', '시작', '사이'],
     tips({
       etymology: '고대 영어 \'up\'에서 유래하여 높은 곳이나 위쪽 방향을 가리키는 가장 기본적인 단어입니다.',
@@ -553,7 +553,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('update', '하다', 4, 'verb',
+  word('update', '업데이트하다', 4, 'verb',
     ['삭제하다', '무시하다', '보존하다', '지연시키다', '거절하다', '복사하다', '되돌리다', '방치하다', '숨기다', '고정하다'],
     tips({
       etymology: '위로(up) 올려서 날짜(date)를 최신으로 맞춘다는 의미에서 유래했습니다.',
@@ -572,7 +572,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('upon', '-의', 5, 'adjective',
+  word('upon', '~위에', 5, 'preposition',
     ['아래에', '뒤에', '옆에', '사이에', '안에', '밖으로', '너머에', '근처에', '멀리', '대신에'],
     tips({
       etymology: '고대 영어 \'up\'과 \'on\'이 결합된 형태로, 무언가의 위나 바로 뒤를 나타내는 강조된 표현입니다.',
@@ -610,7 +610,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('upset', '뒤집어', 7, 'noun',
+  word('upset', '뒤집다, 속상하게 하다', 7, 'verb',
     ['안정', '평화', '질서', '성공', '승리', '계획', '조화', '유지', '정상', '안심'],
     tips({
       etymology: '위(up)로 세우다(set)라는 결합에서 유래하여, 원래의 상태를 뒤집어엎는다는 의미를 가집니다.',
@@ -629,7 +629,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('upward', '위로', 4, 'noun',
+  word('upward', '위로', 4, 'adverb',
     ['아래로', '옆으로', '뒤쪽으로', '수평의', '내리막길', '바닥', '지하', '중심', '안쪽', '기울기'],
     tips({
       etymology: '위쪽을 뜻하는 \'up\'과 방향을 나타내는 접미사 \'-ward\'가 결합되어 방향성을 강조합니다.',
@@ -667,7 +667,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('urge', '몰아대다', 6, 'noun',
+  word('urge', '몰아대다', 6, 'verb',
     ['억제', '거부', '무관심', '정지', '포기', '지연', '방해', '평온', '만족', '거절'],
     tips({
       etymology: '라틴어 \'urgere\'에서 유래하여 \'밀어붙이다\' 또는 \'압박하다\'라는 핵심 의미를 담고 있습니다.',
@@ -914,7 +914,7 @@ export const vocabBatch67: VocabItem[] = [
       ],
     }
   ),
-  word('vanish', '자취를', 9, 'noun',
+  word('vanish', '사라지다', 9, 'verb',
     ['나타나다', '머무르다', '증가하다', '보존하다', '창조하다', '발견하다', '고정하다', '확장하다', '도착하다', '강조하다'],
     tips({
       etymology: '라틴어 \'evanescere\'에서 유래하여 \'비어있는 상태(vanus)가 되다\'라는 의미를 담고 있습니다.',

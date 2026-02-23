@@ -116,7 +116,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('lend', '빌리다', 4, 'noun',
+  word('lend', '빌려주다', 4, 'verb',
     ['구매하다', '소유하다', '버리다', '파괴하다', '거절하다', '무시하다', '기다리다', '방문하다', '절약하다', '수집하다'],
     tips({
       etymology: '고대 영어 \'lænan\'에서 유래했으며, 무언가를 잠시 내어준다는 의미를 담고 있습니다.',
@@ -287,7 +287,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('lie', '눕다', 1, 'noun',
+  word('lie', '눕다', 1, 'verb',
     ['서다', '앉다', '걷다', '뛰다', '날다', '먹다', '자다', '읽다', '쓰다', '듣다'],
     tips({
       etymology: '고대 영어 \'licgan\'에서 유래하여 평평한 표면에 몸을 놓는 동작을 의미합니다.',
@@ -306,7 +306,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('lift', '끌어올리다', 7, 'noun',
+  word('lift', '끌어올리다', 7, 'verb',
     ['하락', '침체', '거절', '방치', '압박', '고정', '파괴', '정지', '축소', '분리'],
     tips({
       etymology: '고대 노르웨이 어원 \'lypta\'에서 유래하여 공기 중으로 들어 올린다는 의미를 담고 있습니다.',
@@ -363,7 +363,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('likewise', '같이', 5, 'verb',
+  word('likewise', '마찬가지로', 5, 'adverb',
     ['설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다'],
     tips({
       etymology: 'Like(비슷한)와 Wise(방식)가 결합되어 \'비슷한 방식으로\'라는 의미를 가집니다.',
@@ -439,7 +439,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('link', '사슬의', 4, 'adjective',
+  word('link', '연결, 고리', 4, 'noun',
     ['분리된', '독립적인', '파편화된', '단절된', '개별적인', '고립된', '무관한', '흩어진', '자유로운', '우연한'],
     tips({
       etymology: '고대 노르웨이어 \'hlekkr\'에서 유래하여 사슬의 고리 하나하나가 연결된 상태를 의미합니다.',
@@ -610,7 +610,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('live', '살다', 2, 'noun',
+  word('live', '살다', 2, 'verb',
     ['죽다', '떠나다', '멈추다', '숨다', '일하다', '기다리다', '변하다', '이기다', '잠들다', '싸우다'],
     tips({
       etymology: '고대 영어 \'libban\'에서 유래하여 생명을 유지하고 존재한다는 근본적인 의미를 담고 있습니다.',
@@ -705,7 +705,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('locate', '관청', 7, 'verb',
+  word('locate', '위치시키다', 7, 'verb',
     ['요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다'],
     tips({
       etymology: '라틴어 \'locus(장소)\'에서 유래하여 특정 장소에 두거나 그 위치를 찾아내는 동작을 의미합니다.',
@@ -800,7 +800,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('long', '긴', 1, 'noun',
+  word('long', '긴', 1, 'adjective',
     ['짧은', '넓은', '좁은', '높은', '낮은', '빠른', '느린', '무거운', '가벼운', '두꺼운'],
     tips({
       etymology: '고대 영어 \'lang\'에서 유래하여 물리적인 길이나 시간의 연장을 의미하게 되었습니다.',
@@ -838,7 +838,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('loose', '풀어진', 7, 'noun',
+  word('loose', '헐거운, 느슨한', 7, 'adjective',
     ['단단한', '엄격한', '정확한', '좁은', '고정된', '밀폐된', '팽팽한', '압축된', '신중한', '결속된'],
     tips({
       etymology: '고대 노르웨이 어원인 \'lauss\'에서 유래하여 \'자유로운\' 혹은 \'묶이지 않은\' 상태를 뜻하게 되었습니다.',
@@ -857,7 +857,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('lose', '잃다', 4, 'noun',
+  word('lose', '잃다', 4, 'verb',
     ['찾다', '얻다', '이기다', '보관하다', '성공하다', '유지하다', '발견하다', '획득하다', '승리하다', '지키다'],
     tips({
       etymology: '고대 영어 \'losian\'에서 유래되었으며, 무언가가 파괴되거나 길을 잃어버린다는 의미에서 시작되었습니다.',
@@ -914,7 +914,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('loud', '시끄러운', 7, 'noun',
+  word('loud', '시끄러운', 7, 'adjective',
     ['조용한', '부드러운', '희미한', '차분한', '평화로운', '은은한', '고요한', '낮은', '침착한', '잔잔한'],
     tips({
       etymology: '고대 영어 \'hlud\'에서 유래했으며, 멀리서도 들릴 만큼 큰 소리를 의미합니다.',
@@ -933,7 +933,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('lounge', '빈둥거리다', 4, 'noun',
+  word('lounge', '빈둥거리다', 4, 'verb',
     ['달리다', '서두르다', '일하다', '공부하다', '긴장하다', '수리하다', '조직하다', '발표하다', '계산하다', '청소하다'],
     tips({
       etymology: '프랑스어 s\'allonger(몸을 쭉 뻗다)에서 유래하여 편안하게 누워 있거나 쉬는 모습을 나타냅니다.',

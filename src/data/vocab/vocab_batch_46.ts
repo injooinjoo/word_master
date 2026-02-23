@@ -59,7 +59,7 @@ export const vocabBatch46: VocabItem[] = [
       ],
     }
   ),
-  word('monitor', '충고자', 5, 'noun',
+  word('monitor', '감시자', 5, 'noun',
     ['방관자', '방해꾼', '학생', '기술자', '관찰자', '조력자', '비평가', '추종자', '배신자', '중재자'],
     tips({
       etymology: '라틴어 \'monere\'에서 유래했으며, 이는 \'경고하다\' 또는 \'조언하다\'라는 의미를 담고 있습니다.',
@@ -69,12 +69,12 @@ export const vocabBatch46: VocabItem[] = [
       synonymAntonym: 'advisor와 mentor는 긍정적인 가이드를 주지만, critic은 주로 비판적인 시각을 가집니다.',
     }),
     {
-      definition: 'A person who listens, observes, and gives advice or warnings regarding a person\'s conduct or performance.',
-      synonyms: ['advisor', 'mentor', 'counselor'],
-      antonyms: ['critic', 'opponent', 'adversary'],
+      definition: 'a person who watches, checks, or supervises something over a period of time',
+      synonyms: ['observer', 'supervisor', 'watcher'],
+      antonyms: ['participant', 'offender', 'violator'],
       exampleSentences: [
-        { en: 'The senior teacher acted as a monitor for the new recruits to ensure professional growth.', ko: '선임 교사는 신입 사원들의 전문적 성장을 보장하기 위해 충고자 역할을 했습니다.' },
-        { en: 'Every student needs a wise monitor who can provide guidance during difficult academic periods.', ko: '모든 학생은 힘든 학업 시기에 지침을 줄 수 있는 현명한 충고자가 필요합니다.' },
+        { en: 'The senior teacher acted as a monitor for the new recruits to ensure proper conduct.', ko: '선임 교사는 신입 사원들의 올바른 태도를 확인하기 위해 감시자 역할을 했습니다.' },
+        { en: 'The exam room had a monitor to prevent cheating during the test.', ko: '시험 중 부정행위를 막기 위해 시험실에는 감시자가 배치되어 있었다.' },
       ],
     }
   ),
@@ -211,7 +211,7 @@ export const vocabBatch46: VocabItem[] = [
       ],
     }
   ),
-  word('moreover', '그', 5, 'noun',
+  word('moreover', '게다가, 더욱이', 5, 'adverb',
     ['그럼에도 불구하고', '반대로', '결과적으로', '마침내', '갑자기', '비록', '오히려', '대신에', '때때로', '거의'],
     tips({
       etymology: 'more(더 많은)와 over(너머에)가 합쳐져 이미 있는 정보에 무언가를 더 얹는 느낌을 줍니다.',
@@ -382,8 +382,8 @@ export const vocabBatch46: VocabItem[] = [
       ],
     }
   ),
-  word('move', '움직이다', 3, 'noun',
-    ['정지', '고정', '침묵', '휴식', '거절', '방해', '지연', '포기', '수면', '관찰'],
+  word('move', '움직이다', 3, 'verb',
+    ['멈추다', '고정하다', '침묵하다', '쉬다', '거절하다', '방해하다', '지연하다', '포기하다', '잠자다', '관찰하다'],
     tips({
       etymology: '라틴어 \'movere\'에서 유래하여 위치나 상태를 바꾼다는 근본적인 의미를 담고 있습니다.',
       visual: '체스판 위에서 말을 신중하게 한 칸 옆으로 옮기는 선수의 손을 상상해 보세요.',
@@ -392,12 +392,12 @@ export const vocabBatch46: VocabItem[] = [
       synonymAntonym: 'action과 동의어 관계이며, 정지를 뜻하는 stop이나 inactivity와 반대됩니다.',
     }),
     {
-      definition: 'An act of changing physical location or a strategic step taken to achieve a specific goal.',
-      synonyms: ['motion', 'action', 'maneuver'],
-      antonyms: ['stagnation', 'stillness', 'inaction'],
+      definition: 'to change position or go from one place to another, or to cause something to do so',
+      synonyms: ['shift', 'relocate', 'proceed'],
+      antonyms: ['stop', 'stay', 'remain'],
       exampleSentences: [
-        { en: 'The CEO decided that opening a branch in Tokyo was a smart strategic shift for the company.', ko: 'CEO는 도쿄에 지사를 여는 것이 회사를 위한 현명한 전략적 조치라고 결정했습니다.' },
-        { en: 'Every single gesture on stage must be deliberate to convey the right emotions to the audience.', ko: '관객에게 올바른 감정을 전달하기 위해 무대 위의 모든 동작은 의도적이어야 합니다.' },
+        { en: 'Please move your car to the other side of the street.', ko: '차를 길 반대편으로 옮겨 주세요.' },
+        { en: 'The children moved closer to the stage to see better.', ko: '아이들은 더 잘 보기 위해 무대 쪽으로 가까이 이동했다.' },
       ],
     }
   ),
@@ -477,7 +477,7 @@ export const vocabBatch46: VocabItem[] = [
       ],
     }
   ),
-  word('multiply', '늘리다', 7, 'adverb',
+  word('multiply', '늘리다', 7, 'verb',
     ['나누다', '줄이다', '빼다', '정지하다', '축소하다', '고정하다', '유지하다', '감소하다', '제거하다', '분리하다'],
     tips({
       etymology: '라틴어 \'multi(많은)\'와 \'ply(접다/층)\'가 합쳐져 여러 겹으로 늘어난다는 의미를 담고 있습니다.',
@@ -572,7 +572,7 @@ export const vocabBatch46: VocabItem[] = [
       ],
     }
   ),
-  word('must', '-해야', 1, 'noun',
+  word('must', '필수품', 1, 'noun',
     ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
     tips({
       etymology: '고대 영어 \'moste\'에서 유래하여 의무나 필요성을 나타내는 강력한 표현으로 자리 잡았습니다.',
@@ -781,7 +781,7 @@ export const vocabBatch46: VocabItem[] = [
       ],
     }
   ),
-  word('native', '타고난', 4, 'noun',
+  word('native', '본토의, 타고난', 4, 'adjective',
     ['인공적인', '후천적인', '이질적인', '기계적인', '일시적인', '가공의', '외부의', '학습된', '변형된', '모방의'],
     tips({
       etymology: '라틴어 \'nativus\'에서 유래했으며, \'nasci(태어나다)\'라는 어근을 통해 태어날 때부터 가지고 있다는 의미를 전달합니다.',

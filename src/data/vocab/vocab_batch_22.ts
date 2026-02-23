@@ -458,7 +458,7 @@ export const vocabBatch22: VocabItem[] = [
       ],
     }
   ),
-  word('alongside', '-의', 5, 'adjective',
+  word('alongside', '~옆에, ~와 나란히', 5, 'preposition',
     ['건너편에', '뒤처져서', '멀리서', '반대편에', '아래쪽에', '위쪽으로', '안쪽으로', '바깥쪽의', '가로질러', '떨어져서'],
     tips({
       etymology: 'along(~을 따라)과 side(옆)가 결합하여 \'~의 옆에\'라는 의미를 형성합니다.',
@@ -572,7 +572,7 @@ export const vocabBatch22: VocabItem[] = [
       ],
     }
   ),
-  word('altogether', '전혀', 7, 'adverb',
+  word('altogether', '완전히, 전부', 7, 'adverb',
     ['정확히', '대략', '차근차근', '집중해서', '즉시', '뒤늦게', '점차', '반복적으로', '우선', '빠르게'],
     tips({
       etymology: 'all(모두)과 together(함께)가 합쳐져 \'모든 것을 하나로 합친\' 상태에서 \'완전히\' 또는 \'전혀\'라는 의미로 확장되었습니다.',
@@ -629,7 +629,7 @@ export const vocabBatch22: VocabItem[] = [
       ],
     }
   ),
-  word('amaze', '하다', 4, 'verb',
+  word('amaze', '놀라게 하다', 4, 'verb',
     ['분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다'],
     tips({
       etymology: '고대 영어 \'amasod\'에서 유래하여, 미로(maze)에 갇힌 것처럼 정신을 못 차릴 정도로 놀라게 한다는 뜻을 담고 있습니다.',
@@ -724,7 +724,7 @@ export const vocabBatch22: VocabItem[] = [
       ],
     }
   ),
-  word('amuse', '하다', 4, 'verb',
+  word('amuse', '즐겁게 하다', 4, 'verb',
     ['지루하게 하다', '화나게 하다', '슬프게 하다', '무시하다', '거절하다', '공격하다', '방해하다', '비난하다', '포기하다', '침묵하다'],
     tips({
       etymology: '라틴어 \'ad(~에)\'와 \'musa(뮤즈/예술)\'가 합쳐져 마음을 즐거운 곳으로 돌린다는 의미에서 유래했습니다.',
@@ -743,7 +743,7 @@ export const vocabBatch22: VocabItem[] = [
       ],
     }
   ),
-  word('analyze', '분해하다', 5, 'verb',
+  word('analyze', '분석하다', 5, 'verb',
     ['합치다', '무시하다', '창조하다', '보존하다', '추측하다', '방해하다', '모방하다', '연기하다', '거절하다', '은폐하다'],
     tips({
       etymology: '그리스어 \'analyein\'에서 유래했으며, \'ana(위로)\'와 \'lyein(풀다)\'이 결합되어 얽힌 것을 풀어헤친다는 의미를 가집니다.',
@@ -876,8 +876,8 @@ export const vocabBatch22: VocabItem[] = [
       ],
     }
   ),
-  word('anniversary', '예년의', 4, 'adjective',
-    ['기념일', '축제', '행사', '매일의', '계절의', '순간적인', '영구적인', '특별한', '정기적인', '역사적인'],
+  word('anniversary', '기념일', 4, 'noun',
+    ['축제', '행사', '매일의', '계절의', '순간적인', '영구적인', '특별한', '정기적인', '역사적인', '일상적인'],
     tips({
       etymology: '라틴어 \'annus(해)\'와 \'vertere(돌다)\'가 합쳐져 매년 돌아오는 시점을 의미합니다.',
       visual: '달력의 특정 날짜에 빨간 동그라미가 쳐져 있고 꽃다발이 놓여 있는 모습을 상상하세요.',

@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch63: VocabItem[] = [
-  word('suck', '빨다', 10, 'noun',
+  word('suck', '흡입', 10, 'noun',
     ['불다', '밀다', '던지다', '잡다', '치다', '닦다', '섞다', '굽다', '쌓다', '깎다'],
     tips({
       etymology: '고대 영어 \'sucan\'에서 유래하여 액체를 입으로 끌어당기는 동작을 나타냅니다.',
@@ -116,7 +116,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('suicide', '자살하다', 5, 'verb',
+  word('suicide', '자살', 5, 'noun',
     ['관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다'],
     tips({
       etymology: '라틴어 \'sui(자신)\'와 \'caedere(죽이다)\'가 결합되어 스스로 생명을 끊는다는 의미가 되었습니다.',
@@ -268,7 +268,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('superior', '뛰어난', 4, 'noun',
+  word('superior', '뛰어난, 우월한', 4, 'adjective',
     ['열등한', '평범한', '부족한', '하급의', '일반적인', '동등한', '미숙한', '서투른', '낮은', '보통의'],
     tips({
       etymology: '라틴어 \'super(위의)\'에서 유래하여 다른 것보다 더 높은 위치나 수준에 있음을 나타냅니다.',
@@ -401,7 +401,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('sure', '확신하는', 4, 'noun',
+  word('sure', '확신하는', 4, 'adjective',
     ['불확실한', '모호한', '의심스러운', '위험한', '조심스러운', '부족한', '복잡한', '거짓의', '불가능한', '우연한'],
     tips({
       etymology: '라틴어 \'securus\'에서 유래하여 걱정이 없는 상태, 즉 안전하고 확실함을 뜻합니다.',
@@ -458,7 +458,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('surprise', '놀람', 7, 'verb',
+  word('surprise', '놀라게 하다', 7, 'verb',
     ['중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다'],
     tips({
       etymology: '라틴어 super(위에서)와 prendere(잡다)가 합쳐져 \'갑자기 덮치다\'라는 의미에서 유래했습니다.',
@@ -496,7 +496,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('surround', '에워싸다', 4, 'noun',
+  word('surround', '에워싸다', 4, 'verb',
     ['분리하다', '관통하다', '무시하다', '제외하다', '보호하다', '파괴하다', '이동하다', '관찰하다', '해결하다', '발생하다'],
     tips({
       etymology: '라틴어 \'super(위로)\'와 \'unda(물결)\'가 합쳐져 물결이 위로 넘쳐흐르듯 사방을 덮는다는 의미에서 유래했습니다.',
@@ -534,7 +534,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('survive', '살아', 6, 'noun',
+  word('survive', '살아남다', 6, 'verb',
     ['사라지다', '포기하다', '굴복하다', '번영하다', '도착하다', '실패하다', '중단하다', '거절하다', '무시하다', '파괴하다'],
     tips({
       etymology: '라틴어 \'super(넘어서)\'와 \'vivere(살다)\'가 합쳐져 고난을 넘어서 계속 산다는 의미가 되었습니다.',
@@ -572,7 +572,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('suspend', '매달다', 9, 'noun',
+  word('suspend', '매달다', 9, 'verb',
     ['가속하다', '결합하다', '방출하다', '흡수하다', '제거하다', '확장하다', '수축하다', '보존하다', '파괴하다', '무시하다'],
     tips({
       etymology: '라틴어 \'sub(아래에)\'와 \'pendere(매달다)\'가 합쳐져 아래로 늘어뜨린다는 의미에서 유래했습니다.',
@@ -591,7 +591,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('sustain', '떠받치다', 10, 'noun',
+  word('sustain', '떠받치다', 10, 'verb',
     ['파괴하다', '중단하다', '무너뜨리다', '방해하다', '거절하다', '포기하다', '약화시키다', '무시하다', '반대하다', '제거하다'],
     tips({
       etymology: '라틴어 sustinere에서 유래하며 sub(아래에서)와 tenere(잡다)가 합쳐져 밑에서 받쳐준다는 의미를 가집니다.',
@@ -610,7 +610,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('swallow', '삼키다', 4, 'noun',
+  word('swallow', '삼키다', 4, 'verb',
     ['뱉다', '씹다', '맛보다', '마시다', '굶다', '소화하다', '핥다', '깨물다', '조각내다', '섞다'],
     tips({
       etymology: '고대 영어 \'swelgan\'에서 유래하여 목구멍으로 무언가를 넘기는 동작을 의미합니다.',
@@ -686,7 +686,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('sweet', '단', 6, 'noun',
+  word('sweet', '달콤한', 6, 'adjective',
     ['매운', '짠', '쓴', '신', '떫은', '고소한', '싱거운', '비린', '느끼한', '담백한'],
     tips({
       etymology: '고대 영어 swete에서 유래했으며, 설탕이나 꿀처럼 기분 좋은 맛을 나타냅니다.',
@@ -705,7 +705,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('swell', '부풀다', 10, 'noun',
+  word('swell', '부풀다', 10, 'verb',
     ['축소', '감소', '함몰', '수축', '평탄', '균열', '침전', '증발', '소멸', '냉각'],
     tips({
       etymology: '고대 영어 swellan에서 유래하여 \'부풀어 오르다\' 혹은 \'커지다\'라는 물리적 변화를 나타냅니다.',
@@ -724,7 +724,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('swift', '빠른', 8, 'noun',
+  word('swift', '빠른', 8, 'adjective',
     ['느린', '정지된', '무거운', '거대한', '복잡한', '단단한', '부드러운', '희귀한', '평범한', '조용한'],
     tips({
       etymology: '고대 영어 \'swift\'에서 유래했으며, \'움직이다\'라는 뜻의 어근에서 파생되어 속도감을 강조합니다.',
@@ -743,7 +743,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('swim', '헤엄치다', 2, 'noun',
+  word('swim', '헤엄치다', 2, 'verb',
     ['달리기', '자전거', '등산', '축구', '야구', '농구', '배구', '테니스', '골프', '요가'],
     tips({
       etymology: '고대 영어 \'swimman\'에서 유래했으며, 물속에서 움직이는 동작을 나타내는 의성어적 느낌을 담고 있습니다.',
@@ -762,7 +762,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('swing', '흔들리다', 7, 'noun',
+  word('swing', '흔들리다', 7, 'verb',
     ['고정', '정지', '직진', '안정', '균형', '침묵', '상승', '하강', '압박', '결합'],
     tips({
       etymology: '고대 영어 swingan에서 유래하여 \'치다\' 혹은 \'채찍질하다\'라는 뜻에서 좌우로 움직이는 동작으로 발전했습니다.',
@@ -781,7 +781,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('switch', '회초리', 4, 'noun',
+  word('switch', '스위치', 4, 'noun',
     ['채찍', '지팡이', '몽둥이', '막대기', '가죽끈', '회전목마', '전환기', '나뭇가지', '올가미', '그물'],
     tips({
       etymology: '네덜란드어 \'swijch\'에서 유래하여 유연하게 휘어지는 가느다란 나뭇가지를 뜻하게 되었습니다.',
@@ -895,7 +895,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('tackle', '고패', 6, 'noun',
+  word('tackle', '씨름하다, 다루다', 6, 'verb',
     ['도르래', '갈고리', '닻', '밧줄', '그물', '노', '돛', '키', '갑판', '선창'],
     tips({
       etymology: '중세 네덜란드어 \'takel\'에서 유래했으며, 원래 배에서 무거운 짐을 들어 올리는 장비를 의미했습니다.',
@@ -914,7 +914,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('tag', '손잡이가죽', 7, 'noun',
+  word('tag', '표, 태그', 7, 'noun',
     ['꼬리표', '이름표', '표식', '라벨', '가격표', '손잡이', '가죽끈', '장식', '고리', '매듭'],
     tips({
       etymology: '중세 영어에서 유래하여 무언가에 매달려 있는 작은 조각이나 끝부분을 의미하게 되었습니다.',

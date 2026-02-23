@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch42: VocabItem[] = [
-  word('justice', '정의', 5, 'adjective',
+  word('justice', '정의', 5, 'noun',
     ['불의', '편견', '범죄', '부패', '차별', '억압', '혼란', '폭력', '불평등', '무질서'],
     tips({
       etymology: '라틴어 \'justus(올바른)\'에서 유래하여 법과 도덕에 따른 공정함을 의미합니다.',
@@ -21,7 +21,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('justify', '하다', 6, 'verb',
+  word('justify', '정당화하다', 6, 'verb',
     ['비난하다', '포기하다', '무시하다', '반대하다', '은폐하다', '조작하다', '망설이다', '거절하다', '파괴하다', '의심하다'],
     tips({
       etymology: '라틴어 \'justus(올바른)\'와 \'facere(만들다)\'가 합쳐져 \'옳음을 증명하다\'라는 뜻이 되었습니다.',
@@ -78,7 +78,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('kick', '걷어차다', 2, 'noun',
+  word('kick', '걷어차다', 2, 'verb',
     ['던지다', '잡다', '밀다', '당기다', '치다', '막다', '눕다', '앉다', '걷다', '뛰다'],
     tips({
       etymology: '중세 영어 \'kiken\'에서 유래했으며, 발로 무언가를 강하게 타격하는 동작을 의미합니다.',
@@ -116,7 +116,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('kill', '죽이다', 1, 'noun',
+  word('kill', '죽이다', 1, 'verb',
     ['살리다', '보호하다', '창조하다', '치료하다', '돕다', '성장시키다', '구조하다', '건설하다', '부활시키다', '양육하다'],
     tips({
       etymology: '고대 영어 \'cyllan\'에서 유래하여 생명을 끝내거나 타격을 가한다는 의미를 가집니다.',
@@ -230,7 +230,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('knock', '치다', 6, 'noun',
+  word('knock', '치다', 6, 'verb',
     ['관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표'],
     tips({
       etymology: '고대 영어 \'cnocian\'에서 유래했으며, 무언가를 세게 두드리는 소리를 흉내 낸 의성어에서 시작되었습니다.',
@@ -268,7 +268,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('know', '알다', 1, 'noun',
+  word('know', '알다', 1, 'verb',
     ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
     tips({
       etymology: '고대 영어 \'cnawan\'에서 유래했으며, 이는 인지하고 인식한다는 뿌리를 가지고 있습니다.',
@@ -420,7 +420,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('lamb', '어린', 4, 'noun',
+  word('lamb', '어린 양', 4, 'noun',
     ['사자', '호랑이', '늑대', '여우', '코끼리', '기린', '토끼', '다람쥐', '곰', '사슴'],
     tips({
       etymology: '고대 게르만어에서 유래하여 아주 오래전부터 새끼 양을 뜻하는 단어로 쓰였습니다.',
@@ -591,7 +591,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('laugh', '웃다', 6, 'noun',
+  word('laugh', '웃다', 6, 'verb',
     ['울음', '미소', '분노', '슬픔', '침묵', '비명', '한숨', '농담', '기쁨', '눈물'],
     tips({
       etymology: '고대 영어 hlehhan에서 유래되었으며, 소리 내어 웃는 행위 자체를 의미합니다.',
@@ -705,7 +705,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('lay', '눕히다', 4, 'noun',
+  word('lay', '눕히다', 4, 'verb',
     ['일어나다', '서다', '달리다', '숨기다', '던지다', '부수다', '고치다', '빌리다', '이기다', '지우다'],
     tips({
       etymology: '고대 영어 lecgan에서 유래하여 \'무언가를 평평하게 두다\'라는 의미를 가집니다.',
@@ -743,7 +743,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('lazy', '게으른', 1, 'noun',
+  word('lazy', '게으른', 1, 'adjective',
     ['부지런한', '활기찬', '빠른', '영리한', '친절한', '엄격한', '용감한', '정직한', '조용한', '신중한'],
     tips({
       etymology: '16세기경 저지 독일어 \'lasich(느슨한, 약한)\'에서 유래하여 힘이 없고 움직이기 싫어하는 상태를 뜻하게 되었습니다.',
@@ -762,7 +762,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('lead', '이끌다', 6, 'noun',
+  word('lead', '이끌다', 6, 'verb',
     ['추종', '후퇴', '정체', '방해', '지연', '거부', '침묵', '포기', '혼란', '방관'],
     tips({
       etymology: '고대 영어 \'lædan\'에서 유래했으며, 누군가를 길로 안내하거나 동행한다는 의미를 담고 있습니다.',
@@ -819,7 +819,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('lean', '기대다', 4, 'noun',
+  word('lean', '기대다', 4, 'verb',
     ['밀다', '당기다', '던지다', '잡다', '눕다', '앉다', '서다', '걷다', '뛰다', '멈추다'],
     tips({
       etymology: '고대 영어 hleonian에서 유래하여 몸을 굽히거나 어딘가에 의지하는 동작을 나타냅니다.',
@@ -838,7 +838,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('leap', '껑충', 5, 'noun',
+  word('leap', '도약', 5, 'noun',
     ['절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동'],
     tips({
       etymology: '고대 영어 hleapan에서 유래되었으며, \'달리다\' 혹은 \'뛰어오르다\'라는 어원을 가지고 있습니다.',
@@ -857,7 +857,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('learn', '배우다', 3, 'noun',
+  word('learn', '배우다', 3, 'verb',
     ['가르치다', '잊어버리다', '무시하다', '가리키다', '졸업하다', '시험보다', '연구하다', '발표하다', '기록하다', '연습하다'],
     tips({
       etymology: '고대 영어 \'leornian\'에서 유래했으며, 지식을 얻거나 길을 따라간다는 의미를 담고 있습니다.',
@@ -895,7 +895,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('leather', '무두질한', 6, 'adjective',
+  word('leather', '가죽', 6, 'noun',
     ['금속의', '플라스틱의', '유리의', '나무의', '종이의', '비단으로 된', '면직의', '고무의', '돌로 만든', '흙으로 빚은'],
     tips({
       etymology: '고대 영어 \'lether\'에서 유래했으며, 동물의 피부를 가공하여 만든 질긴 재료를 뜻합니다.',
@@ -914,7 +914,7 @@ export const vocabBatch42: VocabItem[] = [
       ],
     }
   ),
-  word('leave', '남기고가다', 7, 'noun',
+  word('leave', '떠나다', 7, 'verb',
     ['도착', '방문', '유지', '참석', '획득', '정착', '수집', '보존', '거주', '동행'],
     tips({
       etymology: '고대 영어 \'læfan\'에서 유래하여 무언가를 뒤에 남겨두거나 물려준다는 의미를 담고 있습니다.',
@@ -924,16 +924,16 @@ export const vocabBatch42: VocabItem[] = [
       synonymAntonym: 'permission과 유사하게 허가의 의미를 갖지만, stay와는 반대로 자리를 비움을 뜻합니다.',
     }),
     {
-      definition: 'A period of time when one has permission to be absent from work or duty.',
-      synonyms: ['furlough', 'sabbatical', 'vacation'],
-      antonyms: ['attendance', 'presence', 'arrival'],
+      definition: 'to go away from a place, person, or situation',
+      synonyms: ['depart', 'go away', 'exit'],
+      antonyms: ['arrive', 'stay', 'remain'],
       exampleSentences: [
-        { en: 'The soldier requested a brief period of absence to visit his family.', ko: '그 군인은 가족을 방문하기 위해 짧은 휴가를 요청했습니다.' },
-        { en: 'She is currently on maternity for the next three months.', ko: '그녀는 향후 3개월 동안 출산 휴가 중입니다.' },
+        { en: 'Please leave the room quietly after the meeting ends.', ko: '회의가 끝난 뒤에는 조용히 방을 떠나 주세요.' },
+        { en: 'She decided to leave early to avoid heavy traffic.', ko: '그녀는 심한 교통 체증을 피하려고 일찍 떠나기로 했다.' },
       ],
     }
   ),
-  word('lecture', '강의', 4, 'adjective',
+  word('lecture', '강의', 4, 'noun',
     ['실험', '토론', '연구', '과제', '시험', '면접', '발표', '연습', '관찰', '기록'],
     tips({
       etymology: '라틴어 \'lectura\'에서 유래했으며, 본래 \'읽기\'라는 뜻에서 지식을 읽어주는 \'강의\'로 발전했습니다.',

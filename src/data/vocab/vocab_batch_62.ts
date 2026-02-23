@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch62: VocabItem[] = [
-  word('step', '걷다', 4, 'noun',
+  word('step', '발걸음', 4, 'noun',
     ['달리기', '점프', '정지', '후퇴', '미끄러짐', '회전', '낙하', '비행', '수영', '등반'],
     tips({
       etymology: '고대 영어 \'stæpe\'에서 유래하여 발을 내딛는 행위나 그 거리를 의미하게 되었습니다.',
@@ -59,7 +59,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('still', '소리가', 6, 'noun',
+  word('still', '정적', 6, 'noun',
     ['소음', '진동', '메아리', '음악', '비명', '천둥', '박수', '휘파람', '노래', '대화'],
     tips({
       etymology: '고대 영어 \'stille\'에서 유래하여 움직임이나 소리가 없는 상태를 뜻하게 되었습니다.',
@@ -97,7 +97,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('stir', '휘젓다', 10, 'noun',
+  word('stir', '휘젓다', 10, 'verb',
     ['결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회'],
     tips({
       etymology: '고대 영어 \'styrian\'에서 유래하여 움직이게 하거나 동요시킨다는 의미를 담고 있습니다.',
@@ -116,7 +116,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('stitch', '한', 8, 'adjective',
+  word('stitch', '바늘땀', 8, 'noun',
     ['바느질', '매듭', '상처', '조각', '실밥', '수선', '봉합', '뜨개질', '바늘', '자수'],
     tips({
       etymology: '고대 영어 stice에서 유래하여 \'찌르다\' 혹은 \'구멍을 내다\'라는 의미에서 바늘땀이라는 뜻으로 발전했습니다.',
@@ -192,7 +192,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('stop', '멈추다', 2, 'noun',
+  word('stop', '멈추다', 2, 'verb',
     ['출발', '가속', '진행', '연속', '흐름', '시작', '통과', '운전', '이동', '속도'],
     tips({
       etymology: '고대 영어 \'stoppian\'에서 유래하여 구멍을 막거나 흐름을 차단한다는 의미에서 시작되었습니다.',
@@ -211,7 +211,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('store', '가게', 3, 'adverb',
+  word('store', '가게', 3, 'noun',
     ['차근차근', '집중해서', '즉시', '뒤늦게', '점차', '반복적으로', '우선', '빠르게', '천천히', '자주'],
     tips({
       etymology: '라틴어 instaurare(복구하다, 준비하다)에서 유래하여 물건을 갖추어 둔 장소를 의미하게 되었습니다.',
@@ -268,7 +268,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('stove', 'stave의', 6, 'adjective',
+  word('stove', '난로', 6, 'noun',
     ['냉장고', '세탁기', '전자레인지', '식기세척기', '환풍기', '싱크대', '오븐', '토스터', '커피머신', '믹서기'],
     tips({
       etymology: '고대 노르웨이어 \'stofa\'에서 유래하여 원래는 난방이 되는 방을 의미했습니다.',
@@ -306,7 +306,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('strain', '잡아당기다', 9, 'noun',
+  word('strain', '잡아당기다', 9, 'verb',
     ['조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준'],
     tips({
       etymology: '라틴어 stringere에서 유래하여 \'팽팽하게 죄다\'라는 의미를 담고 있습니다.',
@@ -344,7 +344,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('strategy', '용병학', 5, 'noun',
+  word('strategy', '전략', 5, 'noun',
     ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
     tips({
       etymology: '그리스어 \'strategos(장군)\'에서 유래하여 군대를 지휘하는 기술인 병법이나 용병학을 의미하게 되었습니다.',
@@ -458,7 +458,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('stretch', '뻗치다', 4, 'noun',
+  word('stretch', '뻗치다', 4, 'verb',
     ['축소', '압축', '정지', '단축', '경직', '중단', '고정', '결핍', '한계', '위축'],
     tips({
       etymology: '고대 영어 \'streccan\'에서 유래하여 무언가를 팽팽하게 당기거나 길게 늘리는 동작을 의미합니다.',
@@ -496,7 +496,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('strike', '치다', 6, 'noun',
+  word('strike', '치다', 6, 'verb',
     ['방어', '평화', '수비', '합의', '보호', '안정', '양보', '조화', '침묵', '후퇴'],
     tips({
       etymology: '고대 영어 \'strican\'에서 유래하여 \'부드럽게 문지르다\'에서 \'강하게 치다\'로 의미가 확장되었습니다.',
@@ -534,7 +534,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('strip', '벗기다', 10, 'noun',
+  word('strip', '벗기다', 10, 'verb',
     ['덮개', '포장', '결합', '보호', '추가', '건설', '수집', '장식', '보존', '연결'],
     tips({
       etymology: '독일어 \'strippe\'에서 유래하여 가늘고 긴 끈이나 가죽 조각을 의미하게 되었습니다.',
@@ -629,7 +629,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('struggle', '버둥거리다', 6, 'noun',
+  word('struggle', '버둥거리다', 6, 'verb',
     ['성공', '평화', '안정', '휴식', '조화', '승리', '침묵', '여유', '합의', '순응'],
     tips({
       etymology: '중세 영어 struglen에서 유래하여, 무언가에 맞서 격렬하게 저항하거나 애쓰는 움직임을 나타냅니다.',
@@ -705,7 +705,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('subject', '복종시키다', 4, 'verb',
+  word('subject', '주제, 과목', 4, 'noun',
     ['관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다'],
     tips({
       etymology: '라틴어 sub(아래로)와 ject(던지다)가 합쳐져 누군가를 아래에 두고 지배한다는 의미에서 유래했습니다.',
@@ -762,7 +762,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('submit', '복종시키다', 10, 'verb',
+  word('submit', '제출하다', 10, 'verb',
     ['유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다'],
     tips({
       etymology: '라틴어 sub(아래로)와 mittere(보내다)가 합쳐져 권위 아래에 자신을 둔다는 의미에서 유래했습니다.',
@@ -781,7 +781,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('subscribe', '서명승락하다', 8, 'verb',
+  word('subscribe', '구독하다', 8, 'verb',
     ['거절하다', '취소하다', '반대하다', '무시하다', '삭제하다', '방해하다', '연기하다', '비판하다', '탈퇴하다', '금지하다'],
     tips({
       etymology: '라틴어 sub(아래에)와 scribere(쓰다)가 합쳐져 문서 아래에 이름을 써서 동의한다는 의미가 되었습니다.',

@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch37: VocabItem[] = [
-  word('graduate', '수여하다', 7, 'verb',
+  word('graduate', '졸업하다', 7, 'verb',
     ['중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다'],
     tips({
       etymology: '라틴어 \'gradus(단계)\'에서 유래하여, 학업의 특정 단계를 마치고 학위를 받는 과정을 의미합니다.',
@@ -78,7 +78,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('grant', '받아들이다', 6, 'noun',
+  word('grant', '받아들이다', 6, 'verb',
     ['거절', '취소', '박탈', '금지', '회수', '반대', '보류', '중단', '삭감', '제한'],
     tips({
       etymology: '라틴어 \'credere(믿다)\'에서 유래하여 상대방의 요청이 타당하다고 믿고 허락해준다는 의미가 담겨 있습니다.',
@@ -116,7 +116,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('graphic', '그려', 7, 'noun',
+  word('graphic', '그래픽', 7, 'noun',
     ['기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건'],
     tips({
       etymology: '그리스어 \'graphikos\'에서 유래하여 \'쓰다\' 또는 \'그리다\'라는 의미를 담고 있습니다.',
@@ -135,7 +135,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('grasp', '붙잡다', 8, 'noun',
+  word('grasp', '붙잡다', 8, 'verb',
     ['포기', '방출', '무지', '해방', '거절', '상실', '실패', '혼란', '망각', '배제'],
     tips({
       etymology: '고대 영어 \'græpian\'에서 유래하여 손으로 꽉 쥐는 동작에서 지식의 습득으로 의미가 확장되었습니다.',
@@ -173,7 +173,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('grateful', '고맙게', 4, 'adverb',
+  word('grateful', '고마운', 4, 'adjective',
     ['무례하게', '냉담하게', '당연하게', '불쾌하게', '오만하게', '무관심하게', '이기적으로', '비판적으로', '거만하게', '냉정하게'],
     tips({
       etymology: '라틴어 gratus(기쁜, 감사한)에서 유래하여 누군가의 호의에 보답하고 싶은 마음을 나타냅니다.',
@@ -211,7 +211,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('great', '커다란', 1, 'noun',
+  word('great', '커다란', 1, 'adjective',
     ['작은', '사소한', '평범한', '부족한', '좁은', '나쁜', '낮은', '가벼운', '희미한', '짧은'],
     tips({
       etymology: '고대 영어 \'great\'에서 유래하여 부피가 크거나 두껍다는 물리적 의미에서 점차 중요성이나 뛰어남을 뜻하게 되었습니다.',
@@ -287,7 +287,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('grief', '심한', 4, 'adjective',
+  word('grief', '슬픔', 4, 'noun',
     ['기쁨', '환희', '평온', '만족', '안도', '흥분', '기대', '자부심', '평화', '유희'],
     tips({
       etymology: '라틴어 \'gravare(무겁게 하다)\'에서 유래하여 마음을 무겁게 짓누르는 큰 슬픔을 뜻합니다.',
@@ -439,8 +439,8 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('guess', '하다', 2, 'verb',
-    ['추측하다', '짐작하다', '예상하다', '가정하다', '판단하다', '생각하다', '계산하다', '증명하다', '결정하다', '확인하다'],
+  word('guess', '추측하다', 2, 'verb',
+    ['선언하다', '짐작하다', '예상하다', '가정하다', '판단하다', '생각하다', '계산하다', '증명하다', '결정하다', '확인하다'],
     tips({
       etymology: '중세 영어 gessen에서 유래하여 \'얻다\' 혹은 \'파악하다\'라는 의미의 북유럽 어원과 연결됩니다.',
       visual: '안개가 자욱한 길에서 표지판의 내용을 어렴풋이 짐작해보는 장면을 상상해 보세요.',
@@ -477,7 +477,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('guide', '이끌다', 3, 'noun',
+  word('guide', '안내자', 3, 'noun',
     ['관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표'],
     tips({
       etymology: '고대 프랑스어 \'guider\'에서 유래했으며, 길을 보여주거나 방향을 제시한다는 의미를 담고 있습니다.',
@@ -629,7 +629,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('habitat', '자연번식지', 9, 'noun',
+  word('habitat', '서식지', 9, 'noun',
     ['상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미'],
     tips({
       etymology: '라틴어 habitare(거주하다)에서 유래하여 생물이 본래 살고 있는 장소를 뜻합니다.',
@@ -705,7 +705,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('halt', '멈춰서다', 10, 'noun',
+  word('halt', '멈춰서다', 10, 'verb',
     ['가속', '진행', '출발', '연속', '흐름', '확장', '성장', '유지', '통과', '허가'],
     tips({
       etymology: '독일어 \'halt\'에서 유래하여 군대에서 \'멈춰!\'라고 외치는 명령에서 시작되었습니다.',
@@ -743,7 +743,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('handicap', '불리한', 4, 'adjective',
+  word('handicap', '불리한 조건, 핸디캡', 4, 'noun',
     ['유리한', '공평한', '우월한', '신속한', '정확한', '강력한', '안정된', '유연한', '독립적인', '풍부한'],
     tips({
       etymology: '과거 모자에 손을 넣어 내기를 하던 \'hand in cap\'에서 유래하여, 공평한 경기를 위해 실력이 좋은 사람에게 주는 불리한 조건을 뜻하게 되었습니다.',
@@ -781,7 +781,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('handsome', '얼굴', 1, 'noun',
+  word('handsome', '잘생긴', 1, 'adjective',
     ['못생긴', '추한', '평범한', '작은', '거친', '무거운', '빠른', '슬픈', '조용한', '차가운'],
     tips({
       etymology: '본래 \'다루기 쉬운\'이라는 뜻에서 시작하여, 솜씨가 좋고 보기 좋다는 의미로 발전했습니다.',
@@ -800,7 +800,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('hang', '걸다', 2, 'noun',
+  word('hang', '걸다', 2, 'verb',
     ['던지다', '부수다', '숨기다', '자르다', '옮기다', '빌리다', '고치다', '태우다', '만들다', '지우다'],
     tips({
       etymology: '고대 영어 \'hangian\'에서 유래하여 무언가를 높은 곳에 고정시켜 아래로 늘어뜨리는 동작을 의미합니다.',
@@ -819,7 +819,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('happen', '일어나다', 6, 'noun',
+  word('happen', '일어나다', 6, 'verb',
     ['사라지다', '멈추다', '계획하다', '거절하다', '기다리다', '준비하다', '성공하다', '실패하다', '이동하다', '파괴하다'],
     tips({
       etymology: '북유럽어 \'hap(운, 기회)\'에서 유래하여, 우연히 어떤 일이 닥치는 것을 의미합니다.',
@@ -876,7 +876,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('hardly', '-아니다', 4, 'adverb',
+  word('hardly', '거의 아니다', 4, 'adverb',
     ['항상', '이미', '곧', '직접', '간접적으로', '정확히', '대략', '차근차근', '집중해서', '즉시'],
     tips({
       etymology: '형용사 hard에 부사형 접미사 ly가 붙었지만 \'열심히\'가 아닌 \'거의 ~않다\'라는 부정의 의미로 변했습니다.',
@@ -914,7 +914,7 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('harsh', '거친', 6, 'noun',
+  word('harsh', '거친, 가혹한', 6, 'adjective',
     ['부드러운', '온화한', '매끄러운', '친절한', '유연한', '따뜻한', '관대한', '평온한', '안락한', '가벼운'],
     tips({
       etymology: '중세 영어 \'hersh\'에서 유래했으며, 원래 질감이 거칠거나 껄끄러운 것을 묘사할 때 쓰였습니다.',
