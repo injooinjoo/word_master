@@ -88,12 +88,12 @@ export const vocabBatch42: VocabItem[] = [
       synonymAntonym: 'strike와 유사하지만 발을 사용한다는 점이 다르며, 반대로 부드럽게 만지는 touch와 대조됩니다.',
     }),
     {
-      definition: 'A forceful strike or blow delivered with the foot or leg.',
-      synonyms: ['blow', 'strike', 'jolt'],
-      antonyms: ['caress', 'tap', 'nudge'],
+      definition: 'To strike something forcefully with the foot or leg.',
+      synonyms: ['boot', 'punt', 'strike'],
+      antonyms: ['catch', 'hold', 'receive'],
       exampleSentences: [
-        { en: 'The player delivered a powerful strike to the ball to score the winning goal.', ko: '그 선수는 결승골을 넣기 위해 공을 향해 강력한 발차기를 날렸습니다.' },
-        { en: 'He felt a sudden jolt against his leg when the door swung open.', ko: '문이 열릴 때 그는 다리에 갑작스러운 충격을 느꼈습니다.' },
+        { en: 'The player kicked the ball hard to score the winning goal.', ko: '그 선수는 결승골을 넣기 위해 공을 세게 걷어찼습니다.' },
+        { en: 'She kicked the door open when her hands were full of groceries.', ko: '그녀는 양손에 식료품이 가득할 때 문을 발로 걷어차서 열었습니다.' },
       ],
     }
   ),
@@ -122,16 +122,16 @@ export const vocabBatch42: VocabItem[] = [
       etymology: '고대 영어 \'cyllan\'에서 유래하여 생명을 끝내거나 타격을 가한다는 의미를 가집니다.',
       visual: '사냥꾼이 목표물을 포착하여 사냥에 성공한 뒤 전리품을 챙기는 장면을 상상해 보세요.',
       soundAlike: '발음이 \'킬\'이므로, 게임에서 적을 처치했을 때 나오는 \'킬\' 소리를 연상하면 쉽습니다.',
-      context: '사냥이나 군사 작전에서 확보한 전리품이나 사냥감을 명사로 지칭할 때 주로 쓰입니다.',
-      synonymAntonym: '사냥감이라는 뜻의 prey와 유사하며, 생명을 뜻하는 life와는 반대되는 결과물입니다.',
+      context: '살인, 사냥, 살충 등 생명을 끝내는 행위뿐 아니라, 시간을 때우다(kill time) 같은 비유적 표현에도 쓰입니다.',
+      synonymAntonym: '생명을 끝낸다는 뜻의 slay와 유사하며, 생명을 살리는 save와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'The act of causing death, or an animal that has been hunted and caught for food.',
-      synonyms: ['slaughter', 'prey', 'fatality'],
-      antonyms: ['birth', 'preservation', 'resurrection'],
+      definition: 'To cause the death of a person, animal, or plant.',
+      synonyms: ['slay', 'execute', 'eliminate'],
+      antonyms: ['save', 'revive', 'preserve'],
       exampleSentences: [
-        { en: 'The lion dragged its fresh kill back to the shade of the trees.', ko: '사자는 갓 잡은 사냥감을 나무 그늘 아래로 끌고 갔다.' },
-        { en: 'Vultures circled in the sky, waiting for a chance to feed on the kill.', ko: '독수리들이 사냥감을 먹을 기회를 노리며 하늘을 선회했다.' },
+        { en: 'The harsh winter killed most of the crops in the northern region.', ko: '혹독한 겨울이 북부 지역의 대부분의 농작물을 죽였다.' },
+        { en: 'The hunter killed a deer during the early morning hours.', ko: '사냥꾼은 이른 아침 시간에 사슴 한 마리를 잡았다.' },
       ],
     }
   ),

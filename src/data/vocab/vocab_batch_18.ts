@@ -16,8 +16,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['obese', 'portly', 'stout'],
       antonyms: ['slender', 'thin', 'skinny'],
       exampleSentences: [
-        { en: 'The large man struggled to fit in the narrow airplane seat due to his size.', ko: '비만한 그 남자는 좁은 비행기 좌석에 앉느라 애를 먹었다.' },
-        { en: 'A bulky figure appeared in the doorway, blocking most of the light.', ko: '비만한 인물이 문간에 나타나 빛의 대부분을 가렸다.' },
+        { en: 'The corpulent man struggled to fit in the narrow airplane seat.', ko: '비만한 그 남자는 좁은 비행기 좌석에 앉느라 애를 먹었다.' },
+        { en: 'A corpulent figure appeared in the doorway, blocking most of the light.', ko: '비만한 인물이 문간에 나타나 빛의 대부분을 가렸다.' },
       ],
     }
   ),
@@ -54,8 +54,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['international', 'worldly', 'sophisticated'],
       antonyms: ['provincial', 'parochial', 'insular'],
       exampleSentences: [
-        { en: 'London is a truly global hub where hundreds of languages are spoken in a diverse environment.', ko: '런던은 다양한 환경 속에서 수백 개의 언어가 사용되는 진정한 세계적인 중심지이다.' },
-        { en: 'She has a broad outlook on life thanks to her extensive travels across multiple continents.', ko: '그녀는 여러 대륙을 가로지르는 광범위한 여행 덕분에 삶에 대한 세계적인 시각을 가지고 있다.' },
+        { en: 'London is a truly cosmopolitan city where hundreds of languages are spoken.', ko: '런던은 수백 개의 언어가 사용되는 진정한 세계적인 도시이다.' },
+        { en: 'She has a cosmopolitan outlook on life thanks to her extensive travels across multiple continents.', ko: '그녀는 여러 대륙을 가로지르는 광범위한 여행 덕분에 삶에 대한 세계적인 시각을 가지고 있다.' },
       ],
     }
   ),
@@ -149,8 +149,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['superficial', 'hasty', 'perfunctory'],
       antonyms: ['thorough', 'meticulous', 'detailed'],
       exampleSentences: [
-        { en: 'He gave the morning newspaper only a brief glance before leaving for work.', ko: '그는 출근하기 전 아침 신문을 대충 훑어보기만 했다.' },
-        { en: 'A quick inspection of the car revealed no obvious damage from the accident.', ko: '차를 대충 검사했을 때는 사고로 인한 뚜렷한 손상이 발견되지 않았다.' },
+        { en: 'He gave the morning newspaper only a cursory glance before leaving for work.', ko: '그는 출근하기 전 아침 신문을 대충 훑어보기만 했다.' },
+        { en: 'A cursory inspection of the car revealed no obvious damage from the accident.', ko: '차를 대충 검사했을 때는 사고로 인한 뚜렷한 손상이 발견되지 않았다.' },
       ],
     }
   ),
@@ -206,8 +206,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['propriety', 'etiquette', 'protocol'],
       antonyms: ['indecency', 'impropriety', 'rudeness'],
       exampleSentences: [
-        { en: 'Please maintain proper conduct in the courtroom at all times.', ko: '법정 내에서는 항상 예의를 지켜 주시기 바랍니다.' },
-        { en: 'The ceremony was conducted with appropriate dignity and respect.', ko: '그 의식은 적절한 예의와 존중 속에 진행되었다.' },
+        { en: 'Please maintain proper decorum in the courtroom at all times.', ko: '법정 내에서는 항상 예의를 지켜 주시기 바랍니다.' },
+        { en: 'The ceremony was conducted with great decorum and respect.', ko: '그 의식은 적절한 예의와 존중 속에 진행되었다.' },
       ],
     }
   ),
@@ -225,8 +225,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['harmful', 'detrimental', 'injurious'],
       antonyms: ['beneficial', 'salutary', 'harmless'],
       exampleSentences: [
-        { en: 'Smoking has negative effects on almost every organ in the body.', ko: '흡연은 신체의 거의 모든 기관에 유해한 영향을 미친다.' },
-        { en: 'The chemical spill had damaging consequences for the local wildlife.', ko: '화학 물질 유출은 지역 야생 동물에게 유해한 결과를 초래했다.' },
+        { en: 'Smoking has deleterious effects on almost every organ in the body.', ko: '흡연은 신체의 거의 모든 기관에 유해한 영향을 미친다.' },
+        { en: 'The chemical spill had deleterious consequences for the local wildlife.', ko: '화학 물질 유출은 지역 야생 동물에게 유해한 결과를 초래했다.' },
       ],
     }
   ),
@@ -263,8 +263,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['modest', 'reserved', 'shy'],
       antonyms: ['bold', 'brazen', 'flamboyant'],
       exampleSentences: [
-        { en: 'She gave a modest smile and looked down at her hands during the interview.', ko: '그녀는 인터뷰 동안 수줍게 미소 지으며 자신의 손을 내려다보았다.' },
-        { en: 'The actress chose a quiet dress that covered her shoulders for the formal event.', ko: '그 여배우는 공식 행사를 위해 어깨를 가리는 조신한 드레스를 선택했다.' },
+        { en: 'She gave a demure smile and looked down at her hands during the interview.', ko: '그녀는 인터뷰 동안 수줍게 미소 지으며 자신의 손을 내려다보았다.' },
+        { en: 'The actress chose a demure dress that covered her shoulders for the formal event.', ko: '그 여배우는 공식 행사를 위해 어깨를 가리는 조신한 드레스를 선택했다.' },
       ],
     }
   ),
@@ -396,8 +396,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['instructive', 'educational', 'preachy'],
       antonyms: ['entertaining', 'uninstructive', 'frivolous'],
       exampleSentences: [
-        { en: 'The fable has a clearly intended purpose to provide moral guidance to children.', ko: '그 우화는 아이들에게 도덕적 지침을 제공하려는 명확하고 교훈적인 목적을 가지고 있다.' },
-        { en: 'Her tone was so instructional that the lecture began to feel like a sermon.', ko: '그녀의 어조가 너무 교훈적이라서 강의가 마치 설교처럼 느껴지기 시작했다.' },
+        { en: 'The fable has a clearly didactic purpose, aiming to provide moral guidance to children.', ko: '그 우화는 아이들에게 도덕적 지침을 제공하려는 명확하고 교훈적인 목적을 가지고 있다.' },
+        { en: 'Her tone was so didactic that the lecture began to feel like a sermon.', ko: '그녀의 어조가 너무 교훈적이라서 강의가 마치 설교처럼 느껴지기 시작했다.' },
       ],
     }
   ),
@@ -453,8 +453,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['requiem', 'lament', 'elegy'],
       antonyms: ['anthem', 'paean', 'carol'],
       exampleSentences: [
-        { en: 'The brass band played a slow, mournful melody during the funeral procession.', ko: '금관악단은 장례 행렬 동안 느리고 애처로운 장송곡을 연주했다.' },
-        { en: 'The wind howling through the trees sounded like a haunting musical tribute to the lost sailors.', ko: '나무 사이로 울부짖는 바람 소리는 마치 실종된 선원들을 위한 잊혀지지 않는 장송곡처럼 들렸다.' },
+        { en: 'The brass band played a solemn dirge during the funeral procession.', ko: '금관악단은 장례 행렬 동안 엄숙한 장송곡을 연주했다.' },
+        { en: 'The wind howling through the trees sounded like a haunting dirge for the lost sailors.', ko: '나무 사이로 울부짖는 바람 소리는 마치 실종된 선원들을 위한 잊혀지지 않는 장송곡처럼 들렸다.' },
       ],
     }
   ),
@@ -548,8 +548,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['disguise', 'conceal', 'feign'],
       antonyms: ['reveal', 'manifest', 'disclose'],
       exampleSentences: [
-        { en: 'He found it difficult to his true intentions from his colleagues.', ko: '그는 동료들에게 자신의 진짜 의도를 숨기는 것이 어렵다는 것을 알게 되었다.' },
-        { en: 'She chose to her anger behind a polite smile during the meeting.', ko: '그녀는 회의 중에 정중한 미소 뒤로 자신의 분노를 감추기로 했다.' },
+        { en: 'He found it difficult to dissemble his true intentions from his colleagues.', ko: '그는 동료들에게 자신의 진짜 의도를 숨기는 것이 어렵다는 것을 알게 되었다.' },
+        { en: 'She chose to dissemble her anger behind a polite smile during the meeting.', ko: '그녀는 회의 중에 정중한 미소 뒤로 자신의 분노를 감추기로 했다.' },
       ],
     }
   ),
@@ -605,8 +605,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['mournful', 'sorrowful', 'lugubrious'],
       antonyms: ['joyful', 'cheerful', 'blithe'],
       exampleSentences: [
-        { en: 'A melancholy melody filled the church, sounding incredibly sad and heavy.', ko: '슬픈 선율이 교회 안에 가득 울려 퍼지며 매우 애처롭게 들렸다.' },
-        { en: 'The puppy looked up at its owner with big, unhappy eyes when it was left alone.', ko: '강아지는 혼자 남겨지자 크고 슬픈 눈망울로 주인을 올려다보았다.' },
+        { en: 'A doleful melody filled the church, sounding incredibly sad and heavy.', ko: '슬픈 장송곡이 교회 안에 가득 울려 퍼지며 매우 애처롭게 들렸다.' },
+        { en: 'The puppy looked up at its owner with big, doleful eyes when it was left alone.', ko: '강아지는 혼자 남겨지자 크고 슬픈 눈망울로 주인을 올려다보았다.' },
       ],
     }
   ),
@@ -625,7 +625,7 @@ export const vocabBatch18: VocabItem[] = [
       antonyms: ['youth', 'prodigy', 'intellectual'],
       exampleSentences: [
         { en: 'The elderly man mumbled to himself about events from fifty years ago, appearing to be a mere dotard.', ko: '그 노인은 50년 전의 일들에 대해 혼잣말을 중얼거리며 그저 망령든 노인처럼 보였다.' },
-        { en: 'He was once a great king, but in his final years, he was dismissed as a senile person.', ko: '그는 한때 위대한 왕이었으나, 말년에는 망령든 노인 취급을 받으며 무시당했다.' },
+        { en: 'He was once a great king, but in his final years, he was dismissed as a mere dotard.', ko: '그는 한때 위대한 왕이었으나, 말년에는 망령든 노인 취급을 받으며 무시당했다.' },
       ],
     }
   ),
@@ -662,8 +662,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['deceitful', 'two-faced', 'dishonest'],
       antonyms: ['honest', 'candid', 'sincere'],
       exampleSentences: [
-        { en: 'The spy led a double life, betraying both sides for money.', ko: '그 스파이는 돈을 위해 양쪽을 배신하며 이중적인 삶을 살았다.' },
-        { en: 'I was shocked by his treacherous behavior after years of friendship.', ko: '수년간의 우정 끝에 보여준 그의 이중적인 행동에 나는 충격을 받았다.' },
+        { en: 'The duplicitous spy led a double life, betraying both sides for money.', ko: '그 이중적인 스파이는 돈을 위해 양쪽을 배신하며 이중적인 삶을 살았다.' },
+        { en: 'I was shocked by his duplicitous behavior after years of friendship.', ko: '수년간의 우정 끝에 보여준 그의 이중적인 행동에 나는 충격을 받았다.' },
       ],
     }
   ),
@@ -681,8 +681,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['exuberant', 'buoyant', 'vivacious'],
       antonyms: ['depressed', 'subdued', 'gloomy'],
       exampleSentences: [
-        { en: 'The crowd was in a high-spirited state as the band took the stage.', ko: '밴드가 무대에 오르자 관중들은 매우 들뜬 상태였다.' },
-        { en: 'She felt incredibly joyful and full of life after passing her final exams.', ko: '그녀는 기말고사를 통과한 후 매우 들뜬 기분이었다.' },
+        { en: 'The crowd was ebullient as the band took the stage.', ko: '밴드가 무대에 오르자 관중들은 매우 들뜬 상태였다.' },
+        { en: 'She felt ebullient after passing her final exams.', ko: '그녀는 기말고사를 통과한 후 매우 들뜬 기분이었다.' },
       ],
     }
   ),
@@ -795,8 +795,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['lament', 'dirge', 'requiem'],
       antonyms: ['ode', 'paean', 'anthem'],
       exampleSentences: [
-        { en: 'The poet wrote a moving piece for his fallen friend to honor his memory.', ko: '시인은 전사한 친구를 기리기 위해 감동적인 애가를 썼습니다.' },
-        { en: 'The cello played a haunting melody during the ceremony, filling the hall with sadness.', ko: '의식 동안 첼로가 잊혀지지 않는 슬픈 애가를 연주하여 홀을 슬픔으로 채웠습니다.' },
+        { en: 'The poet wrote a moving elegy for his fallen friend to honor his memory.', ko: '시인은 전사한 친구를 기리기 위해 감동적인 애가를 썼습니다.' },
+        { en: 'The cello played a haunting elegy during the ceremony, filling the hall with sadness.', ko: '의식 동안 첼로가 잊혀지지 않는 슬픈 애가를 연주하여 홀을 슬픔으로 채웠습니다.' },
       ],
     }
   ),
@@ -852,8 +852,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['involve', 'entangle', 'ensnare'],
       antonyms: ['extricate', 'exclude', 'free'],
       exampleSentences: [
-        { en: 'I do not wish to involve myself in their family dispute.', ko: '나는 그들의 가족 분쟁에 엮이고 싶지 않습니다.' },
-        { en: 'The company was caught in a lengthy legal battle.', ko: '그 회사는 장기적인 법적 공방에 휘말려 있었습니다.' },
+        { en: 'I do not wish to embroil myself in their family dispute.', ko: '나는 그들의 가족 분쟁에 엮이고 싶지 않습니다.' },
+        { en: 'The scandal threatened to embroil the company in a lengthy legal battle.', ko: '그 스캔들은 회사를 장기적인 법적 공방에 엮이게 할 위험이 있었습니다.' },
       ],
     }
   ),
@@ -928,8 +928,8 @@ export const vocabBatch18: VocabItem[] = [
       synonyms: ['prevaricate', 'hedge', 'quibble'],
       antonyms: ['confront', 'clarify', 'declare'],
       exampleSentences: [
-        { en: 'The candidate chose to avoid a definitive answer on the tax issue by using vague language.', ko: '그 후보는 세금 문제에 대해 확정적인 답변을 주는 대신 모호하게 말하는 것을 선택했다.' },
-        { en: 'Stop trying to be evasive and tell me exactly what happened last night.', ko: '얼버무리려 하지 말고 어젯밤에 정확히 무슨 일이 있었는지 말해.' },
+        { en: 'The candidate chose to equivocate on the tax issue rather than give a definitive answer.', ko: '그 후보는 세금 문제에 대해 확정적인 답변을 주는 대신 모호하게 말하는 것을 선택했다.' },
+        { en: 'Stop trying to equivocate and tell me exactly what happened last night.', ko: '얼버무리려 하지 말고 어젯밤에 정확히 무슨 일이 있었는지 말해.' },
       ],
     }
   ),

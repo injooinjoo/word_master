@@ -367,18 +367,18 @@ export const vocabBatch35: VocabItem[] = [
     ['뒤쪽에', '후방에', '등 뒤에', '후미에', '말미에', '뒤로', '후퇴하여', '등지고', '과거의', '정지된'],
     tips({
       etymology: '앞을 뜻하는 \'for\'와 방향을 나타내는 접미사 \'ward\'가 결합되어 앞을 향하는 움직임을 나타냅니다.',
-      visual: '축구 경기에서 상대 골대를 향해 가장 앞선 줄에 서 있는 공격수의 위치를 상상해 보세요.',
+      visual: '앞을 향해 힘차게 한 발씩 내딛으며 걸어가는 사람의 모습을 상상해 보세요.',
       soundAlike: '발음이 \'포워드\'이므로, \'포(for)기하지 말고 워(ward)드(앞으로) 가자\'라고 외워보세요.',
-      context: '스포츠 경기에서 득점을 위해 전방에 배치된 공격수 포지션을 지칭할 때 주로 쓰입니다.',
-      synonymAntonym: '공격수를 뜻하는 striker와 비슷하며, 수비수인 defender와는 반대되는 개념입니다.',
+      context: '시간이나 공간에서 앞쪽 방향으로 나아가는 움직임을 설명할 때 주로 쓰입니다.',
+      synonymAntonym: 'ahead, onward와 비슷한 의미이며, backward(뒤로)와는 반대되는 방향을 나타냅니다.',
     }),
     {
-      definition: 'A player positioned in the front line of a team in games such as football or basketball whose main role is to score goals.',
-      synonyms: ['striker', 'attacker', 'offensive player'],
-      antonyms: ['defender', 'back', 'goalkeeper'],
+      definition: 'toward the front; ahead in direction or time',
+      synonyms: ['ahead', 'onward', 'forth'],
+      antonyms: ['backward', 'rearward', 'behind'],
       exampleSentences: [
-        { en: 'The team signed a talented young player to strengthen their attacking line.', ko: '그 팀은 공격 라인을 강화하기 위해 재능 있는 젊은 공격수를 영입했습니다.' },
-        { en: 'He played as a central attacker during the final match of the season.', ko: '그는 시즌 결승전 동안 중앙 공격수로 활약했습니다.' },
+        { en: 'The army moved forward through the dense forest toward the enemy camp.', ko: '군대는 적 진영을 향해 울창한 숲을 통과하며 앞으로 전진했습니다.' },
+        { en: 'She leaned forward to hear what the speaker was saying more clearly.', ko: '그녀는 연사가 말하는 것을 더 잘 듣기 위해 앞으로 몸을 기울였습니다.' },
       ],
     }
   ),

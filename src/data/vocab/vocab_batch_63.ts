@@ -40,7 +40,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('suffer', '경험하다', 6, 'verb',
+  word('suffer', '고통받다', 6, 'verb',
     ['확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다'],
     tips({
       etymology: '라틴어 \'sub(아래)\'와 \'ferre(나르다)\'가 합쳐져 고통이나 짐을 아래에서 짊어지고 견디는 이미지를 담고 있습니다.',
@@ -249,7 +249,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('superb', '장려한', 7, 'adjective',
+  word('superb', '훌륭한', 7, 'adjective',
     ['부적절한', '평범한', '조잡한', '열등한', '기본적인', '일반적인', '부족한', '실망스러운', '평이한', '서투른'],
     tips({
       etymology: '라틴어 \'superbus\'에서 유래했으며, \'위에 있다\'는 뜻의 super를 통해 최고 수준임을 나타냅니다.',
@@ -278,12 +278,12 @@ export const vocabBatch63: VocabItem[] = [
       synonymAntonym: '품질이 좋은 \'excellent\'와 유의어이며, 질이 떨어지는 \'inferior\'와는 정반대 개념입니다.',
     }),
     {
-      definition: 'A person of higher rank or status within an organization or hierarchy.',
-      synonyms: ['manager', 'supervisor', 'senior'],
-      antonyms: ['subordinate', 'junior', 'underling'],
+      definition: 'Higher in rank, quality, or degree compared to others of the same kind.',
+      synonyms: ['excellent', 'first-rate', 'outstanding'],
+      antonyms: ['inferior', 'mediocre', 'substandard'],
       exampleSentences: [
-        { en: 'The employee reported the safety violation to his immediate boss for further action.', ko: '그 직원은 추가 조치를 위해 직속 상사에게 안전 위반 사항을 보고했습니다.' },
-        { en: 'Respecting the decisions made by a high-ranking official is crucial for maintaining team discipline.', ko: '팀의 기강을 유지하기 위해서는 상급자가 내린 결정을 존중하는 것이 중요합니다.' },
+        { en: 'This brand offers a superior quality of leather compared to its competitors.', ko: '이 브랜드는 경쟁업체에 비해 뛰어난 품질의 가죽을 제공합니다.' },
+        { en: 'Her superior skills in negotiation helped the company secure the deal.', ko: '그녀의 우월한 협상 기술이 회사가 거래를 성사시키는 데 도움이 되었습니다.' },
       ],
     }
   ),
@@ -382,7 +382,7 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('suppose', '상상하다', 7, 'verb',
+  word('suppose', '가정하다', 7, 'verb',
     ['변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다'],
     tips({
       etymology: '라틴어 sub(아래에)와 ponere(놓다)가 합쳐져 어떤 생각을 바닥에 깔아둔다는 의미에서 유래했습니다.',
@@ -715,12 +715,12 @@ export const vocabBatch63: VocabItem[] = [
       synonymAntonym: '팽창을 뜻하는 expansion과 유사하며, 수축을 뜻하는 shrinkage와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'A long, unbroken wave or series of waves in the ocean, or a gradual increase in size, amount, or volume.',
-      synonyms: ['surge', 'billow', 'expansion'],
-      antonyms: ['contraction', 'decrease', 'shrinkage'],
+      definition: 'To become larger or rounder in size, typically as a result of an accumulation of fluid or pressure.',
+      synonyms: ['expand', 'inflate', 'bulge'],
+      antonyms: ['shrink', 'contract', 'deflate'],
       exampleSentences: [
-        { en: 'The heavy ocean swell made several passengers on the small boat feel seasick.', ko: '거대한 바다의 물결 때문에 작은 배에 탄 몇몇 승객들이 배멀미를 느꼈다.' },
-        { en: 'A noticeable swell in the ground suggested that there were roots growing underneath the pavement.', ko: '지면이 눈에 띄게 부풀어 오른 것은 보도블록 아래에 뿌리가 자라고 있음을 암시했다.' },
+        { en: 'Her ankle began to swell after she twisted it during the hike.', ko: '하이킹 중에 발목을 삔 후 발목이 부풀기 시작했습니다.' },
+        { en: 'The river started to swell after several days of heavy rainfall.', ko: '며칠간의 폭우 후 강물이 불어나기 시작했습니다.' },
       ],
     }
   ),
@@ -753,12 +753,12 @@ export const vocabBatch63: VocabItem[] = [
       synonymAntonym: '물에 뜨는 float와 비슷하지만, 가라앉는 sink와는 정반대의 개념입니다.',
     }),
     {
-      definition: 'An act or period of moving through water by moving the body parts.',
-      synonyms: ['dip', 'bathe', 'plunge'],
-      antonyms: ['sink', 'drown', 'drift'],
+      definition: 'To move through water by moving the body or parts of the body.',
+      synonyms: ['paddle', 'float', 'wade'],
+      antonyms: ['sink', 'drown', 'submerge'],
       exampleSentences: [
-        { en: 'A morning in the ocean is the perfect way to start a hot summer day.', ko: '바다에서의 아침 수영은 더운 여름날을 시작하는 완벽한 방법입니다.' },
-        { en: 'The athletes took a quick lap around the pool before the competition started.', ko: '선수들은 경기가 시작되기 전 풀장을 가볍게 한 바퀴 돌며 수영을 했습니다.' },
+        { en: 'She learned to swim when she was only five years old.', ko: '그녀는 겨우 다섯 살 때 헤엄치는 법을 배웠습니다.' },
+        { en: 'Dolphins swim gracefully alongside the boats in the harbor.', ko: '돌고래들이 항구의 배들 옆에서 우아하게 헤엄칩니다.' },
       ],
     }
   ),
@@ -772,31 +772,31 @@ export const vocabBatch63: VocabItem[] = [
       synonymAntonym: 'oscillation이나 fluctuation과 비슷하며, stillness나 stability와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'A seat suspended by ropes or chains on which someone may sit and move back and forth for recreation.',
-      synonyms: ['oscillation', 'sway', 'fluctuation'],
-      antonyms: ['stillness', 'fixity', 'stability'],
+      definition: 'To move or cause to move back and forth or from side to side while suspended or on an axis.',
+      synonyms: ['sway', 'oscillate', 'rock'],
+      antonyms: ['stabilize', 'fix', 'steady'],
       exampleSentences: [
-        { en: 'The children spent the entire afternoon playing on the wooden seat hanging from the old oak tree.', ko: '아이들은 오래된 떡갈나무에 매달린 나무 그네를 타며 오후 내내 시간을 보냈다.' },
-        { en: 'A sudden change in public opinion caused a massive shift in the election results.', ko: '여론의 갑작스러운 변동이 선거 결과에 거대한 변화를 일으켰다.' },
+        { en: 'The children love to swing back and forth on the playground swings.', ko: '아이들은 놀이터에서 그네를 앞뒤로 흔들며 타는 것을 좋아합니다.' },
+        { en: 'The door continued to swing in the wind after she walked through it.', ko: '그녀가 지나간 후에도 문이 바람에 계속 흔들렸습니다.' },
       ],
     }
   ),
   word('switch', '스위치', 4, 'noun',
-    ['채찍', '지팡이', '몽둥이', '막대기', '가죽끈', '회전목마', '전환기', '나뭇가지', '올가미', '그물'],
+    ['버튼', '리모컨', '콘센트', '전선', '플러그', '배터리', '조명', '전구', '퓨즈', '회로'],
     tips({
-      etymology: '네덜란드어 \'swijch\'에서 유래하여 유연하게 휘어지는 가느다란 나뭇가지를 뜻하게 되었습니다.',
-      visual: '바람을 가르며 휙 소리를 내는 가늘고 긴 버드나무 가지를 상상해 보세요.',
-      soundAlike: '스위치를 켜듯 \'휙\' 소리를 내며 휘둘러지는 회초리의 움직임을 연상하세요.',
-      context: '과거 서구 문학에서 아이들을 훈육할 때 사용하는 가느다란 매를 묘사할 때 자주 등장합니다.',
-      synonymAntonym: 'rod나 cane과 비슷하지만 훨씬 가늘고 유연하며, 반대로 솜방망이 같은 soft pad와는 대조됩니다.',
+      etymology: '네덜란드어에서 유래했으며, 전기 회로를 켜고 끄는 장치를 의미하게 되었습니다.',
+      visual: '벽에 달린 조명 스위치를 올리거나 내리는 모습을 상상해 보세요.',
+      soundAlike: '스위치를 켜면 \'딸각\' 소리가 나며 불이 켜지는 장면을 연상하세요.',
+      context: '전등 스위치뿐만 아니라 정책이나 방향의 전환을 나타낼 때도 자주 쓰입니다.',
+      synonymAntonym: 'button이나 toggle과 비슷하며, 고정된 상태를 의미하는 lock과는 대조됩니다.',
     }),
     {
-      definition: 'A slender, flexible shoot or rod, typically cut from a tree, used for punishing or driving animals.',
-      synonyms: ['rod', 'cane', 'birch'],
-      antonyms: ['cushion', 'pillow', 'padding'],
+      definition: 'A device for making and breaking the connection in an electric circuit.',
+      synonyms: ['button', 'toggle', 'lever'],
+      antonyms: ['lock', 'seal', 'block'],
       exampleSentences: [
-        { en: 'The schoolmaster kept a thin willow branch to use as a punishing tool.', ko: '훈장은 벌을 주는 도구로 사용하기 위해 가느다란 버드나무 회초리를 보관했다.' },
-        { en: 'He cut a small branch from the elm tree to act as a makeshift whip.', ko: '그는 임시 회초리로 쓰기 위해 느릅나무에서 작은 가지를 하나 꺾었다.' },
+        { en: 'Please turn off the light switch before you leave the room.', ko: '방을 나가기 전에 조명 스위치를 꺼 주세요.' },
+        { en: 'The emergency switch was located near the exit door for quick access.', ko: '비상 스위치는 빠른 접근을 위해 출구 문 근처에 위치해 있었습니다.' },
       ],
     }
   ),
@@ -895,41 +895,41 @@ export const vocabBatch63: VocabItem[] = [
       ],
     }
   ),
-  word('tackle', '씨름하다, 다루다', 6, 'verb',
-    ['도르래', '갈고리', '닻', '밧줄', '그물', '노', '돛', '키', '갑판', '선창'],
+  word('tackle', '다루다', 6, 'verb',
+    ['회피하다', '무시하다', '포기하다', '미루다', '거절하다', '방치하다', '피하다', '넘기다', '외면하다', '도망치다'],
     tips({
-      etymology: '중세 네덜란드어 \'takel\'에서 유래했으며, 원래 배에서 무거운 짐을 들어 올리는 장비를 의미했습니다.',
-      visual: '도르래와 밧줄이 복잡하게 얽혀 무거운 물건을 들어 올리는 기계 장치를 상상해 보세요.',
-      soundAlike: '축구에서 상대의 공을 뺏는 \'태클\'과 발음이 같지만, 해양 용어로는 짐을 들어 올리는 도구를 뜻합니다.',
-      context: '주로 선박이나 공사 현장에서 무거운 하중을 분산시켜 들어 올릴 때 사용되는 기계적 장치를 지칭합니다.',
-      synonymAntonym: '장비를 뜻하는 gear와 유사하며, 맨손을 뜻하는 bare hands와는 반대되는 개념입니다.',
+      etymology: '중세 네덜란드어 \'takel\'에서 유래했으며, 원래 무거운 짐을 다루는 장비를 뜻했습니다.',
+      visual: '축구 선수가 상대 선수에게 달려들어 공을 빼앗는 장면을 상상해 보세요.',
+      soundAlike: '축구에서 상대의 공을 뺏는 \'태클\'과 발음이 같습니다. 문제에 정면으로 부딪히는 느낌입니다.',
+      context: '어려운 문제를 정면으로 맞서 해결하려 할 때나 스포츠에서 상대를 저지할 때 주로 쓰입니다.',
+      synonymAntonym: 'address나 confront와 비슷하며, 문제를 피하는 avoid와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'A mechanism consisting of ropes and pulley blocks used for lifting or pulling heavy objects, especially on a ship.',
-      synonyms: ['pulley system', 'hoisting gear', 'rigging'],
-      antonyms: ['manual labor', 'deadweight', 'unassisted lift'],
+      definition: 'To make determined efforts to deal with a problem or difficult task.',
+      synonyms: ['address', 'confront', 'deal with'],
+      antonyms: ['avoid', 'evade', 'ignore'],
       exampleSentences: [
-        { en: 'The sailors used a heavy block and tackle to hoist the cargo onto the deck.', ko: '선원들은 화물을 갑판 위로 들어 올리기 위해 무거운 고패 장치를 사용했습니다.' },
-        { en: 'Mechanical advantage is gained by increasing the number of pulleys in the tackle.', ko: '고패에 있는 도르래의 수를 늘림으로써 기계적인 이득을 얻을 수 있습니다.' },
+        { en: 'The government must tackle the rising unemployment rate with new policies.', ko: '정부는 새로운 정책으로 증가하는 실업률을 다루어야 합니다.' },
+        { en: 'The rugby player tackled his opponent just before the try line.', ko: '럭비 선수는 트라이 라인 직전에 상대 선수를 태클했습니다.' },
       ],
     }
   ),
   word('tag', '표, 태그', 7, 'noun',
-    ['꼬리표', '이름표', '표식', '라벨', '가격표', '손잡이', '가죽끈', '장식', '고리', '매듭'],
+    ['봉투', '상자', '바구니', '선반', '서랍', '가방', '지갑', '벨트', '단추', '지퍼'],
     tips({
-      etymology: '중세 영어에서 유래하여 무언가에 매달려 있는 작은 조각이나 끝부분을 의미하게 되었습니다.',
-      visual: '가방이나 가구의 손잡이에 튼튼하게 덧대어진 가죽 조각을 상상해 보세요.',
-      soundAlike: '술래잡기의 \'태그\'처럼 손으로 무언가를 툭 건드리는 위치에 있는 가죽 조각입니다.',
-      context: '고급 가방이나 수하물의 손잡이 부분을 보강하기 위해 덧댄 가죽 소재를 지칭할 때 쓰입니다.',
-      synonymAntonym: 'label이나 tab과 비슷하지만, 여기서는 손잡이의 보강재라는 구체적인 용도로 쓰였습니다.',
+      etymology: '중세 영어에서 유래하여 무언가에 매달려 있는 작은 표식이나 꼬리표를 의미하게 되었습니다.',
+      visual: '옷에 달린 가격표나 여행 가방에 매달린 이름표를 상상해 보세요.',
+      soundAlike: '술래잡기의 \'태그\'처럼 손으로 무언가를 툭 건드리는 것을 떠올리면 쉽습니다.',
+      context: '물건의 가격이나 정보를 표시하는 꼬리표, 또는 SNS에서 사람을 표시하는 행위에도 쓰입니다.',
+      synonymAntonym: 'label이나 tab과 비슷하며, 표시가 없는 상태인 unmarked와는 대조됩니다.',
     }),
     {
-      definition: 'A small piece of leather or cloth attached to a handle for reinforcement or identification.',
-      synonyms: ['label', 'tab', 'flap'],
-      antonyms: ['core', 'center', 'interior'],
+      definition: 'A small piece of paper, cloth, or plastic attached to something for identification or to give information.',
+      synonyms: ['label', 'tab', 'sticker'],
+      antonyms: ['anonymity', 'blank', 'unmarked'],
       exampleSentences: [
-        { en: 'The artisan carefully stitched a leather tag onto the handle of the briefcase.', ko: '장인은 서류 가방의 손잡이에 가죽 태그를 조심스럽게 꿰매었습니다.' },
-        { en: 'Check if the protective tag on the handle is securely fastened before shipping.', ko: '배송 전에 손잡이의 보호용 가죽 조각이 단단히 고정되었는지 확인하세요.' },
+        { en: 'Make sure to check the price tag before you buy the shirt.', ko: '셔츠를 사기 전에 가격표를 반드시 확인하세요.' },
+        { en: 'She attached a name tag to her luggage before heading to the airport.', ko: '그녀는 공항으로 가기 전에 짐에 이름표를 달았습니다.' },
       ],
     }
   ),

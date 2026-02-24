@@ -4,8 +4,8 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch75: VocabItem[] = [
-  word('russia', '러시아', 2, 'noun',
-    ['배상, 보수, 보상', '많은 양', '후회하지 않는, 회개하지 않는', '조리법', '부끄러워하는', '역겨운, 메스꺼운', '대', '명 ing', '명 sion', '명 돈'],
+  word('Russia', '러시아', 2, 'noun',
+    ['배상, 보수, 보상', '많은 양', '후회하지 않는, 회개하지 않는', '조리법', '부끄러워하는', '역겨운, 메스꺼운', '그것', '수영', '인상', '달러'],
     tips({
       etymology: 'russia의 어원 정보는 추후 보강 예정',
       visual: 'russia를 명 지역로 연결해 시각적으로 기억',
@@ -444,7 +444,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 3',
     })
   ),
-  word('wherever', '접 관계', 2, 'noun',
+  word('wherever', '어디든지', 2, 'adverb',
     ['형 ist', '형', '명 ment', '동 ize', '명 nce', '명 사람', '형 un,ble', '복장, 옷차림새', '불안정한, 변하기 쉬운', '원래, 처음에는'],
     tips({
       etymology: 'wherever의 어원 정보는 추후 보강 예정',
@@ -744,7 +744,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('bass', '형, 명', 2, 'noun',
+  word('bass', '베이스, 저음', 2, 'noun',
     ['불쾌감을 주는, 물 따위가 스며들지 않게 하는', '고의적으로 방해하다, 파괴하다', '감각이 있는, 느낄 수 있는', '궤변', '(규칙, 원칙에) 포함시키다', '사소한 말다툼', '명확한', '숨겨진, 감추어진', '시대정신', '계획'],
     tips({
       etymology: 'bass의 어원 정보는 추후 보강 예정',
@@ -1244,7 +1244,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('dialect', '명 공부', 2, 'noun',
+  word('dialect', '방언, 사투리', 2, 'noun',
     ['obtaining another’s property by theft or trickery', 'lethargic, dormant, lacking motion', '무기력함, 무감각/휴면상태(hibernation)', '과실이 있음/비난받을 만함', '싹트다, 발아하다', '취급, 처리를 잘못하다/학대하다', '건강에 좋은, 몸에 좋은', '성가심/짜증', '알고 있는, 지각하고 있는', '자선적인, 자선의'],
     tips({
       etymology: 'dialect의 어원 정보는 추후 보강 예정',
@@ -1344,7 +1344,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('Dominique-Jean Larrey', '명 사람', 2, 'noun',
+  word('Dominique-Jean Larrey', '도미니크 장 라레 (프랑스 군의관)', 2, 'noun',
     ['추가의', '(간접적인) 언급, 암시', '장려함, 화려함', '우회하는', '야심 있는', '대략', '최초의', '(고도의) 지식', '파내다, 발굴하다', '불가사의한, 이해할 수 없는'],
     tips({
       etymology: 'Dominique-Jean Larrey의 어원 정보는 추후 보강 예정',
@@ -1384,7 +1384,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('drew', '동 과거', 2, 'verb',
+  word('drew', '그렸다 (draw의 과거)', 2, 'verb',
     ['~에 영향을 받기 쉬운', 'to charge, inspire', 'shifting in character, inconstant', 'a slight variation in meaning, tone, expression', 'shrewdness, soundness of perspective', 'fervent, filled with eagerness in pursuit of something', '(도보)긴 여행', '아방가르드/전위적인 사상', '심술궂은, 괴팍한', '서한문의/서간체의'],
     tips({
       etymology: 'drew의 어원 정보는 추후 보강 예정',
@@ -1414,7 +1414,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('easiest', '형 판단', 2, 'noun',
+  word('easiest', '가장 쉬운 (easy의 최상급)', 2, 'adjective',
     ['이루어지다, 실현되다', '통합', '대단히', '개시하다, 시작하다', '공등여 다듬기; 이론의 전개', '지지자', '탐요스러운 포식자', '~위에 가로 놓이다', 'overjoyed, thrilled', 'negligent, failing to take care'],
     tips({
       etymology: 'easiest의 어원 정보는 추후 보강 예정',
@@ -1444,7 +1444,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('Ekman', '명 사람', 2, 'noun',
+  word('Ekman', '에크만 (인명)', 2, 'noun',
     ['명 er', '형 able', '장래의, 미래의', '개연성이 높은, 유망한', '우선권, 우선사항', '예견하다, 예감하다', '포트폴리오, 투자 자산 구성', '설거지를 하다', '빌다, 기원하다', '길들이다'],
     tips({
       etymology: 'Ekman의 어원 정보는 추후 보강 예정',
@@ -1534,7 +1534,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('eskimo', '명 사람', 2, 'noun',
+  word('Eskimo', '에스키모', 2, 'noun',
     ['보안[안보], 보호', '아프다, 아픔[통증]', '우주 왕복선', '선발[선택]', '한 수,\n명 수', '동 ate', '명', '동', '사람이름', '명 지역'],
     tips({
       etymology: 'eskimo의 어원 정보는 추후 보강 예정',
@@ -1634,7 +1634,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('february', '명 시간', 2, 'noun',
+  word('February', '2월', 2, 'noun',
     ['슬픔에 잠긴, 슬퍼하는', '회귀, 복귀 / 후퇴', '매력적인', '예절을지키는, (행동) 적절한', '비웃다, 조롱하다, 조소하다', '실질적인, 확고한', '너무 오래입어서 헤어진 / 너무 많이 써먹은 / 진부한', '꾸밈, 가장없는', '활력, 기백, 열정', '자원봉사자,자원하다'],
     tips({
       etymology: 'february의 어원 정보는 추후 보강 예정',
@@ -1664,7 +1664,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('floppy', '명 사람', 2, 'noun',
+  word('floppy', '플로피, 흐느적거리는', 2, 'adjective',
     ['(구조물) 곧 무너질 것 같은', '맛좋은', '지지하다', '(도시, 가로 등) 불규칙하게 넓어지다[뻗다]', '돕다', '조급한, 쉽게 화내는', '꾸밈, 가장없는, 허세부리지 않는', '익숙하지 않은, 일반적이지 않은', '욕설하는, 몹시 비난하는', '재미있는'],
     tips({
       etymology: 'floppy의 어원 정보는 추후 보강 예정',
@@ -1714,7 +1714,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('freely', '명 부', 2, 'adverb',
+  word('freely', '자유롭게', 2, 'adverb',
     ['당황시키다', '되찾다', '근면성실한, 주의 깊고 부지런한', '돕다', '(외모) 흐트러진, 단정하지 못한', '대부분,가장', '밖(에[으로], 의)', '관리[경영]자, 지배인', '야새 생물', '아마, 어떻게든'],
     tips({
       etymology: 'freely의 어원 정보는 추후 보강 예정',
@@ -1744,7 +1744,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('Giorgio Vasari', '명 사람', 2, 'noun',
+  word('Giorgio Vasari', '조르조 바사리 (이탈리아 화가)', 2, 'noun',
     ['합병, 강화', '평등주의의', '자제, 인내', '무분별한, 마구잡이의', '방랑하다, 배회하다, 떠돌아다니다', '경멸적인', '깊은 후회, 양심의 가책', '포자/홀씨', '정통적이 아닌/이단의', '비방'],
     tips({
       etymology: 'Giorgio Vasari의 어원 정보는 추후 보강 예정',
@@ -1814,7 +1814,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('haiti', '명 지역', 2, 'noun',
+  word('Haiti', '아이티', 2, 'noun',
     ['확고한', '비웃다, 경멸하다', '거친', '이해할 수 있는', '최저 생계 수단, 생필품', '노력하다, 시도하다', '드문', '버리다', '상품', '부주의한'],
     tips({
       etymology: 'haiti의 어원 정보는 추후 보강 예정',
@@ -1824,7 +1824,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('halloween', '명 시간', 2, 'noun',
+  word('Halloween', '할로윈', 2, 'noun',
     ['명 탈것', '명 er', '연기하다, 뒤로 미루다', '계약, 협정; 합의', '계속 진행 중인', '위아래로', '잡다한, 혼성의', '창의적인', '극대화하다', '주목할 만한'],
     tips({
       etymology: 'halloween의 어원 정보는 추후 보강 예정',
@@ -1844,7 +1844,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('hawaii', '명 장소', 2, 'noun',
+  word('Hawaii', '하와이', 2, 'noun',
     ['extreme vigor, energy, enthusiasm', 'to understand, comprehend', 'an aggressive argument against a specific opinion', 'to confuse or annoy', '흔들리다, 동요하다 / 지배하다, 통치하다 /  통치권, 지배', '어색함/서투름', '덧 없음/소실', '부패하지 않음/청렴결백', '의식하지 못하는/염두에 없는, 잘 잊어버리는', '엄격함, 혹독함'],
     tips({
       etymology: 'hawaii의 어원 정보는 추후 보강 예정',
@@ -1904,7 +1904,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('himalaya', '명 지역', 2, 'noun',
+  word('Himalaya', '히말라야', 2, 'noun',
     ['끝까지 주장하는 사람 / 당황스럽고 어려운것', '요동하는, 혼란스러운, 당황스러운', '장황하게 말을 늘어놓다 / 모호한 태도, 입장을 취하다', '전통의', '외로운', '관계', '기운 나게 하다', '미래학', '형', '명 사람'],
     tips({
       etymology: 'himalaya의 어원 정보는 추후 보강 예정',
@@ -1944,7 +1944,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('holland', '명 지역', 2, 'noun',
+  word('Holland', '네덜란드', 2, 'noun',
     ['학문의, 학구적인', '형 ful', '명 tion', '명 cy', '명', '형', '동 과거', '명 nce', '명 ry', '명 ness'],
     tips({
       etymology: 'holland의 어원 정보는 추후 보강 예정',
@@ -2134,7 +2134,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('interchange', '명, 동', 2, 'noun',
+  word('interchange', '교환, 교류; 교환하다', 2, 'noun',
     ['형 al', '명', '동', '명 er', '명 ship', '명 tion', '명 지역', '부 in', '형 ant', '명 사람'],
     tips({
       etymology: 'interchange의 어원 정보는 추후 보강 예정',
@@ -2204,7 +2204,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('italian', '명 사람', 2, 'noun',
+  word('Italian', '이탈리아인, 이탈리아어', 2, 'noun',
     ['~와 어울리다', '우연의 일치', '개선', '확고한', '주변', '장식용의', '낙담한', '부족한', '유혹하다', '우회적인, 간접적인'],
     tips({
       etymology: 'italian의 어원 정보는 추후 보강 예정',
@@ -2234,7 +2234,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('jackson', '명 사람', 2, 'noun',
+  word('Jackson', '잭슨 (인명)', 2, 'noun',
     ['형 al', '형 ive', '형 ous', '동', '명', '명 or', '명 ian', '명 ist', '형 수', '동 un'],
     tips({
       etymology: 'jackson의 어원 정보는 추후 보강 예정',
@@ -2244,7 +2244,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('james', '명 사람', 2, 'noun',
+  word('James', '제임스 (남성 이름)', 2, 'noun',
     ['맹독성의, 매우 해로운', '활동적인, 적극적인', '현실', '직접, (똑)바로', '형', '명 ce', '명', '형 ful', '동', '형 age'],
     tips({
       etymology: 'james의 어원 정보는 추후 보강 예정',
@@ -2254,7 +2254,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('Jenkins', '명 사람', 2, 'noun',
+  word('Jenkins', '젠킨스 (인명)', 2, 'noun',
     ['인내를 요하는, 힘든', '알아내다', '~ 특유의', '지나치게', '(집, 땅 등이) 비어 있는', '반대의', 'to make unclean, impure', 'a beginner, someone without training or experience', 'to shorten by cutting off', '포기하다, 단념하다'],
     tips({
       etymology: 'Jenkins의 어원 정보는 추후 보강 예정',
@@ -2264,7 +2264,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('Jess', '명 사람', 2, 'noun',
+  word('Jess', '제스 (이름)', 2, 'noun',
     ['동 가다', '동 과거', '형 ive', '형', '명', '명 or', '형 ic', '동 er', '명 고유', '명 숫자'],
     tips({
       etymology: 'Jess의 어원 정보는 추후 보강 예정',
@@ -2274,7 +2274,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('Kathmandu', '명 고유', 2, 'noun',
+  word('Kathmandu', '카트만두 (네팔 수도)', 2, 'noun',
     ['명 사람', '형 ar', '형 숫자', '형 ive', '명 er', '부 un', '주식회사, 법인', '혁명적인', '능력, 역량', '현재\n(present, current현재의)\n(latest, recent, up to date 최근의)'],
     tips({
       etymology: 'Kathmandu의 어원 정보는 추후 보강 예정',
@@ -2284,7 +2284,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('kay', '명 사람', 2, 'noun',
+  word('Kay', '케이 (이름)', 2, 'noun',
     ['명', '명 지역', '형 ent', '명 동물', '명 단위', '명 ism', '동 re', '명 un', '미루다, 꾸물거리다', '(계획 등의)입안자, 지도자'],
     tips({
       etymology: 'kay의 어원 정보는 추후 보강 예정',
@@ -2294,7 +2294,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('Keene', '명 고유', 2, 'noun',
+  word('Keene', '킨 (지명/인명)', 2, 'noun',
     ['to give up, renounce', 'to scold, criticize', '반짝이다(glitter)/생기가 넘치다/(지성, 재치가)번뜩이다(dazzling, brilliant)', '특정한 조로 쓰이지 않은/(음악)무조의', '자유재량 / 분별력, 신중함', '은신처, 피난처', '튼튼한, 단단한', '자제, 억제, 제지', '특별하지 않은', '나타내다, 보여주다'],
     tips({
       etymology: 'Keene의 어원 정보는 추후 보강 예정',
@@ -2304,7 +2304,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('kim son-dal', '명 사람', 2, 'noun',
+  word('Kim Son-dal', '김선달 (한국 설화 인물)', 2, 'noun',
     ['정떨어지게 하다 / 불만을 품게 하다', '사귀다, 친해지다, 형제처럼 지내다', '충분히 만족시키다', '팽팽한, 긴장된', '보류하다, 주지않다 / 억제하다', '곡물 가루', '관리, 경영', '조수, 보조의', '명', '동 가다'],
     tips({
       etymology: 'kim son-dal의 어원 정보는 추후 보강 예정',
@@ -2324,7 +2324,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('lausanne', '명 사람', 2, 'noun',
+  word('Lausanne', '로잔 (스위스 도시)', 2, 'noun',
     ['명 im', '명 tion', '명 hood', '명 ment', '명 al', '명 음식', '형 ful', '명', '동, 명', '동'],
     tips({
       etymology: 'lausanne의 어원 정보는 추후 보강 예정',
@@ -2374,7 +2374,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('ligament', '명 신체', 2, 'noun',
+  word('ligament', '인대', 2, 'noun',
     ['형 수', '동', '명 지역', '명 나라', '명', '명 er', '명 사람', '명 man', '형 al', '부'],
     tips({
       etymology: 'ligament의 어원 정보는 추후 보강 예정',
@@ -2404,7 +2404,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('lombok', '명 고유', 2, 'noun',
+  word('Lombok', '롬복 (인도네시아 섬)', 2, 'noun',
     ['기피하다', '대리, 대행', '(외모) 흐트러진, 단정하지 못한', '강좌,과정,진로', '쉽게', '왕조', '(화산이) 폭발하다', '세계적인, 세계 곳곳에', '이기적인', '명'],
     tips({
       etymology: 'lombok의 어원 정보는 추후 보강 예정',
@@ -2414,7 +2414,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('lotus', '명 식물', 2, 'noun',
+  word('lotus', '연꽃', 2, 'noun',
     ['명', '형 수', '부', '명 ar', '명 sion', '동 er', '명 사람', '명 er', '명 고유', '명 re'],
     tips({
       etymology: 'lotus의 어원 정보는 추후 보강 예정',
@@ -2454,7 +2454,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('manned', '동 과거', 2, 'verb',
+  word('manned', '유인의, 사람이 탑승한', 2, 'adjective',
     ['to shorten by cutting off', '획기적인/신기원을 이룬', '잘 따르는, 순종적인, 다루기 쉬운', '융합/합체하다', '반한, 매혹된', '사로잡는/눈을 떼지 못하게 하는', '환희, 환호', '가라앉히다, 진정시키다, 완화시키다', '재활', '투표권/참정권'],
     tips({
       etymology: 'manned의 어원 정보는 추후 보강 예정',
@@ -2504,7 +2504,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('marysville', '명 지역', 2, 'noun',
+  word('Marysville', '메리스빌 (미국 지명)', 2, 'noun',
     ['불길한; 험악한', 'a burden', 'very poor, impoverished', 'subservient', '오해하다(misinterpret)', '신중한, 사려깊은', '(이야기 속의)외계인/우주인', '확고부동한', '수상의 임기', '아첨꾼'],
     tips({
       etymology: 'marysville의 어원 정보는 추후 보강 예정',
@@ -2524,7 +2524,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('McCulloch', '명 사람', 2, 'noun',
+  word('McCulloch', '매컬록 (인명)', 2, 'noun',
     ['동', '명 지역', '동 en', '명', '동 ize', '명 nce', '명 ry', '명 동물', '부서', '넓히다'],
     tips({
       etymology: 'McCulloch의 어원 정보는 추후 보강 예정',
@@ -2534,7 +2534,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('McLuhan', '명 사람', 2, 'noun',
+  word('McLuhan', '맥루한 (미디어 학자)', 2, 'noun',
     ['변절자 / 반역자', '(마음속이) 분노로 부글부글 끓다 / 분노로 끓어오르는 상태', '굴복시키다, 지배하다', '정당하지 못한, 은밀한, 불공정한', '매력적인', '관광객', '꽉 찬, 붐비는', '용기[그릇]', '희망 없는', '고치다, 수리하다'],
     tips({
       etymology: 'McLuhan의 어원 정보는 추후 보강 예정',
@@ -2574,7 +2574,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('Miller', '명 사람', 2, 'noun',
+  word('Miller', '밀러 (인명)', 2, 'noun',
     ['성과,업적', '타고난', '피로', '흐린, 구름 낀', '~을 돌보다', 'meaning', '거대한, 엄청난', '전문 용어', '굳지 않은', '요약하다'],
     tips({
       etymology: 'Miller의 어원 정보는 추후 보강 예정',
@@ -2584,7 +2584,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('millionaire', '명 호칭ire', 2, 'noun',
+  word('millionaire', '백만장자', 2, 'noun',
     ['to obtain, acquire', 'abundant', 'calm (There is a time of night when nothing moves and everything', 'a gentle breeze', '입을 크게 벌린', '신뢰할 수 있음/믿음직함/확실성', '희미한 모습을 그리다, 윤곽을 그리다', '들소', '공모하다', '솜씨 좋게/교묘히'],
     tips({
       etymology: 'millionaire의 어원 정보는 추후 보강 예정',
@@ -2634,7 +2634,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('mississippi', '명 지역', 2, 'noun',
+  word('Mississippi', '미시시피', 2, 'noun',
     ['명', '형 수', '동', '부', '형 hood', '명 er', '명 사람', '명 고유', '명 man', '형 ic'],
     tips({
       etymology: 'mississippi의 어원 정보는 추후 보강 예정',
@@ -2644,7 +2644,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('moccasin', '명 옷', 2, 'noun',
+  word('moccasin', '모카신 (부드러운 가죽 신발)', 2, 'noun',
     ['장황함', '피곤한,싫증난', '울긋불긋한, 화려한', '정부', '무서운', '희망 없는', '저널리즘, 언론계', '명', '동', '명 ment'],
     tips({
       etymology: 'moccasin의 어원 정보는 추후 보강 예정',
@@ -2674,7 +2674,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('Nambawi', '명 고유', 2, 'noun',
+  word('Nambawi', '남바위 (한국 전통 방한모)', 2, 'noun',
     ['오염물질', '(병이) 나아지다, 회복하다', '(사건이) 일어나다, (행사가) 열리다', '믿기 어려운', '융통성 있는, 다방면의', '변함없는', '결정 요인', '풍부한', '~에서 비롯되다', '견디다'],
     tips({
       etymology: 'Nambawi의 어원 정보는 추후 보강 예정',
@@ -2684,7 +2684,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('napoleon', '명 사람', 2, 'noun',
+  word('Napoleon', '나폴레옹', 2, 'noun',
     ['어디에나, 어디든지', '맛있는', '(물을)뿌리다, 분무기', '가볍게 씻어내다', '표현', '고치다, 수리하다', '형 숫자', '대', '명 ment', '명 물질'],
     tips({
       etymology: 'napoleon의 어원 정보는 추후 보강 예정',
@@ -2834,7 +2834,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('October', '명 날짜', 2, 'noun',
+  word('October', '10월', 2, 'noun',
     ['번영하다, 성공하다', '손상된, 손해를 입은', '감당할 수 있는 비용', '경쟁업체, 경쟁자', '폐쇄', '재개발', '~을 놀리다', '해산물', '잇따라서', '징후'],
     tips({
       etymology: 'October의 어원 정보는 추후 보강 예정',
@@ -2944,7 +2944,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('pearson', '명 사람', 2, 'noun',
+  word('Pearson', '피어슨 (인명)', 2, 'noun',
     ['명 ness', '형 ing', '명 er', '(명령, 법규에의)준수', '문의, 질문', '수신자', '명확히', '박탈, 상실(deprivative 박탈하는, 빼앗는)', '운동하다', '통합'],
     tips({
       etymology: 'pearson의 어원 정보는 추후 보강 예정',
@@ -2954,7 +2954,7 @@ export const vocabBatch75: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('pedestrian', '명 사람', 2, 'noun',
+  word('pedestrian', '보행자', 2, 'noun',
     ['(지진) 진앙지 / 중심점', '요약하다', '족쇄를 채우다', '색채를 더 하다', '유순한, 순종적인, 고분고분한', '일정[시간표], 예정하다', '공연, 수행', '사과하다', '동', '부'],
     tips({
       etymology: 'pedestrian의 어원 정보는 추후 보강 예정',

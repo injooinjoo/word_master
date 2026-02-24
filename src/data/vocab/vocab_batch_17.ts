@@ -16,8 +16,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['renounce', 'relinquish', 'surrender'],
       antonyms: ['assert', 'claim', 'embrace'],
       exampleSentences: [
-        { en: 'The monarch chose to renounce his power and live a simple life.', ko: '그 군주는 자신의 권력을 버리고 소박한 삶을 살기로 선택했다.' },
-        { en: 'Many monks decide to reject all physical comforts to focus on their faith.', ko: '많은 승려들이 신앙에 집중하기 위해 모든 신체적 안락함을 포기하기로 결심한다.' },
+        { en: 'The monarch chose to abnegate his power and live a simple life.', ko: '그 군주는 자신의 권력을 포기하고 소박한 삶을 살기로 선택했다.' },
+        { en: 'Many monks decide to abnegate all physical comforts to focus on their faith.', ko: '많은 승려들이 신앙에 집중하기 위해 모든 신체적 안락함을 포기하기로 결심한다.' },
       ],
     }
   ),
@@ -168,8 +168,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['eagerness', 'willingness', 'promptness'],
       antonyms: ['reluctance', 'apathy', 'indifference'],
       exampleSentences: [
-        { en: 'She accepted the invitation with such enthusiasm and speed.', ko: '그녀는 아주 기쁘고 민첩하게 초대를 수락했다.' },
-        { en: 'The staff responded with promptness to the emergency.', ko: '직원들이 비상사태에 즉각적이고 활기차게 대응했다.' },
+        { en: 'She accepted the invitation with great alacrity, eager to attend the event.', ko: '그녀는 그 행사에 참석하고 싶어서 아주 기꺼이 민첩하게 초대를 수락했다.' },
+        { en: 'The staff responded with remarkable alacrity to the emergency.', ko: '직원들이 비상사태에 놀라운 민첩함으로 대응했다.' },
       ],
     }
   ),
@@ -187,8 +187,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['selflessness', 'benevolence', 'philanthropy'],
       antonyms: ['selfishness', 'egoism', 'narcissism'],
       exampleSentences: [
-        { en: 'The billionaire\'s commitment to global health is a remarkable example of modern philanthropy and care for humanity.', ko: '그 억만장자의 세계 보건에 대한 헌신은 현대적 이타주의와 인류애의 놀라운 본보기입니다.' },
-        { en: 'Many animals exhibit behaviors that suggest a natural instinct for helping others within their group.', ko: '많은 동물들이 집단 내의 다른 개체들을 돕는 천성적인 이타주의 본능을 암시하는 행동을 보입니다.' },
+        { en: 'The billionaire\'s commitment to global health is a remarkable example of modern altruism.', ko: '그 억만장자의 세계 보건에 대한 헌신은 현대적 이타주의의 놀라운 본보기입니다.' },
+        { en: 'Many animals exhibit behaviors that suggest a natural instinct for altruism within their group.', ko: '많은 동물들이 집단 내에서 이타주의에 대한 천성적인 본능을 암시하는 행동을 보입니다.' },
       ],
     }
   ),
@@ -206,8 +206,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['misplacement', 'archaism', 'solecism'],
       antonyms: ['contemporaneity', 'modernity', 'synchronism'],
       exampleSentences: [
-        { en: 'The appearance of a digital watch in a movie set in the 1700s is a glaring historical error.', ko: '1700년대를 배경으로 한 영화에 디지털 시계가 등장하는 것은 명백한 시대착오적 오류이다.' },
-        { en: 'Some people believe that the monarchy is a useless relic and a complete social inconsistency in the modern world.', ko: '어떤 이들은 군주제가 현대 사회에서 쓸모없는 유물이자 완전한 시대착오라고 믿는다.' },
+        { en: 'The appearance of a digital watch in a movie set in the 1700s is a glaring anachronism.', ko: '1700년대를 배경으로 한 영화에 디지털 시계가 등장하는 것은 명백한 시대착오이다.' },
+        { en: 'Some people believe that the monarchy is a complete anachronism in the modern world.', ko: '어떤 이들은 군주제가 현대 사회에서 완전한 시대착오라고 믿는다.' },
       ],
     }
   ),
@@ -244,8 +244,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['antiquated', 'archaic', 'obsolete'],
       antonyms: ['modern', 'current', 'contemporary'],
       exampleSentences: [
-        { en: 'The university\'s computer system is practically prehistoric and relies on such old technology.', ko: '그 대학교의 컴퓨터 시스템은 거의 선사 시대 수준이며 매우 구식 기술에 의존하고 있다.' },
-        { en: 'He still holds some incredibly outdated attitudes toward social media and technology.', ko: '그는 여전히 소셜 미디어와 기술에 대해 믿을 수 없을 정도로 고리타분한 태도를 가지고 있다.' },
+        { en: 'The university\'s antediluvian computer system desperately needs to be upgraded.', ko: '그 대학교의 극도로 구식인 컴퓨터 시스템은 절실히 업그레이드가 필요하다.' },
+        { en: 'He still holds some antediluvian attitudes toward social media and technology.', ko: '그는 여전히 소셜 미디어와 기술에 대해 극도로 구식인 태도를 가지고 있다.' },
       ],
     }
   ),
@@ -263,8 +263,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['human-centered', 'hominocentric', 'anthropocentricity'],
       antonyms: ['ecocentric', 'biocentric', 'theocentric'],
       exampleSentences: [
-        { en: 'We must move beyond a perspective that only values human needs.', ko: '우리는 오직 인간의 필요만을 가치 있게 여기는 인간중심적 관점을 넘어서야 한다.' },
-        { en: 'Such views often ignore the intrinsic value of the environment.', ko: '그러한 인간중심적 견해는 종종 환경의 내재적 가치를 무시하곤 한다.' },
+        { en: 'We must move beyond an anthropocentric perspective that only values human needs.', ko: '우리는 오직 인간의 필요만을 가치 있게 여기는 인간중심적 관점을 넘어서야 한다.' },
+        { en: 'Such anthropocentric views often ignore the intrinsic value of the environment.', ko: '그러한 인간중심적 견해는 종종 환경의 내재적 가치를 무시하곤 한다.' },
       ],
     }
   ),
@@ -282,8 +282,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['hostility', 'aversion', 'animosity'],
       antonyms: ['sympathy', 'affinity', 'attraction'],
       exampleSentences: [
-        { en: 'There has always been a strong feeling of mutual dislike between the two rival families.', ko: '그 두 라이벌 가문 사이에는 항상 강한 상호 반감이 존재해 왔다.' },
-        { en: 'His fundamental opposition to modern technology made it difficult for him to use a smartphone.', ko: '현대 기술에 대한 그의 근본적인 반감은 그가 스마트폰을 사용하는 것을 어렵게 만들었다.' },
+        { en: 'There has always been a deep antipathy between the two rival families.', ko: '그 두 라이벌 가문 사이에는 항상 깊은 반감이 존재해 왔다.' },
+        { en: 'His antipathy toward modern technology made it difficult for him to use a smartphone.', ko: '현대 기술에 대한 그의 반감은 그가 스마트폰을 사용하는 것을 어렵게 만들었다.' },
       ],
     }
   ),
@@ -301,8 +301,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['deification', 'pinnacle', 'climax'],
       antonyms: ['nadir', 'degradation', 'vilification'],
       exampleSentences: [
-        { en: 'The championship win was the ultimate peak of his sporting career.', ko: '그 챔피언십 우승은 그의 스포츠 경력의 절정이었다.' },
-        { en: 'The masterpiece was considered the perfect example of the artist\'s skill.', ko: '그 걸작은 그 예술가 기술의 극치로 여겨졌다.' },
+        { en: 'The championship win was the apotheosis of his sporting career.', ko: '그 챔피언십 우승은 그의 스포츠 경력의 절정이었다.' },
+        { en: 'The masterpiece was considered the apotheosis of the artist\'s skill.', ko: '그 걸작은 그 예술가 기술의 극치로 여겨졌다.' },
       ],
     }
   ),
@@ -339,8 +339,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['mediator', 'judge', 'referee'],
       antonyms: ['partisan', 'disputant', 'follower'],
       exampleSentences: [
-        { en: 'The judge acted as a neutral party in the dispute.', ko: '판사가 분쟁에서 중립적인 중재자로 행동했다.' },
-        { en: 'Fashion designers are often seen as the ultimate deciders of taste.', ko: '패션 디자이너들은 종종 취향의 최종적인 결정권자로 여겨진다.' },
+        { en: 'The judge acted as the final arbiter in the dispute between the two companies.', ko: '판사가 두 회사 사이의 분쟁에서 최종 중재자로 행동했다.' },
+        { en: 'Fashion designers are often seen as the ultimate arbiters of taste.', ko: '패션 디자이너들은 종종 취향의 최종적인 결정권자로 여겨진다.' },
       ],
     }
   ),
@@ -377,8 +377,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['throwback', 'reversion', 'recurrence'],
       antonyms: ['innovation', 'progression', 'evolution'],
       exampleSentences: [
-        { en: 'The extra toe was a clear case of biological recurrence from a distant ancestor.', ko: '추가된 발가락은 먼 조상으로부터 물려받은 명백한 조상 반현 사례였다.' },
-        { en: 'Some consider his violent temper a psychological throwback to primitive times.', ko: '어떤 사람들은 그의 폭력적인 성미를 원시 시대로의 심리적 회귀로 본다.' },
+        { en: 'The extra toe was a clear case of atavism, a trait from a distant ancestor.', ko: '추가된 발가락은 먼 조상으로부터 물려받은 명백한 조상 반현 사례였다.' },
+        { en: 'Some consider his violent temper a form of atavism, a reversion to primitive instincts.', ko: '어떤 사람들은 그의 폭력적인 성미를 원시적 본능으로의 조상 반현으로 본다.' },
       ],
     }
   ),
@@ -472,8 +472,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['split', 'fork', 'branch'],
       antonyms: ['converge', 'merge', 'unite'],
       exampleSentences: [
-        { en: 'The stream will split into two smaller channels just past the large rock.', ko: '개울은 큰 바위를 지나자마자 두 개의 작은 수로로 갈라질 것입니다.' },
-        { en: 'The hiking trail begins to divide at the summit, leading to different valleys.', ko: '하이킹 코스는 정상에서 두 갈래로 나뉘어 서로 다른 계곡으로 이어집니다.' },
+        { en: 'The stream will bifurcate into two smaller channels just past the large rock.', ko: '개울은 큰 바위를 지나자마자 두 개의 작은 수로로 갈라질 것입니다.' },
+        { en: 'The hiking trail begins to bifurcate at the summit, leading to different valleys.', ko: '하이킹 코스는 정상에서 두 갈래로 나뉘어 서로 다른 계곡으로 이어집니다.' },
       ],
     }
   ),
@@ -491,8 +491,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['flatter', 'cajole', 'wheedle'],
       antonyms: ['insult', 'criticize', 'dissuade'],
       exampleSentences: [
-        { en: 'He tried to influence the judge with sweet words and gentle persuasion.', ko: '그는 달콤한 말과 부드러운 회유로 판사에게 아첨하려 했습니다.' },
-        { en: 'She attempted to get a promotion by trying to coax her boss with constant praise.', ko: '그녀는 끊임없는 찬사로 상사에게 아첨하여 승진을 얻어내려 했습니다.' },
+        { en: 'He tried to blandish the judge with sweet words and gentle persuasion.', ko: '그는 달콤한 말과 부드러운 회유로 판사에게 아첨하려 했습니다.' },
+        { en: 'She attempted to blandish her boss with constant praise to get a promotion.', ko: '그녀는 끊임없는 찬사로 상사에게 아첨하여 승진을 얻어내려 했습니다.' },
       ],
     }
   ),
@@ -510,8 +510,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['pompous', 'inflated', 'grandiloquent'],
       antonyms: ['modest', 'humble', 'simple'],
       exampleSentences: [
-        { en: 'The politician\'s speech was so full of high-sounding words that it felt empty and insincere.', ko: '그 정치인의 연설은 너무 거창한 단어들로 가득 차 있어서 공허하고 진실되지 않게 느껴졌습니다.' },
-        { en: 'Critics dismissed the new novel as a collection of pretentious and overly dramatic descriptions.', ko: '비평가들은 그 새 소설을 허세 부리고 지나치게 과장된 묘사들의 집합체라며 일축했습니다.' },
+        { en: 'The politician\'s bombastic speech was so full of grand words that it felt empty and insincere.', ko: '그 정치인의 과장된 연설은 너무 거창한 단어들로 가득 차 있어서 공허하고 진실되지 않게 느껴졌습니다.' },
+        { en: 'Critics dismissed the new novel as bombastic, full of pretentious and overly dramatic descriptions.', ko: '비평가들은 그 새 소설을 허세 부리고 지나치게 과장된 묘사들의 집합체라며 일축했습니다.' },
       ],
     }
   ),
@@ -529,8 +529,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['shameless', 'audacious', 'insolent'],
       antonyms: ['modest', 'timid', 'bashful'],
       exampleSentences: [
-        { en: 'The thief showed a disregard for the law by stealing in broad daylight.', ko: '그 도둑은 대낮에 물건을 훔치는 뻔뻔한 행태로 법을 무시하는 태도를 보였습니다.' },
-        { en: 'He told a lie even though the evidence of his guilt was right in front of him.', ko: '그는 유죄의 증거가 바로 앞에 있는데도 아주 파렴치한 거짓말을 했습니다.' },
+        { en: 'The thief showed a brazen disregard for the law by stealing in broad daylight.', ko: '그 도둑은 대낮에 물건을 훔치는 뻔뻔한 행태로 법을 무시하는 태도를 보였습니다.' },
+        { en: 'He told a brazen lie even though the evidence of his guilt was right in front of him.', ko: '그는 유죄의 증거가 바로 앞에 있는데도 아주 파렴치한 거짓말을 했습니다.' },
       ],
     }
   ),
@@ -548,8 +548,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['pastoral', 'rustic', 'arcadian'],
       antonyms: ['urban', 'metropolitan', 'industrial'],
       exampleSentences: [
-        { en: 'The painting captures the serene and idyllic beauty of the countryside.', ko: '그 그림은 전원의 평온하고 목가적인 아름다움을 담아내고 있습니다.' },
-        { en: 'After years of living in the city, they decided to move to a quiet village for a more peaceful lifestyle.', ko: '수년간 도시에서 살던 그들은 더 평화로운 생활 방식을 위해 조용한 마을로 이사하기로 결정했습니다.' },
+        { en: 'The painting captures the bucolic beauty of the countryside with rolling hills and grazing sheep.', ko: '그 그림은 완만한 언덕과 풀을 뜯는 양이 있는 전원의 목가적인 아름다움을 담아내고 있습니다.' },
+        { en: 'After years of living in the city, they longed for a bucolic lifestyle in the countryside.', ko: '수년간 도시에서 살던 그들은 시골에서의 전원적인 생활 방식을 갈망했습니다.' },
       ],
     }
   ),
@@ -567,8 +567,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['gaunt', 'pallid', 'ghastly'],
       antonyms: ['robust', 'flushed', 'blooming'],
       exampleSentences: [
-        { en: 'After weeks of illness, his face had a thin and ghostly appearance.', ko: '몇 주간의 투병 끝에 그의 얼굴은 수척하고 시체처럼 창백해 보였습니다.' },
-        { en: 'The survivors of the shipwreck looked skeletal and hauntingly pale.', ko: '난파선의 생존자들은 뼈만 남고 소름 끼칠 정도로 창백한 모습이었습니다.' },
+        { en: 'After weeks of illness, his face took on a cadaverous appearance.', ko: '몇 주간의 투병 끝에 그의 얼굴은 시체처럼 수척하고 창백해졌습니다.' },
+        { en: 'The survivors of the shipwreck had a cadaverous look, skeletal and hauntingly pale.', ko: '난파선의 생존자들은 뼈만 남고 소름 끼칠 정도로 창백한 시체 같은 모습이었습니다.' },
       ],
     }
   ),
@@ -605,8 +605,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['fickle', 'whimsical', 'mercurial'],
       antonyms: ['steady', 'predictable', 'constant'],
       exampleSentences: [
-        { en: 'The movie star was known for her impulsive and unpredictable behavior on set.', ko: '그 영화배우는 촬영장에서의 충동적이고 변덕스러운 행동으로 유명했습니다.' },
-        { en: 'Investors are often hesitant to put money into such a volatile and changing market.', ko: '투자자들은 종종 그렇게 불안정하고 변덕스러운 시장에 돈을 투자하기를 주저합니다.' },
+        { en: 'The movie star was known for her capricious behavior on set, changing her mind without warning.', ko: '그 영화배우는 촬영장에서의 변덕스러운 행동으로 유명했으며, 예고 없이 마음을 바꾸곤 했습니다.' },
+        { en: 'Investors are often hesitant to put money into such a capricious market.', ko: '투자자들은 종종 그렇게 변덕스러운 시장에 돈을 투자하기를 주저합니다.' },
       ],
     }
   ),
@@ -643,8 +643,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['universal', 'comprehensive', 'eclectic'],
       antonyms: ['narrow', 'limited', 'parochial'],
       exampleSentences: [
-        { en: 'She has tastes in music that are remarkably broad, enjoying everything from opera to heavy metal.', ko: '그녀는 오페라부터 헤비메탈까지 모든 것을 즐기는 폭넓은 음악적 취향을 가지고 있다.' },
-        { en: 'He had a broad interest in all academic subjects during his college years.', ko: '그는 대학 시절 모든 학문 분야에 대해 보편적인 관심을 가졌다.' },
+        { en: 'She has catholic tastes in music, enjoying everything from opera to heavy metal.', ko: '그녀는 오페라부터 헤비메탈까지 모든 것을 즐기는 폭넓은 음악적 취향을 가지고 있다.' },
+        { en: 'He had a catholic interest in all academic subjects during his college years.', ko: '그는 대학 시절 모든 학문 분야에 대해 보편적인 관심을 가졌다.' },
       ],
     }
   ),
@@ -662,8 +662,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['trickery', 'deception', 'subterfuge'],
       antonyms: ['honesty', 'candor', 'integrity'],
       exampleSentences: [
-        { en: 'The contract was full of legal maneuvers designed to confuse the signers.', ko: '그 계약서는 서명자들을 혼란스럽게 하려는 법적 속임수로 가득했다.' },
-        { en: 'His political schemes were eventually exposed by an investigative journalist.', ko: '그의 정치적 속임수는 결국 한 조사 기자에 의해 폭로되었다.' },
+        { en: 'The contract was full of legal chicanery designed to confuse the signers.', ko: '그 계약서는 서명자들을 혼란스럽게 하려는 법적 속임수로 가득했다.' },
+        { en: 'His political chicanery was eventually exposed by an investigative journalist.', ko: '그의 정치적 속임수는 결국 한 조사 기자에 의해 폭로되었다.' },
       ],
     }
   ),
@@ -700,8 +700,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['bypass', 'evade', 'sidestep'],
       antonyms: ['confront', 'face', 'encounter'],
       exampleSentences: [
-        { en: 'He managed to bypass the tax laws by moving his money to an offshore account.', ko: '그는 자금을 해외 계좌로 옮겨 세법을 교묘히 우회했다.' },
-        { en: 'The army avoided the enemy\'s main fortifications by taking a mountain path.', ko: '군은 산길을 이용해 적의 주요 요새를 우회했다.' },
+        { en: 'He managed to circumvent the tax laws by moving his money to an offshore account.', ko: '그는 자금을 해외 계좌로 옮겨 세법을 교묘히 우회했다.' },
+        { en: 'The army chose to circumvent the enemy\'s main fortifications by taking a mountain path.', ko: '군은 산길을 이용해 적의 주요 요새를 우회하기로 했다.' },
       ],
     }
   ),
@@ -795,8 +795,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['ponder', 'reflect', 'meditate'],
       antonyms: ['ignore', 'disregard', 'overlook'],
       exampleSentences: [
-        { en: 'The philosopher needed to sit alone in the garden to carefully consider the complex moral dilemma.', ko: '그 철학자는 복잡한 도덕적 딜레마를 신중히 숙고하기 위해 정원에 홀로 앉아 있을 필요가 있었다.' },
-        { en: 'Before making such a life-altering decision, you should take a few days to process the options.', ko: '인생을 바꿀 만한 결정을 내리기 전에, 며칠 동안 시간을 갖고 선택지들을 숙고해야 한다.' },
+        { en: 'The philosopher needed to sit alone in the garden to cogitate on the complex moral dilemma.', ko: '그 철학자는 복잡한 도덕적 딜레마를 숙고하기 위해 정원에 홀로 앉아 있을 필요가 있었다.' },
+        { en: 'Before making such a life-altering decision, you should take a few days to cogitate on the options.', ko: '인생을 바꿀 만한 결정을 내리기 전에, 며칠 동안 시간을 갖고 선택지들을 숙고해야 한다.' },
       ],
     }
   ),
@@ -814,8 +814,8 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['informal', 'conversational', 'vernacular'],
       antonyms: ['formal', 'literary', 'official'],
       exampleSentences: [
-        { en: 'The dialogue was written in a very natural and relaxed style.', ko: '그 대화는 매우 자연스럽고 편안한 구어체로 작성되었습니다.' },
-        { en: 'Slang is a common feature of everyday speech in many cultures.', ko: '속어는 많은 문화권의 일상적인 구어 표현에서 흔히 나타나는 특징입니다.' },
+        { en: 'The dialogue was written in a colloquial style that felt natural and relaxed.', ko: '그 대화는 자연스럽고 편안하게 느껴지는 구어체 스타일로 작성되었습니다.' },
+        { en: 'Colloquial expressions like slang are a common feature of everyday speech in many cultures.', ko: '속어와 같은 구어적 표현은 많은 문화권의 일상적인 말에서 흔히 나타나는 특징입니다.' },
       ],
     }
   ),

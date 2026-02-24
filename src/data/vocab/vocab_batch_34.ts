@@ -21,7 +21,7 @@ export const vocabBatch34: VocabItem[] = [
       ],
     }
   ),
-  word('fellow', '동무', 5, 'noun',
+  word('fellow', '동료', 5, 'noun',
     ['적', '낯선 사람', '수입', '책', '달리다', '슬픔', '산', '토요일', '연필', '냉장고'],
     tips({
       etymology: '고대 노르웨이어 \'felagi\'에서 유래했으며, 재산을 함께 나누는 파트너라는 의미에서 동료라는 뜻으로 발전했습니다.',
@@ -35,8 +35,8 @@ export const vocabBatch34: VocabItem[] = [
       synonyms: ['companion', 'peer', 'associate'],
       antonyms: ['stranger', 'outsider', 'enemy'],
       exampleSentences: [
-        { en: 'He was highly respected by his classmates and other students in the department.', ko: '그는 반 친구들과 학과의 다른 학생들로부터 큰 존경을 받았습니다.' },
-        { en: 'Many travelers shared stories of their journeys with their companions during the long train ride.', ko: '많은 여행객들이 긴 기차 여행 동안 동행자들과 자신들의 여행 이야기를 나누었습니다.' },
+        { en: 'He was highly respected by his fellow classmates and other students in the department.', ko: '그는 반 동료들과 학과의 다른 학생들로부터 큰 존경을 받았습니다.' },
+        { en: 'Many fellow travelers shared stories of their journeys during the long train ride.', ko: '많은 동료 여행객들이 긴 기차 여행 동안 자신들의 여행 이야기를 나누었습니다.' },
       ],
     }
   ),
@@ -54,12 +54,12 @@ export const vocabBatch34: VocabItem[] = [
       synonyms: ['woman', 'lady', 'girl'],
       antonyms: ['male', 'man', 'boy'],
       exampleSentences: [
-        { en: 'The study focused on the behavior of adult lions in the wild.', ko: '그 연구는 야생에 사는 성체 암사자들의 행동에 초점을 맞췄습니다.' },
-        { en: 'Applicants must indicate whether they are or male on the registration form.', ko: '지원자들은 등록 양식에 본인이 여성인지 남성인지 표시해야 합니다.' },
+        { en: 'The study focused on the behavior of female adult lions in the wild.', ko: '그 연구는 야생에 사는 성체 암사자들의 행동에 초점을 맞췄습니다.' },
+        { en: 'Applicants must indicate whether they are female or male on the registration form.', ko: '지원자들은 등록 양식에 본인이 여성인지 남성인지 표시해야 합니다.' },
       ],
     }
   ),
-  word('ferry', '나루터', 7, 'noun',
+  word('ferry', '여객선', 7, 'noun',
     ['다리', '터널', '항구', '기차역', '정류장', '공항', '고속도로', '매표소', '대합실', '선착장'],
     tips({
       etymology: '라틴어 \'ferre(나르다)\'에서 유래하여 사람이나 물건을 건너편으로 옮겨주는 배나 장소를 뜻합니다.',
@@ -73,8 +73,8 @@ export const vocabBatch34: VocabItem[] = [
       synonyms: ['ferryboat', 'shuttle', 'transport'],
       antonyms: ['bridge', 'tunnel', 'overpass'],
       exampleSentences: [
-        { en: 'The commuters waited at the riverbank for the next boat to arrive.', ko: '통근자들은 다음 배가 도착하기를 강가 나루터에서 기다렸습니다.' },
-        { en: 'Heavy fog delayed every scheduled crossing from the mainland to the island.', ko: '짙은 안개로 인해 본토에서 섬으로 가는 모든 정기 운항 나루터 일정이 지연되었습니다.' },
+        { en: 'The commuters waited at the dock for the next ferry to arrive.', ko: '통근자들은 다음 여객선이 도착하기를 선착장에서 기다렸습니다.' },
+        { en: 'Heavy fog delayed every scheduled ferry crossing from the mainland to the island.', ko: '짙은 안개로 인해 본토에서 섬으로 가는 모든 정기 여객선 운항 일정이 지연되었습니다.' },
       ],
     }
   ),
@@ -130,8 +130,8 @@ export const vocabBatch34: VocabItem[] = [
       synonyms: ['handful', 'scant', 'sparse'],
       antonyms: ['many', 'numerous', 'abundant'],
       exampleSentences: [
-        { en: 'Very people attended the meeting due to the heavy snowstorm.', ko: '폭설 때문에 회의에 참석한 사람이 거의 없었습니다.' },
-        { en: 'She has made mistakes in her final exam because she studied hard.', ko: '그녀는 열심히 공부했기 때문에 기말고사에서 실수를 거의 하지 않았습니다.' },
+        { en: 'Very few people attended the meeting due to the heavy snowstorm.', ko: '폭설 때문에 회의에 참석한 사람이 거의 없었습니다.' },
+        { en: 'She has made few mistakes in her final exam because she studied hard.', ko: '그녀는 열심히 공부했기 때문에 기말고사에서 실수를 거의 하지 않았습니다.' },
       ],
     }
   ),
@@ -211,7 +211,7 @@ export const vocabBatch34: VocabItem[] = [
       ],
     }
   ),
-  word('file', '종이끼우개', 1, 'noun',
+  word('file', '파일', 1, 'noun',
     ['서랍', '상자', '바구니', '책장', '책상', '클립', '스테이플러', '가방', '폴더', '캐비닛'],
     tips({
       etymology: '라틴어 \'filum(실)\'에서 유래하여, 과거에 서류들을 실로 묶어 보관하던 방식에서 이름이 붙여졌습니다.',
@@ -225,8 +225,8 @@ export const vocabBatch34: VocabItem[] = [
       synonyms: ['folder', 'dossier', 'portfolio'],
       antonyms: ['disarray', 'jumble', 'clutter'],
       exampleSentences: [
-        { en: 'Please put these documents into the blue folder on my desk.', ko: '이 서류들을 제 책상 위에 있는 파란색 종이끼우개에 넣어 주세요.' },
-        { en: 'The secretary organized every single record into a labeled cabinet.', ko: '비서가 모든 기록물을 라벨이 붙은 보관함에 정리해 두었습니다.' },
+        { en: 'Please put these documents into the blue file on my desk.', ko: '이 서류들을 제 책상 위에 있는 파란색 파일에 넣어 주세요.' },
+        { en: 'The secretary organized every single record into a labeled file.', ko: '비서가 모든 기록물을 라벨이 붙은 파일에 정리해 두었습니다.' },
       ],
     }
   ),
@@ -320,8 +320,8 @@ export const vocabBatch34: VocabItem[] = [
       synonyms: ['locate', 'detect', 'encounter'],
       antonyms: ['lose', 'misplace', 'forfeit'],
       exampleSentences: [
-        { en: 'Scientists hope to a cure for the disease through extensive research.', ko: '과학자들은 광범위한 연구를 통해 그 질병의 치료법을 발견하기를 희망합니다.' },
-        { en: 'She was relieved to her missing keys under the sofa cushions.', ko: '그녀는 소파 쿠션 아래에서 잃어버린 열쇠를 찾아내고 안도했습니다.' },
+        { en: 'Scientists hope to find a cure for the disease through extensive research.', ko: '과학자들은 광범위한 연구를 통해 그 질병의 치료법을 발견하기를 희망합니다.' },
+        { en: 'She was relieved to find her missing keys under the sofa cushions.', ko: '그녀는 소파 쿠션 아래에서 잃어버린 열쇠를 찾아내고 안도했습니다.' },
       ],
     }
   ),

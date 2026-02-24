@@ -154,7 +154,7 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('oversea', '해외의', 6, 'adjective',
+  word('overseas', '해외의', 6, 'adjective',
     ['국내의', '내륙의', '인접한', '가까운', '지방의', '도시의', '전통적인', '현대적인', '일시적인', '영구적인'],
     tips({
       etymology: '바다(sea)를 건너(over) 간다는 의미에서 유래하여 외국이나 해외를 뜻하게 되었습니다.',
@@ -325,7 +325,7 @@ export const vocabBatch49: VocabItem[] = [
       ],
     }
   ),
-  word('paint', '도료', 1, 'noun',
+  word('paint', '페인트, 칠하다', 1, 'noun',
     ['조각', '점토', '캔버스', '붓', '액자', '조명', '도구', '재료', '바탕', '색상'],
     tips({
       etymology: '라틴어 \'pingere(그리다)\'에서 유래하여 표면을 덮어 색을 입히는 물질을 뜻하게 되었습니다.',
@@ -339,8 +339,8 @@ export const vocabBatch49: VocabItem[] = [
       synonyms: ['pigment', 'dye', 'coating'],
       antonyms: ['solvent', 'remover', 'stripper'],
       exampleSentences: [
-        { en: 'The fresh layer of white coating on the walls made the room look much brighter.', ko: '벽에 새로 칠한 하얀색 도료 덕분에 방이 훨씬 더 밝아 보였다.' },
-        { en: 'Artists often mix different types of pigments to achieve the exact shade they desire.', ko: '화가들은 원하는 정확한 색조를 얻기 위해 종종 다양한 종류의 도료를 섞는다.' },
+        { en: 'The fresh layer of white paint on the walls made the room look much brighter.', ko: '벽에 새로 칠한 하얀색 페인트 덕분에 방이 훨씬 더 밝아 보였다.' },
+        { en: 'Artists often mix different types of paint to achieve the exact shade they desire.', ko: '화가들은 원하는 정확한 색조를 얻기 위해 종종 다양한 종류의 페인트를 섞는다.' },
       ],
     }
   ),

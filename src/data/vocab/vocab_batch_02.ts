@@ -16,8 +16,8 @@ export const vocabBatch02: VocabItem[] = [
       synonyms: ['infant', 'newborn', 'toddler'],
       antonyms: ['adult', 'grown-up', 'elder'],
       exampleSentences: [
-        { en: 'The newborn is sleeping peacefully in the crib.', ko: '갓 태어난 아기가 요람에서 평온하게 자고 있다.' },
-        { en: 'She held the tiny human in her arms and sang a lullaby.', ko: '그녀는 품에 작은 아기를 안고 자장가를 불러주었다.' },
+        { en: 'The baby is sleeping peacefully in the crib.', ko: '아기가 요람에서 평온하게 자고 있다.' },
+        { en: 'She held the baby in her arms and sang a lullaby.', ko: '그녀는 품에 아기를 안고 자장가를 불러주었다.' },
       ],
     }
   ),
@@ -35,8 +35,8 @@ export const vocabBatch02: VocabItem[] = [
       synonyms: ['mattress', 'couch', 'cot'],
       antonyms: ['floor', 'desk', 'chair'],
       exampleSentences: [
-        { en: 'She jumped onto the soft mattress of her new furniture to see how comfortable it was.', ko: '그녀는 얼마나 편안한지 확인하기 위해 새 가구의 부드러운 매트리스 위로 뛰어올랐다.' },
-        { en: 'After a long day of work, all he wanted to do was lie down in his own room.', ko: '긴 하루 일과를 마친 후, 그가 원한 것은 오직 자신의 방에 눕는 것뿐이었다.' },
+        { en: 'She jumped onto her new bed to see how comfortable it was.', ko: '그녀는 얼마나 편안한지 확인하기 위해 새 침대 위로 뛰어올랐다.' },
+        { en: 'After a long day of work, all he wanted was to lie down on his bed.', ko: '긴 하루 일과를 마친 후, 그가 원한 것은 오직 침대에 눕는 것뿐이었다.' },
       ],
     }
   ),
@@ -111,8 +111,8 @@ export const vocabBatch02: VocabItem[] = [
       synonyms: ['coach', 'shuttle', 'transit vehicle'],
       antonyms: ['private car', 'bicycle', 'motorcycle'],
       exampleSentences: [
-        { en: 'I take the public transport to school every morning.', ko: '나는 매일 아침 학교에 가기 위해 대중교통을 이용한다.' },
-        { en: 'The driver waited for the last passenger to board the vehicle.', ko: '운전사는 마지막 승객이 차량에 탑승할 때까지 기다렸다.' },
+        { en: 'I take the bus to school every morning.', ko: '나는 매일 아침 버스를 타고 학교에 간다.' },
+        { en: 'The bus driver waited for the last passenger to board.', ko: '버스 기사는 마지막 승객이 탑승할 때까지 기다렸다.' },
       ],
     }
   ),
@@ -168,8 +168,8 @@ export const vocabBatch02: VocabItem[] = [
       synonyms: ['chilly', 'freezing', 'icy'],
       antonyms: ['hot', 'warm', 'burning'],
       exampleSentences: [
-        { en: 'The winter air felt extremely chilly and biting against my skin.', ko: '겨울 공기가 피부에 매우 차갑고 매섭게 느껴졌습니다.' },
-        { en: 'Make sure to wear a thick coat because it is freezing outdoors.', ko: '야외 날씨가 매우 추우니 반드시 두꺼운 코트를 입으세요.' },
+        { en: 'The cold winter air felt biting against my skin.', ko: '차가운 겨울 공기가 피부에 매섭게 느껴졌습니다.' },
+        { en: 'Make sure to wear a thick coat because it is very cold outdoors.', ko: '밖이 매우 추우니 반드시 두꺼운 코트를 입으세요.' },
       ],
     }
   ),
@@ -225,8 +225,8 @@ export const vocabBatch02: VocabItem[] = [
       synonyms: ['entrance', 'gateway', 'entryway'],
       antonyms: ['wall', 'barrier', 'blockade'],
       exampleSentences: [
-        { en: 'Please make sure to lock the front entrance before you go to bed.', ko: '자기 전에 현관문을 꼭 잠그도록 하세요.' },
-        { en: 'She heard a loud knock and went to see who was standing outside.', ko: '그녀는 큰 노크 소리를 듣고 밖에 누가 서 있는지 보러 갔다.' },
+        { en: 'Please make sure to lock the front door before you go to bed.', ko: '자기 전에 현관문을 꼭 잠그도록 하세요.' },
+        { en: 'She heard a loud knock on the door and went to see who it was.', ko: '그녀는 문에서 큰 노크 소리를 듣고 누구인지 보러 갔다.' },
       ],
     }
   ),
@@ -339,8 +339,8 @@ export const vocabBatch02: VocabItem[] = [
       synonyms: ['verdant', 'leafy', 'emerald'],
       antonyms: ['red', 'withered', 'pale'],
       exampleSentences: [
-        { en: 'The hills become lush and vibrant after the heavy rain.', ko: '폭우가 내린 후 언덕들이 푸르고 생기 넘치게 변합니다.' },
-        { en: 'Many people prefer using eco-friendly products to support a healthier planet.', ko: '많은 사람들이 더 건강한 지구를 위해 친환경 제품을 사용하는 것을 선호합니다.' },
+        { en: 'The hills become green and vibrant after the heavy rain.', ko: '폭우가 내린 후 언덕들이 초록색으로 생기 넘치게 변합니다.' },
+        { en: 'She wore a beautiful green dress to the party.', ko: '그녀는 파티에 아름다운 초록색 드레스를 입고 갔습니다.' },
       ],
     }
   ),
@@ -377,8 +377,8 @@ export const vocabBatch02: VocabItem[] = [
       synonyms: ['residence', 'dwelling', 'abode'],
       antonyms: ['abroad', 'wilderness', 'office'],
       exampleSentences: [
-        { en: 'After a long trip, it feels wonderful to finally be back in my own space.', ko: '긴 여행 끝에 마침내 내 집으로 돌아오니 기분이 정말 좋다.' },
-        { en: 'She wanted to create a warm and welcoming environment for her children.', ko: '그녀는 아이들을 위해 따뜻하고 환영받는 분위기의 집을 만들고 싶어 했다.' },
+        { en: 'After a long trip, it feels wonderful to finally be home.', ko: '긴 여행 끝에 마침내 집에 오니 기분이 정말 좋다.' },
+        { en: 'She wanted to create a warm and welcoming home for her children.', ko: '그녀는 아이들을 위해 따뜻하고 환영받는 집을 만들고 싶어 했다.' },
       ],
     }
   ),
@@ -491,8 +491,8 @@ export const vocabBatch02: VocabItem[] = [
       synonyms: ['anew', 'repeatedly', 'furthermore'],
       antonyms: ['once', 'never', 'finally'],
       exampleSentences: [
-        { en: 'If you fail the first time, you should try one more time.', ko: '처음에 실패한다면, 한 번 더 시도해야 합니다.' },
-        { en: 'It was great to see my old childhood friends after all these years.', ko: '수년이 지난 후에 어린 시절 친구들을 다시 만나서 정말 좋았습니다.' },
+        { en: 'If you fail the first time, you should try again.', ko: '처음에 실패한다면, 다시 시도해야 합니다.' },
+        { en: 'It was great to see my old childhood friends again after all these years.', ko: '수년이 지난 후에 어린 시절 친구들을 다시 만나서 정말 좋았습니다.' },
       ],
     }
   ),
@@ -586,8 +586,8 @@ export const vocabBatch02: VocabItem[] = [
       synonyms: ['hue', 'shade', 'tint'],
       antonyms: ['colorlessness', 'paleness', 'achromatism'],
       exampleSentences: [
-        { en: 'The artist mixed different paints to create a unique shade of blue.', ko: '화가는 독특한 푸른색을 만들기 위해 여러 가지 물감을 섞었습니다.' },
-        { en: 'Autumn leaves change their appearance from green to vibrant red and gold.', ko: '가을 잎들은 초록색에서 선명한 빨간색과 금색으로 그 색을 바꿉니다.' },
+        { en: 'The artist mixed different colors to create a unique shade of blue.', ko: '화가는 독특한 푸른색을 만들기 위해 여러 가지 색을 섞었습니다.' },
+        { en: 'Autumn leaves change color from green to vibrant red and gold.', ko: '가을 잎들은 초록색에서 선명한 빨간색과 금색으로 색이 변합니다.' },
       ],
     }
   ),
@@ -624,8 +624,8 @@ export const vocabBatch02: VocabItem[] = [
       synonyms: ['dim', 'gloomy', 'shadowy'],
       antonyms: ['bright', 'light', 'luminous'],
       exampleSentences: [
-        { en: 'The sky grew very gloomy and black as the storm approached.', ko: '폭풍이 다가오자 하늘이 매우 어둡고 검게 변했습니다.' },
-        { en: 'She prefers wearing deep, shaded colors like navy blue and charcoal.', ko: '그녀는 남색이나 숯색처럼 짙고 어두운 색깔의 옷을 입는 것을 선호합니다.' },
+        { en: 'The sky grew dark as the storm approached.', ko: '폭풍이 다가오자 하늘이 어두워졌습니다.' },
+        { en: 'She prefers wearing dark colors like navy blue and charcoal.', ko: '그녀는 남색이나 숯색처럼 어두운 색깔의 옷을 입는 것을 선호합니다.' },
       ],
     }
   ),
@@ -662,8 +662,8 @@ export const vocabBatch02: VocabItem[] = [
       synonyms: ['quick', 'rapid', 'swift'],
       antonyms: ['slow', 'sluggish', 'leisurely'],
       exampleSentences: [
-        { en: 'The cheetah is known as the world\'s most rapid land animal.', ko: '치타는 세계에서 가장 빠른 육상 동물로 알려져 있습니다.' },
-        { en: 'She gave a quick response to the urgent email.', ko: '그녀는 긴급한 이메일에 빠른 답장을 보냈습니다.' },
+        { en: 'The cheetah is the fastest land animal in the world.', ko: '치타는 세계에서 가장 빠른 육상 동물입니다.' },
+        { en: 'She gave a fast response to the urgent email.', ko: '그녀는 긴급한 이메일에 빠른 답장을 보냈습니다.' },
       ],
     }
   ),
@@ -681,8 +681,8 @@ export const vocabBatch02: VocabItem[] = [
       synonyms: ['companion', 'buddy', 'pal'],
       antonyms: ['enemy', 'foe', 'rival'],
       exampleSentences: [
-        { en: 'We have been close companions since our early childhood.', ko: '우리는 어린 시절부터 친한 친구 사이였습니다.' },
-        { en: 'A true supporter will stand by you even in difficult times.', ko: '진정한 친구는 어려운 시기에도 당신의 곁을 지켜줄 것입니다.' },
+        { en: 'We have been best friends since our early childhood.', ko: '우리는 어린 시절부터 가장 친한 친구 사이였습니다.' },
+        { en: 'A true friend will stand by you even in difficult times.', ko: '진정한 친구는 어려운 시기에도 당신의 곁을 지켜줄 것입니다.' },
       ],
     }
   ),
@@ -777,7 +777,7 @@ export const vocabBatch02: VocabItem[] = [
       antonyms: ['donkey', 'mule', 'pony'],
       exampleSentences: [
         { en: 'The professional rider guided the horse gracefully over the tall wooden fence.', ko: '전문 기수는 말을 능숙하게 몰아 높은 나무 울타리를 우아하게 넘었습니다.' },
-        { en: 'Farmers used to rely on this animal to pull heavy plows across the fields before tractors existed.', ko: '트랙터가 존재하기 전, 농부들은 들판에서 무거운 쟁기를 끌기 위해 이 동물에게 의지하곤 했습니다.' },
+        { en: 'Farmers used to rely on the horse to pull heavy plows across the fields before tractors existed.', ko: '트랙터가 존재하기 전, 농부들은 들판에서 무거운 쟁기를 끌기 위해 말에게 의지하곤 했습니다.' },
       ],
     }
   ),
@@ -815,7 +815,7 @@ export const vocabBatch02: VocabItem[] = [
       antonyms: ['silence', 'speech', 'void'],
       exampleSentences: [
         { en: 'I received a handwritten letter from my grandmother this morning.', ko: '나는 오늘 아침 할머니로부터 손편지를 받았다.' },
-        { en: 'She carefully folded the paper and placed it inside the envelope.', ko: '그녀는 종이를 조심스럽게 접어서 봉투 안에 넣었다.' },
+        { en: 'She carefully folded the letter and placed it inside the envelope.', ko: '그녀는 편지를 조심스럽게 접어서 봉투 안에 넣었다.' },
       ],
     }
   ),

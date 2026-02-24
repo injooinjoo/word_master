@@ -130,8 +130,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['harmful', 'malignant', 'baleful'],
       antonyms: ['beneficent', 'benevolent', 'kind'],
       exampleSentences: [
-        { en: 'The villagers believed a supernatural force with a harmful intent haunted the forest.', ko: '마을 사람들은 해로운 의도를 가진 초자연적인 힘이 숲에 출몰한다고 믿었다.' },
-        { en: 'She was known for her destructive influence on the young prince\'s decisions.', ko: '그녀는 어린 왕자의 결정에 해로운 영향력을 미치는 것으로 알려져 있었다.' },
+        { en: 'The villagers believed a maleficent supernatural force haunted the forest.', ko: '마을 사람들은 해로운 의도를 가진 초자연적인 힘이 숲에 출몰한다고 믿었다.' },
+        { en: 'She was known for her maleficent influence on the young prince\'s decisions.', ko: '그녀는 어린 왕자의 결정에 해로운 영향력을 미치는 것으로 알려져 있었다.' },
       ],
     }
   ),
@@ -168,8 +168,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['pliable', 'adaptable', 'ductile'],
       antonyms: ['rigid', 'inflexible', 'stiff'],
       exampleSentences: [
-        { en: 'Gold is a highly versatile metal that can be beaten into thin sheets.', ko: '금은 얇은 판으로 두드려 펼 수 있는 매우 가소성이 높은 금속이다.' },
-        { en: 'The minds of young children are very impressionable and easily influenced by their surroundings.', ko: '어린 아이들의 마음은 매우 유연해서 주변 환경에 쉽게 영향을 받는다.' },
+        { en: 'Gold is a highly malleable metal that can be beaten into thin sheets.', ko: '금은 얇은 판으로 두드려 펼 수 있는 매우 가소성이 높은 금속이다.' },
+        { en: 'The minds of young children are very malleable and easily influenced by their surroundings.', ko: '어린 아이들의 마음은 매우 유연해서 주변 환경에 쉽게 영향을 받는다.' },
       ],
     }
   ),
@@ -206,8 +206,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['sentimental', 'weepy', 'mushy'],
       antonyms: ['composed', 'unemotional', 'stoic'],
       exampleSentences: [
-        { en: 'After a few glasses of wine, he became quite emotional and started crying about his childhood.', ko: '와인 몇 잔을 마신 후, 그는 몹시 감상적이 되어 어린 시절을 떠올리며 울기 시작했다.' },
-        { en: 'The movie\'s ending was far too pathetic for my taste, with its forced emotional scenes.', ko: '그 영화의 결말은 억지스러운 감정 과잉 장면들 때문에 내 취향에는 너무 신파조였다.' },
+        { en: 'After a few glasses of wine, he became quite maudlin and started crying about his childhood.', ko: '와인 몇 잔을 마신 후, 그는 몹시 감상적이 되어 어린 시절을 떠올리며 울기 시작했다.' },
+        { en: 'The movie\'s ending was far too maudlin for my taste, with its forced emotional scenes.', ko: '그 영화의 결말은 억지스러운 감정 과잉 장면들 때문에 내 취향에는 너무 신파조였다.' },
       ],
     }
   ),
@@ -244,8 +244,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['volatile', 'fickle', 'capricious'],
       antonyms: ['steady', 'constant', 'stable'],
       exampleSentences: [
-        { en: 'The artist was known for his temperament, being joyful one minute and depressed the next.', ko: '그 예술가는 방금 전까지 즐거워하다가 금세 우울해지는 변덕스러운 성격으로 유명했다.' },
-        { en: 'Investors are worried about the stock market\'s behavior this week.', ko: '투자자들은 이번 주 주식 시장의 변덕스러운 움직임을 우려하고 있다.' },
+        { en: 'The artist was known for his mercurial temperament, being joyful one minute and depressed the next.', ko: '그 예술가는 방금 전까지 즐거워하다가 금세 우울해지는 변덕스러운 성격으로 유명했다.' },
+        { en: 'Investors are worried about the stock market\'s mercurial behavior this week.', ko: '투자자들은 이번 주 주식 시장의 변덕스러운 움직임을 우려하고 있다.' },
       ],
     }
   ),
@@ -263,8 +263,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['praiseworthy', 'commendable', 'exemplary'],
       antonyms: ['worthless', 'disreputable', 'unworthy'],
       exampleSentences: [
-        { en: 'The committee decided to give her an award for her long and dedicated service to the community.', ko: '위원회는 지역 사회를 위한 그녀의 길고 공훈 있는 헌신적인 봉사에 대해 상을 주기로 결정했다.' },
-        { en: 'The scholarship is granted to students who demonstrate outstanding academic achievement.', ko: '그 장학금은 뛰어난 학업적 성취를 보여준 공훈 있는 학생들에게 수여된다.' },
+        { en: 'The committee decided to give her an award for her long and meritorious service to the community.', ko: '위원회는 지역 사회를 위한 그녀의 길고 공훈 있는 헌신적인 봉사에 대해 상을 주기로 결정했다.' },
+        { en: 'The scholarship is granted to students who demonstrate meritorious academic achievement.', ko: '그 장학금은 뛰어난 학업적 성취를 보여준 공훈 있는 학생들에게 수여된다.' },
       ],
     }
   ),
@@ -282,8 +282,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['painstaking', 'precise', 'scrupulous'],
       antonyms: ['careless', 'sloppy', 'negligent'],
       exampleSentences: [
-        { en: 'The researcher kept highly detailed records of every single observation during the experiment.', ko: '그 연구원은 실험 중 모든 관찰 사항을 매우 상세하고 꼼꼼하게 기록했다.' },
-        { en: 'He is extremely attentive about his appearance, always making sure his suit is perfectly pressed.', ko: '그는 외모에 아주 세심해서 항상 정장이 완벽하게 다려졌는지 확인한다.' },
+        { en: 'The researcher kept meticulous records of every single observation during the experiment.', ko: '그 연구원은 실험 중 모든 관찰 사항을 매우 상세하고 꼼꼼하게 기록했다.' },
+        { en: 'He is meticulous about his appearance, always making sure his suit is perfectly pressed.', ko: '그는 외모에 아주 세심해서 항상 정장이 완벽하게 다려졌는지 확인한다.' },
       ],
     }
   ),
@@ -605,8 +605,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['servile', 'fawning', 'sycophantic'],
       antonyms: ['assertive', 'arrogant', 'independent'],
       exampleSentences: [
-        { en: 'The manager was surrounded by assistants who were so eager to please that they never disagreed with him.', ko: '매니저는 그에게 절대 반대하지 않는 아첨하는 조수들에게 둘러싸여 있었습니다.' },
-        { en: 'I found his overly submissive behavior toward the celebrities quite embarrassing.', ko: '유명인들에 대한 그의 아첨하는 행동이 꽤 당혹스럽다고 느꼈습니다.' },
+        { en: 'The manager was surrounded by obsequious assistants who never disagreed with him.', ko: '매니저는 그에게 절대 반대하지 않는 아첨하는 조수들에게 둘러싸여 있었습니다.' },
+        { en: 'I found his obsequious behavior toward the celebrities quite embarrassing.', ko: '유명인들에 대한 그의 아첨하는 행동이 꽤 당혹스럽다고 느꼈습니다.' },
       ],
     }
   ),
@@ -643,8 +643,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['dull', 'insensitive', 'imperceptive'],
       antonyms: ['sharp', 'astute', 'intelligent'],
       exampleSentences: [
-        { en: 'He was surprisingly slow to react, appearing almost intentionally unaware of the obvious tension.', ko: '그는 놀라울 정도로 반응이 느렸고, 명백한 긴장감을 거의 의도적으로 알아채지 못하는 것처럼 보였다.' },
-        { en: 'The manager\'s refusal to see the flaws in the plan made him seem quite thick-witted to his team.', ko: '계획의 결함을 보지 않으려는 매니저의 거부는 팀원들에게 그가 상당히 둔한 사람처럼 보이게 만들었다.' },
+        { en: 'He was surprisingly obtuse, appearing almost intentionally unaware of the obvious tension.', ko: '그는 놀라울 정도로 반응이 느렸고, 명백한 긴장감을 거의 의도적으로 알아채지 못하는 것처럼 보였다.' },
+        { en: 'The manager was so obtuse that he could not see the flaws in the plan, frustrating his entire team.', ko: '계획의 결함을 보지 않으려는 매니저의 거부는 팀원들에게 그가 상당히 둔한 사람처럼 보이게 만들었다.' },
       ],
     }
   ),
@@ -662,8 +662,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['hateful', 'repulsive', 'revolting'],
       antonyms: ['delightful', 'pleasant', 'charming'],
       exampleSentences: [
-        { en: 'The criminal was convicted for his truly offensive and repulsive acts.', ko: '그 범죄자는 참으로 역겹고 혐오스러운 행위로 유죄 판결을 받았습니다.' },
-        { en: 'His behavior was so unpleasant that he was soon asked to leave the party.', ko: '그의 행동이 너무나 불쾌했기에 그는 곧 파티에서 나가달라는 요청을 받았습니다.' },
+        { en: 'The criminal was convicted for his truly odious acts against the community.', ko: '그 범죄자는 참으로 역겹고 혐오스러운 행위로 유죄 판결을 받았습니다.' },
+        { en: 'His odious behavior was so repulsive that he was soon asked to leave the party.', ko: '그의 행동이 너무나 불쾌했기에 그는 곧 파티에서 나가달라는 요청을 받았습니다.' },
       ],
     }
   ),
@@ -700,8 +700,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['all-knowing', 'infinite', 'all-seeing'],
       antonyms: ['ignorant', 'unknowing', 'uninformed'],
       exampleSentences: [
-        { en: 'The novel is told from the perspective of an narrator who knows every character\'s thoughts.', ko: '그 소설은 모든 등장인물의 생각을 알고 있는 화자의 관점에서 서술된다.' },
-        { en: 'Many religions believe in a deity that is both powerful and aware of everything happening in the universe.', ko: '많은 종교들은 우주에서 일어나는 모든 일을 알고 있으며 강력한 힘을 가진 신을 믿는다.' },
+        { en: 'The novel is told from the perspective of an omniscient narrator who knows every character\'s thoughts.', ko: '그 소설은 모든 등장인물의 생각을 알고 있는 화자의 관점에서 서술된다.' },
+        { en: 'Many religions believe in an omniscient deity that is aware of everything happening in the universe.', ko: '많은 종교들은 우주에서 일어나는 모든 일을 알고 있으며 강력한 힘을 가진 신을 믿는다.' },
       ],
     }
   ),
@@ -719,8 +719,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['burdensome', 'arduous', 'taxing'],
       antonyms: ['effortless', 'easy', 'light'],
       exampleSentences: [
-        { en: 'The task of cleaning the entire mansion alone proved to be quite burdensome.', ko: '대저택 전체를 혼자 청소하는 일은 상당히 부담스러운 과업임이 드러났다.' },
-        { en: 'New tax laws have imposed more difficult requirements on small businesses.', ko: '새로운 세법은 소규모 사업체들에게 더 부담스러운 요구 사항들을 부과했다.' },
+        { en: 'The onerous task of cleaning the entire mansion alone proved to be overwhelming.', ko: '대저택 전체를 혼자 청소하는 일은 상당히 부담스러운 과업임이 드러났다.' },
+        { en: 'New tax laws have imposed onerous requirements on small businesses.', ko: '새로운 세법은 소규모 사업체들에게 더 부담스러운 요구 사항들을 부과했다.' },
       ],
     }
   ),
@@ -776,8 +776,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['sway', 'vacillate', 'waver'],
       antonyms: ['stabilize', 'stay', 'remain'],
       exampleSentences: [
-        { en: 'The fan began to move from side to side to cool the entire room.', ko: '선풍기가 방 전체를 시원하게 하기 위해 좌우로 회전하며 흔들리기 시작했다.' },
-        { en: 'He continues to swing between optimism and despair regarding the project\'s success.', ko: '그는 프로젝트의 성공에 대해 낙관과 절망 사이를 계속해서 오가고 있다.' },
+        { en: 'The fan began to oscillate from side to side to cool the entire room.', ko: '선풍기가 방 전체를 시원하게 하기 위해 좌우로 회전하며 흔들리기 시작했다.' },
+        { en: 'He continues to oscillate between optimism and despair regarding the project\'s success.', ko: '그는 프로젝트의 성공에 대해 낙관과 절망 사이를 계속해서 오가고 있다.' },
       ],
     }
   ),
@@ -795,8 +795,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['showy', 'flamboyant', 'pretentious'],
       antonyms: ['modest', 'unobtrusive', 'restrained'],
       exampleSentences: [
-        { en: 'The gold-plated faucets in the hotel bathroom seemed a bit too flashy and intended to impress.', ko: '호텔 욕실의 금도금 수도꼭지는 다분히 과시적이고 지나치게 화려해 보였다.' },
-        { en: 'He preferred a simple lifestyle over the grand and boastful displays of his wealthy neighbors.', ko: '그는 부유한 이웃들의 웅장하고 과시적인 모습보다 소박한 생활 방식을 선호했다.' },
+        { en: 'The gold-plated faucets in the hotel bathroom seemed a bit too ostentatious for my taste.', ko: '호텔 욕실의 금도금 수도꼭지는 다분히 과시적이고 지나치게 화려해 보였다.' },
+        { en: 'He preferred a simple lifestyle over the ostentatious displays of his wealthy neighbors.', ko: '그는 부유한 이웃들의 웅장하고 과시적인 모습보다 소박한 생활 방식을 선호했다.' },
       ],
     }
   ),
@@ -814,8 +814,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['alleviate', 'mitigate', 'assuage'],
       antonyms: ['aggravate', 'exacerbate', 'intensify'],
       exampleSentences: [
-        { en: 'The doctor prescribed a strong medication to help ease the patient\'s suffering during the final stages of the illness.', ko: '의사는 질병의 마지막 단계 동안 환자의 고통을 완화하기 위해 강한 약을 처방했다.' },
-        { en: 'Choosing to ignore the budget deficit will only serve to delay the crisis rather than resolve it.', ko: '예산 적자를 무시하는 것은 위기를 해결하기보다는 그 심각성을 일시적으로 완화하는 역할만 할 뿐이다.' },
+        { en: 'The doctor prescribed a strong medication to palliate the patient\'s suffering during the final stages of the illness.', ko: '의사는 질병의 마지막 단계 동안 환자의 고통을 완화하기 위해 강한 약을 처방했다.' },
+        { en: 'Choosing to palliate the budget deficit will only delay the crisis rather than resolve it.', ko: '예산 적자를 무시하는 것은 위기를 해결하기보다는 그 심각성을 일시적으로 완화하는 역할만 할 뿐이다.' },
       ],
     }
   ),
@@ -833,8 +833,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['cure-all', 'elixir', 'nostrum'],
       antonyms: ['poison', 'toxin', 'bane'],
       exampleSentences: [
-        { en: 'Technology is often seen as a universal remedy for modern social issues, but it is not a total fix.', ko: '기술은 종종 현대 사회 문제의 보편적인 해결책으로 여겨지지만, 그것이 만병통치약은 아니다.' },
-        { en: 'The new economic policy was presented as a magical solution to the country\'s financial crisis.', ko: '새로운 경제 정책은 국가 재정 위기에 대한 만병통치약으로 제시되었다.' },
+        { en: 'Technology is often seen as a panacea for modern social issues, but it cannot solve everything.', ko: '기술은 종종 현대 사회 문제의 보편적인 해결책으로 여겨지지만, 그것이 만병통치약은 아니다.' },
+        { en: 'The new economic policy was presented as a panacea for the country\'s financial crisis.', ko: '새로운 경제 정책은 국가 재정 위기에 대한 만병통치약으로 제시되었다.' },
       ],
     }
   ),
@@ -852,8 +852,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['epitome', 'exemplar', 'ideal'],
       antonyms: ['imperfection', 'flaw', 'failure'],
       exampleSentences: [
-        { en: 'The retired general was often cited as a perfect instance of integrity and courage.', ko: '그 은퇴한 장군은 청렴과 용기의 완벽한 귀감으로 자주 인용되었다.' },
-        { en: 'In the novel, the protagonist is portrayed as a model of virtue who never wavers.', ko: '소설 속에서 주인공은 결코 흔들리지 않는 미덕의 전형으로 묘사된다.' },
+        { en: 'The retired general was often cited as a paragon of integrity and courage.', ko: '그 은퇴한 장군은 청렴과 용기의 완벽한 귀감으로 자주 인용되었다.' },
+        { en: 'In the novel, the protagonist is portrayed as a paragon of virtue who never wavers.', ko: '소설 속에서 주인공은 결코 흔들리지 않는 미덕의 전형으로 묘사된다.' },
       ],
     }
   ),
@@ -890,8 +890,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['stingy', 'miserly', 'frugal'],
       antonyms: ['generous', 'lavish', 'extravagant'],
       exampleSentences: [
-        { en: 'The company was criticized for its treatment of employees, being far too cautious with its budget.', ko: '그 회사는 예산 집행에 너무 인색하여 직원 대우에 대해 비판을 받았습니다.' },
-        { en: 'Even though he was a billionaire, he was known for his remarkably stingy lifestyle.', ko: '그는 억만장자였음에도 불구하고 매우 인색한 생활 방식으로 잘 알려져 있었습니다.' },
+        { en: 'The parsimonious company was criticized for its treatment of employees, spending as little as possible on benefits.', ko: '그 회사는 예산 집행에 너무 인색하여 직원 대우에 대해 비판을 받았습니다.' },
+        { en: 'Even though he was a billionaire, he was known for his remarkably parsimonious lifestyle.', ko: '그는 억만장자였음에도 불구하고 매우 인색한 생활 방식으로 잘 알려져 있었습니다.' },
       ],
     }
   ),
@@ -909,8 +909,8 @@ export const vocabBatch20: VocabItem[] = [
       synonyms: ['fussy', 'nitpicking', 'hairsplitting'],
       antonyms: ['casual', 'informal', 'imprecise'],
       exampleSentences: [
-        { en: 'I am tired of his constant and fussy attention to minor details.', ko: '나는 사소한 세부 사항에 대한 그의 끊임없고 학구적인 집착에 질렸다.' },
-        { en: 'The report was so focused on formal rules that it missed the main point.', ko: '그 보고서는 형식적인 규칙에 너무 치중한 나머지 핵심을 놓쳤다.' },
+        { en: 'I am tired of his pedantic attention to minor details that do not matter.', ko: '나는 사소한 세부 사항에 대한 그의 끊임없고 학구적인 집착에 질렸다.' },
+        { en: 'The report was so pedantic in its focus on formal rules that it missed the main point.', ko: '그 보고서는 형식적인 규칙에 너무 치중한 나머지 핵심을 놓쳤다.' },
       ],
     }
   ),

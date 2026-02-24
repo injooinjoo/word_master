@@ -54,8 +54,8 @@ export const vocabBatch15: VocabItem[] = [
       synonyms: ['assign', 'entrust', 'empower'],
       antonyms: ['retain', 'keep', 'withhold'],
       exampleSentences: [
-        { en: 'A successful manager knows how to assign responsibilities and empower their team.', ko: '성공적인 관리자는 책임을 나누고 팀원에게 권한을 부여하는 방법을 압니다.' },
-        { en: 'The director decided to hand over the decision-making authority to the local branch.', ko: '이사는 의사 결정 권한을 현지 지사에 위임하기로 결정했습니다.' },
+        { en: 'A successful manager knows how to delegate tasks to their team.', ko: '성공적인 관리자는 팀원에게 업무를 위임하는 방법을 압니다.' },
+        { en: 'The director decided to delegate the decision-making authority to the local branch.', ko: '이사는 의사 결정 권한을 현지 지사에 위임하기로 결정했습니다.' },
       ],
     }
   ),
@@ -111,8 +111,8 @@ export const vocabBatch15: VocabItem[] = [
       synonyms: ['condemn', 'criticize', 'censure'],
       antonyms: ['praise', 'applaud', 'endorse'],
       exampleSentences: [
-        { en: 'The leader publicly expressed strong disapproval of the violence.', ko: '지도자는 그 폭력을 공개적으로 비난했다.' },
-        { en: 'Several countries spoke out against the human rights violation.', ko: '여러 국가가 그 인권 침해를 비난했다.' },
+        { en: 'The leader publicly denounced the violence.', ko: '지도자는 그 폭력을 공개적으로 비난했다.' },
+        { en: 'Several countries denounced the human rights violation.', ko: '여러 국가가 그 인권 침해를 비난했다.' },
       ],
     }
   ),
@@ -130,8 +130,8 @@ export const vocabBatch15: VocabItem[] = [
       synonyms: ['exhaust', 'drain', 'consume'],
       antonyms: ['replenish', 'refill', 'restore'],
       exampleSentences: [
-        { en: 'Overfishing has severely reduced the fish population and may soon empty the ocean\'s resources.', ko: '과도한 어업은 물고기 개체 수를 심각하게 감소시켰으며 곧 해양 자원을 고갈시킬 수 있습니다.' },
-        { en: 'Running a marathon without proper hydration will quickly empty your body\'s energy reserves.', ko: '적절한 수분 섭취 없이 마라톤을 하는 것은 신체의 에너지 비축량을 빠르게 고갈시킬 것입니다.' },
+        { en: 'Overfishing has severely depleted the fish population in many oceans.', ko: '과도한 어업은 많은 해양의 물고기 개체 수를 심각하게 고갈시켰습니다.' },
+        { en: 'Running a marathon without proper hydration will quickly deplete your body\'s energy reserves.', ko: '적절한 수분 섭취 없이 마라톤을 하는 것은 신체의 에너지 비축량을 빠르게 고갈시킬 것입니다.' },
       ],
     }
   ),
@@ -154,7 +154,7 @@ export const vocabBatch15: VocabItem[] = [
       ],
     }
   ),
-  word('Deprecate', '퇴보시킨다고 하다', 7, 'verb',
+  word('Deprecate', '비난하다', 7, 'verb',
     ['권장하다', '촉진하다', '승인하다', '선호하다', '옹호하다', '찬성하다', '장려하다', '지지하다', '추천하다', '수용하다'],
     tips({
       etymology: '라틴어 \'de-\'(반대/멀리)와 \'precari\'(기도하다)가 결합되어, 나쁜 일이 생기지 않기를 기도하며 반대하거나 가치를 깎아내린다는 뜻에서 유래했습니다.',
@@ -187,8 +187,8 @@ export const vocabBatch15: VocabItem[] = [
       synonyms: ['impoverished', 'penniless', 'indigent'],
       antonyms: ['affluent', 'wealthy', 'prosperous'],
       exampleSentences: [
-        { en: 'The charity provides food and shelter for families who are completely without resources in the city.', ko: '그 자선 단체는 도시의 완전히 궁핍한 가정들에게 음식과 숙소를 제공한다.' },
-        { en: 'After the stock market crash, many investors were left with no money or possessions at all.', ko: '주식 시장 폭락 이후, 많은 투자자들이 완전히 빈털터리가 되었다.' },
+        { en: 'The charity provides food and shelter for destitute families in the city.', ko: '그 자선 단체는 도시의 궁핍한 가정들에게 음식과 숙소를 제공한다.' },
+        { en: 'After the stock market crash, many investors were left destitute.', ko: '주식 시장 폭락 이후, 많은 투자자들이 완전히 빈털터리가 되었다.' },
       ],
     }
   ),
@@ -225,8 +225,8 @@ export const vocabBatch15: VocabItem[] = [
       synonyms: ['diverge', 'stray', 'digress'],
       antonyms: ['conform', 'adhere', 'follow'],
       exampleSentences: [
-        { en: 'The aircraft had to change its course and move away from its original flight path due to the storm.', ko: '폭풍 때문에 그 항공기는 원래의 비행 경로에서 벗어나야 했다.' },
-        { en: 'He never allowed himself to step away from his strict daily routine.', ko: '그는 자신의 엄격한 일과에서 결코 벗어나는 법이 없었다.' },
+        { en: 'The aircraft had to deviate from its original flight path due to the storm.', ko: '폭풍 때문에 그 항공기는 원래의 비행 경로에서 벗어나야 했다.' },
+        { en: 'He never allowed himself to deviate from his strict daily routine.', ko: '그는 자신의 엄격한 일과에서 결코 벗어나는 법이 없었다.' },
       ],
     }
   ),
@@ -548,8 +548,8 @@ export const vocabBatch15: VocabItem[] = [
       synonyms: ['separate', 'deviate', 'branch'],
       antonyms: ['converge', 'unite', 'join'],
       exampleSentences: [
-        { en: 'The two paths in the woods began to move away from each other after the bridge.', ko: '다리를 지나자 숲속의 두 갈래 길이 서로 멀어지며 갈라지기 시작했다.' },
-        { en: 'Over time, the evolutionary lines of the two species started to become distinct.', ko: '시간이 흐르면서 두 종의 진화 노선은 서로 다르게 갈라지기 시작했다.' },
+        { en: 'The two paths in the woods began to diverge after the bridge.', ko: '다리를 지나자 숲속의 두 갈래 길이 갈라지기 시작했다.' },
+        { en: 'Over time, the evolutionary lines of the two species started to diverge.', ko: '시간이 흐르면서 두 종의 진화 노선은 서로 갈라지기 시작했다.' },
       ],
     }
   ),
@@ -624,8 +624,8 @@ export const vocabBatch15: VocabItem[] = [
       synonyms: ['diverse', 'varied', 'heterogeneous'],
       antonyms: ['uniform', 'homogeneous', 'narrow'],
       exampleSentences: [
-        { en: 'Her collection of art is quite wide-ranging and reflects her diverse interests.', ko: '그녀의 예술 수집품은 상당히 폭넓으며 그녀의 다방면에 걸친 관심을 반영한다.' },
-        { en: 'The gallery is known for its mix of styles, featuring everything from classical to modern pieces.', ko: '그 갤러리는 고전부터 현대 작품까지 모든 것을 다루는 다양한 스타일의 혼합으로 유명하다.' },
+        { en: 'Her eclectic collection of art reflects her diverse interests.', ko: '그녀의 절충적인 예술 수집품은 그녀의 다방면에 걸친 관심을 반영한다.' },
+        { en: 'The gallery is known for its eclectic mix of styles, from classical to modern pieces.', ko: '그 갤러리는 고전부터 현대 작품까지 절충적인 스타일 혼합으로 유명하다.' },
       ],
     }
   ),
@@ -681,8 +681,8 @@ export const vocabBatch15: VocabItem[] = [
       synonyms: ['evoke', 'extract', 'provoke'],
       antonyms: ['suppress', 'repress', 'stifle'],
       exampleSentences: [
-        { en: 'The comedian\'s jokes failed to any laughter from the audience.', ko: '그 코미디언의 농담은 관객들로부터 어떠한 웃음도 이끌어내지 못했다.' },
-        { en: 'The questionnaire is designed to honest opinions about the new product.', ko: '이 설문지는 신제품에 대한 솔직한 의견을 끌어내기 위해 설계되었습니다.' },
+        { en: 'The comedian\'s jokes failed to elicit any laughter from the audience.', ko: '그 코미디언의 농담은 관객들로부터 어떠한 웃음도 이끌어내지 못했다.' },
+        { en: 'The questionnaire is designed to elicit honest opinions about the new product.', ko: '이 설문지는 신제품에 대한 솔직한 의견을 끌어내기 위해 설계되었습니다.' },
       ],
     }
   ),
@@ -757,8 +757,8 @@ export const vocabBatch15: VocabItem[] = [
       synonyms: ['distinguished', 'prominent', 'renowned'],
       antonyms: ['obscure', 'unknown', 'insignificant'],
       exampleSentences: [
-        { en: 'She is a highly respected scholar in her field.', ko: '그녀는 그 분야의 저명한 학자이다.' },
-        { en: 'A celebrated architect designed the new building.', ko: '저명한 건축가가 새 건물을 설계했다.' },
+        { en: 'She is an eminent scholar in her field.', ko: '그녀는 그 분야의 저명한 학자이다.' },
+        { en: 'An eminent architect designed the new building.', ko: '저명한 건축가가 새 건물을 설계했다.' },
       ],
     }
   ),

@@ -31,12 +31,12 @@ export const vocabBatch70: VocabItem[] = [
       synonymAntonym: '청소하다는 의미의 clean과 비슷하지만, 채우거나 더럽히는 stain과는 반대됩니다.',
     }),
     {
-      definition: 'the act of rubbing a surface with a cloth or hand to remove dirt, liquid, or moisture',
-      synonyms: ['rub', 'brush', 'cleaning'],
-      antonyms: ['stain', 'smudge', 'pollution'],
+      definition: 'to clean or dry something by rubbing its surface with a cloth, a piece of paper, or your hand',
+      synonyms: ['rub', 'clean', 'mop'],
+      antonyms: ['stain', 'smear', 'dirty'],
       exampleSentences: [
-        { en: 'Give the kitchen counter a quick wipe before you start cooking.', ko: '요리를 시작하기 전에 주방 조리대를 빠르게 한 번 닦아주세요.' },
-        { en: 'The baby needs a fresh wipe to clean his messy face.', ko: '아기의 지저분한 얼굴을 닦아주려면 깨끗한 물티슈가 필요합니다.' },
+        { en: 'Please wipe the table with a damp cloth before setting the plates.', ko: '접시를 놓기 전에 축축한 천으로 테이블을 닦아 주세요.' },
+        { en: 'She wiped the tears from her eyes and tried to smile.', ko: '그녀는 눈에서 눈물을 닦아내고 미소를 짓기 위해 노력했습니다.' },
       ],
     }
   ),
@@ -79,21 +79,21 @@ export const vocabBatch70: VocabItem[] = [
     }
   ),
   word('wish', '바라다', 2, 'verb',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['포기하다', '거부하다', '무시하다', '싫어하다', '거절하다', '반대하다', '단념하다', '꺼리다', '미루다', '거리끼다'],
     tips({
       etymology: '고대 영어 \'wyscan\'에서 유래했으며, 무언가를 간절히 원하고 바라는 마음을 담고 있습니다.',
       visual: '밤하늘의 별을 보며 두 손을 모으고 간절히 기도하는 사람의 모습을 상상해 보세요.',
       soundAlike: '바람이 \'위시~\' 하고 불어오듯 내 마음의 소망이 멀리 퍼져나가는 소리로 기억하세요.',
       context: '생일 케이크의 촛불을 끄기 직전 마음속으로 비는 소망이 바로 이것입니다.',
-      synonymAntonym: 'desire와 유사하며, 무관심을 뜻하는 indifference와는 반대되는 개념입니다.',
+      synonymAntonym: 'desire(원하다)와 유사하며, 무관심을 뜻하는 indifference와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'A feeling of wanting something to happen or a particular desire for something that is not easily attainable.',
-      synonyms: ['desire', 'aspiration', 'longing'],
-      antonyms: ['indifference', 'dislike', 'apathy'],
+      definition: 'to want something to happen or to be true, especially something that seems unlikely or impossible',
+      synonyms: ['desire', 'hope', 'long'],
+      antonyms: ['dread', 'dislike', 'reject'],
       exampleSentences: [
-        { en: 'The young girl made a silent desire before blowing out the candles on her birthday cake.', ko: '어린 소녀는 생일 케이크의 촛불을 끄기 전에 마음속으로 소원을 빌었습니다.' },
-        { en: 'His greatest hope is to travel around the world after he retires from his job.', ko: '그의 가장 큰 소망은 직장에서 은퇴한 후 세계 여행을 하는 것입니다.' },
+        { en: 'She closed her eyes and wished for good health for her family.', ko: '그녀는 눈을 감고 가족의 건강을 빌었습니다.' },
+        { en: 'I wish I could speak five languages fluently.', ko: '다섯 개의 언어를 유창하게 말할 수 있으면 좋겠습니다.' },
       ],
     }
   ),
@@ -192,8 +192,8 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('witness', '증언', 6, 'noun',
-    ['변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념'],
+  word('witness', '목격자', 6, 'noun',
+    ['용의자', '범인', '피해자', '방관자', '가해자', '판사', '변호사', '검사', '배심원', '수사관'],
     tips({
       etymology: '고대 영어 \'wit\'에서 유래하여 \'아는 사람\' 혹은 \'지식\'이라는 의미를 담고 있습니다.',
       visual: '법정의 증인석에 앉아 진실을 말하기 위해 성경 위에 손을 얹고 있는 사람을 상상해보세요.',
@@ -211,8 +211,8 @@ export const vocabBatch70: VocabItem[] = [
       ],
     }
   ),
-  word('woman', '부인', 1, 'noun',
-    ['관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표'],
+  word('woman', '여자', 1, 'noun',
+    ['남자', '소년', '아기', '노인', '아이', '청년', '소녀', '유아', '성인', '어르신'],
     tips({
       etymology: '고대 영어 wifman에서 유래했으며, wif(여자)와 man(사람)이 합쳐진 단어입니다.',
       visual: '우아한 드레스를 입고 미소 짓는 성인 여성의 모습을 상상해 보세요.',
@@ -383,21 +383,21 @@ export const vocabBatch70: VocabItem[] = [
     }
   ),
   word('worth', '가치가 있는', 6, 'adjective',
-    ['관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표'],
+    ['무가치한', '쓸모없는', '하찮은', '무의미한', '불필요한', '사소한', '보잘것없는', '무용한', '열등한', '시시한'],
     tips({
       etymology: '고대 영어 \'weorth\'에서 유래하여 물건의 가격이나 가액을 의미하게 되었습니다.',
       visual: '박물관의 유리관 안에 전시된 아주 비싼 보석과 그 아래 붙은 가격표를 상상해 보세요.',
       soundAlike: '발음이 \'워스\'와 비슷하므로 \'원수\'도 갚을 만큼 \'가치\' 있는 일이라고 연상해 보세요.',
       context: '주로 \'be worth + 명사/동명사\' 형태로 쓰여 특정 행동을 할 만한 가치가 있음을 나타냅니다.',
-      synonymAntonym: 'value와 유의어 관계이며, 가치가 없음을 뜻하는 worthlessness와 반대됩니다.',
+      synonymAntonym: 'valuable(가치 있는)과 유의어 관계이며, worthless(가치 없는)와는 반대됩니다.',
     }),
     {
-      definition: 'the level of importance, excellence, or usefulness that something has',
-      synonyms: ['value', 'merit', 'importance'],
-      antonyms: ['insignificance', 'uselessness', 'worthlessness'],
+      definition: 'having a value equivalent to a specified amount, or deserving of a particular action or effort',
+      synonyms: ['valuable', 'deserving', 'meritorious'],
+      antonyms: ['worthless', 'undeserving', 'insignificant'],
       exampleSentences: [
-        { en: 'The historical document has a high cultural value and immense significance to the nation.', ko: '그 역사적 문서는 높은 문화적 가치와 국가적으로 엄청난 중요성을 지니고 있습니다.' },
-        { en: 'Experts estimated the total market price of the antique furniture to be over ten thousand dollars.', ko: '전문가들은 그 고가구의 전체 시장 가치가 만 달러 이상일 것으로 추정했습니다.' },
+        { en: 'This painting is worth millions of dollars at auction.', ko: '이 그림은 경매에서 수백만 달러의 가치가 있습니다.' },
+        { en: 'The museum is definitely worth visiting if you have time.', ko: '시간이 있다면 그 박물관은 확실히 방문할 가치가 있습니다.' },
       ],
     }
   ),
@@ -449,12 +449,12 @@ export const vocabBatch70: VocabItem[] = [
       synonymAntonym: 'Enclose는 안으로 넣는 느낌이고, Unwrap은 반대로 포장을 뜯는 행위입니다.',
     }),
     {
-      definition: 'A piece of material used to cover or enclose an object, or the act of covering something tightly.',
-      synonyms: ['covering', 'casing', 'envelope'],
-      antonyms: ['opening', 'exposure', 'unveiling'],
+      definition: 'to cover or enclose something by folding or winding a piece of paper, cloth, or other material around it',
+      synonyms: ['enclose', 'envelop', 'cover'],
+      antonyms: ['unwrap', 'expose', 'reveal'],
       exampleSentences: [
-        { en: 'The delicate glass vase was protected by a thick plastic wrap.', ko: '섬세한 유리 꽃병은 두꺼운 플라스틱 포장재로 보호되었습니다.' },
-        { en: 'Finish the sandwich by folding the tortilla into a tight wrap.', ko: '또띠아를 단단하게 말아서 샌드위치를 완성하세요.' },
+        { en: 'She carefully wrapped the birthday present in colorful paper and tied a ribbon on top.', ko: '그녀는 생일 선물을 알록달록한 종이로 조심스럽게 싸고 위에 리본을 묶었습니다.' },
+        { en: 'Please wrap the leftovers in foil and put them in the refrigerator.', ko: '남은 음식을 호일로 싸서 냉장고에 넣어 주세요.' },
       ],
     }
   ),
@@ -497,21 +497,21 @@ export const vocabBatch70: VocabItem[] = [
     }
   ),
   word('wrong', '잘못된', 2, 'adjective',
-    ['옳음', '정의', '진실', '공정', '정답', '도덕', '규칙', '이익', '성공', '칭찬'],
+    ['올바른', '정확한', '정당한', '공정한', '적절한', '합법적인', '도덕적인', '정직한', '타당한', '참된'],
     tips({
       etymology: '고대 노르웨이어 \'rangr\'에서 유래되었으며, 원래 \'구부러진\' 또는 \'비틀린\'이라는 의미에서 \'올바르지 않은\'이라는 뜻으로 발전했습니다.',
       visual: '똑바른 직선이 아닌 제멋대로 꺾여버린 화살표나 가위표(X) 표시를 상상해 보세요.',
       soundAlike: '\'롱(long)\'과 발음이 비슷하지만, \'w\' 발음 때문에 입술을 더 둥글게 모아 \'우롱\'에 가깝게 발음하며 \'틀린\' 상태를 강조하세요.',
-      context: '도덕적으로 옳지 않은 행동이나 법을 어기는 행위 등 부정적인 사회적 행동을 지칭할 때 주로 쓰입니다.',
-      synonymAntonym: '정의를 뜻하는 justice와 반대되는 개념으로, 부당함을 나타내는 injustice와 일맥상통합니다.',
+      context: '답이 틀렸거나, 도덕적으로 옳지 않은 상태, 또는 무언가가 고장났을 때 사용합니다.',
+      synonymAntonym: '올바른을 뜻하는 right와 반대되며, 잘못된을 뜻하는 incorrect와 유사합니다.',
     }),
     {
-      definition: 'An unjust, dishonest, or immoral action that violates a law or moral standard.',
-      synonyms: ['injustice', 'offense', 'misdeed'],
-      antonyms: ['right', 'justice', 'virtue'],
+      definition: 'not correct or true; not in accordance with fact, morality, or accepted standards',
+      synonyms: ['incorrect', 'mistaken', 'inaccurate'],
+      antonyms: ['right', 'correct', 'accurate'],
       exampleSentences: [
-        { en: 'The judge was determined to correct the legal wrong done to the innocent man.', ko: '판사는 무고한 사람에게 가해진 법적 부당함을 바로잡기로 결심했습니다.' },
-        { en: 'Stealing from the poor is a moral wrong that cannot be justified.', ko: '가난한 사람들의 것을 훔치는 것은 정당화될 수 없는 도덕적 악행입니다.' },
+        { en: 'I got the wrong answer on the math test because I miscalculated the formula.', ko: '공식을 잘못 계산해서 수학 시험에서 틀린 답을 적었습니다.' },
+        { en: 'It is wrong to take things that do not belong to you.', ko: '자신의 것이 아닌 물건을 가져가는 것은 잘못된 일입니다.' },
       ],
     }
   ),
@@ -535,21 +535,21 @@ export const vocabBatch70: VocabItem[] = [
     }
   ),
   word('yell', '고함치다', 6, 'verb',
-    ['속삭임', '침묵', '미소', '걸음', '생각', '관찰', '거절', '수락', '포옹', '응시'],
+    ['속삭이다', '침묵하다', '웃다', '걷다', '관찰하다', '거절하다', '수락하다', '포옹하다', '응시하다', '듣다'],
     tips({
       etymology: '고대 영어 gellan에서 유래되었으며, 이는 동물의 울음소리나 날카로운 비명 소리를 의미했습니다.',
       visual: '화가 난 사람이 입을 크게 벌리고 얼굴이 빨개질 정도로 크게 소리 지르는 모습을 상상해 보세요.',
       soundAlike: '\'옐(Yell)\' 발음이 \'열\'과 비슷하므로, \'열\'이 받아서 소리를 지른다고 연상하면 쉽습니다.',
       context: '스포츠 경기장에서 응원을 하거나, 멀리 있는 사람을 급하게 부를 때 주로 사용됩니다.',
-      synonymAntonym: 'shout와 비슷하지만 더 날카로운 느낌이며, whisper와는 정반대의 크기를 가집니다.',
+      synonymAntonym: 'shout(소리치다)와 비슷하며, whisper(속삭이다)와는 정반대의 개념입니다.',
     }),
     {
-      definition: 'A loud, sharp cry often expressing pain, excitement, or a call for attention.',
-      synonyms: ['shout', 'scream', 'bellow'],
-      antonyms: ['whisper', 'murmur', 'silence'],
+      definition: 'to shout something very loudly, especially because you are angry, excited, or in pain',
+      synonyms: ['shout', 'scream', 'holler'],
+      antonyms: ['whisper', 'murmur', 'hush'],
       exampleSentences: [
-        { en: 'The coach let out a loud yell when the team finally scored a goal.', ko: '팀이 마침내 골을 넣었을 때 코치는 크게 고함을 질렀다.' },
-        { en: 'A sudden yell from the dark alley startled the passing pedestrians.', ko: '어두운 골목에서 들려온 갑작스러운 고함 소리가 지나가던 보행자들을 놀라게 했다.' },
+        { en: 'The coach yelled instructions at the players from the sideline.', ko: '코치가 사이드라인에서 선수들에게 지시를 크게 외쳤다.' },
+        { en: 'She yelled for help when she saw the fire spreading in the kitchen.', ko: '그녀는 부엌에서 불이 번지는 것을 보고 도움을 요청하며 소리쳤다.' },
       ],
     }
   ),

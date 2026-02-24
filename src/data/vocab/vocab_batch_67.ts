@@ -136,21 +136,21 @@ export const vocabBatch67: VocabItem[] = [
     }
   ),
   word('twist', '꼬이다', 7, 'verb',
-    ['직선', '평면', '안정', '단순', '질서', '고정', '일관', '해결', '순서', '조화'],
+    ['펴다', '곧게 하다', '풀다', '정렬하다', '바르게 하다', '늘이다', '평평하게 하다', '고정하다', '안정시키다', '유지하다'],
     tips({
       etymology: '고대 영어 \'twis\'에서 유래하여 \'둘\' 혹은 \'두 가닥을 꼬다\'라는 의미에서 시작되었습니다.',
       visual: '새끼줄이나 꽈배기처럼 두 가닥이 서로 엉켜서 돌아가는 모양을 상상해 보세요.',
       soundAlike: '춤 종류인 \'트위스트\'를 출 때 몸을 이리저리 비트는 동작을 떠올리면 쉽습니다.',
-      context: '이야기의 결말이 예상과 다르게 꼬이거나 바뀔 때 \'반전\'이라는 의미로도 자주 쓰입니다.',
-      synonymAntonym: '곡선을 뜻하는 curve와 비슷하지만, 곧게 뻗은 straightness와는 정반대입니다.',
+      context: '물리적으로 줄이나 몸을 비틀거나, 이야기의 결말이 꼬이는 것을 나타내기도 합니다.',
+      synonymAntonym: '비트는 동작인 wind, turn과 유사하며, 곧게 펴는 straighten과 반대됩니다.',
     }),
     {
-      definition: 'An unexpected change or development in a story or situation, or a physical bend or turn in something.',
-      synonyms: ['turn', 'curve', 'variation'],
-      antonyms: ['line', 'stasis', 'conformity'],
+      definition: 'to turn or bend something into a spiral or curved shape, or to distort the meaning of something',
+      synonyms: ['wind', 'coil', 'contort'],
+      antonyms: ['straighten', 'unwind', 'flatten'],
       exampleSentences: [
-        { en: 'The mystery novel had a surprising plot at the very end.', ko: '그 추리 소설은 맨 마지막에 놀라운 줄거리 반전이 있었다.' },
-        { en: 'A sudden in the road caused the driver to slow down immediately.', ko: '도로의 갑작스러운 굽이 때문에 운전자는 즉시 속도를 줄였다.' },
+        { en: 'She twisted the towel tightly to squeeze out the excess water.', ko: '그녀는 과도한 물을 짜내기 위해 수건을 꽉 비틀었다.' },
+        { en: 'The road twisted through the mountains, making the drive slow but scenic.', ko: '도로가 산 사이로 구불구불 꼬여 있어 운전이 느렸지만 경치는 아름다웠다.' },
       ],
     }
   ),
@@ -611,21 +611,21 @@ export const vocabBatch67: VocabItem[] = [
     }
   ),
   word('upset', '뒤집다, 속상하게 하다', 7, 'verb',
-    ['안정', '평화', '질서', '성공', '승리', '계획', '조화', '유지', '정상', '안심'],
+    ['안정시키다', '달래다', '위로하다', '진정시키다', '기쁘게 하다', '안심시키다', '격려하다', '축하하다', '존중하다', '칭찬하다'],
     tips({
       etymology: '위(up)로 세우다(set)라는 결합에서 유래하여, 원래의 상태를 뒤집어엎는다는 의미를 가집니다.',
       visual: '평온하던 호수 위에 배가 갑자기 뒤집혀 바닥이 보이는 장면을 상상해 보세요.',
       soundAlike: '업셋! 컵을 \'업\'질러서 판을 \'셋\'팅한 것이 다 망가진 상황을 떠올려 보세요.',
-      context: '스포츠 경기에서 약팀이 강팀을 이겨 판도를 뒤흔드는 이변을 말할 때 자주 쓰입니다.',
-      synonymAntonym: '질서를 무너뜨리는 disturbance와 대조되는 정돈된 상태인 order를 함께 기억하세요.',
+      context: '누군가의 기분을 상하게 하거나 계획을 뒤엎을 때 자주 쓰입니다.',
+      synonymAntonym: '속상하게 하다를 뜻하는 disturb와 유의어이며, 진정시키다를 뜻하는 calm과는 반대 개념입니다.',
     }),
     {
-      definition: 'an unexpected result or situation where a favorite or stronger opponent is defeated',
-      synonyms: ['overthrow', 'disturbance', 'disorder'],
-      antonyms: ['victory', 'order', 'tranquility'],
+      definition: 'to make someone feel worried, unhappy, or disturbed, or to knock something over and disrupt it',
+      synonyms: ['disturb', 'distress', 'unsettle'],
+      antonyms: ['calm', 'soothe', 'comfort'],
       exampleSentences: [
-        { en: 'The underdog team caused a major shock by pulling off a massive upset in the finals.', ko: '약체 팀이 결승전에서 거대한 이변을 일으키며 큰 충격을 주었습니다.' },
-        { en: 'A sudden stomach upset prevented the athlete from competing at his full potential.', ko: '갑작스러운 위장 장애로 인해 그 선수는 자신의 잠재력을 온전히 발휘하며 경쟁할 수 없었습니다.' },
+        { en: 'The bad news upset her so much that she could not sleep all night.', ko: '나쁜 소식이 그녀를 너무 속상하게 해서 밤새 잠을 잘 수 없었습니다.' },
+        { en: 'The toddler accidentally upset the glass of water on the table.', ko: '유아가 실수로 탁자 위의 물잔을 뒤집었습니다.' },
       ],
     }
   ),
@@ -668,21 +668,21 @@ export const vocabBatch67: VocabItem[] = [
     }
   ),
   word('urge', '몰아대다', 6, 'verb',
-    ['억제', '거부', '무관심', '정지', '포기', '지연', '방해', '평온', '만족', '거절'],
+    ['말리다', '억제하다', '저지하다', '만류하다', '거부하다', '지연시키다', '방해하다', '포기시키다', '진정시키다', '무시하다'],
     tips({
       etymology: '라틴어 \'urgere\'에서 유래하여 \'밀어붙이다\' 또는 \'압박하다\'라는 핵심 의미를 담고 있습니다.',
-      visual: '뒤에서 누군가가 등을 강하게 떠미는 모습이나 참기 힘든 강렬한 충동이 가슴속에서 솟구치는 장면을 상상하세요.',
-      soundAlike: '\'어지(urge)\'라고 발음하며, \'어지간히\' 참기 힘든 강한 욕구라고 연상하면 쉽습니다.',
-      context: '주로 무언가를 하고 싶은 강한 내면의 욕구나 타인에게 행동을 촉구하는 상황에서 자주 쓰입니다.',
-      synonymAntonym: '강한 충동을 뜻하는 impulse와 유의어이며, 이를 억누르는 restraint와는 반대 개념입니다.',
+      visual: '뒤에서 누군가가 등을 강하게 떠미는 모습을 상상하세요. 강하게 촉구하는 행동입니다.',
+      soundAlike: '\'어지(urge)\'라고 발음하며, \'어지간히\' 강하게 밀어붙인다고 연상하면 쉽습니다.',
+      context: '타인에게 무언가를 하도록 강력하게 촉구하거나 권고하는 상황에서 자주 쓰입니다.',
+      synonymAntonym: '강하게 권하다를 뜻하는 press와 유의어이며, 만류하다를 뜻하는 discourage와는 반대 개념입니다.',
     }),
     {
-      definition: 'A strong desire or impulse to do something, often one that is difficult to control.',
-      synonyms: ['impulse', 'desire', 'longing'],
-      antonyms: ['deterrent', 'restraint', 'disinclination'],
+      definition: 'to strongly encourage or persuade someone to do something; to push or drive someone toward an action',
+      synonyms: ['press', 'encourage', 'persuade'],
+      antonyms: ['discourage', 'dissuade', 'deter'],
       exampleSentences: [
-        { en: 'She felt a sudden impulse to buy the expensive dress despite her budget.', ko: '그녀는 예산에도 불구하고 그 비싼 드레스를 사고 싶은 갑작스러운 충동을 느꼈다.' },
-        { en: 'The artist followed his creative instincts to paint the masterpiece.', ko: '그 예술가는 걸작을 그리기 위해 자신의 창조적인 욕구를 따랐다.' },
+        { en: 'The doctor urged the patient to quit smoking for the sake of his health.', ko: '의사는 환자에게 건강을 위해 담배를 끊으라고 강력히 촉구했습니다.' },
+        { en: 'Her friends urged her to apply for the prestigious scholarship.', ko: '친구들이 그녀에게 그 유명한 장학금에 지원하라고 몰아댔습니다.' },
       ],
     }
   ),

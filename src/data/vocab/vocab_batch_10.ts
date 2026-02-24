@@ -149,8 +149,8 @@ export const vocabBatch10: VocabItem[] = [
       synonyms: ['categorize', 'sort', 'arrange'],
       antonyms: ['disorganize', 'jumble', 'mix'],
       exampleSentences: [
-        { en: 'Biologists use a specific system to organize and group living organisms.', ko: '생물학자들은 생명체를 조직하고 분류하기 위해 특정한 체계를 사용합니다.' },
-        { en: 'The librarian needs to put these books into different sections based on their genre.', ko: '사서는 이 책들을 장르에 따라 다른 구역으로 분류해야 합니다.' },
+        { en: 'Biologists use a specific system to classify living organisms.', ko: '생물학자들은 생명체를 분류하기 위해 특정한 체계를 사용한다.' },
+        { en: 'The librarian needs to classify these books by genre.', ko: '사서는 이 책들을 장르에 따라 분류해야 한다.' },
       ],
     }
   ),
@@ -187,8 +187,8 @@ export const vocabBatch10: VocabItem[] = [
       synonyms: ['fall', 'crumble', 'break down'],
       antonyms: ['rise', 'stand', 'build'],
       exampleSentences: [
-        { en: 'The old building is expected to fall inward if the support beams fail.', ko: '지지대가 고장 나면 그 낡은 건물은 안쪽으로 붕괴할 것으로 예상됩니다.' },
-        { en: 'He felt dizzy and feared he might lose consciousness on the floor.', ko: '그는 어지러움을 느꼈고 바닥에 쓰러질까 봐 두려워했습니다.' },
+        { en: 'The old building is expected to collapse if the support beams fail.', ko: '지지대가 고장 나면 그 낡은 건물은 붕괴할 것으로 예상된다.' },
+        { en: 'He felt dizzy and feared he might collapse on the floor.', ko: '그는 어지러움을 느꼈고 바닥에 쓰러질까 봐 두려워했다.' },
       ],
     }
   ),
@@ -263,8 +263,8 @@ export const vocabBatch10: VocabItem[] = [
       synonyms: ['pledge', 'devote', 'dedicate'],
       antonyms: ['abandon', 'withdraw', 'renege'],
       exampleSentences: [
-        { en: 'The government has promised to invest more money, but they have yet to actually make a decision to do so.', ko: '정부는 더 많은 돈을 투자하겠다고 약속했지만, 아직 실제로 그렇게 하겠다는 확약을 하지는 않았다.' },
-        { en: 'Borrowing money for a house means you have to bind yourself to a long-term repayment plan.', ko: '집을 사기 위해 돈을 빌리는 것은 장기적인 상환 계획에 자신을 묶어두기로 약속하는 것을 의미한다.' },
+        { en: 'The government has yet to commit to investing more money in education.', ko: '정부는 아직 교육에 더 많은 돈을 투자하겠다고 약속하지 않았다.' },
+        { en: 'Borrowing money for a house means you commit to a long-term repayment plan.', ko: '집을 사기 위해 돈을 빌리는 것은 장기적인 상환 계획에 약속하는 것을 의미한다.' },
       ],
     }
   ),
@@ -301,8 +301,8 @@ export const vocabBatch10: VocabItem[] = [
       synonyms: ['partner', 'mate', 'comrade'],
       antonyms: ['stranger', 'enemy', 'foe'],
       exampleSentences: [
-        { en: 'She was my constant partner on the long journey across the country.', ko: '그녀는 전국을 횡단하는 긴 여정 동안 나의 든든한 동반자였다.' },
-        { en: 'Dogs are known to be loyal friends to humans for many years.', ko: '개는 오랜 세월 동안 인간에게 충성스러운 동반자가 되는 것으로 알려져 있다.' },
+        { en: 'She was my constant companion on the long journey across the country.', ko: '그녀는 전국을 횡단하는 긴 여정 동안 나의 든든한 동반자였다.' },
+        { en: 'Dogs are known to be loyal companions to humans.', ko: '개는 인간에게 충성스러운 동반자가 되는 것으로 알려져 있다.' },
       ],
     }
   ),
@@ -339,8 +339,8 @@ export const vocabBatch10: VocabItem[] = [
       synonyms: ['reimburse', 'offset', 'atone'],
       antonyms: ['deprive', 'penalize', 'fine'],
       exampleSentences: [
-        { en: 'The company will provide a fair amount of money to the victims for their loss.', ko: '회사는 피해자들의 손실에 대해 공정한 금액을 보상할 것이다.' },
-        { en: 'Hard work can often make up for a lack of natural talent.', ko: '열심히 노력하면 타고난 재능의 부족함을 보완할 수 있다.' },
+        { en: 'The company will compensate the victims for their loss.', ko: '회사는 피해자들의 손실에 대해 보상할 것이다.' },
+        { en: 'Hard work can often compensate for a lack of natural talent.', ko: '열심히 노력하면 타고난 재능의 부족함을 보상할 수 있다.' },
       ],
     }
   ),
@@ -396,8 +396,8 @@ export const vocabBatch10: VocabItem[] = [
       synonyms: ['constitute', 'form', 'comprise'],
       antonyms: ['decompose', 'dismantle', 'disintegrate'],
       exampleSentences: [
-        { en: 'The artist spent several months trying to create a piece that would perfectly represent his vision.', ko: '그 예술가는 자신의 비전을 완벽하게 표현할 작품을 구성하기 위해 몇 달을 보냈다.' },
-        { en: 'Ten distinct nations joined together to form the new economic alliance.', ko: '열 개의 서로 다른 국가들이 모여 새로운 경제 동맹을 구성했다.' },
+        { en: 'The artist spent several months trying to compose a piece that would perfectly represent his vision.', ko: '그 예술가는 자신의 비전을 완벽하게 표현할 작품을 작곡하기 위해 몇 달을 보냈다.' },
+        { en: 'Ten distinct nations compose the new economic alliance.', ko: '열 개의 서로 다른 국가들이 새로운 경제 동맹을 구성하고 있다.' },
       ],
     }
   ),
@@ -700,8 +700,8 @@ export const vocabBatch10: VocabItem[] = [
       synonyms: ['significant', 'substantial', 'sizable'],
       antonyms: ['negligible', 'insignificant', 'slight'],
       exampleSentences: [
-        { en: 'The project requires a great deal of time and effort to complete.', ko: '그 프로젝트를 완수하기 위해서는 상당한 시간과 노력이 필요합니다.' },
-        { en: 'The new policy has caused a noticeable amount of debate among the public.', ko: '새로운 정책은 대중들 사이에서 상당한 논란을 불러일으켰습니다.' },
+        { en: 'The project requires considerable time and effort to complete.', ko: '그 프로젝트를 완수하기 위해서는 상당한 시간과 노력이 필요하다.' },
+        { en: 'The new policy has caused considerable debate among the public.', ko: '새로운 정책은 대중들 사이에서 상당한 논란을 불러일으켰다.' },
       ],
     }
   ),
@@ -738,8 +738,8 @@ export const vocabBatch10: VocabItem[] = [
       synonyms: ['coherent', 'uniform', 'steady'],
       antonyms: ['inconsistent', 'erratic', 'variable'],
       exampleSentences: [
-        { en: 'Her story was coherent and remained the same throughout the entire investigation.', ko: '그녀의 이야기는 조사 내내 일관되게 유지되었습니다.' },
-        { en: 'We need to maintain a stable and regular approach to this problem.', ko: '우리는 이 문제에 대해 일관된 접근 방식을 유지해야 합니다.' },
+        { en: 'Her story was consistent throughout the entire investigation.', ko: '그녀의 이야기는 조사 내내 일관되었다.' },
+        { en: 'We need to maintain a consistent approach to this problem.', ko: '우리는 이 문제에 대해 일관된 접근 방식을 유지해야 한다.' },
       ],
     }
   ),
@@ -833,8 +833,8 @@ export const vocabBatch10: VocabItem[] = [
       synonyms: ['modern', 'current', 'present-day'],
       antonyms: ['ancient', 'archaic', 'outdated'],
       exampleSentences: [
-        { en: 'The museum features both historical and modern works of art.', ko: '그 박물관은 역사적인 예술품과 동시대의 예술품을 모두 전시한다.' },
-        { en: 'Many people find it difficult to understand the meaning of this latest style of music.', ko: '많은 사람들이 이러한 최신 동시대 음악 스타일의 의미를 이해하는 것을 어려워한다.' },
+        { en: 'The museum features both historical and contemporary works of art.', ko: '그 박물관은 역사적인 예술품과 동시대의 예술품을 모두 전시한다.' },
+        { en: 'Many people find it difficult to understand contemporary music.', ko: '많은 사람들이 동시대 음악을 이해하는 것을 어려워한다.' },
       ],
     }
   ),
@@ -928,8 +928,8 @@ export const vocabBatch10: VocabItem[] = [
       synonyms: ['transform', 'alter', 'modify'],
       antonyms: ['preserve', 'maintain', 'keep'],
       exampleSentences: [
-        { en: 'The software allows users to change their documents into different digital formats.', ko: '이 소프트웨어는 사용자들이 문서를 다른 디지털 형식으로 바꿀 수 있게 해줍니다.' },
-        { en: 'They decided to remodel the old factory into a trendy art gallery.', ko: '그들은 오래된 공장을 세련된 미술관으로 개조하기로 결정했습니다.' },
+        { en: 'The software allows users to convert their documents into different digital formats.', ko: '이 소프트웨어는 사용자들이 문서를 다른 디지털 형식으로 변환할 수 있게 해준다.' },
+        { en: 'They decided to convert the old factory into a trendy art gallery.', ko: '그들은 오래된 공장을 세련된 미술관으로 전환하기로 결정했다.' },
       ],
     }
   ),
@@ -947,8 +947,8 @@ export const vocabBatch10: VocabItem[] = [
       synonyms: ['collaborate', 'unite', 'combine'],
       antonyms: ['compete', 'oppose', 'resist'],
       exampleSentences: [
-        { en: 'The two companies decided to work together on the new technology project.', ko: '두 회사는 새로운 기술 프로젝트를 위해 협력하기로 결정했습니다.' },
-        { en: 'Witnesses are being asked to assist the authorities in the ongoing investigation.', ko: '목격자들은 진행 중인 수사에서 당국에 협력해 달라는 요청을 받고 있습니다.' },
+        { en: 'The two companies decided to cooperate on the new technology project.', ko: '두 회사는 새로운 기술 프로젝트를 위해 협력하기로 결정했다.' },
+        { en: 'Witnesses are being asked to cooperate with the authorities in the ongoing investigation.', ko: '목격자들은 진행 중인 수사에서 당국에 협력해 달라는 요청을 받고 있다.' },
       ],
     }
   ),

@@ -79,21 +79,21 @@ export const vocabBatch57: VocabItem[] = [
     }
   ),
   word('rubber', '고무', 6, 'noun',
-    ['운동선수', '요리사', '운전기사', '정원사', '목수', '회계사', '변호사', '간호사', '비서', '건축가'],
+    ['플라스틱', '유리', '금속', '나무', '천', '종이', '가죽', '돌', '철', '시멘트'],
     tips({
-      etymology: '동사 rub(문지르다)에 행위자를 뜻하는 접미사 -er이 붙어 근육을 문질러 풀어주는 사람을 뜻하게 되었습니다.',
-      visual: '운동 경기 후 피로한 선수의 근육을 전문적으로 문지르며 마사지해주는 관리사의 손길을 상상해 보세요.',
-      soundAlike: '러버(rubber)는 \'러브(love)\'와 발음이 비슷하므로, 고객을 사랑하는 마음으로 정성껏 마사지하는 사람으로 기억하세요.',
-      context: '주로 운동 팀이나 스파 시설에서 신체적 피로를 풀어주는 전문가를 지칭할 때 사용되는 고전적인 표현입니다.',
-      synonymAntonym: '유의어인 masseur는 남성 마사지사를, masseuse는 여성 마사지사를 뜻하며 반의어는 서비스를 받는 client입니다.',
+      etymology: '동사 rub(문지르다)에 접미사 -er이 붙어 만들어졌으며, 원래 지우개(문질러 지우는 것)를 뜻하다가 고무 재질 전체를 가리키게 되었습니다.',
+      visual: '자동차 타이어나 고무장갑처럼 탄력 있게 늘어났다 돌아오는 검은색 탄성 물질을 상상해 보세요.',
+      soundAlike: '\'러버\'라고 발음하며 고무줄을 잡아당겼다 놓는 \'러버밴드(rubber band)\'를 떠올리면 쉽게 기억됩니다.',
+      context: '타이어, 장갑, 지우개, 고무줄 등 일상생활에서 탄성과 방수 기능이 필요한 다양한 제품의 재료로 쓰입니다.',
+      synonymAntonym: '유의어로 탄성체를 뜻하는 elastic이 있으며, 딱딱하고 부서지기 쉬운 rigid material과 대조됩니다.',
     }),
     {
-      definition: 'A person who performs massage on others, especially to relieve pain or stiffness in muscles.',
-      synonyms: ['masseur', 'masseuse', 'therapist'],
-      antonyms: ['client', 'patient', 'customer'],
+      definition: 'a tough elastic substance made from the sap of a tropical plant or synthetically',
+      synonyms: ['latex', 'elastic', 'gum'],
+      antonyms: ['metal', 'glass', 'stone'],
       exampleSentences: [
-        { en: 'The professional athlete hired a private person to soothe his aching muscles after every marathon.', ko: '그 프로 운동선수는 마라톤이 끝날 때마다 아픈 근육을 달래기 위해 개인 맛사지사를 고용했습니다.' },
-        { en: 'A skilled practitioner at the spa used aromatic oils to enhance the relaxation experience.', ko: '스파의 숙련된 맛사지사는 휴식 경험을 높이기 위해 향기로운 오일을 사용했습니다.' },
+        { en: 'The factory produces tires made from natural rubber harvested from trees in Southeast Asia.', ko: '그 공장은 동남아시아의 나무에서 채취한 천연 고무로 타이어를 생산합니다.' },
+        { en: 'She wore rubber gloves to protect her hands while washing the dishes.', ko: '그녀는 설거지를 하는 동안 손을 보호하기 위해 고무장갑을 착용했습니다.' },
       ],
     }
   ),

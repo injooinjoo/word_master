@@ -174,21 +174,21 @@ export const vocabBatch69: VocabItem[] = [
     }
   ),
   word('wear', '입다', 3, 'verb',
-    ['상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미'],
+    ['벗다', '던지다', '제거하다', '숨기다', '접다', '보관하다', '빨다', '수선하다', '버리다', '교환하다'],
     tips({
       etymology: '고대 영어 \'werian\'에서 유래되었으며, 몸을 덮거나 보호하기 위해 무언가를 걸치는 행위를 의미합니다.',
       visual: '아침에 거울 앞에서 셔츠 단추를 채우거나 신발 끈을 묶는 자신의 모습을 상상해 보세요.',
       soundAlike: '\'Where(어디)\'와 발음이 같습니다. \'어디(Where)에 옷을 입을까(Wear)?\'라고 연결해 보세요.',
       context: '의류뿐만 아니라 안경, 향수, 심지어 미소와 같은 표정을 지을 때도 사용되는 폭넓은 단어입니다.',
-      synonymAntonym: 'Don(입다)과 Put on은 비슷한 의미를 가지며, Take off(벗다)는 반대되는 행동을 나타냅니다.',
+      synonymAntonym: 'put on(입다)과 비슷한 의미를 가지며, take off(벗다)는 반대되는 행동을 나타냅니다.',
     }),
     {
-      definition: 'The act of having clothing, ornaments, or colors on one\'s body as a covering or decoration.',
-      synonyms: ['apparel', 'garb', 'attire'],
-      antonyms: ['undress', 'strip', 'disrobe'],
+      definition: 'to have clothing, jewelry, or accessories on your body as a covering or decoration',
+      synonyms: ['don', 'put on', 'sport'],
+      antonyms: ['remove', 'take off', 'discard'],
       exampleSentences: [
-        { en: 'Heavy winter clothing is essential to protect yourself from the freezing wind.', ko: '추운 바람으로부터 자신을 보호하기 위해 두꺼운 겨울 의류를 입는 것이 필수적입니다.' },
-        { en: 'Casual attire is appropriate for the upcoming company picnic this weekend.', ko: '이번 주말에 예정된 회사 야유회에는 캐주얼한 복장이 적절합니다.' },
+        { en: 'She always wears a warm coat when the temperature drops below freezing.', ko: '기온이 영하로 떨어지면 그녀는 항상 따뜻한 코트를 입습니다.' },
+        { en: 'The doctor advised him to wear sunglasses to protect his eyes from the sun.', ko: '의사는 햇빛으로부터 눈을 보호하기 위해 선글라스를 쓰라고 조언했습니다.' },
       ],
     }
   ),
@@ -221,12 +221,12 @@ export const vocabBatch69: VocabItem[] = [
       synonymAntonym: 'knit나 braid처럼 엮는 단어들과 묶어서 외우고, 반대로 다 풀어헤치는 unravel과 대조해 보세요.',
     }),
     {
-      definition: 'A particular pattern or method of interlacing threads or strands to form a fabric or structure.',
-      synonyms: ['texture', 'pattern', 'mesh'],
-      antonyms: ['disarray', 'unraveling', 'detachment'],
+      definition: 'to form fabric or a pattern by interlacing threads or strands over and under each other',
+      synonyms: ['knit', 'braid', 'intertwine'],
+      antonyms: ['unravel', 'untangle', 'separate'],
       exampleSentences: [
-        { en: 'The intricate weave of the Persian rug displayed centuries of artistic tradition.', ko: '페르시아 양탄자의 복잡한 짜임새는 수세기에 걸친 예술적 전통을 보여주었습니다.' },
-        { en: 'Closer inspection revealed a loose weave in the linen fabric that allowed for better airflow.', ko: '자세히 살펴보니 리넨 천의 짜임이 느슨해서 공기가 더 잘 통하게 되어 있었습니다.' },
+        { en: 'The skilled artisan can weave beautiful patterns using only a simple hand loom.', ko: '숙련된 장인은 간단한 수동 베틀만으로 아름다운 무늬를 짤 수 있습니다.' },
+        { en: 'She learned to weave baskets from her grandmother during the summer holidays.', ko: '그녀는 여름 방학 동안 할머니에게 바구니 짜는 법을 배웠습니다.' },
       ],
     }
   ),
@@ -382,8 +382,8 @@ export const vocabBatch69: VocabItem[] = [
       ],
     }
   ),
-  word('welfare', '행복', 6, 'noun',
-    ['사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보'],
+  word('welfare', '복지', 6, 'noun',
+    ['빈곤', '학대', '방치', '고통', '불행', '재난', '위험', '질병', '결핍', '착취'],
     tips({
       etymology: '잘 지내다라는 뜻의 \'well\'과 가다라는 뜻의 \'fare\'가 합쳐져 안녕과 행복을 뜻하게 되었습니다.',
       visual: '어려운 이웃에게 따뜻한 도시락을 전달하며 모두가 웃고 있는 복지 센터의 풍경을 상상해 보세요.',
@@ -402,21 +402,21 @@ export const vocabBatch69: VocabItem[] = [
     }
   ),
   word('well', '잘', 1, 'adverb',
-    ['구멍', '상자', '나무', '바다', '하늘', '바닥', '동굴', '그릇', '연못', '강물'],
+    ['못', '나쁘게', '서툴게', '형편없이', '부족하게', '잘못', '겨우', '조금', '약간', '어렵게'],
     tips({
-      etymology: '고대 영어 \'wielle\'에서 유래했으며, 땅에서 물이 솟아오르는 근원을 의미합니다.',
-      visual: '마을 광장 한가운데 깊게 파여 있고 돌로 쌓인 둥근 우물을 상상해 보세요.',
-      soundAlike: '발음이 \'웰\'이므로, 물이 \'웰웰\' 솟아나오는 우물이라고 기억하면 쉽습니다.',
-      context: '주로 시골이나 오래된 유적지에서 식수를 얻기 위해 파놓은 깊은 구덩이를 말할 때 쓰입니다.',
-      synonymAntonym: 'spring(샘)과 비슷하지만 인공적으로 판 것이며, 건조한 사막과는 반대되는 개념입니다.',
+      etymology: '고대 영어 \'wel\'에서 유래했으며, 좋은 상태나 적절한 방식을 나타냅니다.',
+      visual: '시험 답안지에 빨간 펜으로 큰 동그라미가 쳐져 있는 모습을 상상해 보세요.',
+      soundAlike: '발음이 \'웰\'이므로, \'웰빙(well-being)\'처럼 좋은 상태를 떠올리면 쉽습니다.',
+      context: '동사를 수식하여 행동이 잘 이루어졌음을 표현할 때 가장 빈번하게 쓰이는 부사입니다.',
+      synonymAntonym: '능숙하게를 뜻하는 skillfully와 유사하며, 서툴게를 뜻하는 poorly와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'A deep hole made in the ground to get water, oil, or gas.',
-      synonyms: ['spring', 'fountain', 'source'],
-      antonyms: ['surface', 'exterior', 'shallows'],
+      definition: 'in a good or satisfactory way; to a high standard or degree',
+      synonyms: ['skillfully', 'properly', 'effectively'],
+      antonyms: ['poorly', 'badly', 'inadequately'],
       exampleSentences: [
-        { en: 'The villagers gathered around the stone structure to draw fresh water for their homes.', ko: '마을 사람들은 집에 가져갈 신선한 물을 긷기 위해 돌로 된 우물 주변에 모였습니다.' },
-        { en: 'Engineers discovered a rich oil deposit deep beneath the desert sands.', ko: '엔지니어들은 사막 모래 깊은 곳에서 풍부한 유정을 발견했습니다.' },
+        { en: 'She speaks English very well after living in London for three years.', ko: '런던에서 3년간 살고 난 뒤 그녀는 영어를 매우 잘 합니다.' },
+        { en: 'The students performed well on the final exam thanks to their hard work.', ko: '학생들은 열심히 공부한 덕분에 기말 시험을 잘 치렀습니다.' },
       ],
     }
   ),
@@ -535,21 +535,21 @@ export const vocabBatch69: VocabItem[] = [
     }
   ),
   word('when', '언제', 2, 'adverb',
-    ['문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인'],
+    ['절대로', '항상', '결코', '어디서', '무엇을', '누구를', '어떻게', '이미', '여전히', '아직'],
     tips({
       etymology: '고대 영어 \'hwanne\'에서 유래했으며, 의문과 시간을 나타내는 \'wh-\' 계열의 핵심 단어입니다.',
       visual: '시계 바늘이 특정 숫자를 가리키며 질문을 던지는 물음표 모양을 상상해 보세요.',
       soundAlike: '\'웬\'일이야? 라고 물을 때의 \'웬\'과 발음이 비슷하여 시점을 묻는 느낌을 줍니다.',
       context: '주로 구체적인 시각이나 날짜, 혹은 특정한 사건이 일어나는 시점을 물을 때 사용합니다.',
-      synonymAntonym: '시점을 뜻하는 occasion과 유사하며, 구체적이지 않은 상태인 never와 대비됩니다.',
+      synonymAntonym: '~하는 동안을 뜻하는 while과 유사하게 쓰이며, 시점이 불분명한 never와 대비됩니다.',
     }),
     {
-      definition: 'the specific time or occasion at which an event takes place',
-      synonyms: ['timing', 'occasion', 'period'],
-      antonyms: ['never', 'always', 'forever'],
+      definition: 'at what time; at or during the time that something happens',
+      synonyms: ['at what time', 'while', 'as'],
+      antonyms: ['never', 'at no time', 'always'],
       exampleSentences: [
-        { en: 'The exact when and where of the secret meeting remain a mystery to everyone.', ko: '비밀 회의의 정확한 시간과 장소는 모두에게 수수께끼로 남아 있다.' },
-        { en: 'We need to decide on the when of the project launch before we hire more staff.', ko: '직원을 더 고용하기 전에 프로젝트 시작 시점을 결정해야 한다.' },
+        { en: 'When does the train arrive at the central station?', ko: '기차가 중앙역에 언제 도착하나요?' },
+        { en: 'Call me when you get home so I know you arrived safely.', ko: '집에 도착하면 전화해 주세요, 안전하게 도착했는지 알 수 있게요.' },
       ],
     }
   ),
@@ -668,21 +668,21 @@ export const vocabBatch69: VocabItem[] = [
     }
   ),
   word('whisper', '속삭이다', 5, 'verb',
-    ['고함', '소음', '연설', '침묵', '비명', '노래', '토론', '발표', '명령', '속보'],
+    ['소리치다', '외치다', '고함치다', '선언하다', '발표하다', '노래하다', '명령하다', '방송하다', '전달하다', '떠들다'],
     tips({
       etymology: '바람이 부는 소리를 흉내 낸 의성어에서 유래하여 아주 작은 목소리를 뜻하게 되었습니다.',
       visual: '도서관에서 친구의 귀에 입을 가까이 대고 조심스럽게 말하는 모습을 상상해 보세요.',
       soundAlike: '\'휘~\' 하고 바람이 빠져나가는 듯한 발음이 실제 속삭이는 소리와 매우 흡사합니다.',
       context: '비밀을 공유하거나 남에게 들키지 않아야 하는 조용한 장소에서 주로 사용됩니다.',
-      synonymAntonym: 'murmur와 비슷하지만, 반대로 크게 소리치는 shout와는 대조적인 단어입니다.',
+      synonymAntonym: 'murmur(중얼거리다)와 비슷하며, 크게 소리치는 shout와는 반대되는 단어입니다.',
     }),
     {
-      definition: 'a very quiet way of speaking using only breath rather than the vocal cords',
-      synonyms: ['murmur', 'mutter', 'undertone'],
-      antonyms: ['shout', 'scream', 'roar'],
+      definition: 'to speak very softly using one\'s breath without vibrating the vocal cords',
+      synonyms: ['murmur', 'mutter', 'breathe'],
+      antonyms: ['shout', 'scream', 'yell'],
       exampleSentences: [
-        { en: 'She shared the secret in a soft voice that was barely above a breath.', ko: '그녀는 숨소리보다 겨우 큰 부드러운 속삭임으로 비밀을 공유했다.' },
-        { en: 'A faint sound of voices came from the back of the darkened theater.', ko: '어두워진 영화관 뒤편에서 희미한 속삭임 소리가 들려왔다.' },
+        { en: 'She whispered the secret into her friend\'s ear so that nobody else could hear.', ko: '그녀는 다른 사람이 듣지 못하게 친구의 귀에 비밀을 속삭였다.' },
+        { en: 'The students whispered to each other during the library study session.', ko: '학생들은 도서관 학습 시간 동안 서로 속삭였다.' },
       ],
     }
   ),
@@ -763,21 +763,21 @@ export const vocabBatch69: VocabItem[] = [
     }
   ),
   word('why', '왜', 3, 'adverb',
-    ['기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건'],
+    ['어떻게', '무엇을', '어디서', '누구를', '어느', '이미', '항상', '절대로', '결코', '아직'],
     tips({
       etymology: '고대 영어 hwi에서 유래되었으며, \'어떤 수단으로\' 혹은 \'무엇 때문에\'라는 의문을 나타내는 도구격에서 발전했습니다.',
       visual: '머릿속에 커다란 물음표(?)가 그려진 퍼즐 조각이 빠져 있는 모습을 상상하며 그 이유를 찾는 장면을 떠올려 보세요.',
       soundAlike: '우리말 \'와이\'와 비슷하게 들리며, 셔츠의 \'Y\'자 깃을 보며 \'왜 갈라졌지?\'라고 질문하는 상황을 연결해 보세요.',
-      context: '단순한 질문뿐만 아니라 어떤 사건이 일어난 근본적인 동기나 숨겨진 목적을 설명할 때 명사로 사용됩니다.',
-      synonymAntonym: '이유를 뜻하는 reason과 유사하며, 결과나 결론을 뜻하는 effect와는 반대되는 지점에 있습니다.',
+      context: '이유나 목적을 물어볼 때 사용하며, 원인을 파악하고자 하는 질문에서 핵심적으로 쓰입니다.',
+      synonymAntonym: '어떤 이유로를 뜻하는 for what reason과 유사하며, 시점을 묻는 when과는 다른 종류의 의문을 나타냅니다.',
     }),
     {
-      definition: 'the cause or reason for which something happens or is done',
-      synonyms: ['reason', 'motive', 'explanation'],
-      antonyms: ['consequence', 'result', 'outcome'],
+      definition: 'for what reason or purpose; used to ask about the cause or reason of something',
+      synonyms: ['for what reason', 'how come', 'wherefore'],
+      antonyms: ['because', 'therefore', 'hence'],
       exampleSentences: [
-        { en: 'The investigators are still trying to determine the underlying why of the sudden market crash.', ko: '조사관들은 여전히 갑작스러운 시장 폭락의 근본적인 이유를 밝혀내려 노력하고 있다.' },
-        { en: 'Understanding the why behind customer behavior is essential for a successful marketing strategy.', ko: '고객 행동 뒤에 숨겨진 원인을 이해하는 것은 성공적인 마케팅 전략에 필수적이다.' },
+        { en: 'Why did you decide to change your major in the middle of the semester?', ko: '왜 학기 중간에 전공을 바꾸기로 결정했나요?' },
+        { en: 'Nobody could explain why the machine suddenly stopped working.', ko: '아무도 그 기계가 왜 갑자기 작동을 멈췄는지 설명할 수 없었다.' },
       ],
     }
   ),
@@ -915,21 +915,21 @@ export const vocabBatch69: VocabItem[] = [
     }
   ),
   word('win', '이기다', 3, 'verb',
-    ['패배', '무승부', '시도', '포기', '참가', '훈련', '거절', '실패', '연습', '중단'],
+    ['지다', '패배하다', '포기하다', '실패하다', '항복하다', '잃다', '양보하다', '포기하다', '떨어지다', '낙선하다'],
     tips({
       etymology: '고대 영어 \'winnan\'에서 유래했으며, 원래 \'노력하다\'나 \'투쟁하다\'라는 의미에서 성취의 결과로 발전했습니다.',
       visual: '트로피를 머리 위로 높게 들어 올리며 환호하는 운동선수의 모습을 상상해 보세요.',
       soundAlike: '승리하면 \'윈(win)\'너가 되어 \'웃음\'이 난다고 기억하면 발음과 연결하기 쉽습니다.',
       context: '스포츠 경기뿐만 아니라 선거, 복권 당첨, 논쟁에서의 우위를 점할 때도 자주 쓰입니다.',
-      synonymAntonym: 'victory와 triumph는 격식 있는 승리를 뜻하며, defeat는 그 반대인 패배를 의미합니다.',
+      synonymAntonym: '성공하다를 뜻하는 succeed와 유사하며, 패배하다를 뜻하는 lose와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'a victory in a fight, contest, game, or struggle',
-      synonyms: ['victory', 'triumph', 'conquest'],
-      antonyms: ['defeat', 'loss', 'failure'],
+      definition: 'to be successful or victorious in a contest, conflict, or competition',
+      synonyms: ['triumph', 'prevail', 'succeed'],
+      antonyms: ['lose', 'fail', 'surrender'],
       exampleSentences: [
-        { en: 'The team celebrated their first major victory of the season after a long drought.', ko: '그 팀은 오랜 가뭄 끝에 시즌 첫 주요 승리를 축하했습니다.' },
-        { en: 'Securing this contract would be a huge achievement for our small marketing firm.', ko: '이 계약을 따내는 것은 우리 작은 마케팅 회사에 큰 승리가 될 것입니다.' },
+        { en: 'Our team worked hard all season and finally won the championship game.', ko: '우리 팀은 시즌 내내 열심히 노력했고 마침내 챔피언십 경기에서 이겼습니다.' },
+        { en: 'She hopes to win the science competition by presenting her original research.', ko: '그녀는 독창적인 연구를 발표하여 과학 대회에서 이기기를 희망합니다.' },
       ],
     }
   ),

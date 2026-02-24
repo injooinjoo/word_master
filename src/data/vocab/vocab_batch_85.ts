@@ -14,7 +14,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('vitriolic', 'having a caustic quality', 4, 'noun',
+  word('vitriolic', 'having a caustic quality', 4, 'adjective',
     ['사소한 반대, 트집잡기 / 사소한 문제에 트집잡다, 논의의 주제를 회피하다', '맛이 단, 지나치게 감상적인', '(돈) 펑펑쓰다', '전체주의', '의지, 결단력 있는', '전통의', '나무로 만든', '왕국', '재미, (~s)오락', '재정의, 금융의'],
     tips({
       etymology: 'vitriolic의 어원 정보는 추후 보강 예정',
@@ -24,7 +24,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('wallow', 'to roll oneself indolently; to become or remain helpless', 4, 'noun',
+  word('wallow', 'to roll oneself indolently; to become or remain helpless', 4, 'verb',
     ['달래려고 준 것 / 뇌물', '앞으로 꼬꾸라지다, 비틀거리다, 몰락시키다', '열렬한 추종자, 신봉자', '능력', '용', '유치원', '위협[협박]하다', '대', '동 과거', '동 en'],
     tips({
       etymology: 'wallow의 어원 정보는 추후 보강 예정',
@@ -34,7 +34,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('wanton', 'undisciplined, lewd, lustful', 4, 'noun',
+  word('wanton', 'undisciplined, lewd, lustful', 4, 'adjective',
     ['명', '부 in', '형 ous', '명 ship', '명 ive', '동', '명 고유', '설명; 드러냄, 시연', '기밀, 비밀', '(예금의)인출'],
     tips({
       etymology: 'wanton의 어원 정보는 추후 보강 예정',
@@ -44,7 +44,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('wily', 'crafty, sly', 4, 'adverb',
+  word('wily', 'crafty, sly', 4, 'adjective',
     ['명 er', '명 nce', '형', '형 un', '~에게 통지하다, 알리다', '오로지, 독점적으로', '수신자', '이전에', '배낭; 배낭 여행하다', '비할 데 없는'],
     tips({
       etymology: 'wily의 어원 정보는 추후 보강 예정',
@@ -64,7 +64,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('wizened', 'dry, shrunken, wrinkled', 4, 'noun',
+  word('wizened', 'dry, shrunken, wrinkled', 4, 'adjective',
     ['이민자', '신원, 정체성', '형', '명 사람', '동 ize', '형 al', '형 모습', '명 ness', '명', '전치사'],
     tips({
       etymology: 'wizened의 어원 정보는 추후 보강 예정',
@@ -84,7 +84,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('yoke', 'to join, link', 4, 'noun',
+  word('yoke', 'to join, link', 4, 'verb',
     ['명', '명 ment', '명 age', '명 고유', '명 동물', '형 ic', '동 re, 과거', '형 sh', '명 nce', '원고'],
     tips({
       etymology: 'yoke의 어원 정보는 추후 보강 예정',
@@ -124,7 +124,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('alarmist', '(못마땅)불필요한 우려를 자아내는', 5, 'noun',
+  word('alarmist', '(못마땅)불필요한 우려를 자아내는', 5, 'adjective',
     ['명성, 위신', '최신의', '맴돌다, 떠다니다', 'an imperfection, flaw', 'clear, transparent', 'to criticize or scold severely', '혐오스러운/불쾌한/끔찍한', '두서 없는, 종잡을 수 없는(=discursive)', '위선', '가라앉히다, 진정시키다, 완화시키다'],
     tips({
       etymology: 'alarmist의 어원 정보는 추후 보강 예정',
@@ -154,7 +154,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('apathetic', '무관심한, 냉담한', 5, 'noun',
+  word('apathetic', '무관심한, 냉담한', 5, 'adjective',
     ['완고함, 고집', '무늬', 'to correct or revise a written text', 'involving punishment', '주목을 끄는 대상', '허풍선이', '멀어진, 소원해진', '고집센, 완고한', '자만/우쭐댐/허세', '(지질)구조상의'],
     tips({
       etymology: 'apathetic의 어원 정보는 추후 보강 예정',
@@ -224,7 +224,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('bloated', '부풀어오른/자만한, 거만해진', 5, 'noun',
+  word('bloated', '부풀어오른/자만한, 거만해진', 5, 'adjective',
     ['조롱하다', '울화, 악의의 [n] spleen', '팽팽한, 긴장된', '통제나 지배가 불가능한', '커지다, 강해지다', '과학기술', '(인공)위성', '먼지, 때, 흙', '용기[그릇]', '성명, 진술'],
     tips({
       etymology: 'bloated의 어원 정보는 추후 보강 예정',
@@ -234,7 +234,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('cavalier', '거만한 / 무신경한', 5, 'noun',
+  word('cavalier', '거만한 / 무신경한', 5, 'adjective',
     ['단편적인', '금방 회복하는', '장점, 최고조', '꿰뚫다', '(부당한) 이용, 착취', '대신하다', '주목할 만한', '일상적인, 평범한', '풍부하게', '필요 조건'],
     tips({
       etymology: 'cavalier의 어원 정보는 추후 보강 예정',
@@ -284,7 +284,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('coruscate', '반짝이다(glitter)/생기가 넘치다/(지성, 재치가)번뜩이다(dazzling, brilliant)', 5, 'noun',
+  word('coruscate', '반짝이다(glitter)/생기가 넘치다/(지성, 재치가)번뜩이다(dazzling, brilliant)', 5, 'verb',
     ['사람이름', '명', '동 ate', '명 tion', '명 지역', '형 ous', '형 ble', '형 ble, in', '형 cal', '명 사람'],
     tips({
       etymology: 'coruscate의 어원 정보는 추후 보강 예정',
@@ -334,7 +334,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('debilitated', '쇠약해진', 5, 'noun',
+  word('debilitated', '쇠약해진', 5, 'adjective',
     ['무신경한, 세밀하지 못한', '(죄, 과실) 경감시키다, 가볍게 하다', '소생하다', '끝까지 주장하는 사람 / 당황스럽고 어려운것', '타당성', '파도타기[검색]을 하다', '(물을)뿌리다, 분무기', '수집(품)', '비동', '형 ble'],
     tips({
       etymology: 'debilitated의 어원 정보는 추후 보강 예정',
@@ -374,7 +374,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('ersatz', '대용(모조)품의', 5, 'noun',
+  word('ersatz', '대용(모조)품의', 5, 'adjective',
     ['사망자/치사율/숙명론', '자제, 금욕 / 거절, 포기', '원통함, 분함', '자유재량 / 분별력, 신중함', '편모', '부패하지 않음/청렴결백', '거짓말하는 성격, 버릇/거짓말', '분명히/숨김없이/소박하게', '혈색이 좋은 / 쾌활한, 명랑한', '넝마, 누더기/잡아찢다'],
     tips({
       etymology: 'ersatz의 어원 정보는 추후 보강 예정',
@@ -385,7 +385,7 @@ export const vocabBatch85: VocabItem[] = [
     })
   ),
   word('exuberance', '넘치는 열정', 5, 'noun',
-    ['빛나는, 찬란한', '뛰어난, 초월적인', '적절한, 알맞은', '건조시키다, 탈수 시키다', '(매장된 것, 시신) 파내다', '물러나다 / 감소하다', '자기 비하', '요약', '자랑하다, 허ㅜㅇ떨다', '성공한'],
+    ['빛나는, 찬란한', '뛰어난, 초월적인', '적절한, 알맞은', '건조시키다, 탈수 시키다', '(매장된 것, 시신) 파내다', '물러나다 / 감소하다', '자기 비하', '요약', '자랑하다, 허풍떨다', '성공한'],
     tips({
       etymology: 'exuberance의 어원 정보는 추후 보강 예정',
       visual: 'exuberance를 넘치는 열정로 연결해 시각적으로 기억',
@@ -434,7 +434,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('gaping', '입을 크게 벌린', 5, 'noun',
+  word('gaping', '입을 크게 벌린', 5, 'adjective',
     ['심함', '역설적인', '방향을 바꾸다', '자극', '~에 가까운, 거의 ~인', '아마', '알아볼 수 있는', '부주의한', 'to evade, escape', 'a very small amount, especially relating to money'],
     tips({
       etymology: 'gaping의 어원 정보는 추후 보강 예정',
@@ -474,7 +474,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('groundbreaking', '획기적인/신기원을 이룬', 5, 'noun',
+  word('groundbreaking', '획기적인/신기원을 이룬', 5, 'adjective',
     ['involving punishment', '무관심한, 냉담한', '역사와 관계없는/역사에 무관심한', '도전적인, 저항적인', '솔직/터놓음', '명쾌, 명석/맑음, 밝음', '명민한, 신중한, 사려깊은', '억제', '신랄함', '많음, 풍요로움'],
     tips({
       etymology: 'groundbreaking의 어원 정보는 추후 보강 예정',
@@ -494,7 +494,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('half-way', '중도의, 절반 쯤의/불충분한, 불완전한(incomplete)', 5, 'noun',
+  word('half-way', '중도의, 절반 쯤의/불충분한, 불완전한(incomplete)', 5, 'adjective',
     ['공손하게, 예의바르게', '음미하며 마시다, 홀짝거리다', '선호', '가구가 비치된', '~을 입다[신다, 쓰다]', '~에서 나가다', '믿기 어려운', '뒤이은, 다음의', '1. 주로\n2. 원래, 처음에', '주목할 만한; 중요한'],
     tips({
       etymology: 'half-way의 어원 정보는 추후 보강 예정',
@@ -534,7 +534,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('irenic', '평화의/평화적인/협조적인', 5, 'noun',
+  word('irenic', '평화의/평화적인/협조적인', 5, 'adjective',
     ['동', '형', '명 지역', '명 시간', '명 사람', '명 er', '동 ate', '명', '명 동물', '명 tion'],
     tips({
       etymology: 'irenic의 어원 정보는 추후 보강 예정',
@@ -554,8 +554,8 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('jarring', '삐걱거림/귀에 거슬리는', 5, 'noun',
-    ['(당황하여) 말문이 막힌', '정당성 없는, 생략한', '전화 도청하다', '과학기술', '야외의', '의장[회장]', '남쪽의', '지불(액)', '체육관, 체조', '칠판'],
+  word('jarring', '삐걱거림/귀에 거슬리는', 5, 'adjective',
+    ['(당황하여) 말문이 막힌', '부당한, 근거 없는', '전화 도청하다', '과학기술', '야외의', '의장[회장]', '남쪽의', '지불(액)', '체육관, 체조', '칠판'],
     tips({
       etymology: 'jarring의 어원 정보는 추후 보강 예정',
       visual: 'jarring를 삐걱거림/귀에 거슬리는로 연결해 시각적으로 기억',
@@ -634,7 +634,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('orthodox', '정통의', 5, 'noun',
+  word('orthodox', '정통의', 5, 'adjective',
     ['형 모습', '명 nce', '명 tion', '명 단위', '형 ive', '형 al', '형', '명', '명 사람', '명 음식'],
     tips({
       etymology: 'orthodox의 어원 정보는 추후 보강 예정',
@@ -644,7 +644,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('ostensible', '표면상의, 겉보기의 / 명백한', 5, 'noun',
+  word('ostensible', '표면상의, 겉보기의 / 명백한', 5, 'adjective',
     ['명', '형 판단', '형 ful', '명 사람', '형 pp', '형 en', '명 ness', '명 tion', '명 ism', '동'],
     tips({
       etymology: 'ostensible의 어원 정보는 추후 보강 예정',
@@ -714,7 +714,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('prescient', '선견지명이 있는', 5, 'noun',
+  word('prescient', '선견지명이 있는', 5, 'adjective',
     ['calm, untroubled', '대단히 비판적인', '열정적인 / 격렬한', '신중한, 사려깊은', '빈둥거리다, 꾸물대다/낙서하다', '싹트다, 발아하다', '결단력 없는, 줏대 없는', '공들인/노고를 아끼지 않는', '책망/나무람', '동시에 발생하다'],
     tips({
       etymology: 'prescient의 어원 정보는 추후 보강 예정',
@@ -744,7 +744,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('rarefied', '(지위, 계급 등이) 높은 / 가려서 뽑은/극히 일부 사람들만 이해하는', 5, 'noun',
+  word('rarefied', '(지위, 계급 등이) 높은 / 가려서 뽑은/극히 일부 사람들만 이해하는', 5, 'adjective',
     ['어디에나 존재하는', 'frenzied, hectic, frantic', 'harsh, loud', '약화시키다 / 저가로 팔다', '구별하다, 구분짓다', '고칠 수 없음/선도, 개선할 수 없는 상태', '수분(受粉) 작용', '연극조/과장된 어조', '거만한, 오만한, 자기주장이 지나치게 강한', '야단스런, 표현 등이 과장된 [n] effusion 분출, 유출, 감정의 토로'],
     tips({
       etymology: 'rarefied의 어원 정보는 추후 보강 예정',
@@ -754,13 +754,13 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('reliablility', '신뢰할 수 있음/믿음직함/확실성', 5, 'noun',
+  word('reliability', '신뢰할 수 있음/믿음직함/확실성', 5, 'noun',
     ['~에서 나가다', '폭격하다, 공격하다', '압도적인, 굉장한', '1, 고안하다, 발전시키다\n2. 명확히 말하다', '(사건의) 시나리오', '피하다', '(기이한) 특징, 특성', '1. ~의 전형이 되다\n2. 요약하다', '결과로서 일어나는', '~에 비유하다'],
     tips({
-      etymology: 'reliablility의 어원 정보는 추후 보강 예정',
-      visual: 'reliablility를 신뢰할 수 있음/믿음직함/확실성로 연결해 시각적으로 기억',
-      soundAlike: 'reliablility 발음을 반복해 암기',
-      context: 'reliablility means 신뢰할 수 있음/믿음직함/확실성.',
+      etymology: 'reliability의 어원 정보는 추후 보강 예정',
+      visual: 'reliability를 신뢰할 수 있음/믿음직함/확실성로 연결해 시각적으로 기억',
+      soundAlike: 'reliability 발음을 반복해 암기',
+      context: 'reliability means 신뢰할 수 있음/믿음직함/확실성.',
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
@@ -845,7 +845,7 @@ export const vocabBatch85: VocabItem[] = [
     })
   ),
   word('torpor', '무기력함, 무감각/휴면상태(hibernation)', 5, 'noun',
-    ['(흥분, 공포, 고통으로)비명을 지르다', '선행하다, 앞서다', '시간 낭비하다, 허비하다 / 꾸물거리다 ,늑장부리다', '우스꽝스런', '존경, 공경', '(있어야할 곳을 벗어나) 헤매다', '자랑하다, 허ㅜㅇ떨다', '잠수부', '북쪽의', '오해하다'],
+    ['(흥분, 공포, 고통으로)비명을 지르다', '선행하다, 앞서다', '시간 낭비하다, 허비하다 / 꾸물거리다 ,늑장부리다', '우스꽝스런', '존경, 공경', '(있어야할 곳을 벗어나) 헤매다', '자랑하다, 허풍떨다', '잠수부', '북쪽의', '오해하다'],
     tips({
       etymology: 'torpor의 어원 정보는 추후 보강 예정',
       visual: 'torpor를 무기력함, 무감각/휴면상태(hibernation)로 연결해 시각적으로 기억',
@@ -894,7 +894,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('unfathomed', '이해할 수 없는', 5, 'noun',
+  word('unfathomed', '이해할 수 없는', 5, 'adjective',
     ['최상의', '신랄한, 맛이 톡 쏘는', '가장 중요한 점', '정확한 / 엄격한', '요약하다', '감각이 있는, 느낄 수 있는', '팽팽한, 긴장된', '복수심이 불타는, 앙심을 품은', '파도타기[검색]을 하다', '부끄러워하는'],
     tips({
       etymology: 'unfathomed의 어원 정보는 추후 보강 예정',
@@ -904,7 +904,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('unflinching', '(힘들거나 위험한 상황에서도)위축되지 않는', 5, 'noun',
+  word('unflinching', '(힘들거나 위험한 상황에서도)위축되지 않는', 5, 'adjective',
     ['조', '형', '형 분위기', '명', '명 물질', '명 사람', '동', '명 tion', '명 지역', '형 ar'],
     tips({
       etymology: 'unflinching의 어원 정보는 추후 보강 예정',
@@ -914,7 +914,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('unsympathetic', '인정 없는, 매정한, 호감이 안 가는/동조, 지지하지 않는', 5, 'noun',
+  word('unsympathetic', '인정 없는, 매정한, 호감이 안 가는/동조, 지지하지 않는', 5, 'adjective',
     ['흠뻑 적시다', '유난히', '모든 범위', '영문 모를', 'keen insight', 'an order, decree', 'a range of colors or qualities', 'giving off intense heat, passionate', '신의 존재를 느끼게 하는/신비한', '굵은 털/화가 나서 발끈하다'],
     tips({
       etymology: 'unsympathetic의 어원 정보는 추후 보강 예정',
@@ -934,7 +934,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('vehement', '열정적인 / 격렬한', 5, 'noun',
+  word('vehement', '열정적인 / 격렬한', 5, 'adjective',
     ['형 al', '명 사람', '명 ness', '형 less', '명', '동', '명 음식', '명 cy', '형 pp', '형 ble, un'],
     tips({
       etymology: 'vehement의 어원 정보는 추후 보강 예정',
@@ -954,7 +954,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('versed', '경험이 있는, 잘 알고 있는, 정통한/조예가 깊은', 5, 'noun',
+  word('versed', '경험이 있는, 잘 알고 있는, 정통한/조예가 깊은', 5, 'adjective',
     ['이동시키다', '무수한', '교류, 교환', 'easily taught or trained', 'concisely meaningful', 'undisciplined, lewd, lustful', '소유욕이 많은', '도전적인, 저항적인', '싹트다, 발아하다', '기억할 만한/잊지 못할'],
     tips({
       etymology: 'versed의 어원 정보는 추후 보강 예정',
@@ -984,7 +984,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('abhorrent', '혐오스러운/불쾌한/끔찍한', 5, 'noun',
+  word('abhorrent', '혐오스러운/불쾌한/끔찍한', 5, 'adjective',
     ['명 동물', '명 tion', '명', '형 able', '동', '형 ent', '형 ar', '명 단위', '명 사람', '명 er'],
     tips({
       etymology: 'abhorrent의 어원 정보는 추후 보강 예정',
@@ -1084,7 +1084,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('ahistoric', '역사와 관계없는/역사에 무관심한', 5, 'noun',
+  word('ahistoric', '역사와 관계없는/역사에 무관심한', 5, 'adjective',
     ['명 사람', '명 고유', '형 ent', '명', '형', '명 er', '명 지역', '명 nce', '명 탈것', '형 sub'],
     tips({
       etymology: 'ahistoric의 어원 정보는 추후 보강 예정',
@@ -1154,7 +1154,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('animated', '활기있는, 생기있는', 5, 'noun',
+  word('animated', '활기있는, 생기있는', 5, 'adjective',
     ['사귀다, 친해지다, 형제처럼 지내다', '반향하다, 울려퍼지다', '비웃다, 조롱하다, 조소하다', '전체주의', '커지다, 강해지다', '쉽게', '충실한, 믿음직한', '불필요한', '해외로[에]', '형'],
     tips({
       etymology: 'animated의 어원 정보는 추후 보강 예정',
@@ -1174,7 +1174,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('antithetical', '대조를 이루는, 정반대의', 5, 'noun',
+  word('antithetical', '대조를 이루는, 정반대의', 5, 'adjective',
     ['코팅, 칠, 입힌 것', '최신의', '(관심, 노력 등을) 돌리다, 쏟다', '새기다', 'to correct or revise a written text', 'a very small amount, especially relating to money', 'to lower in importance, defame', '인정 없는, 매정한, 호감이 안 가는/동조, 지지하지 않는', '모순되다, 반대하다', '선동하다, 부추기다 / 동요'],
     tips({
       etymology: 'antithetical의 어원 정보는 추후 보강 예정',
@@ -1184,7 +1184,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('aphoristic', '금언적인/경구적인', 5, 'noun',
+  word('aphoristic', '금언적인/경구적인', 5, 'adjective',
     ['명 사람', '형', '동 ing', '명', '형 동물', '명 사람,er', '명 자연', '형 ous', '명 ment', '명 nce'],
     tips({
       etymology: 'aphoristic의 어원 정보는 추후 보강 예정',
@@ -1204,7 +1204,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('apt', '능숙한/적절한', 5, 'noun',
+  word('apt', '능숙한/적절한', 5, 'adjective',
     ['~할 권리가 있는', '나머지, 잔존물', 'to attack', 'obtaining another’s property by theft or trickery', 'a mark or trace of something lost or vanished', '꾸밈없는, 순진무구한', '서한문의/서간체의', '해초의 일종', '고삐, 통제권/제어하다, 억제하다', '다루기 힘든/고집스러운'],
     tips({
       etymology: 'apt의 어원 정보는 추후 보강 예정',
@@ -1224,7 +1224,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('artless', '꾸밈없는, 순진무구한', 5, 'noun',
+  word('artless', '꾸밈없는, 순진무구한', 5, 'adjective',
     ['자연 그대로의, 오염되지 않은', '자치(권)', '오래가는', '옆모습으로', '무자비하게', 'greed, strong desire', 'to make less violent, alleviate', 'a long speech marked by harsh or biting language', '(병의 근본 원인을 치료하지 않는)일시적인 처방', '신중함'],
     tips({
       etymology: 'artless의 어원 정보는 추후 보강 예정',
@@ -1244,7 +1244,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('atonal', '특정한 조로 쓰이지 않은/(음악)무조의', 5, 'noun',
+  word('atonal', '특정한 조로 쓰이지 않은/(음악)무조의', 5, 'adjective',
     ['성인전의/성인 언행록의', '완화시키다 달래다, 진정시키다 / 일시적 고요', '선점하다, (남보다 먼저)점유하다', '진지함, 엄숙함, 장엄함', '유창한 / 말이 많은(bad)', '무례한 사람, 천박한', '쌀쌀함, 냉담함, 객관적임', '혐의를 벗겨주다, 무죄로 하다', '별난, 특이한', '현명한, 기민한'],
     tips({
       etymology: 'atonal의 어원 정보는 추후 보강 예정',
@@ -1304,7 +1304,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('averring', '주장하는/단언하는', 5, 'noun',
+  word('averring', '주장하는/단언하는', 5, 'adjective',
     ['명 사람', '명 un', '보상금, 보상', '설명; 드러냄, 시연', '제조(업)의', '(큰)판지상자', '상환, 변제, 배상', '거주지, 주택', '(잠자리에서) 일어나다; 일어서다', '디자이너'],
     tips({
       etymology: 'averring의 어원 정보는 추후 보강 예정',
@@ -1324,7 +1324,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('aware of', '—을 깨달은', 5, 'noun',
+  word('aware of', '—을 깨달은', 5, 'adjective',
     ['상당히, 두드러지게', '추측\n(speculate, suppose, guess, infer 추측하다)', '~을 벗다; (비행기가) 이륙하다', '폭격하다, 공격하다', '(크기, 무게 때문에) 다루기 힘든', '~과 유사한', '비록 ~이지만', '(기이한) 특징, 특성', '주의', '무수한'],
     tips({
       etymology: 'aware of의 어원 정보는 추후 보강 예정',
@@ -1334,7 +1334,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('awash', '물에 뒤덮인/넘쳐 나는', 5, 'noun',
+  word('awash', '물에 뒤덮인/넘쳐 나는', 5, 'adjective',
     ['전', '명 사람', '명 nce', '동', '형 ic', '동 영향', '명', '형', '부 in', '명 동물'],
     tips({
       etymology: 'awash의 어원 정보는 추후 보강 예정',
@@ -1374,7 +1374,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('belligerent', '호전적인, 전쟁의', 5, 'noun',
+  word('belligerent', '호전적인, 전쟁의', 5, 'adjective',
     ['움직임, 운동', '대', '명 사람', '형', '명 tion', '명 고유', '동', '명', '-', '명 hood'],
     tips({
       etymology: 'belligerent의 어원 정보는 추후 보강 예정',
@@ -1434,7 +1434,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('brattish', '버릇없는', 5, 'noun',
+  word('brattish', '버릇없는', 5, 'adjective',
     ['형 ic', '명', '매혹적인, 황홀한', '통지', '(공장 등을)이전하다', '전례 없는\n(precedented 전례가 있는)', '~에 도착하다, ~에 이르다', '변동', '박히다', '매년'],
     tips({
       etymology: 'brattish의 어원 정보는 추후 보강 예정',
@@ -1474,7 +1474,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('bumbling', '갈팡질팡하는', 5, 'noun',
+  word('bumbling', '갈팡질팡하는', 5, 'adjective',
     ['상징/전형', '(몽둥이 같은 것으로)패다/강요하다', '도취된/넋을 잃은', '추론', '의인화, 의인법/화신, 전형, 상징', '거절하다, 퇴짜놓다', '신랄함', '위협하다, 겁나게 하다', '설명하다', '치료, 교정의 [n] remedy'],
     tips({
       etymology: 'bumbling의 어원 정보는 추후 보강 예정',
@@ -1494,7 +1494,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('business-like', '능률적인/신속한', 5, 'noun',
+  word('business-like', '능률적인/신속한', 5, 'adjective',
     ['영감을 받은', '불간섭주의자', '고요한, 가라앉은, 조용한', '유아론의', '풀다 / 해결하다', '위안, 아늑함을 주는 것 [adj] balmy', '화해시키다 / 달래다, 위안을 주다', '식별력 있는 / 안목 있는', '면제, 공제', '본능적인, 직관적인'],
     tips({
       etymology: 'business-like의 어원 정보는 추후 보강 예정',
@@ -1534,7 +1534,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('calculated', '계산된, 계획적인, ~할 것 같은', 5, 'noun',
+  word('calculated', '계산된, 계획적인, ~할 것 같은', 5, 'adjective',
     ['형 al', '동 er', '명 ing', '형', '명 사람', '명 수', '명', '명 ment', '동', '명 날짜'],
     tips({
       etymology: 'calculated의 어원 정보는 추후 보강 예정',
@@ -1624,7 +1624,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('circumspect', '신중한, 사려깊은', 5, 'noun',
+  word('circumspect', '신중한, 사려깊은', 5, 'adjective',
     ['동', '명', '명 gy', '형 able', '형 ive', '명 신체', '명 er', '형 cal', '명 ness', '명 사람'],
     tips({
       etymology: 'circumspect의 어원 정보는 추후 보강 예정',
@@ -1734,7 +1734,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('commonplace', '진부한, 평범한', 5, 'noun',
+  word('commonplace', '진부한, 평범한', 5, 'adjective',
     ['형', '명', '명 al', '명 gy', '명 ist', '명 동물', '명 ism', '동', '동 ing', '부'],
     tips({
       etymology: 'commonplace의 어원 정보는 추후 보강 예정',
@@ -1784,7 +1784,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('congenial', '마음이 맞는', 5, 'noun',
+  word('congenial', '마음이 맞는', 5, 'adjective',
     ['당황하게 하다 / 좌절시키다 / 방해하다', '수동성/소극성', '나누다/배분하다/할당하다', '(문법적으로)결합될 수 있는', '토하다, (강압적으로) 내뱉다, 포기하다', '아첨하는', '최면을 거는 듯한', '병렬/병치', '객관성/타당성', '부도덕한, 방탕한, 낭비하는 / 낭비하는 사람'],
     tips({
       etymology: 'congenial의 어원 정보는 추후 보강 예정',
@@ -1824,13 +1824,13 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('conten', '포함하다/함유하다/제지하다/억제하다', 5, 'verb',
+  word('content', '포함하다/함유하다/제지하다/억제하다', 5, 'verb',
     ['선조, 선구자', '(세밀히) 조사하다', 'keen insight', 'wild, savage', 'having a terrible taste or smell', '반짝이다(glitter)/생기가 넘치다/(지성, 재치가)번뜩이다(dazzling, brilliant)', '아방가르드/전위적인 사상', '슬픈, 우울한 / 음침한', '침착/냉정/태연함', '솔직한, 직설적인'],
     tips({
-      etymology: 'conten의 어원 정보는 추후 보강 예정',
-      visual: 'conten를 포함하다/함유하다/제지하다/억제하다로 연결해 시각적으로 기억',
-      soundAlike: 'conten 발음을 반복해 암기',
-      context: 'conten means 포함하다/함유하다/제지하다/억제하다.',
+      etymology: 'content의 어원 정보는 추후 보강 예정',
+      visual: 'content를 포함하다/함유하다/제지하다/억제하다로 연결해 시각적으로 기억',
+      soundAlike: 'content 발음을 반복해 암기',
+      context: 'content means 포함하다/함유하다/제지하다/억제하다.',
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
@@ -1854,7 +1854,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('conversant', '~와 친숙한, ~를 잘 아는 ( in , about, with ~ )', 5, 'noun',
+  word('conversant', '~와 친숙한, ~를 잘 아는 ( in , about, with ~ )', 5, 'adjective',
     ['이따금씩', '~을 대표하는', '1. 활기 넘치는\n2. (색 등이) 선명한', '자기주장이 강한, 돋단적인', '~에 가까운, 거의 ~인', '지우다', '(인기, 세력 등이) 상승 중인', 'overjoyed, thrilled', 'honor, acclaim', '악명, 악평'],
     tips({
       etymology: 'conversant의 어원 정보는 추후 보강 예정',
@@ -1874,7 +1874,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('coruscant', '번쩍이는/반짝반짝 빛나는', 5, 'noun',
+  word('coruscant', '번쩍이는/반짝반짝 빛나는', 5, 'adjective',
     ['동', '명 sion', '형', '명', '형 ful', '명 직업,cian', '명 고유', '형 ant', '형 al', '명 건물'],
     tips({
       etymology: 'coruscant의 어원 정보는 추후 보강 예정',
@@ -1884,7 +1884,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('coy', '수줍어하는, 교태부리는', 5, 'noun',
+  word('coy', '수줍어하는, 교태부리는', 5, 'adjective',
     ['놀랄만한', '꽉 찬, 붐비는', '보통이 아닌, 별난', '영양분[영양소]', '설립하다', '동 주다', '형', '명', '명 단위', '동'],
     tips({
       etymology: 'coy의 어원 정보는 추후 보강 예정',
@@ -1894,7 +1894,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('crabbed', '심술궂은, 괴팍한', 5, 'noun',
+  word('crabbed', '심술궂은, 괴팍한', 5, 'adjective',
     ['동', '형 ive', '명 ian, 사람', '형 ic', '명', '명 지역', '형 un', '명 er', '형 al', '명 cy'],
     tips({
       etymology: 'crabbed의 어원 정보는 추후 보강 예정',
@@ -1904,7 +1904,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('crafted', '수공예로 만든/공들여 만든', 5, 'noun',
+  word('crafted', '수공예로 만든/공들여 만든', 5, 'adjective',
     ['고향', '온실', '가볍게 씻어내다', '달의', '형 불규칙', '동 과', '명 시간', '명 nce', '명', '형'],
     tips({
       etymology: 'crafted의 어원 정보는 추후 보강 예정',
@@ -1954,7 +1954,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('dauntless', '용감한, 불굴의', 5, 'noun',
+  word('dauntless', '용감한, 불굴의', 5, 'adjective',
     ['명', '동 과거', '명 ing', '명 er', '영구적으로, 불변으로', '업그레이드, 개량형\n업그레이드하다, 개선하다', '이전에', '계속 진행 중인', '~할 것이다, ~할 예정이다', '(~의 존재를) 믿다'],
     tips({
       etymology: 'dauntless의 어원 정보는 추후 보강 예정',
@@ -2004,7 +2004,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('deferential', '경의를 표하는, 공손한', 5, 'noun',
+  word('deferential', '경의를 표하는, 공손한', 5, 'adjective',
     ['튼튼한, 굳센', '만장일치', '세속적인', '독재적인, 권위주의적인', '소용없는, 쓸모 없는', '불러내다 / 마술부리다, 마법을 걸다', '(가치) 떨어뜨리다, 평가절하 하다 / 비난하다', '피하다', '침착한, 차분한 /한결 같은, 안정된', '열성, 열렬'],
     tips({
       etymology: 'deferential의 어원 정보는 추후 보강 예정',
@@ -2014,7 +2014,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('defiant', '도전적인, 저항적인', 5, 'noun',
+  word('defiant', '도전적인, 저항적인', 5, 'adjective',
     ['몹시, 심하게', '화창한, 맑은', '시험적인', '위험', '표면적인', '집단', '다시 불붙이다, 되살아나게 하다', '일치하다', '포함되다, 편입되다', 'overjoyed, thrilled'],
     tips({
       etymology: 'defiant의 어원 정보는 추후 보강 예정',
@@ -2114,7 +2114,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('desultory', '두서 없는, 종잡을 수 없는(=discursive)', 5, 'noun',
+  word('desultory', '두서 없는, 종잡을 수 없는(=discursive)', 5, 'adjective',
     ['형 al', '명 이름', '명 사람', '명 ist', '명', '명 ty', '명 동물', '동', '동 er', '동 ble'],
     tips({
       etymology: 'desultory의 어원 정보는 추후 보강 예정',
@@ -2124,7 +2124,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('detached', '무관심한, 냉담한', 5, 'noun',
+  word('detached', '무관심한, 냉담한', 5, 'adjective',
     ['동 en', '형 ive', '명 추상', '부 in', '명', '부', '명 ty', '증명서, 증명', '할부', '광범위한, 넓은'],
     tips({
       etymology: 'detached의 어원 정보는 추후 보강 예정',
@@ -2154,7 +2154,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('discernible', '구별할 수 있는, 인지할 수 있는', 5, 'noun',
+  word('discernible', '구별할 수 있는, 인지할 수 있는', 5, 'adjective',
     ['명', '명 sion', '명 ment', '동', '형 ble, ir', '형 un', '동 과거', '형 ous', '명 음식', '동 en'],
     tips({
       etymology: 'discernible의 어원 정보는 추후 보강 예정',
@@ -2174,7 +2174,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('discordant', '부조화의, 불협화음의', 5, 'noun',
+  word('discordant', '부조화의, 불협화음의', 5, 'adjective',
     ['1. 불친절한\n2. 살기에 부적당한', '최초의', '선언, 발표', '(불, 파도 등이) 삼켜 버리다', '수일성이 좋은, 유리한', '(세밀히) 조사하다', '당혹스러운', 'suitable for growing crops', 'to make unclean, impure', 'a break or gap in duration or continuity'],
     tips({
       etymology: 'discordant의 어원 정보는 추후 보강 예정',
@@ -2194,7 +2194,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('discreet', '신중한, 조심스러운', 5, 'noun',
+  word('discreet', '신중한, 조심스러운', 5, 'adjective',
     ['동', '명 사람', '명 지역', '명', '형 al', '형', '명 al', '명 공부', '명 ty', '명 ur'],
     tips({
       etymology: 'discreet의 어원 정보는 추후 보강 예정',
@@ -2234,7 +2234,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('dispassionate', '냉정한, 공평한', 5, 'noun',
+  word('dispassionate', '냉정한, 공평한', 5, 'adjective',
     ['형 ble', '명 단위', '동', '형', '명 ty', '명', '명 tion', '명 사람', '형 ble, un', '형 al'],
     tips({
       etymology: 'dispassionate의 어원 정보는 추후 보강 예정',
@@ -2284,7 +2284,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('dissonant', '불협화음의', 5, 'noun',
+  word('dissonant', '불협화음의', 5, 'adjective',
     ['동', '동 un', '증명서, 증명', '소홀히 하다, 무시하다', '환대, 친절', '제한(=restriction)', '환경적인', '잠시 들르다', '우위', '창의적인'],
     tips({
       etymology: 'dissonant의 어원 정보는 추후 보강 예정',
@@ -2334,7 +2334,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('drab', '단조로운, 우중충한, 간소한, 화려하지 않은', 5, 'noun',
+  word('drab', '단조로운, 우중충한, 간소한, 화려하지 않은', 5, 'adjective',
     ['부연 설명', 'to aid, help, encourage', 'limp, not firm or strong', 'to take back, repeal', '중도의, 절반 쯤의/불충분한, 불완전한(incomplete)', '기울다, 흔들리다', '잡일 하는 사람', '해초의 일종', '걸핏하면 싸우려 하는/다투기 좋아하는', '변천하는, 과도기적인'],
     tips({
       etymology: 'drab의 어원 정보는 추후 보강 예정',
@@ -2344,7 +2344,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('ecumenical', '전세계적인, 보편적인', 5, 'noun',
+  word('ecumenical', '전세계적인, 보편적인', 5, 'adjective',
     ['형', '명 tion', '명', '명 al', '명 ness', '형 ble', '형 ing', '(기간 등을)연장한, 장기간에 걸친', '부식', '다과, 가벼운 음식물'],
     tips({
       etymology: 'ecumenical의 어원 정보는 추후 보강 예정',
@@ -2354,7 +2354,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('egalitarian', '평등주의의', 5, 'noun',
+  word('egalitarian', '평등주의의', 5, 'adjective',
     ['동', '명 ent', '명 과목', '명 tion', '동 less', '명 ate', '명 고유', '형', '명 사람', '명'],
     tips({
       etymology: 'egalitarian의 어원 정보는 추후 보강 예정',
@@ -2364,7 +2364,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('elegiac', '애가의/비가의', 5, 'noun',
+  word('elegiac', '애가의/비가의', 5, 'adjective',
     ['현인,현자', '더러움, 누추함 / 천함, 비열함', '지나치게 민감하게 구는', '떠들썩한', '행운의, 운 좋은', '외로운', '불평, 항의', '희극의, 웃기는', '밖의, 외부의', '대'],
     tips({
       etymology: 'elegiac의 어원 정보는 추후 보강 예정',
@@ -2374,7 +2374,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('elemental', '기본적인/광포한', 5, 'noun',
+  word('elemental', '기본적인/광포한', 5, 'adjective',
     ['명', '대', '동', '명 지역', '형 im', '형 ic', '동 ate', '형 ive', '명 동물', '명 사람'],
     tips({
       etymology: 'elemental의 어원 정보는 추후 보강 예정',
@@ -2424,7 +2424,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('enamored', '반한, 매혹된', 5, 'noun',
+  word('enamored', '반한, 매혹된', 5, 'adjective',
     ['칭찬하다', '추진, 추진력', '모두가 인정하는', '주변', '급격한 증가, (질병 등의) 창궐', '정권, 체제', '~을 초래하다', '독특하게', '부족하다고 여겨지는', '조금'],
     tips({
       etymology: 'enamored의 어원 정보는 추후 보강 예정',
@@ -2464,7 +2464,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('entranced', '도취된/넋을 잃은', 5, 'noun',
+  word('entranced', '도취된/넋을 잃은', 5, 'adjective',
     ['멀미하는 /멀미나게 하는 / 걱정, 염려하는, 긴장한', '보답하다, 보수를 지불하다', '반추해보다, 깊이 생각해 보다', '순차적인', '울화, 악의의 [n] spleen', '간청하다, 탄원하다', '전체주의', '(논리) 방어되지 않는', '부피가 큰, 방대한', '건강한'],
     tips({
       etymology: 'entranced의 어원 정보는 추후 보강 예정',
@@ -2484,7 +2484,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('entrenched', '견고한, 확립된', 5, 'noun',
+  word('entrenched', '견고한, 확립된', 5, 'adjective',
     ['우연히, 일치하게, 동시 발생적으로\n(coincident 일치하는)', '정화시키다', '~에 관심이[흥미가] 있다', '속임수', '뛰어난', '거대한', '비록 ~이지만', '이해할 수 있는', '~을 하고 싶어하는', '필요 조건'],
     tips({
       etymology: 'entrenched의 어원 정보는 추후 보강 예정',
@@ -2494,7 +2494,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('epistolary', '서한문의/서간체의', 5, 'noun',
+  word('epistolary', '서한문의/서간체의', 5, 'adjective',
     ['형 ive', '명', '명 지역', '명 단위', '형', '명 고유', '명 사람', '부', '명 ian', '명 tion'],
     tips({
       etymology: 'epistolary의 어원 정보는 추후 보강 예정',
@@ -2524,7 +2524,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('estranged', '멀어진, 소원해진', 5, 'noun',
+  word('estranged', '멀어진, 소원해진', 5, 'adjective',
     ['형', '명', '형 ive', '동', '명 사람', '명 cy', '형 al', '명 ion', '형 ic', '명 ment'],
     tips({
       etymology: 'estranged의 어원 정보는 추후 보강 예정',
@@ -2564,7 +2564,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('evenhanded', '공평한', 5, 'noun',
+  word('evenhanded', '공평한', 5, 'adjective',
     ['떨다', '동', '명 sis', '명 ty', '명 시간', '형 al', '명 ic', '사람이름', '형', '명'],
     tips({
       etymology: 'evenhanded의 어원 정보는 추후 보강 예정',
@@ -2574,7 +2574,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('even-tempered', '침찬한, 차분한, 평정한, 온순한', 5, 'noun',
+  word('even-tempered', '침찬한, 차분한, 평정한, 온순한', 5, 'adjective',
     ['동', '명 지역', '명', '형 less', '부', '명 nce', '동 en', '명 사람', '동 ing', '명 tion'],
     tips({
       etymology: 'even-tempered의 어원 정보는 추후 보강 예정',
@@ -2624,7 +2624,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('expedient', '편리한, 적당한 / 편법, 임기응변의 수단', 5, 'noun',
+  word('expedient', '편리한, 적당한 / 편법, 임기응변의 수단', 5, 'adjective',
     ['극악무도한, 매우 잔인한 / 아주 나쁜', '전문가, 권위자', '허튼 소리', '부서지기 쉬운, 약한 / (주장) 설득력이 없는', '(모양,구조, 특징) 바꾸다', '유사, 비슷한것', '성질 더러운, 토라진, 뚱한', '이해할 수 없는', '광고', '편안한'],
     tips({
       etymology: 'expedient의 어원 정보는 추후 보강 예정',
@@ -2704,7 +2704,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('faulty', '결함이 있는/불완전한', 5, 'noun',
+  word('faulty', '결함이 있는/불완전한', 5, 'adjective',
     ['(권위에) 반항적인', '분립, 분리', '아방가르드/전위적인 사상', '보수적인/(실제 수나 양보다)적게 잡은', '빈둥거리다, 꾸물대다/낙서하다', '화려한, 눈부신, 현란한', '즉석에서 하기/즉흥적으로 하기', '해방시키다/자유롭게 하다', '공공연하게, 명백하게', '불만이 많은'],
     tips({
       etymology: 'faulty의 어원 정보는 추후 보강 예정',
@@ -2724,7 +2724,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('fawning', '아첨하는', 5, 'noun',
+  word('fawning', '아첨하는', 5, 'adjective',
     ['명 단위', '형 ble', '복장, 옷차림새', '뜻하지 않게, 우연히', '환불, 환불금', '편안한', '현저하게, 눈에 띄게', '헌신', '가구가 비치된', '큰 소리로, 시끄럽게'],
     tips({
       etymology: 'fawning의 어원 정보는 추후 보강 예정',
@@ -2734,7 +2734,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('feckless', '경솔한', 5, 'noun',
+  word('feckless', '경솔한', 5, 'adjective',
     ['끊임없는', 'greed, strong desire', 'to seize or plunder, especially in war', '슬퍼하다, 한탄하다', '들소', '침찬한, 차분한, 평정한, 온순한', '예리함/열의', '반박/논박하다', '매력적이지 않은/따분한, 평범한', '영향력, 힘'],
     tips({
       etymology: 'feckless의 어원 정보는 추후 보강 예정',
@@ -2754,7 +2754,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('feisty', '혈기 왕성한/거침없는', 5, 'noun',
+  word('feisty', '혈기 왕성한/거침없는', 5, 'adjective',
     ['명', '명 or', '동 말하다', '형', '형 inter', '명 ism', '명 nce', '명 tion', '명 ive', '명 age'],
     tips({
       etymology: 'feisty의 어원 정보는 추후 보강 예정',
@@ -2784,7 +2784,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('fidgety', '안절부절 못 하는', 5, 'noun',
+  word('fidgety', '안절부절 못 하는', 5, 'adjective',
     ['거만한, 건방진', '다루기 쉬운, 유순한', '익숙하지 않은, 일반적이지 않은', '(사람이) 키크고 날씬한, 우아한', '성공', '어디에나, 어디든지', '발전[발달], 개발', '시끄러운', '공연, 수행', '(멸종) 위기에 처한'],
     tips({
       etymology: 'fidgety의 어원 정보는 추후 보강 예정',
@@ -2794,7 +2794,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('fiery', '불타는 듯한/불 같은', 5, 'noun',
+  word('fiery', '불타는 듯한/불 같은', 5, 'adjective',
     ['~중에서 유일무이한', '광범위한', '(날씨가) 혹독한', '일상적인, 평범한', '방해하다', '버리다', '평가', 'an imperfection, flaw', 'to give up, renounce', 'an omen'],
     tips({
       etymology: 'fiery의 어원 정보는 추후 보강 예정',
@@ -2804,13 +2804,13 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('flagelum', '편모', 5, 'noun',
+  word('flagellum', '편모', 5, 'noun',
     ['동 er', '명', '형 al', '동', '명 사람', '부', '명 er', '형 ive', '동 un', '명 단위'],
     tips({
-      etymology: 'flagelum의 어원 정보는 추후 보강 예정',
-      visual: 'flagelum를 편모로 연결해 시각적으로 기억',
-      soundAlike: 'flagelum 발음을 반복해 암기',
-      context: 'flagelum means 편모.',
+      etymology: 'flagellum의 어원 정보는 추후 보강 예정',
+      visual: 'flagellum를 편모로 연결해 시각적으로 기억',
+      soundAlike: 'flagellum 발음을 반복해 암기',
+      context: 'flagellum means 편모.',
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
@@ -2824,7 +2824,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('flamboyant', '화려한, 눈부신, 현란한', 5, 'noun',
+  word('flamboyant', '화려한, 눈부신, 현란한', 5, 'adjective',
     ['동 과거', '명', '명 tion', '명 지역', '형', '형 ble', '명 동물', '명 사람', '명 식물', '-'],
     tips({
       etymology: 'flamboyant의 어원 정보는 추후 보강 예정',
@@ -2834,7 +2834,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('fledgling', '성장하는/독립하는', 5, 'noun',
+  word('fledgling', '성장하는/독립하는', 5, 'adjective',
     ['형 less', '명 단위', '명 사람', '소홀히 하다, 무시하다', '수정된, 변경된', '엄격히', '~에게 안부를 전하다, ~에게 인사하다', '단순한, 복잡하지 않은', '잔여물', '포기하다, 버리다'],
     tips({
       etymology: 'fledgling의 어원 정보는 추후 보강 예정',
@@ -2844,7 +2844,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('fleeting', '덧 없는, 영속하지 않는', 5, 'noun',
+  word('fleeting', '덧 없는, 영속하지 않는', 5, 'adjective',
     ['명 사람', '명', '명 ness', '동 상태', '(행동 등이)느슨한, 규율에 못 미치는', '계절의, 계절적인', '점점, 더욱 더', '가까움, 근접함', '추정, 산정, 가정', '감사'],
     tips({
       etymology: 'fleeting의 어원 정보는 추후 보강 예정',
@@ -2874,7 +2874,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('footloose', '(사람, 책임)매인 데 없는/자유분방한', 5, 'noun',
+  word('footloose', '(사람, 책임)매인 데 없는/자유분방한', 5, 'adjective',
     ['익숙해진, 단련된', '굴욕감을 주다', '진부함', '비난하다, 욕하다', '낭비자', '그 누구도 건드리지 않은', '통증을 없애주는 / 진통제', '편파적인', '위로', '칙칙한, 지저분한'],
     tips({
       etymology: 'footloose의 어원 정보는 추후 보강 예정',
@@ -2904,7 +2904,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('forbearing', '관대한', 5, 'noun',
+  word('forbearing', '관대한', 5, 'adjective',
     ['(하고 싶은 것, 갖고 싶은 것을) 포기하다', '해로운', '군수품/(특히)탄약', '도발적인, 약올리는', '단정치 못한', '하찮게 보이게 하다 / 덜 중요해 보이게 만들다', '적절한, 알맞은', '무례한', '건조시키다', '몰두한, 열중한'],
     tips({
       etymology: 'forbearing의 어원 정보는 추후 보강 예정',
@@ -2964,7 +2964,7 @@ export const vocabBatch85: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('futuramic', '미래 전시의/미래상의', 5, 'noun',
+  word('futuramic', '미래 전시의/미래상의', 5, 'adjective',
     ['형 ful', '명 ble', '동 좋아하다', '동', '명 사람', '형 ble', '명', '명 ge', '동 un', '명 er'],
     tips({
       etymology: 'futuramic의 어원 정보는 추후 보강 예정',

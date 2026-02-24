@@ -78,22 +78,22 @@ export const vocabBatch37: VocabItem[] = [
       ],
     }
   ),
-  word('grant', '받아들이다', 6, 'verb',
-    ['거절', '취소', '박탈', '금지', '회수', '반대', '보류', '중단', '삭감', '제한'],
+  word('grant', '수여하다', 6, 'verb',
+    ['거절하다', '취소하다', '박탈하다', '금지하다', '회수하다', '반대하다', '보류하다', '중단하다', '삭감하다', '제한하다'],
     tips({
       etymology: '라틴어 \'credere(믿다)\'에서 유래하여 상대방의 요청이 타당하다고 믿고 허락해준다는 의미가 담겨 있습니다.',
       visual: '정부 관리가 연구원에게 커다란 연구비 수표를 건네며 고개를 끄덕이는 모습을 상상해 보세요.',
-      soundAlike: '\'그란트\' 발음이 \'그란(큰) 돈을 트(트여주다)\'와 비슷하다고 생각하면 보조금의 의미를 쉽게 기억할 수 있습니다.',
-      context: '주로 정부나 기관에서 특정 목적을 위해 공식적으로 지급하는 보조금이나 장학금을 말할 때 자주 쓰입니다.',
-      synonymAntonym: '돈을 주는 것은 subsidy, 반대로 줬던 것을 뺏거나 거절하는 것은 denial입니다.',
+      soundAlike: '\'그란트\' 발음이 \'그란(큰) 것을 트(트여주다)\'와 비슷하다고 생각하면 수여하다의 의미를 쉽게 기억할 수 있습니다.',
+      context: '주로 정부나 기관에서 권리, 허가, 자금 등을 공식적으로 부여하거나 승인할 때 자주 쓰입니다.',
+      synonymAntonym: '허락하다를 뜻하는 bestow와 유사하며, 반대로 거절하다를 뜻하는 deny와 대조됩니다.',
     }),
     {
-      definition: 'a sum of money given by a government or other organization for a particular purpose',
-      synonyms: ['subsidy', 'endowment', 'allowance'],
-      antonyms: ['refusal', 'rejection', 'denial'],
+      definition: 'to give or allow something formally or officially',
+      synonyms: ['bestow', 'confer', 'award'],
+      antonyms: ['deny', 'refuse', 'withhold'],
       exampleSentences: [
-        { en: 'The university received a federal research funding to study renewable energy sources.', ko: '그 대학교는 재생 에너지 자원을 연구하기 위해 연방 연구 보조금을 받았습니다.' },
-        { en: 'Local artists are encouraged to apply for a small financial award to support their projects.', ko: '지역 예술가들은 프로젝트 지원을 위한 소액의 지원금을 신청하도록 권장됩니다.' },
+        { en: 'The government decided to grant citizenship to all eligible applicants.', ko: '정부는 자격을 갖춘 모든 지원자에게 시민권을 수여하기로 결정했습니다.' },
+        { en: 'The judge agreed to grant the defendant bail under strict conditions.', ko: '판사는 엄격한 조건 하에 피고인에게 보석을 허가하기로 동의했습니다.' },
       ],
     }
   ),
@@ -174,7 +174,7 @@ export const vocabBatch37: VocabItem[] = [
     }
   ),
   word('grateful', '고마운', 4, 'adjective',
-    ['무례하게', '냉담하게', '당연하게', '불쾌하게', '오만하게', '무관심하게', '이기적으로', '비판적으로', '거만하게', '냉정하게'],
+    ['무례한', '냉담한', '당연한', '불쾌한', '오만한', '무관심한', '이기적인', '비판적인', '거만한', '냉정한'],
     tips({
       etymology: '라틴어 gratus(기쁜, 감사한)에서 유래하여 누군가의 호의에 보답하고 싶은 마음을 나타냅니다.',
       visual: '누군가 건넨 따뜻한 차 한 잔을 두 손으로 감싸 쥐며 미소 짓는 모습을 상상해 보세요.',

@@ -111,8 +111,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['advocate', 'sanction', 'uphold'],
       antonyms: ['disapprove', 'veto', 'denounce'],
       exampleSentences: [
-        { en: 'The former president decided to formally support and promote the new candidate\'s campaign.', ko: '전직 대통령은 새 후보의 선거 운동을 공식적으로 지지하기로 결정했습니다.' },
-        { en: 'Many professional athletes earn more money when they recommend specific sports brands to the public.', ko: '많은 프로 운동선수들이 대중에게 특정 스포츠 브랜드를 홍보할 때 더 많은 수입을 올립니다.' },
+        { en: 'The former president decided to endorse the new candidate\'s campaign.', ko: '전직 대통령은 새 후보의 선거 운동을 공식적으로 지지하기로 결정했습니다.' },
+        { en: 'Many professional athletes endorse specific sports brands for additional income.', ko: '많은 프로 운동선수들이 추가 수입을 위해 특정 스포츠 브랜드를 홍보합니다.' },
       ],
     }
   ),
@@ -130,8 +130,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['administer', 'execute', 'implement'],
       antonyms: ['disregard', 'abandon', 'waive'],
       exampleSentences: [
-        { en: 'The police are responsible for ensuring that traffic regulations are properly followed.', ko: '경찰은 교통 규정이 제대로 준수되도록 시행할 책임이 있다.' },
-        { en: 'It is difficult to carry out these new safety measures without additional funding.', ko: '추가 예산 없이는 이러한 새로운 안전 조치들을 시행하기 어렵다.' },
+        { en: 'The police are responsible for enforcing traffic regulations.', ko: '경찰은 교통 규정을 시행할 책임이 있다.' },
+        { en: 'It is difficult to enforce these new safety measures without additional funding.', ko: '추가 예산 없이는 이러한 새로운 안전 조치들을 시행하기 어렵다.' },
       ],
     }
   ),
@@ -149,8 +149,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['involve', 'attract', 'occupy'],
       antonyms: ['disengage', 'exclude', 'ignore'],
       exampleSentences: [
-        { en: 'The speaker used humor to effectively interest and involve the audience.', ko: '연설가는 청중을 효과적으로 참여시키기 위해 유머를 사용했습니다.' },
-        { en: 'It is often difficult to keep young children focused and busy in a long lesson.', ko: '긴 수업 시간 동안 어린 아이들을 집중시키고 참여하게 만드는 것은 종종 어렵습니다.' },
+        { en: 'The speaker used humor to engage the audience effectively.', ko: '연설가는 청중을 효과적으로 참여시키기 위해 유머를 사용했습니다.' },
+        { en: 'It is often difficult to engage young children in a long lesson.', ko: '긴 수업 시간 동안 어린 아이들을 참여시키는 것은 종종 어렵습니다.' },
       ],
     }
   ),
@@ -282,8 +282,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['corrode', 'deteriorate', 'abrade'],
       antonyms: ['build', 'strengthen', 'preserve'],
       exampleSentences: [
-        { en: 'The coastline is slowly being worn down by the constant action of the sea.', ko: '해안선이 바다의 지속적인 작용에 의해 서서히 침식되고 있습니다.' },
-        { en: 'Repeated scandals began to weaken the public\'s trust in the government.', ko: '반복된 스캔들이 정부에 대한 대중의 신뢰를 갉아먹기 시작했습니다.' },
+        { en: 'The coastline is slowly being eroded by the constant action of the sea.', ko: '해안선이 바다의 지속적인 작용에 의해 서서히 침식되고 있습니다.' },
+        { en: 'Repeated scandals began to erode the public\'s trust in the government.', ko: '반복된 스캔들이 정부에 대한 대중의 신뢰를 갉아먹기 시작했습니다.' },
       ],
     }
   ),
@@ -339,8 +339,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['development', 'progression', 'advancement'],
       antonyms: ['regression', 'stagnation', 'decline'],
       exampleSentences: [
-        { en: 'The theory of natural selection explains how biological change happens over generations.', ko: '자연 선택설은 세대를 거쳐 생물학적 변화가 어떻게 일어나는지 설명해 준다.' },
-        { en: 'We are witnessing a rapid transformation in the way humans communicate through digital tools.', ko: '우리는 디지털 도구를 통한 인간의 의사소통 방식이 급격하게 발전하는 과정을 목격하고 있다.' },
+        { en: 'The theory of evolution explains how species change over generations.', ko: '진화론은 종이 세대를 거쳐 어떻게 변화하는지 설명해 준다.' },
+        { en: 'We are witnessing a rapid evolution in the way humans communicate through digital tools.', ko: '우리는 디지털 도구를 통한 인간의 의사소통 방식의 급격한 진화를 목격하고 있다.' },
       ],
     }
   ),
@@ -358,8 +358,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['overstate', 'inflate', 'magnify'],
       antonyms: ['minimize', 'understate', 'play down'],
       exampleSentences: [
-        { en: 'The media tends to overemphasize and blow out of proportion minor incidents.', ko: '언론은 사소한 사건들을 과장하고 부풀리는 경향이 있다.' },
-        { en: 'I am not trying to make the situation seem worse than it is, but we are in trouble.', ko: '상황을 과장하려는 것은 아니지만, 우리는 지금 곤경에 처해 있다.' },
+        { en: 'The media tends to exaggerate minor incidents.', ko: '언론은 사소한 사건들을 과장하는 경향이 있다.' },
+        { en: 'I am not trying to exaggerate, but we are in serious trouble.', ko: '과장하려는 것은 아니지만, 우리는 지금 심각한 곤경에 처해 있다.' },
       ],
     }
   ),
@@ -415,8 +415,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['implement', 'perform', 'accomplish'],
       antonyms: ['abandon', 'halt', 'neglect'],
       exampleSentences: [
-        { en: 'The team worked together to carry out and complete the strategy effectively.', ko: '팀은 전략을 효과적으로 실행하고 완수하기 위해 협력했습니다.' },
-        { en: 'The soldiers fulfilled the order without any hesitation.', ko: '병사들은 망설임 없이 명령을 수행했습니다.' },
+        { en: 'The team worked together to execute the strategy effectively.', ko: '팀은 전략을 효과적으로 실행하기 위해 협력했습니다.' },
+        { en: 'The soldiers executed the order without any hesitation.', ko: '병사들은 망설임 없이 명령을 수행했습니다.' },
       ],
     }
   ),
@@ -472,8 +472,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['banish', 'expel', 'deport'],
       antonyms: ['welcome', 'admit', 'repatriate'],
       exampleSentences: [
-        { en: 'The government decided to banish the rebel leader to a remote island.', ko: '정부는 반란군 지도자를 외딴 섬으로 추방하기로 결정했다.' },
-        { en: 'After the coup failed, the former president was forced to live in a foreign land.', ko: '쿠데타가 실패한 후, 전직 대통령은 타국으로 추방되어 살아야 했다.' },
+        { en: 'The government decided to exile the rebel leader to a remote island.', ko: '정부는 반란군 지도자를 외딴 섬으로 추방하기로 결정했다.' },
+        { en: 'After the coup failed, the former president was exiled to a foreign land.', ko: '쿠데타가 실패한 후, 전직 대통령은 타국으로 추방되었다.' },
       ],
     }
   ),
@@ -491,8 +491,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['foreign', 'unusual', 'alien'],
       antonyms: ['native', 'ordinary', 'common'],
       exampleSentences: [
-        { en: 'She loves trying food from distant and mysterious lands.', ko: '그녀는 멀고 신비로운 나라의 이국적인 음식을 먹어보는 것을 좋아한다.' },
-        { en: 'The garden was filled with plants from far-off places.', ko: '그 정원은 먼 곳에서 온 이국적인 식물들로 가득했다.' },
+        { en: 'She loves trying exotic food from faraway countries.', ko: '그녀는 먼 나라의 이국적인 음식을 먹어보는 것을 좋아한다.' },
+        { en: 'The garden was filled with exotic plants from tropical regions.', ko: '그 정원은 열대 지역에서 온 이국적인 식물들로 가득했다.' },
       ],
     }
   ),
@@ -510,8 +510,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['utilize', 'harness', 'manipulate'],
       antonyms: ['protect', 'conserve', 'neglect'],
       exampleSentences: [
-        { en: 'The company was accused of trying to unfairly use the labor of underage workers.', ko: '그 회사는 미성년 노동자들의 노동력을 부당하게 착취하려 했다는 비난을 받았다.' },
-        { en: 'We need to find new ways to make the most of renewable energy sources.', ko: '우리는 재생 가능한 에너지원을 최대한 활용할 새로운 방법들을 찾아야 한다.' },
+        { en: 'The company was accused of exploiting the labor of underage workers.', ko: '그 회사는 미성년 노동자들의 노동력을 착취했다는 비난을 받았다.' },
+        { en: 'We need to find new ways to exploit renewable energy sources.', ko: '우리는 재생 가능한 에너지원을 활용할 새로운 방법들을 찾아야 한다.' },
       ],
     }
   ),
@@ -548,8 +548,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['outside', 'surface', 'facade'],
       antonyms: ['interior', 'inside', 'core'],
       exampleSentences: [
-        { en: 'The building\'s stone facade was cleaned to restore its original beauty.', ko: '건물의 석조 외부를 청소하여 원래의 아름다움을 되찾았다.' },
-        { en: 'Despite his rugged outer appearance, he has a very kind heart.', ko: '거친 외부 모습과는 달리 그는 매우 친절한 마음씨를 가지고 있다.' },
+        { en: 'The building\'s exterior was cleaned to restore its original beauty.', ko: '건물의 외부를 청소하여 원래의 아름다움을 되찾았다.' },
+        { en: 'Despite his rugged exterior, he has a very kind heart.', ko: '거친 외부 모습과는 달리 그는 매우 친절한 마음씨를 가지고 있다.' },
       ],
     }
   ),
@@ -567,8 +567,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['withdraw', 'derive', 'extricate'],
       antonyms: ['insert', 'inject', 'embed'],
       exampleSentences: [
-        { en: 'Scientists managed to isolate and take out the DNA from the ancient bone sample.', ko: '과학자들은 고대 뼈 샘플에서 DNA를 분리하여 추출해내는 데 성공했다.' },
-        { en: 'The machine is designed to pull the juice from the fruit without losing any nutrients.', ko: '이 기계는 영양소 손실 없이 과일에서 과즙을 추출하도록 설계되었습니다.' },
+        { en: 'Scientists managed to extract DNA from the ancient bone sample.', ko: '과학자들은 고대 뼈 샘플에서 DNA를 추출하는 데 성공했다.' },
+        { en: 'The machine is designed to extract juice from fruit without losing any nutrients.', ko: '이 기계는 영양소 손실 없이 과일에서 과즙을 추출하도록 설계되었습니다.' },
       ],
     }
   ),
@@ -586,8 +586,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['clique', 'bloc', 'sect'],
       antonyms: ['unity', 'totality', 'agreement'],
       exampleSentences: [
-        { en: 'The political party was split by internal fighting between each rival group.', ko: '그 정당은 각 라이벌 파벌 간의 내부 다툼으로 분열되었다.' },
-        { en: 'A small dissenting group within the committee blocked the new proposal.', ko: '위원회 내의 한 작은 파벌이 새로운 제안을 저지했다.' },
+        { en: 'The political party was split by internal fighting between rival factions.', ko: '그 정당은 라이벌 파벌 간의 내부 다툼으로 분열되었다.' },
+        { en: 'A small faction within the committee blocked the new proposal.', ko: '위원회 내의 한 작은 파벌이 새로운 제안을 저지했다.' },
       ],
     }
   ),
@@ -605,8 +605,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['viable', 'practicable', 'workable'],
       antonyms: ['impossible', 'unattainable', 'unworkable'],
       exampleSentences: [
-        { en: 'The committee is looking for a more economically viable solution for the city\'s traffic problem.', ko: '위원회는 도시 교통 문제에 대해 경제적으로 더 실행 가능한 해결책을 찾고 있다.' },
-        { en: 'It is not technically achievable to build a colony on Mars within the next two years.', ko: '향후 2년 안에 화성에 식민지를 건설하는 것은 기술적으로 실행 가능하지 않다.' },
+        { en: 'The committee is looking for a more economically feasible solution for the city\'s traffic problem.', ko: '위원회는 도시 교통 문제에 대해 경제적으로 더 실행 가능한 해결책을 찾고 있다.' },
+        { en: 'It is not technically feasible to build a colony on Mars within the next two years.', ko: '향후 2년 안에 화성에 식민지를 건설하는 것은 기술적으로 실행 가능하지 않다.' },
       ],
     }
   ),
@@ -624,8 +624,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['national', 'central', 'governmental'],
       antonyms: ['local', 'regional', 'state'],
       exampleSentences: [
-        { en: 'The central agency handles all federal crimes.', ko: '중앙 기관이 모든 연방 범죄를 처리한다.' },
-        { en: 'The government announced a new policy for the whole country.', ko: '정부는 국가 전체를 위한 새로운 정책을 발표했다.' },
+        { en: 'The federal agency handles crimes that cross state borders.', ko: '연방 기관이 주 경계를 넘는 범죄를 처리한다.' },
+        { en: 'The federal government announced a new policy affecting all states.', ko: '연방 정부는 모든 주에 영향을 미치는 새로운 정책을 발표했다.' },
       ],
     }
   ),
@@ -662,8 +662,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['financial', 'budgetary', 'monetary'],
       antonyms: ['private', 'personal', 'nonfinancial'],
       exampleSentences: [
-        { en: 'The government is implementing a new policy to reduce the national deficit.', ko: '정부는 국가 적자를 줄이기 위해 새로운 재정 정책을 시행하고 있다.' },
-        { en: 'The company\'s year ends in December, while the government\'s starts in April.', ko: '그 회사의 회계 연도는 12월에 끝나지만, 정부의 회계 연도는 4월에 시작된다.' },
+        { en: 'The government is implementing a new fiscal policy to reduce the national deficit.', ko: '정부는 국가 적자를 줄이기 위해 새로운 재정 정책을 시행하고 있다.' },
+        { en: 'The company\'s fiscal year ends in December, while the government\'s starts in April.', ko: '그 회사의 회계 연도는 12월에 끝나지만, 정부의 회계 연도는 4월에 시작된다.' },
       ],
     }
   ),
@@ -681,8 +681,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['vary', 'oscillate', 'waver'],
       antonyms: ['stabilize', 'remain', 'persist'],
       exampleSentences: [
-        { en: 'Vegetable prices tend to change according to the season and weather conditions.', ko: '채소 가격은 계절과 날씨 상태에 따라 변동하는 경향이 있다.' },
-        { en: 'The patient\'s body temperature continued to rise and fall throughout the night.', ko: '환자의 체온이 밤새도록 계속 변동했다.' },
+        { en: 'Vegetable prices tend to fluctuate according to the season and weather conditions.', ko: '채소 가격은 계절과 날씨 상태에 따라 변동하는 경향이 있다.' },
+        { en: 'The patient\'s body temperature continued to fluctuate throughout the night.', ko: '환자의 체온이 밤새도록 계속 변동했다.' },
       ],
     }
   ),
@@ -700,8 +700,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['prohibit', 'ban', 'outlaw'],
       antonyms: ['permit', 'allow', 'authorize'],
       exampleSentences: [
-        { en: 'My doctor decided to strictly disallow me from eating fast food.', ko: '의사 선생님은 나에게 패스트푸드를 먹는 것을 엄격히 금지하기로 했다.' },
-        { en: 'The law will prevent companies from dumping waste into the river.', ko: '법은 기업들이 강에 폐기물을 버리는 것을 금지할 것이다.' },
+        { en: 'My doctor forbade me from eating fast food.', ko: '의사 선생님은 나에게 패스트푸드를 먹는 것을 금지했다.' },
+        { en: 'The law forbids companies from dumping waste into the river.', ko: '법은 기업들이 강에 폐기물을 버리는 것을 금지한다.' },
       ],
     }
   ),
@@ -719,8 +719,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['predict', 'project', 'foretell'],
       antonyms: ['reminisce', 'recollect', 'retrospect'],
       exampleSentences: [
-        { en: 'Experts are trying to predict the economic impact of the new policy.', ko: '전문가들은 새로운 정책의 경제적 영향을 예측하려 노력하고 있다.' },
-        { en: 'The weather station expects it to snow heavily tomorrow.', ko: '기상청은 내일 눈이 많이 올 것으로 예측한다.' },
+        { en: 'Experts are trying to forecast the economic impact of the new policy.', ko: '전문가들은 새로운 정책의 경제적 영향을 예측하려 노력하고 있다.' },
+        { en: 'The weather station forecasts heavy snow for tomorrow.', ko: '기상청은 내일 폭설을 예보한다.' },
       ],
     }
   ),
@@ -738,8 +738,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['equation', 'recipe', 'method'],
       antonyms: ['randomness', 'chaos', 'disorder'],
       exampleSentences: [
-        { en: 'The scientist spent years searching for a mathematical expression to solve the problem.', ko: '그 과학자는 문제를 해결하기 위한 수학적 공식을 찾는 데 수년을 보냈다.' },
-        { en: 'There is no single fixed way to guarantee a happy marriage.', ko: '행복한 결혼 생활을 보장하는 단 하나의 정해진 공식은 없다.' },
+        { en: 'The scientist spent years searching for the right formula to solve the problem.', ko: '그 과학자는 문제를 해결하기 위한 올바른 공식을 찾는 데 수년을 보냈다.' },
+        { en: 'There is no single formula for a happy marriage.', ko: '행복한 결혼 생활을 위한 단 하나의 공식은 없다.' },
       ],
     }
   ),
@@ -757,8 +757,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['nurture', 'promote', 'cultivate'],
       antonyms: ['neglect', 'hinder', 'suppress'],
       exampleSentences: [
-        { en: 'The teacher tried to create an environment that would help the students\' curiosity grow.', ko: '선생님은 학생들의 호기심을 육성하는 데 도움이 되는 환경을 조성하려 노력했다.' },
-        { en: 'The government has introduced new policies to support the growth of small businesses.', ko: '정부는 중소기업 육성을 지원하기 위한 새로운 정책들을 도입했다.' },
+        { en: 'The teacher tried to foster the students\' curiosity by creating an engaging environment.', ko: '선생님은 흥미로운 환경을 조성하여 학생들의 호기심을 육성하려 노력했다.' },
+        { en: 'The government has introduced new policies to foster the growth of small businesses.', ko: '정부는 중소기업 성장을 육성하기 위한 새로운 정책들을 도입했다.' },
       ],
     }
   ),
@@ -853,7 +853,7 @@ export const vocabBatch12: VocabItem[] = [
       antonyms: ['harmony', 'agreement', 'lubrication'],
       exampleSentences: [
         { en: 'The constant friction between the neighbors eventually led to a formal complaint.', ko: '이웃들 사이의 지속적인 마찰은 결국 공식적인 항의로 이어졌다.' },
-        { en: 'Rough surfaces create more resistance and heat due to increased physical contact.', ko: '거친 표면은 증가된 물리적 접촉으로 인해 더 많은 마찰 저항과 열을 발생시킨다.' },
+        { en: 'Rough surfaces create more friction and heat due to increased physical contact.', ko: '거친 표면은 증가된 물리적 접촉으로 인해 더 많은 마찰과 열을 발생시킨다.' },
       ],
     }
   ),
@@ -928,8 +928,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['charitable', 'magnanimous', 'benevolent'],
       antonyms: ['stingy', 'miserly', 'selfish'],
       exampleSentences: [
-        { en: 'He is known for being very kind and giving a large portion of his income to charity.', ko: '그는 매우 마음이 넓어서 수입의 큰 부분을 자선 단체에 기부하는 것으로 알려져 있다.' },
-        { en: 'The host was extremely hospitable and provided a bountiful feast for all the guests.', ko: '주인은 매우 후덕했으며 모든 손님들에게 풍성한 만찬을 대접했다.' },
+        { en: 'He is known for being generous and donating a large portion of his income to charity.', ko: '그는 관대하여 수입의 큰 부분을 자선 단체에 기부하는 것으로 알려져 있다.' },
+        { en: 'The host was extremely generous and provided a bountiful feast for all the guests.', ko: '주인은 매우 관대했으며 모든 손님들에게 풍성한 만찬을 대접했다.' },
       ],
     }
   ),
@@ -947,8 +947,8 @@ export const vocabBatch12: VocabItem[] = [
       synonyms: ['hereditary', 'ancestral', 'congenital'],
       antonyms: ['acquired', 'learned', 'environmental'],
       exampleSentences: [
-        { en: 'Scientists are studying the biological code to find a cure for the inherited disorder.', ko: '과학자들은 그 유전 질환의 치료법을 찾기 위해 생물학적 코드를 연구하고 있다.' },
-        { en: 'Eye color is a prime example of a trait determined by parental DNA.', ko: '눈 색깔은 부모의 DNA에 의해 결정되는 형질의 대표적인 예이다.' },
+        { en: 'Scientists are studying genetic code to find a cure for the inherited disorder.', ko: '과학자들은 그 유전 질환의 치료법을 찾기 위해 유전자 코드를 연구하고 있다.' },
+        { en: 'Eye color is a prime example of a genetic trait passed down from parents.', ko: '눈 색깔은 부모로부터 물려받는 유전적 형질의 대표적인 예이다.' },
       ],
     }
   ),

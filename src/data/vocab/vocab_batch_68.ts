@@ -117,40 +117,40 @@ export const vocabBatch68: VocabItem[] = [
     }
   ),
   word('verse', '시, 운문', 8, 'noun',
-    ['산문의', '소설의', '수필의', '희곡의', '논픽션의', '직설적인', '딱딱한', '사실적인', '객관적인', '논리적인'],
+    ['산문', '소설', '수필', '희곡', '논픽션', '일기', '편지', '보고서', '기사', '논문'],
     tips({
       etymology: '라틴어 \'versus\'에서 유래했으며, 밭을 갈 때 고랑을 따라 \'방향을 돌리는 것\'에서 행이 바뀌는 시의 구절을 뜻하게 되었습니다.',
       visual: '종이 위에 일정한 리듬에 맞춰 줄바꿈이 되어 있는 아름다운 시 한 편을 상상해 보세요.',
       soundAlike: '노래의 \'벌스(Verse)\' 부분을 떠올리면 쉽습니다. 후렴구와 대비되는 시적인 가사 구간을 의미합니다.',
-      context: '문학 비평이나 예술적 담론에서 산문과 대비되는 운문적인 특성을 설명할 때 주로 사용됩니다.',
-      synonymAntonym: '시적인 느낌의 poetic과 유사하며, 줄글 형태인 prose와는 반대되는 개념입니다.',
+      context: '문학 비평이나 예술적 담론에서 산문과 대비되는 운문 형태의 글을 말할 때 주로 사용됩니다.',
+      synonymAntonym: '시를 뜻하는 poetry와 유사하며, 줄글 형태인 prose와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'Relating to or written in a rhythmic style of composition, often characterized by metrical structure or rhyme.',
-      synonyms: ['poetic', 'metrical', 'rhythmical'],
-      antonyms: ['prosaic', 'unpoetic', 'factual'],
+      definition: 'writing arranged with a metrical rhythm, typically having a rhyme; a group of lines forming a unit in a poem or song',
+      synonyms: ['poetry', 'stanza', 'rhyme'],
+      antonyms: ['prose', 'essay', 'narrative'],
       exampleSentences: [
-        { en: 'The ancient legends were often preserved in verse form to make them easier to memorize.', ko: '고대 전설들은 암기하기 더 쉽게 만들기 위해 종종 시의 형태로 보존되었습니다.' },
-        { en: 'She expressed her deepest emotions through delicate verse compositions.', ko: '그녀는 섬세한 시적 구성을 통해 자신의 가장 깊은 감정들을 표현했습니다.' },
+        { en: 'The ancient legends were often preserved in verse to make them easier to memorize.', ko: '고대 전설들은 암기하기 더 쉽게 만들기 위해 종종 운문 형태로 보존되었습니다.' },
+        { en: 'The songwriter wrote a beautiful verse about lost love and longing.', ko: '그 작곡가는 잃어버린 사랑과 그리움에 대한 아름다운 시 구절을 썼습니다.' },
       ],
     }
   ),
-  word('version', '번역', 7, 'noun',
-    ['사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보'],
+  word('version', '버전, 판', 7, 'noun',
+    ['원본', '원작', '원형', '최종본', '완성본', '결과물', '사본', '초안', '원고', '기록'],
     tips({
-      etymology: '라틴어 \'vertere(돌리다)\'에서 유래하여, 한 언어를 다른 언어로 \'돌려놓은 것\'이라는 의미에서 번역이라는 뜻이 생겼습니다.',
-      visual: '원서 옆에 나란히 놓인 번역본 책의 표지를 상상해 보세요.',
-      soundAlike: '버전(version)이 바뀌듯, 언어만 바뀐 새로운 판본이라고 생각하면 쉽습니다.',
-      context: '문학이나 학술 분야에서 특정 고전의 새로운 번역판을 언급할 때 자주 쓰입니다.',
-      synonymAntonym: 'translation과 유사하며, 원본을 뜻하는 original과는 반대되는 개념으로 쓰일 수 있습니다.',
+      etymology: '라틴어 \'vertere(돌리다)\'에서 유래하여, 무언가를 다른 형태로 \'돌려놓은 것\'이라는 의미를 가집니다.',
+      visual: '소프트웨어 업데이트 화면에서 v1.0, v2.0처럼 버전이 바뀌는 모습을 상상해 보세요.',
+      soundAlike: '버전(version)이라는 외래어로 이미 익숙하며, 소프트웨어나 문서의 특정 형태를 의미합니다.',
+      context: '소프트웨어, 문서, 이야기 등의 특정한 형태나 변형을 언급할 때 자주 쓰입니다.',
+      synonymAntonym: 'edition이나 variant와 유사하며, 원본을 뜻하는 original과는 대조되는 개념입니다.',
     }),
     {
-      definition: 'A particular translation of a text or a book into another language.',
-      synonyms: ['translation', 'rendering', 'interpretation'],
+      definition: 'A particular form or variant of something that differs in some respect from other forms of the same thing.',
+      synonyms: ['edition', 'variant', 'form'],
       antonyms: ['original', 'source', 'prototype'],
       exampleSentences: [
-        { en: 'The scholar published a new English version of the ancient Greek poem.', ko: '그 학자는 고대 그리스 시의 새로운 영어 번역본을 출판했다.' },
-        { en: 'Several scholars worked together to produce an accurate version of the manuscript.', ko: '여러 학자들이 그 원고의 정확한 번역본을 만들기 위해 협력했다.' },
+        { en: 'The latest version of the software includes several important security updates.', ko: '그 소프트웨어의 최신 버전에는 여러 중요한 보안 업데이트가 포함되어 있다.' },
+        { en: 'Each witness told a slightly different version of the events that night.', ko: '각 목격자는 그날 밤 사건에 대해 약간씩 다른 버전의 이야기를 했다.' },
       ],
     }
   ),
@@ -306,8 +306,8 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('victim', '희생', 6, 'noun',
-    ['가해자', '범죄', '사고', '목격자', '증거', '판결', '변호사', '경찰', '조사관', '용의자'],
+  word('victim', '피해자', 6, 'noun',
+    ['가해자', '범인', '용의자', '목격자', '수혜자', '승리자', '조력자', '방관자', '생존자', '구조자'],
     tips({
       etymology: '라틴어 victima에서 유래되었으며, 원래 신에게 바치는 제물을 의미했습니다.',
       visual: '사고 현장에서 도움을 기다리며 쓰러져 있는 사람의 모습을 상상해 보세요.',
@@ -344,8 +344,8 @@ export const vocabBatch68: VocabItem[] = [
       ],
     }
   ),
-  word('view', '봄', 4, 'noun',
-    ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
+  word('view', '전망, 견해', 4, 'noun',
+    ['무시', '외면', '간과', '차단', '은폐', '오해', '편견', '왜곡', '착각', '혼란'],
     tips({
       etymology: '라틴어 \'videre(보다)\'에서 유래하여 눈으로 보는 행위나 시야를 뜻하게 되었습니다.',
       visual: '창밖으로 펼쳐진 아름다운 산맥이나 바다 풍경을 바라보는 모습을 상상해 보세요.',
@@ -706,21 +706,21 @@ export const vocabBatch68: VocabItem[] = [
     }
   ),
   word('wait', '기다리다', 3, 'verb',
-    ['출발', '도착', '서두름', '포기', '결정', '이동', '거절', '수락', '무시', '반복'],
+    ['떠나다', '서두르다', '출발하다', '포기하다', '이동하다', '달려가다', '뛰어가다', '진행하다', '행동하다', '돌아가다'],
     tips({
       etymology: '고대 프랑스어 \'waitier\'에서 유래하여 \'지켜보다\' 혹은 \'매복하다\'라는 의미에서 시작되었습니다.',
       visual: '정류장에서 시계를 보며 버스가 오기를 초조하게 서 있는 사람의 모습을 상상해 보세요.',
       soundAlike: '무게를 뜻하는 \'weight\'와 발음이 같으므로, 무거운 짐을 들고 멈춰 서서 기다린다고 연상하세요.',
       context: '식당에서 자리가 나기를 기다리는 시간이나 병원 대기실에서의 상황에 자주 쓰입니다.',
-      synonymAntonym: 'delay는 지연되는 기다림을 뜻하며, rush는 기다림 없이 서두르는 반대 상황을 뜻합니다.',
+      synonymAntonym: '머무르다를 뜻하는 remain과 유사하며, 기다림 없이 서두르는 rush와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'A period of time spent staying in one place or delaying an action until something expected happens.',
-      synonyms: ['delay', 'pause', 'interval'],
-      antonyms: ['haste', 'rush', 'hurry'],
+      definition: 'to stay in a place or delay an action until a particular time or until something else happens',
+      synonyms: ['remain', 'stay', 'linger'],
+      antonyms: ['leave', 'rush', 'hurry'],
       exampleSentences: [
-        { en: 'The long wait at the airport terminal made the travelers feel exhausted.', ko: '공항 터미널에서의 긴 기다림은 여행객들을 지치게 만들었습니다.' },
-        { en: 'After a brief wait in the lobby, the manager finally arrived to meet us.', ko: '로비에서 잠시 기다린 후에 지배인이 마침내 우리를 만나러 도착했습니다.' },
+        { en: 'Please wait here while I go and check if the doctor is available.', ko: '제가 의사가 가능한지 확인하러 가는 동안 여기서 기다려 주세요.' },
+        { en: 'We had to wait for over an hour before our flight finally started boarding.', ko: '우리 비행기가 마침내 탑승을 시작하기 전까지 한 시간 이상 기다려야 했습니다.' },
       ],
     }
   ),
@@ -744,21 +744,21 @@ export const vocabBatch68: VocabItem[] = [
     }
   ),
   word('walk', '걷다', 2, 'verb',
-    ['달리기', '점프', '수영', '비행', '정지', '운전', '휴식', '식사', '수면', '공부'],
+    ['달리다', '뛰다', '멈추다', '앉다', '눕다', '운전하다', '날다', '수영하다', '점프하다', '정지하다'],
     tips({
       etymology: '고대 영어 \'wealcan\'에서 유래했으며 본래 \'구르다\'나 \'헤매다\'라는 뜻에서 발을 옮겨 이동하는 의미로 발전했습니다.',
-      visual: '강아지와 함께 공원을 여유롭게 가로지르는 산책로의 풍경을 상상해 보세요.',
+      visual: '강아지와 함께 공원을 여유롭게 가로지르며 걷는 모습을 상상해 보세요.',
       soundAlike: '워크(walk)는 일하다(work)와 발음이 비슷하지만, \'오\' 소리에 가깝게 길게 발음하며 걷는 모습을 떠올리세요.',
-      context: '일상적인 이동 수단이나 건강을 위한 가벼운 운동 단위를 나타낼 때 주로 쓰입니다.',
-      synonymAntonym: 'stroll과 같은 유의어는 한가로운 느낌을 주며, run과 같은 반의어는 속도감의 차이를 보여줍니다.',
+      context: '일상적인 이동이나 건강을 위한 가벼운 운동으로 발을 사용해 움직이는 동작을 나타냅니다.',
+      synonymAntonym: '천천히 걷는 stroll과 유사하며, 빠르게 달리는 run과는 반대되는 개념입니다.',
     }),
     {
-      definition: 'an act of traveling on foot for exercise or pleasure, typically at a leisurely pace',
-      synonyms: ['stroll', 'hike', 'promenade'],
-      antonyms: ['run', 'ride', 'sprint'],
+      definition: 'to move at a regular pace by lifting and setting down each foot in turn, never having both feet off the ground at once',
+      synonyms: ['stroll', 'stride', 'amble'],
+      antonyms: ['run', 'sprint', 'dash'],
       exampleSentences: [
-        { en: 'Taking a short stroll after dinner helps improve digestion and clears the mind.', ko: '저녁 식사 후 짧은 산책을 하는 것은 소화를 돕고 정신을 맑게 해줍니다.' },
-        { en: 'The scenic path along the river provides a perfect route for a morning exercise.', ko: '강을 따라 난 경치 좋은 길은 아침 운동을 위한 완벽한 경로를 제공합니다.' },
+        { en: 'She walks to school every morning because it is only ten minutes away.', ko: '학교까지 10분밖에 걸리지 않기 때문에 그녀는 매일 아침 걸어서 등교합니다.' },
+        { en: 'The doctor advised him to walk for at least thirty minutes a day for better health.', ko: '의사는 건강을 위해 하루에 최소 30분은 걸으라고 조언했습니다.' },
       ],
     }
   ),
@@ -801,21 +801,21 @@ export const vocabBatch68: VocabItem[] = [
     }
   ),
   word('want', '원하다', 1, 'verb',
-    ['풍요', '과잉', '잉여', '만족', '충족', '성공', '소유', '완성', '증가', '확장'],
+    ['싫어하다', '거부하다', '포기하다', '무시하다', '혐오하다', '기피하다', '양보하다', '버리다', '거절하다', '반납하다'],
     tips({
       etymology: '고대 노르웨이어 \'vanta\'에서 유래하여 \'부족하다\'는 의미를 뿌리에 두고 있습니다.',
-      visual: '텅 빈 쌀통이나 바닥난 지갑을 보며 한숨을 쉬는 가난한 사람의 모습을 상상해 보세요.',
-      soundAlike: '\'원트\'라고 발음하며 무언가를 간절히 \'원하는\' 이유는 그것이 현재 \'없기(결핍)\' 때문이라고 연결하세요.',
-      context: '현대 영어에서는 \'원하다\'는 동사로 자주 쓰이지만, 격식 있는 문장에서는 \'결핍\'이나 \'빈곤\'이라는 명사로 쓰입니다.',
-      synonymAntonym: '부족함을 뜻하는 lack과 풍요로움을 뜻하는 abundance를 대조하여 기억하면 효과적입니다.',
+      visual: '장난감 가게 앞에서 손가락으로 진열대를 가리키며 사달라고 간절히 바라는 아이를 상상해 보세요.',
+      soundAlike: '\'원트\'라고 발음하며, 무언가를 간절히 \'원하는\' 마음이라고 연결하면 쉽습니다.',
+      context: '일상에서 가장 자주 쓰이는 동사 중 하나로, 무언가를 갖거나 하고 싶은 바람을 나타냅니다.',
+      synonymAntonym: '바라다를 뜻하는 desire와 유사하며, 거부하다를 뜻하는 refuse와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'a situation in which there is not enough of something necessary or desirable; a state of extreme poverty',
-      synonyms: ['deficiency', 'scarcity', 'deprivation'],
-      antonyms: ['abundance', 'plenty', 'surplus'],
+      definition: 'to have a desire to possess or do something; to wish for something',
+      synonyms: ['desire', 'wish', 'crave'],
+      antonyms: ['refuse', 'reject', 'dislike'],
       exampleSentences: [
-        { en: 'The children in the war-torn region are suffering from a want of clean drinking water.', ko: '전쟁 지역의 아이들이 깨끗한 식수 결핍으로 고통받고 있다.' },
-        { en: 'Many families were reduced to extreme want during the long years of the economic depression.', ko: '수년간의 경제 대공황 동안 많은 가족들이 극심한 빈곤 상태로 내몰렸다.' },
+        { en: 'I want to travel around the world before I turn thirty.', ko: '나는 서른 살이 되기 전에 세계 일주를 하고 싶다.' },
+        { en: 'The children want ice cream after finishing their dinner.', ko: '아이들은 저녁 식사를 마친 후 아이스크림을 원한다.' },
       ],
     }
   ),
@@ -934,21 +934,21 @@ export const vocabBatch68: VocabItem[] = [
     }
   ),
   word('wash', '씻다', 1, 'verb',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['더럽히다', '오염시키다', '흐리다', '방치하다', '버리다', '묻히다', '적시다', '말리다', '태우다', '녹이다'],
     tips({
       etymology: '고대 영어 \'wascan\'에서 유래했으며, 물을 사용하여 깨끗하게 만드는 동작을 의미합니다.',
       visual: '비누 거품이 가득한 대야에 손을 담그고 문지르는 모습을 상상해 보세요.',
       soundAlike: '\'와시\'라고 발음하며, 물이 \'와르르\' 쏟아지며 씻겨 내려가는 소리와 연결해 보세요.',
       context: '주로 옷을 세탁하거나 식사 전 손을 닦는 상황에서 가장 빈번하게 사용됩니다.',
-      synonymAntonym: '깨끗하게 하는 \'cleaning\'과 비슷하고, 더럽히는 \'soiling\'과는 반대되는 개념입니다.',
+      synonymAntonym: '깨끗하게 하다를 뜻하는 clean과 유사하며, 더럽히다를 뜻하는 soil과는 반대되는 개념입니다.',
     }),
     {
-      definition: 'the act of cleaning something, especially the body or clothes, using water and soap',
-      synonyms: ['cleaning', 'scrub', 'rinse'],
-      antonyms: ['soiling', 'dirtying', 'staining'],
+      definition: 'to clean something by using water and usually soap or detergent',
+      synonyms: ['clean', 'scrub', 'rinse'],
+      antonyms: ['soil', 'dirty', 'stain'],
       exampleSentences: [
-        { en: 'The dirty car needs a thorough wash to remove all the mud from the tires.', ko: '타이어의 모든 진흙을 제거하려면 더러운 차를 구석구석 세차해야 합니다.' },
-        { en: 'Give your face a quick wash with cold water to feel more awake.', ko: '잠을 깨기 위해 찬물로 얼굴을 가볍게 씻으세요.' },
+        { en: 'Please wash your hands thoroughly before sitting down to eat dinner.', ko: '저녁 식사를 위해 앉기 전에 손을 깨끗이 씻으세요.' },
+        { en: 'She washes the dishes every evening after the family finishes eating.', ko: '그녀는 가족이 식사를 마친 후 매일 저녁 설거지를 합니다.' },
       ],
     }
   ),

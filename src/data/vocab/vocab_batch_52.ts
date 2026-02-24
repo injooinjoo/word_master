@@ -230,7 +230,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('premier', '국무', 9, 'noun',
+  word('premier', '총리', 9, 'noun',
     ['대통령', '장관', '비서관', '의원', '시장', '지사', '대사', '영사', '판사', '검사'],
     tips({
       etymology: '라틴어 primarius에서 유래하여 \'첫 번째의\' 또는 \'가장 중요한\'이라는 의미를 담고 있습니다.',
@@ -287,7 +287,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('prescribe', '명령하다', 7, 'verb',
+  word('prescribe', '처방하다', 7, 'verb',
     ['수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다'],
     tips({
       etymology: '라틴어 \'pre(미리)\'와 \'scribe(쓰다)\'가 합쳐져, 미리 적어둔 대로 따르라고 지시하는 느낌을 줍니다.',
@@ -382,22 +382,22 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('press', '모집하다', 7, 'verb',
-    ['보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다'],
+  word('press', '누르다', 7, 'verb',
+    ['당기다', '밀다', '들다', '잡다', '던지다', '흔들다', '돌리다', '꺾다', '비틀다', '접다'],
     tips({
-      etymology: '라틴어 \'premere\'에서 유래하여 강하게 누르거나 압박하여 사람을 끌어모으는 강제 징집의 뉘앙스를 담고 있습니다.',
-      visual: '해군 장교들이 항구에서 사람들을 붙잡아 배에 태우는 강제 모집 장면을 상상해 보세요.',
-      soundAlike: '프레스(press) 기계가 철판을 찍어내듯, 사람들을 한곳으로 찍어 누르듯 모으는 소리를 연상하세요.',
-      context: '역사적으로 군대나 해군에서 인력이 부족할 때 강제로 인원을 충원하는 상황에서 자주 쓰입니다.',
-      synonymAntonym: '자발적으로 모으는 recruit와 달리 강제성이 포함된 뉘앙스이며, 해산시키는 dismiss와 반대됩니다.',
+      etymology: '라틴어 \'premere\'에서 유래하여 강하게 누르거나 압박한다는 의미를 담고 있습니다.',
+      visual: '엘리베이터 버튼을 손가락으로 꾹 누르는 모습이나, 다리미로 옷을 눌러 다리는 장면을 상상해 보세요.',
+      soundAlike: '프레스(press) 기계가 물건을 꽉 눌러 찍어내는 소리를 연상하세요.',
+      context: '버튼을 누르거나, 다리미질을 하거나, 언론(the press)을 가리킬 때도 사용되는 다의어입니다.',
+      synonymAntonym: '누르다를 뜻하는 push와 유사하며, 반대로 당기다를 뜻하는 pull과 대조됩니다.',
     }),
     {
-      definition: 'To force someone to serve in the army or navy, or to recruit people for a specific purpose.',
-      synonyms: ['recruit', 'conscript', 'enlist'],
-      antonyms: ['discharge', 'release', 'dismiss'],
+      definition: 'To push something firmly, or to apply pressure to something.',
+      synonyms: ['push', 'squeeze', 'compress'],
+      antonyms: ['pull', 'release', 'loosen'],
       exampleSentences: [
-        { en: 'The navy used to press young men into service during the war.', ko: '해군은 전쟁 중에 젊은이들을 강제로 징집하곤 했다.' },
-        { en: 'They had to press every available person into the rescue effort.', ko: '그들은 가용한 모든 인원을 구조 작업에 동원해야 했다.' },
+        { en: 'Please press the button to open the door.', ko: '문을 열려면 버튼을 눌러 주세요.' },
+        { en: 'She pressed the flowers between the pages of a heavy book.', ko: '그녀는 두꺼운 책 페이지 사이에 꽃을 눌러 말렸다.' },
       ],
     }
   ),
@@ -420,7 +420,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('pretend', '핑계삼다', 4, 'verb',
+  word('pretend', '~인 척하다', 4, 'verb',
     ['의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태'],
     tips({
       etymology: '라틴어 \'praetendere\'에서 유래했으며, \'앞으로(pre) 내밀다(tend)\'라는 뜻이 합쳐져 사실이 아닌 것을 겉으로 내세우는 행위를 의미합니다.',
@@ -477,7 +477,7 @@ export const vocabBatch52: VocabItem[] = [
       ],
     }
   ),
-  word('prevent', '방해하다', 5, 'verb',
+  word('prevent', '방지하다', 5, 'verb',
     ['요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다'],
     tips({
       etymology: '라틴어 \'praevenire\'에서 유래했으며, \'미리(pre)\' \'오다(vent)\'라는 의미가 합쳐져 어떤 일이 일어나기 전에 막는다는 뜻이 되었습니다.',

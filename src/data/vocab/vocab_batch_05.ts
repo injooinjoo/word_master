@@ -73,8 +73,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['permit', 'authorize', 'grant'],
       antonyms: ['forbid', 'prohibit', 'ban'],
       exampleSentences: [
-        { en: 'Smoking is not permitted in this building.', ko: '이 건물 내에서는 흡연이 허용되지 않습니다.' },
-        { en: 'Please let me introduce myself to the group.', ko: '제가 제 소개를 할 수 있게 허락해 주세요.' },
+        { en: 'Smoking is not allowed in this building.', ko: '이 건물 내에서는 흡연이 허용되지 않습니다.' },
+        { en: 'Please allow me to introduce myself to the group.', ko: '제가 제 소개를 할 수 있게 허락해 주세요.' },
       ],
     }
   ),
@@ -320,8 +320,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['advantage', 'profit', 'asset'],
       antonyms: ['disadvantage', 'detriment', 'drawback'],
       exampleSentences: [
-        { en: 'The new tax law will provide a significant financial gain to small business owners.', ko: '새로운 세법은 소상공인들에게 상당한 재정적 이득을 제공할 것입니다.' },
-        { en: 'Regular meditation can bring a sense of peace and mental clarity.', ko: '규칙적인 명상은 평온함과 정신적 명료함이라는 혜택을 가져다줄 수 있습니다.' },
+        { en: 'The new tax law will be a significant benefit to small business owners.', ko: '새로운 세법은 소상공인들에게 상당한 이익이 될 것이다.' },
+        { en: 'Regular meditation can bring the benefit of peace and mental clarity.', ko: '규칙적인 명상은 평온함과 정신적 명료함이라는 혜택을 가져다줄 수 있다.' },
       ],
     }
   ),
@@ -491,8 +491,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['explode', 'rupture', 'shatter'],
       antonyms: ['mend', 'repair', 'seal'],
       exampleSentences: [
-        { en: 'The balloon will pop if you keep blowing air into it.', ko: '공기를 계속 불어넣으면 풍선이 터질 것입니다.' },
-        { en: 'She felt like she might cry after holding back her emotions all day.', ko: '그녀는 하루 종일 감정을 억누르다가 울음을 터뜨릴 것만 같았습니다.' },
+        { en: 'The balloon will burst if you keep blowing air into it.', ko: '공기를 계속 불어넣으면 풍선이 터질 것이다.' },
+        { en: 'She burst into tears after holding back her emotions all day.', ko: '그녀는 하루 종일 감정을 억누르다가 울음을 터뜨렸다.' },
       ],
     }
   ),
@@ -510,8 +510,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['wire', 'cord', 'line'],
       antonyms: ['wireless', 'radio', 'wifi'],
       exampleSentences: [
-        { en: 'The thick wire connects the computer to the monitor.', ko: '굵은 케이블이 컴퓨터와 모니터를 연결합니다.' },
-        { en: 'We need a longer cord for the phone charger.', ko: '충전기에 더 긴 케이블이 필요합니다.' },
+        { en: 'The cable connects the computer to the monitor.', ko: '케이블이 컴퓨터와 모니터를 연결한다.' },
+        { en: 'We need a longer cable for the phone charger.', ko: '충전기에 더 긴 케이블이 필요하다.' },
       ],
     }
   ),
@@ -529,8 +529,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['compute', 'figure', 'enumerate'],
       antonyms: ['guess', 'estimate', 'miscalculate'],
       exampleSentences: [
-        { en: 'Please find the total cost using a machine.', ko: '기계를 사용해 총 비용을 계산해 주세요.' },
-        { en: 'Scientists found the exact distance to the moon.', ko: '과학자들이 달까지의 정확한 거리를 계산했습니다.' },
+        { en: 'Please calculate the total cost of all the items.', ko: '모든 물품의 총 비용을 계산해 주세요.' },
+        { en: 'Scientists calculated the exact distance to the moon.', ko: '과학자들이 달까지의 정확한 거리를 계산했다.' },
       ],
     }
   ),
@@ -548,8 +548,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['almanac', 'timetable', 'agenda'],
       antonyms: ['clock', 'watch', 'stopwatch'],
       exampleSentences: [
-        { en: 'I need to check my wall chart to see when the holiday starts.', ko: '휴일이 언제 시작되는지 확인하기 위해 벽에 걸린 달력을 봐야 합니다.' },
-        { en: 'She marked her graduation day with a red circle on the paper organizer.', ko: '그녀는 종이 달력에 졸업 날짜를 빨간색 동그라미로 표시했습니다.' },
+        { en: 'I need to check the calendar to see when the holiday starts.', ko: '휴일이 언제 시작되는지 달력을 확인해야 한다.' },
+        { en: 'She marked her graduation day with a red circle on the calendar.', ko: '그녀는 달력에 졸업 날짜를 빨간색 동그라미로 표시했다.' },
       ],
     }
   ),
@@ -567,8 +567,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['drive', 'movement', 'operation'],
       antonyms: ['inaction', 'stoppage', 'halt'],
       exampleSentences: [
-        { en: 'The charity started a big effort to raise money.', ko: '자선 단체가 기금을 모으기 위한 대대적인 운동을 시작했습니다.' },
-        { en: 'The election effort lasted for three months.', ko: '선거 운동은 3개월 동안 지속되었습니다.' },
+        { en: 'The charity started a campaign to raise money for the homeless.', ko: '자선 단체가 노숙자를 위한 모금 캠페인을 시작했다.' },
+        { en: 'The election campaign lasted for three months.', ko: '선거 운동은 3개월 동안 지속되었다.' },
       ],
     }
   ),
@@ -586,8 +586,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['malignancy', 'tumor', 'carcinoma'],
       antonyms: ['health', 'wellness', 'fitness'],
       exampleSentences: [
-        { en: 'Early detection of this malignant disease significantly increases the chances of successful treatment.', ko: '이 악성 질환을 조기에 발견하는 것은 성공적인 치료 가능성을 크게 높여줍니다.' },
-        { en: 'Scientists are working tirelessly to find a universal cure for various types of this illness.', ko: '과학자들은 이 질병의 다양한 종류에 대한 보편적인 치료법을 찾기 위해 끊임없이 노력하고 있습니다.' },
+        { en: 'Early detection of cancer significantly increases the chances of successful treatment.', ko: '암을 조기에 발견하는 것은 성공적인 치료 가능성을 크게 높여준다.' },
+        { en: 'Scientists are working tirelessly to find a cure for cancer.', ko: '과학자들은 암 치료법을 찾기 위해 끊임없이 노력하고 있다.' },
       ],
     }
   ),
@@ -605,8 +605,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['element', 'graphite', 'charcoal'],
       antonyms: ['oxygen', 'hydrogen', 'nitrogen'],
       exampleSentences: [
-        { en: 'This element is the foundation of all living things.', ko: '이 원소는 모든 생명체의 기초입니다.' },
-        { en: 'Reducing gas emissions is very important for the earth.', ko: '가스 배출을 줄이는 것은 지구에 매우 중요합니다.' },
+        { en: 'Carbon is the foundation of all living things.', ko: '탄소는 모든 생명체의 기초이다.' },
+        { en: 'Reducing carbon emissions is very important for the earth.', ko: '탄소 배출을 줄이는 것은 지구에 매우 중요하다.' },
       ],
     }
   ),
@@ -624,8 +624,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['profession', 'vocation', 'calling'],
       antonyms: ['unemployment', 'hobby', 'avocation'],
       exampleSentences: [
-        { en: 'She is looking for opportunities to advance her professional path in marketing.', ko: '그녀는 마케팅 분야에서 자신의 직업적 경력을 발전시킬 기회를 찾고 있습니다.' },
-        { en: 'Choosing a lifelong pursuit requires careful consideration of one\'s talents.', ko: '평생의 직업을 선택하는 것은 개인의 재능에 대한 신중한 고민이 필요합니다.' },
+        { en: 'She is looking for opportunities to advance her career in marketing.', ko: '그녀는 마케팅 분야에서 경력을 발전시킬 기회를 찾고 있다.' },
+        { en: 'Choosing a career requires careful consideration of one\'s talents.', ko: '직업을 선택하는 것은 개인의 재능에 대한 신중한 고민이 필요하다.' },
       ],
     }
   ),
@@ -643,8 +643,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['commemorate', 'rejoice', 'observe'],
       antonyms: ['mourn', 'grieve', 'lament'],
       exampleSentences: [
-        { en: 'The entire city gathered to honor the team\'s championship victory.', ko: '팀의 우승을 축하하기 위해 도시 전체가 모였습니다.' },
-        { en: 'How do you plan to mark your twentieth wedding anniversary?', ko: '당신의 결혼 20주년을 어떻게 축하할 계획인가요?' },
+        { en: 'The entire city gathered to celebrate the team\'s championship victory.', ko: '팀의 우승을 축하하기 위해 도시 전체가 모였다.' },
+        { en: 'How do you plan to celebrate your twentieth wedding anniversary?', ko: '결혼 20주년을 어떻게 축하할 계획인가요?' },
       ],
     }
   ),
@@ -662,8 +662,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['ritual', 'rite', 'observance'],
       antonyms: ['informality', 'casualness', 'neglect'],
       exampleSentences: [
-        { en: 'The formal prize event will be held next week.', ko: '공식 시상식이 다음 주에 열릴 예정입니다.' },
-        { en: 'The wedding event was very beautiful and touching.', ko: '결혼식은 매우 아름답고 감동적이었습니다.' },
+        { en: 'The award ceremony will be held next week.', ko: '시상식이 다음 주에 열릴 예정이다.' },
+        { en: 'The wedding ceremony was very beautiful and touching.', ko: '결혼식은 매우 아름답고 감동적이었다.' },
       ],
     }
   ),
@@ -681,8 +681,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['section', 'part', 'segment'],
       antonyms: ['whole', 'entirety', 'preface'],
       exampleSentences: [
-        { en: 'Please read the fifth division of the book for class.', ko: '수업을 위해 책의 다섯 번째 장을 읽어 오세요.' },
-        { en: 'This portion of the book explains the history of the war.', ko: '책의 이 장은 전쟁의 역사를 설명합니다.' },
+        { en: 'Please read the fifth chapter of the book for class.', ko: '수업을 위해 책의 다섯 번째 장을 읽어 오세요.' },
+        { en: 'This chapter of the book explains the history of the war.', ko: '책의 이 장은 전쟁의 역사를 설명한다.' },
       ],
     }
   ),
@@ -700,8 +700,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['personality', 'nature', 'temperament'],
       antonyms: ['appearance', 'physique', 'exterior'],
       exampleSentences: [
-        { en: 'She is a person with a very strong and brave nature.', ko: '그녀는 매우 강하고 용감한 성격을 가진 사람입니다.' },
-        { en: 'The main person in the movie was very funny.', ko: '영화 속 주인공 캐릭터는 매우 재미있었습니다.' },
+        { en: 'She is a person of very strong and brave character.', ko: '그녀는 매우 강하고 용감한 성격을 가진 사람이다.' },
+        { en: 'The main character in the movie was very funny.', ko: '영화 속 주인공 캐릭터는 매우 재미있었다.' },
       ],
     }
   ),
@@ -719,8 +719,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['graph', 'diagram', 'table'],
       antonyms: ['text', 'prose', 'narrative'],
       exampleSentences: [
-        { en: 'The visual map shows how our sales grew this year.', ko: '이 도표는 올해 우리 매출이 어떻게 성장했는지 보여줍니다.' },
-        { en: 'Look at the data table to see the results.', ko: '결과를 보려면 데이터 차트를 확인하세요.' },
+        { en: 'The chart shows how our sales grew this year.', ko: '이 차트는 올해 매출이 어떻게 성장했는지 보여준다.' },
+        { en: 'Look at the chart to see the results.', ko: '결과를 보려면 차트를 확인하세요.' },
       ],
     }
   ),
@@ -738,8 +738,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['substance', 'compound', 'element'],
       antonyms: ['natural', 'organic', 'biological'],
       exampleSentences: [
-        { en: 'The lab technician analyzed the unknown liquid to identify its properties.', ko: '실험실 기술자는 그 미지의 액체의 성질을 확인하기 위해 분석했습니다.' },
-        { en: 'Farmers are trying to reduce the use of toxic sprays on their crops.', ko: '농부들은 농작물에 사용하는 독성 살포제의 사용을 줄이려 노력하고 있습니다.' },
+        { en: 'The lab technician analyzed the unknown chemical to identify its properties.', ko: '실험실 기술자는 미지의 화학 물질의 성질을 확인하기 위해 분석했다.' },
+        { en: 'Farmers are trying to reduce the use of harmful chemicals on their crops.', ko: '농부들은 농작물에 사용하는 유해 화학 물질의 사용을 줄이려 노력하고 있다.' },
       ],
     }
   ),
@@ -757,8 +757,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['national', 'subject', 'inhabitant'],
       antonyms: ['foreigner', 'alien', 'immigrant'],
       exampleSentences: [
-        { en: 'Every legal member of the country has the right to vote in the election.', ko: '국가의 모든 법적 구성원은 선거에서 투표할 권리가 있습니다.' },
-        { en: 'He officially became a legal member of this state after the ceremony.', ko: '그는 의식을 마친 후 공식적으로 이 주(state)의 시민이 되었습니다.' },
+        { en: 'Every citizen has the right to vote in the election.', ko: '모든 시민은 선거에서 투표할 권리가 있다.' },
+        { en: 'He officially became a citizen of this country after the ceremony.', ko: '그는 의식을 마친 후 공식적으로 이 나라의 시민이 되었다.' },
       ],
     }
   ),
@@ -776,8 +776,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['assert', 'declare', 'maintain'],
       antonyms: ['deny', 'reject', 'disclaim'],
       exampleSentences: [
-        { en: 'He continues to assert that he was not present at the scene of the crime.', ko: '그는 범죄 현장에 자신이 없었다고 계속해서 주장합니다.' },
-        { en: 'You must present your ticket to receive your lost luggage at the counter.', ko: '카운터에서 잃어버린 수하물을 찾으려면(소유권을 주장하려면) 티켓을 제시해야 합니다.' },
+        { en: 'He claims that he was not present at the scene of the crime.', ko: '그는 범죄 현장에 자신이 없었다고 주장한다.' },
+        { en: 'You must present your ticket to claim your lost luggage at the counter.', ko: '카운터에서 잃어버린 수하물을 찾으려면 티켓을 제시해야 한다.' },
       ],
     }
   ),
@@ -795,8 +795,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['meteorological conditions', 'weather patterns', 'clime'],
       antonyms: ['daily weather', 'short-term forecast', 'temporary atmosphere'],
       exampleSentences: [
-        { en: 'The Mediterranean region is famous for its mild and sunny weather patterns.', ko: '지중해 지역은 온화하고 화창한 기후로 유명합니다.' },
-        { en: 'Global warming is causing a significant shift in the world\'s long-term environmental conditions.', ko: '지구 온난화는 전 세계의 장기적인 기후 상태에 중대한 변화를 일으키고 있습니다.' },
+        { en: 'The Mediterranean region is famous for its mild and sunny climate.', ko: '지중해 지역은 온화하고 화창한 기후로 유명하다.' },
+        { en: 'Global warming is causing a significant shift in the world\'s climate.', ko: '지구 온난화는 전 세계 기후에 중대한 변화를 일으키고 있다.' },
       ],
     }
   ),
@@ -814,8 +814,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['merge', 'unite', 'blend'],
       antonyms: ['separate', 'divide', 'detach'],
       exampleSentences: [
-        { en: 'The chef decided to mix the various spices to create a unique flavor profile.', ko: '요리사는 독특한 풍미를 만들기 위해 다양한 양념을 결합하기로 했습니다.' },
-        { en: 'The two small companies will join forces to compete with larger corporations.', ko: '두 작은 회사는 더 큰 기업들과 경쟁하기 위해 힘을 합칠 것입니다.' },
+        { en: 'The chef decided to combine the various spices to create a unique flavor.', ko: '요리사는 독특한 풍미를 만들기 위해 다양한 양념을 결합하기로 했다.' },
+        { en: 'The two small companies will combine to compete with larger corporations.', ko: '두 작은 회사는 더 큰 기업들과 경쟁하기 위해 합칠 것이다.' },
       ],
     }
   ),
@@ -833,8 +833,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['solace', 'ease', 'relief'],
       antonyms: ['discomfort', 'misery', 'distress'],
       exampleSentences: [
-        { en: 'The soft music brought a sense of peace and relaxation to the room.', ko: '부드러운 음악이 방 안에 평온함과 위로를 가져다주었습니다.' },
-        { en: 'He sought some emotional support from his old friends after the loss.', ko: '그는 상실감을 겪은 후 옛 친구들로부터 정서적인 위로를 찾았습니다.' },
+        { en: 'The soft music brought comfort to everyone in the room.', ko: '부드러운 음악이 방 안의 모든 사람에게 위로를 가져다주었다.' },
+        { en: 'He sought comfort from his old friends after the loss.', ko: '그는 상실감을 겪은 후 옛 친구들에게서 위로를 찾았다.' },
       ],
     }
   ),
@@ -852,8 +852,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['order', 'instruction', 'directive'],
       antonyms: ['request', 'suggestion', 'plea'],
       exampleSentences: [
-        { en: 'The soldiers waited for their leader to give the final signal to advance.', ko: '군인들은 지도자가 전진하라는 최종 명령을 내리기를 기다렸습니다.' },
-        { en: 'She has an excellent mastery of the English language, allowing her to speak fluently.', ko: '그녀는 영어를 자유자재로 다루는 훌륭한 구사 능력을 갖추고 있어 유창하게 말합니다.' },
+        { en: 'The soldiers waited for the command to advance.', ko: '군인들은 전진 명령을 기다렸다.' },
+        { en: 'She has an excellent command of the English language.', ko: '그녀는 영어에 대한 훌륭한 구사력을 갖추고 있다.' },
       ],
     }
   ),
@@ -871,8 +871,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['ordinary', 'usual', 'frequent'],
       antonyms: ['rare', 'unusual', 'unique'],
       exampleSentences: [
-        { en: 'It is very typical to see people using smartphones on the subway.', ko: '지하철에서 사람들이 스마트폰을 사용하는 것을 보는 것은 매우 흔한 일입니다.' },
-        { en: 'They discovered a shared interest in classical music.', ko: '그들은 클래식 음악이라는 공통의 관심사를 발견했습니다.' },
+        { en: 'It is very common to see people using smartphones on the subway.', ko: '지하철에서 사람들이 스마트폰을 사용하는 것은 매우 흔한 일이다.' },
+        { en: 'They discovered a common interest in classical music.', ko: '그들은 클래식 음악이라는 공통의 관심사를 발견했다.' },
       ],
     }
   ),
@@ -890,8 +890,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['contrast', 'match', 'correlate'],
       antonyms: ['ignore', 'disregard', 'neglect'],
       exampleSentences: [
-        { en: 'You should look at the prices of both items before buying.', ko: '사기 전에 두 물건의 가격을 비교해 봐야 합니다.' },
-        { en: 'It is not easy to see the differences between the two cars.', ko: '두 자동차를 비교해서 차이점을 알아내기는 쉽지 않습니다.' },
+        { en: 'You should compare the prices of both items before buying.', ko: '사기 전에 두 물건의 가격을 비교해야 한다.' },
+        { en: 'It is not easy to compare the two cars and find the differences.', ko: '두 자동차를 비교해서 차이점을 알아내기는 쉽지 않다.' },
       ],
     }
   ),
@@ -909,8 +909,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['contend', 'vie', 'rival'],
       antonyms: ['cooperate', 'collaborate', 'assist'],
       exampleSentences: [
-        { en: 'Many runners will strive to win the gold medal in the upcoming race.', ko: '다가오는 경주에서 많은 주자들이 금메달을 따기 위해 경쟁할 것입니다.' },
-        { en: 'Small stores find it hard to struggle against big malls for market share.', ko: '작은 상점들은 시장 점유율을 두고 대형 쇼핑몰과 경쟁하기 어렵다고 느낍니다.' },
+        { en: 'Many runners will compete for the gold medal in the upcoming race.', ko: '다가오는 경주에서 많은 주자들이 금메달을 위해 경쟁할 것이다.' },
+        { en: 'Small stores find it hard to compete against big malls.', ko: '작은 상점들은 대형 쇼핑몰과 경쟁하기 어렵다.' },
       ],
     }
   ),
@@ -928,8 +928,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['grumble', 'gripe', 'protest'],
       antonyms: ['praise', 'commend', 'approve'],
       exampleSentences: [
-        { en: 'The neighbors began to express their annoyance about the loud music late at night.', ko: '이웃들은 밤늦은 시간의 시끄러운 음악에 대해 불평하기 시작했습니다.' },
-        { en: 'He is the type of person who will never say anything negative even when the service is poor.', ko: '그는 서비스가 좋지 않을 때조차 절대 불평하지 않는 유형의 사람입니다.' },
+        { en: 'The neighbors began to complain about the loud music late at night.', ko: '이웃들은 밤늦은 시간의 시끄러운 음악에 대해 불평하기 시작했다.' },
+        { en: 'He never complains even when the service is poor.', ko: '그는 서비스가 좋지 않을 때조차 절대 불평하지 않는다.' },
       ],
     }
   ),
@@ -947,8 +947,8 @@ export const vocabBatch05: VocabItem[] = [
       synonyms: ['finish', 'accomplish', 'conclude'],
       antonyms: ['begin', 'start', 'abandon'],
       exampleSentences: [
-        { en: 'You need to fill out all the fields to finish the registration process.', ko: '등록 절차를 마치려면 모든 칸을 채워야 합니다.' },
-        { en: 'The construction of the new stadium is expected to be finished by next month.', ko: '새 경기장 건설은 다음 달까지 완료될 것으로 예상됩니다.' },
+        { en: 'You need to complete all the fields to finish the registration process.', ko: '등록 절차를 마치려면 모든 칸을 채워야 한다.' },
+        { en: 'The construction of the new stadium is expected to be complete by next month.', ko: '새 경기장 건설은 다음 달까지 완료될 것으로 예상된다.' },
       ],
     }
   ),

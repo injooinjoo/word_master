@@ -13,11 +13,11 @@ export const vocabBatch32: VocabItem[] = [
     }),
     {
       definition: 'consisting of two parts or elements',
-      synonyms: ['general', 'basic', 'primary'],
-      antonyms: ['rare', 'atypical', 'unclear'],
+      synonyms: ['double', 'twofold', 'twin'],
+      antonyms: ['single', 'sole', 'individual'],
       exampleSentences: [
-        { en: 'This object can be described as "dual".', ko: '이 대상을 "dual"라고 묘사할 수 있다.' },
-        { en: 'I used "dual" to explain the noun clearly.', ko: '나는 명사를 더 분명히 설명하려고 형용사 "dual"를 사용했다.' },
+        { en: 'She has dual citizenship in both Korea and the United States.', ko: '그녀는 한국과 미국의 이중 국적을 가지고 있다.' },
+        { en: 'The device serves a dual purpose as both a phone and a camera.', ko: '그 기기는 전화기와 카메라라는 이중 목적을 제공한다.' },
       ],
     }
   ),
@@ -32,11 +32,11 @@ export const vocabBatch32: VocabItem[] = [
     }),
     {
       definition: 'a waterbird with a broad flat bill',
-      synonyms: ['element', 'item', 'entity'],
-      antonyms: ['void', 'nothing', 'absence'],
+      synonyms: ['waterfowl', 'drake', 'mallard'],
+      antonyms: [],
       exampleSentences: [
-        { en: 'In this sentence, "duck" refers to "오리".', ko: '이 문장에서 단어 "duck"는 "오리" 의미를 가리킨다.' },
-        { en: 'The word "duck" is used with the meaning "오리".', ko: '단어 "duck"는 "오리"의 뜻으로 사용된다.' },
+        { en: 'A duck was swimming peacefully across the pond.', ko: '오리 한 마리가 연못을 평화롭게 헤엄치고 있었다.' },
+        { en: 'We fed the ducks some bread at the park.', ko: '우리는 공원에서 오리들에게 빵을 먹였다.' },
       ],
     }
   ),
@@ -51,11 +51,11 @@ export const vocabBatch32: VocabItem[] = [
     }),
     {
       definition: 'lacking interest or excitement; not sharp',
-      synonyms: ['typical', 'core', 'standard'],
-      antonyms: ['unstable', 'secondary', 'minor'],
+      synonyms: ['boring', 'tedious', 'blunt'],
+      antonyms: ['sharp', 'exciting', 'bright'],
       exampleSentences: [
-        { en: 'This object can be described as "dull".', ko: '이 대상을 "dull"라고 묘사할 수 있다.' },
-        { en: 'I used "dull" to explain the noun clearly.', ko: '나는 명사를 더 분명히 설명하려고 형용사 "dull"를 사용했다.' },
+        { en: 'The lecture was so dull that half the students fell asleep.', ko: '강의가 너무 지루해서 학생 절반이 잠들었다.' },
+        { en: 'This knife is too dull to cut anything properly.', ko: '이 칼은 너무 둔해서 제대로 자를 수가 없다.' },
       ],
     }
   ),
@@ -70,11 +70,11 @@ export const vocabBatch32: VocabItem[] = [
     }),
     {
       definition: 'to drop or get rid of something carelessly',
-      synonyms: ['factor', 'element', 'item'],
-      antonyms: ['gap', 'void', 'nothing'],
+      synonyms: ['discard', 'dispose', 'ditch'],
+      antonyms: ['keep', 'retain', 'collect'],
       exampleSentences: [
-        { en: 'I wrote "dump" in my vocabulary notebook today.', ko: '나는 오늘 단어장에 단어 "dump"를 적어 복습했다.' },
-        { en: 'In this sentence, "dump" refers to "내버리다".', ko: '이 문장에서 단어 "dump"는 "내버리다" 의미를 가리킨다.' },
+        { en: 'They illegally dumped waste in the river.', ko: '그들은 강에 불법으로 폐기물을 버렸다.' },
+        { en: 'She dumped all the old files into the recycling bin.', ko: '그녀는 오래된 서류들을 모두 재활용 수거함에 버렸다.' },
       ],
     }
   ),
@@ -89,11 +89,11 @@ export const vocabBatch32: VocabItem[] = [
     }),
     {
       definition: 'throughout the course or duration of a period of time',
-      synonyms: ['entity', 'concept', 'object'],
-      antonyms: ['absence', 'null', 'lack'],
+      synonyms: ['throughout', 'in the course of', 'amid'],
+      antonyms: ['before', 'after', 'outside of'],
       exampleSentences: [
-        { en: 'I wrote "during" in my vocabulary notebook today.', ko: '나는 오늘 단어장에 단어 "during"를 적어 복습했다.' },
-        { en: 'In this sentence, "during" refers to "-동안에".', ko: '이 문장에서 단어 "during"는 "-동안에" 의미를 가리킨다.' },
+        { en: 'Please remain seated during the performance.', ko: '공연 동안에 자리에 앉아 계세요.' },
+        { en: 'He fell asleep during the meeting.', ko: '그는 회의 도중에 잠이 들었다.' },
       ],
     }
   ),
@@ -108,11 +108,11 @@ export const vocabBatch32: VocabItem[] = [
     }),
     {
       definition: 'every one of two or more considered individually',
-      synonyms: ['standard', 'general', 'basic'],
-      antonyms: ['minor', 'rare', 'atypical'],
+      synonyms: ['every', 'individual', 'respective'],
+      antonyms: ['none', 'neither', 'no'],
       exampleSentences: [
-        { en: 'The adjective "each" conveys "각각의".', ko: '형용사 "each"는 "각각의"의 의미를 전달한다.' },
-        { en: 'This object can be described as "each".', ko: '이 대상을 "each"라고 묘사할 수 있다.' },
+        { en: 'Each student received a certificate at the graduation ceremony.', ko: '각각의 학생이 졸업식에서 수료증을 받았다.' },
+        { en: 'She carefully checked each item on the list.', ko: '그녀는 목록의 각 항목을 꼼꼼히 확인했다.' },
       ],
     }
   ),
@@ -127,11 +127,11 @@ export const vocabBatch32: VocabItem[] = [
     }),
     {
       definition: 'absence of difficulty or effort; comfort',
-      synonyms: ['concept', 'object', 'factor'],
-      antonyms: ['null', 'lack', 'gap'],
+      synonyms: ['comfort', 'relaxation', 'simplicity'],
+      antonyms: ['difficulty', 'hardship', 'discomfort'],
       exampleSentences: [
-        { en: 'In this sentence, "ease" refers to "안락".', ko: '이 문장에서 단어 "ease"는 "안락" 의미를 가리킨다.' },
-        { en: 'The word "ease" is used with the meaning "안락".', ko: '단어 "ease"는 "안락"의 뜻으로 사용된다.' },
+        { en: 'She completed the task with remarkable ease.', ko: '그녀는 놀라울 정도로 편안하게 그 과제를 완료했다.' },
+        { en: 'The medicine helped ease his pain significantly.', ko: '그 약은 그의 통증을 상당히 완화하는 데 도움이 되었다.' },
       ],
     }
   ),
@@ -146,11 +146,11 @@ export const vocabBatch32: VocabItem[] = [
     }),
     {
       definition: 'achieved without great effort; not difficult',
-      synonyms: ['factor', 'element', 'item'],
-      antonyms: ['gap', 'void', 'nothing'],
+      synonyms: ['simple', 'effortless', 'straightforward'],
+      antonyms: ['difficult', 'hard', 'challenging'],
       exampleSentences: [
-        { en: 'I wrote "easy" in my vocabulary notebook today.', ko: '나는 오늘 단어장에 단어 "easy"를 적어 복습했다.' },
-        { en: 'In this sentence, "easy" refers to "쉬운".', ko: '이 문장에서 단어 "easy"는 "쉬운" 의미를 가리킨다.' },
+        { en: 'The math test was easy, so most students got perfect scores.', ko: '수학 시험이 쉬워서 대부분의 학생들이 만점을 받았다.' },
+        { en: 'Cooking pasta is easy once you learn the basic steps.', ko: '기본 단계를 배우면 파스타 요리는 쉽다.' },
       ],
     }
   ),
@@ -165,11 +165,11 @@ export const vocabBatch32: VocabItem[] = [
     }),
     {
       definition: 'the system of trade and industry in a country',
-      synonyms: ['item', 'entity', 'concept'],
-      antonyms: ['nothing', 'absence', 'null'],
+      synonyms: ['financial system', 'commerce', 'market'],
+      antonyms: ['waste', 'extravagance', 'squandering'],
       exampleSentences: [
-        { en: 'The word "economy" is used with the meaning "절약".', ko: '단어 "economy"는 "절약"의 뜻으로 사용된다.' },
-        { en: 'I wrote "economy" in my vocabulary notebook today.', ko: '나는 오늘 단어장에 단어 "economy"를 적어 복습했다.' },
+        { en: 'The global economy has been recovering slowly since the pandemic.', ko: '세계 경제는 팬데믹 이후 서서히 회복되고 있다.' },
+        { en: 'Tourism plays a vital role in the country\'s economy.', ko: '관광업은 그 나라 경제에서 핵심적인 역할을 한다.' },
       ],
     }
   ),
@@ -184,11 +184,11 @@ export const vocabBatch32: VocabItem[] = [
     }),
     {
       definition: 'successful in producing a desired result',
-      synonyms: ['standard', 'general', 'basic'],
-      antonyms: ['minor', 'rare', 'atypical'],
+      synonyms: ['efficient', 'productive', 'successful'],
+      antonyms: ['ineffective', 'useless', 'futile'],
       exampleSentences: [
-        { en: 'The adjective "effective" conveys "효과적인".', ko: '형용사 "effective"는 "효과적인"의 의미를 전달한다.' },
-        { en: 'This object can be described as "effective".', ko: '이 대상을 "effective"라고 묘사할 수 있다.' },
+        { en: 'Regular exercise is an effective way to reduce stress.', ko: '규칙적인 운동은 스트레스를 줄이는 효과적인 방법이다.' },
+        { en: 'The new policy proved effective in reducing crime rates.', ko: '새로운 정책은 범죄율을 낮추는 데 효과적인 것으로 입증되었다.' },
       ],
     }
   ),
@@ -222,11 +222,11 @@ export const vocabBatch32: VocabItem[] = [
     }),
     {
       definition: 'one or the other of two',
-      synonyms: ['typical', 'core', 'standard'],
-      antonyms: ['unstable', 'secondary', 'minor'],
+      synonyms: ['any', 'one or the other', 'whichever'],
+      antonyms: ['both', 'neither', 'all'],
       exampleSentences: [
-        { en: 'This object can be described as "either".', ko: '이 대상을 "either"라고 묘사할 수 있다.' },
-        { en: 'I used "either" to explain the noun clearly.', ko: '나는 명사를 더 분명히 설명하려고 형용사 "either"를 사용했다.' },
+        { en: 'You can sit on either side of the table.', ko: '테이블 어느 쪽에든 앉아도 됩니다.' },
+        { en: 'Either option works fine for me.', ko: '어느 쪽 선택이든 저는 괜찮습니다.' },
       ],
     }
   ),

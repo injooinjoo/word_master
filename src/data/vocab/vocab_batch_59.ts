@@ -78,7 +78,7 @@ export const vocabBatch59: VocabItem[] = [
       ],
     }
   ),
-  word('shock', '격돌', 3, 'noun',
+  word('shock', '충격', 3, 'noun',
     ['관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표'],
     tips({
       etymology: '중세 네덜란드어 \'schok\'에서 유래하여 갑작스러운 타격이나 흔들림을 의미하게 되었습니다.',
@@ -92,18 +92,18 @@ export const vocabBatch59: VocabItem[] = [
       synonyms: ['impact', 'collision', 'jolt'],
       antonyms: ['calm', 'stability', 'peace'],
       exampleSentences: [
-        { en: 'The sudden impact of the two vehicles caused a massive vibration throughout the street.', ko: '두 차량의 갑작스러운 격돌은 거리 전체에 거대한 진동을 일으켰습니다.' },
+        { en: 'The sudden impact of the two vehicles caused a massive vibration throughout the street.', ko: '두 차량의 갑작스러운 충격은 거리 전체에 거대한 진동을 일으켰습니다.' },
         { en: 'The news of the economic crash sent a wave of panic through the financial market.', ko: '경제 붕괴 소식은 금융 시장에 커다란 충격의 파도를 몰고 왔습니다.' },
       ],
     }
   ),
-  word('shoe', '구두', 1, 'noun',
+  word('shoe', '신발', 1, 'noun',
     ['모자', '장갑', '바지', '셔츠', '안경', '가방', '시계', '양말', '코트', '벨트'],
     tips({
       etymology: '고대 영어 \'scoh\'에서 유래했으며, 발을 보호하기 위한 덮개라는 본래 의미를 유지하고 있습니다.',
-      visual: '현관에 나란히 놓여 있는 가죽 구두나 운동화 한 켤레를 상상해 보세요.',
+      visual: '현관에 나란히 놓여 있는 가죽 신발이나 운동화 한 켤레를 상상해 보세요.',
       soundAlike: '발음이 \'슈~\' 하고 미끄러지듯 발을 밀어 넣는 소리와 비슷하다고 생각하면 쉽습니다.',
-      context: '격식 있는 자리에서는 정장 구두를, 운동할 때는 운동화를 신는 상황을 떠올려 보세요.',
+      context: '격식 있는 자리에서는 정장 신발을, 운동할 때는 운동화를 신는 상황을 떠올려 보세요.',
       synonymAntonym: 'footwear와 같은 유의어와 함께 외우고, 맨발을 뜻하는 barefoot과 대조해 보세요.',
     }),
     {
@@ -111,7 +111,7 @@ export const vocabBatch59: VocabItem[] = [
       synonyms: ['footwear', 'boot', 'sneaker'],
       antonyms: ['barefoot', 'glove', 'hat'],
       exampleSentences: [
-        { en: 'He polished his black leather footwear before the wedding ceremony.', ko: '그는 결혼식 전에 검은색 가죽 구두를 닦았습니다.' },
+        { en: 'He polished his black leather footwear before the wedding ceremony.', ko: '그는 결혼식 전에 검은색 가죽 신발을 닦았습니다.' },
         { en: 'A small stone got inside my left foot covering while I was walking.', ko: '걷는 동안 왼쪽 신발 안에 작은 돌멩이가 들어갔습니다.' },
       ],
     }

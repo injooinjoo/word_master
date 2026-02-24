@@ -40,7 +40,7 @@ export const vocabBatch56: VocabItem[] = [
       ],
     }
   ),
-  word('restore', '반환하다', 5, 'verb',
+  word('restore', '복원하다', 5, 'verb',
     ['파괴하다', '무시하다', '방치하다', '훼손하다', '거절하다', '소비하다', '연기하다', '중단하다', '포기하다', '망가뜨리다'],
     tips({
       etymology: '접두사 re-(다시)와 store(세우다/두다)가 결합하여 원래의 상태로 다시 돌려놓는다는 의미를 가집니다.',

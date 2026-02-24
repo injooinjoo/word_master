@@ -16,8 +16,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['worry', 'care', 'anxiety'],
       antonyms: ['indifference', 'unconcern', 'apathy'],
       exampleSentences: [
-        { en: 'The safety of the passengers is our primary consideration.', ko: '승객들의 안전이 우리의 주된 관심사입니다.' },
-        { en: 'The doctor listened to the patient\'s health issues with great attention.', ko: '의사는 환자의 건강 문제에 대해 깊은 우려를 가지고 경청했습니다.' },
+        { en: 'The safety of the passengers is our primary concern.', ko: '승객들의 안전이 우리의 주된 관심사이다.' },
+        { en: 'The doctor listened to the patient\'s concern about his health.', ko: '의사는 환자의 건강에 대한 걱정을 경청했다.' },
       ],
     }
   ),
@@ -54,8 +54,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['self-assured', 'certain', 'bold'],
       antonyms: ['insecure', 'doubtful', 'shy'],
       exampleSentences: [
-        { en: 'She felt very positive and ready for the interview.', ko: '그녀는 면접에 대해 매우 긍정적이고 자신 있는 기분이었다.' },
-        { en: 'He spoke in a firm and steady tone that showed he knew the subject well.', ko: '그는 주제를 잘 알고 있음을 보여주는 확신에 찬 어조로 말했다.' },
+        { en: 'She felt very confident about the interview.', ko: '그녀는 면접에 대해 매우 자신감이 있었다.' },
+        { en: 'He spoke in a confident tone that showed he knew the subject well.', ko: '그는 주제를 잘 알고 있음을 보여주는 자신감 있는 어조로 말했다.' },
       ],
     }
   ),
@@ -73,8 +73,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['verify', 'validate', 'corroborate'],
       antonyms: ['deny', 'refute', 'contradict'],
       exampleSentences: [
-        { en: 'Please verify your reservation by Friday to ensure your seat is held.', ko: '좌석 확보를 위해 금요일까지 예약을 확인해 주세요.' },
-        { en: 'The test results serve to validate the initial diagnosis made by the doctor.', ko: '검사 결과는 의사가 내린 초기 진단이 맞음을 확인해 줍니다.' },
+        { en: 'Please confirm your reservation by Friday to ensure your seat is held.', ko: '좌석 확보를 위해 금요일까지 예약을 확인해 주세요.' },
+        { en: 'The test results confirm the initial diagnosis made by the doctor.', ko: '검사 결과는 의사가 내린 초기 진단이 맞음을 확인해 준다.' },
       ],
     }
   ),
@@ -111,8 +111,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['contemplate', 'ponder', 'weigh'],
       antonyms: ['ignore', 'neglect', 'overlook'],
       exampleSentences: [
-        { en: 'We need to examine all options before deciding.', ko: '결정하기 전에 모든 선택지를 고려해야 한다.' },
-        { en: 'He is widely regarded as an expert in the field.', ko: '그는 그 분야의 전문가로 여겨진다.' },
+        { en: 'We need to consider all options before deciding.', ko: '결정하기 전에 모든 선택지를 고려해야 한다.' },
+        { en: 'He is widely considered an expert in the field.', ko: '그는 그 분야의 전문가로 여겨진다.' },
       ],
     }
   ),
@@ -130,8 +130,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['continuous', 'steady', 'persistent'],
       antonyms: ['variable', 'temporary', 'irregular'],
       exampleSentences: [
-        { en: 'She needs care and attention.', ko: '그녀는 지속적인 돌봄과 관심이 필요하다.' },
-        { en: 'The noise made it hard to sleep.', ko: '끊임없는 소음으로 잠들기 어려웠다.' },
+        { en: 'She needs constant care and attention.', ko: '그녀는 지속적인 돌봄과 관심이 필요하다.' },
+        { en: 'The constant noise made it hard to sleep.', ko: '끊임없는 소음으로 잠들기 어려웠다.' },
       ],
     }
   ),
@@ -149,8 +149,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['building', 'erection', 'assembly'],
       antonyms: ['demolition', 'destruction', 'ruin'],
       exampleSentences: [
-        { en: 'The building of the new bridge will take two years to complete.', ko: '새 다리의 건설을 완료하는 데 2년이 걸릴 것이다.' },
-        { en: 'Ongoing road work has blocked the main entrance to the city.', ko: '진행 중인 도로 공사로 인해 도시의 정문이 막혔다.' },
+        { en: 'The construction of the new bridge will take two years to complete.', ko: '새 다리의 건설을 완료하는 데 2년이 걸릴 것이다.' },
+        { en: 'Ongoing road construction has blocked the main entrance to the city.', ko: '진행 중인 도로 공사로 인해 도시의 정문이 막혔다.' },
       ],
     }
   ),
@@ -320,8 +320,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['persuade', 'assure', 'satisfy'],
       antonyms: ['dissuade', 'discourage', 'deter'],
       exampleSentences: [
-        { en: 'It was difficult to make him believe that the plan would actually work.', ko: '그 계획이 실제로 효과가 있을 것이라고 그를 설득하는 것은 어려웠다.' },
-        { en: 'The lawyer managed to bring the jury to his side with strong evidence.', ko: '변호사는 강력한 증거로 배심원들을 설득하는 데 성공했다.' },
+        { en: 'It was difficult to convince him that the plan would actually work.', ko: '그 계획이 실제로 효과가 있을 것이라고 그를 설득하는 것은 어려웠다.' },
+        { en: 'The lawyer managed to convince the jury with strong evidence.', ko: '변호사는 강력한 증거로 배심원들을 설득하는 데 성공했다.' },
       ],
     }
   ),
@@ -339,8 +339,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['right', 'accurate', 'exact'],
       antonyms: ['wrong', 'incorrect', 'false'],
       exampleSentences: [
-        { en: 'Please make sure that you have provided the information in the form.', ko: '양식에 기입한 정보가 올바른지 확인해 주세요.' },
-        { en: 'It is important to use the proper tools to get the result.', ko: '정확한 결과를 얻기 위해서는 적절한 도구를 사용하는 것이 중요합니다.' },
+        { en: 'Please make sure the information in the form is correct.', ko: '양식에 기입한 정보가 올바른지 확인해 주세요.' },
+        { en: 'Only one of the four answers is correct.', ko: '네 개의 답 중 하나만 올바른 정답이다.' },
       ],
     }
   ),
@@ -358,8 +358,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['fabric', 'fiber', 'textile'],
       antonyms: ['synthetic', 'plastic', 'metal'],
       exampleSentences: [
-        { en: 'This shirt is made of 100% natural material that feels very soft on the skin.', ko: '이 셔츠는 피부에 매우 부드럽게 느껴지는 100% 천연 면 소재로 만들어졌습니다.' },
-        { en: 'The farmers are busy harvesting the white crops from the fields this season.', ko: '이번 시즌에 농부들은 밭에서 하얀 목화 수확물들을 거두느라 바쁩니다.' },
+        { en: 'This shirt is made of 100% cotton and feels very soft on the skin.', ko: '이 셔츠는 100% 면으로 만들어져 피부에 매우 부드럽게 느껴진다.' },
+        { en: 'The farmers are busy harvesting cotton from the fields this season.', ko: '이번 시즌에 농부들은 밭에서 목화를 수확하느라 바쁘다.' },
       ],
     }
   ),
@@ -377,8 +377,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['pair', 'duo', 'twosome'],
       antonyms: ['single', 'individual', 'alone'],
       exampleSentences: [
-        { en: 'The young pair walked along the beach holding hands.', ko: '젊은 부부가 손을 잡고 해변을 따라 걸었다.' },
-        { en: 'I will be ready in just a few minutes.', ko: '단 몇 분이면 준비가 될 거예요.' },
+        { en: 'The young couple walked along the beach holding hands.', ko: '젊은 부부가 손을 잡고 해변을 따라 걸었다.' },
+        { en: 'I will be ready in just a couple of minutes.', ko: '몇 분이면 준비가 될 거예요.' },
       ],
     }
   ),
@@ -396,8 +396,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['bravery', 'valor', 'fortitude'],
       antonyms: ['cowardice', 'fearfulness', 'timidity'],
       exampleSentences: [
-        { en: 'It takes a lot of mental strength to stand up for what you believe is right.', ko: '자신이 옳다고 믿는 것을 옹호하기 위해서는 많은 용기가 필요하다.' },
-        { en: 'The young firefighter showed incredible spirit when entering the burning building.', ko: '그 젊은 소방관은 불타는 건물에 진입할 때 놀라운 용기를 보여주었다.' },
+        { en: 'It takes a lot of courage to stand up for what you believe is right.', ko: '자신이 옳다고 믿는 것을 옹호하기 위해서는 많은 용기가 필요하다.' },
+        { en: 'The young firefighter showed incredible courage when entering the burning building.', ko: '그 젊은 소방관은 불타는 건물에 진입할 때 놀라운 용기를 보여주었다.' },
       ],
     }
   ),
@@ -415,8 +415,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['generate', 'produce', 'originate'],
       antonyms: ['destroy', 'demolish', 'annihilate'],
       exampleSentences: [
-        { en: 'The software company aims to develop tools that help people build their own websites.', ko: '그 소프트웨어 회사는 사람들이 자신만의 웹사이트를 직접 만들 수 있게 돕는 도구를 개발하는 것을 목표로 한다.' },
-        { en: 'The government is trying to provide more opportunities to form new jobs for young graduates.', ko: '정부는 젊은 졸업생들을 위해 더 많은 일자리를 창출할 기회를 제공하려 노력하고 있다.' },
+        { en: 'The software company aims to create tools that help people build their own websites.', ko: '그 소프트웨어 회사는 사람들이 자신만의 웹사이트를 만들 수 있게 돕는 도구를 만드는 것을 목표로 한다.' },
+        { en: 'The government is trying to create new jobs for young graduates.', ko: '정부는 젊은 졸업생들을 위해 새로운 일자리를 창출하려 노력하고 있다.' },
       ],
     }
   ),
@@ -434,8 +434,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['being', 'animal', 'organism'],
       antonyms: ['inanimate', 'object', 'machine'],
       exampleSentences: [
-        { en: 'The forest is home to many beautiful and rare living things.', ko: '그 숲은 아름답고 희귀한 많은 생명체들의 서식지입니다.' },
-        { en: 'Scientists discovered a strange new inhabitant at the bottom of the sea.', ko: '과학자들은 바다 깊은 곳에서 이상한 새로운 생명체를 발견했습니다.' },
+        { en: 'The forest is home to many beautiful and rare creatures.', ko: '그 숲은 아름답고 희귀한 많은 생명체들의 서식지이다.' },
+        { en: 'Scientists discovered a strange new creature at the bottom of the sea.', ko: '과학자들은 바다 깊은 곳에서 이상한 새로운 생명체를 발견했다.' },
       ],
     }
   ),
@@ -453,8 +453,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['trust', 'recognition', 'merit'],
       antonyms: ['blame', 'debt', 'disbelief'],
       exampleSentences: [
-        { en: 'She deserves full recognition for the success of this project.', ko: '그녀는 이 프로젝트의 성공에 대해 모든 공로를 인정받을 자격이 있다.' },
-        { en: 'The bank refused to extend any more financial trust to the company.', ko: '은행은 그 회사에 더 이상의 신용 대출을 해주는 것을 거절했다.' },
+        { en: 'She deserves full credit for the success of this project.', ko: '그녀는 이 프로젝트의 성공에 대해 모든 공로를 인정받을 자격이 있다.' },
+        { en: 'The bank refused to extend any more credit to the company.', ko: '은행은 그 회사에 더 이상의 신용 대출을 해주는 것을 거절했다.' },
       ],
     }
   ),
@@ -491,8 +491,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['emergency', 'catastrophe', 'predicament'],
       antonyms: ['stability', 'prosperity', 'solution'],
       exampleSentences: [
-        { en: 'The government is struggling to resolve the current economic turmoil and energy shortage.', ko: '정부는 현재의 경제적 혼란과 에너지 부족 위기를 해결하기 위해 고군분투하고 있다.' },
-        { en: 'Effective leadership is most essential during a time of national emergency.', ko: '국가적 위기 상황에서는 효과적인 리더십이 가장 필수적이다.' },
+        { en: 'The government is struggling to resolve the current economic crisis.', ko: '정부는 현재의 경제 위기를 해결하기 위해 고군분투하고 있다.' },
+        { en: 'Effective leadership is most essential during a crisis.', ko: '위기 상황에서는 효과적인 리더십이 가장 필수적이다.' },
       ],
     }
   ),
@@ -700,8 +700,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['information', 'facts', 'statistics'],
       antonyms: ['guess', 'theory', 'rumor'],
       exampleSentences: [
-        { en: 'We need to analyze the collected information to draw a conclusion.', ko: '결론을 도출하기 위해 수집된 정보를 분석해야 합니다.' },
-        { en: 'The latest statistics show a significant increase in sales.', ko: '최신 통계 자료는 매출의 상당한 증가를 보여줍니다.' },
+        { en: 'We need to analyze the data to draw a conclusion.', ko: '결론을 도출하기 위해 데이터를 분석해야 한다.' },
+        { en: 'The latest data shows a significant increase in sales.', ko: '최신 데이터는 매출의 상당한 증가를 보여준다.' },
       ],
     }
   ),
@@ -776,8 +776,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['announce', 'proclaim', 'assert'],
       antonyms: ['conceal', 'suppress', 'withhold'],
       exampleSentences: [
-        { en: 'The government decided to formally announce a state of emergency across the country.', ko: '정부는 전국에 비상사태를 공식적으로 선포하기로 결정했다.' },
-        { en: 'Do you have any valuable items to report to the customs office upon arrival?', ko: '도착 시 세관에 신고할 귀중품이 있습니까?' },
+        { en: 'The government declared a state of emergency across the country.', ko: '정부는 전국에 비상사태를 선포했다.' },
+        { en: 'Do you have anything to declare at customs?', ko: '세관에 신고할 물건이 있습니까?' },
       ],
     }
   ),
@@ -795,8 +795,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['decrease', 'diminish', 'dwindle'],
       antonyms: ['increase', 'flourish', 'expand'],
       exampleSentences: [
-        { en: 'The number of rare birds in this region has begun to fall and weaken significantly.', ko: '이 지역의 희귀 새들의 개체 수가 상당히 감소하기 시작했습니다.' },
-        { en: 'She decided to turn down the job offer because the commute was too long.', ko: '그녀는 통근 거리가 너무 멀어서 그 일자리 제안을 거절하기로 결정했습니다.' },
+        { en: 'The number of rare birds in this region has begun to decline significantly.', ko: '이 지역의 희귀 새들의 개체 수가 상당히 감소하기 시작했다.' },
+        { en: 'She decided to decline the job offer because the commute was too long.', ko: '그녀는 통근 거리가 너무 멀어서 그 일자리 제안을 거절하기로 했다.' },
       ],
     }
   ),
@@ -814,8 +814,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['adorn', 'embellish', 'ornament'],
       antonyms: ['strip', 'damage', 'mar'],
       exampleSentences: [
-        { en: 'We spent the entire afternoon trying to beautify the hall for the wedding.', ko: '우리는 결혼식을 위해 홀을 장식하느라 오후 내내 시간을 보냈다.' },
-        { en: 'The chef used gold leaf to enhance the appearance of the dessert.', ko: '요리사는 디저트를 장식하기 위해 금박을 사용했다.' },
+        { en: 'We spent the entire afternoon decorating the hall for the wedding.', ko: '우리는 결혼식을 위해 홀을 장식하느라 오후 내내 시간을 보냈다.' },
+        { en: 'The chef used gold leaf to decorate the dessert.', ko: '요리사는 디저트를 장식하기 위해 금박을 사용했다.' },
       ],
     }
   ),
@@ -852,8 +852,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['beat', 'overcome', 'conquer'],
       antonyms: ['lose', 'surrender', 'yield'],
       exampleSentences: [
-        { en: 'The underdog managed to beat the odds and overcome the reigning champions.', ko: '약체 팀이 역경을 딛고 군림하던 챔피언을 패배시키는 데 성공했습니다.' },
-        { en: 'The general devised a brilliant strategy to crush the enemy forces in the valley.', ko: '장군은 계곡에서 적군을 물리치기 위한 뛰어난 전략을 고안했습니다.' },
+        { en: 'The underdog managed to defeat the reigning champions.', ko: '약체 팀이 군림하던 챔피언을 패배시키는 데 성공했다.' },
+        { en: 'The general devised a brilliant strategy to defeat the enemy forces.', ko: '장군은 적군을 물리치기 위한 뛰어난 전략을 고안했다.' },
       ],
     }
   ),
@@ -871,8 +871,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['protect', 'guard', 'shield'],
       antonyms: ['attack', 'assault', 'offend'],
       exampleSentences: [
-        { en: 'The army was deployed to the border to protect and safeguard the nation.', ko: '군대는 국가를 보호하고 방어하기 위해 국경에 배치되었습니다.' },
-        { en: 'The lawyer worked hard to support his client\'s innocence in court.', ko: '변호사는 법정에서 의뢰인의 무죄를 변호하기 위해 열심히 노력했습니다.' },
+        { en: 'The army was deployed to the border to defend the nation.', ko: '군대는 국가를 방어하기 위해 국경에 배치되었다.' },
+        { en: 'The lawyer worked hard to defend his client\'s innocence in court.', ko: '변호사는 법정에서 의뢰인의 무죄를 변호하기 위해 열심히 노력했다.' },
       ],
     }
   ),
@@ -890,8 +890,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['characterize', 'delineate', 'specify'],
       antonyms: ['misinterpret', 'confuse', 'obscure'],
       exampleSentences: [
-        { en: 'The dictionary seeks to provide clarity and help users understand how to use words correctly.', ko: '사전은 명확성을 제공하고 사용자들이 단어를 어떻게 올바르게 사용하는지 이해하도록 돕는 것을 목표로 합니다.' },
-        { en: 'It is difficult to limit the boundaries of happiness because it means something different to everyone.', ko: '행복은 사람마다 의미하는 바가 다르기 때문에 그 범위를 규정하기 어렵습니다.' },
+        { en: 'The dictionary helps users define and understand words correctly.', ko: '사전은 사용자들이 단어를 정의하고 올바르게 이해하도록 돕는다.' },
+        { en: 'It is difficult to define happiness because it means something different to everyone.', ko: '행복은 사람마다 의미하는 바가 다르기 때문에 정의하기 어렵다.' },
       ],
     }
   ),
@@ -928,8 +928,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['postponement', 'holdup', 'detention'],
       antonyms: ['acceleration', 'advance', 'continuation'],
       exampleSentences: [
-        { en: 'The heavy snow caused a significant wait for all departing flights.', ko: '폭설로 인해 모든 출발 항공편에 상당한 지연이 발생했습니다.' },
-        { en: 'We must act now without any further hesitation or pause.', ko: '우리는 더 이상의 지체나 지연 없이 지금 행동해야 합니다.' },
+        { en: 'The heavy snow caused a significant delay for all departing flights.', ko: '폭설로 인해 모든 출발 항공편에 상당한 지연이 발생했다.' },
+        { en: 'We must act now without any further delay.', ko: '우리는 더 이상의 지연 없이 지금 행동해야 한다.' },
       ],
     }
   ),
@@ -947,8 +947,8 @@ export const vocabBatch06: VocabItem[] = [
       synonyms: ['distribute', 'transport', 'convey'],
       antonyms: ['receive', 'collect', 'withhold'],
       exampleSentences: [
-        { en: 'The courier will bring the documents to your office by noon.', ko: '배달원이 정오까지 당신의 사무실로 서류를 배달할 것입니다.' },
-        { en: 'The local bakery provides fresh bread to its customers every morning.', ko: '그 지역 빵집은 매일 아침 고객들에게 신선한 빵을 배달합니다.' },
+        { en: 'The courier will deliver the documents to your office by noon.', ko: '배달원이 정오까지 사무실로 서류를 배달할 것이다.' },
+        { en: 'The local bakery delivers fresh bread to its customers every morning.', ko: '그 지역 빵집은 매일 아침 고객들에게 신선한 빵을 배달한다.' },
       ],
     }
   ),

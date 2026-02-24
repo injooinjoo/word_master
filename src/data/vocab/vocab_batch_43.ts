@@ -97,7 +97,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('leisure', '틈', 7, 'noun',
+  word('leisure', '여가', 7, 'noun',
     ['노동', '의무', '압박', '긴급', '직업', '과업', '분주', '책임', '고난', '규율'],
     tips({
       etymology: '라틴어 licere(허락되다)에서 유래하여, 해야 할 일에서 벗어나 자유가 허락된 시간을 의미합니다.',
@@ -135,7 +135,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('lesson', '학과', 2, 'noun',
+  word('lesson', '수업', 2, 'noun',
     ['기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건'],
     tips({
       etymology: '라틴어 \'lectio(읽기)\'에서 유래하여, 교사가 학생들에게 읽어주던 학습 내용을 의미하게 되었습니다.',
@@ -154,7 +154,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('let', '시키다', 5, 'verb',
+  word('let', '~하게 하다', 5, 'verb',
     ['금지하다', '방해하다', '거절하다', '중단하다', '무시하다', '처벌하다', '감시하다', '수정하다', '보관하다', '파괴하다'],
     tips({
       etymology: '고대 영어 \'lætan\'에서 유래하여 원래 \'내버려 두다\' 혹은 \'느슨하게 하다\'라는 의미를 담고 있습니다.',
@@ -344,7 +344,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('likely', '법한', 4, 'adjective',
+  word('likely', '~할 것 같은', 4, 'adjective',
     ['중요한', '핵심적인', '일반적인', '예외적인', '안정적인', '불안정한', '효율적인', '비효율적인', '직접적인', '간접적인'],
     tips({
       etymology: 'Like(~와 같은)에 형용사형 접미사 -ly가 붙어 \'그럴듯한\' 상태를 나타냅니다.',
@@ -415,12 +415,12 @@ export const vocabBatch43: VocabItem[] = [
       synonyms: ['stripe', 'row', 'queue'],
       antonyms: ['dot', 'point', 'curve'],
       exampleSentences: [
-        { en: 'Please sign your name on the dotted at the bottom of the page.', ko: '페이지 하단의 점선 위에 이름을 서명해 주세요.' },
-        { en: 'The long of people waiting for tickets stretched around the corner.', ko: '표를 기다리는 사람들의 긴 줄이 모퉁이까지 이어졌습니다.' },
+        { en: 'Please sign your name on the dotted line at the bottom of the page.', ko: '페이지 하단의 점선 위에 이름을 서명해 주세요.' },
+        { en: 'The long line of people waiting for tickets stretched around the corner.', ko: '표를 기다리는 사람들의 긴 줄이 모퉁이까지 이어졌습니다.' },
       ],
     }
   ),
-  word('linguistic', '말의', 7, 'adjective',
+  word('linguistic', '언어학의', 7, 'adjective',
     ['수학적인', '역사적인', '지리적인', '과학적인', '예술적인', '경제적인', '정치적인', '사회적인', '물리적인', '심리적인'],
     tips({
       etymology: '라틴어 \'lingua\'는 혀(tongue)를 뜻하며, 이것이 언어라는 의미로 확장되어 형용사형이 되었습니다.',
@@ -629,7 +629,7 @@ export const vocabBatch43: VocabItem[] = [
       ],
     }
   ),
-  word('livingroom', '거실', 3, 'noun',
+  word('living room', '거실', 3, 'noun',
     ['침실', '주방', '욕실', '현관', '베란다', '다용도실', '서재', '지하실', '창고', '옥상'],
     tips({
       etymology: '살아가는(living) 공간(room)이라는 뜻이 합쳐져 가족이 주로 생활하는 중심 공간을 의미합니다.',

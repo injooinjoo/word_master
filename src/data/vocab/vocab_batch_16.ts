@@ -54,8 +54,8 @@ export const vocabBatch16: VocabItem[] = [
       synonyms: ['scholarly', 'learned', 'knowledgeable'],
       antonyms: ['ignorant', 'uneducated', 'illiterate'],
       exampleSentences: [
-        { en: 'The professor is remarkably expert in ancient history and gave an impressive lecture.', ko: '그 교수는 고대사에 대해 놀랄 만큼 박식하여 인상적인 강연을 했다.' },
-        { en: 'His sophisticated commentary enriched the documentary with deep historical insights.', ko: '그의 박식한 해설이 깊은 역사적 통찰력을 더해 다큐멘터리를 풍부하게 만들었다.' },
+        { en: 'The professor is remarkably erudite in ancient history and gave an impressive lecture.', ko: '그 교수는 고대사에 대해 놀랄 만큼 박식하여 인상적인 강연을 했다.' },
+        { en: 'His erudite commentary enriched the documentary with deep historical insights.', ko: '그의 박식한 해설이 깊은 역사적 통찰력을 더해 다큐멘터리를 풍부하게 만들었다.' },
       ],
     }
   ),
@@ -453,8 +453,8 @@ export const vocabBatch16: VocabItem[] = [
       synonyms: ['thrive', 'prosper', 'burgeon'],
       antonyms: ['wither', 'decline', 'deteriorate'],
       exampleSentences: [
-        { en: 'The local economy began to thrive and grow rapidly after the new factory opened.', ko: '새 공장이 문을 연 후 지역 경제가 빠르게 번창하기 시작했다.' },
-        { en: 'Wildflowers often grow and spread abundantly in this sunny part of the garden.', ko: '야생화들은 정원의 이 햇빛 잘 드는 곳에서 종종 아주 무성하게 번창한다.' },
+        { en: 'The local economy began to flourish after the new factory opened.', ko: '새 공장이 문을 연 후 지역 경제가 번창하기 시작했다.' },
+        { en: 'Wildflowers often flourish in this sunny part of the garden.', ko: '야생화들은 정원의 이 햇빛 잘 드는 곳에서 종종 무성하게 번창한다.' },
       ],
     }
   ),
@@ -529,8 +529,8 @@ export const vocabBatch16: VocabItem[] = [
       synonyms: ['strengthen', 'reinforce', 'bolster'],
       antonyms: ['weaken', 'undermine', 'enfeeble'],
       exampleSentences: [
-        { en: 'The city was heavily protected by walls built to defend against invaders.', ko: '그 도시는 침략자들에 맞서 방어하기 위해 세워진 성벽들로 단단히 강화되었습니다.' },
-        { en: 'Many cereal brands add extra vitamins to their products to improve nutritional value.', ko: '많은 시리얼 브랜드들이 영양 가치를 높이기 위해 제품에 비타민을 추가하여 강화합니다.' },
+        { en: 'The city was fortified with massive walls to defend against invaders.', ko: '그 도시는 침략자들에 맞서 방어하기 위해 거대한 성벽으로 강화되었습니다.' },
+        { en: 'Many cereal brands fortify their products with extra vitamins to improve nutritional value.', ko: '많은 시리얼 브랜드들이 영양 가치를 높이기 위해 제품에 비타민을 추가하여 강화합니다.' },
       ],
     }
   ),
@@ -567,8 +567,8 @@ export const vocabBatch16: VocabItem[] = [
       synonyms: ['thrifty', 'economical', 'parsimonious'],
       antonyms: ['wasteful', 'extravagant', 'profligate'],
       exampleSentences: [
-        { en: 'His careful and disciplined habits helped him save enough money for a new house.', ko: '그의 검소하고 절제된 습관은 그가 새 집을 살 만큼 충분한 돈을 모으는 데 도움을 주었다.' },
-        { en: 'She leads a simple lifestyle to pay off her student loans as quickly as possible.', ko: '그녀는 학자금 대출을 최대한 빨리 갚기 위해 검소한 생활 방식을 유지하고 있다.' },
+        { en: 'His frugal habits helped him save enough money for a new house.', ko: '그의 검소한 습관은 그가 새 집을 살 만큼 충분한 돈을 모으는 데 도움을 주었다.' },
+        { en: 'She leads a frugal lifestyle to pay off her student loans as quickly as possible.', ko: '그녀는 학자금 대출을 최대한 빨리 갚기 위해 검소한 생활 방식을 유지하고 있다.' },
       ],
     }
   ),
@@ -586,8 +586,8 @@ export const vocabBatch16: VocabItem[] = [
       synonyms: ['useless', 'vain', 'fruitless'],
       antonyms: ['fruitful', 'effective', 'productive'],
       exampleSentences: [
-        { en: 'All their efforts to revive the project proved to be completely in vain and unsuccessful.', ko: '프로젝트를 되살리려는 그들의 모든 노력은 완전히 헛된 것으로 드러났다.' },
-        { en: 'It would be pointless to resist the changes that are already happening.', ko: '이미 일어나고 있는 변화에 저항하는 것은 헛된 일일 것이다.' },
+        { en: 'All their efforts to revive the project proved to be futile.', ko: '프로젝트를 되살리려는 그들의 모든 노력은 완전히 헛된 것으로 드러났다.' },
+        { en: 'It would be futile to resist the changes that are already happening.', ko: '이미 일어나고 있는 변화에 저항하는 것은 헛된 일일 것이다.' },
       ],
     }
   ),
@@ -605,8 +605,8 @@ export const vocabBatch16: VocabItem[] = [
       synonyms: ['stimulate', 'energize', 'rouse'],
       antonyms: ['dampen', 'discourage', 'dissuade'],
       exampleSentences: [
-        { en: 'The urgent appeal for help managed to shock the public and motivate them into action.', ko: '도움을 요청하는 긴급한 호소는 대중을 자극하여 행동에 나서게 만들었습니다.' },
-        { en: 'The captain\'s fiery halftime talk was enough to inspire the team to play much harder.', ko: '주장의 격정적인 하프타임 대화는 팀을 자극하여 훨씬 더 열심히 경기에 임하게 하기에 충분했습니다.' },
+        { en: 'The urgent appeal for help managed to galvanize the public into action.', ko: '도움을 요청하는 긴급한 호소는 대중을 자극하여 행동에 나서게 만들었습니다.' },
+        { en: 'The captain\'s fiery halftime talk was enough to galvanize the team into playing much harder.', ko: '주장의 격정적인 하프타임 대화는 팀을 자극하여 훨씬 더 열심히 경기에 임하게 하기에 충분했습니다.' },
       ],
     }
   ),
@@ -624,8 +624,8 @@ export const vocabBatch16: VocabItem[] = [
       synonyms: ['collect', 'accumulate', 'amass'],
       antonyms: ['scatter', 'disperse', 'dissipate'],
       exampleSentences: [
-        { en: 'The young politician managed to support from various demographics during the campaign.', ko: '그 젊은 정치인은 선거 운동 기간 동안 다양한 계층으로부터 지지를 얻어냈다.' },
-        { en: 'His latest novel has started to critical acclaim from literary circles worldwide.', ko: '그의 최신 소설은 전 세계 문학계로부터 비평가들의 찬사를 받기 시작했다.' },
+        { en: 'The young politician managed to garner support from various demographics during the campaign.', ko: '그 젊은 정치인은 선거 운동 기간 동안 다양한 계층으로부터 지지를 얻어냈다.' },
+        { en: 'His latest novel has started to garner critical acclaim from literary circles worldwide.', ko: '그의 최신 소설은 전 세계 문학계로부터 비평가들의 찬사를 받기 시작했다.' },
       ],
     }
   ),
@@ -700,8 +700,8 @@ export const vocabBatch16: VocabItem[] = [
       synonyms: ['hinder', 'impede', 'obstruct'],
       antonyms: ['facilitate', 'assist', 'expedite'],
       exampleSentences: [
-        { en: 'Heavy snowfall continued to hinder the rescue efforts throughout the night.', ko: '폭설이 밤새도록 구조 작업을 계속 방해했다.' },
-        { en: 'The project was significantly delayed because a lack of funds restricted their progress.', ko: '자금 부족이 그들의 진행을 가로막아 프로젝트가 상당히 지연되었다.' },
+        { en: 'Heavy snowfall continued to hamper the rescue efforts throughout the night.', ko: '폭설이 밤새도록 구조 작업을 계속 방해했다.' },
+        { en: 'A lack of funds hampered their progress and significantly delayed the project.', ko: '자금 부족이 그들의 진행을 방해하여 프로젝트가 상당히 지연되었다.' },
       ],
     }
   ),
@@ -757,8 +757,8 @@ export const vocabBatch16: VocabItem[] = [
       synonyms: ['atrocious', 'monstrous', 'wicked'],
       antonyms: ['noble', 'virtuous', 'admirable'],
       exampleSentences: [
-        { en: 'The perpetrator was sentenced to life in prison for his crimes.', ko: '가해자는 자신의 흉악한 범죄로 인해 종신형을 선고받았다.' },
-        { en: 'It is hard to believe that anyone could commit such a deed against innocent people.', ko: '누군가 무고한 사람들에게 그런 흉악한 짓을 저지를 수 있다는 것이 믿기 어렵다.' },
+        { en: 'The perpetrator was sentenced to life in prison for his heinous crimes.', ko: '가해자는 자신의 흉악한 범죄로 인해 종신형을 선고받았다.' },
+        { en: 'It is hard to believe that anyone could commit such a heinous deed against innocent people.', ko: '누군가 무고한 사람들에게 그런 흉악한 짓을 저지를 수 있다는 것이 믿기 어렵다.' },
       ],
     }
   ),
@@ -776,8 +776,8 @@ export const vocabBatch16: VocabItem[] = [
       synonyms: ['heterodoxy', 'dissent', 'nonconformity'],
       antonyms: ['orthodoxy', 'belief', 'conformity'],
       exampleSentences: [
-        { en: 'He was accused of spreading religious ideas that were considered a threat to the church.', ko: '그는 교회에 위협이 된다고 간주되는 종교적 사상을 퍼뜨린 혐의로 이단 고발을 당했다.' },
-        { en: 'In the past, suggesting that the Earth revolved around the Sun was viewed as a dangerous deviation from the truth.', ko: '과거에는 지구가 태양 주위를 돈다고 제안하는 것이 진리에서 벗어난 위험한 이단적 행위로 간주되었다.' },
+        { en: 'He was accused of heresy for spreading religious ideas considered a threat to the church.', ko: '그는 교회에 위협이 된다고 간주되는 종교적 사상을 퍼뜨린 혐의로 이단 고발을 당했다.' },
+        { en: 'In the past, suggesting that the Earth revolved around the Sun was viewed as heresy.', ko: '과거에는 지구가 태양 주위를 돈다고 제안하는 것이 이단으로 간주되었다.' },
       ],
     }
   ),
@@ -928,8 +928,8 @@ export const vocabBatch16: VocabItem[] = [
       synonyms: ['damage', 'weaken', 'harm'],
       antonyms: ['improve', 'enhance', 'strengthen'],
       exampleSentences: [
-        { en: 'Consuming too much alcohol can significantly hinder your judgment and slow down your reaction time.', ko: '과도한 알코올 섭취는 판단력을 현저히 손상시키고 반응 속도를 늦출 수 있습니다.' },
-        { en: 'Lack of sleep is known to negatively affect cognitive functions and reduce concentration levels.', ko: '수면 부족은 인지 기능을 손상시키고 집중력을 떨어뜨리는 것으로 알려져 있습니다.' },
+        { en: 'Consuming too much alcohol can significantly impair your judgment and reaction time.', ko: '과도한 알코올 섭취는 판단력과 반응 속도를 현저히 손상시킬 수 있습니다.' },
+        { en: 'Lack of sleep is known to impair cognitive functions and concentration levels.', ko: '수면 부족은 인지 기능과 집중력을 손상시키는 것으로 알려져 있습니다.' },
       ],
     }
   ),
@@ -947,8 +947,8 @@ export const vocabBatch16: VocabItem[] = [
       synonyms: ['fair', 'unbiased', 'neutral'],
       antonyms: ['biased', 'partial', 'prejudiced'],
       exampleSentences: [
-        { en: 'A judge must remain completely objective and provide a fair verdict based on evidence.', ko: '판사는 반드시 완전히 객관적이어야 하며 증거에 기반한 공정한 판결을 내려야 한다.' },
-        { en: 'The committee was chosen to provide an independent and balanced advice on the matter.', ko: '그 사안에 대해 독립적이고 공정한 조언을 제공하기 위해 위원회가 선정되었다.' },
+        { en: 'A judge must remain impartial and provide a verdict based solely on evidence.', ko: '판사는 반드시 공정해야 하며 오로지 증거에 기반한 판결을 내려야 한다.' },
+        { en: 'The committee was chosen to provide impartial advice on the matter.', ko: '그 사안에 대해 공정한 조언을 제공하기 위해 위원회가 선정되었다.' },
       ],
     }
   ),

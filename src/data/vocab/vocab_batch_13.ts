@@ -111,8 +111,8 @@ export const vocabBatch13: VocabItem[] = [
       synonyms: ['acquit', 'exonerate', 'pardon'],
       antonyms: ['convict', 'condemn', 'blame'],
       exampleSentences: [
-        { en: 'The court decided to clear the defendant and officially release him from all charges.', ko: '법원은 피고인의 혐의를 벗기고 모든 기소 내용으로부터 공식적으로 면죄하기로 결정했다.' },
-        { en: 'The priest has the authority to grant forgiveness and release the person from their sins.', ko: '신부는 용서를 베풀고 그 사람의 죄를 사해줄 권한이 있다.' },
+        { en: 'The court decided to absolve the defendant of all charges.', ko: '법원은 피고인의 모든 혐의를 면죄하기로 결정했다.' },
+        { en: 'The priest has the authority to absolve a person of their sins.', ko: '신부는 사람의 죄를 사해줄 권한이 있다.' },
       ],
     }
   ),
@@ -244,8 +244,8 @@ export const vocabBatch13: VocabItem[] = [
       synonyms: ['reprimand', 'scold', 'chide'],
       antonyms: ['praise', 'commend', 'applaud'],
       exampleSentences: [
-        { en: 'The coach had to gently advise his players to stay focused after their recent loss.', ko: '코치는 최근의 패배 이후 선수들에게 집중력을 유지하라고 부드럽게 훈계해야 했다.' },
-        { en: 'She was firmly told off by her supervisor for failing to meet the project deadline.', ko: '그녀는 프로젝트 마감 기한을 지키지 못해 상사로부터 엄하게 경고를 받았다.' },
+        { en: 'The coach had to admonish his players to stay focused after their recent loss.', ko: '코치는 최근의 패배 이후 선수들에게 집중력을 유지하라고 훈계해야 했다.' },
+        { en: 'She was admonished by her supervisor for failing to meet the project deadline.', ko: '그녀는 프로젝트 마감 기한을 지키지 못해 상사로부터 경고를 받았다.' },
       ],
     }
   ),
@@ -301,8 +301,8 @@ export const vocabBatch13: VocabItem[] = [
       synonyms: ['artistic', 'exquisite', 'tasteful'],
       antonyms: ['unattractive', 'hideous', 'grotesque'],
       exampleSentences: [
-        { en: 'The building has great visual appeal due to its unique design.', ko: '그 건물은 독특한 디자인 덕분에 미적으로 매우 훌륭한 매력을 지니고 있다.' },
-        { en: 'She has a strong sense of style and a refined eye for beauty.', ko: '그녀는 미적 감각이 매우 뛰어나며 아름다움을 보는 안목이 높다.' },
+        { en: 'The building has great aesthetic appeal due to its unique design.', ko: '그 건물은 독특한 디자인 덕분에 미적으로 매우 훌륭한 매력을 지니고 있다.' },
+        { en: 'She has a strong aesthetic sense and a refined eye for beauty.', ko: '그녀는 미적 감각이 매우 뛰어나며 아름다움을 보는 안목이 높다.' },
       ],
     }
   ),
@@ -397,7 +397,7 @@ export const vocabBatch13: VocabItem[] = [
       antonyms: ['science', 'empiricism', 'fact'],
       exampleSentences: [
         { en: 'The project seemed like corporate alchemy, turning a failing brand into a market leader.', ko: '그 프로젝트는 실패하던 브랜드를 시장 선두주자로 바꾼 기업의 연금술처럼 보였다.' },
-        { en: 'Medieval practices preceded modern chemistry and laid the groundwork for scientific experimentation.', ko: '중세의 관습은 현대 화학의 전신이 되었으며 과학적 실험의 기틀을 마련했다.' },
+        { en: 'Medieval alchemy preceded modern chemistry and laid the groundwork for scientific experimentation.', ko: '중세의 연금술은 현대 화학의 전신이 되었으며 과학적 실험의 기틀을 마련했다.' },
       ],
     }
   ),
@@ -453,8 +453,8 @@ export const vocabBatch13: VocabItem[] = [
       synonyms: ['merge', 'unite', 'consolidate'],
       antonyms: ['separate', 'disconnect', 'disintegrate'],
       exampleSentences: [
-        { en: 'The two small schools decided to join forces and form a single institution.', ko: '그 두 작은 학교들은 힘을 합쳐 하나의 기관으로 합병하기로 결정했다.' },
-        { en: 'The editor tried to blend various styles of writing into a cohesive book.', ko: '편집자는 다양한 글쓰기 스타일을 하나의 응집력 있는 책으로 통합하려고 노력했다.' },
+        { en: 'The two small schools decided to amalgamate into a single institution.', ko: '그 두 작은 학교들은 하나의 기관으로 합병하기로 결정했다.' },
+        { en: 'The editor tried to amalgamate various styles of writing into a cohesive book.', ko: '편집자는 다양한 글쓰기 스타일을 하나의 응집력 있는 책으로 통합하려고 노력했다.' },
       ],
     }
   ),
@@ -472,8 +472,8 @@ export const vocabBatch13: VocabItem[] = [
       synonyms: ['conflicting', 'equivocal', 'uncertain'],
       antonyms: ['decisive', 'unequivocal', 'resolute'],
       exampleSentences: [
-        { en: 'She felt uncertain and had mixed emotions about the job offer.', ko: '그녀는 일자리 제안에 대해 확신이 서지 않는 양가적인 감정을 느꼈다.' },
-        { en: 'He remained hesitant toward the new policy due to its potential risks and benefits.', ko: '그는 새로운 정책의 잠재적 위험과 이점 때문에 양가적인 태도를 유지했다.' },
+        { en: 'She felt ambivalent about the job offer, torn between excitement and fear.', ko: '그녀는 일자리 제안에 대해 설렘과 두려움 사이에서 양가적인 감정을 느꼈다.' },
+        { en: 'He remained ambivalent toward the new policy due to its potential risks and benefits.', ko: '그는 새로운 정책의 잠재적 위험과 이점 때문에 양가적인 태도를 유지했다.' },
       ],
     }
   ),
@@ -662,8 +662,8 @@ export const vocabBatch13: VocabItem[] = [
       synonyms: ['pacify', 'placate', 'mollify'],
       antonyms: ['provoke', 'inflame', 'aggravate'],
       exampleSentences: [
-        { en: 'The manager tried to soothe the situation to satisfy the angry customer.', ko: '매니저는 화난 고객을 달래기 위해 상황을 진정시키려 노력했다.' },
-        { en: 'He made concessions to satisfy the protesters and prevent further conflict.', ko: '그는 시위자들을 달래고 더 이상의 갈등을 막기 위해 양보를 했다.' },
+        { en: 'The manager tried to appease the angry customer with a full refund.', ko: '매니저는 전액 환불로 화난 고객을 달래려 노력했다.' },
+        { en: 'He made concessions to appease the protesters and prevent further conflict.', ko: '그는 시위자들을 달래고 더 이상의 갈등을 막기 위해 양보를 했다.' },
       ],
     }
   ),
@@ -738,8 +738,8 @@ export const vocabBatch13: VocabItem[] = [
       synonyms: ['passionate', 'fervent', 'zealous'],
       antonyms: ['indifferent', 'apathetic', 'detached'],
       exampleSentences: [
-        { en: 'He is an enthusiastic supporter who has remained loyal to the team for decades.', ko: '그는 수십 년 동안 팀에 충성해 온 열렬한 지지자입니다.' },
-        { en: 'The young poet had a burning desire to change the world through his words.', ko: '그 젊은 시인은 자신의 글로 세상을 바꾸고 싶다는 열렬한 열망을 품고 있었습니다.' },
+        { en: 'He is an ardent supporter who has remained loyal to the team for decades.', ko: '그는 수십 년 동안 팀에 충성해 온 열렬한 지지자입니다.' },
+        { en: 'The young poet had an ardent desire to change the world through his words.', ko: '그 젊은 시인은 자신의 글로 세상을 바꾸고 싶다는 열렬한 열망을 품고 있었습니다.' },
       ],
     }
   ),
@@ -833,8 +833,8 @@ export const vocabBatch13: VocabItem[] = [
       synonyms: ['desire', 'aim', 'strive'],
       antonyms: ['resign', 'abandon', 'surrender'],
       exampleSentences: [
-        { en: 'Many young athletes seek to reach the professional level and compete in the Olympics.', ko: '많은 젊은 운동선수들이 프로 수준에 도달하여 올림픽에서 경쟁하기를 열망합니다.' },
-        { en: 'He has always wanted to lead the company and introduce innovative changes.', ko: '그는 항상 회사를 이끌며 혁신적인 변화를 도입하기를 열망해 왔습니다.' },
+        { en: 'Many young athletes aspire to compete in the Olympics.', ko: '많은 젊은 운동선수들이 올림픽에서 경쟁하기를 열망합니다.' },
+        { en: 'He has always aspired to lead the company and introduce innovative changes.', ko: '그는 항상 회사를 이끌며 혁신적인 변화를 도입하기를 열망해 왔습니다.' },
       ],
     }
   ),

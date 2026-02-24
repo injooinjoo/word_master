@@ -35,8 +35,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['limb', 'appendage', 'member'],
       antonyms: ['leg', 'foot', 'torso'],
       exampleSentences: [
-        { en: 'He broke his upper limb during the football match.', ko: '그는 축구 경기 중에 팔이 부러졌습니다.' },
-        { en: 'She carried the heavy box under one of her limbs.', ko: '그녀는 한쪽 팔에 무거운 상자를 끼고 운반했습니다.' },
+        { en: 'He broke his arm during the football match.', ko: '그는 축구 경기 중에 팔이 부러졌습니다.' },
+        { en: 'She carried the heavy box under her arm.', ko: '그녀는 한쪽 팔에 무거운 상자를 끼고 운반했습니다.' },
       ],
     }
   ),
@@ -92,8 +92,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['bruin', 'grizzly', 'beast'],
       antonyms: ['mouse', 'rabbit', 'prey'],
       exampleSentences: [
-        { en: 'A large brown animal was seen wandering in the forest.', ko: '숲에서 커다란 갈색 동물이 배회하는 것이 목격되었습니다.' },
-        { en: 'The predator caught a salmon in the rushing river.', ko: '그 포식자는 세차게 흐르는 강에서 연어를 잡았습니다.' },
+        { en: 'A large bear was seen wandering in the forest.', ko: '숲에서 커다란 곰이 배회하는 것이 목격되었습니다.' },
+        { en: 'The bear caught a salmon in the rushing river.', ko: '곰이 세차게 흐르는 강에서 연어를 잡았습니다.' },
       ],
     }
   ),
@@ -168,8 +168,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['automobile', 'vehicle', 'sedan'],
       antonyms: ['pedestrian', 'bicycle', 'motorcycle'],
       exampleSentences: [
-        { en: 'She drives a red vehicle to work every morning.', ko: '그녀는 매일 아침 빨간 차를 몰고 출근합니다.' },
-        { en: 'They parked their new automobile in the garage.', ko: '그들은 새 차를 차고에 주차했습니다.' },
+        { en: 'She drives a red car to work every morning.', ko: '그녀는 매일 아침 빨간 차를 몰고 출근합니다.' },
+        { en: 'They parked their new car in the garage.', ko: '그들은 새 차를 차고에 주차했습니다.' },
       ],
     }
   ),
@@ -187,8 +187,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['seat', 'armchair', 'throne'],
       antonyms: ['floor', 'ground', 'standing'],
       exampleSentences: [
-        { en: 'Please take a seat on the wooden furniture provided.', ko: '준비된 나무 의자에 앉아 주세요.' },
-        { en: 'He pulled up a seat to join the meeting at the table.', ko: '그는 테이블 회의에 참석하기 위해 의자를 끌어당겼습니다.' },
+        { en: 'Please sit down on the wooden chair provided.', ko: '준비된 나무 의자에 앉아 주세요.' },
+        { en: 'He pulled up a chair to join the meeting at the table.', ko: '그는 테이블 회의에 참석하기 위해 의자를 끌어당겼습니다.' },
       ],
     }
   ),
@@ -206,8 +206,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['vapor', 'nebula', 'mist'],
       antonyms: ['sunshine', 'clear sky', 'blue sky'],
       exampleSentences: [
-        { en: 'Dark masses are gathering in the sky before the storm.', ko: '폭풍이 오기 전 하늘에 먹구름이 모여들고 있습니다.' },
-        { en: 'The sun disappeared behind a large white mass.', ko: '태양이 커다란 흰 구름 뒤로 사라졌습니다.' },
+        { en: 'Dark clouds are gathering in the sky before the storm.', ko: '폭풍이 오기 전 하늘에 먹구름이 모여들고 있습니다.' },
+        { en: 'The sun disappeared behind a large white cloud.', ko: '태양이 커다란 흰 구름 뒤로 사라졌습니다.' },
       ],
     }
   ),
@@ -225,8 +225,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['prepare', 'bake', 'roast'],
       antonyms: ['freeze', 'raw', 'consume'],
       exampleSentences: [
-        { en: 'My father likes to prepare delicious meals for us on weekends.', ko: '우리 아버지는 주말마다 우리를 위해 맛있는 음식을 요리하는 것을 좋아하십니다.' },
-        { en: 'He learned how to make pasta when he lived in Italy.', ko: '그는 이탈리아에 살 때 파스타 요리하는 법을 배웠습니다.' },
+        { en: 'My father likes to cook delicious meals for us on weekends.', ko: '우리 아버지는 주말마다 우리를 위해 맛있는 음식을 요리하는 것을 좋아하십니다.' },
+        { en: 'He learned how to cook pasta when he lived in Italy.', ko: '그는 이탈리아에 살 때 파스타 요리하는 법을 배웠습니다.' },
       ],
     }
   ),
@@ -244,8 +244,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['cattle', 'ox', 'bovine'],
       antonyms: ['bull', 'predator', 'tiger'],
       exampleSentences: [
-        { en: 'The large farm animal provides fresh milk every morning.', ko: '그 커다란 농장 동물은 매일 아침 신선한 우유를 제공합니다.' },
-        { en: 'A herd of these animals was grazing peacefully in the field.', ko: '이 동물 떼가 들판에서 평화롭게 풀을 뜯고 있었습니다.' },
+        { en: 'The cow provides fresh milk every morning.', ko: '소는 매일 아침 신선한 우유를 제공합니다.' },
+        { en: 'A herd of cows was grazing peacefully in the field.', ko: '소 떼가 들판에서 평화롭게 풀을 뜯고 있었습니다.' },
       ],
     }
   ),
@@ -263,8 +263,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['daytime', 'date', 'period'],
       antonyms: ['night', 'darkness', 'evening'],
       exampleSentences: [
-        { en: 'It was a sunny and warm time so we went to the park.', ko: '화창하고 따뜻한 날이어서 우리는 공원에 갔습니다.' },
-        { en: 'I hope you have a wonderful time during your birthday.', ko: '당신의 생일날 멋진 시간을 보내길 바랍니다.' },
+        { en: 'It was a sunny day so we went to the park.', ko: '화창한 날이어서 우리는 공원에 갔습니다.' },
+        { en: 'I hope you have a wonderful day on your birthday.', ko: '당신의 생일날 멋진 하루를 보내길 바랍니다.' },
       ],
     }
   ),
@@ -282,8 +282,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['table', 'workstation', 'bureau'],
       antonyms: ['chair', 'floor', 'bed'],
       exampleSentences: [
-        { en: 'She keeps her computer and notebooks on her wooden workstation.', ko: '그녀는 나무 책상 위에 컴퓨터와 공책을 둡니다.' },
-        { en: 'The student sat at his furniture to finish his homework.', ko: '그 학생은 숙제를 끝내기 위해 책상에 앉았습니다.' },
+        { en: 'She keeps her computer and notebooks on her desk.', ko: '그녀는 책상 위에 컴퓨터와 공책을 둡니다.' },
+        { en: 'The student sat at his desk to finish his homework.', ko: '그 학생은 숙제를 끝내기 위해 책상에 앉았습니다.' },
       ],
     }
   ),
@@ -301,8 +301,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['arid', 'parched', 'waterless'],
       antonyms: ['wet', 'moist', 'humid'],
       exampleSentences: [
-        { en: 'The desert land was very parched because it hadn\'t rained for months.', ko: '몇 달 동안 비가 오지 않아 사막의 땅은 매우 말라 있었습니다.' },
-        { en: 'Make sure your hands are not wet before touching the switch.', ko: '스위치를 만지기 전에 손에 물기가 없는지 확인하세요.' },
+        { en: 'The desert land was very dry because it hadn\'t rained for months.', ko: '몇 달 동안 비가 오지 않아 사막의 땅은 매우 건조했습니다.' },
+        { en: 'Make sure your hands are dry before touching the switch.', ko: '스위치를 만지기 전에 손이 마른지 확인하세요.' },
       ],
     }
   ),
@@ -320,8 +320,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['auricle', 'pinna', 'hearing'],
       antonyms: ['eye', 'nose', 'mouth'],
       exampleSentences: [
-        { en: 'She whispered a secret in his left side.', ko: '그녀는 그의 왼쪽 귀에 비밀을 속삭였다.' },
-        { en: 'The rabbit has very long and soft parts for hearing.', ko: '그 토끼는 매우 길고 부드러운 귀를 가지고 있다.' },
+        { en: 'She whispered a secret in his ear.', ko: '그녀는 그의 귀에 비밀을 속삭였다.' },
+        { en: 'The rabbit has very long and soft ears.', ko: '그 토끼는 매우 길고 부드러운 귀를 가지고 있다.' },
       ],
     }
   ),
@@ -339,8 +339,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['conclusion', 'finish', 'termination'],
       antonyms: ['beginning', 'start', 'origin'],
       exampleSentences: [
-        { en: 'We reached the final point of the road.', ko: '우리는 길의 끝에 도달했다.' },
-        { en: 'The movie has a very happy closing.', ko: '그 영화는 매우 행복한 결말을 가졌다.' },
+        { en: 'We reached the end of the road.', ko: '우리는 길의 끝에 도달했다.' },
+        { en: 'The movie has a very happy end.', ko: '그 영화는 매우 행복한 결말을 가졌다.' },
       ],
     }
   ),
@@ -358,8 +358,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['ranch', 'plantation', 'homestead'],
       antonyms: ['city', 'metropolis', 'urban area'],
       exampleSentences: [
-        { en: 'They live on a large piece of land in the countryside.', ko: '그들은 시골의 넓은 농장에서 살고 있다.' },
-        { en: 'This place produces organic vegetables and milk.', ko: '이 농장은 유기농 채소와 우유를 생산한다.' },
+        { en: 'They live on a large farm in the countryside.', ko: '그들은 시골의 넓은 농장에서 살고 있다.' },
+        { en: 'This farm produces organic vegetables and milk.', ko: '이 농장은 유기농 채소와 우유를 생산한다.' },
       ],
     }
   ),
@@ -377,8 +377,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['flame', 'blaze', 'inferno'],
       antonyms: ['water', 'ice', 'cold'],
       exampleSentences: [
-        { en: 'The burning wood kept us warm at night.', ko: '타오르는 나무가 밤새 우리를 따뜻하게 해주었다.' },
-        { en: 'Don\'t play with matches because they can start a blaze.', ko: '큰 불을 일으킬 수 있으니 성냥을 가지고 놀지 마라.' },
+        { en: 'The fire kept us warm at night.', ko: '불이 밤새 우리를 따뜻하게 해주었다.' },
+        { en: 'Don\'t play with matches because they can start a fire.', ko: '불을 일으킬 수 있으니 성냥을 가지고 놀지 마라.' },
       ],
     }
   ),
@@ -396,8 +396,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['soar', 'glide', 'hover'],
       antonyms: ['walk', 'crawl', 'sink'],
       exampleSentences: [
-        { en: 'Birds can move through the air in the sky.', ko: '새들은 하늘을 날 수 있다.' },
-        { en: 'The plane will travel to Seoul tomorrow.', ko: '그 비행기는 내일 서울로 날아갈 것이다.' },
+        { en: 'Birds can fly high in the sky.', ko: '새들은 하늘 높이 날 수 있다.' },
+        { en: 'The plane will fly to Seoul tomorrow.', ko: '그 비행기는 내일 서울로 날아갈 것이다.' },
       ],
     }
   ),
@@ -415,8 +415,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['paw', 'hoof', 'sole'],
       antonyms: ['head', 'hand', 'top'],
       exampleSentences: [
-        { en: 'My lower limb part hurts after the long walk.', ko: '긴 산책 후에 발이 아프다.' },
-        { en: 'She stepped on my walking limb by accident.', ko: '그녀가 실수로 내 발을 밟았다.' },
+        { en: 'My foot hurts after the long walk.', ko: '긴 산책 후에 발이 아프다.' },
+        { en: 'She stepped on my foot by accident.', ko: '그녀가 실수로 내 발을 밟았다.' },
       ],
     }
   ),
@@ -434,8 +434,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['vixen', 'canid', 'reynard'],
       antonyms: ['hound', 'prey', 'rabbit'],
       exampleSentences: [
-        { en: 'A reddish wild animal ran across the road.', ko: '붉은색의 야생 동물이 길을 가로질러 달려갔다.' },
-        { en: 'This animal has a thick tail in winter.', ko: '이 동물은 겨울에 털이 아주 풍성한 꼬리를 갖는다.' },
+        { en: 'A red fox ran across the road.', ko: '붉은 여우가 길을 가로질러 달려갔다.' },
+        { en: 'The fox has a thick bushy tail in winter.', ko: '여우는 겨울에 털이 아주 풍성한 꼬리를 갖는다.' },
       ],
     }
   ),
@@ -453,8 +453,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['complete', 'packed', 'filled'],
       antonyms: ['empty', 'vacant', 'hollow'],
       exampleSentences: [
-        { en: 'The theater was packed with many people.', ko: '극장은 사람들로 가득 찼다.' },
-        { en: 'I am satisfied and cannot eat more after that big meal.', ko: '그 큰 식사 후에 배가 가득 불러서 더 못 먹겠다.' },
+        { en: 'The theater was full of people.', ko: '극장은 사람들로 가득 찼다.' },
+        { en: 'I am full and cannot eat more after that big meal.', ko: '그 큰 식사 후에 배가 가득 불러서 더 못 먹겠다.' },
       ],
     }
   ),
@@ -472,8 +472,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['crystal', 'pane', 'lens'],
       antonyms: ['wood', 'metal', 'plastic'],
       exampleSentences: [
-        { en: 'Be careful not to break the window.', ko: '창문 유리를 깨지 않도록 조심해라.' },
-        { en: 'She filled the drinking vessel with water.', ko: '그녀는 컵에 물을 부었다.' },
+        { en: 'Be careful not to break the glass.', ko: '유리를 깨지 않도록 조심해라.' },
+        { en: 'She filled the glass with water.', ko: '그녀는 유리잔에 물을 부었다.' },
       ],
     }
   ),
@@ -492,8 +492,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['over', 'overhead', 'atop'],
       antonyms: ['below', 'under', 'beneath'],
       exampleSentences: [
-        { en: 'The birds are flying high in the sky.', ko: '새들이 하늘 높이 위에서 날고 있다.' },
-        { en: 'We live in the apartment right on the floor higher than theirs.', ko: '우리는 그들의 집 바로 위층 아파트에 산다.' },
+        { en: 'The birds are flying above the clouds.', ko: '새들이 구름 위에서 날고 있다.' },
+        { en: 'We live in the apartment right above theirs.', ko: '우리는 그들의 집 바로 위층 아파트에 산다.' },
       ],
     }
   ),
@@ -511,8 +511,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['over', 'beyond', 'athwart'],
       antonyms: ['along', 'beside', 'nearby'],
       exampleSentences: [
-        { en: 'There is a small bakery right on the other side of the street.', ko: '거리 바로 건너편에 작은 빵집이 하나 있습니다.' },
-        { en: 'She walked to the other side of the bridge to see the sunset.', ko: '그녀는 일몰을 보기 위해 다리 건너편으로 걸어갔습니다.' },
+        { en: 'There is a small bakery right across the street.', ko: '거리 바로 건너편에 작은 빵집이 하나 있습니다.' },
+        { en: 'She walked across the bridge to see the sunset.', ko: '그녀는 일몰을 보기 위해 다리를 건너 걸어갔습니다.' },
       ],
     }
   ),
@@ -530,8 +530,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['living', 'breathing', 'animate'],
       antonyms: ['dead', 'deceased', 'lifeless'],
       exampleSentences: [
-        { en: 'The doctors managed to keep the patient breathing and stable after the accident.', ko: '의사들은 사고 후 환자를 살아 있는 안정적인 상태로 유지하는 데 성공했다.' },
-        { en: 'The old traditions are still very much present in this small mountain village.', ko: '이 작은 산골 마을에는 오래된 전통들이 여전히 살아 숨 쉬고 있다.' },
+        { en: 'The doctors managed to keep the patient alive after the accident.', ko: '의사들은 사고 후 환자를 살려두는 데 성공했다.' },
+        { en: 'The old traditions are still alive in this small mountain village.', ko: '이 작은 산골 마을에는 오래된 전통들이 여전히 살아 있다.' },
       ],
     }
   ),
@@ -549,8 +549,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['solitary', 'solo', 'unaccompanied'],
       antonyms: ['together', 'accompanied', 'escorted'],
       exampleSentences: [
-        { en: 'She decided to travel to Europe by herself last summer.', ko: '그녀는 지난 여름에 유럽을 혼자 여행하기로 결정했다.' },
-        { en: 'The child was left in the house for a few minutes.', ko: '그 아이는 몇 분 동안 집에 혼자 남겨졌다.' },
+        { en: 'She decided to travel alone to Europe last summer.', ko: '그녀는 지난 여름에 유럽을 혼자 여행하기로 결정했다.' },
+        { en: 'The child was left alone in the house for a few minutes.', ko: '그 아이는 몇 분 동안 집에 혼자 남겨졌다.' },
       ],
     }
   ),
@@ -568,8 +568,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['hamper', 'bin', 'crate'],
       antonyms: ['lid', 'cover', 'flatware'],
       exampleSentences: [
-        { en: 'She gathered the fresh apples from the garden and placed them in a woven container.', ko: '그녀는 정원에서 신선한 사과를 모아 엮어서 만든 바구니에 담았다.' },
-        { en: 'The picnic container was filled with delicious sandwiches and cold drinks.', ko: '소풍 바구니는 맛있는 샌드위치와 시원한 음료로 가득 차 있었다.' },
+        { en: 'She gathered the fresh apples and placed them in a basket.', ko: '그녀는 신선한 사과를 모아 바구니에 담았다.' },
+        { en: 'The picnic basket was filled with delicious sandwiches and cold drinks.', ko: '소풍 바구니는 맛있는 샌드위치와 시원한 음료로 가득 차 있었다.' },
       ],
     }
   ),
@@ -587,8 +587,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['shore', 'coast', 'seaside'],
       antonyms: ['mountain', 'forest', 'desert'],
       exampleSentences: [
-        { en: 'We spent the entire afternoon sunbathing on the warm sand.', ko: '우리는 오후 내내 따뜻한 모래 위에서 일광욕을 하며 보냈다.' },
-        { en: 'The children built a large castle near the water\'s edge.', ko: '아이들이 물가 근처에서 커다란 성을 쌓았다.' },
+        { en: 'We spent the entire afternoon sunbathing on the beach.', ko: '우리는 오후 내내 해변에서 일광욕을 하며 보냈다.' },
+        { en: 'The children built a large sandcastle on the beach.', ko: '아이들이 해변에서 커다란 모래성을 쌓았다.' },
       ],
     }
   ),
@@ -606,8 +606,8 @@ export const vocabBatch03: VocabItem[] = [
       synonyms: ['trust', 'accept', 'credit'],
       antonyms: ['doubt', 'distrust', 'deny'],
       exampleSentences: [
-        { en: 'I strongly feel that you can succeed in this project.', ko: '나는 네가 이 프로젝트에서 성공할 수 있다고 굳게 믿는다.' },
-        { en: 'Many people think that luck plays a big role in success.', ko: '많은 사람들은 운이 성공에 큰 역할을 한다고 믿는다.' },
+        { en: 'I believe you can succeed in this project.', ko: '나는 네가 이 프로젝트에서 성공할 수 있다고 믿는다.' },
+        { en: 'Many people believe that luck plays a big role in success.', ko: '많은 사람들은 운이 성공에 큰 역할을 한다고 믿는다.' },
       ],
     }
   ),

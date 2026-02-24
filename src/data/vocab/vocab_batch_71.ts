@@ -134,7 +134,7 @@ export const vocabBatch71: VocabItem[] = [
       synonymAntonym: '관련 해석: 32',
     })
   ),
-  word('most', '대부분,가장', 1, 'noun',
+  word('most', '대부분,가장', 1, 'adverb',
     ['명 사람', '-', '동', '동 과거', '명 er', '동 ing', '명 tion', '명 nce', '명', '형'],
     tips({
       etymology: 'most의 어원 정보는 추후 보강 예정',

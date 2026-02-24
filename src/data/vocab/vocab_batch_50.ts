@@ -287,7 +287,7 @@ export const vocabBatch50: VocabItem[] = [
       ],
     }
   ),
-  word('perform', '다하다', 4, 'verb',
+  word('perform', '수행하다', 4, 'verb',
     ['결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다'],
     tips({
       etymology: '라틴어 \'per\'(완전히)와 \'form\'(형성하다)이 합쳐져 어떤 일을 끝까지 완수한다는 의미를 담고 있습니다.',
@@ -442,19 +442,19 @@ export const vocabBatch50: VocabItem[] = [
   word('perspective', '관점, 시각', 10, 'noun',
     ['평면적인', '추상적인', '입체적인', '일시적인', '장식적인', '고전적인', '현대적인', '사실적인', '왜곡된', '단편적인'],
     tips({
-      etymology: '라틴어 \'perspicere(꿰뚫어 보다)\'에서 유래하여, 공간을 꿰뚫어 보듯 깊이감을 표현하는 기법을 뜻합니다.',
-      visual: '기차역 선로가 멀리 한 점으로 모이는 풍경을 그릴 때 사용하는 선들을 상상해 보세요.',
-      soundAlike: '\'퍼스펙티브\'의 \'퍼(per)\'를 \'펴다\'로 생각해서 도화지에 공간을 쫙 펴서 그리는 법으로 기억하세요.',
-      context: '미술 수업에서 풍경화를 그릴 때 사물의 거리감을 나타내기 위해 반드시 필요한 기법입니다.',
-      synonymAntonym: '공간감을 나타내는 linear와 유사하며, 깊이감이 없는 flat과는 반대되는 개념입니다.',
+      etymology: '라틴어 \'perspicere(꿰뚫어 보다)\'에서 유래하여, 사물이나 상황을 바라보는 시각이나 관점을 뜻합니다.',
+      visual: '산꼭대기에서 내려다보는 풍경과 계곡에서 올려다보는 풍경이 완전히 다른 것처럼, 같은 것도 보는 위치에 따라 달라지는 모습을 상상해 보세요.',
+      soundAlike: '\'퍼스펙티브\'의 \'퍼(per)\'를 \'꿰뚫어\'로 생각하고, 사물을 꿰뚫어 보는 시각으로 기억하세요.',
+      context: '토론이나 논쟁에서 각자의 입장이나 시각을 설명할 때 자주 사용되는 단어입니다.',
+      synonymAntonym: '비슷한 뜻의 viewpoint, standpoint와 유사하며, 편견을 뜻하는 bias와는 대조됩니다.',
     }),
     {
-      definition: 'Relating to the art of drawing solid objects on a two-dimensional surface so as to give the right impression of their height, width, depth, and position in relation to each other.',
-      synonyms: ['linear', 'three-dimensional', 'spatial'],
-      antonyms: ['flat', 'two-dimensional', 'planimetric'],
+      definition: 'A particular attitude toward or way of regarding something; a point of view.',
+      synonyms: ['viewpoint', 'standpoint', 'outlook'],
+      antonyms: ['bias', 'narrow-mindedness', 'shortsightedness'],
       exampleSentences: [
-        { en: 'The artist used advanced drawing techniques to create a realistic sense of depth in the landscape.', ko: '그 화가는 풍경화에서 사실적인 깊이감을 만들기 위해 고급 원근법 기법을 사용했습니다.' },
-        { en: 'Architectural sketches often require precise geometric lines to represent building dimensions accurately.', ko: '건축 스케치는 건물의 치수를 정확하게 표현하기 위해 정밀한 원근법적 기하학 선을 필요로 합니다.' },
+        { en: 'From a historical perspective, this event was a turning point for the entire nation.', ko: '역사적 관점에서, 이 사건은 국가 전체의 전환점이었습니다.' },
+        { en: 'Traveling abroad gives you a new perspective on your own culture.', ko: '해외 여행은 자신의 문화에 대한 새로운 시각을 갖게 해 줍니다.' },
       ],
     }
   ),

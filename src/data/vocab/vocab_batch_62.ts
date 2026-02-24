@@ -107,12 +107,12 @@ export const vocabBatch62: VocabItem[] = [
       synonymAntonym: '무언가를 섞는 mix와 비슷하지만, 정지 상태인 calm과는 정반대의 에너지를 가집니다.',
     }),
     {
-      definition: 'A state of excitement, commotion, or a slight physical movement in a liquid or substance.',
-      synonyms: ['commotion', 'disturbance', 'agitation'],
-      antonyms: ['tranquility', 'stillness', 'calm'],
+      definition: 'To move a spoon or implement around in a liquid or mixture to combine the ingredients.',
+      synonyms: ['mix', 'blend', 'agitate'],
+      antonyms: ['settle', 'separate', 'leave alone'],
       exampleSentences: [
-        { en: 'The sudden news of the CEO\'s resignation caused a great excitement among the employees.', ko: 'CEO의 갑작스러운 사임 소식은 직원들 사이에 큰 동요를 일으켰습니다.' },
-        { en: 'Give the soup a quick swirl with a wooden spoon to prevent it from burning.', ko: '수프가 타지 않도록 나무 숟가락으로 가볍게 한 번 휘저어 주세요.' },
+        { en: 'Please stir the soup gently with a wooden spoon to prevent it from burning.', ko: '수프가 타지 않도록 나무 숟가락으로 부드럽게 휘저어 주세요.' },
+        { en: 'She stirred two spoonfuls of sugar into her morning coffee.', ko: '그녀는 아침 커피에 설탕 두 스푼을 넣고 휘저었습니다.' },
       ],
     }
   ),
@@ -193,21 +193,21 @@ export const vocabBatch62: VocabItem[] = [
     }
   ),
   word('stop', '멈추다', 2, 'verb',
-    ['출발', '가속', '진행', '연속', '흐름', '시작', '통과', '운전', '이동', '속도'],
+    ['출발하다', '가속하다', '진행하다', '시작하다', '통과하다', '운전하다', '이동하다', '달리다', '흐르다', '나아가다'],
     tips({
       etymology: '고대 영어 \'stoppian\'에서 유래하여 구멍을 막거나 흐름을 차단한다는 의미에서 시작되었습니다.',
       visual: '빨간색 팔각형 정지 표지판 앞에 자동차가 완전히 멈춰 서 있는 모습을 상상하세요.',
       soundAlike: '발음이 \'스탑\'이므로 발걸음을 \'스\'윽 \'탑\' 하고 멈추는 소리로 기억하세요.',
-      context: '버스 정류장이나 지하철역처럼 여정 중에 잠시 머무르는 지점을 나타낼 때 주로 쓰입니다.',
+      context: '움직이던 것이 멈추거나 행동을 중단할 때, 또는 누군가를 제지할 때 주로 사용됩니다.',
       synonymAntonym: 'halt는 갑작스러운 멈춤을, go는 계속되는 움직임을 나타내어 대조를 이룹니다.',
     }),
     {
-      definition: 'A designated place where a vehicle, such as a bus or train, regularly halts for passengers to get on or off.',
-      synonyms: ['station', 'halt', 'termination'],
-      antonyms: ['start', 'continuation', 'departure'],
+      definition: 'To cease moving, operating, or functioning, or to cause something to cease.',
+      synonyms: ['halt', 'cease', 'pause'],
+      antonyms: ['start', 'continue', 'go'],
       exampleSentences: [
-        { en: 'The commuters waited patiently at the bus station for the next arrival.', ko: '통근자들은 다음 버스가 오기를 정류장에서 인내심 있게 기다렸습니다.' },
-        { en: 'Our final destination is only three more stations away from this current location.', ko: '우리의 최종 목적지는 현재 위치에서 단 세 정거장만 더 가면 됩니다.' },
+        { en: 'The driver had to stop suddenly when a child ran across the road.', ko: '아이가 도로를 가로질러 뛰어가자 운전자는 갑자기 멈춰야 했습니다.' },
+        { en: 'Please stop talking during the movie so everyone can enjoy it.', ko: '영화 상영 중에는 대화를 멈춰 주세요. 모두가 즐길 수 있도록요.' },
       ],
     }
   ),
@@ -316,12 +316,12 @@ export const vocabBatch62: VocabItem[] = [
       synonymAntonym: '팽팽한 긴장을 뜻하는 tension과 반대로 이완을 뜻하는 relaxation을 함께 기억하세요.',
     }),
     {
-      definition: 'A severe or excessive degree of physical or mental pressure or exertion on something.',
-      synonyms: ['tension', 'pressure', 'exertion'],
-      antonyms: ['relaxation', 'ease', 'relief'],
+      definition: 'To pull or push forcibly at something, or to exert oneself physically beyond a safe limit.',
+      synonyms: ['stretch', 'pull', 'tug'],
+      antonyms: ['relax', 'release', 'loosen'],
       exampleSentences: [
-        { en: 'The long hours of working at the computer put a significant pressure on his eyes.', ko: '장시간의 컴퓨터 작업은 그의 눈에 상당한 피로를 주었다.' },
-        { en: 'Heavy snow caused a dangerous amount of weight on the old roof structure.', ko: '폭설로 인해 오래된 지붕 구조물에 위험한 수준의 하중이 가해졌다.' },
+        { en: 'Be careful not to strain your back when lifting heavy boxes.', ko: '무거운 상자를 들 때 허리를 다치지 않도록 조심하세요.' },
+        { en: 'She strained her eyes trying to read the tiny print in the dark room.', ko: '그녀는 어두운 방에서 작은 글씨를 읽으려고 눈을 혹사시켰다.' },
       ],
     }
   ),
@@ -468,12 +468,12 @@ export const vocabBatch62: VocabItem[] = [
       synonymAntonym: '확장을 뜻하는 extension과 반대로 줄어듦을 뜻하는 contraction을 함께 기억하세요.',
     }),
     {
-      definition: 'A continuous area or a period of time that extends over a distance or duration.',
-      synonyms: ['span', 'extension', 'expanse'],
-      antonyms: ['contraction', 'shortening', 'shrinkage'],
+      definition: 'To extend one\'s body or a part of one\'s body to full length, typically so as to tighten muscles.',
+      synonyms: ['extend', 'spread', 'elongate'],
+      antonyms: ['compress', 'shrink', 'contract'],
       exampleSentences: [
-        { en: 'The desert covers a vast stretch of land that seems to go on forever.', ko: '사막은 끝없이 계속될 것 같은 광활한 땅의 구간을 덮고 있다.' },
-        { en: 'Athletes often perform a series of movements to loosen their muscles before a race.', ko: '운동선수들은 경주 전에 근육을 풀기 위해 일련의 뻗기 동작을 자주 수행한다.' },
+        { en: 'She stretched her arms above her head after sitting at her desk all day.', ko: '하루 종일 책상에 앉아 있다가 팔을 머리 위로 쭉 뻗었습니다.' },
+        { en: 'The cat stretched lazily on the warm windowsill in the afternoon sun.', ko: '고양이는 오후 햇살이 드는 따뜻한 창턱에서 게으르게 기지개를 켰습니다.' },
       ],
     }
   ),
@@ -535,21 +535,21 @@ export const vocabBatch62: VocabItem[] = [
     }
   ),
   word('strip', '벗기다', 10, 'verb',
-    ['덮개', '포장', '결합', '보호', '추가', '건설', '수집', '장식', '보존', '연결'],
+    ['입히다', '감싸다', '덮다', '칠하다', '붙이다', '장식하다', '보호하다', '포장하다', '채우다', '코팅하다'],
     tips({
-      etymology: '독일어 \'strippe\'에서 유래하여 가늘고 긴 끈이나 가죽 조각을 의미하게 되었습니다.',
+      etymology: '독일어 \'strippe\'에서 유래하여 겉면을 벗겨내는 동작을 의미하게 되었습니다.',
       visual: '바나나 껍질을 길게 한 줄씩 벗겨내는 모습을 상상해 보세요.',
       soundAlike: '스트립쇼(strip show)라는 단어처럼 겉면을 하나씩 제거하는 이미지를 떠올리면 쉽습니다.',
-      context: '만화책의 한 칸(comic strip)이나 가늘고 긴 땅의 조각을 말할 때도 자주 쓰입니다.',
-      synonymAntonym: 'band나 piece와 비슷하지만, 전체에서 떼어낸 조각이라는 점이 특징입니다.',
+      context: '페인트를 벗기거나 옷을 벗거나 권리를 박탈할 때 자주 쓰입니다.',
+      synonymAntonym: 'peel이나 remove와 비슷하며, cover나 dress와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'A long, narrow piece of cloth, paper, metal, or land.',
-      synonyms: ['band', 'ribbon', 'shred'],
-      antonyms: ['expanse', 'mass', 'whole'],
+      definition: 'To remove all coverings, clothing, or outer layers from something.',
+      synonyms: ['peel', 'remove', 'bare'],
+      antonyms: ['cover', 'dress', 'wrap'],
       exampleSentences: [
-        { en: 'The nurse applied a thin strip of gauze to the small wound.', ko: '간호사는 작은 상처에 얇은 거즈 조각을 붙였습니다.' },
-        { en: 'A narrow strip of land connects the peninsula to the mainland.', ko: '좁고 긴 땅이 반도와 본토를 연결하고 있습니다.' },
+        { en: 'They had to strip the old wallpaper before painting the bedroom walls.', ko: '침실 벽을 페인트칠하기 전에 오래된 벽지를 벗겨내야 했습니다.' },
+        { en: 'The thief was stripped of his rights after being convicted of the crime.', ko: '그 도둑은 범죄로 유죄 판결을 받은 후 권리를 박탈당했습니다.' },
       ],
     }
   ),
@@ -572,7 +572,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('stroke', '한번치기', 8, 'noun',
+  word('stroke', '일격', 8, 'noun',
     ['절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동'],
     tips({
       etymology: '고대 영어 \'strac\'에서 유래하여 무언가를 강하게 치거나 긋는 동작을 의미합니다.',
@@ -639,12 +639,12 @@ export const vocabBatch62: VocabItem[] = [
       synonymAntonym: 'effort나 battle과 비슷하지만, 고통이나 어려움이 수반된다는 점에서 ease나 peace와 대조됩니다.',
     }),
     {
-      definition: 'A forceful or violent effort to get free of restraint or resist attack.',
-      synonyms: ['endeavor', 'exertion', 'conflict'],
-      antonyms: ['surrender', 'agreement', 'idleness'],
+      definition: 'To make forceful or violent efforts to get free of restraint or resist something.',
+      synonyms: ['strive', 'fight', 'battle'],
+      antonyms: ['surrender', 'yield', 'give up'],
       exampleSentences: [
-        { en: 'The small animal put up a fierce fight to escape the predator\'s grasp.', ko: '그 작은 동물은 포식자의 손아귀에서 벗어나기 위해 격렬한 버둥거림을 보였다.' },
-        { en: 'Years of internal conflict and social unrest marked the nation\'s history.', ko: '수년간의 내부적 투쟁과 사회적 불안이 그 나라의 역사에 기록되었다.' },
+        { en: 'The small animal struggled to escape the predator\'s grasp.', ko: '그 작은 동물은 포식자의 손아귀에서 벗어나기 위해 버둥거렸다.' },
+        { en: 'Many students struggle with advanced mathematics in their first year of college.', ko: '많은 학생들이 대학 1학년에 고급 수학 과목으로 힘들어한다.' },
       ],
     }
   ),
@@ -705,22 +705,22 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('subject', '주제, 과목', 4, 'noun',
-    ['관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다'],
+  word('subject', '주제', 4, 'noun',
+    ['결론', '방법', '도구', '장소', '시간', '이유', '결과', '과정', '배경', '목적'],
     tips({
-      etymology: '라틴어 sub(아래로)와 ject(던지다)가 합쳐져 누군가를 아래에 두고 지배한다는 의미에서 유래했습니다.',
-      visual: '왕이 무릎을 꿇고 있는 신하의 어깨에 칼을 대며 충성을 요구하는 장면을 상상해 보세요.',
-      soundAlike: '서브(sub)를 받는 사람(ject)은 주인의 명령에 따라야 하므로 복종한다는 느낌으로 외워보세요.',
-      context: '주로 국가나 군대가 다른 영토를 정복하거나, 실험 대상을 특정 조건에 노출시킬 때 사용됩니다.',
-      synonymAntonym: 'subjugate와 동의어 관계이며, 해방시키거나 자유를 주는 liberate와는 반대되는 개념입니다.',
+      etymology: '라틴어 sub(아래로)와 ject(던지다)가 합쳐져 논의의 기반이 되는 대상을 의미합니다.',
+      visual: '토론 테이블 위에 올려진 안건 문서나 수업 시간표의 과목명을 상상해 보세요.',
+      soundAlike: '서브(sub) 제(ject)트 - 대화의 흐름 아래에 깔려 있는 핵심 주제를 떠올려 보세요.',
+      context: '대화나 글의 중심 내용, 학교 과목, 또는 실험 대상을 가리킬 때 주로 사용됩니다.',
+      synonymAntonym: 'topic이나 theme과 유사하며, 부차적인 것을 뜻하는 tangent과는 대조됩니다.',
     }),
     {
-      definition: 'To bring a person or group under one\'s control or jurisdiction, typically by using force.',
-      synonyms: ['subjugate', 'subdue', 'enthrall'],
-      antonyms: ['liberate', 'emancipate', 'release'],
+      definition: 'A topic that is being discussed, studied, or dealt with, or a branch of knowledge studied in school.',
+      synonyms: ['topic', 'theme', 'matter'],
+      antonyms: ['tangent', 'digression', 'aside'],
       exampleSentences: [
-        { en: 'The invading army sought to subject the local population to its harsh military laws.', ko: '침략군은 현지 주민들을 자신들의 가혹한 군법에 복종시키려 했다.' },
-        { en: 'Researchers must ensure they do not subject their participants to unnecessary emotional distress.', ko: '연구자들은 참가자들이 불필요한 정신적 고통을 겪게 하지 않도록 보장해야 한다.' },
+        { en: 'The subject of today\'s lecture is the impact of climate change on marine life.', ko: '오늘 강의의 주제는 기후 변화가 해양 생물에 미치는 영향입니다.' },
+        { en: 'Mathematics was always her favorite subject in school.', ko: '수학은 항상 그녀가 학교에서 가장 좋아하는 과목이었습니다.' },
       ],
     }
   ),
@@ -765,19 +765,19 @@ export const vocabBatch62: VocabItem[] = [
   word('submit', '제출하다', 10, 'verb',
     ['유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다'],
     tips({
-      etymology: '라틴어 sub(아래로)와 mittere(보내다)가 합쳐져 권위 아래에 자신을 둔다는 의미에서 유래했습니다.',
-      visual: '레슬링 경기에서 항복의 표시로 바닥을 탁탁 치는 \'탭 아웃\' 장면을 상상해 보세요.',
-      soundAlike: '서브(sub)를 밑(mit)으로 준다고 생각하면 아래로 굴복시키는 이미지가 떠오릅니다.',
-      context: '주로 권력 관계에서 항복하거나, 자신의 의지를 꺾고 타인의 지배를 받아들일 때 사용됩니다.',
-      synonymAntonym: '굴복하다라는 뜻의 surrender와 반대로 저항하다라는 뜻의 resist를 함께 기억하세요.',
+      etymology: '라틴어 sub(아래로)와 mittere(보내다)가 합쳐져 문서를 보내다라는 의미에서 유래했습니다.',
+      visual: '온라인 양식을 다 작성하고 \'제출\' 버튼을 클릭하는 모습을 상상해 보세요.',
+      soundAlike: '서브(sub)밋(mit) - 아래(sub)로 보내다(mit)라고 생각하면 서류를 넘긴다는 느낌이 옵니다.',
+      context: '숙제를 제출하거나 지원서를 보내거나 공식 서류를 전달할 때 주로 사용됩니다.',
+      synonymAntonym: '보내다라는 뜻의 hand in과 비슷하며, 거둬들이다라는 뜻의 withdraw와 반대입니다.',
     }),
     {
-      definition: 'to accept the authority or control of another person or group, often against one\'s will',
-      synonyms: ['surrender', 'yield', 'succumb'],
-      antonyms: ['resist', 'defy', 'rebel'],
+      definition: 'To present a document, proposal, or application for consideration or judgment.',
+      synonyms: ['present', 'hand in', 'file'],
+      antonyms: ['withdraw', 'withhold', 'retract'],
       exampleSentences: [
-        { en: 'The defeated army had no choice but to yield to the conqueror\'s demands.', ko: '패배한 군대는 정복자의 요구에 복종할 수밖에 없었다.' },
-        { en: 'She refused to allow herself to be controlled by her oppressors.', ko: '그녀는 압제자들에게 복종당하는 것을 거부했다.' },
+        { en: 'Please submit your application before the deadline on Friday.', ko: '금요일 마감 전에 지원서를 제출해 주세요.' },
+        { en: 'Students must submit their final essays by the end of this week.', ko: '학생들은 이번 주 말까지 최종 에세이를 제출해야 합니다.' },
       ],
     }
   ),
@@ -819,7 +819,7 @@ export const vocabBatch62: VocabItem[] = [
       ],
     }
   ),
-  word('substantial', '실체의', 10, 'adjective',
+  word('substantial', '상당한', 10, 'adjective',
     ['대표적인', '기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인', '불안정한', '효율적인', '비효율적인'],
     tips({
       etymology: '라틴어 \'substantia\'에서 유래하여 \'아래에 서 있는 것\', 즉 사물의 본질이나 실체를 의미하게 되었습니다.',

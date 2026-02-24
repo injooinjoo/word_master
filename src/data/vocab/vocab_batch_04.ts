@@ -73,8 +73,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['fall', 'harvest time', 'twilight of the year'],
       antonyms: ['spring', 'summer', 'winter'],
       exampleSentences: [
-        { en: 'The air becomes crisp and cool as the year transitions into this season.', ko: '한 해가 이 계절로 넘어가면서 공기가 상쾌하고 시원해집니다.' },
-        { en: 'Farmers are busy gathering their crops during the late months of the year.', ko: '농부들은 연말의 이 시기 동안 농작물을 거두느라 바쁩니다.' },
+        { en: 'The leaves turn red and gold in autumn.', ko: '가을에는 나뭇잎이 빨갛고 금빛으로 변합니다.' },
+        { en: 'Farmers are busy gathering their crops in autumn.', ko: '농부들은 가을에 농작물을 거두느라 바쁩니다.' },
       ],
     }
   ),
@@ -111,8 +111,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['blimp', 'aerostat', 'inflatable'],
       antonyms: ['anchor', 'weight', 'stone'],
       exampleSentences: [
-        { en: 'The child released the colorful object into the sky.', ko: '아이는 알록달록한 풍선을 하늘로 날려 보냈다.' },
-        { en: 'We used dozens of red and white items to decorate the hall for the party.', ko: '우리는 파티를 위해 홀을 장식하려고 수십 개의 빨간색과 흰색 풍선을 사용했다.' },
+        { en: 'The child released the colorful balloon into the sky.', ko: '아이는 알록달록한 풍선을 하늘로 날려 보냈다.' },
+        { en: 'We used dozens of red and white balloons to decorate the hall for the party.', ko: '우리는 파티를 위해 홀을 장식하려고 수십 개의 빨간색과 흰색 풍선을 사용했다.' },
       ],
     }
   ),
@@ -130,8 +130,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['combat', 'conflict', 'clash'],
       antonyms: ['peace', 'truce', 'harmony'],
       exampleSentences: [
-        { en: 'The soldiers prepared themselves for the upcoming struggle on the field.', ko: '군인들은 들판에서 벌어질 다가오는 전투를 준비했다.' },
-        { en: 'She won her long personal fight against the severe illness.', ko: '그녀는 중병에 맞선 긴 개인적인 싸움에서 승리했다.' },
+        { en: 'The soldiers prepared themselves for the upcoming battle.', ko: '군인들은 다가오는 전투를 준비했다.' },
+        { en: 'She won her long battle against the severe illness.', ko: '그녀는 중병에 맞선 긴 싸움에서 승리했다.' },
       ],
     }
   ),
@@ -149,8 +149,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['strap', 'band', 'girdle'],
       antonyms: ['necklace', 'bracelet', 'headband'],
       exampleSentences: [
-        { en: 'He tightened his leather strap to keep his trousers from falling.', ko: '그는 바지가 흘러내리지 않도록 가죽 벨트를 조였다.' },
-        { en: 'The dress comes with a matching fabric band for the waist.', ko: '그 드레스에는 허리에 매는 같은 재질의 천 벨트가 포함되어 있다.' },
+        { en: 'He tightened his leather belt to keep his trousers from falling.', ko: '그는 바지가 흘러내리지 않도록 가죽 벨트를 조였다.' },
+        { en: 'The dress comes with a matching belt for the waist.', ko: '그 드레스에는 허리에 매는 같은 재질의 벨트가 포함되어 있다.' },
       ],
     }
   ),
@@ -206,8 +206,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['sightless', 'unseeing', 'visionless'],
       antonyms: ['sighted', 'seeing', 'observant'],
       exampleSentences: [
-        { en: 'He has been unable to see since birth and uses a guide dog.', ko: '그는 태어날 때부터 앞을 볼 수 없었으며 안내견을 동반합니다.' },
-        { en: 'The bright light momentarily made me unable to see anything.', ko: '밝은 빛 때문에 순간적으로 아무것도 볼 수 없었습니다.' },
+        { en: 'He has been blind since birth and uses a guide dog.', ko: '그는 태어날 때부터 시각장애인이며 안내견을 동반합니다.' },
+        { en: 'The bright light momentarily made me blind.', ko: '밝은 빛 때문에 순간적으로 눈이 멀었습니다.' },
       ],
     }
   ),
@@ -263,8 +263,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['dish', 'basin', 'vessel'],
       antonyms: ['plate', 'tray', 'platter'],
       exampleSentences: [
-        { en: 'She ate cereal from a deep ceramic container.', ko: '그녀는 깊은 도자기 그릇에 시리얼을 담아 먹었다.' },
-        { en: 'He poured the hot soup into a large wooden object.', ko: '그는 뜨거운 수프를 커다란 나무 그릇에 부었다.' },
+        { en: 'She ate cereal from a bowl.', ko: '그녀는 그릇에 시리얼을 담아 먹었다.' },
+        { en: 'He poured the hot soup into a large bowl.', ko: '그는 뜨거운 수프를 커다란 그릇에 부었다.' },
       ],
     }
   ),
@@ -396,8 +396,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['peaceful', 'tranquil', 'serene'],
       antonyms: ['excited', 'stormy', 'agitated'],
       exampleSentences: [
-        { en: 'Stay relaxed and keep your composure.', ko: '침착함을 유지하고 안정을 취하세요.' },
-        { en: 'The sea was peaceful and still this morning.', ko: '오늘 아침 바다는 잔잔했다.' },
+        { en: 'Stay calm and keep your composure.', ko: '침착함을 유지하고 안정을 취하세요.' },
+        { en: 'The sea was calm and still this morning.', ko: '오늘 아침 바다는 잔잔했다.' },
       ],
     }
   ),
@@ -434,8 +434,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['leader', 'commander', 'skipper'],
       antonyms: ['follower', 'crew', 'subordinate'],
       exampleSentences: [
-        { en: 'The officer gave orders to the crew to prepare for the storm.', ko: '그 지휘관은 선원들에게 폭풍에 대비하라는 명령을 내렸다.' },
-        { en: 'She was chosen as the leader of the national soccer team.', ko: '그녀는 축구 국가대표팀의 주장으로 선발되었다.' },
+        { en: 'The captain gave orders to the crew to prepare for the storm.', ko: '선장은 선원들에게 폭풍에 대비하라는 명령을 내렸다.' },
+        { en: 'She was chosen as the captain of the national soccer team.', ko: '그녀는 축구 국가대표팀의 주장으로 선발되었다.' },
       ],
     }
   ),
@@ -491,8 +491,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['cavern', 'grotto', 'hollow'],
       antonyms: ['mountain', 'summit', 'peak'],
       exampleSentences: [
-        { en: 'The explorers used flashlights to see inside the dark area under the hill.', ko: '탐험가들은 언덕 아래 어두운 공간 내부를 보기 위해 손전등을 사용했다.' },
-        { en: 'They discovered ancient paintings on the stone walls deep underground.', ko: '그들은 지하 깊은 곳의 돌벽에서 고대 벽화를 발견했다.' },
+        { en: 'The explorers used flashlights to see inside the dark cave.', ko: '탐험가들은 어두운 동굴 내부를 보기 위해 손전등을 사용했다.' },
+        { en: 'They discovered ancient paintings on the walls of the cave.', ko: '그들은 동굴 벽에서 고대 벽화를 발견했다.' },
       ],
     }
   ),
@@ -681,8 +681,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['timepiece', 'chronometer', 'ticker'],
       antonyms: ['timelessness', 'eternity', 'infinity'],
       exampleSentences: [
-        { en: 'The old grandfather timepiece in the hallway chimed every hour.', ko: '복도에 있는 오래된 괘종시계가 매 시간 종을 울렸다.' },
-        { en: 'I looked at the device on the wall and realized I was going to be late.', ko: '벽에 걸린 장치를 보고 내가 늦을 것이라는 걸 깨달았다.' },
+        { en: 'The old grandfather clock in the hallway chimed every hour.', ko: '복도에 있는 오래된 괘종시계가 매 시간 종을 울렸다.' },
+        { en: 'I looked at the clock on the wall and realized I was going to be late.', ko: '벽에 걸린 시계를 보고 내가 늦을 것이라는 걸 깨달았다.' },
       ],
     }
   ),
@@ -738,8 +738,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['change', 'specie', 'token'],
       antonyms: ['bill', 'note', 'check'],
       exampleSentences: [
-        { en: 'I found a rare silver piece while walking in the park.', ko: '공원을 걷다가 희귀한 은색 동전을 발견했다.' },
-        { en: 'He flipped a metal disk to decide who would go first in the game.', ko: '그는 누가 게임을 먼저 할지 정하기 위해 동전을 던졌다.' },
+        { en: 'I found a rare silver coin while walking in the park.', ko: '공원을 걷다가 희귀한 은색 동전을 발견했다.' },
+        { en: 'He flipped a coin to decide who would go first in the game.', ko: '그는 누가 게임을 먼저 할지 정하기 위해 동전을 던졌다.' },
       ],
     }
   ),
@@ -833,8 +833,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['collision', 'impact', 'smash'],
       antonyms: ['avoidance', 'near-miss', 'safety'],
       exampleSentences: [
-        { en: 'The sound of a loud noise came from the kitchen after the plate fell.', ko: '접시가 떨어진 후 부엌에서 무언가 크게 부서지는 소리가 났다.' },
-        { en: 'Luckily, no one was hurt in the car accident on the highway.', ko: '다행히 고속도로에서 발생한 자동차 충돌 사고에서 다친 사람은 없었다.' },
+        { en: 'We heard a loud crash from the kitchen after the plate fell.', ko: '접시가 떨어진 후 부엌에서 크게 부서지는 소리가 났다.' },
+        { en: 'Luckily, no one was hurt in the car crash on the highway.', ko: '다행히 고속도로에서 발생한 자동차 충돌 사고에서 다친 사람은 없었다.' },
       ],
     }
   ),
@@ -947,8 +947,8 @@ export const vocabBatch04: VocabItem[] = [
       synonyms: ['drape', 'blind', 'shutter'],
       antonyms: ['exposure', 'opening', 'unveiling'],
       exampleSentences: [
-        { en: 'She pulled the fabric shut to keep the sunlight out of the bedroom.', ko: '그녀는 침실에 햇빛이 들어오지 않도록 천을 쳐서 가렸다.' },
-        { en: 'The heavy velvet barrier rose, signaling the start of the opera.', ko: '두꺼운 벨벳 막이 올라가며 오페라의 시작을 알렸다.' },
+        { en: 'She pulled the curtain shut to keep the sunlight out of the bedroom.', ko: '그녀는 침실에 햇빛이 들어오지 않도록 커튼을 쳤다.' },
+        { en: 'The heavy velvet curtain rose, signaling the start of the opera.', ko: '두꺼운 벨벳 커튼이 올라가며 오페라의 시작을 알렸다.' },
       ],
     }
   ),

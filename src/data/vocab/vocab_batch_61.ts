@@ -259,31 +259,31 @@ export const vocabBatch61: VocabItem[] = [
       synonymAntonym: '무언가를 쏟는 것은 leak라고 하며, 반대로 쏟아지지 않게 잘 담고 있는 것은 contain이라고 합니다.',
     }),
     {
-      definition: 'an instance of a liquid or substance accidentally flowing over the edge of its container',
-      synonyms: ['leakage', 'overflow', 'spillage'],
-      antonyms: ['collection', 'containment', 'retention'],
+      definition: 'To cause or allow liquid to flow over the edge of its container accidentally.',
+      synonyms: ['overflow', 'slosh', 'splatter'],
+      antonyms: ['contain', 'hold', 'collect'],
       exampleSentences: [
-        { en: 'The environmental team worked quickly to clean up the massive oil leakage in the ocean.', ko: '환경 팀은 바다의 거대한 기름 유출 사고를 수습하기 위해 빠르게 움직였습니다.' },
-        { en: 'A small coffee stain remained on the carpet after the accidental mess this morning.', ko: '오늘 아침 실수로 쏟은 것 때문에 카펫에 작은 커피 얼룩이 남았습니다.' },
+        { en: 'Be careful not to spill your coffee on the keyboard while working.', ko: '작업하는 동안 키보드에 커피를 엎지르지 않도록 조심하세요.' },
+        { en: 'The child accidentally spilled milk all over the kitchen table.', ko: '아이가 실수로 주방 테이블 전체에 우유를 엎질렀습니다.' },
       ],
     }
   ),
-  word('spin', '잣다', 5, 'verb',
-    ['직조하다', '바느질하다', '뜨개질하다', '자수하다', '염색하다', '다듬다', '수선하다', '재단하다', '누비다', '꼬다'],
+  word('spin', '회전하다', 5, 'verb',
+    ['멈추다', '정지하다', '고정하다', '늦추다', '걷다', '눕다', '쉬다', '기다리다', '서다', '앉다'],
     tips({
-      etymology: '고대 영어 spinnan에서 유래하여 실을 뽑아내기 위해 회전시키는 동작을 의미합니다.',
-      visual: '물레가 빙글빙글 돌아가며 뭉쳐있던 양털이 가느다란 실로 변하는 모습을 상상해보세요.',
-      soundAlike: '스핀(spin)하면 피겨 스케이팅의 회전이 떠오르듯, 회전력을 이용해 실을 뽑는 과정입니다.',
-      context: '전통적인 가내수공업이나 섬유 산업에서 원료를 실로 만드는 과정을 설명할 때 주로 쓰입니다.',
-      synonymAntonym: '실을 만드는 weave와 비슷해 보이지만, spin은 실 자체를 만드는 단계이고 weave는 그 실로 천을 짜는 단계입니다.',
+      etymology: '고대 영어 spinnan에서 유래하여 빙글빙글 돌아가는 동작을 의미합니다.',
+      visual: '피겨 스케이팅 선수가 빙판 위에서 빙글빙글 빠르게 회전하는 모습을 상상해보세요.',
+      soundAlike: '스핀(spin)하면 피겨 스케이팅의 회전이 바로 떠오릅니다. 축을 중심으로 빠르게 도는 동작입니다.',
+      context: '세탁기의 탈수 과정, 팽이 놀이, 피겨 스케이팅 등 빠르게 회전하는 모든 상황에서 쓰입니다.',
+      synonymAntonym: '빠르게 도는 것을 뜻하는 rotate, whirl과 비슷하며, 멈추는 것을 뜻하는 stop과 반대됩니다.',
     }),
     {
-      definition: 'The process or action of twisting fibers together to form thread or yarn.',
-      synonyms: ['twisting', 'whirling', 'rotation'],
-      antonyms: ['unwinding', 'untwisting', 'stagnation'],
+      definition: 'To turn or cause to turn around a central point repeatedly and quickly.',
+      synonyms: ['rotate', 'whirl', 'twirl'],
+      antonyms: ['stop', 'halt', 'stand still'],
       exampleSentences: [
-        { en: 'The elderly woman used a wooden wheel to produce fine yarn from raw wool.', ko: '그 노파는 가공되지 않은 양털로 고운 실을 잣기 위해 나무 물레를 사용했습니다.' },
-        { en: 'Historical records show that the production of silk involved a complex method of drawing out fibers.', ko: '역사적 기록에 따르면 실크 생산에는 섬유를 뽑아 실을 잣는 복잡한 방법이 포함되었습니다.' },
+        { en: 'The figure skater began to spin faster and faster on the ice.', ko: '피겨 스케이팅 선수가 빙판 위에서 점점 더 빠르게 회전하기 시작했습니다.' },
+        { en: 'The washing machine started to spin rapidly during the final cycle.', ko: '세탁기가 마지막 탈수 과정에서 빠르게 회전하기 시작했습니다.' },
       ],
     }
   ),
@@ -316,12 +316,12 @@ export const vocabBatch61: VocabItem[] = [
       synonymAntonym: '침을 뜻하는 saliva와 유사하지만, 뱉는 행위 자체에 집중하며 건조함을 뜻하는 dryness와 대비됩니다.',
     }),
     {
-      definition: 'The liquid produced in the mouth to help with swallowing and digestion.',
-      synonyms: ['saliva', 'spittle', 'drool'],
-      antonyms: ['dryness', 'dehydration', 'aridity'],
+      definition: 'To forcefully eject saliva or another substance from the mouth.',
+      synonyms: ['expectorate', 'spew', 'discharge'],
+      antonyms: ['swallow', 'ingest', 'absorb'],
       exampleSentences: [
-        { en: 'The DNA test required a small sample of his saliva and some cells from his cheek.', ko: 'DNA 검사를 위해 그의 침 샘플과 볼 안쪽의 세포가 약간 필요했습니다.' },
-        { en: 'A mixture of dust and moisture formed a thick layer on the old window.', ko: '먼지와 수분이 섞여 오래된 창문 위에 두꺼운 층을 형성했습니다.' },
+        { en: 'The runner paused to spit on the ground before continuing the race.', ko: '달리기 선수는 경주를 계속하기 전에 잠시 멈춰 바닥에 침을 뱉었습니다.' },
+        { en: 'The child tasted the bitter medicine and immediately tried to spit it out.', ko: '아이는 쓴 약을 맛보자마자 즉시 뱉어내려고 했습니다.' },
       ],
     }
   ),
@@ -354,12 +354,12 @@ export const vocabBatch61: VocabItem[] = [
       synonymAntonym: 'spatter와 유사하며, 정지 상태를 뜻하는 stillness와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'the sound or action of a liquid hitting a surface or falling in drops',
+      definition: 'To cause liquid to fly about in drops or scatter upon impact with a surface.',
       synonyms: ['spatter', 'splatter', 'spray'],
-      antonyms: ['stillness', 'dryness', 'drought'],
+      antonyms: ['dry', 'absorb', 'collect'],
       exampleSentences: [
-        { en: 'The kids made a huge mess with a loud splash in the swimming pool.', ko: '아이들이 수영장에서 커다란 물보라를 일으키며 요란하게 물을 튀겼다.' },
-        { en: 'A few drops of mud left a dark splash on her white skirt.', ko: '진흙 몇 방울이 그녀의 하얀 치마에 어두운 얼룩을 남겼다.' },
+        { en: 'The children love to splash water at each other in the swimming pool.', ko: '아이들은 수영장에서 서로에게 물을 튀기는 것을 좋아합니다.' },
+        { en: 'A passing car splashed muddy water all over the pedestrians on the sidewalk.', ko: '지나가던 차가 보도의 보행자들에게 진흙탕 물을 튀겼습니다.' },
       ],
     }
   ),
@@ -373,12 +373,12 @@ export const vocabBatch61: VocabItem[] = [
       synonymAntonym: '나누는 것은 division, 하나로 합치는 것은 unification이라고 합니다.',
     }),
     {
-      definition: 'A tear, crack, or fissure caused by separation into two or more parts.',
-      synonyms: ['crack', 'fissure', 'division'],
-      antonyms: ['union', 'junction', 'closure'],
+      definition: 'To break or cause to break forcibly into parts, especially into halves or along a natural line.',
+      synonyms: ['divide', 'cleave', 'sever'],
+      antonyms: ['unite', 'merge', 'combine'],
       exampleSentences: [
-        { en: 'The sudden earthquake caused a wide crack in the ground.', ko: '갑작스러운 지진으로 인해 지면에 넓은 균열이 생겼습니다.' },
-        { en: 'There was a clear division within the political party regarding the new tax law.', ko: '새로운 세법을 두고 정당 내부에 명확한 분열이 있었습니다.' },
+        { en: 'He used an axe to split the firewood into smaller pieces for the campfire.', ko: '그는 캠프파이어를 위해 도끼로 장작을 작은 조각으로 쪼갰습니다.' },
+        { en: 'The couple decided to split the bill equally at the restaurant.', ko: '커플은 식당에서 계산서를 균등하게 나누기로 결정했습니다.' },
       ],
     }
   ),
@@ -534,22 +534,22 @@ export const vocabBatch61: VocabItem[] = [
       ],
     }
   ),
-  word('stack', '낟가리', 10, 'noun',
-    ['더미', '상자', '기둥', '울타리', '창고', '바구니', '그물', '선반', '자루', '수레'],
+  word('stack', '더미', 10, 'noun',
+    ['상자', '기둥', '울타리', '창고', '바구니', '그물', '선반', '자루', '수레', '가방'],
     tips({
-      etymology: '고대 노르웨이어 \'stakkr\'에서 유래하여 건초나 곡식을 쌓아 올린 커다란 덩어리를 의미합니다.',
-      visual: '들판에 볏가리나 건초더미가 원뿔 모양으로 높게 쌓여 있는 시골 풍경을 상상해 보세요.',
+      etymology: '고대 노르웨이어 \'stakkr\'에서 유래하여 물건을 차곡차곡 쌓아 올린 더미를 의미합니다.',
+      visual: '책상 위에 책이 높이 차곡차곡 쌓여 있는 모습을 상상해 보세요.',
       soundAlike: '\'스택\'은 \'쓱 턱\' 하고 물건을 차곡차곡 쌓아 올리는 소리와 비슷하게 들립니다.',
-      context: '주로 농경지에서 수확한 곡식이나 짚을 비에 젖지 않게 쌓아둔 더미를 가리킬 때 사용합니다.',
-      synonymAntonym: '무더기를 뜻하는 pile과 비슷하지만, 낟가리는 더 정돈된 형태인 경우가 많으며 흩어짐을 뜻하는 scatter와 반대됩니다.',
+      context: '책, 접시, 서류 등 물건을 겹겹이 쌓아 올린 더미를 가리킬 때 사용합니다.',
+      synonymAntonym: '무더기를 뜻하는 pile과 비슷하며, 흩어짐을 뜻하는 scatter와 반대됩니다.',
     }),
     {
-      definition: 'A large, neatly arranged pile of hay, straw, or grain, typically shaped like a cone or pyramid for storage in a field.',
-      synonyms: ['hayrick', 'mound', 'sheaf'],
+      definition: 'A neat pile of objects arranged one on top of another.',
+      synonyms: ['pile', 'heap', 'mound'],
       antonyms: ['scattering', 'disarray', 'fragment'],
       exampleSentences: [
-        { en: 'Farmers worked until sunset to complete the massive hay stack before the rain began.', ko: '농부들은 비가 내리기 전에 거대한 건초 낟가리를 완성하기 위해 일몰 때까지 일했습니다.' },
-        { en: 'Golden wheat was gathered into a tall stack in the middle of the harvested field.', ko: '황금빛 밀이 수확이 끝난 들판 한가운데에 높은 낟가리로 모여 있었습니다.' },
+        { en: 'There was a tall stack of books on his desk that he needed to read.', ko: '그의 책상 위에 읽어야 할 책 더미가 높이 쌓여 있었습니다.' },
+        { en: 'She placed the clean plates in a neat stack inside the cupboard.', ko: '그녀는 깨끗한 접시들을 찬장 안에 깔끔한 더미로 정리했습니다.' },
       ],
     }
   ),
@@ -582,12 +582,12 @@ export const vocabBatch61: VocabItem[] = [
       synonymAntonym: '깨끗한 상태인 purity와 반대되며, 비슷한 느낌의 mark나 spot과 함께 묶어서 외우세요.',
     }),
     {
-      definition: 'a colored patch or dirty mark that is difficult to remove from a surface',
-      synonyms: ['blemish', 'blot', 'discoloration'],
-      antonyms: ['cleanliness', 'purity', 'perfection'],
+      definition: 'To mark or discolor something with a substance that is difficult to remove.',
+      synonyms: ['discolor', 'blemish', 'tarnish'],
+      antonyms: ['clean', 'purify', 'bleach'],
       exampleSentences: [
-        { en: 'The spilled coffee left a dark mark on the white carpet.', ko: '쏟아진 커피가 흰 카펫에 어두운 얼룩을 남겼다.' },
-        { en: 'The scandal was a permanent blot on the politician\'s reputation.', ko: '그 스캔들은 그 정치인의 명성에 영구적인 오점을 남겼다.' },
+        { en: 'Red wine can easily stain a white tablecloth if not cleaned immediately.', ko: '레드 와인은 즉시 닦지 않으면 흰 식탁보를 쉽게 더럽힐 수 있습니다.' },
+        { en: 'The scandal threatened to stain the politician\'s reputation permanently.', ko: '그 스캔들은 정치인의 명성을 영구적으로 더럽힐 위험이 있었습니다.' },
       ],
     }
   ),
@@ -630,21 +630,21 @@ export const vocabBatch61: VocabItem[] = [
     }
   ),
   word('stand', '서다', 1, 'verb',
-    ['의자', '테이블', '바닥', '천장', '벽면', '창문', '계단', '복도', '입구', '출구'],
+    ['앉다', '눕다', '달리다', '걷다', '뛰다', '기다리다', '먹다', '자다', '읽다', '쓰다'],
     tips({
       etymology: '고대 영어 \'standan\'에서 유래하여 \'고정된 위치에 똑바로 있다\'는 의미를 가집니다.',
-      visual: '관중석이나 물건을 올려두는 받침대처럼 무언가가 단단히 고정되어 서 있는 모습을 상상하세요.',
+      visual: '버스 정류장에서 두 발로 똑바로 서서 버스를 기다리는 사람의 모습을 상상하세요.',
       soundAlike: '스탠드 조명을 떠올려 보세요. 책상 위에 세워두고 사용하는 전등을 우리는 스탠드라고 부릅니다.',
-      context: '명사로 쓰일 때 판매대나 가판대, 혹은 경기장의 관중석을 의미하는 경우가 많습니다.',
-      synonymAntonym: '무언가를 지지하는 base와 비슷하며, 바닥을 뜻하는 floor와는 대조적입니다.',
+      context: '물리적으로 서 있는 자세뿐만 아니라 특정 입장을 취하거나 참을 수 있다는 의미로도 쓰입니다.',
+      synonymAntonym: 'rise(일어서다)와 비슷하며, sit(앉다)과 반대되는 개념입니다.',
     }),
     {
-      definition: 'A small shop or stall where goods are sold, or a structure used to support or hold something upright.',
-      synonyms: ['stall', 'booth', 'rack'],
-      antonyms: ['void', 'gap', 'hole'],
+      definition: 'To be in an upright position on one\'s feet, or to rise to an upright position.',
+      synonyms: ['rise', 'get up', 'be upright'],
+      antonyms: ['sit', 'lie', 'recline'],
       exampleSentences: [
-        { en: 'The local farmer sells fresh vegetables at a small roadside stand every morning.', ko: '현지 농부는 매일 아침 작은 길가 가판대에서 신선한 채소를 팝니다.' },
-        { en: 'Please place your wet umbrella in the metal stand near the entrance.', ko: '젖은 우산은 입구 근처에 있는 금속 받침대에 놓아 주세요.' },
+        { en: 'Please stand when the judge enters the courtroom.', ko: '판사가 법정에 들어올 때 일어서 주세요.' },
+        { en: 'She had to stand in line for over an hour to buy concert tickets.', ko: '그녀는 콘서트 티켓을 사기 위해 한 시간 넘게 줄을 서야 했습니다.' },
       ],
     }
   ),
@@ -763,21 +763,21 @@ export const vocabBatch61: VocabItem[] = [
     }
   ),
   word('statistic', '통계', 9, 'noun',
-    ['효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한', '적절한', '부적절한', '긍정적인', '부정적인'],
+    ['이론', '가설', '의견', '추측', '감상', '소문', '직감', '전설', '인상', '편견'],
     tips({
       etymology: '국가를 뜻하는 state에서 유래하여, 국가 운영에 필요한 수치 자료를 모으는 것에서 시작되었습니다.',
       visual: '복잡한 막대그래프와 꺾은선그래프가 가득한 보고서 페이지를 상상해 보세요.',
       soundAlike: '스태티스틱(statistic) - \'상태(state)를 틱(tic) 하고 찍어낸 수치\'라고 연상해 보세요.',
-      context: '뉴스에서 설문 조사 결과나 경제 성장률을 발표할 때 자주 등장하는 형용사적 표현입니다.',
-      synonymAntonym: '데이터에 기반한 numerical과 비슷하며, 주관적인 감정을 뜻하는 subjective와는 반대됩니다.',
+      context: '뉴스에서 설문 조사 결과나 경제 성장률을 발표할 때 자주 등장하는 단어입니다.',
+      synonymAntonym: '데이터를 뜻하는 data와 비슷하며, 주관적 의견을 뜻하는 opinion과는 반대됩니다.',
     }),
     {
-      definition: 'relating to the collection, analysis, and interpretation of numerical data',
-      synonyms: ['numerical', 'mathematical', 'quantitative'],
-      antonyms: ['qualitative', 'subjective', 'anecdotal'],
+      definition: 'A fact or piece of data obtained from a study of a large quantity of numerical information.',
+      synonyms: ['data', 'figure', 'number'],
+      antonyms: ['opinion', 'guess', 'conjecture'],
       exampleSentences: [
-        { en: 'The researchers used a complex model to analyze the data and find a significant pattern.', ko: '연구원들은 데이터를 분석하고 중요한 패턴을 찾기 위해 복잡한 통계 모델을 사용했습니다.' },
-        { en: 'Evidence shows that the new policy has led to a measurable improvement in public health.', ko: '통계적 증거는 새로운 정책이 공중 보건의 측정 가능한 개선으로 이어졌음을 보여줍니다.' },
+        { en: 'The most alarming statistic shows that unemployment has risen by five percent.', ko: '가장 놀라운 통계는 실업률이 5퍼센트 증가했다는 것을 보여줍니다.' },
+        { en: 'Every statistic in the report was carefully verified before publication.', ko: '보고서의 모든 통계 자료는 출판 전에 신중하게 검증되었습니다.' },
       ],
     }
   ),

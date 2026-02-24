@@ -192,7 +192,7 @@ export const vocabBatch11: VocabItem[] = [
       ],
     }
   ),
-  word('Cultivate', '배양하다', 5, 'verb',
+  word('Cultivate', '경작하다', 5, 'verb',
     ['방치하다', '황폐화하다', '무시하다', '파괴하다', '버리다', '소홀히 하다', '해고하다', '잘라내다', '제거하다', '방임하다'],
     tips({
       etymology: '라틴어 colere(경작하다)에서 유래하여 땅을 일구고 식물을 정성껏 기르는 행위를 뜻합니다.',
@@ -244,8 +244,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['legal tender', 'medium of exchange', 'coinage'],
       antonyms: ['barter', 'debt', 'liability'],
       exampleSentences: [
-        { en: 'The euro is the official medium of exchange in many European countries.', ko: '유로는 많은 유럽 국가의 공식 통화이다.' },
-        { en: 'Travelers often exchange their home money for local units of payment at the airport.', ko: '여행객들은 종종 공항에서 자국 화폐를 현지 통화로 환전한다.' },
+        { en: 'The euro is the official currency in many European countries.', ko: '유로는 많은 유럽 국가의 공식 통화이다.' },
+        { en: 'Travelers often exchange their home currency for the local currency at the airport.', ko: '여행객들은 종종 공항에서 자국 통화를 현지 통화로 환전한다.' },
       ],
     }
   ),
@@ -282,8 +282,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['repository', 'archive', 'bank'],
       antonyms: ['disarray', 'void', 'scatter'],
       exampleSentences: [
-        { en: 'The system allows users to search the entire electronic collection of records efficiently.', ko: '이 시스템을 통해 사용자는 전체 전자 기록 집합체를 효율적으로 검색할 수 있습니다.' },
-        { en: 'Security measures were improved to protect the sensitive information stored in the central bank.', ko: '중앙 저장소에 저장된 민감한 정보를 보호하기 위해 보안 조치가 강화되었습니다.' },
+        { en: 'The system allows users to search the entire database efficiently.', ko: '이 시스템을 통해 사용자는 전체 데이터베이스를 효율적으로 검색할 수 있습니다.' },
+        { en: 'Security measures were improved to protect the sensitive information stored in the database.', ko: '데이터베이스에 저장된 민감한 정보를 보호하기 위해 보안 조치가 강화되었습니다.' },
       ],
     }
   ),
@@ -358,8 +358,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['intentional', 'calculated', 'thoughtful'],
       antonyms: ['accidental', 'unintentional', 'impulsive'],
       exampleSentences: [
-        { en: 'It was a conscious attempt to mislead the public through a planned strategy.', ko: '그것은 계획된 전략을 통해 대중을 오도하려는 의도적인 시도였다.' },
-        { en: 'She spoke in a slow and careful manner to emphasize her point clearly.', ko: '그녀는 요점을 명확히 강조하기 위해 느리고 신중한 태도로 말했다.' },
+        { en: 'It was a deliberate attempt to mislead the public through a planned strategy.', ko: '그것은 계획된 전략을 통해 대중을 오도하려는 의도적인 시도였다.' },
+        { en: 'She spoke in a deliberate manner to emphasize her point clearly.', ko: '그녀는 요점을 명확히 강조하기 위해 느리고 신중한 태도로 말했다.' },
       ],
     }
   ),
@@ -377,8 +377,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['republic', 'self-government', 'autonomy'],
       antonyms: ['dictatorship', 'tyranny', 'autocracy'],
       exampleSentences: [
-        { en: 'Freedom of speech is a fundamental principle of this political system.', ko: '표현의 자유는 이 정치 체제의 근본 원칙이다.' },
-        { en: 'The country is making a slow transition toward a more representative form of rule.', ko: '그 나라는 더 대의적인 통치 형태를 향해 천천히 전환하고 있다.' },
+        { en: 'Freedom of speech is a fundamental principle of democracy.', ko: '표현의 자유는 민주주의의 근본 원칙이다.' },
+        { en: 'The country is making a slow transition toward democracy.', ko: '그 나라는 민주주의를 향해 천천히 전환하고 있다.' },
       ],
     }
   ),
@@ -396,8 +396,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['thick', 'compact', 'crowded'],
       antonyms: ['sparse', 'thin', 'scattered'],
       exampleSentences: [
-        { en: 'The hikers got lost in the forest.', ko: '등산객들은 울창한 숲속에서 길을 잃었다.' },
-        { en: 'Traffic was slow due to the fog on the highway.', ko: '고속도로의 짙은 안개 때문에 교통이 정체되었다.' },
+        { en: 'The hikers got lost in the dense forest.', ko: '등산객들은 울창한 숲속에서 길을 잃었다.' },
+        { en: 'Traffic was slow due to the dense fog on the highway.', ko: '고속도로의 짙은 안개 때문에 교통이 정체되었다.' },
       ],
     }
   ),
@@ -415,8 +415,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['portray', 'illustrate', 'represent'],
       antonyms: ['conceal', 'hide', 'suppress'],
       exampleSentences: [
-        { en: 'The movie tries to portray the harsh reality of war.', ko: '그 영화는 전쟁의 가혹한 현실을 묘사하려고 노력한다.' },
-        { en: 'Ancient paintings often illustrate hunting scenes.', ko: '고대 벽화들은 종종 사냥 장면을 그린다.' },
+        { en: 'The movie tries to depict the harsh reality of war.', ko: '그 영화는 전쟁의 가혹한 현실을 묘사하려고 노력한다.' },
+        { en: 'Ancient paintings often depict hunting scenes.', ko: '고대 벽화들은 종종 사냥 장면을 그린다.' },
       ],
     }
   ),
@@ -434,8 +434,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['strip', 'rob', 'divest'],
       antonyms: ['provide', 'supply', 'endow'],
       exampleSentences: [
-        { en: 'You should not yourself of sleep to study.', ko: '공부하기 위해 잠을 자지 못하게 스스로를 혹사해서는 안 된다.' },
-        { en: 'The new law could many people of their basic rights.', ko: '새 법안은 많은 사람들에게서 기본권을 박탈할 수 있다.' },
+        { en: 'You should not deprive yourself of sleep to study.', ko: '공부하기 위해 잠을 자지 못하게 스스로를 혹사해서는 안 된다.' },
+        { en: 'The new law could deprive many people of their basic rights.', ko: '새 법안은 많은 사람들에게서 기본권을 박탈할 수 있다.' },
       ],
     }
   ),
@@ -453,8 +453,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['originate', 'stem', 'descend'],
       antonyms: ['cease', 'terminate', 'finish'],
       exampleSentences: [
-        { en: 'Many English words are shown to originate from Latin and Greek roots.', ko: '많은 영어 단어들이 라틴어와 그리스어 어원에서 유래된 것으로 나타난다.' },
-        { en: 'She manages to obtain great satisfaction from her daily volunteer work.', ko: '그녀는 매일의 봉사 활동을 통해 큰 만족감을 얻는다.' },
+        { en: 'Many English words derive from Latin and Greek roots.', ko: '많은 영어 단어들이 라틴어와 그리스어 어원에서 유래한다.' },
+        { en: 'She derives great satisfaction from her daily volunteer work.', ko: '그녀는 매일의 봉사 활동을 통해 큰 만족감을 얻는다.' },
       ],
     }
   ),
@@ -510,8 +510,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['worsen', 'decline', 'degenerate'],
       antonyms: ['improve', 'ameliorate', 'advance'],
       exampleSentences: [
-        { en: 'The patient\'s condition began to drop and get worse overnight.', ko: '환자의 상태가 밤새 악화되기 시작했습니다.' },
-        { en: 'The air quality in the city continues to get lower due to heavy pollution.', ko: '심각한 오염으로 인해 도시의 공기 질이 계속해서 악화되고 있습니다.' },
+        { en: 'The patient\'s condition began to deteriorate overnight.', ko: '환자의 상태가 밤새 악화되기 시작했습니다.' },
+        { en: 'The air quality in the city continues to deteriorate due to heavy pollution.', ko: '심각한 오염으로 인해 도시의 공기 질이 계속해서 악화되고 있습니다.' },
       ],
     }
   ),
@@ -567,8 +567,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['self-respect', 'honor', 'prestige'],
       antonyms: ['disgrace', 'humiliation', 'lowliness'],
       exampleSentences: [
-        { en: 'She maintained her composure and self-worth throughout the difficult trial.', ko: '그녀는 어려운 재판 내내 평정심과 존엄을 유지했다.' },
-        { en: 'Every human being has the right to live their life with basic respect.', ko: '모든 인간은 기본적인 존엄을 지키며 살아갈 권리가 있다.' },
+        { en: 'She maintained her dignity throughout the difficult trial.', ko: '그녀는 어려운 재판 내내 존엄을 유지했다.' },
+        { en: 'Every human being has the right to live their life with dignity.', ko: '모든 인간은 존엄을 지키며 살아갈 권리가 있다.' },
       ],
     }
   ),
@@ -643,8 +643,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['training', 'self-control', 'drill'],
       antonyms: ['chaos', 'disorder', 'indulgence'],
       exampleSentences: [
-        { en: 'Military training shaped his character through strict adherence to rules.', ko: '엄격한 규칙 준수를 통한 군사 훈련이 그의 성격을 형성했다.' },
-        { en: 'Yoga requires a lot of mental focus and self-regulation.', ko: '요가는 많은 정신적 수양과 자기 통제가 필요하다.' },
+        { en: 'Military discipline shaped his character through strict adherence to rules.', ko: '엄격한 규칙 준수를 통한 군사 훈련이 그의 성격을 형성했다.' },
+        { en: 'Yoga requires a lot of discipline and self-control.', ko: '요가는 많은 수양과 자기 통제가 필요하다.' },
       ],
     }
   ),
@@ -738,8 +738,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['melt', 'liquefy', 'disintegrate'],
       antonyms: ['solidify', 'freeze', 'coagulate'],
       exampleSentences: [
-        { en: 'The tablet will take a few minutes to completely disappear in the glass of water.', ko: '그 알약이 물컵 속에서 완전히 녹는 데 몇 분 정도 걸릴 것이다.' },
-        { en: 'The king decided to end the parliament and call for a new election.', ko: '왕은 의회를 해산하고 새로운 선거를 실시하기로 결정했다.' },
+        { en: 'The tablet will dissolve in a glass of water in a few minutes.', ko: '그 알약이 물컵 속에서 몇 분 안에 녹을 것이다.' },
+        { en: 'The king decided to dissolve the parliament and call for a new election.', ko: '왕은 의회를 해산하고 새로운 선거를 실시하기로 결정했다.' },
       ],
     }
   ),
@@ -795,8 +795,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['falsify', 'warp', 'misrepresent'],
       antonyms: ['clarify', 'preserve', 'rectify'],
       exampleSentences: [
-        { en: 'The media was accused of trying to twist and misrepresent the truth to influence public opinion.', ko: '언론은 여론에 영향을 미치기 위해 진실을 비틀고 왜곡하려 했다는 비난을 받았습니다.' },
-        { en: 'The heavy rain and wind can change the way sound travels and make it seem strange or altered.', ko: '폭우와 바람은 소리가 전달되는 방식을 변화시켜 소리를 이상하게 왜곡할 수 있습니다.' },
+        { en: 'The media was accused of trying to distort the truth to influence public opinion.', ko: '언론은 여론에 영향을 미치기 위해 진실을 왜곡하려 했다는 비난을 받았습니다.' },
+        { en: 'The heavy rain and wind can distort the way sound travels.', ko: '폭우와 바람은 소리가 전달되는 방식을 왜곡할 수 있습니다.' },
       ],
     }
   ),
@@ -890,8 +890,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['contribute', 'bestow', 'grant'],
       antonyms: ['receive', 'take', 'withdraw'],
       exampleSentences: [
-        { en: 'He decided to give away his old clothes to a local charity.', ko: '그는 자신의 헌 옷들을 지역 자선 단체에 기부하기로 결정했다.' },
-        { en: 'Many citizens contributed money to the disaster relief fund after the earthquake.', ko: '지진 이후 많은 시민들이 재난 구호 기금에 돈을 기부했다.' },
+        { en: 'He decided to donate his old clothes to a local charity.', ko: '그는 자신의 헌 옷들을 지역 자선 단체에 기부하기로 결정했다.' },
+        { en: 'Many citizens donated money to the disaster relief fund after the earthquake.', ko: '지진 이후 많은 시민들이 재난 구호 기금에 돈을 기부했다.' },
       ],
     }
   ),
@@ -928,8 +928,8 @@ export const vocabBatch11: VocabItem[] = [
       synonyms: ['reside', 'inhabit', 'occupy'],
       antonyms: ['depart', 'leave', 'vacate'],
       exampleSentences: [
-        { en: 'Many rare species of birds live within these protected forests.', ko: '많은 희귀종 새들이 이 보호림 안에 거주한다.' },
-        { en: 'It is not healthy to think about your past mistakes for too long.', ko: '과거의 실수에 대해 너무 오랫동안 곱씹는 것은 건강에 좋지 않다.' },
+        { en: 'Many rare species of birds dwell within these protected forests.', ko: '많은 희귀종 새들이 이 보호림 안에 거주한다.' },
+        { en: 'It is not healthy to dwell on your past mistakes for too long.', ko: '과거의 실수에 대해 너무 오랫동안 곱씹는 것은 건강에 좋지 않다.' },
       ],
     }
   ),

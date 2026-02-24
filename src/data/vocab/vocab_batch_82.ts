@@ -224,7 +224,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('hairline', '아주 가느다란', 3, 'noun',
+  word('hairline', '아주 가느다란', 3, 'adjective',
     ['형 ous', '형', '명 dis', '명 사람', '명 장소', '명', '명 지역', '동 a, 과거', '명 ship', '형 숫자'],
     tips({
       etymology: 'hairline의 어원 정보는 추후 보강 예정',
@@ -494,7 +494,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('as a rule of thumb', '경험적으로 보아 대개', 3, 'noun',
+  word('as a rule of thumb', '경험적으로 보아 대개', 3, 'adverb',
     ['명', '엄격하게, 심하게', '자발적으로', '모금', '불안정한, 변하기 쉬운', '소비(량), 소모 (consumptive 소모적인)', '적절하게(appropriate 적합한)', '계약 조건', '수신자', '지출, 비용'],
     tips({
       etymology: 'as a rule of thumb의 어원 정보는 추후 보강 예정',
@@ -784,7 +784,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('on the spur of the moment', '충동적으로', 3, 'noun',
+  word('on the spur of the moment', '충동적으로', 3, 'adverb',
     ['굴복시키다, 지배하다', '적당치않는, 곤란한, 불리한', '계획', '외로운', '자유', '거지', '대', '명 사물', '명', '명 사람'],
     tips({
       etymology: 'on the spur of the moment의 어원 정보는 추후 보강 예정',
@@ -794,7 +794,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('consistent with', '~과 일치하는', 3, 'noun',
+  word('consistent with', '~과 일치하는', 3, 'adjective',
     ['동 ate', '형', '부서', '극적으로', '관광 명소', '선호되는, 우선의', '공통으로, 공동으로', '~에 기뻐하다, ~에 만족하다', '잠시 동안', '서약, 맹세'],
     tips({
       etymology: 'consistent with의 어원 정보는 추후 보강 예정',
@@ -844,7 +844,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('tuned to', '~과 일치된', 3, 'noun',
+  word('tuned to', '~과 일치된', 3, 'adjective',
     ['즉각적인', '1. 무수히 많은\n2. 무수한', 'able to be heard', 'to show, reveal', 'a satirical imitation', 'dull, boring', '진지함', '능숙한/적절한', '용감한, 불굴의', '결함이 있는/불완전한'],
     tips({
       etymology: 'tuned to의 어원 정보는 추후 보강 예정',
@@ -1115,7 +1115,7 @@ export const vocabBatch82: VocabItem[] = [
     })
   ),
   word('scenario', '(사건의) 시나리오', 3, 'noun',
-    ['찬성하다, 지지하다, 용인하다, 참다', '칭송, 찬양, 송덕문', '요약하다', '고립시키다', '교리, 주의,원리', '하사핟, (아랫사람에게) 주다', '지식', '결혼', '희극의, 웃기는', '강조하다'],
+    ['찬성하다, 지지하다, 용인하다, 참다', '칭송, 찬양, 송덕문', '요약하다', '고립시키다', '교리, 주의,원리', '하사하다, (아랫사람에게) 주다', '지식', '결혼', '희극의, 웃기는', '강조하다'],
     tips({
       etymology: 'scenario의 어원 정보는 추후 보강 예정',
       visual: 'scenario를 (사건의) 시나리오로 연결해 시각적으로 기억',
@@ -1364,7 +1364,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('owing to', '~때문에', 3, 'noun',
+  word('owing to', '~때문에', 3, 'preposition',
     ['명 사람', '동 ize', '명', '동', '형 un', '형 ble', '사본', '고르게, 균등하게', '평가', '미리, 사전에'],
     tips({
       etymology: 'owing to의 어원 정보는 추후 보강 예정',
@@ -1374,7 +1374,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('with respect to', '~에 관하여', 3, 'noun',
+  word('with respect to', '~에 관하여', 3, 'preposition',
     ['명', '동 un', '명 tion', '형 in', '명 동물', '명 or', '동 ing', '명 사람', '형 ble', '명 탈것'],
     tips({
       etymology: 'with respect to의 어원 정보는 추후 보강 예정',
@@ -1448,9 +1448,9 @@ export const vocabBatch82: VocabItem[] = [
     ['명 사람', '명 음식', '명 ing', '명', '일, 임무, 과제', '소홀히 하다, 무시하다', '만족', '신선함', '우회', '정화시키다'],
     tips({
       etymology: 'exploration의 어원 정보는 추후 보강 예정',
-      visual: 'exploration를 (부당한) 이용, 착취로 연결해 시각적으로 기억',
+      visual: 'exploration를 탐사, 탐험로 연결해 시각적으로 기억',
       soundAlike: 'exploration 발음을 반복해 암기',
-      context: 'use, abuse, misuse',
+      context: 'investigation, examination, search, survey',
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
@@ -1514,7 +1514,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('now and then', '가끔', 3, 'noun',
+  word('now and then', '가끔', 3, 'adverb',
     ['졸리는', '버식하다, 증식시키다', '최고의, 중요한', '1. 세심한, 꼼꼼한\n2. 양심적인', '강조하다', '1. 불친절한\n2. 살기에 부적당한', '코팅, 칠, 입힌 것', '정도를 벗어난', '동질화하다', 'friendly, amiable'],
     tips({
       etymology: 'now and then의 어원 정보는 추후 보강 예정',
@@ -1624,7 +1624,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('given that', '~을 고려하면', 3, 'noun',
+  word('given that', '~을 고려하면', 3, 'conjunction',
     ['형 ous', '동 좋아하다', '형 ic', '명 er', '명', '활발한, 호황의', '적절히', '조심하는, 신중한', '격려하다', '융통성 있는, 다방면의'],
     tips({
       etymology: 'given that의 어원 정보는 추후 보강 예정',
@@ -1714,7 +1714,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('coupled with', '~과 결합된', 3, 'noun',
+  word('coupled with', '~과 결합된', 3, 'preposition',
     ['형 un', '명 un', '형', '마감일, 마감 시간', '(기간 등을)연장한, 장기간에 걸친', '활발한, 호황의', '~후에, 다음의, 다음에 오는', '관광 명소', '호평, 찬사', '조사관, 감독관\n(inspect 검사하다)'],
     tips({
       etymology: 'coupled with의 어원 정보는 추후 보강 예정',
@@ -1835,7 +1835,7 @@ export const vocabBatch82: VocabItem[] = [
     })
   ),
   word('verify', '입증하다', 3, 'verb',
-    ['심한 고통을 주는, 괴롭히는', '다가오는, 임박한 / 솔직한', '(주장) 철회하다 / (믿음) 부정하다', '되돌아 가다', '예절을지키는, (행동) 적절한', '울화, 악의의 [n] spleen', '동시발생의', '설명되지 않는', '자랑하다, 허ㅜㅇ떨다', '재미있는'],
+    ['심한 고통을 주는, 괴롭히는', '다가오는, 임박한 / 솔직한', '(주장) 철회하다 / (믿음) 부정하다', '되돌아 가다', '예절을지키는, (행동) 적절한', '울화, 악의의 [n] spleen', '동시발생의', '설명되지 않는', '자랑하다, 허풍떨다', '재미있는'],
     tips({
       etymology: 'verify의 어원 정보는 추후 보강 예정',
       visual: 'verify를 입증하다로 연결해 시각적으로 기억',
@@ -2034,7 +2034,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('not in consensus with', '(의견이) ~와 일치하지 않는', 3, 'noun',
+  word('not in consensus with', '(의견이) ~와 일치하지 않는', 3, 'adjective',
     ['병약한, 안색이 나쁜', '생산품,제품', '야외의', '친절', '실제로, 참으로', '요즈음, 최근', '관계', '물속의[으로]', '조', '동 요구'],
     tips({
       etymology: 'not in consensus with의 어원 정보는 추후 보강 예정',
@@ -2225,7 +2225,7 @@ export const vocabBatch82: VocabItem[] = [
     })
   ),
   word('aggregation', '집단', 3, 'noun',
-    ['굴복시키다, 지배하다', '가시가 많은 / 어려운, 곤란한', '가치없는 / 정당성 없는, 부당한', '자랑하다, 허ㅜㅇ떨다', '광신도, 열광자 [a] fanatical 광신도적인', '계획', '지루한', '(미래의)언젠가', '벼룩', '원래의, 독창적인'],
+    ['굴복시키다, 지배하다', '가시가 많은 / 어려운, 곤란한', '가치없는 / 정당성 없는, 부당한', '자랑하다, 허풍떨다', '광신도, 열광자 [a] fanatical 광신도적인', '계획', '지루한', '(미래의)언젠가', '벼룩', '원래의, 독창적인'],
     tips({
       etymology: 'aggregation의 어원 정보는 추후 보강 예정',
       visual: 'aggregation를 집단로 연결해 시각적으로 기억',
@@ -2244,7 +2244,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('anyone can see', '누가 봐도 알 수 있듯이', 3, 'noun',
+  word('anyone can see', '누가 봐도 알 수 있듯이', 3, 'adverb',
     ['형 ful', '명 tion', '명 ty', '형 ic', '동 ate', '부 in', '동', '명 신체', '명', '명 or'],
     tips({
       etymology: 'anyone can see의 어원 정보는 추후 보강 예정',
@@ -2494,7 +2494,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('in earnest', '진지하게', 3, 'noun',
+  word('in earnest', '진지하게', 3, 'adverb',
     ['형 ent', '형', '명 tion', '명', '형 able', '동 un', '명 nce', '형 pp', '동 말하다', '명 er'],
     tips({
       etymology: 'in earnest의 어원 정보는 추후 보강 예정',
@@ -2654,7 +2654,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('as a whole', '전체적으로', 3, 'noun',
+  word('as a whole', '전체적으로', 3, 'adverb',
     ['연장하다', '갑자기', 'to voice disapproval', 'very poor, impoverished', 'to scold, criticize', 'a gentle breeze', '(힘들거나 위험한 상황에서도)위축되지 않는', '애지중지하다 / 응석받이로 키우다', '견고한, 확립된', '(연설이) 열정적인/간절한'],
     tips({
       etymology: 'as a whole의 어원 정보는 추후 보강 예정',
@@ -2714,7 +2714,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('provided that', '만약 ~이라면', 3, 'noun',
+  word('provided that', '만약 ~이라면', 3, 'conjunction',
     ['동 과', '명 or', '명 tion', '동 ic', '명 사람', '동', '명 er', '동 ate', '(연주, 연설 등을)즉흥적으로 하다, 즉석에서 만들다.', '우선권, 우선사항'],
     tips({
       etymology: 'provided that의 어원 정보는 추후 보강 예정',
@@ -2784,7 +2784,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('at the urging of', '~의 권고로', 3, 'noun',
+  word('at the urging of', '~의 권고로', 3, 'preposition',
     ['정보에 근거한\n(inform 알리다, 통지하다)', '이동, 이주', '디자이너', '길들이다', '갈망하다', '의무적으로', '1. 불친절한\n2. 살기에 부적당한', '~정도', '드문드문, 밀도가 낮은', '갑자기'],
     tips({
       etymology: 'at the urging of의 어원 정보는 추후 보강 예정',
@@ -2834,7 +2834,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('extracted from', '~에서 뽑아낸', 3, 'noun',
+  word('extracted from', '~에서 뽑아낸', 3, 'adjective',
     ['되찾다', '구부정하게 서있다 / 걷다 / 게으름뱅이, 무능한 사람', '꾸밈, 가장없는, 허세부리지 않는', '다름,차이', '꽉 찬, 붐비는', '스스로 돌볼 수 없는', '밖의, 외부의', '명 ing', '대', '접 관계'],
     tips({
       etymology: 'extracted from의 어원 정보는 추후 보강 예정',
@@ -2934,11 +2934,11 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('rigor', '1. 엄격한\n2. 고초, 어려움', 3, 'noun',
+  word('rigor', '1. 엄격함\n2. 고초, 어려움', 3, 'noun',
     ['형 ble', '형 less', '형', '형 al', '명 ness', '철저하게, 완전히, 대단히', '(연주, 연설 등을)즉흥적으로 하다, 즉석에서 만들다.', '가입자, 구독자', '대략', '복잡한 문제'],
     tips({
       etymology: 'rigor의 어원 정보는 추후 보강 예정',
-      visual: 'rigor를 1. 엄격한\n2. 고초, 어려움로 연결해 시각적으로 기억',
+      visual: 'rigor를 1. 엄격함\n2. 고초, 어려움로 연결해 시각적으로 기억',
       soundAlike: 'rigor 발음을 반복해 암기',
       context: '1. harshness, strictness, rigidness\n2. hardship, adversity',
       synonymAntonym: '동의어/반의어 정보 없음',
@@ -2964,7 +2964,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('lateral', '측면의', 3, 'noun',
+  word('lateral', '측면의', 3, 'adjective',
     ['찬사, 칭찬하는 말', '얇은 직조천', '이기기 어려운, 극복하기 어려운', '모호한, 흐릿한', '대리, 대리인', '단수의 / 유일한 / 뛰어난 / 기묘한, 이상한', '유효성이 증명된/신뢰할 수 있는', '오래된, 고풍스런', '급속히 성장하다, 번성하다', '단정한, 예의바른'],
     tips({
       etymology: 'lateral의 어원 정보는 추후 보강 예정',
@@ -2974,7 +2974,7 @@ export const vocabBatch82: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('forage', '1. (식량 등을) 찾아다니다\n2. 사료, 먹이', 3, 'noun',
+  word('forage', '1. (식량 등을) 찾아다니다\n2. 사료, 먹이', 3, 'verb',
     ['단단히', '연속적인, 끊임없는', '추측하다', '출현', 'extreme sadness, torment', 'to give something over to another’s care', 'limp, not firm or strong', 'to soften in temper', 'hasty, incautious', 'winding'],
     tips({
       etymology: 'forage의 어원 정보는 추후 보강 예정',

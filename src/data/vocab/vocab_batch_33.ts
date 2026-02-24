@@ -54,8 +54,8 @@ export const vocabBatch33: VocabItem[] = [
       synonyms: ['each', 'all', 'entire'],
       antonyms: ['none', 'some', 'individual'],
       exampleSentences: [
-        { en: 'The teacher handed out a new textbook to student in the classroom.', ko: '선생님은 교실에 있는 모든 학생에게 새 교과서를 나누어 주었습니다.' },
-        { en: 'She makes sure to drink a glass of water morning right after waking up.', ko: '그녀는 매일 아침 일어난 직후에 물 한 잔을 꼭 마십니다.' },
+        { en: 'The teacher handed out a new textbook to every student in the classroom.', ko: '선생님은 교실에 있는 모든 학생에게 새 교과서를 나누어 주었습니다.' },
+        { en: 'She makes sure to drink a glass of water every morning right after waking up.', ko: '그녀는 매일 아침 일어난 직후에 물 한 잔을 꼭 마십니다.' },
       ],
     }
   ),

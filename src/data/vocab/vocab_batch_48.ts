@@ -268,22 +268,22 @@ export const vocabBatch48: VocabItem[] = [
       ],
     }
   ),
-  word('office', '임무', 1, 'noun',
+  word('office', '사무실', 1, 'noun',
     ['기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건'],
     tips({
-      etymology: '라틴어 \'officium\'에서 유래했으며, \'opus(일)\'와 \'facere(하다)\'가 합쳐져 \'수행해야 할 일\'이라는 의미를 가집니다.',
-      visual: '제복을 입은 관리나 기사가 왕으로부터 특별한 명령을 하달받는 엄숙한 장면을 상상해 보세요.',
-      soundAlike: '\'어휘(office)를 다하는 것이 나의 임무다\'라고 발음과 연결해 기억하면 쉽습니다.',
-      context: '현대에는 사무실이라는 뜻으로 흔히 쓰이지만, 격식 있는 상황에서는 공적인 직무나 책무를 뜻합니다.',
-      synonymAntonym: 'duty와 유사하며, 무책임이나 방관을 뜻하는 irresponsibility와는 반대되는 개념입니다.',
+      etymology: '라틴어 \'officium\'에서 유래했으며, \'opus(일)\'와 \'facere(하다)\'가 합쳐져 \'일하는 장소\'라는 의미를 가집니다.',
+      visual: '책상과 컴퓨터가 놓인 깔끔한 업무 공간에서 사람들이 일하는 모습을 상상해 보세요.',
+      soundAlike: '\'오피스\'는 우리말에서도 그대로 사용되는 외래어로, 사무실을 뜻합니다.',
+      context: '회사, 정부 기관 등에서 업무를 처리하는 공간을 가리키며, 일상에서 매우 자주 쓰이는 단어입니다.',
+      synonymAntonym: 'workplace와 유사하며, 집이나 야외를 뜻하는 home/outdoors와는 대조되는 개념입니다.',
     }),
     {
-      definition: 'A duty or function assigned to or assumed by someone, especially within a professional or governmental role.',
-      synonyms: ['duty', 'function', 'responsibility'],
-      antonyms: ['leisure', 'irresponsibility', 'unemployment'],
+      definition: 'A room, set of rooms, or building used as a place for commercial, professional, or bureaucratic work.',
+      synonyms: ['workplace', 'bureau', 'headquarters'],
+      antonyms: ['home', 'field', 'outdoors'],
       exampleSentences: [
-        { en: 'The newly elected official took the oath of his new position with great solemnity.', ko: '새로 당선된 관리는 엄숙하게 새로운 직책의 임무를 수행하겠다는 선서를 했습니다.' },
-        { en: 'She performed the various tasks of her administrative role with remarkable efficiency.', ko: '그녀는 자신의 행정적 임무들을 놀라운 효율성으로 수행했습니다.' },
+        { en: 'She goes to the office every morning at nine o\'clock.', ko: '그녀는 매일 아침 9시에 사무실에 갑니다.' },
+        { en: 'The new office building has a beautiful view of the city skyline.', ko: '새 사무실 건물에서는 도시 스카이라인이 아름답게 보입니다.' },
       ],
     }
   ),

@@ -116,7 +116,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('nervous', '신경의', 7, 'adjective',
+  word('nervous', '긴장한', 7, 'adjective',
     ['효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한', '적절한', '부적절한', '긍정적인', '부정적인'],
     tips({
       etymology: '라틴어 \'nervosus\'에서 유래했으며, 원래 \'근육질의\'라는 뜻이었으나 현대에는 \'신경계\'와 관련된 의미로 정착되었습니다.',
@@ -173,22 +173,22 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('network', '그물세공', 6, 'noun',
+  word('network', '네트워크', 6, 'noun',
     ['기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건'],
     tips({
-      etymology: '그물을 뜻하는 net과 일이나 제작물을 뜻하는 work가 합쳐져 실이나 선이 얽힌 형태를 의미합니다.',
-      visual: '어부의 그물이나 레이스 장식처럼 가느다란 선들이 정교하게 교차되어 있는 모습을 상상하세요.',
-      soundAlike: '네트(Net)가 워크(Work) 즉, 일하듯이 촘촘하게 짜여진 모양이라고 기억하면 쉽습니다.',
-      context: '주로 수공예나 섬유 예술에서 실을 엮어 만든 복잡한 무늬를 묘사할 때 사용됩니다.',
-      synonymAntonym: '격자 구조를 뜻하는 mesh와 비슷하며, 아무것도 엮이지 않은 상태인 void와는 반대됩니다.',
+      etymology: '그물을 뜻하는 net과 일이나 구조를 뜻하는 work가 합쳐져 서로 연결된 시스템을 의미합니다.',
+      visual: '전 세계를 연결하는 인터넷 케이블이나 사람들이 서로 연결된 소셜 미디어 구조를 상상하세요.',
+      soundAlike: '네트(Net)가 워크(Work), 즉 그물처럼 연결되어 작동하는 시스템이라고 기억하면 쉽습니다.',
+      context: '컴퓨터 통신망, 방송 네트워크, 인맥 등 서로 연결된 시스템이나 관계를 설명할 때 주로 사용됩니다.',
+      synonymAntonym: '연결된 체계를 뜻하는 system과 비슷하며, 단절이나 고립을 뜻하는 isolation과는 반대됩니다.',
     }),
     {
-      definition: 'A complex, interconnected structure or pattern made of interlacing lines, threads, or wires.',
-      synonyms: ['mesh', 'lattice', 'grid'],
-      antonyms: ['void', 'separation', 'disconnection'],
+      definition: 'A group of interconnected people, organizations, or systems that exchange information or work together.',
+      synonyms: ['system', 'web', 'grid'],
+      antonyms: ['isolation', 'separation', 'disconnection'],
       exampleSentences: [
-        { en: 'The delicate lace veil featured a complex network of silver threads.', ko: '섬세한 레이스 베일은 은사로 된 복잡한 그물세공이 특징이었습니다.' },
-        { en: 'Spiders create a functional network of silk to trap their prey.', ko: '거미는 먹이를 잡기 위해 실로 된 기능적인 그물세공 구조를 만듭니다.' },
+        { en: 'The company built a global network of offices in over thirty countries.', ko: '그 회사는 30개국 이상에 걸친 글로벌 네트워크를 구축했습니다.' },
+        { en: 'A strong professional network can help you find better career opportunities.', ko: '강력한 전문 인맥 네트워크는 더 나은 경력 기회를 찾는 데 도움이 될 수 있습니다.' },
       ],
     }
   ),
@@ -306,22 +306,22 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('nice', '좋은, 멋진', 2, 'adjective',
-    ['광택제', '페인트', '코팅', '마감재', '붓', '목재', '가구', '수리', '장식', '도구'],
+  word('nice', '좋은, 친절한', 2, 'adjective',
+    ['나쁜', '무서운', '슬픈', '어려운', '비싼', '무거운', '차가운', '느린', '어두운', '시끄러운'],
     tips({
-      etymology: '프랑스의 도시 이름인 니스(Nice)에서 유래한 명칭으로, 가구의 광택을 내는 도료를 뜻합니다.',
-      visual: '오래된 나무 식탁 위에 투명한 액체를 발라 반짝반짝하게 빛이 나는 모습을 상상해 보세요.',
-      soundAlike: '발음이 \'나이스\'와 비슷하지만, 여기서는 멋지다는 뜻이 아니라 가구에 칠하는 \'니스\'입니다.',
-      context: '주로 목공예나 가구 리폼을 할 때 마지막 단계에서 표면을 보호하기 위해 사용됩니다.',
-      synonymAntonym: '광택을 내는 varnish와 비슷하며, 아무것도 칠하지 않은 bare wood와 대조됩니다.',
+      etymology: '라틴어 \'nescius(무지한)\'에서 출발하여 중세 영어를 거치며 의미가 변화하여 현재의 \'좋은, 친절한\'이라는 뜻으로 정착했습니다.',
+      visual: '따뜻한 미소를 지으며 길에서 만난 이웃에게 상냥하게 인사하는 사람의 모습을 상상해 보세요.',
+      soundAlike: '\'나이스!\'라고 감탄하며 엄지를 치켜세우는 장면을 떠올리면 좋다는 뜻을 쉽게 기억할 수 있습니다.',
+      context: '사람의 성격, 날씨, 음식, 경험 등 거의 모든 긍정적인 상황을 폭넓게 묘사할 때 일상에서 매우 자주 쓰입니다.',
+      synonymAntonym: '유의어인 pleasant, kind와 함께 기억하고, 반의어인 mean, unpleasant과 대조하면 효과적입니다.',
     }),
     {
-      definition: 'A liquid substance applied to wood or other surfaces to create a hard, clear, shiny protective coating.',
-      synonyms: ['varnish', 'lacquer', 'glaze'],
-      antonyms: ['stripper', 'remover', 'solvent'],
+      definition: 'pleasant; agreeable; satisfactory',
+      synonyms: ['pleasant', 'kind', 'agreeable', 'friendly'],
+      antonyms: ['mean', 'unpleasant', 'nasty', 'rude'],
       exampleSentences: [
-        { en: 'The carpenter applied a thin layer of clear coating to the wooden table to make it shine.', ko: '목수는 나무 탁자가 빛나도록 투명한 니스를 얇게 한 겹 칠했습니다.' },
-        { en: 'Old furniture often requires a fresh coat of protective finish to restore its original beauty.', ko: '오래된 가구는 원래의 아름다움을 되찾기 위해 종종 새로운 니스 칠이 필요합니다.' },
+        { en: 'She is always nice to everyone she meets, greeting them with a warm smile.', ko: '그녀는 만나는 모든 사람에게 항상 친절하며, 따뜻한 미소로 인사합니다.' },
+        { en: 'What a nice day it is today! Let\'s go for a walk in the park.', ko: '오늘 정말 좋은 날이다! 공원에 산책하러 가자.' },
       ],
     }
   ),
@@ -344,7 +344,7 @@ export const vocabBatch47: VocabItem[] = [
       ],
     }
   ),
-  word('no', '무의', 3, 'adjective',
+  word('no', '아니오', 3, 'interjection',
     ['부정적인', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인', '불안정한', '효율적인'],
     tips({
       etymology: '고대 영어 \'nā\'에서 유래하여 어떤 존재나 수량이 전혀 없음을 나타내는 강력한 부정의 의미를 담고 있습니다.',

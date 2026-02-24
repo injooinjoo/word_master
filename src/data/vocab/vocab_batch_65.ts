@@ -440,21 +440,21 @@ export const vocabBatch65: VocabItem[] = [
     }
   ),
   word('tie', '매다', 5, 'verb',
-    ['단추', '지퍼', '벨트', '단추구멍', '옷걸이', '주머니', '소매', '깃', '바늘', '실'],
+    ['풀다', '끊다', '떼다', '벗기다', '늘이다', '분리하다', '해체하다', '놓다', '떨어뜨리다', '열다'],
     tips({
       etymology: '고대 영어 \'teag\'에서 유래하여 밧줄이나 끈으로 묶는 행위를 의미합니다.',
       visual: '목에 매는 넥타이나 신발끈을 꽉 조여 매는 손동작을 상상해 보세요.',
       soundAlike: '태국(Thai)의 발음과 비슷하며, 태국 여행용 짐을 \'매다\'라고 연상해 보세요.',
-      context: '정장 차림의 완성인 넥타이라는 명사 외에도 매듭을 짓는 동작에 주로 쓰입니다.',
-      synonymAntonym: '연결하는 knot와 분리하는 untie를 세트로 기억하면 효과적입니다.',
+      context: '넥타이를 매거나 신발끈을 묶거나, 매듭을 짓는 동작에 주로 쓰입니다.',
+      synonymAntonym: '연결하는 knot, fasten과 유사하며, 분리하는 untie와는 반대됩니다.',
     }),
     {
-      definition: 'A long piece of cloth worn around the neck or a cord used to fasten something.',
-      synonyms: ['necktie', 'bond', 'knot'],
-      antonyms: ['break', 'split', 'detachment'],
+      definition: 'to fasten or attach something with a string, rope, or similar cord by forming a knot or bow',
+      synonyms: ['fasten', 'knot', 'bind'],
+      antonyms: ['untie', 'unfasten', 'loosen'],
       exampleSentences: [
-        { en: 'He adjusted his silk neckwear before entering the interview room.', ko: '그는 면접실에 들어가기 전에 실크 넥타이를 바로잡았습니다.' },
-        { en: 'The score ended in a draw, so the two teams remained equal.', ko: '점수가 동점으로 끝나서 두 팀은 비긴 상태가 되었습니다.' },
+        { en: 'She helped the little boy tie his shoelaces before they went outside.', ko: '그녀는 밖에 나가기 전에 어린 소년이 신발끈을 매는 것을 도와주었다.' },
+        { en: 'He tied a ribbon around the gift box to make it look more festive.', ko: '그는 선물 상자를 더 화려하게 보이게 하려고 리본을 매었다.' },
       ],
     }
   ),

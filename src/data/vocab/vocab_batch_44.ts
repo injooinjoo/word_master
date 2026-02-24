@@ -249,7 +249,7 @@ export const vocabBatch44: VocabItem[] = [
       ],
     }
   ),
-  word('maintain', '계속하다', 7, 'verb',
+  word('maintain', '유지하다', 7, 'verb',
     ['보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '포기하다'],
     tips({
       etymology: '라틴어 \'manus(손)\'와 \'tenere(잡다)\'가 합쳐져 \'손으로 계속 붙잡고 있다\'는 뜻에서 유래했습니다.',
@@ -268,7 +268,7 @@ export const vocabBatch44: VocabItem[] = [
       ],
     }
   ),
-  word('major', '큰쪽의', 4, 'adjective',
+  word('major', '주요한', 4, 'adjective',
     ['부정적인', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인', '불안정한', '효율적인'],
     tips({
       etymology: '라틴어 \'maior\'에서 유래했으며, \'더 큰\' 또는 \'더 위대한\'이라는 의미를 담고 있습니다.',
@@ -316,12 +316,12 @@ export const vocabBatch44: VocabItem[] = [
       synonymAntonym: 'build와 create는 무언가를 생성하는 긍정적 의미이며, destroy는 그 반대인 파괴를 뜻합니다.',
     }),
     {
-      definition: 'the brand or style of a manufactured product, or the act of producing something by combining parts',
-      synonyms: ['brand', 'model', 'build'],
-      antonyms: ['destruction', 'ruin', 'demolition'],
+      definition: 'To create or produce something by putting parts together or by combining materials.',
+      synonyms: ['create', 'build', 'produce'],
+      antonyms: ['destroy', 'demolish', 'dismantle'],
       exampleSentences: [
-        { en: 'The mechanic asked about the specific make and model of the vintage car.', ko: '정비사는 그 빈티지 자동차의 구체적인 제조사와 모델을 물어보았습니다.' },
-        { en: 'Every luxury watch has a unique make that distinguishes it from mass-produced items.', ko: '모든 고급 시계는 대량 생산 제품과 구별되는 독특한 구조를 가지고 있습니다.' },
+        { en: 'She learned how to make bread from scratch using her grandmother\'s recipe.', ko: '그녀는 할머니의 레시피를 사용하여 빵을 처음부터 만드는 법을 배웠습니다.' },
+        { en: 'The children made colorful decorations for the school festival.', ko: '아이들은 학교 축제를 위해 알록달록한 장식품들을 만들었습니다.' },
       ],
     }
   ),

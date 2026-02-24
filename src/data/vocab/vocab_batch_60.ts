@@ -136,21 +136,21 @@ export const vocabBatch60: VocabItem[] = [
     }
   ),
   word('small', '작은', 3, 'adjective',
-    ['정확히', '대략', '차근차근', '집중해서', '즉시', '뒤늦게', '점차', '반복적으로', '우선', '빠르게'],
+    ['큰', '넓은', '거대한', '무거운', '긴', '높은', '두꺼운', '깊은', '넉넉한', '광대한'],
     tips({
       etymology: '고대 영어 smæl에서 유래하여 본래 \'좁은\' 혹은 \'가느다란\' 상태를 의미했습니다.',
       visual: '커다란 케이크 조각 옆에 아주 조금 떼어낸 작은 부스러기를 상상해 보세요.',
       soundAlike: '발음이 \'스몰\'이므로 \'스멀스멀\' 아주 적은 양이 움직이는 느낌과 연결해 보세요.',
-      context: '주로 \'think small\'이나 \'write small\'처럼 규모나 정도를 낮게 잡을 때 부사적으로 쓰입니다.',
-      synonymAntonym: '크게(big) 행동하지 않고 소박하게(modestly) 행동하는 차이를 기억하세요.',
+      context: '크기가 작거나 양이 적을 때, 또는 규모가 크지 않을 때 폭넓게 사용됩니다.',
+      synonymAntonym: '유의어 little, tiny와 함께 외우고, 반의어 big, large와 대조하면 효과적입니다.',
     }),
     {
-      definition: 'to a limited extent or in a modest, non-extravagant manner',
-      synonyms: ['modestly', 'slightly', 'humbly'],
-      antonyms: ['largely', 'grandly', 'extravagantly'],
+      definition: 'of a size that is less than normal or usual; little',
+      synonyms: ['little', 'tiny', 'miniature'],
+      antonyms: ['big', 'large', 'enormous'],
       exampleSentences: [
-        { en: 'The entrepreneur decided to start small by selling products from his own garage.', ko: '그 기업가는 자신의 차고에서 제품을 판매함으로써 적게 시작하기로 결정했습니다.' },
-        { en: 'You should aim high but be prepared to win small at the beginning of your career.', ko: '목표는 높게 잡되 경력 초기에는 적게 얻는 것에 대비해야 합니다.' },
+        { en: 'The small kitten curled up in the palm of her hand and fell asleep.', ko: '작은 새끼 고양이가 그녀의 손바닥 위에서 웅크리고 잠이 들었습니다.' },
+        { en: 'They live in a small apartment near the train station.', ko: '그들은 기차역 근처의 작은 아파트에 살고 있습니다.' },
       ],
     }
   ),

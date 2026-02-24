@@ -40,7 +40,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('incorporate', '합동시키다', 8, 'verb',
+  word('incorporate', '통합하다', 8, 'verb',
     ['분리하다', '해체하다', '나누다', '독립시키다', '분할하다', '해산하다', '철수하다', '빼다', '제거하다', '분리시키다'],
     tips({
       etymology: '라틴어 \'incorporatus\'에서 유래했으며, \'in(안으로)\'과 \'corpus(몸)\'가 합쳐져 하나의 몸체로 만든다는 뜻입니다.',
@@ -54,8 +54,8 @@ export const vocabBatch40: VocabItem[] = [
       synonyms: ['integrate', 'assimilate', 'embody'],
       antonyms: ['exclude', 'separate', 'detach'],
       exampleSentences: [
-        { en: 'The designer decided to include sustainable materials into the new clothing line.', ko: '디자이너는 새로운 의류 라인에 지속 가능한 소재를 포함시키기로 결정했습니다.' },
-        { en: 'Many modern smartphones merge advanced camera technology with powerful processing chips.', ko: '많은 현대식 스마트폰은 고급 카메라 기술을 강력한 프로세싱 칩과 결합합니다.' },
+        { en: 'The designer decided to incorporate sustainable materials into the new clothing line.', ko: '디자이너는 새로운 의류 라인에 지속 가능한 소재를 통합하기로 결정했습니다.' },
+        { en: 'Many modern smartphones incorporate advanced camera technology with powerful processing chips.', ko: '많은 현대식 스마트폰은 고급 카메라 기술을 강력한 프로세싱 칩과 통합합니다.' },
       ],
     }
   ),
@@ -154,7 +154,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('indicate', '지적하다', 7, 'verb',
+  word('indicate', '나타내다', 7, 'verb',
     ['무시하다', '숨기다', '부정하다', '감추다', '넘어가다', '간과하다', '모르쇠하다', '덮다', '회피하다', '생략하다'],
     tips({
       etymology: '라틴어 \'indicare\'에서 유래했으며, \'안으로(in)\' \'가리키다(dicare)\'라는 뜻이 합쳐져 무언가를 짚어 보여준다는 의미가 되었습니다.',
@@ -168,8 +168,8 @@ export const vocabBatch40: VocabItem[] = [
       synonyms: ['demonstrate', 'signify', 'denote'],
       antonyms: ['conceal', 'suppress', 'falsify'],
       exampleSentences: [
-        { en: 'Recent statistics clearly show a trend that might suggest a recovery in the local economy.', ko: '최근 통계는 지역 경제 회복을 나타낼 수도 있는 추세를 명확히 보여줍니다.' },
-        { en: 'The flashing red light on the dashboard is designed to signal that the fuel level is low.', ko: '대시보드의 깜빡이는 빨간 불은 연료 잔량이 적다는 것을 알리기 위해 설계되었습니다.' },
+        { en: 'Recent statistics indicate a trend that might suggest a recovery in the local economy.', ko: '최근 통계는 지역 경제 회복을 나타낼 수도 있는 추세를 보여줍니다.' },
+        { en: 'The flashing red light on the dashboard is designed to indicate that the fuel level is low.', ko: '대시보드의 깜빡이는 빨간 불은 연료 잔량이 적다는 것을 나타내기 위해 설계되었습니다.' },
       ],
     }
   ),
@@ -192,7 +192,7 @@ export const vocabBatch40: VocabItem[] = [
       ],
     }
   ),
-  word('induce', '꾀다', 10, 'verb',
+  word('induce', '유도하다', 10, 'verb',
     ['방해하다', '억제하다', '중단하다', '거절하다', '무시하다', '파괴하다', '보존하다', '고정하다', '분리하다', '축소하다'],
     tips({
       etymology: '라틴어 \'inducere\'에서 유래하며, \'안으로(in)\' \'이끌다(ducere)\'라는 의미가 합쳐져 어떤 행동을 하도록 유도한다는 뜻이 되었습니다.',
@@ -206,8 +206,8 @@ export const vocabBatch40: VocabItem[] = [
       synonyms: ['persuade', 'instigate', 'engender'],
       antonyms: ['deter', 'discourage', 'prevent'],
       exampleSentences: [
-        { en: 'The doctors decided to labor because the baby was two weeks overdue.', ko: '아기가 예정일보다 2주나 지났기 때문에 의사들은 분만을 유도하기로 결정했습니다.' },
-        { en: 'High levels of stress can often sleep deprivation and physical exhaustion.', ko: '높은 수준의 스트레스는 종종 수면 부족과 육체적 피로를 유발할 수 있습니다.' },
+        { en: 'The doctors decided to induce labor because the baby was two weeks overdue.', ko: '아기가 예정일보다 2주나 지났기 때문에 의사들은 분만을 유도하기로 결정했습니다.' },
+        { en: 'High levels of stress can often induce sleep deprivation and physical exhaustion.', ko: '높은 수준의 스트레스는 종종 수면 부족과 육체적 피로를 유도할 수 있습니다.' },
       ],
     }
   ),

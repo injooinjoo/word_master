@@ -124,7 +124,7 @@ export const vocabBatch72: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('deceive', '속이다', 1, 'adjective',
+  word('deceive', '속이다', 1, 'verb',
     ['명', '동 ing', '명 tion', '명 사람', '명 고유', '명 ism', '명 or', '형 in', '명 사물', '동'],
     tips({
       etymology: 'deceive의 어원 정보는 추후 보강 예정',
@@ -174,7 +174,7 @@ export const vocabBatch72: VocabItem[] = [
       synonymAntonym: '관련 해석: 9',
     })
   ),
-  word('willing', '기꺼이 하는', 1, 'noun',
+  word('willing', '기꺼이 하는', 1, 'adjective',
     ['편리, 편의', '형 비교불규칙', '형 수', '명', '부', '명 ty', '명 ist', '형 al', '명 식물', '명 er'],
     tips({
       etymology: 'willing의 어원 정보는 추후 보강 예정',
@@ -264,7 +264,7 @@ export const vocabBatch72: VocabItem[] = [
       synonymAntonym: '관련 해석: 3',
     })
   ),
-  word('fable', '우화', 1, 'adjective',
+  word('fable', '우화', 1, 'noun',
     ['현저한', '별개의', '대략', '지지자', '대단히', '(세밀히) 조사하다', '부주의한', 'overjoyed, thrilled', 'to seize or plunder, especially in war', 'to confuse or annoy'],
     tips({
       etymology: 'fable의 어원 정보는 추후 보강 예정',
@@ -364,7 +364,7 @@ export const vocabBatch72: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('lunar', '달의', 1, 'noun',
+  word('lunar', '달의', 1, 'adjective',
     ['크게, 상당히\n(substantial 상당한, 재력이 있는)', '지불해야 하는', '~로 만들어지다, ~로 구성되다', '입증하다', '감소, 축소', '불필요한; 장황한', '꿰뚫다', '급증하다', '부정확한', '일상적인, 평범한'],
     tips({
       etymology: 'lunar의 어원 정보는 추후 보강 예정',
@@ -384,7 +384,7 @@ export const vocabBatch72: VocabItem[] = [
       synonymAntonym: '관련 해석: 2',
     })
   ),
-  word('overseas', '해외로[에]', 1, 'noun',
+  word('overseas', '해외로[에]', 1, 'adverb',
     ['명 tion', '명 단위', '명 추상', '형 ive', '형', '동', '명 er', '기고가, 공헌자', '헌신, 전념', '정보에 근거한\n(inform 알리다, 통지하다)'],
     tips({
       etymology: 'overseas의 어원 정보는 추후 보강 예정',
@@ -484,13 +484,13 @@ export const vocabBatch72: VocabItem[] = [
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),
-  word('crosswalk', '횡단도보', 1, 'noun',
+  word('crosswalk', '횡단보도', 1, 'noun',
     ['확실한', '경계하는', '~정도', '우연한', '만들어진', '설명되지 않은', '현혹시키다', 'skillful, dexterous', 'to fabricate, make up', 'flowery, ornate'],
     tips({
       etymology: 'crosswalk의 어원 정보는 추후 보강 예정',
-      visual: 'crosswalk를 횡단도보로 연결해 시각적으로 기억',
+      visual: 'crosswalk를 횡단보도로 연결해 시각적으로 기억',
       soundAlike: 'crosswalk 발음을 반복해 암기',
-      context: 'crosswalk means 횡단도보.',
+      context: 'crosswalk means 횡단보도.',
       synonymAntonym: '동의어/반의어 정보 없음',
     })
   ),

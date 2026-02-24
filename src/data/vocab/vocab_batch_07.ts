@@ -111,8 +111,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['plan', 'create', 'outline'],
       antonyms: ['destroy', 'neglect', 'disorganize'],
       exampleSentences: [
-        { en: 'The engineers spent months working to create a more efficient engine for the new car.', ko: '엔지니어들은 새 자동차를 위한 더 효율적인 엔진을 설계하는 데 수개월을 보냈다.' },
-        { en: 'He was hired to develop the layout and structure of the company\'s official website.', ko: '그는 회사 공식 웹사이트의 레이아웃과 구조를 설계하기 위해 고용되었다.' },
+        { en: 'The engineers spent months designing a more efficient engine for the new car.', ko: '엔지니어들은 새 자동차를 위한 더 효율적인 엔진을 설계하는 데 수개월을 보냈다.' },
+        { en: 'He was hired to design the layout and structure of the company\'s website.', ko: '그는 회사 웹사이트의 레이아웃과 구조를 설계하기 위해 고용되었다.' },
       ],
     }
   ),
@@ -206,8 +206,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['decide', 'resolve', 'establish'],
       antonyms: ['waver', 'hesitate', 'doubt'],
       exampleSentences: [
-        { en: 'The size of your budget will help you choose which car to buy.', ko: '예산 규모가 어떤 차를 살지 결정하는 데 도움이 될 것이다.' },
-        { en: 'Experts are working to find out the exact cause of the technical failure.', ko: '전문가들이 기술적 결함의 정확한 원인을 밝혀내기 위해 노력하고 있다.' },
+        { en: 'The size of your budget will determine which car you can buy.', ko: '예산 규모가 어떤 차를 살 수 있을지 결정할 것이다.' },
+        { en: 'Experts are working to determine the exact cause of the technical failure.', ko: '전문가들이 기술적 결함의 정확한 원인을 밝혀내기 위해 노력하고 있다.' },
       ],
     }
   ),
@@ -225,8 +225,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['grow', 'evolve', 'advance'],
       antonyms: ['decline', 'regress', 'deteriorate'],
       exampleSentences: [
-        { en: 'The small startup managed to grow and expand its business into a global empire.', ko: '그 작은 스타트업은 사업을 발전시켜 글로벌 기업으로 성장시켰다.' },
-        { en: 'Scientists are working hard to create a more effective vaccine for the virus.', ko: '과학자들은 그 바이러스에 대한 더 효과적인 백신을 개발하기 위해 노력하고 있다.' },
+        { en: 'The small startup managed to develop its business into a global empire.', ko: '그 작은 스타트업은 사업을 발전시켜 글로벌 기업으로 성장시켰다.' },
+        { en: 'Scientists are working hard to develop a more effective vaccine for the virus.', ko: '과학자들은 그 바이러스에 대한 더 효과적인 백신을 개발하기 위해 노력하고 있다.' },
       ],
     }
   ),
@@ -244,8 +244,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['apparatus', 'gadget', 'instrument'],
       antonyms: ['material', 'substance', 'component'],
       exampleSentences: [
-        { en: 'This electronic tool connects to the wireless network automatically.', ko: '이 전자 장치는 무선 네트워크에 자동으로 연결됩니다.' },
-        { en: 'The engineer developed a clever mechanism to reduce power consumption.', ko: '그 엔지니어는 전력 소비를 줄이기 위한 영리한 장치를 개발했습니다.' },
+        { en: 'This device connects to the wireless network automatically.', ko: '이 장치는 무선 네트워크에 자동으로 연결된다.' },
+        { en: 'The engineer developed a clever device to reduce power consumption.', ko: '그 엔지니어는 전력 소비를 줄이기 위한 영리한 장치를 개발했다.' },
       ],
     }
   ),
@@ -263,8 +263,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['dedicate', 'commit', 'consecrate'],
       antonyms: ['neglect', 'ignore', 'disregard'],
       exampleSentences: [
-        { en: 'She decided to give up her career and her life to humanitarian work.', ko: '그녀는 자신의 경력을 포기하고 인도주의적 활동에 삶을 바치기로 결심했다.' },
-        { en: 'The museum is planning to assign a whole gallery to the artist\'s early paintings.', ko: '박물관은 그 화가의 초기 회화 작품들에 갤러리 전체를 할애할 계획이다.' },
+        { en: 'She decided to devote her life to humanitarian work.', ko: '그녀는 인도주의적 활동에 삶을 바치기로 결심했다.' },
+        { en: 'The museum is planning to devote a whole gallery to the artist\'s early paintings.', ko: '박물관은 그 화가의 초기 회화 작품들에 갤러리 전체를 할애할 계획이다.' },
       ],
     }
   ),
@@ -434,8 +434,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['find', 'uncover', 'detect'],
       antonyms: ['hide', 'conceal', 'lose'],
       exampleSentences: [
-        { en: 'Scientists recently identified a way to reach the planet that was never known before.', ko: '과학자들은 이전에 전혀 알려지지 않았던 그 행성에 도달하는 방법을 최근에 발견했습니다.' },
-        { en: 'He was surprised to learn that he had a natural gift for playing the piano.', ko: '그는 자신이 피아노 연주에 타고난 재능이 있다는 것을 알고 깜짝 놀랐습니다.' },
+        { en: 'Scientists recently discovered a new way to reach the distant planet.', ko: '과학자들은 최근 먼 행성에 도달하는 새로운 방법을 발견했다.' },
+        { en: 'He was surprised to discover that he had a natural gift for playing the piano.', ko: '그는 자신이 피아노 연주에 타고난 재능이 있다는 것을 발견하고 깜짝 놀랐다.' },
       ],
     }
   ),
@@ -586,8 +586,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['uncertainty', 'suspicion', 'disbelief'],
       antonyms: ['certainty', 'trust', 'confidence'],
       exampleSentences: [
-        { en: 'There is no room for any hesitation or uncertainty regarding his honesty.', ko: '그의 정직함에 대해서는 의심의 여지가 전혀 없습니다.' },
-        { en: 'The witness expressed a slight feeling of disbelief during the cross-examination.', ko: '증인은 반대 심문 중에 약간의 의구심을 표명했습니다.' },
+        { en: 'There is no doubt about his honesty.', ko: '그의 정직함에 대해서는 의심의 여지가 없다.' },
+        { en: 'The witness expressed doubt during the cross-examination.', ko: '증인은 반대 심문 중에 의심을 표명했다.' },
       ],
     }
   ),
@@ -757,8 +757,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['gain', 'acquire', 'obtain'],
       antonyms: ['spend', 'lose', 'waste'],
       exampleSentences: [
-        { en: 'She works two jobs to provide for her family and receive a higher income.', ko: '그녀는 가족을 부양하고 더 높은 수입을 벌기 위해 두 가지 일을 합니다.' },
-        { en: 'After years of hard work and dedication, he finally managed to get the respect of his colleagues.', ko: '수년간의 노력과 헌신 끝에, 그는 마침내 동료들의 존경을 얻었습니다.' },
+        { en: 'She works two jobs to earn enough money to support her family.', ko: '그녀는 가족을 부양할 충분한 돈을 벌기 위해 두 가지 일을 한다.' },
+        { en: 'After years of hard work, he finally earned the respect of his colleagues.', ko: '수년간의 노력 끝에, 그는 마침내 동료들의 존경을 얻었다.' },
       ],
     }
   ),
@@ -795,8 +795,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['revise', 'modify', 'adapt'],
       antonyms: ['preserve', 'ignore', 'neglect'],
       exampleSentences: [
-        { en: 'I need to refine this video before posting it online.', ko: '게시하기 전에 이 영상을 편집해야 합니다.' },
-        { en: 'She manages the school newspaper and reviews every article.', ko: '그녀는 학교 신문을 편집합니다.' },
+        { en: 'I need to edit this video before posting it online.', ko: '게시하기 전에 이 영상을 편집해야 한다.' },
+        { en: 'She edits every article for the school newspaper.', ko: '그녀는 학교 신문의 모든 기사를 편집한다.' },
       ],
     }
   ),
@@ -814,8 +814,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['teach', 'instruct', 'tutor'],
       antonyms: ['mislead', 'misinform', 'neglect'],
       exampleSentences: [
-        { en: 'The school aims to provide a safe environment to nurture and develop young minds.', ko: '그 학교는 어린 학생들을 양육하고 교육하기 위한 안전한 환경을 제공하는 것을 목표로 합니다.' },
-        { en: 'Campaigns are needed to inform the community about the importance of recycling.', ko: '재활용의 중요성에 대해 지역 사회를 교육하기 위한 캠페인이 필요합니다.' },
+        { en: 'The school aims to educate young minds in a safe environment.', ko: '그 학교는 안전한 환경에서 어린 학생들을 교육하는 것을 목표로 한다.' },
+        { en: 'Campaigns are needed to educate the community about the importance of recycling.', ko: '재활용의 중요성에 대해 지역 사회를 교육하기 위한 캠페인이 필요하다.' },
       ],
     }
   ),
@@ -871,8 +871,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['choose', 'vote', 'select'],
       antonyms: ['reject', 'dismiss', 'oust'],
       exampleSentences: [
-        { en: 'Citizens will cast their votes to pick a new leader for the country.', ko: '시민들은 국가의 새로운 지도자를 선출하기 위해 투표를 할 것입니다.' },
-        { en: 'She was chosen for the board of directors during the annual meeting.', ko: '그녀는 연례 회의에서 이사회 멤버로 선출되었습니다.' },
+        { en: 'Citizens will elect a new president next month.', ko: '시민들은 다음 달에 새 대통령을 선출할 것이다.' },
+        { en: 'She was elected to the board of directors during the annual meeting.', ko: '그녀는 연례 회의에서 이사회 멤버로 선출되었다.' },
       ],
     }
   ),
@@ -928,8 +928,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['humiliate', 'shame', 'abash'],
       antonyms: ['comfort', 'flatter', 'honor'],
       exampleSentences: [
-        { en: 'I did not mean to make you feel awkward in front of your friends.', ko: '친구들 앞에서 당신을 당황하게 만들 의도는 없었습니다.' },
-        { en: 'The unexpected question from the reporter seemed to confuse and fluster the politician.', ko: '기자의 예상치 못한 질문은 그 정치인을 당황하게 만드는 것처럼 보였습니다.' },
+        { en: 'I did not mean to embarrass you in front of your friends.', ko: '친구들 앞에서 당신을 당황하게 만들 의도는 없었다.' },
+        { en: 'The unexpected question seemed to embarrass the politician.', ko: '예상치 못한 질문이 그 정치인을 당황하게 만드는 것 같았다.' },
       ],
     }
   ),
@@ -947,8 +947,8 @@ export const vocabBatch07: VocabItem[] = [
       synonyms: ['appear', 'surface', 'materialize'],
       antonyms: ['disappear', 'vanish', 'fade'],
       exampleSentences: [
-        { en: 'A new leader started to gain prominence and became known during the national crisis.', ko: '국가적 위기 속에서 새로운 지도자가 부상하며 나타나기 시작했습니다.' },
-        { en: 'The swimmer finally came to the surface after being underwater for a minute.', ko: '수영 선수는 1분 동안 물속에 있다가 마침내 수면 위로 나타났습니다.' },
+        { en: 'A new leader began to emerge during the national crisis.', ko: '국가적 위기 속에서 새로운 지도자가 나타나기 시작했다.' },
+        { en: 'The swimmer finally emerged from the water after being underwater for a minute.', ko: '수영 선수는 1분 동안 물속에 있다가 마침내 수면 위로 나타났다.' },
       ],
     }
   ),

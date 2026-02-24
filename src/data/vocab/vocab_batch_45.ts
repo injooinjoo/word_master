@@ -173,7 +173,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('mention', '말하다', 4, 'verb',
+  word('mention', '언급하다', 4, 'verb',
     ['분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다'],
     tips({
       etymology: '라틴어 \'mentio\'에서 유래했으며, \'마음속에 떠올리게 하다\'라는 의미에서 \'말을 꺼내다\'로 발전했습니다.',
@@ -325,7 +325,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('metropolitan', '수도권', 10, 'noun',
+  word('metropolitan', '대도시의', 10, 'adjective',
     ['시골의', '농촌의', '변두리', '지방자치', '국제적인', '전통적인', '고립된', '황폐한', '산간지역', '어촌마을'],
     tips({
       etymology: '그리스어 \'meter(어머니)\'와 \'polis(도시)\'가 합쳐져 \'모태가 되는 주요 도시\'라는 의미에서 유래했습니다.',
@@ -344,7 +344,7 @@ export const vocabBatch45: VocabItem[] = [
       ],
     }
   ),
-  word('microphone', '확성기', 6, 'noun',
+  word('microphone', '마이크', 6, 'noun',
     ['스피커', '헤드폰', '카메라', '전화기', '라디오', '텔레비전', '컴퓨터', '키보드', '마우스', '모니터'],
     tips({
       etymology: '작다는 뜻의 micro와 소리를 의미하는 phone이 합쳐져 작은 소리를 크게 전달하는 도구를 뜻합니다.',

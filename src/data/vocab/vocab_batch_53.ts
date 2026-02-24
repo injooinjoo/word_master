@@ -402,25 +402,25 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('protest', '항의하다', 5, 'verb',
-    ['보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다'],
+    ['동의하다', '찬성하다', '수락하다', '승인하다', '지지하다', '격려하다', '칭찬하다', '환영하다', '축하하다', '감사하다'],
     tips({
-      etymology: '라틴어 \'pro(앞에서)\'와 \'testari(증언하다)\'가 합쳐져 대중 앞에서 자신의 주장을 강하게 내세우는 느낌을 줍니다.',
-      visual: '법정에서 증인이 판사 앞에서 손을 들고 자신의 결백을 강력하게 주장하는 장면을 상상해 보세요.',
-      soundAlike: '\'프로(Pro)가 테스트(test) 결과에 대해 단언하다\'라고 연상하면 기억하기 쉽습니다.',
-      context: '단순한 반대 시위뿐만 아니라, 격식 있는 자리에서 자신의 무죄나 진실을 강력히 주장할 때 주로 쓰입니다.',
-      synonymAntonym: 'assert는 확신을 가지고 말하는 것이고, deny는 사실이 아니라고 강하게 부정하는 반대의 의미입니다.',
+      etymology: '라틴어 \'pro(앞에서)\'와 \'testari(증언하다)\'가 합쳐져 대중 앞에서 반대 의사를 강하게 표현하는 의미를 담고 있습니다.',
+      visual: '거리에서 사람들이 플래카드를 들고 구호를 외치며 시위하는 장면을 상상해 보세요.',
+      soundAlike: '\'프로(Pro)가 테스트(test)에 항의하다\'라고 연상하면 기억하기 쉽습니다.',
+      context: '정치적 시위, 부당한 결정에 대한 반대, 불만 표현 등 다양한 상황에서 사용됩니다.',
+      synonymAntonym: '반대하다를 뜻하는 object, oppose와 유사하며, 찬성하다를 뜻하는 agree, accept와 반대됩니다.',
     }),
     {
-      definition: 'To state something forcefully and positively, especially when others doubt it or to maintain one\'s innocence.',
-      synonyms: ['assert', 'affirm', 'declare'],
-      antonyms: ['deny', 'refute', 'contradict'],
+      definition: 'To express strong objection or disapproval of something, often through public demonstration or formal complaint.',
+      synonyms: ['object', 'oppose', 'demonstrate'],
+      antonyms: ['agree', 'accept', 'support'],
       exampleSentences: [
-        { en: 'The suspect continued to his innocence despite the overwhelming evidence presented by the prosecution.', ko: '용의자는 검찰이 제시한 압도적인 증거에도 불구하고 자신의 무죄를 계속해서 단언했다.' },
-        { en: 'She felt the need to that she had no prior knowledge of the secret plan.', ko: '그녀는 자신이 그 비밀 계획에 대해 사전에 전혀 몰랐음을 단언할 필요를 느꼈다.' },
+        { en: 'Thousands of citizens gathered to protest against the new tax policy.', ko: '수천 명의 시민들이 새로운 세금 정책에 항의하기 위해 모였다.' },
+        { en: 'Workers protested the unfair working conditions by going on strike.', ko: '노동자들은 파업을 통해 불공정한 근무 조건에 항의했다.' },
       ],
     }
   ),
-  word('proud', '뽐내는', 6, 'adjective',
+  word('proud', '자랑스러운', 6, 'adjective',
     ['겸손한', '슬픈', '부끄러운', '평범한', '지루한', '화난', '불안한', '조용한', '어색한', '비겁한'],
     tips({
       etymology: '고대 프랑스어 \'prud\'에서 유래했으며, 가치 있고 용기 있다는 긍정적인 의미에서 점차 자신감이 넘치는 상태로 발전했습니다.',
@@ -439,7 +439,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('prove', '시험하다', 7, 'verb',
+  word('prove', '증명하다', 7, 'verb',
     ['선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다'],
     tips({
       etymology: '라틴어 probare에서 유래하여 \'가치를 시험하다\' 혹은 \'좋은 것임을 보여주다\'라는 의미를 담고 있습니다.',
@@ -458,7 +458,7 @@ export const vocabBatch53: VocabItem[] = [
       ],
     }
   ),
-  word('provide', '준비하다', 4, 'verb',
+  word('provide', '제공하다', 4, 'verb',
     ['중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다'],
     tips({
       etymology: '라틴어 \'pro(앞으로)\'와 \'videre(보다)\'가 합쳐져, 앞날을 내다보고 미리 챙겨둔다는 의미에서 유래했습니다.',

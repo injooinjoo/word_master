@@ -16,8 +16,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['eliminate', 'repeal', 'nullify'],
       antonyms: ['establish', 'create', 'institute'],
       exampleSentences: [
-        { en: 'The government decided to formally end the outdated tax law.', ko: '정부는 구식 세법을 공식적으로 폐지하기로 결정했다.' },
-        { en: 'Many activists are fighting to get the unfair system removed forever.', ko: '많은 활동가들이 불공정한 제도를 영구적으로 폐지하기 위해 싸우고 있다.' },
+        { en: 'The government decided to abolish the outdated tax law.', ko: '정부는 구식 세법을 폐지하기로 결정했다.' },
+        { en: 'Many activists are fighting to abolish the unfair system.', ko: '많은 활동가들이 불공정한 제도를 폐지하기 위해 싸우고 있다.' },
       ],
     }
   ),
@@ -54,8 +54,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['theoretical', 'conceptual', 'nonrepresentational'],
       antonyms: ['concrete', 'physical', 'definite'],
       exampleSentences: [
-        { en: 'The artist uses shapes and colors to express complex and non-figurative ideas.', ko: '그 예술가는 복잡하고 비구상적인 아이디어를 표현하기 위해 모양과 색상을 사용한다.' },
-        { en: 'Truth and justice are examples of ideas that are not physical in nature.', ko: '진리와 정의는 본질적으로 물리적이지 않은 개념의 예시이다.' },
+        { en: 'The artist uses abstract shapes and colors to express complex ideas.', ko: '그 예술가는 추상적인 모양과 색상을 사용하여 복잡한 아이디어를 표현한다.' },
+        { en: 'Truth and justice are abstract concepts that cannot be physically touched.', ko: '진리와 정의는 물리적으로 만질 수 없는 추상적인 개념이다.' },
       ],
     }
   ),
@@ -111,8 +111,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['obtain', 'gain', 'procure'],
       antonyms: ['lose', 'forfeit', 'surrender'],
       exampleSentences: [
-        { en: 'She managed to get a rare collection of stamps through an auction.', ko: '그녀는 경매를 통해 희귀한 우표 수집품을 획득했다.' },
-        { en: 'It takes many years to master a foreign language fluently.', ko: '외국어를 유창하게 습득하는 데는 많은 시간이 걸린다.' },
+        { en: 'She managed to acquire a rare collection of stamps through an auction.', ko: '그녀는 경매를 통해 희귀한 우표 수집품을 획득했다.' },
+        { en: 'It takes many years to acquire fluency in a foreign language.', ko: '외국어를 유창하게 습득하는 데는 많은 시간이 걸린다.' },
       ],
     }
   ),
@@ -130,8 +130,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['adjust', 'accommodate', 'acclimatize'],
       antonyms: ['resist', 'reject', 'maintain'],
       exampleSentences: [
-        { en: 'Successful businesses are those that can quickly change to meet new market demands.', ko: '성공하는 기업들은 새로운 시장 요구에 맞춰 빠르게 적응할 수 있는 기업들이다.' },
-        { en: 'It took the immigrant family several months to become comfortable in their new surroundings.', ko: '그 이민자 가족이 새로운 환경에 적응하는 데 몇 달이 걸렸다.' },
+        { en: 'Successful businesses are those that can quickly adapt to new market demands.', ko: '성공하는 기업들은 새로운 시장 요구에 빠르게 적응할 수 있는 기업들이다.' },
+        { en: 'It took the immigrant family several months to adapt to their new surroundings.', ko: '그 이민자 가족이 새로운 환경에 적응하는 데 몇 달이 걸렸다.' },
       ],
     }
   ),
@@ -168,8 +168,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['embrace', 'accept', 'approve'],
       antonyms: ['reject', 'discard', 'abandon'],
       exampleSentences: [
-        { en: 'The government decided to formally take up the new environmental policy.', ko: '정부는 새로운 환경 정책을 공식적으로 채택하기로 결정했다.' },
-        { en: 'After much consideration, the couple chose to take a child into their home as their legal son.', ko: '많은 고민 끝에 그 부부는 아이를 법적 아들로 입양하기로 했다.' },
+        { en: 'The government decided to adopt the new environmental policy.', ko: '정부는 새로운 환경 정책을 채택하기로 결정했다.' },
+        { en: 'After much consideration, the couple decided to adopt a child.', ko: '많은 고민 끝에 그 부부는 아이를 입양하기로 했다.' },
       ],
     }
   ),
@@ -187,8 +187,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['support', 'champion', 'uphold'],
       antonyms: ['oppose', 'criticize', 'condemn'],
       exampleSentences: [
-        { en: 'Many environmentalists actively promote policies that protect endangered species.', ko: '많은 환경운동가들이 멸종 위기 종을 보호하는 정책을 적극적으로 옹호합니다.' },
-        { en: 'The organization continues to speak out for the rights of underprivileged children.', ko: '그 단체는 소외 계층 아동들의 권리를 옹호하기 위해 계속해서 목소리를 내고 있습니다.' },
+        { en: 'Many environmentalists advocate for policies that protect endangered species.', ko: '많은 환경운동가들이 멸종 위기 종을 보호하는 정책을 옹호한다.' },
+        { en: 'The organization continues to advocate for the rights of underprivileged children.', ko: '그 단체는 소외 계층 아동들의 권리를 옹호하기 위해 계속해서 활동하고 있다.' },
       ],
     }
   ),
@@ -206,8 +206,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['influence', 'impact', 'alter'],
       antonyms: ['remain', 'stay', 'endure'],
       exampleSentences: [
-        { en: 'The cold weather will deeply change the growth of the plants.', ko: '추운 날씨는 식물의 성장에 깊은 영향을 미칠 것이다.' },
-        { en: 'Your opinion will not sway my final decision on this matter.', ko: '당신의 의견은 이 문제에 대한 나의 최종 결정에 영향을 주지 않을 것입니다.' },
+        { en: 'The cold weather will affect the growth of the plants.', ko: '추운 날씨는 식물의 성장에 영향을 미칠 것이다.' },
+        { en: 'Your opinion will not affect my final decision on this matter.', ko: '당신의 의견은 이 문제에 대한 나의 최종 결정에 영향을 주지 않을 것이다.' },
       ],
     }
   ),
@@ -225,8 +225,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['manage', 'sustain', 'bear'],
       antonyms: ['lack', 'fail', 'lose'],
       exampleSentences: [
-        { en: 'We can\'t pay for a new car right now because of our debt.', ko: '우리는 부채 때문에 지금 당장 새 차를 살 여유가 없다.' },
-        { en: 'Few people can have the luxury of taking a month-long vacation.', ko: '한 달 동안 휴가를 떠날 여유가 있는 사람은 거의 없다.' },
+        { en: 'We can\'t afford a new car right now because of our debt.', ko: '우리는 부채 때문에 지금 당장 새 차를 살 여유가 없다.' },
+        { en: 'Few people can afford to take a month-long vacation.', ko: '한 달 동안 휴가를 떠날 여유가 있는 사람은 거의 없다.' },
       ],
     }
   ),
@@ -244,8 +244,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['assertive', 'forceful', 'hostile'],
       antonyms: ['passive', 'gentle', 'peaceful'],
       exampleSentences: [
-        { en: 'The company launched an ambitious and forceful marketing campaign to win new customers.', ko: '그 회사는 새로운 고객을 확보하기 위해 야심 차고 공격적인 마케팅 캠페인을 시작했다.' },
-        { en: 'Some stray dogs can become hostile if they feel cornered or threatened.', ko: '일부 유기견들은 구석에 몰리거나 위협을 느끼면 공격적으로 변할 수 있다.' },
+        { en: 'The company launched an aggressive marketing campaign to win new customers.', ko: '그 회사는 새로운 고객을 확보하기 위해 공격적인 마케팅 캠페인을 시작했다.' },
+        { en: 'Some stray dogs can become aggressive if they feel cornered or threatened.', ko: '일부 유기견들은 구석에 몰리거나 위협을 느끼면 공격적으로 변할 수 있다.' },
       ],
     }
   ),
@@ -263,8 +263,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['distribute', 'assign', 'allot'],
       antonyms: ['hoard', 'keep', 'gather'],
       exampleSentences: [
-        { en: 'The government decided to designate more funds to public education.', ko: '정부는 공교육에 더 많은 예산을 배분하기로 결정했다.' },
-        { en: 'You should divide your time efficiently between work and rest.', ko: '일과 휴식 사이에 시간을 효율적으로 할당해야 한다.' },
+        { en: 'The government decided to allocate more funds to public education.', ko: '정부는 공교육에 더 많은 예산을 배분하기로 결정했다.' },
+        { en: 'You should allocate your time efficiently between work and rest.', ko: '일과 휴식 사이에 시간을 효율적으로 할당해야 한다.' },
       ],
     }
   ),
@@ -282,8 +282,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['modify', 'adjust', 'amend'],
       antonyms: ['preserve', 'maintain', 'retain'],
       exampleSentences: [
-        { en: 'The tailor had to make a few changes to the suit to alter its fit.', ko: '재단사는 정장의 핏을 수정하기 위해 몇 군데를 변경해야 했다.' },
-        { en: 'Even a small adjustment can significantly alter the final outcome of the experiment.', ko: '작은 조정조차 실험의 최종 결과를 크게 바꿀 수 있다.' },
+        { en: 'The tailor had to alter the suit to make it fit properly.', ko: '재단사는 정장이 제대로 맞도록 변경해야 했다.' },
+        { en: 'Even a small change can significantly alter the final outcome of the experiment.', ko: '작은 변화조차 실험의 최종 결과를 크게 바꿀 수 있다.' },
       ],
     }
   ),
@@ -377,8 +377,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['designate', 'assign', 'nominate'],
       antonyms: ['dismiss', 'fire', 'discharge'],
       exampleSentences: [
-        { en: 'The board decided to choose a new director to lead the project.', ko: '이사회가 프로젝트를 이끌 새 이사를 임명하기로 결정했습니다.' },
-        { en: 'He was selected to serve as the ambassador to France.', ko: '그는 주프랑스 대사로 임명되었습니다.' },
+        { en: 'The board decided to appoint a new director to lead the project.', ko: '이사회가 프로젝트를 이끌 새 이사를 임명하기로 결정했다.' },
+        { en: 'He was appointed to serve as the ambassador to France.', ko: '그는 주프랑스 대사로 임명되었다.' },
       ],
     }
   ),
@@ -491,8 +491,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['gather', 'collect', 'construct'],
       antonyms: ['disassemble', 'scatter', 'disperse'],
       exampleSentences: [
-        { en: 'It took several hours to put the pieces together and build the new bookshelf.', ko: '새 책장을 조립하기 위해 부품들을 맞추는 데 몇 시간이 걸렸다.' },
-        { en: 'The principal asked all students to gather in the main auditorium for the announcement.', ko: '교장 선생님은 공지 사항을 전달하기 위해 모든 학생에게 강당에 모이라고 요청했다.' },
+        { en: 'It took several hours to assemble the new bookshelf.', ko: '새 책장을 조립하는 데 몇 시간이 걸렸다.' },
+        { en: 'The principal asked all students to assemble in the main auditorium for the announcement.', ko: '교장 선생님은 공지 사항을 전달하기 위해 모든 학생에게 강당에 모이라고 요청했다.' },
       ],
     }
   ),
@@ -510,8 +510,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['claim', 'declare', 'maintain'],
       antonyms: ['deny', 'reject', 'abandon'],
       exampleSentences: [
-        { en: 'The company continues to state its innocence despite the evidence presented.', ko: '그 회사는 제시된 증거에도 불구하고 자신들의 무죄를 계속해서 주장하고 있다.' },
-        { en: 'You must learn to stand up for your rights in professional environments.', ko: '전문적인 환경에서는 당신의 권리를 주장하는 법을 배워야 한다.' },
+        { en: 'The company continues to assert its innocence despite the evidence presented.', ko: '그 회사는 제시된 증거에도 불구하고 자신들의 무죄를 계속해서 주장하고 있다.' },
+        { en: 'You must learn to assert your rights in professional environments.', ko: '전문적인 환경에서는 당신의 권리를 주장하는 법을 배워야 한다.' },
       ],
     }
   ),
@@ -529,8 +529,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['evaluate', 'appraise', 'estimate'],
       antonyms: ['ignore', 'neglect', 'overlook'],
       exampleSentences: [
-        { en: 'The insurance company will send an agent to determine the extent of the damage.', ko: '보험사는 피해 규모를 평가하기 위해 직원을 보낼 것이다.' },
-        { en: 'It is difficult to judge the impact of the new policy at this early stage.', ko: '이 이른 단계에서 새 정책의 영향을 평가하기는 어렵다.' },
+        { en: 'The insurance company will send an agent to assess the extent of the damage.', ko: '보험사는 피해 규모를 평가하기 위해 직원을 보낼 것이다.' },
+        { en: 'It is difficult to assess the impact of the new policy at this early stage.', ko: '이 이른 단계에서 새 정책의 영향을 평가하기는 어렵다.' },
       ],
     }
   ),
@@ -548,8 +548,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['allocate', 'designate', 'allot'],
       antonyms: ['withdraw', 'revoke', 'keep'],
       exampleSentences: [
-        { en: 'The manager will distribute the roles to each team member tomorrow.', ko: '매니저는 내일 각 팀원에게 역할을 배정할 것입니다.' },
-        { en: 'The committee decided to appoint a new seat to the representative.', ko: '위원회는 그 대표에게 새로운 자리를 배정하기로 결정했습니다.' },
+        { en: 'The manager will assign roles to each team member tomorrow.', ko: '매니저는 내일 각 팀원에게 역할을 배정할 것이다.' },
+        { en: 'The committee decided to assign a new seat to the representative.', ko: '위원회는 그 대표에게 새로운 자리를 배정하기로 결정했다.' },
       ],
     }
   ),
@@ -567,8 +567,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['help', 'aid', 'support'],
       antonyms: ['hinder', 'obstruct', 'impede'],
       exampleSentences: [
-        { en: 'The new software is designed to help users manage their finances more effectively.', ko: '새 소프트웨어는 사용자들이 재정을 더 효과적으로 관리할 수 있도록 돕기 위해 설계되었습니다.' },
-        { en: 'Several volunteers arrived early to provide support with the event preparations.', ko: '여러 자원봉사자들이 행사 준비를 돕기 위해 일찍 도착했습니다.' },
+        { en: 'The new software is designed to assist users in managing their finances more effectively.', ko: '새 소프트웨어는 사용자들이 재정을 더 효과적으로 관리할 수 있도록 돕기 위해 설계되었다.' },
+        { en: 'Several volunteers arrived early to assist with the event preparations.', ko: '여러 자원봉사자들이 행사 준비를 돕기 위해 일찍 도착했다.' },
       ],
     }
   ),
@@ -586,8 +586,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['suppose', 'presume', 'surmise'],
       antonyms: ['prove', 'verify', 'disprove'],
       exampleSentences: [
-        { en: 'Many people mistakenly believe that we can take for granted what others think.', ko: '많은 사람들이 다른 이들이 생각하는 것을 우리가 당연히 짐작할 수 있다고 잘못 믿곤 합니다.' },
-        { en: 'It is never wise to take a premise as fact before you have seen the actual data.', ko: '실제 데이터를 보기 전에 전제를 사실로 받아들이는 것은 결코 현명하지 않습니다.' },
+        { en: 'Don\'t assume that everyone agrees with you just because they are silent.', ko: '사람들이 침묵하고 있다고 해서 모두가 당신에게 동의한다고 가정하지 마세요.' },
+        { en: 'It is never wise to assume something is true before you have seen the actual data.', ko: '실제 데이터를 보기 전에 무언가가 사실이라고 가정하는 것은 결코 현명하지 않다.' },
       ],
     }
   ),
@@ -605,8 +605,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['mindset', 'disposition', 'outlook'],
       antonyms: ['indifference', 'neutrality', 'apathy'],
       exampleSentences: [
-        { en: 'A positive mindset can change your entire life.', ko: '긍정적인 태도는 당신의 인생 전체를 바꿀 수 있다.' },
-        { en: 'She has a very professional way of thinking toward her job.', ko: '그녀는 자신의 일에 대해 매우 전문적인 태도를 가지고 있다.' },
+        { en: 'A positive attitude can change your entire life.', ko: '긍정적인 태도는 당신의 인생 전체를 바꿀 수 있다.' },
+        { en: 'She has a very professional attitude toward her job.', ko: '그녀는 자신의 일에 대해 매우 전문적인 태도를 가지고 있다.' },
       ],
     }
   ),
@@ -662,8 +662,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['mechanical', 'spontaneous', 'instinctive'],
       antonyms: ['manual', 'intentional', 'deliberate'],
       exampleSentences: [
-        { en: 'The heating system has an inbuilt device for temperature control.', ko: '난방 시스템에는 온도를 조절하는 자동 장치가 내장되어 있습니다.' },
-        { en: 'Breathing is an involuntary response of the human body.', ko: '호흡은 인체의 자동적인 반응입니다.' },
+        { en: 'The heating system has an automatic temperature control feature.', ko: '난방 시스템에는 자동 온도 조절 기능이 내장되어 있다.' },
+        { en: 'Breathing is an automatic response of the human body.', ko: '호흡은 인체의 자동적인 반응이다.' },
       ],
     }
   ),
@@ -700,8 +700,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['obstacle', 'blockade', 'hurdle'],
       antonyms: ['opening', 'entrance', 'passage'],
       exampleSentences: [
-        { en: 'The heavy snow acted as a natural block to the mountain pass.', ko: '폭설이 산길을 막는 자연적인 장벽 역할을 했다.' },
-        { en: 'Lack of confidence can be a major psychological hindrance to success.', ko: '자신감 부족은 성공에 있어 큰 심리적 장벽이 될 수 있다.' },
+        { en: 'The heavy snow acted as a natural barrier to the mountain pass.', ko: '폭설이 산길을 막는 자연적인 장벽 역할을 했다.' },
+        { en: 'Lack of confidence can be a major barrier to success.', ko: '자신감 부족은 성공에 있어 큰 장벽이 될 수 있다.' },
       ],
     }
   ),
@@ -738,8 +738,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['confused', 'perplexed', 'baffled'],
       antonyms: ['composed', 'clearheaded', 'enlightened'],
       exampleSentences: [
-        { en: 'She looked completely lost and puzzled by the sudden change in plans.', ko: '그녀는 갑작스러운 계획 변경에 완전히 당황한 기색이었다.' },
-        { en: 'The tourists stood there with a puzzled expression, trying to make sense of the complex map.', ko: '관광객들은 복잡한 지도를 이해하려고 애쓰며 어리둥절한 표정으로 서 있었다.' },
+        { en: 'She looked completely bewildered by the sudden change in plans.', ko: '그녀는 갑작스러운 계획 변경에 완전히 당황한 기색이었다.' },
+        { en: 'The tourists stood there looking bewildered, trying to make sense of the complex map.', ko: '관광객들은 복잡한 지도를 이해하려고 애쓰며 당황한 표정으로 서 있었다.' },
       ],
     }
   ),
@@ -776,8 +776,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['connection', 'tie', 'link'],
       antonyms: ['separation', 'detachment', 'estrangement'],
       exampleSentences: [
-        { en: 'The shared experience created a lifelong emotional connection between the two survivors.', ko: '공유된 경험은 두 생존자 사이에 평생 지속될 정서적 유대를 형성했습니다.' },
-        { en: 'A strong relationship is built on a foundation of trust and mutual respect.', ko: '강력한 유대는 신뢰와 상호 존중의 토대 위에 세워집니다.' },
+        { en: 'The shared experience created a lifelong bond between the two survivors.', ko: '공유된 경험은 두 생존자 사이에 평생 지속될 유대를 형성했다.' },
+        { en: 'A strong bond is built on a foundation of trust and mutual respect.', ko: '강력한 유대는 신뢰와 상호 존중의 토대 위에 세워진다.' },
       ],
     }
   ),
@@ -795,8 +795,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['border', 'limit', 'frontier'],
       antonyms: ['center', 'interior', 'core'],
       exampleSentences: [
-        { en: 'The river forms a natural divide between the two neighboring states.', ko: '그 강은 인접한 두 주 사이에 자연적인 경계를 형성합니다.' },
-        { en: 'It is important to set personal limits in any professional relationship.', ko: '어떤 전문적인 관계에서든 개인적인 경계를 설정하는 것이 중요합니다.' },
+        { en: 'The river forms a natural boundary between the two neighboring states.', ko: '그 강은 인접한 두 주 사이에 자연적인 경계를 형성한다.' },
+        { en: 'It is important to set personal boundaries in any professional relationship.', ko: '어떤 전문적인 관계에서든 개인적인 경계를 설정하는 것이 중요하다.' },
       ],
     }
   ),
@@ -833,8 +833,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['allowance', 'funds', 'finances'],
       antonyms: ['debt', 'deficit', 'overspending'],
       exampleSentences: [
-        { en: 'We need to plan our monthly spending carefully to stay within our financial limits.', ko: '정해진 금액 내에서 생활하기 위해 우리는 매달의 지출 계획을 신중하게 세워야 합니다.' },
-        { en: 'The marketing department was granted a large amount of money for the campaign.', ko: '마케팅 부서는 캠페인을 위해 많은 액수의 자금을 할당받았습니다.' },
+        { en: 'We need to plan our monthly budget carefully to avoid overspending.', ko: '과소비를 피하기 위해 우리는 매달 예산을 신중하게 계획해야 한다.' },
+        { en: 'The marketing department was granted a large budget for the campaign.', ko: '마케팅 부서는 캠페인을 위해 많은 예산을 할당받았다.' },
       ],
     }
   ),
@@ -852,8 +852,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['load', 'weight', 'responsibility'],
       antonyms: ['relief', 'benefit', 'blessing'],
       exampleSentences: [
-        { en: 'The heavy debt became a major source of stress for the family.', ko: '과도한 빚은 그 가족에게 큰 심리적 부담이 되었습니다.' },
-        { en: 'I don\'t want to be a trouble to my friends when I am sick.', ko: '내가 아플 때 친구들에게 부담이 되고 싶지 않습니다.' },
+        { en: 'The heavy debt became a major burden for the family.', ko: '과도한 빚은 그 가족에게 큰 부담이 되었다.' },
+        { en: 'I don\'t want to be a burden to my friends when I am sick.', ko: '내가 아플 때 친구들에게 부담이 되고 싶지 않다.' },
       ],
     }
   ),
@@ -871,8 +871,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['administration', 'red tape', 'officialdom'],
       antonyms: ['simplicity', 'efficiency', 'anarchy'],
       exampleSentences: [
-        { en: 'The new business struggled to navigate through the complex government regulations and procedures.', ko: '새로운 기업은 복잡한 정부 관료제 규정과 절차를 통과하느라 애를 먹었습니다.' },
-        { en: 'Many citizens complain about the unnecessary paperwork and delays in the public sector.', ko: '많은 시민들이 공공 부문의 불필요한 서류 작업과 관료주의적 지연에 대해 불평합니다.' },
+        { en: 'The new business struggled to navigate through the government bureaucracy.', ko: '새로운 기업은 정부 관료제를 통과하느라 애를 먹었다.' },
+        { en: 'Many citizens complain about the bureaucracy involved in getting a simple permit.', ko: '많은 시민들이 간단한 허가를 받는 데 관련된 관료주의에 대해 불평한다.' },
       ],
     }
   ),
@@ -890,8 +890,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['competent', 'proficient', 'adept'],
       antonyms: ['incapable', 'incompetent', 'inept'],
       exampleSentences: [
-        { en: 'She has proven herself to be a highly skilled and efficient manager over the years.', ko: '그녀는 수년간 자신이 매우 유능하고 효율적인 관리자임을 증명해 왔습니다.' },
-        { en: 'The new software is fully functional and effective at handling large amounts of data.', ko: '새 소프트웨어는 대량의 데이터를 처리할 수 있는 충분한 성능을 갖추고 있습니다.' },
+        { en: 'She has proven herself to be a highly capable manager over the years.', ko: '그녀는 수년간 자신이 매우 유능한 관리자임을 증명해 왔다.' },
+        { en: 'The new software is capable of handling large amounts of data.', ko: '새 소프트웨어는 대량의 데이터를 처리할 수 있다.' },
       ],
     }
   ),
@@ -909,8 +909,8 @@ export const vocabBatch09: VocabItem[] = [
       synonyms: ['volume', 'dimensions', 'capability'],
       antonyms: ['emptiness', 'inability', 'limitation'],
       exampleSentences: [
-        { en: 'The stadium has a seating limit of fifty thousand people.', ko: '그 경기장은 5만 명을 수용할 수 있는 좌석 용량을 갖추고 있습니다.' },
-        { en: 'She has an incredible mental faculty for remembering complex mathematical formulas.', ko: '그녀는 복잡한 수학 공식을 기억하는 놀라운 지적 능력을 갖추고 있습니다.' },
+        { en: 'The stadium has a seating capacity of fifty thousand people.', ko: '그 경기장은 5만 명의 좌석 수용량을 갖추고 있다.' },
+        { en: 'She has an incredible capacity for remembering complex mathematical formulas.', ko: '그녀는 복잡한 수학 공식을 기억하는 놀라운 능력을 갖추고 있다.' },
       ],
     }
   ),

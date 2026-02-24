@@ -35,8 +35,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['hire', 'recruit', 'utilize'],
       antonyms: ['dismiss', 'fire', 'discharge'],
       exampleSentences: [
-        { en: 'The factory plans to hire more staff to increase production.', ko: '그 공장은 생산량을 늘리기 위해 더 많은 직원을 고용할 계획이다.' },
-        { en: 'The investigators decided to use a new technique to solve the case.', ko: '수사관들은 사건을 해결하기 위해 새로운 기법을 이용하기로 했다.' },
+        { en: 'The factory plans to employ more staff to increase production.', ko: '그 공장은 생산량을 늘리기 위해 더 많은 직원을 고용할 계획이다.' },
+        { en: 'The investigators decided to employ a new technique to solve the case.', ko: '수사관들은 사건을 해결하기 위해 새로운 기법을 이용하기로 했다.' },
       ],
     }
   ),
@@ -168,8 +168,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['surroundings', 'ecosystem', 'habitat'],
       antonyms: ['interior', 'isolation', 'vacuum'],
       exampleSentences: [
-        { en: 'We must protect the natural world for future generations.', ko: '우리는 미래 세대를 위해 자연 환경을 보호해야 한다.' },
-        { en: 'Children learn best in a supportive and safe setting.', ko: '아이들은 지지적이고 안전한 환경에서 가장 잘 배운다.' },
+        { en: 'We must protect the environment for future generations.', ko: '우리는 미래 세대를 위해 환경을 보호해야 한다.' },
+        { en: 'Children learn best in a supportive and safe environment.', ko: '아이들은 지지적이고 안전한 환경에서 가장 잘 배운다.' },
       ],
     }
   ),
@@ -187,8 +187,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['identical', 'equivalent', 'uniform'],
       antonyms: ['different', 'uneven', 'disproportionate'],
       exampleSentences: [
-        { en: 'All citizens should have an opportunity to succeed regardless of their background.', ko: '모든 시민은 배경에 상관없이 성공할 수 있는 동등한 기회를 가져야 한다.' },
-        { en: 'The recipe requires you to mix the flour and water in proportions of the same amount.', ko: '그 레시피는 밀가루와 물을 동등한 비율로 섞을 것을 요구한다.' },
+        { en: 'All citizens should have an equal opportunity to succeed regardless of their background.', ko: '모든 시민은 배경에 상관없이 성공할 수 있는 동등한 기회를 가져야 한다.' },
+        { en: 'The recipe requires you to mix the flour and water in equal proportions.', ko: '그 레시피는 밀가루와 물을 동등한 비율로 섞을 것을 요구한다.' },
       ],
     }
   ),
@@ -206,8 +206,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['gear', 'apparatus', 'tackle'],
       antonyms: ['hand', 'material', 'component'],
       exampleSentences: [
-        { en: 'The hikers carried heavy supplies for their mountain trip.', ko: '등산객들은 산행을 위해 무거운 장비를 운반했다.' },
-        { en: 'The gym is filled with modern exercise machines.', ko: '그 체육관은 최신 운동 장비로 가득 차 있다.' },
+        { en: 'The hikers carried heavy equipment for their mountain trip.', ko: '등산객들은 산행을 위해 무거운 장비를 운반했다.' },
+        { en: 'The gym is filled with modern exercise equipment.', ko: '그 체육관은 최신 운동 장비로 가득 차 있다.' },
       ],
     }
   ),
@@ -225,8 +225,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['flee', 'abscond', 'evade'],
       antonyms: ['remain', 'stay', 'confront'],
       exampleSentences: [
-        { en: 'The prisoner managed to break free from his cell during the night.', ko: '그 수감자는 밤사이에 감방에서 탈출하는 데 성공했다.' },
-        { en: 'They went to the mountains to get away from the heat of the city.', ko: '그들은 도시의 열기를 피해서 산으로 떠났다.' },
+        { en: 'The prisoner managed to escape from his cell during the night.', ko: '그 수감자는 밤사이에 감방에서 탈출하는 데 성공했다.' },
+        { en: 'They went to the mountains to escape the heat of the city.', ko: '그들은 도시의 열기를 피해 산으로 떠났다.' },
       ],
     }
   ),
@@ -244,8 +244,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['vital', 'crucial', 'indispensable'],
       antonyms: ['optional', 'secondary', 'superfluous'],
       exampleSentences: [
-        { en: 'Water is fundamental for all living organisms to survive.', ko: '물은 모든 생명체가 생존하는 데 필수적이다.' },
-        { en: 'Good communication is a core requirement for a successful marriage.', ko: '원활한 소통은 성공적인 결혼 생활을 위한 필수적인 요소이다.' },
+        { en: 'Water is essential for all living organisms to survive.', ko: '물은 모든 생명체가 생존하는 데 필수적이다.' },
+        { en: 'Good communication is essential for a successful marriage.', ko: '원활한 소통은 성공적인 결혼 생활에 필수적이다.' },
       ],
     }
   ),
@@ -263,8 +263,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['found', 'institute', 'constitute'],
       antonyms: ['abolish', 'demolish', 'destroy'],
       exampleSentences: [
-        { en: 'The committee was formed to help the local community create new safety guidelines.', ko: '위원회는 지역 사회가 새로운 안전 지침을 수립하는 것을 돕기 위해 구성되었습니다.' },
-        { en: 'It takes many years of hard work to build a reputation as a reliable professional.', ko: '신뢰할 수 있는 전문가로서의 명성을 쌓는 데는 수년간의 노력이 필요합니다.' },
+        { en: 'The committee was established to help the local community create new safety guidelines.', ko: '위원회는 지역 사회가 새로운 안전 지침을 수립하는 것을 돕기 위해 설립되었다.' },
+        { en: 'It takes many years of hard work to establish a reputation as a reliable professional.', ko: '신뢰할 수 있는 전문가로서의 명성을 확립하는 데는 수년간의 노력이 필요하다.' },
       ],
     }
   ),
@@ -282,8 +282,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['approximate', 'gauge', 'evaluate'],
       antonyms: ['calculate', 'measure', 'ascertain'],
       exampleSentences: [
-        { en: 'The organizers expect to see thousands of people, but it is difficult to predict the exact number.', ko: '주최 측은 수천 명의 사람들이 올 것으로 예상하지만, 정확한 숫자를 추정하기는 어렵습니다.' },
-        { en: 'It is necessary to assess the potential risks before starting the new project.', ko: '새로운 프로젝트를 시작하기 전에 잠재적인 위험 요소를 추정해 보는 것이 필요합니다.' },
+        { en: 'They estimate that thousands of people will attend, but it is difficult to know the exact number.', ko: '그들은 수천 명이 참석할 것으로 추정하지만, 정확한 숫자를 알기는 어렵다.' },
+        { en: 'It is necessary to estimate the potential risks before starting the new project.', ko: '새로운 프로젝트를 시작하기 전에 잠재적인 위험 요소를 추정해 보는 것이 필요하다.' },
       ],
     }
   ),
@@ -301,8 +301,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['assess', 'appraise', 'estimate'],
       antonyms: ['ignore', 'neglect', 'overlook'],
       exampleSentences: [
-        { en: 'The committee will carefully judge the performance of each employee before the promotion.', ko: '위원회는 승진 전에 각 직원의 성과를 신중하게 평가할 것입니다.' },
-        { en: 'It is difficult to determine the effectiveness of the new policy in such a short time.', ko: '그렇게 짧은 시간 안에 새로운 정책의 효과를 평가하기는 어렵습니다.' },
+        { en: 'The committee will evaluate the performance of each employee before the promotion.', ko: '위원회는 승진 전에 각 직원의 성과를 평가할 것이다.' },
+        { en: 'It is difficult to evaluate the effectiveness of the new policy in such a short time.', ko: '그렇게 짧은 시간 안에 새로운 정책의 효과를 평가하기는 어렵다.' },
       ],
     }
   ),
@@ -396,8 +396,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['inspect', 'scrutinize', 'investigate'],
       antonyms: ['ignore', 'neglect', 'overlook'],
       exampleSentences: [
-        { en: 'The doctor will check your symptoms and look at your throat to see what is wrong.', ko: '의사가 무엇이 문제인지 알아보기 위해 당신의 증상을 확인하고 목 안을 진찰할 것입니다.' },
-        { en: 'Scientists must study the data thoroughly before they can reach a final conclusion.', ko: '과학자들은 최종 결론에 도달하기 전에 데이터를 철저히 조사해야 합니다.' },
+        { en: 'The doctor will examine your throat to see what is wrong.', ko: '의사가 무엇이 문제인지 알아보기 위해 목 안을 진찰할 것이다.' },
+        { en: 'Scientists must examine the data thoroughly before reaching a final conclusion.', ko: '과학자들은 최종 결론에 도달하기 전에 데이터를 철저히 조사해야 한다.' },
       ],
     }
   ),
@@ -472,8 +472,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['thrill', 'stimulate', 'rouse'],
       antonyms: ['bore', 'calm', 'depress'],
       exampleSentences: [
-        { en: 'The news about the surprise vacation plans will surely make the children feel very happy.', ko: '깜짝 휴가 계획에 대한 소식은 분명 아이들을 크게 흥분시킬 것이다.' },
-        { en: 'The upcoming world tour began to stir great passion among the young fans.', ko: '다가오는 월드 투어는 젊은 팬들을 설레게 하기 시작했다.' },
+        { en: 'The news about the surprise vacation plans will surely excite the children.', ko: '깜짝 휴가 계획에 대한 소식은 분명 아이들을 흥분시킬 것이다.' },
+        { en: 'The upcoming world tour began to excite the young fans.', ko: '다가오는 월드 투어는 젊은 팬들을 흥분시키기 시작했다.' },
       ],
     }
   ),
@@ -510,8 +510,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['workout', 'practice', 'drill'],
       antonyms: ['rest', 'inactivity', 'idleness'],
       exampleSentences: [
-        { en: 'Swimming is considered one of the best forms of physical activity for the whole body.', ko: '수영은 전신을 위한 가장 좋은 형태의 신체 활동 중 하나로 여겨진다.' },
-        { en: 'You should try to get some physical movement every day to stay healthy.', ko: '건강을 유지하기 위해 매일 어느 정도의 신체 움직임을 갖도록 노력해야 한다.' },
+        { en: 'Swimming is considered one of the best forms of exercise for the whole body.', ko: '수영은 전신을 위한 가장 좋은 형태의 운동 중 하나로 여겨진다.' },
+        { en: 'You should try to get some exercise every day to stay healthy.', ko: '건강을 유지하기 위해 매일 어느 정도 운동을 하도록 노력해야 한다.' },
       ],
     }
   ),
@@ -529,8 +529,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['display', 'show', 'reveal'],
       antonyms: ['hide', 'conceal', 'cover'],
       exampleSentences: [
-        { en: 'The local gallery will present the works of young artists next month.', ko: '지역 갤러리는 다음 달에 젊은 예술가들의 작품을 전시할 예정이다.' },
-        { en: 'He did not demonstrate any signs of fear during the dangerous rescue.', ko: '그는 위험한 구조 작업 동안 어떠한 두려움의 기색도 보이지 않았다.' },
+        { en: 'The local gallery will exhibit the works of young artists next month.', ko: '지역 갤러리는 다음 달에 젊은 예술가들의 작품을 전시할 예정이다.' },
+        { en: 'He did not exhibit any signs of fear during the dangerous rescue.', ko: '그는 위험한 구조 작업 동안 어떠한 두려움의 기색도 보이지 않았다.' },
       ],
     }
   ),
@@ -567,8 +567,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['grow', 'extend', 'enlarge'],
       antonyms: ['shrink', 'contract', 'narrow'],
       exampleSentences: [
-        { en: 'The small bakery decided to increase its reach by opening a second shop.', ko: '그 작은 빵집은 두 번째 가게를 열어 사업을 확장하기로 결정했다.' },
-        { en: 'Reading books is a great way to broaden your vocabulary and knowledge.', ko: '독서는 어휘력과 지식을 넓히는 아주 좋은 방법이다.' },
+        { en: 'The small bakery decided to expand its business by opening a second shop.', ko: '그 작은 빵집은 두 번째 가게를 열어 사업을 확장하기로 결정했다.' },
+        { en: 'Reading books is a great way to expand your vocabulary and knowledge.', ko: '독서는 어휘력과 지식을 확장하는 아주 좋은 방법이다.' },
       ],
     }
   ),
@@ -586,8 +586,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['anticipate', 'await', 'predict'],
       antonyms: ['doubt', 'despair', 'surprise'],
       exampleSentences: [
-        { en: 'We did not anticipate such a large crowd to show up for the event.', ko: '우리는 그 행사에 그렇게 많은 군중이 나타날 것이라고는 예상하지 못했다.' },
-        { en: 'Parents often want their children to work hard at school.', ko: '부모들은 흔히 자녀들이 학교에서 열심히 공부하기를 기대한다.' },
+        { en: 'We did not expect such a large crowd to show up for the event.', ko: '우리는 그 행사에 그렇게 많은 군중이 나타날 것이라고는 예상하지 못했다.' },
+        { en: 'Parents often expect their children to work hard at school.', ko: '부모들은 흔히 자녀들이 학교에서 열심히 공부하기를 기대한다.' },
       ],
     }
   ),
@@ -605,8 +605,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['cost', 'expenditure', 'outlay'],
       antonyms: ['income', 'profit', 'revenue'],
       exampleSentences: [
-        { en: 'The total amount of repairing the car was much higher than we expected.', ko: '차를 수리하는 데 든 전체 비용이 우리가 예상했던 것보다 훨씬 더 많이 나왔다.' },
-        { en: 'He traveled to Europe at his own to study art history.', ko: '그는 미술사를 공부하기 위해 자비로 유럽을 여행했다.' },
+        { en: 'The expense of repairing the car was much higher than we expected.', ko: '차를 수리하는 비용이 우리가 예상했던 것보다 훨씬 더 많이 나왔다.' },
+        { en: 'He traveled to Europe at his own expense to study art history.', ko: '그는 미술사를 공부하기 위해 자비로 유럽을 여행했다.' },
       ],
     }
   ),
@@ -624,8 +624,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['test', 'trial', 'investigation'],
       antonyms: ['theory', 'guess', 'assumption'],
       exampleSentences: [
-        { en: 'The researchers conducted a controlled study to see how the new drug affects sleep patterns.', ko: '연구원들은 새로운 약이 수면 패턴에 어떤 영향을 미치는지 확인하기 위해 대조 실험을 수행했습니다.' },
-        { en: 'The chemistry teacher demonstrated a simple reaction during the afternoon lab session.', ko: '화학 선생님은 오후 실험 시간에 간단한 반응 실험을 시연해 주셨습니다.' },
+        { en: 'The researchers conducted an experiment to see how the new drug affects sleep patterns.', ko: '연구원들은 새로운 약이 수면 패턴에 어떤 영향을 미치는지 확인하기 위해 실험을 수행했다.' },
+        { en: 'The chemistry teacher demonstrated a simple experiment during the afternoon lab session.', ko: '화학 선생님은 오후 실험 시간에 간단한 실험을 시연해 주셨다.' },
       ],
     }
   ),
@@ -700,8 +700,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['investigate', 'examine', 'inspect'],
       antonyms: ['ignore', 'neglect', 'overlook'],
       exampleSentences: [
-        { en: 'The researchers want to travel to Mars to search for signs of water.', ko: '연구원들은 물의 흔적을 찾기 위해 화성을 탐사하고 싶어 한다.' },
-        { en: 'We spent the entire afternoon wandering through the hidden alleys of the city.', ko: '우리는 오후 내내 도시의 숨겨진 골목들을 탐험하며 보냈다.' },
+        { en: 'The researchers want to explore Mars to search for signs of water.', ko: '연구원들은 물의 흔적을 찾기 위해 화성을 탐사하고 싶어 한다.' },
+        { en: 'We spent the entire afternoon exploring the hidden alleys of the city.', ko: '우리는 오후 내내 도시의 숨겨진 골목들을 탐험하며 보냈다.' },
       ],
     }
   ),
@@ -757,8 +757,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['convey', 'articulate', 'manifest'],
       antonyms: ['suppress', 'conceal', 'repress'],
       exampleSentences: [
-        { en: 'He found it difficult to put his thoughts into words and show what he felt.', ko: '그는 자신의 생각을 말로 옮겨 감정을 표현하는 것이 어렵다는 것을 알게 되었다.' },
-        { en: 'The artist used vibrant colors to demonstrate her inner joy.', ko: '그 예술가는 자신의 내면적인 기쁨을 표현하기 위해 강렬한 색채를 사용했다.' },
+        { en: 'He found it difficult to express his feelings in words.', ko: '그는 자신의 감정을 말로 표현하는 것이 어렵다는 것을 알게 되었다.' },
+        { en: 'The artist used vibrant colors to express her inner joy.', ko: '그 예술가는 자신의 내면적인 기쁨을 표현하기 위해 강렬한 색채를 사용했다.' },
       ],
     }
   ),
@@ -928,8 +928,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['known', 'accustomed', 'recognizable'],
       antonyms: ['unfamiliar', 'strange', 'unknown'],
       exampleSentences: [
-        { en: 'The melody sounded like something I had heard before, but I couldn\'t remember the lyrics.', ko: '그 멜로디는 익숙했지만 가사가 기억나지 않았다.' },
-        { en: 'I am not very well acquainted with this computer software yet.', ko: '나는 아직 이 컴퓨터 소프트웨어에 익숙하지 않다.' },
+        { en: 'The melody sounded familiar, but I couldn\'t remember the lyrics.', ko: '그 멜로디가 익숙하게 들렸지만 가사가 기억나지 않았다.' },
+        { en: 'I am not very familiar with this computer software yet.', ko: '나는 아직 이 컴퓨터 소프트웨어에 익숙하지 않다.' },
       ],
     }
   ),
@@ -947,8 +947,8 @@ export const vocabBatch08: VocabItem[] = [
       synonyms: ['imagination', 'illusion', 'daydream'],
       antonyms: ['reality', 'actuality', 'fact'],
       exampleSentences: [
-        { en: 'The movie is a dark tale set in a magical kingdom.', ko: '그 영화는 마법 왕국을 배경으로 한 어두운 환상적인 이야기이다.' },
-        { en: 'He stopped living in a world of dreams and faced the truth.', ko: '그는 환상의 세계에서 사는 것을 그만두고 진실을 직시했다.' },
+        { en: 'The movie is a dark fantasy set in a magical kingdom.', ko: '그 영화는 마법 왕국을 배경으로 한 어두운 판타지이다.' },
+        { en: 'He stopped living in a fantasy world and faced the truth.', ko: '그는 환상의 세계에서 사는 것을 그만두고 진실을 직시했다.' },
       ],
     }
   ),

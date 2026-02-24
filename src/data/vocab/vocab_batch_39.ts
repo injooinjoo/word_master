@@ -21,7 +21,7 @@ export const vocabBatch39: VocabItem[] = [
       ],
     }
   ),
-  word('hostile', '반대하는', 10, 'adjective',
+  word('hostile', '적대적인', 10, 'adjective',
     ['우호적인', '친절한', '협력적인', '온화한', '환영하는', '무관심한', '유연한', '낙관적인', '수동적인', '평화로운'],
     tips({
       etymology: '라틴어 hostis(적)에서 유래하여 상대방을 적으로 간주하고 공격적인 태도를 보이는 것을 의미합니다.',
@@ -138,19 +138,19 @@ export const vocabBatch39: VocabItem[] = [
   word('however', '그러나, 하지만', 2, 'adverb',
     ['그럼에도', '따라서', '결국', '마침내', '오히려', '게다가', '비록', '반면에', '때문에', '물론'],
     tips({
-      etymology: '어떤 방법으로든지를 뜻하는 how와 강조의 ever가 결합하여 \'아무리 ~해도\'라는 양보의 의미를 만듭니다.',
-      visual: '거대한 벽 앞에서 아무리 망치질을 해도 끄떡없는 장면을 상상하며 한계를 나타내는 느낌을 기억하세요.',
-      soundAlike: '하우에버(How-ever) 발음 중 \'에버\'를 \'애써\'와 연결해 \'아무리 애써봐도\'라고 연상해 보세요.',
-      context: '문장 중간에서 형용사나 부사 앞에 쓰여 정도의 극한을 나타낼 때 주로 사용됩니다.',
-      synonymAntonym: 'no matter how와 같은 의미로 쓰이며, 고정된 상태를 나타내는 definitely와는 반대되는 유연함을 가집니다.',
+      etymology: '어떤 방법으로든지를 뜻하는 how와 강조의 ever가 결합하여 \'그럼에도 불구하고\'라는 대조의 의미를 만듭니다.',
+      visual: '한쪽에서는 비가 오는데 다른 쪽에서는 해가 비치는 대조적인 풍경을 상상해 보세요.',
+      soundAlike: '하우에버(How-ever) 발음을 \'하우(어떻게)든 에버(항상)\' 다른 관점이 있다고 연상해 보세요.',
+      context: '두 문장을 연결하여 앞 문장의 내용과 대조되는 내용을 이어줄 때 주로 사용됩니다.',
+      synonymAntonym: 'nevertheless, nonetheless와 비슷한 의미이며, therefore(그러므로)와는 반대되는 논리적 흐름을 가집니다.',
     }),
     {
-      definition: 'to whatever degree or extent; used to say that it does not matter how much of something there is.',
-      synonyms: ['no matter how', 'anyway', 'regardless of how'],
-      antonyms: ['certainly', 'definitely', 'absolutely'],
+      definition: 'used to introduce a statement that contrasts with or seems to contradict something that has been said previously; nevertheless',
+      synonyms: ['nevertheless', 'nonetheless', 'yet'],
+      antonyms: ['therefore', 'consequently', 'accordingly'],
       exampleSentences: [
-        { en: 'You must finish the project on time, however difficult it may be.', ko: '아무리 어려울지라도 당신은 제시간에 프로젝트를 끝내야 합니다.' },
-        { en: 'She will not change her mind however much you plead with her.', ko: '당신이 아무리 간청해도 그녀는 마음을 바꾸지 않을 것입니다.' },
+        { en: 'The weather forecast predicted rain; however, the sun shone brightly all day.', ko: '일기 예보에서는 비를 예측했지만, 하루 종일 해가 밝게 빛났습니다.' },
+        { en: 'He studied hard for the exam. However, he did not pass.', ko: '그는 시험을 위해 열심히 공부했습니다. 그러나 합격하지 못했습니다.' },
       ],
     }
   ),
@@ -326,21 +326,21 @@ export const vocabBatch39: VocabItem[] = [
     }
   ),
   word('husband', '남편', 3, 'noun',
-    ['설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다'],
+    ['아내', '형제', '삼촌', '조카', '사촌', '할아버지', '아버지', '아들', '손자', '며느리'],
     tips({
-      etymology: '집(house)을 관리하는 사람(bondi)이라는 어원에서 유래하여 자원을 아껴 쓰는 행위를 뜻하게 되었습니다.',
-      visual: '겨울을 나기 위해 식량을 조금씩 나누어 창고에 저장하는 농부의 모습을 상상해 보세요.',
-      soundAlike: '남편(husband)이 가계부를 쓰며 생활비를 아끼는 모습을 연상하면 기억하기 쉽습니다.',
-      context: '주로 한정된 자원이나 에너지, 돈을 효율적으로 아껴서 사용할 때 쓰이는 격식 있는 표현입니다.',
-      synonymAntonym: 'conserve와 유의어 관계이며, 반대로 낭비하다라는 뜻의 waste와 대조됩니다.',
+      etymology: '고대 노르웨이어 \'husbondi\'에서 유래했으며, 집(hus)의 주인(bondi)이라는 의미에서 남편을 뜻하게 되었습니다.',
+      visual: '결혼식에서 신부 옆에 서서 반지를 교환하고 있는 턱시도를 입은 남성을 상상해 보세요.',
+      soundAlike: '\'허즈밴드\' 발음에서 \'허즈(house)\'가 집을 연상시켜 가정의 남자 배우자를 떠올리면 쉽습니다.',
+      context: '가족 관계를 설명하거나 결혼 상태를 말할 때 가장 기본적으로 사용되는 단어입니다.',
+      synonymAntonym: 'spouse(배우자)와 유사하지만 성별을 특정하며, wife(아내)와는 반대되는 성별의 배우자를 의미합니다.',
     }),
     {
-      definition: 'to manage resources carefully and avoid wasteful spending or usage',
-      synonyms: ['conserve', 'economize', 'save'],
-      antonyms: ['squander', 'waste', 'dissipate'],
+      definition: 'a married man; a male spouse',
+      synonyms: ['spouse', 'partner', 'groom'],
+      antonyms: ['wife', 'bride', 'ex-husband'],
       exampleSentences: [
-        { en: 'The nation must carefully manage its natural resources to ensure long-term survival.', ko: '국가는 장기적인 생존을 보장하기 위해 천연자원을 신중하게 절약해야 합니다.' },
-        { en: 'She learned to use her limited energy wisely during the final miles of the marathon.', ko: '그녀는 마라톤의 마지막 구간 동안 한정된 에너지를 현명하게 아껴 쓰는 법을 배웠습니다.' },
+        { en: 'Her husband surprised her with flowers on their wedding anniversary.', ko: '그녀의 남편은 결혼기념일에 꽃으로 그녀를 놀라게 했습니다.' },
+        { en: 'She introduced her husband to all of her colleagues at the company dinner.', ko: '그녀는 회사 만찬에서 동료들에게 자신의 남편을 소개했습니다.' },
       ],
     }
   ),

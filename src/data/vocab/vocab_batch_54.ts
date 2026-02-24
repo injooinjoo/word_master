@@ -364,21 +364,21 @@ export const vocabBatch54: VocabItem[] = [
     }
   ),
   word('rate', '율, 비율', 7, 'noun',
-    ['분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다'],
+    ['양', '수량', '크기', '무게', '길이', '넓이', '높이', '깊이', '속도', '거리'],
     tips({
-      etymology: '라틴어 \'ratus\'에서 유래하여 사물의 가치를 계산하거나 판단한다는 의미를 담고 있습니다.',
-      visual: '영화 리뷰 사이트에서 별점을 5개 중 몇 개를 줄지 고민하며 점수를 매기는 모습을 상상하세요.',
-      soundAlike: '비율을 뜻하는 \'레이트\'와 발음이 같으므로, 가치를 매겨서 순위를 정하는 장면을 연결하세요.',
-      context: '주로 호텔, 영화, 서비스의 질을 평가하거나 등급을 매길 때 동사로 자주 쓰입니다.',
-      synonymAntonym: '평가하다라는 뜻의 assess와 유사하며, 무시하거나 방치한다는 뜻의 ignore와 반대됩니다.',
+      etymology: '라틴어 \'ratus(계산된)\'에서 유래하여 수량 간의 비례 관계나 속도를 나타내는 의미를 담고 있습니다.',
+      visual: '은행 전광판에 표시된 환율이나 이자율 숫자들이 실시간으로 변하는 모습을 상상하세요.',
+      soundAlike: '\'레이트\'라는 발음이 환율(exchange rate)이나 심박수(heart rate)에서 자주 들리는 익숙한 소리입니다.',
+      context: '이자율, 환율, 실업률, 성장률 등 다양한 분야에서 비율이나 속도를 나타낼 때 명사로 자주 쓰입니다.',
+      synonymAntonym: '비율을 뜻하는 ratio, proportion과 유사하며, 고정된 값을 뜻하는 constant와는 대조됩니다.',
     }),
     {
-      definition: 'To assign a standard or value to something according to a particular scale.',
-      synonyms: ['evaluate', 'assess', 'appraise'],
-      antonyms: ['ignore', 'neglect', 'disregard'],
+      definition: 'A measure, quantity, or frequency, typically one measured against some other quantity or measure.',
+      synonyms: ['ratio', 'proportion', 'percentage'],
+      antonyms: ['constant', 'fixed amount', 'whole'],
       exampleSentences: [
-        { en: 'Many critics decided to classify the new film as a masterpiece and gave it a high score.', ko: '많은 비평가들은 그 새로운 영화를 걸작으로 분류하고 높은 점수로 평가했습니다.' },
-        { en: 'Customers often rank the quality of service on a scale from one to ten after their stay.', ko: '고객들은 숙박 후 서비스의 질을 1에서 10까지의 척도로 자주 등급을 매깁니다.' },
+        { en: 'The unemployment rate has decreased significantly over the past year.', ko: '지난 한 해 동안 실업률이 크게 감소했습니다.' },
+        { en: 'The bank offered a competitive interest rate on savings accounts.', ko: '은행은 저축 계좌에 경쟁력 있는 이자율을 제공했습니다.' },
       ],
     }
   ),

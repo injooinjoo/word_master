@@ -16,8 +16,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['kind', 'charitable', 'altruistic'],
       antonyms: ['malevolent', 'selfish', 'cruel'],
       exampleSentences: [
-        { en: 'She was known for her generous and caring nature toward the poor.', ko: '그녀는 가난한 사람들에 대한 자비로운 성품으로 알려져 있었다.' },
-        { en: 'The wealthy donor funded the new hospital wing to help the community.', ko: '그 자비로운 기부자가 지역 사회를 돕기 위해 새 병원 동 건축을 후원했다.' },
+        { en: 'She was known for her benevolent nature toward the poor.', ko: '그녀는 가난한 사람들에 대한 자비로운 성품으로 알려져 있었다.' },
+        { en: 'The benevolent donor funded the new hospital wing to help the community.', ko: '그 자비로운 기부자가 지역 사회를 돕기 위해 새 병원 동 건축을 후원했다.' },
       ],
     }
   ),
@@ -168,8 +168,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['condemn', 'criticize', 'rebuke'],
       antonyms: ['praise', 'commend', 'approve'],
       exampleSentences: [
-        { en: 'The committee voted to formally reprimand the member for his misconduct.', ko: '위원회는 그의 비행에 대해 해당 위원을 공식적으로 비난하기로 의결했다.' },
-        { en: 'The senator was officially rebuked for his unethical behavior during the campaign.', ko: '그 상원의원은 선거 운동 기간 중의 비윤리적인 행동으로 공식적인 비난을 받았다.' },
+        { en: 'The committee voted to censure the member for his misconduct.', ko: '위원회는 그의 비행에 대해 해당 위원을 공식적으로 비난하기로 의결했다.' },
+        { en: 'The senator was censured for his unethical behavior during the campaign.', ko: '그 상원의원은 선거 운동 기간 중의 비윤리적인 행동으로 공식적인 비난을 받았다.' },
       ],
     }
   ),
@@ -187,8 +187,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['restrict', 'confine', 'restrain'],
       antonyms: ['expand', 'liberate', 'exceed'],
       exampleSentences: [
-        { en: 'The power of the monarchy was strictly defined and limited by the new constitution.', ko: '군주의 권력은 새 헌법에 의해 엄격하게 정의되고 제한되었다.' },
-        { en: 'Their movements were kept within a small area by the heavy snowfall.', ko: '폭설로 인해 그들의 이동 범위가 좁은 지역으로 제한되었다.' },
+        { en: 'The power of the monarchy was circumscribed by the new constitution.', ko: '군주의 권력은 새 헌법에 의해 엄격하게 제한되었다.' },
+        { en: 'Their movements were circumscribed by the heavy snowfall.', ko: '폭설로 인해 그들의 이동 범위가 제한되었다.' },
       ],
     }
   ),
@@ -244,8 +244,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['logical', 'consistent', 'articulate'],
       antonyms: ['incoherent', 'confused', 'irrational'],
       exampleSentences: [
-        { en: 'The witness failed to provide a logical and organized account of the event.', ko: '그 증인은 사건에 대해 일관된 설명을 제공하지 못했다.' },
-        { en: 'He was so tired that he could barely make a clear and sensible sentence.', ko: '그는 너무 피곤해서 일관된 문장을 거의 만들 수 없었다.' },
+        { en: 'The witness failed to provide a coherent account of the event.', ko: '그 증인은 사건에 대해 일관된 설명을 제공하지 못했다.' },
+        { en: 'He was so tired that he could barely form a coherent sentence.', ko: '그는 너무 피곤해서 일관된 문장을 거의 만들 수 없었다.' },
       ],
     }
   ),
@@ -301,8 +301,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['smug', 'self-satisfied', 'unconcerned'],
       antonyms: ['discontent', 'humble', 'anxious'],
       exampleSentences: [
-        { en: 'We cannot afford to become too satisfied with our current success while competitors are working hard.', ko: '경쟁자들이 열심히 노력하는 동안 현재의 성공에 너무 안주해서는 안 된다.' },
-        { en: 'The team lost the championship because they grew too relaxed after their early victories.', ko: '그 팀은 초반 승리 이후 너무 안주하는 바람에 챔피언십에서 패배했다.' },
+        { en: 'We cannot afford to become complacent with our current success while competitors are working hard.', ko: '경쟁자들이 열심히 노력하는 동안 현재의 성공에 너무 안주해서는 안 된다.' },
+        { en: 'The team lost the championship because they grew complacent after their early victories.', ko: '그 팀은 초반 승리 이후 너무 안주하는 바람에 챔피언십에서 패배했다.' },
       ],
     }
   ),
@@ -358,8 +358,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['admit', 'acknowledge', 'yield'],
       antonyms: ['deny', 'dispute', 'reject'],
       exampleSentences: [
-        { en: 'The candidate refused to acknowledge the results until every vote was counted.', ko: '그 후보는 모든 투표가 집계될 때까지 결과에 승복하기를 거부했습니다.' },
-        { en: 'After hours of debating, she finally had to grant that her opponent\'s argument was valid.', ko: '몇 시간 동안의 토론 끝에, 그녀는 마침내 상대방의 주장이 타당하다는 것을 인정해야만 했습니다.' },
+        { en: 'The candidate refused to concede the results until every vote was counted.', ko: '그 후보는 모든 투표가 집계될 때까지 결과에 승복하기를 거부했습니다.' },
+        { en: 'After hours of debating, she finally had to concede that her opponent\'s argument was valid.', ko: '몇 시간 동안의 토론 끝에, 그녀는 마침내 상대방의 주장이 타당하다는 것을 인정해야만 했습니다.' },
       ],
     }
   ),
@@ -510,8 +510,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['noticeable', 'prominent', 'striking'],
       antonyms: ['inconspicuous', 'subtle', 'unobtrusive'],
       exampleSentences: [
-        { en: 'The bird\'s bright red feathers made it highly visible and easy to spot in the green trees.', ko: '그 새의 밝은 빨간 깃털은 초록색 나무들 사이에서 매우 눈에 띄고 찾기 쉽게 만들었다.' },
-        { en: 'He felt uncomfortable because his height made him stand out in the small crowd.', ko: '그는 자신의 큰 키 때문에 작은 군중 속에서 너무 눈에 띄어 불편함을 느꼈다.' },
+        { en: 'The bird\'s bright red feathers were conspicuous among the green trees.', ko: '그 새의 밝은 빨간 깃털은 초록색 나무들 사이에서 매우 눈에 띄었다.' },
+        { en: 'He felt uncomfortable because his height made him conspicuous in the small crowd.', ko: '그는 자신의 큰 키 때문에 작은 군중 속에서 너무 눈에 띄어 불편함을 느꼈다.' },
       ],
     }
   ),
@@ -548,8 +548,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['restrict', 'limit', 'curb'],
       antonyms: ['free', 'release', 'permit'],
       exampleSentences: [
-        { en: 'The high cost of materials will inevitably limit and force us to change our production plans.', ko: '높은 원자재 비용은 필연적으로 우리의 생산 계획을 제한하고 변경하게 만들 것이다.' },
-        { en: 'Strict regulations often act to prevent and keep small businesses from expanding too quickly.', ko: '엄격한 규제는 종종 소규모 기업들이 너무 빠르게 확장하는 것을 제한하는 역할을 한다.' },
+        { en: 'The high cost of materials will inevitably constrain our production plans.', ko: '높은 원자재 비용은 필연적으로 우리의 생산 계획을 제한할 것이다.' },
+        { en: 'Strict regulations often constrain small businesses from expanding too quickly.', ko: '엄격한 규제는 종종 소규모 기업들이 너무 빠르게 확장하는 것을 제한한다.' },
       ],
     }
   ),
@@ -567,8 +567,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['compete', 'struggle', 'assert'],
       antonyms: ['yield', 'surrender', 'concede'],
       exampleSentences: [
-        { en: 'Several teams are ready to fight and strive for the top position in the league.', ko: '여러 팀이 리그 최정상 자리를 놓고 다툴 준비가 되어 있다.' },
-        { en: 'The lawyer continued to maintain that his client was innocent throughout the trial.', ko: '변호사는 재판 내내 그의 의뢰인이 무죄라고 주장했다.' },
+        { en: 'Several teams are ready to contend for the top position in the league.', ko: '여러 팀이 리그 최정상 자리를 놓고 다툴 준비가 되어 있다.' },
+        { en: 'The lawyer continued to contend that his client was innocent throughout the trial.', ko: '변호사는 재판 내내 그의 의뢰인이 무죄라고 주장했다.' },
       ],
     }
   ),
@@ -643,8 +643,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['meet', 'merge', 'unite'],
       antonyms: ['diverge', 'scatter', 'separate'],
       exampleSentences: [
-        { en: 'Thousands of supporters will gather and move to meet at the capital for the rally.', ko: '수천 명의 지지자들이 집회를 위해 수도로 모여들 것이다.' },
-        { en: 'The two roads join together at the center of the town.', ko: '두 도로는 마을 중심부에서 하나로 만난다.' },
+        { en: 'Thousands of supporters will converge on the capital for the rally.', ko: '수천 명의 지지자들이 집회를 위해 수도로 모여들 것이다.' },
+        { en: 'The two roads converge at the center of the town.', ko: '두 도로는 마을 중심부에서 하나로 만난다.' },
       ],
     }
   ),
@@ -662,8 +662,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['condemn', 'sentence', 'find guilty'],
       antonyms: ['acquit', 'exonerate', 'clear'],
       exampleSentences: [
-        { en: 'The jury took only two hours to find enough reason to declare the defendant guilty and officially punish him.', ko: '배심원단이 피고인에게 유죄 판결을 내리는 데는 단 두 시간밖에 걸리지 않았다.' },
-        { en: 'There was sufficient evidence for the judge to formally pronounce him guilty of the robbery.', ko: '그에게 강도죄로 유죄 판결을 내릴 충분한 증거가 있었다.' },
+        { en: 'The jury took only two hours to convict the defendant.', ko: '배심원단이 피고인에게 유죄 판결을 내리는 데는 단 두 시간밖에 걸리지 않았다.' },
+        { en: 'There was sufficient evidence to convict him of the robbery.', ko: '그에게 강도죄로 유죄 판결을 내릴 충분한 증거가 있었다.' },
       ],
     }
   ),
@@ -700,8 +700,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['warm', 'friendly', 'genial'],
       antonyms: ['hostile', 'cold', 'aloof'],
       exampleSentences: [
-        { en: 'The host gave us a very warm and sincere welcome when we arrived at the party.', ko: '우리가 파티에 도착했을 때 주인은 우리를 매우 진심 어린 태도로 따뜻하게 환영해 주었다.' },
-        { en: 'Despite their political differences, the meeting was conducted in a polite and friendly manner.', ko: '정치적 견해 차이에도 불구하고 회의는 화기애애하고 예의 바른 분위기 속에서 진행되었다.' },
+        { en: 'The host gave us a cordial welcome when we arrived at the party.', ko: '우리가 파티에 도착했을 때 주인은 우리를 매우 따뜻하게 환영해 주었다.' },
+        { en: 'Despite their political differences, the meeting was conducted in a cordial manner.', ko: '정치적 견해 차이에도 불구하고 회의는 화기애애한 분위기 속에서 진행되었다.' },
       ],
     }
   ),
@@ -719,8 +719,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['rust', 'erode', 'oxidize'],
       antonyms: ['preserve', 'protect', 'build'],
       exampleSentences: [
-        { en: 'Acid rain can damage stone statues over a long period of time.', ko: '산성비는 오랜 시간에 걸쳐 석상을 부식시킬 수 있다.' },
-        { en: 'The salt in the air began to eat away at the metal parts of the ship.', ko: '공기 중의 염분이 배의 금속 부품들을 부식시키기 시작했다.' },
+        { en: 'Acid rain can corrode stone statues over a long period of time.', ko: '산성비는 오랜 시간에 걸쳐 석상을 부식시킬 수 있다.' },
+        { en: 'The salt in the air began to corrode the metal parts of the ship.', ko: '공기 중의 염분이 배의 금속 부품들을 부식시키기 시작했다.' },
       ],
     }
   ),
@@ -757,8 +757,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['clandestine', 'stealthy', 'surreptitious'],
       antonyms: ['overt', 'manifest', 'explicit'],
       exampleSentences: [
-        { en: 'The government denied any involvement in the military operation.', ko: '정부는 그 비밀 군사 작전에 어떠한 개입도 없었다고 부인했다.' },
-        { en: 'She made a movement to check her phone under the table.', ko: '그녀는 테이블 아래에서 남몰래 휴대폰을 확인하려는 움직임을 보였다.' },
+        { en: 'The government denied any involvement in the covert military operation.', ko: '정부는 그 비밀 군사 작전에 어떠한 개입도 없었다고 부인했다.' },
+        { en: 'She made a covert movement to check her phone under the table.', ko: '그녀는 테이블 아래에서 남몰래 휴대폰을 확인하려는 움직임을 보였다.' },
       ],
     }
   ),
@@ -776,8 +776,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['believable', 'trustworthy', 'reliable'],
       antonyms: ['incredible', 'unreliable', 'dubious'],
       exampleSentences: [
-        { en: 'The witness gave a highly convincing account of the events that occurred.', ko: '목격자는 발생한 사건들에 대해 매우 신뢰할 만한 설명을 제공했다.' },
-        { en: 'The company needs to present a plausible plan to regain the public\'s trust.', ko: '그 회사는 대중의 신뢰를 회복하기 위해 믿을 만한 계획을 제시해야 한다.' },
+        { en: 'The witness gave a highly credible account of the events that occurred.', ko: '목격자는 발생한 사건들에 대해 매우 신뢰할 만한 설명을 제공했다.' },
+        { en: 'The company needs to present a credible plan to regain the public\'s trust.', ko: '그 회사는 대중의 신뢰를 회복하기 위해 믿을 만한 계획을 제시해야 한다.' },
       ],
     }
   ),
@@ -795,8 +795,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['peak', 'climax', 'conclude'],
       antonyms: ['begin', 'start', 'commence'],
       exampleSentences: [
-        { en: 'The months of preparation will finally reach a high point in tonight\'s performance.', ko: '몇 달간의 준비 과정이 오늘 밤 공연에서 마침내 절정에 달할 것입니다.' },
-        { en: 'Their long-standing rivalry resulted in a physical confrontation.', ko: '그들의 오래된 경쟁 관계는 결국 물리적 충돌로 치달았습니다.' },
+        { en: 'The months of preparation will culminate in tonight\'s performance.', ko: '몇 달간의 준비 과정이 오늘 밤 공연에서 마침내 절정에 달할 것입니다.' },
+        { en: 'Their long-standing rivalry culminated in a physical confrontation.', ko: '그들의 오래된 경쟁 관계는 결국 물리적 충돌로 치달았습니다.' },
       ],
     }
   ),
@@ -814,8 +814,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['shorten', 'reduce', 'diminish'],
       antonyms: ['extend', 'prolong', 'expand'],
       exampleSentences: [
-        { en: 'The school decided to shorten the outdoor activities due to the heavy rain.', ko: '폭우로 인해 학교는 야외 활동을 축소하기로 결정했다.' },
-        { en: 'New laws were introduced to limit the power of the executive branch.', ko: '행정부의 권한을 축소하기 위해 새로운 법안들이 도입되었다.' },
+        { en: 'The school decided to curtail outdoor activities due to the heavy rain.', ko: '폭우로 인해 학교는 야외 활동을 축소하기로 결정했다.' },
+        { en: 'New laws were introduced to curtail the power of the executive branch.', ko: '행정부의 권한을 축소하기 위해 새로운 법안들이 도입되었다.' },
       ],
     }
   ),
@@ -833,8 +833,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['skeptical', 'distrustful', 'pessimistic'],
       antonyms: ['idealistic', 'optimistic', 'trusting'],
       exampleSentences: [
-        { en: 'He has grown increasingly skeptical about the motives of politicians.', ko: '그는 정치인들의 동기에 대해 점점 더 냉소적으로 변해갔다.' },
-        { en: 'Many people take a distrustful view of the new corporate social responsibility initiative.', ko: '많은 이들이 그 기업의 새로운 사회적 책임 활동에 대해 냉소적인 시각을 가지고 있다.' },
+        { en: 'He has grown increasingly cynical about the motives of politicians.', ko: '그는 정치인들의 동기에 대해 점점 더 냉소적으로 변해갔다.' },
+        { en: 'Many people take a cynical view of the new corporate social responsibility initiative.', ko: '많은 이들이 그 기업의 새로운 사회적 책임 활동에 대해 냉소적인 시각을 가지고 있다.' },
       ],
     }
   ),
@@ -852,8 +852,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['intimidating', 'overwhelming', 'formidable'],
       antonyms: ['easy', 'encouraging', 'heartening'],
       exampleSentences: [
-        { en: 'The prospect of starting the entire project over from scratch was truly intimidating.', ko: '프로젝트 전체를 처음부터 다시 시작해야 한다는 전망은 정말 벅찼다.' },
-        { en: 'Climbing the steep mountain in such bad weather seemed like a discouragingly difficult task.', ko: '그런 악천후 속에 가파른 산을 오르는 것은 벅찬 과업처럼 보였다.' },
+        { en: 'The prospect of starting the entire project over from scratch was truly daunting.', ko: '프로젝트 전체를 처음부터 다시 시작해야 한다는 전망은 정말 벅찼다.' },
+        { en: 'Climbing the steep mountain in such bad weather seemed like a daunting task.', ko: '그런 악천후 속에 가파른 산을 오르는 것은 벅찬 과업처럼 보였다.' },
       ],
     }
   ),
@@ -871,8 +871,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['weaken', 'enfeeble', 'enervate'],
       antonyms: ['strengthen', 'invigorate', 'fortify'],
       exampleSentences: [
-        { en: 'The long-term effects of the disease can seriously hinder and impair the body\'s ability to function.', ko: '그 질병의 장기적인 영향은 신체 기능을 심각하게 약화시킬 수 있습니다.' },
-        { en: 'A series of scandals continued to undermine and shake the stability of the government.', ko: '일련의 스캔들이 정부의 안정성을 계속해서 약화시켰습니다.' },
+        { en: 'The long-term effects of the disease can seriously debilitate the body.', ko: '그 질병의 장기적인 영향은 신체를 심각하게 약화시킬 수 있습니다.' },
+        { en: 'A series of scandals continued to debilitate the stability of the government.', ko: '일련의 스캔들이 정부의 안정성을 계속해서 약화시켰습니다.' },
       ],
     }
   ),
@@ -890,8 +890,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['corrupt', 'degenerate', 'self-indulgent'],
       antonyms: ['ascetic', 'moral', 'virtuous'],
       exampleSentences: [
-        { en: 'The empire fell into a state of decline due to its increasingly self-indulgent and wasteful lifestyle.', ko: '그 제국은 점점 더 퇴폐적이고 낭비적인 생활 방식 때문에 쇠퇴의 길로 접어들었다.' },
-        { en: 'They enjoyed a rich chocolate cake that was described as a truly indulgent treat.', ko: '그들은 진정으로 퇴폐적인 즐거움이라고 묘사될 만큼 진한 초콜릿 케이크를 즐겼다.' },
+        { en: 'The empire fell into decline due to its increasingly decadent lifestyle.', ko: '그 제국은 점점 더 퇴폐적인 생활 방식 때문에 쇠퇴의 길로 접어들었다.' },
+        { en: 'They enjoyed a decadent chocolate cake that was rich and indulgent.', ko: '그들은 진하고 퇴폐적인 초콜릿 케이크를 즐겼다.' },
       ],
     }
   ),
@@ -909,8 +909,8 @@ export const vocabBatch14: VocabItem[] = [
       synonyms: ['decode', 'interpret', 'unravel'],
       antonyms: ['encode', 'scramble', 'conceal'],
       exampleSentences: [
-        { en: 'It took the experts several months to understand the secret message.', ko: '전문가들이 그 비밀 메시지를 해독하는 데 몇 달이 걸렸다.' },
-        { en: 'Can you help me read this doctor\'s messy handwriting?', ko: '이 의사의 엉망인 글씨체를 해독하는 것 좀 도와줄래?' },
+        { en: 'It took the experts several months to decipher the secret message.', ko: '전문가들이 그 비밀 메시지를 해독하는 데 몇 달이 걸렸다.' },
+        { en: 'Can you help me decipher this doctor\'s messy handwriting?', ko: '이 의사의 엉망인 글씨체를 해독하는 것 좀 도와줄래?' },
       ],
     }
   ),

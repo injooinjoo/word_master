@@ -354,8 +354,8 @@ export const vocabBatch01: VocabItem[] = [
       synonyms: ['monarch', 'empress', 'her majesty'],
       antonyms: ['king', 'commoner', 'subject'],
       exampleSentences: [
-        { en: 'The royal guards stood at attention as the monarch entered the room.', ko: '군주가 방으로 들어서자 왕실 근위병들이 차려 자세로 섰다.' },
-        { en: 'She was crowned as the new ruler of the nation after her father passed away.', ko: '그녀는 아버지가 돌아가신 후 나라의 새로운 통치자로 즉위했다.' },
+        { en: 'The queen waved to the crowd from the palace balcony.', ko: '여왕이 궁전 발코니에서 군중에게 손을 흔들었다.' },
+        { en: 'She was crowned queen of the nation after her father passed away.', ko: '그녀는 아버지가 돌아가신 후 나라의 여왕으로 즉위했다.' },
       ],
     }
   ),
@@ -468,8 +468,8 @@ export const vocabBatch01: VocabItem[] = [
       synonyms: ['liquid', 'H2O', 'moisture'],
       antonyms: ['fire', 'drought', 'dryness'],
       exampleSentences: [
-        { en: 'You should drink at least eight glasses of this liquid every day.', ko: '매일 적어도 여덟 잔의 물을 마셔야 합니다.' },
-        { en: 'The plants will die if they do not get enough hydration.', ko: '식물들은 충분한 물을 공급받지 못하면 죽을 것입니다.' },
+        { en: 'You should drink at least eight glasses of water every day.', ko: '매일 적어도 여덟 잔의 물을 마셔야 합니다.' },
+        { en: 'The plants will die if they do not get enough water.', ko: '식물들은 충분한 물을 공급받지 못하면 죽을 것입니다.' },
       ],
     }
   ),
@@ -544,8 +544,8 @@ export const vocabBatch01: VocabItem[] = [
       synonyms: ['courageous', 'valiant', 'fearless'],
       antonyms: ['cowardly', 'fearful', 'timid'],
       exampleSentences: [
-        { en: 'It was a very bold and courageous act to speak the truth in that situation.', ko: '그런 상황에서 진실을 말한 것은 매우 용감한 행동이었습니다.' },
-        { en: 'The young explorer felt ready to face the dark cave alone.', ko: '어린 탐험가는 혼자서 어두운 동굴에 맞설 만큼 용감하다고 느꼈습니다.' },
+        { en: 'It was very brave of her to speak the truth in that situation.', ko: '그런 상황에서 진실을 말한 것은 그녀의 매우 용감한 행동이었습니다.' },
+        { en: 'The brave explorer entered the dark cave alone.', ko: '용감한 탐험가는 혼자서 어두운 동굴에 들어갔습니다.' },
       ],
     }
   ),
@@ -564,7 +564,7 @@ export const vocabBatch01: VocabItem[] = [
       antonyms: ['dirty', 'filthy', 'messy'],
       exampleSentences: [
         { en: 'Make sure your hands are clean before you start cooking.', ko: '요리를 시작하기 전에 손이 깨끗한지 확인하세요.' },
-        { en: 'The air in the mountains is very fresh and pure.', ko: '산속의 공기는 매우 신선하고 깨끗합니다.' },
+        { en: 'The air in the mountains is very clean and fresh.', ko: '산속의 공기는 매우 깨끗하고 신선합니다.' },
       ],
     }
   ),
@@ -658,8 +658,8 @@ export const vocabBatch01: VocabItem[] = [
       synonyms: ['joyful', 'cheerful', 'contented'],
       antonyms: ['sad', 'miserable', 'depressed'],
       exampleSentences: [
-        { en: 'I am so glad to see you looking so healthy and cheerful.', ko: '당신이 아주 건강하고 즐거워 보여서 정말 기쁩니다.' },
-        { en: 'The children were playing in the park with bright, smiling faces.', ko: '아이들은 밝게 웃는 얼굴로 공원에서 놀고 있었습니다.' },
+        { en: 'I am so happy to see you looking healthy and cheerful.', ko: '당신이 건강하고 즐거워 보여서 정말 행복합니다.' },
+        { en: 'The children looked happy playing in the park together.', ko: '아이들은 공원에서 함께 놀며 행복해 보였습니다.' },
       ],
     }
   ),
@@ -791,8 +791,8 @@ export const vocabBatch01: VocabItem[] = [
       synonyms: ['sea', 'main', 'deep'],
       antonyms: ['land', 'continent', 'shore'],
       exampleSentences: [
-        { en: 'The Pacific is the largest body of water on the planet.', ko: '태평양은 지구상에서 가장 거대한 바다입니다.' },
-        { en: 'Many mysterious creatures live deep beneath the surface of the blue expanse.', ko: '많은 신비로운 생물들이 푸른 바다 표면 깊은 곳에 살고 있습니다.' },
+        { en: 'The Pacific Ocean is the largest body of water on the planet.', ko: '태평양은 지구상에서 가장 거대한 바다입니다.' },
+        { en: 'Many mysterious creatures live deep in the ocean.', ko: '많은 신비로운 생물들이 바다 깊은 곳에 살고 있습니다.' },
       ],
     }
   ),
@@ -829,8 +829,8 @@ export const vocabBatch01: VocabItem[] = [
       synonyms: ['silent', 'peaceful', 'calm'],
       antonyms: ['loud', 'noisy', 'rowdy'],
       exampleSentences: [
-        { en: 'The library is a very peaceful and still place where everyone must remain silent.', ko: '도서관은 모든 사람이 침묵을 지켜야 하는 매우 평화롭고 정적인 장소입니다.' },
-        { en: 'They decided to move to a secluded area to enjoy a more tranquil lifestyle.', ko: '그들은 더 평온한 생활 방식을 즐기기 위해 외딴 지역으로 이사하기로 결정했습니다.' },
+        { en: 'The library is a quiet place where everyone must remain silent.', ko: '도서관은 모든 사람이 침묵을 지켜야 하는 조용한 장소입니다.' },
+        { en: 'They moved to a quiet neighborhood to enjoy a peaceful lifestyle.', ko: '그들은 평온한 생활을 즐기기 위해 조용한 동네로 이사했습니다.' },
       ],
     }
   ),
@@ -867,8 +867,8 @@ export const vocabBatch01: VocabItem[] = [
       synonyms: ['academy', 'institute', 'college'],
       antonyms: ['home', 'workplace', 'wilderness'],
       exampleSentences: [
-        { en: 'The children are playing in the playground after their lessons at the educational facility.', ko: '아이들이 수업을 마친 후 운동장에서 놀고 있습니다.' },
-        { en: 'Most students in this city walk to the building where they study every morning.', ko: '이 도시의 대부분의 학생들은 매일 아침 공부하는 곳까지 걸어서 갑니다.' },
+        { en: 'The children are playing in the school playground after their lessons.', ko: '아이들이 수업을 마친 후 학교 운동장에서 놀고 있습니다.' },
+        { en: 'Most students in this city walk to school every morning.', ko: '이 도시의 대부분의 학생들은 매일 아침 학교까지 걸어서 갑니다.' },
       ],
     }
   ),
@@ -924,8 +924,8 @@ export const vocabBatch01: VocabItem[] = [
       synonyms: ['hamlet', 'settlement', 'community'],
       antonyms: ['metropolis', 'city', 'megalopolis'],
       exampleSentences: [
-        { en: 'The entire community gathered in the center of the settlement to celebrate the harvest.', ko: '마을 전체 주민들이 수확을 축하하기 위해 마을 중심부에 모였습니다.' },
-        { en: 'Life in a remote rural area is much quieter and slower than in a bustling city.', ko: '외딴 시골 마을에서의 삶은 북적이는 도시보다 훨씬 조용하고 느긋합니다.' },
+        { en: 'The entire village gathered in the center to celebrate the harvest.', ko: '마을 전체 주민들이 수확을 축하하기 위해 마을 중심부에 모였습니다.' },
+        { en: 'Life in a small village is much quieter than in a bustling city.', ko: '작은 마을에서의 삶은 북적이는 도시보다 훨씬 조용합니다.' },
       ],
     }
   ),
@@ -962,8 +962,8 @@ export const vocabBatch01: VocabItem[] = [
       synonyms: ['golden', 'amber', 'lemon'],
       antonyms: ['dark', 'black', 'colorless'],
       exampleSentences: [
-        { en: 'The autumn leaves turned a beautiful shade of bright gold.', ko: '가을 잎들이 아름답고 밝은 노란 빛조로 변했습니다.' },
-        { en: 'He painted the kitchen walls a warm and cheerful sunny tone.', ko: '그는 주방 벽을 따뜻하고 쾌활한 노란 톤으로 칠했습니다.' },
+        { en: 'The autumn leaves turned a beautiful yellow color.', ko: '가을 잎들이 아름다운 노란색으로 변했습니다.' },
+        { en: 'He painted the kitchen walls a warm yellow tone.', ko: '그는 주방 벽을 따뜻한 노란색 톤으로 칠했습니다.' },
       ],
     }
   ),

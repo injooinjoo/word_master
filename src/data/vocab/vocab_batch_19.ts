@@ -92,8 +92,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['excessive', 'extravagant', 'outrageous'],
       antonyms: ['reasonable', 'moderate', 'fair'],
       exampleSentences: [
-        { en: 'The restaurant charged such high prices for wine that we decided not to order any.', ko: '그 식당은 와인에 너무 터무니없는 가격을 매겨서 우리는 주문하지 않기로 했다.' },
-        { en: 'Many small businesses are struggling to survive due to the increasing costs of rent.', ko: '많은 소상공인들이 치솟는 과도한 임대료 때문에 생존에 어려움을 겪고 있다.' },
+        { en: 'The restaurant charged exorbitant prices for wine, so we decided not to order any.', ko: '그 식당은 와인에 터무니없는 가격을 매겨서 우리는 주문하지 않기로 했다.' },
+        { en: 'Many small businesses are struggling to survive due to the exorbitant cost of rent.', ko: '많은 소상공인들이 과도한 임대료 때문에 생존에 어려움을 겪고 있다.' },
       ],
     }
   ),
@@ -168,8 +168,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['erase', 'obliterate', 'annul'],
       antonyms: ['insert', 'preserve', 'reinstate'],
       exampleSentences: [
-        { en: 'The court ordered the authorities to remove the criminal record from the public database.', ko: '법원은 당국에 공공 데이터베이스에서 범죄 기록을 말소하라고 명령했다.' },
-        { en: 'She tried to wipe the painful memories of the accident from her mind.', ko: '그녀는 사고에 대한 고통스러운 기억을 마음속에서 완전히 지워버리려 노력했다.' },
+        { en: 'The court ordered the authorities to expunge the criminal record from the public database.', ko: '법원은 당국에 공공 데이터베이스에서 범죄 기록을 말소하라고 명령했다.' },
+        { en: 'She tried to expunge the painful memories of the accident from her mind.', ko: '그녀는 사고에 대한 고통스러운 기억을 마음속에서 완전히 지워버리려 노력했다.' },
       ],
     }
   ),
@@ -206,8 +206,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['infer', 'project', 'conjecture'],
       antonyms: ['interpolate', 'misinterpret', 'ignore'],
       exampleSentences: [
-        { en: 'We can predict future sales trends if we carefully analyze and extend the current data.', ko: '현재 데이터를 주의 깊게 분석하고 확장하면 미래의 매출 추세를 추론할 수 있습니다.' },
-        { en: 'It is risky to assume a global pattern by using results from such a small and specific sample.', ko: '그렇게 작고 특정한 표본의 결과로부터 전체적인 패턴을 추론하는 것은 위험합니다.' },
+        { en: 'We can extrapolate future sales trends from the current data if we analyze it carefully.', ko: '현재 데이터를 주의 깊게 분석하면 미래의 매출 추세를 추론할 수 있습니다.' },
+        { en: 'It is risky to extrapolate a global pattern from such a small and specific sample.', ko: '그렇게 작고 특정한 표본으로부터 전체적인 패턴을 추론하는 것은 위험합니다.' },
       ],
     }
   ),
@@ -226,7 +226,7 @@ export const vocabBatch19: VocabItem[] = [
       antonyms: ['subdued', 'gloomy', 'apathetic'],
       exampleSentences: [
         { en: 'The winning team received an exuberant welcome from their fans at the airport.', ko: '우승 팀은 공항에서 팬들로부터 열광적인 환영을 받았다.' },
-        { en: 'His personality is so lively that he often fills the room with his high spirits.', ko: '그의 성격은 매우 활기차서 종종 방 안을 열광적인 기운으로 가득 채운다.' },
+        { en: 'His exuberant personality often fills the room with infectious energy.', ko: '그의 열광적인 성격은 종종 방 안을 전염성 있는 에너지로 가득 채운다.' },
       ],
     }
   ),
@@ -396,8 +396,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['kneel', 'bow', 'curtsy'],
       antonyms: ['stand', 'rise', 'disregard'],
       exampleSentences: [
-        { en: 'The knight had to lower himself to the floor to show loyalty to the king.', ko: '기사는 왕에게 충성을 보이기 위해 바닥에 무릎을 꿇어야 했습니다.' },
-        { en: 'It is a tradition for visitors to bend their knee when they pass the sacred shrine.', ko: '방문객들이 신성한 성지를 지날 때 무릎을 꿇는 것은 전통입니다.' },
+        { en: 'The knight had to genuflect before the king to show his loyalty.', ko: '기사는 왕에게 충성을 보이기 위해 무릎을 꿇어야 했습니다.' },
+        { en: 'It is a tradition for visitors to genuflect when they pass the sacred shrine.', ko: '방문객들이 신성한 성지를 지날 때 무릎을 꿇는 것은 전통입니다.' },
       ],
     }
   ),
@@ -472,8 +472,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['tranquil', 'serene', 'idyllic'],
       antonyms: ['turbulent', 'chaotic', 'stormy'],
       exampleSentences: [
-        { en: 'Those were the golden days of my youth.', ko: '그 시절은 내 젊은 날의 평화롭고 행복한 시기였다.' },
-        { en: 'She recalled the peaceful summers spent at the lake house.', ko: '그녀는 호숫가 집에서 보낸 평화로운 여름날들을 회상했다.' },
+        { en: 'Those were the halcyon days of my youth, full of peace and joy.', ko: '그 시절은 내 젊은 날의 평화롭고 행복한 시기였다.' },
+        { en: 'She recalled the halcyon summers spent at the lake house.', ko: '그녀는 호숫가 집에서 보낸 평화로운 여름날들을 회상했다.' },
       ],
     }
   ),
@@ -529,8 +529,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['paradise', 'utopia', 'pastoral'],
       antonyms: ['nightmare', 'hell', 'catastrophe'],
       exampleSentences: [
-        { en: 'Their summer in the countryside was a brief period of peace before the war began.', ko: '전쟁이 시작되기 전 그들이 시골에서 보낸 여름은 짧고 평화로운 전원시 같은 시간이었다.' },
-        { en: 'The hotel offers a rural sanctuary for those escaping the city noise.', ko: '그 호텔은 도시의 소음을 피하려는 사람들에게 전원적인 낙원을 제공한다.' },
+        { en: 'Their summer in the countryside was a brief idyll before the war began.', ko: '전쟁이 시작되기 전 그들이 시골에서 보낸 여름은 짧은 전원시 같은 시간이었다.' },
+        { en: 'The hotel offers a rural idyll for those escaping the city noise.', ko: '그 호텔은 도시의 소음을 피하려는 사람들에게 전원적인 낙원을 제공한다.' },
       ],
     }
   ),
@@ -548,8 +548,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['penniless', 'destitute', 'indigent'],
       antonyms: ['wealthy', 'affluent', 'prosperous'],
       exampleSentences: [
-        { en: 'The artist was so poor that he lived an extremely frugal life in a tiny apartment.', ko: '그 예술가는 너무 가난해서 작은 아파트에서 극도로 검소한 생활을 했습니다.' },
-        { en: 'Despite his noble lineage, he remained in a state of constant financial hardship.', ko: '귀족 가문 출신임에도 불구하고 그는 지속적인 경제적 어려움 상태에 머물렀습니다.' },
+        { en: 'The impecunious artist lived an extremely frugal life in a tiny apartment.', ko: '가난한 그 예술가는 작은 아파트에서 극도로 검소한 생활을 했습니다.' },
+        { en: 'Despite his noble lineage, he remained impecunious throughout his life.', ko: '귀족 가문 출신임에도 불구하고 그는 평생 가난한 상태에 머물렀습니다.' },
       ],
     }
   ),
@@ -605,8 +605,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['impulsive', 'rash', 'reckless'],
       antonyms: ['cautious', 'deliberate', 'prudent'],
       exampleSentences: [
-        { en: 'He later regretted his hasty decision to quit his job without a backup plan.', ko: '그는 대안도 없이 직장을 그만두기로 한 자신의 성급한 결정을 나중에 후회했다.' },
-        { en: 'The young prince was known for his headstrong and spontaneous nature.', ko: '그 젊은 왕자는 성급하고 충동적인 성격으로 유명했다.' },
+        { en: 'He later regretted his impetuous decision to quit his job without a backup plan.', ko: '그는 대안도 없이 직장을 그만두기로 한 자신의 성급한 결정을 나중에 후회했다.' },
+        { en: 'The young prince was known for his impetuous nature.', ko: '그 젊은 왕자는 성급한 성격으로 유명했다.' },
       ],
     }
   ),
@@ -776,8 +776,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['stealthy', 'treacherous', 'surreptitious'],
       antonyms: ['overt', 'obvious', 'straightforward'],
       exampleSentences: [
-        { en: 'The disease is particularly dangerous because its symptoms are so subtle and gradual.', ko: '그 질병은 증상이 매우 은근하고 서서히 나타나기 때문에 특히 위험하다.' },
-        { en: 'High blood pressure is often called an invisible killer because of its quiet and harmful nature.', ko: '고혈압은 그 은근하고 해로운 특성 때문에 종종 보이지 않는 살인마라고 불린다.' },
+        { en: 'The disease is particularly dangerous because of its insidious progression.', ko: '그 질병은 증상이 은근히 서서히 진행되기 때문에 특히 위험하다.' },
+        { en: 'High blood pressure is often called an insidious killer because it develops without obvious symptoms.', ko: '고혈압은 뚜렷한 증상 없이 발전하기 때문에 종종 은근한 살인마라고 불린다.' },
       ],
     }
   ),
@@ -795,8 +795,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['bland', 'vapid', 'unimaginative'],
       antonyms: ['flavorful', 'exciting', 'piquant'],
       exampleSentences: [
-        { en: 'The hospital food was so weak and watery that it tasted completely flat.', ko: '병원의 음식은 너무 연하고 묽어서 완전히 맛이 없었다.' },
-        { en: 'I found the plot of the movie rather dull and lacking any real spark.', ko: '나는 그 영화의 줄거리가 다소 지루하고 아무런 재미가 없다고 느꼈다.' },
+        { en: 'The hospital food was insipid, tasting watery and completely flat.', ko: '병원의 음식은 맛이 없어서 묽고 완전히 밋밋했다.' },
+        { en: 'I found the plot of the movie rather insipid, lacking any real spark.', ko: '나는 그 영화의 줄거리가 다소 맛없고 아무런 재미가 없다고 느꼈다.' },
       ],
     }
   ),
@@ -814,8 +814,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['uncompromising', 'adamant', 'obdurate'],
       antonyms: ['flexible', 'compliant', 'yielding'],
       exampleSentences: [
-        { en: 'The government remained firm and refused to negotiate with the protesters.', ko: '정부는 단호한 태도를 유지하며 시위대와 협상하기를 거부했다.' },
-        { en: 'He has an unbending reputation for being extremely stubborn in business dealings.', ko: '그는 사업 거래에 있어 매우 타협하지 않는 고집스러운 평판을 가지고 있다.' },
+        { en: 'The intransigent government refused to negotiate with the protesters.', ko: '타협을 거부하는 정부는 시위대와 협상하기를 거부했다.' },
+        { en: 'He has an intransigent reputation in business dealings, never willing to compromise.', ko: '그는 사업 거래에서 절대 타협하지 않는 평판을 가지고 있다.' },
       ],
     }
   ),
@@ -833,8 +833,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['overwhelm', 'flood', 'swamp'],
       antonyms: ['drain', 'empty', 'deplete'],
       exampleSentences: [
-        { en: 'The customer service department was overwhelmed with thousands of complaints after the system failure.', ko: '시스템 장애 이후 고객 서비스 부서에는 수천 건의 불만 사항이 몰아쳤다.' },
-        { en: 'Rising river levels threaten to submerge the low-lying areas of the city during the monsoon season.', ko: '장마철 동안 상승하는 강 수위는 도시의 저지대 지역을 침수시킬 위협이 있다.' },
+        { en: 'The customer service department was inundated with thousands of complaints after the system failure.', ko: '시스템 장애 이후 고객 서비스 부서에는 수천 건의 불만 사항이 밀려들었다.' },
+        { en: 'Rising river levels threaten to inundate the low-lying areas of the city during the monsoon season.', ko: '장마철 동안 상승하는 강 수위는 도시의 저지대 지역을 침수시킬 위협이 있다.' },
       ],
     }
   ),
@@ -871,8 +871,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['habitual', 'chronic', 'entrenched'],
       antonyms: ['occasional', 'transient', 'incipient'],
       exampleSentences: [
-        { en: 'He is such an habitual gambler that he cannot walk past a casino without going in.', ko: '그는 너무나 고질적인 도박꾼이라 카지노를 그냥 지나치지 못한다.' },
-        { en: 'The politician faced criticism for being a deep-seated skeptic of any new environmental policies.', ko: '그 정치인은 모든 새로운 환경 정책에 대해 고질적인 회의론자라는 비판에 직면했다.' },
+        { en: 'He is such an inveterate gambler that he cannot walk past a casino without going in.', ko: '그는 너무나 고질적인 도박꾼이라 카지노를 그냥 지나치지 못한다.' },
+        { en: 'The politician faced criticism for being an inveterate skeptic of any new environmental policies.', ko: '그 정치인은 모든 새로운 환경 정책에 대해 고질적인 회의론자라는 비판에 직면했다.' },
       ],
     }
   ),
@@ -890,8 +890,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['hot-tempered', 'irritable', 'choleric'],
       antonyms: ['calm', 'even-tempered', 'placid'],
       exampleSentences: [
-        { en: 'The short-tempered coach often yelled at the players for minor mistakes.', ko: '성급한 코치는 사소한 실수에도 선수들에게 자주 소리를 질렀다.' },
-        { en: 'Dealing with such a cranky neighbor requires a lot of patience.', ko: '그렇게 성급한 이웃을 상대하는 데는 많은 인내심이 필요하다.' },
+        { en: 'The irascible coach often yelled at the players for minor mistakes.', ko: '성급한 코치는 사소한 실수에도 선수들에게 자주 소리를 질렀다.' },
+        { en: 'Dealing with such an irascible neighbor requires a lot of patience.', ko: '그렇게 성급한 이웃을 상대하는 데는 많은 인내심이 필요하다.' },
       ],
     }
   ),
@@ -909,8 +909,8 @@ export const vocabBatch19: VocabItem[] = [
       synonyms: ['collocate', 'contrast', 'pair'],
       antonyms: ['separate', 'detach', 'disconnect'],
       exampleSentences: [
-        { en: 'The exhibition will display modern sculptures alongside ancient artifacts to show the evolution of art.', ko: '이번 전시회는 예술의 진화를 보여주기 위해 현대 조각품과 고대 유물을 나란히 놓을 것입니다.' },
-        { en: 'The director likes to put scenes of extreme wealth and poverty together to highlight social inequality.', ko: '감독은 사회적 불평등을 강조하기 위해 극심한 부와 가난의 장면을 나란히 배치하는 것을 좋아합니다.' },
+        { en: 'The exhibition will juxtapose modern sculptures with ancient artifacts to show the evolution of art.', ko: '이번 전시회는 예술의 진화를 보여주기 위해 현대 조각품과 고대 유물을 나란히 놓을 것입니다.' },
+        { en: 'The director likes to juxtapose scenes of extreme wealth and poverty to highlight social inequality.', ko: '감독은 사회적 불평등을 강조하기 위해 극심한 부와 가난의 장면을 나란히 배치하는 것을 좋아합니다.' },
       ],
     }
   ),
