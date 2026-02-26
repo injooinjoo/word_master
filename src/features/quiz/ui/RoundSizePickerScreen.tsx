@@ -9,14 +9,15 @@ import {
 } from 'react-native';
 import { ROUND_SIZE_OPTIONS } from '../../../services/quizService';
 import type { RoundSizeOption } from '../../../services/quizService';
+import { Colors, RoundSizeColors } from '../../../shared/constants/theme';
 
 const { width: W } = Dimensions.get('window');
 
 const SIZE_META: Record<RoundSizeOption, { desc: string; icon: string; color: string }> = {
-  10: { desc: '가볍게', icon: '⚡', color: '#22C55E' },
-  20: { desc: '적당히', icon: '📖', color: '#1CB0F6' },
-  50: { desc: '집중해서', icon: '🔥', color: '#FF9600' },
-  100: { desc: '풀코스', icon: '🏆', color: '#A435F0' },
+  10: { desc: '가볍게', icon: '⚡', color: RoundSizeColors[10] },
+  20: { desc: '적당히', icon: '📖', color: RoundSizeColors[20] },
+  50: { desc: '집중해서', icon: '🔥', color: RoundSizeColors[50] },
+  100: { desc: '풀코스', icon: '🏆', color: RoundSizeColors[100] },
 };
 
 interface RoundSizePickerScreenProps {
@@ -66,7 +67,7 @@ const cardSize = Math.min((W - 56) / 2, 164);
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#F8FAFB',
+    backgroundColor: Colors.background,
   },
   container: {
     flex: 1,
@@ -74,7 +75,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 24,
   },
-  // ── Brand area ──
   brandArea: {
     alignItems: 'center',
     marginBottom: 48,
@@ -82,8 +82,8 @@ const styles = StyleSheet.create({
   brandIcon: {
     fontSize: 40,
     fontWeight: '900',
-    color: '#fff',
-    backgroundColor: '#1CB0F6',
+    color: Colors.white,
+    backgroundColor: Colors.primary,
     width: 64,
     height: 64,
     lineHeight: 64,
@@ -95,23 +95,21 @@ const styles = StyleSheet.create({
   brandTitle: {
     fontSize: 26,
     fontWeight: '800',
-    color: '#1A1D26',
+    color: Colors.textPrimary,
     letterSpacing: -0.5,
   },
   brandSub: {
     fontSize: 14,
     fontWeight: '500',
-    color: '#9CA3AF',
+    color: Colors.textMuted,
     marginTop: 4,
   },
-  // ── Section ──
   sectionTitle: {
     fontSize: 16,
     fontWeight: '600',
-    color: '#6B7280',
+    color: Colors.textSecondary,
     marginBottom: 20,
   },
-  // ── Grid ──
   grid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -122,12 +120,12 @@ const styles = StyleSheet.create({
   card: {
     width: cardSize,
     height: cardSize + 10,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: Colors.surface,
     borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1.5,
-    shadowColor: '#1CB0F6',
+    shadowColor: Colors.primary,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.06,
     shadowRadius: 12,
@@ -144,7 +142,7 @@ const styles = StyleSheet.create({
   cardUnit: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#9CA3AF',
+    color: Colors.textMuted,
     marginTop: 1,
   },
   descBadge: {

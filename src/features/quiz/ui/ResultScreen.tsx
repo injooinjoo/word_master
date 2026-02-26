@@ -9,7 +9,9 @@ import {
   ScrollView,
 } from 'react-native';
 import { GradeTable } from '../../../shared/constants/gradeTable';
+import { Colors, QuizTypeColors } from '../../../shared/constants/theme';
 import { AdIds } from '../../../shared/constants/adIds';
+import { BannerAd as BannerAdComponent } from '../../../services/adService';
 import {
   fetchRanking,
   getRankingUserId,
@@ -21,17 +23,6 @@ import type { QuizService } from '../../../services/quizService';
 import { ALL_QUIZ_TYPES, QUIZ_TYPE_LABELS } from '../../../services/quizService';
 import type { QuizType, RoundRecord } from '../../../services/quizService';
 
-const CORRECT_GREEN = '#22C55E';
-const WRONG_RED = '#EF4444';
-
-const TYPE_COLORS: Record<QuizType, string> = {
-  e2k: '#3B82F6',
-  k2e: '#F59E0B',
-  e2e: '#8B5CF6',
-  syn: '#10B981',
-  ant: '#EF4444',
-};
-
 const QUIZ_TYPE_SHORT: Record<QuizType, string> = {
   e2k: '영한',
   k2e: '한영',
@@ -39,17 +30,6 @@ const QUIZ_TYPE_SHORT: Record<QuizType, string> = {
   syn: '동의',
   ant: '반의',
 };
-
-// Conditional AdMob
-let BannerAdComponent: React.ComponentType<{ unitId: string; size: string }> | null = null;
-try {
-  const ads = require('react-native-google-mobile-ads');
-  if (ads.BannerAd && (Platform.OS === 'android' || Platform.OS === 'ios')) {
-    BannerAdComponent = ads.BannerAd;
-  }
-} catch {
-  // Expo Go or missing native module
-}
 
 interface ResultScreenProps {
   quizService: QuizService;
@@ -116,7 +96,7 @@ export function ResultScreen({ quizService, onBackToQuiz, onBackToPicker }: Resu
 
   const bannerUnitId = Platform.OS === 'android' ? AdIds.androidBanner : AdIds.iosBanner;
 
-  const accuracyColor = accuracy >= 70 ? CORRECT_GREEN : accuracy >= 40 ? '#F59E0B' : WRONG_RED;
+  const accuracyColor = accuracy >= 70 ? Colors.correct : accuracy >= 40 ? Colors.warning : Colors.wrong;
   const encouragement =
     accuracy >= 80
       ? '훌륭해요!'
@@ -160,7 +140,7 @@ export function ResultScreen({ quizService, onBackToQuiz, onBackToPicker }: Resu
             const typeSummary = summary.byType[t];
             const r = typeSummary.rating;
             const tier = typeSummary.tierLabel;
-            const color = TYPE_COLORS[t];
+            const color = QuizTypeColors[t];
             const typeAccuracy = typeSummary.attempts > 0
               ? Math.round((typeSummary.correct / typeSummary.attempts) * 100)
               : 0;
@@ -218,17 +198,17 @@ export function ResultScreen({ quizService, onBackToQuiz, onBackToPicker }: Resu
               key={idx}
               style={[
                 styles.historyRow,
-                { borderLeftColor: rec.correct ? CORRECT_GREEN : WRONG_RED },
+                { borderLeftColor: rec.correct ? Colors.correct : Colors.wrong },
               ]}
             >
               <View style={styles.historyLeft}>
                 <View style={[
                   styles.historyNumBadge,
-                  { backgroundColor: rec.correct ? CORRECT_GREEN + '15' : WRONG_RED + '15' },
+                  { backgroundColor: rec.correct ? Colors.correct + '15' : Colors.wrong + '15' },
                 ]}>
                   <Text style={[
                     styles.historyNum,
-                    { color: rec.correct ? CORRECT_GREEN : WRONG_RED },
+                    { color: rec.correct ? Colors.correct : Colors.wrong },
                   ]}>{idx + 1}</Text>
                 </View>
                 <View style={styles.historyInfo}>
@@ -243,12 +223,12 @@ export function ResultScreen({ quizService, onBackToQuiz, onBackToPicker }: Resu
                 </View>
               </View>
               <View style={styles.historyRight}>
-                <View style={[styles.typeMini, { backgroundColor: TYPE_COLORS[rec.quizType] + '14' }]}>
-                  <Text style={[styles.typeMiniText, { color: TYPE_COLORS[rec.quizType] }]}>
+                <View style={[styles.typeMini, { backgroundColor: QuizTypeColors[rec.quizType] + '14' }]}>
+                  <Text style={[styles.typeMiniText, { color: QuizTypeColors[rec.quizType] }]}>
                     {QUIZ_TYPE_SHORT[rec.quizType]}
                   </Text>
                 </View>
-                <Text style={[styles.historyIcon, { color: rec.correct ? CORRECT_GREEN : WRONG_RED }]}>
+                <Text style={[styles.historyIcon, { color: rec.correct ? Colors.correct : Colors.wrong }]}>
                   {rec.correct ? 'O' : 'X'}
                 </Text>
               </View>
@@ -276,7 +256,7 @@ export function ResultScreen({ quizService, onBackToQuiz, onBackToPicker }: Resu
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: '#F8FAFB' },
+  safe: { flex: 1, backgroundColor: Colors.background },
   scroll: { flex: 1 },
   scrollContent: { paddingBottom: 20 },
 
@@ -285,10 +265,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingTop: 28,
     paddingBottom: 24,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: Colors.surface,
     borderBottomLeftRadius: 24,
     borderBottomRightRadius: 24,
-    shadowColor: '#64748B',
+    shadowColor: Colors.shadow,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.06,
     shadowRadius: 12,
@@ -297,7 +277,7 @@ const styles = StyleSheet.create({
   heroTitle: {
     fontSize: 15,
     fontWeight: '600',
-    color: '#9CA3AF',
+    color: Colors.textMuted,
     letterSpacing: 0.5,
     marginBottom: 20,
   },
@@ -305,7 +285,7 @@ const styles = StyleSheet.create({
     width: 110,
     height: 110,
     borderRadius: 55,
-    backgroundColor: '#F8FAFB',
+    backgroundColor: Colors.background,
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 14,
@@ -315,7 +295,7 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 50,
     borderWidth: 4,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: Colors.surface,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -326,7 +306,7 @@ const styles = StyleSheet.create({
   scoreOf: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#9CA3AF',
+    color: Colors.textMuted,
     marginTop: -2,
   },
   encouragement: {
@@ -346,17 +326,17 @@ const styles = StyleSheet.create({
   ratingLabel: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#9CA3AF',
+    color: Colors.textMuted,
     marginBottom: 6,
   },
   ratingNumber: {
     fontSize: 36,
     fontWeight: '800',
-    color: '#1A1D26',
+    color: Colors.textPrimary,
     marginBottom: 6,
   },
   tierChip: {
-    backgroundColor: '#3B82F6',
+    backgroundColor: Colors.primary,
     paddingHorizontal: 14,
     paddingVertical: 5,
     borderRadius: 10,
@@ -364,7 +344,7 @@ const styles = StyleSheet.create({
   tierChipText: {
     fontSize: 13,
     fontWeight: '700',
-    color: '#FFFFFF',
+    color: Colors.white,
   },
 
   // ── Type cards ──
@@ -376,10 +356,10 @@ const styles = StyleSheet.create({
   },
   typeCard: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: Colors.surface,
     borderRadius: 14,
     overflow: 'hidden',
-    shadowColor: '#64748B',
+    shadowColor: Colors.shadow,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.04,
     shadowRadius: 6,
@@ -408,25 +388,25 @@ const styles = StyleSheet.create({
   typeCardTier: {
     fontSize: 10,
     fontWeight: '600',
-    color: '#9CA3AF',
+    color: Colors.textMuted,
   },
   typeCardAccuracy: {
     fontSize: 10,
     fontWeight: '600',
-    color: '#C4C9D4',
+    color: Colors.textFaint,
     marginTop: 4,
   },
 
   // ── Ranking card ──
   rankingCard: {
     marginHorizontal: 16,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: Colors.surface,
     borderRadius: 16,
     padding: 20,
     marginBottom: 20,
     borderWidth: 1,
-    borderColor: '#F1F5F9',
-    shadowColor: '#64748B',
+    borderColor: Colors.borderLight,
+    shadowColor: Colors.shadow,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.04,
     shadowRadius: 6,
@@ -435,7 +415,7 @@ const styles = StyleSheet.create({
   rankingTitle: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#6B7280',
+    color: Colors.textSecondary,
     textAlign: 'center',
     marginBottom: 16,
     letterSpacing: 0.3,
@@ -446,12 +426,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   rankingItem: { flex: 1, alignItems: 'center' },
-  rankingBig: { fontSize: 24, fontWeight: '800', color: '#1A1D26' },
-  rankingCaption: { fontSize: 13, color: '#9CA3AF', marginTop: 4, textAlign: 'center' },
+  rankingBig: { fontSize: 24, fontWeight: '800', color: Colors.textPrimary },
+  rankingCaption: { fontSize: 13, color: Colors.textMuted, marginTop: 4, textAlign: 'center' },
   rankingDivider: {
     width: 1,
     height: 36,
-    backgroundColor: '#E8ECF0',
+    backgroundColor: Colors.divider,
     marginHorizontal: 12,
   },
 
@@ -463,7 +443,7 @@ const styles = StyleSheet.create({
   historySectionTitle: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#6B7280',
+    color: Colors.textSecondary,
     marginBottom: 10,
     paddingHorizontal: 4,
   },
@@ -471,13 +451,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF',
+    backgroundColor: Colors.surface,
     borderRadius: 12,
     paddingVertical: 10,
     paddingHorizontal: 12,
     marginBottom: 6,
     borderLeftWidth: 3,
-    shadowColor: '#64748B',
+    shadowColor: Colors.shadow,
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.03,
     shadowRadius: 3,
@@ -506,11 +486,11 @@ const styles = StyleSheet.create({
   historyWord: {
     fontSize: 14,
     fontWeight: '700',
-    color: '#1A1D26',
+    color: Colors.textPrimary,
   },
   historyAnswer: {
     fontSize: 12,
-    color: '#9CA3AF',
+    color: Colors.textMuted,
     marginTop: 2,
   },
   historyRight: {
@@ -539,23 +519,23 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     paddingBottom: 12,
     gap: 8,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: Colors.surface,
     borderTopWidth: 1,
-    borderTopColor: '#F1F5F9',
+    borderTopColor: Colors.borderLight,
   },
   primaryBtn: {
-    backgroundColor: '#3B82F6',
+    backgroundColor: Colors.primary,
     paddingVertical: 15,
     borderRadius: 14,
     alignItems: 'center',
-    shadowColor: '#3B82F6',
+    shadowColor: Colors.primary,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.2,
     shadowRadius: 8,
     elevation: 4,
   },
   primaryBtnText: {
-    color: '#fff',
+    color: Colors.white,
     fontSize: 16,
     fontWeight: '700',
   },
@@ -563,10 +543,10 @@ const styles = StyleSheet.create({
     paddingVertical: 13,
     borderRadius: 14,
     alignItems: 'center',
-    backgroundColor: '#F1F5F9',
+    backgroundColor: Colors.borderLight,
   },
   secondaryBtnText: {
-    color: '#6B7280',
+    color: Colors.textSecondary,
     fontSize: 14,
     fontWeight: '600',
   },

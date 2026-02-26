@@ -2,8 +2,7 @@ import React from 'react';
 import { Image } from 'expo-image';
 import { StyleSheet, Text, View } from 'react-native';
 import type { LearningTipEntry } from '../../../data/models/vocab';
-
-const PRIMARY = '#1CB0F6';
+import { Colors } from '../../../shared/constants/theme';
 
 interface LearningTipCardProps {
   entry: LearningTipEntry;
@@ -40,9 +39,9 @@ const styles = StyleSheet.create({
   card: {
     marginHorizontal: 24,
     marginVertical: 12,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.surface,
     borderRadius: 12,
-    shadowColor: '#000',
+    shadowColor: Colors.shadow,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.08,
     shadowRadius: 8,
@@ -52,7 +51,7 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   title: {
-    color: PRIMARY,
+    color: Colors.primary,
     fontWeight: '700',
     fontSize: 14,
     marginBottom: 8,
@@ -72,7 +71,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 16,
-    color: '#333',
+    color: Colors.textSecondary,
     lineHeight: 22,
   },
 });

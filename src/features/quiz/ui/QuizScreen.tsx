@@ -4,6 +4,7 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
+  Platform,
   Vibration,
   SafeAreaView,
   Animated,
@@ -16,6 +17,7 @@ import type { AudioService } from '../../../services/audioService';
 import { getLearningTipEntries } from '../../../data/models/vocab';
 import type { LearningTipEntry } from '../../../data/models/vocab';
 import { GradeTable } from '../../../shared/constants/gradeTable';
+import { Colors, QuizTypeColors, difficultyColor, Timing } from '../../../shared/constants/theme';
 import { TimerBar } from '../components/TimerBar';
 
 function clamp(value: number, min: number, max: number): number {
@@ -78,20 +80,6 @@ function getChoiceLayoutMetrics(width: number, height: number): ChoiceLayoutMetr
   };
 }
 
-const CORRECT_GREEN = '#22C55E';
-const WRONG_RED = '#EF4444';
-
-const TAB_COLORS: Record<QuizType, string> = {
-  e2k: '#3B82F6',
-  k2e: '#F59E0B',
-  e2e: '#8B5CF6',
-  syn: '#10B981',
-  ant: '#EF4444',
-};
-
-/** Delay (ms) to show feedback highlights before advancing */
-const FEEDBACK_DELAY = 5000;
-
 /** Word difficulty label from word ELO */
 function difficultyLabel(wordElo: number): string {
   if (wordElo <= 400) return '쉬움';
@@ -100,18 +88,6 @@ function difficultyLabel(wordElo: number): string {
   if (wordElo <= 1600) return '매우 어려움';
   return '극한';
 }
-
-/** Difficulty badge color */
-function difficultyColor(wordElo: number): string {
-  if (wordElo <= 400) return '#22C55E';
-  if (wordElo <= 800) return '#3B82F6';
-  if (wordElo <= 1200) return '#F59E0B';
-  if (wordElo <= 1600) return '#EF4444';
-  return '#8B5CF6';
-}
-
-/** Timer progress threshold at which the hint fades in (40%) */
-const HINT_THRESHOLD = 0.4;
 
 /** Calculate timer duration (ms) from word ELO. Range: 6 000 – 12 000 ms */
 function timerDurationForElo(wordElo: number): number {
@@ -136,6 +112,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   );
   const [current, setCurrent] = useState<QuizQuestion | null>(null);
   const [questionNum, setQuestionNum] = useState(0);
+  const [initialized, setInitialized] = useState(false);
 
   // --- feedback state ---
   const [answered, setAnswered] = useState(false);
@@ -218,6 +195,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
     }
     resetFeedback();
     setQuestionNum(quizService.roundTotal + 1);
+    setInitialized(true);
 
     const entries = getLearningTipEntries(q.vocabItem.learningTips);
     const entry = entries[Math.floor(Math.random() * entries.length)];
@@ -232,13 +210,13 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
 
     startTimeRef.current = Date.now();
 
-    const hintDelayMs = Math.round(duration * (1 - HINT_THRESHOLD));
+    const hintDelayMs = Math.round(duration * (1 - Timing.hintThreshold));
     hintTimeoutRef.current = setTimeout(() => {
       if (!answeredRef.current) {
         setShowHint(true);
         Animated.timing(hintOpacity, {
           toValue: 1,
-          duration: 400,
+          duration: Timing.animationMedium,
           useNativeDriver: true,
         }).start();
       }
@@ -249,6 +227,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
 
   useEffect(() => {
     loadNext();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // --- Time's up handler ---
@@ -298,12 +277,12 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
     Animated.parallel([
       Animated.timing(eloDeltaAnim, {
         toValue: 1,
-        duration: 1200,
+        duration: Timing.animationSlow,
         useNativeDriver: true,
       }),
       Animated.timing(wordEloDeltaAnim, {
         toValue: 1,
-        duration: 1200,
+        duration: Timing.animationSlow,
         useNativeDriver: true,
       }),
     ]).start();
@@ -317,17 +296,19 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
     setSelectedChoice(null);
     setIsCorrect(false);
 
-    Vibration.vibrate([0, 80, 60, 80]);
+    if (Platform.OS !== 'web') {
+      Vibration.vibrate([0, 80, 60, 80]);
+    }
 
     Animated.timing(feedbackOpacity, {
       toValue: 1,
-      duration: 200,
+      duration: Timing.animationFast,
       useNativeDriver: true,
     }).start();
 
     setTimeout(() => {
       loadNext();
-    }, FEEDBACK_DELAY);
+    }, Timing.feedbackDelay);
   }, [current, quizService, loadNext, feedbackOpacity, timerDuration, eloDeltaAnim, wordEloDeltaAnim]);
 
   // --- Choice selection handler ---
@@ -379,12 +360,12 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       Animated.parallel([
         Animated.timing(eloDeltaAnim, {
           toValue: 1,
-          duration: 1200,
+          duration: Timing.animationSlow,
           useNativeDriver: true,
         }),
         Animated.timing(wordEloDeltaAnim, {
           toValue: 1,
-          duration: 1200,
+          duration: Timing.animationSlow,
           useNativeDriver: true,
         }),
       ]).start();
@@ -394,7 +375,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       timeBonusAnim.setValue(0);
       Animated.timing(timeBonusAnim, {
         toValue: 1,
-        duration: 1200,
+        duration: Timing.animationSlow,
         useNativeDriver: true,
       }).start();
 
@@ -404,17 +385,19 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       setSelectedChoice(choice);
       setIsCorrect(correct);
 
-      Vibration.vibrate(correct ? 50 : [0, 80, 60, 80]);
+      if (Platform.OS !== 'web') {
+        Vibration.vibrate(correct ? 50 : [0, 80, 60, 80]);
+      }
 
       Animated.timing(feedbackOpacity, {
         toValue: 1,
-        duration: 200,
+        duration: Timing.animationFast,
         useNativeDriver: true,
       }).start();
 
       setTimeout(() => {
         loadNext();
-      }, FEEDBACK_DELAY);
+      }, Timing.feedbackDelay);
     },
     [current, quizService, loadNext, feedbackOpacity, timerDuration, eloDeltaAnim, wordEloDeltaAnim, timeBonusAnim],
   );
@@ -451,6 +434,15 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   );
 
   if (current == null) {
+    if (!initialized) {
+      return (
+        <SafeAreaView style={styles.safe}>
+          <View style={styles.centered}>
+            <Text style={styles.loadingText}>문제 준비 중...</Text>
+          </View>
+        </SafeAreaView>
+      );
+    }
     return (
       <SafeAreaView style={styles.safe}>
         <View style={styles.centered}>
@@ -470,7 +462,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   const wElo = q.wordElo;
   const diffLabel = difficultyLabel(wElo);
   const diffColor = difficultyColor(wElo);
-  const typeColor = TAB_COLORS[activeType];
+  const typeColor = QuizTypeColors[activeType];
   const typeLabel = QUIZ_TYPE_LABELS[activeType];
   const longestChoiceLength = Math.max(...q.choices.map((choice) => choice.length));
   const longChoiceFactor = clamp((longestChoiceLength - 18) / 22, 0, 1);
@@ -552,7 +544,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
                 <Text
                   style={[
                     styles.eloDeltaText,
-                    { color: eloDelta > 0 ? CORRECT_GREEN : WRONG_RED },
+                    { color: eloDelta > 0 ? Colors.correct : Colors.wrong },
                   ]}
                 >
                   {eloDelta > 0 ? `+${eloDelta}` : `${eloDelta}`}
@@ -589,7 +581,9 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
               <Text
                 style={[
                   styles.wordEloDeltaText,
-                  { color: wordEloDelta > 0 ? WRONG_RED : CORRECT_GREEN },
+                  // Word ELO going up = word became harder (user got it wrong) = red,
+                  // going down = word became easier (user got it right) = green.
+                  { color: wordEloDelta > 0 ? Colors.wrong : Colors.correct },
                 ]}
               >
                 {wordEloDelta > 0 ? `+${wordEloDelta}` : `${wordEloDelta}`}
@@ -629,7 +623,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
               styles.feedbackBanner,
               {
                 opacity: feedbackOpacity,
-                backgroundColor: isCorrect ? CORRECT_GREEN : WRONG_RED,
+                backgroundColor: isCorrect ? Colors.correct : Colors.wrong,
               },
             ]}
           >
@@ -728,7 +722,7 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: '#F8FAFB',
+    backgroundColor: Colors.background,
   },
   // ── Progress header ──
   progressHeader: {
@@ -751,7 +745,7 @@ const styles = StyleSheet.create({
   typeBadgeText: {
     fontSize: 12,
     fontWeight: '700',
-    color: '#fff',
+    color: Colors.white,
     letterSpacing: 0.3,
   },
   progressCount: {
@@ -764,7 +758,7 @@ const styles = StyleSheet.create({
   progressSlash: {
     fontSize: 14,
     fontWeight: '600',
-    color: '#C4C9D4',
+    color: Colors.textFaint,
   },
   progressRight: {
     flexDirection: 'row',
@@ -783,7 +777,7 @@ const styles = StyleSheet.create({
   // ── Progress bar ──
   progressBarTrack: {
     height: 3,
-    backgroundColor: '#E8ECF0',
+    backgroundColor: Colors.divider,
     marginHorizontal: 16,
     borderRadius: 2,
     overflow: 'hidden',
@@ -843,7 +837,7 @@ const styles = StyleSheet.create({
   },
   compositeLabel: {
     fontSize: 12,
-    color: '#9CA3AF',
+    color: Colors.textMuted,
     fontWeight: '600',
   },
   wordEloDeltaBadge: {
@@ -872,17 +866,17 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     letterSpacing: -0.5,
     lineHeight: 44,
-    color: '#1A1D26',
+    color: Colors.textPrimary,
     includeFontPadding: true,
   },
   hintContainer: {
     marginTop: 18,
     paddingVertical: 12,
     paddingHorizontal: 18,
-    backgroundColor: '#FFFBEB',
+    backgroundColor: Colors.hintBg,
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#FDE68A',
+    borderColor: Colors.hintBorder,
     maxWidth: '90%',
   },
   hintHeader: {
@@ -893,12 +887,12 @@ const styles = StyleSheet.create({
   hintLabel: {
     fontSize: 11,
     fontWeight: '800',
-    color: '#D97706',
+    color: Colors.hintLabel,
     letterSpacing: 1,
   },
   hintText: {
     fontSize: 14,
-    color: '#78716C',
+    color: Colors.hintText,
     lineHeight: 22,
     includeFontPadding: true,
   },
@@ -909,7 +903,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
   },
   feedbackText: {
-    color: '#fff',
+    color: Colors.white,
     fontSize: 16,
     fontWeight: '700',
     textAlign: 'center',
@@ -918,16 +912,16 @@ const styles = StyleSheet.create({
     marginTop: 10,
     paddingVertical: 5,
     paddingHorizontal: 14,
-    backgroundColor: '#EFF6FF',
+    backgroundColor: Colors.primaryLight,
     borderRadius: 20,
     borderWidth: 1,
-    borderColor: '#BFDBFE',
+    borderColor: Colors.primaryBorder,
     alignSelf: 'center',
   },
   timeBonusText: {
     fontSize: 13,
     fontWeight: '700',
-    color: '#3B82F6',
+    color: Colors.primary,
     letterSpacing: 0.3,
   },
   choicesSection: {
@@ -944,29 +938,29 @@ const styles = StyleSheet.create({
   choiceCard: {
     width: 160,
     height: 120,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: Colors.surface,
     borderRadius: 16,
     paddingVertical: 12,
     paddingHorizontal: 12,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1.5,
-    borderColor: '#E5E7EB',
-    shadowColor: '#64748B',
+    borderColor: Colors.border,
+    shadowColor: Colors.shadow,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.06,
     shadowRadius: 6,
     elevation: 2,
   },
   choiceCorrect: {
-    borderColor: CORRECT_GREEN,
-    backgroundColor: '#F0FDF4',
+    borderColor: Colors.correct,
+    backgroundColor: Colors.correctLight,
     elevation: 0,
     shadowOpacity: 0,
   },
   choiceWrong: {
-    borderColor: WRONG_RED,
-    backgroundColor: '#FEF2F2',
+    borderColor: Colors.wrong,
+    backgroundColor: Colors.wrongLight,
     elevation: 0,
     shadowOpacity: 0,
   },
@@ -982,18 +976,18 @@ const styles = StyleSheet.create({
     width: 22,
     height: 22,
     borderRadius: 6,
-    backgroundColor: '#F1F5F9',
+    backgroundColor: Colors.choiceLabelBg,
     justifyContent: 'center',
     alignItems: 'center',
   },
   choiceLabelText: {
     fontSize: 11,
     fontWeight: '700',
-    color: '#94A3B8',
+    color: Colors.choiceLabelText,
   },
   choiceText: {
     fontSize: 16,
-    color: '#374151',
+    color: Colors.choiceText,
     textAlign: 'center',
     lineHeight: 22,
     paddingHorizontal: 4,
@@ -1003,29 +997,34 @@ const styles = StyleSheet.create({
   },
   choiceTextCorrect: {
     fontWeight: '700',
-    color: '#166534',
+    color: Colors.correctDark,
   },
   choiceTextWrong: {
     fontWeight: '700',
-    color: '#991B1B',
+    color: Colors.wrongDark,
   },
   choiceTextDimmed: {
-    color: '#9CA3AF',
+    color: Colors.textMuted,
   },
   centered: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F8FAFB',
+    backgroundColor: Colors.background,
+  },
+  loadingText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: Colors.textMuted,
   },
   resultButton: {
-    backgroundColor: '#3B82F6',
+    backgroundColor: Colors.primary,
     paddingVertical: 14,
     paddingHorizontal: 28,
     borderRadius: 12,
   },
   resultButtonText: {
-    color: '#fff',
+    color: Colors.white,
     fontSize: 16,
     fontWeight: '600',
   },

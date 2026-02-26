@@ -1,12 +1,8 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import { View, StyleSheet, Animated } from 'react-native';
+import { Colors } from '../../../shared/constants/theme';
 
 const BAR_HEIGHT = 5;
-
-/** Colors transition: green → yellow → red as time runs out */
-const COLOR_FULL = '#22C55E';
-const COLOR_MID = '#FBBF24';
-const COLOR_LOW = '#EF4444';
 
 interface TimerBarProps {
   /** Total duration in milliseconds */
@@ -24,7 +20,6 @@ export function TimerBar({ durationMs, running, onTimeUp }: TimerBarProps) {
   const onTimeUpRef = useRef(onTimeUp);
   onTimeUpRef.current = onTimeUp;
 
-  // Reset when durationMs changes (new question loaded)
   const reset = useCallback(() => {
     animRef.current?.stop();
     animRef.current = null;
@@ -36,7 +31,6 @@ export function TimerBar({ durationMs, running, onTimeUp }: TimerBarProps) {
     reset();
   }, [durationMs, reset]);
 
-  // Start / pause the animation based on `running`
   useEffect(() => {
     if (!running) {
       animRef.current?.stop();
@@ -73,7 +67,7 @@ export function TimerBar({ durationMs, running, onTimeUp }: TimerBarProps) {
 
   const backgroundColor = progress.interpolate({
     inputRange: [0, 0.3, 0.65, 1],
-    outputRange: [COLOR_LOW, COLOR_MID, COLOR_FULL, COLOR_FULL],
+    outputRange: [Colors.timerLow, Colors.timerMid, Colors.timerFull, Colors.timerFull],
   });
 
   const widthPercent = progress.interpolate({
@@ -91,7 +85,7 @@ export function TimerBar({ durationMs, running, onTimeUp }: TimerBarProps) {
 const styles = StyleSheet.create({
   track: {
     height: BAR_HEIGHT,
-    backgroundColor: '#F1F5F9',
+    backgroundColor: Colors.timerTrack,
     width: '100%',
   },
   bar: {

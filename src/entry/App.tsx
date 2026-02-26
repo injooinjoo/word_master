@@ -9,22 +9,8 @@ import type { RoundSizeOption } from '../services/quizService';
 import { AudioService } from '../services/audioService';
 import { allVocabData } from '../data/vocab';
 import { AdIds } from '../shared/constants/adIds';
-
-let MobileAds: (() => { initialize: () => Promise<unknown> }) | null = null;
-let InterstitialAd: {
-  createForAdRequest: (id: string) => {
-    load: () => void;
-    addAdEventListener: (event: string, cb: () => void) => () => void;
-    show: () => Promise<void>;
-  };
-} | null = null;
-try {
-  const ads = require('react-native-google-mobile-ads');
-  MobileAds = ads.default ?? ads.MobileAds;
-  InterstitialAd = ads.InterstitialAd;
-} catch {
-  // Expo Go or no native module
-}
+import { ErrorBoundary } from '../shared/components/ErrorBoundary';
+import { MobileAds, InterstitialAd } from '../services/adService';
 
 const quizService = new QuizService(allVocabData);
 const audioService = new AudioService();
@@ -57,7 +43,7 @@ export default function App() {
     }
     const adUnitId =
       Platform.OS === 'android' ? AdIds.androidInterstitial : AdIds.iosInterstitial;
-    const interstitial = InterstitialAd!.createForAdRequest(adUnitId);
+    const interstitial = InterstitialAd.createForAdRequest(adUnitId);
     let timeoutId: ReturnType<typeof setTimeout>;
     const unloadLoaded = interstitial.addAdEventListener('loaded', () => {
       interstitial.show().catch(() => setScreen('result'));
@@ -96,36 +82,31 @@ export default function App() {
     setScreen('picker');
   }, []);
 
-  if (screen === 'picker') {
-    return (
-      <>
-        <StatusBar style="auto" />
-        <RoundSizePickerScreen onPickSize={onPickSize} />
-      </>
-    );
-  }
+  const onErrorReset = useCallback(() => {
+    quizService.resetRound();
+    setScreen('picker');
+  }, []);
 
-  if (screen === 'quiz') {
-    return (
-      <>
-        <StatusBar style="auto" />
+  return (
+    <ErrorBoundary onReset={onErrorReset}>
+      <StatusBar style="auto" />
+      {screen === 'picker' && (
+        <RoundSizePickerScreen onPickSize={onPickSize} />
+      )}
+      {screen === 'quiz' && (
         <QuizScreen
           quizService={quizService}
           audioService={audioService}
           onSessionEnd={onSessionEnd}
         />
-      </>
-    );
-  }
-
-  return (
-    <>
-      <StatusBar style="auto" />
-      <ResultScreen
-        quizService={quizService}
-        onBackToQuiz={onBackToQuiz}
-        onBackToPicker={onBackToPicker}
-      />
-    </>
+      )}
+      {screen === 'result' && (
+        <ResultScreen
+          quizService={quizService}
+          onBackToQuiz={onBackToQuiz}
+          onBackToPicker={onBackToPicker}
+        />
+      )}
+    </ErrorBoundary>
   );
 }
