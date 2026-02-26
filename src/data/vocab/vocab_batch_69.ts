@@ -19,6 +19,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'Many people squander their potential when they spend hours scrolling through social media.', ko: '많은 사람들이 소셜 미디어를 훑어보며 시간을 보낼 때 자신의 잠재력을 허비합니다.' },
         { en: 'Leaving the lights on in an empty room will unnecessarily consume electricity.', ko: '빈 방에 불을 켜두는 것은 불필요하게 전기를 낭비하게 될 것입니다.' },
       ],
+      wordDistractors: ['waist', 'haste', 'taste'],
+      definitionDistractors: [
+        'To collect and store items for future use',
+        'To distribute resources equally among a group',
+        'To carefully measure and record quantities',
+      ],
     }
   ),
   word('watch', '손목시계', 2, 'noun',
@@ -37,6 +43,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'My grandfather gave me his gold timepiece as a graduation gift.', ko: '할아버지는 졸업 선물로 나에게 금색 손목시계를 주셨다.' },
         { en: 'The battery in my favorite accessory has run out of power.', ko: '내가 가장 좋아하는 액세서리의 배터리가 다 떨어졌다.' },
+      ],
+      wordDistractors: ['catch', 'match', 'hatch'],
+      definitionDistractors: [
+        'A decorative piece of jewelry worn around the neck',
+        'A portable device used to make phone calls',
+        'A flat screen mounted on a wall for displaying images',
       ],
     }
   ),
@@ -57,6 +69,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'We sliced a cold fruit from the vine to share at the picnic.', ko: '우리는 소풍에서 나누어 먹기 위해 덩굴에서 딴 시원한 과일을 썰었습니다.' },
         { en: 'The sweet juice dripped down the child\'s chin as he ate a large wedge.', ko: '아이가 커다란 조각을 먹을 때 달콤한 즙이 턱으로 흘러내렸습니다.' },
       ],
+      wordDistractors: ['waterman', 'watermark', 'cantaloupe'],
+      definitionDistractors: [
+        'A small citrus fruit with a bright orange rind and tart flavor',
+        'A tropical fruit with a spiny exterior and fragrant yellow flesh',
+        'A long green vegetable commonly used in salads and pickling',
+      ],
     }
   ),
   word('wave', '물결', 4, 'noun',
@@ -76,10 +94,16 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The surfers waited for a massive swell to rise from the ocean.', ko: '서퍼들은 바다에서 거대한 물결이 일기를 기다렸습니다.' },
         { en: 'A gentle ripple moved across the surface of the lake after the pebble fell.', ko: '조약돌이 떨어진 후 호수 표면에 부드러운 물결이 일었습니다.' },
       ],
+      wordDistractors: ['wane', 'wade', 'waive'],
+      definitionDistractors: [
+        'A strong gust of wind moving through a narrow valley',
+        'A sudden flash of light caused by electrical discharge',
+        'A deep channel carved by flowing water over time',
+      ],
     }
   ),
   word('way', '길', 1, 'noun',
-    ['행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차'],
+    ['도로', '통로', '골목', '고속도로', '산길', '지름길', '오솔길', '방법', '수단', '경로'],
     tips({
       etymology: '고대 영어 \'weg\'에서 유래했으며, 이동하거나 나아가는 통로를 의미합니다.',
       visual: '끝없이 펼쳐진 도로 위를 자동차가 달리는 모습을 상상해 보세요.',
@@ -94,6 +118,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The quickest route to the station is through the park.', ko: '역으로 가는 가장 빠른 길은 공원을 가로지르는 것입니다.' },
         { en: 'She found a creative solution to solve the difficult puzzle.', ko: '그녀는 어려운 퍼즐을 풀기 위한 창의적인 방법을 찾아냈습니다.' },
+      ],
+      wordDistractors: ['bay', 'day', 'sway'],
+      definitionDistractors: [
+        'A physical barrier used to prevent passage or entry',
+        'The final destination or endpoint of a journey',
+        'A vehicle used for transporting goods over long distances',
       ],
     }
   ),
@@ -114,6 +144,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'Together, a group of friends decided to go to the park.', ko: '친구들과 함께 우리는 공원에 가기로 결정했습니다.' },
         { en: 'Both of us believe that honesty is the best policy.', ko: '우리 둘 다 정직이 최선의 방책이라고 믿습니다.' },
       ],
+      wordDistractors: ['wee', 'whey', 'twee'],
+      definitionDistractors: [
+        'A single individual acting alone without any companions',
+        'A formal title used to address a person of authority',
+        'The act of pointing at oneself to indicate personal identity',
+      ],
     }
   ),
   word('weak', '약한', 5, 'adjective',
@@ -132,6 +168,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'His legs felt shaky and thin after recovering from the long illness.', ko: '오랜 병에서 회복한 후 그의 다리는 떨리고 힘이 없게 느껴졌다.' },
         { en: 'The bridge structure became dangerously unstable due to years of neglect.', ko: '수년간의 방치로 인해 교량 구조가 위험할 정도로 약해졌다.' },
+      ],
+      wordDistractors: ['week', 'wreak', 'peak'],
+      definitionDistractors: [
+        'Having great physical power and muscular strength',
+        'Being extremely cautious and careful in all actions',
+        'Showing a high level of intelligence and mental sharpness',
       ],
     }
   ),
@@ -152,6 +194,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The family accumulated great fortune through generations of successful business ventures.', ko: '그 가족은 수 세대에 걸친 성공적인 사업 운영을 통해 막대한 재산을 축적했습니다.' },
         { en: 'True prosperity is not measured solely by the amount of money in one\'s bank account.', ko: '진정한 부유함은 단순히 은행 계좌에 있는 돈의 액수로만 측정되지 않습니다.' },
       ],
+      wordDistractors: ['health', 'stealth', 'filth'],
+      definitionDistractors: [
+        'The state of being free from illness or injury',
+        'A feeling of deep personal satisfaction and contentment',
+        'The total amount of debt owed by a person or organization',
+      ],
     }
   ),
   word('weapon', '무기', 7, 'noun',
@@ -170,6 +218,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The police officer asked the suspect to drop the dangerous object immediately.', ko: '경찰관은 용의자에게 위험한 무기를 즉시 내려놓으라고 요구했습니다.' },
         { en: 'Knowledge can be a powerful tool when used correctly in a debate.', ko: '지식은 토론에서 올바르게 사용될 때 강력한 무기가 될 수 있습니다.' },
+      ],
+      wordDistractors: ['weaken', 'weasel', 'weather'],
+      definitionDistractors: [
+        'A protective covering worn over the body during battle',
+        'A handheld tool used for building or repairing structures',
+        'A formal agreement between two nations to end a conflict',
       ],
     }
   ),
@@ -190,6 +244,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'She always wears a warm coat when the temperature drops below freezing.', ko: '기온이 영하로 떨어지면 그녀는 항상 따뜻한 코트를 입습니다.' },
         { en: 'The doctor advised him to wear sunglasses to protect his eyes from the sun.', ko: '의사는 햇빛으로부터 눈을 보호하기 위해 선글라스를 쓰라고 조언했습니다.' },
       ],
+      wordDistractors: ['swear', 'pear', 'bear'],
+      definitionDistractors: [
+        'To wash and clean clothing using soap and water',
+        'To fold and store garments neatly in a drawer',
+        'To tear or rip fabric into smaller pieces',
+      ],
     }
   ),
   word('weather', '날씨', 1, 'noun',
@@ -208,6 +268,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The forecast says the outdoor conditions will be sunny and warm all weekend.', ko: '예보에 따르면 주말 내내 날씨가 맑고 따뜻할 것이라고 합니다.' },
         { en: 'Bad atmospheric conditions forced the airline to cancel all departing flights.', ko: '악천후로 인해 항공사는 모든 출발 항공편을 취소해야 했습니다.' },
+      ],
+      wordDistractors: ['whether', 'wether', 'feather'],
+      definitionDistractors: [
+        'The average temperature recorded in a specific region over decades',
+        'The amount of moisture present in the soil of a garden',
+        'The direction and speed at which ocean currents flow',
       ],
     }
   ),
@@ -228,6 +294,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The skilled artisan can weave beautiful patterns using only a simple hand loom.', ko: '숙련된 장인은 간단한 수동 베틀만으로 아름다운 무늬를 짤 수 있습니다.' },
         { en: 'She learned to weave baskets from her grandmother during the summer holidays.', ko: '그녀는 여름 방학 동안 할머니에게 바구니 짜는 법을 배웠습니다.' },
       ],
+      wordDistractors: ['wave', 'heave', 'leave'],
+      definitionDistractors: [
+        'To cut threads or strings into small equal pieces',
+        'To dye fabric using natural plant-based pigments',
+        'To stretch material tightly over a wooden frame',
+      ],
     }
   ),
   word('wedding', '혼례', 2, 'noun',
@@ -246,6 +318,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The couple invited all their close friends and relatives to their outdoor ceremony.', ko: '그 커플은 야외 예식에 모든 가까운 친구들과 친척들을 초대했습니다.' },
         { en: 'They spent months planning every detail of the flower arrangements for the big day.', ko: '그들은 중요한 날을 위해 꽃 장식의 모든 세부 사항을 계획하는 데 몇 달을 보냈습니다.' },
+      ],
+      wordDistractors: ['welding', 'wading', 'bedding'],
+      definitionDistractors: [
+        'A large social gathering held to celebrate a national holiday',
+        'A legal document that officially ends a marriage',
+        'A formal meeting between business partners to sign a contract',
       ],
     }
   ),
@@ -266,6 +344,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The gardener spent the entire afternoon pulling every stubborn sprout from the flower bed.', ko: '정원사는 오후 내내 화단에서 모든 고집 센 잡초를 뽑으며 시간을 보냈다.' },
         { en: 'Neglected for months, the backyard was soon overgrown with tall green stalks that choked the roses.', ko: '몇 달 동안 방치된 뒷마당은 곧 장미의 숨을 막는 키 큰 초록색 잡초들로 뒤덮였다.' },
       ],
+      wordDistractors: ['reed', 'tweed', 'seed'],
+      definitionDistractors: [
+        'A cultivated flower grown for its beauty and fragrance',
+        'A type of fertilizer used to enrich garden soil',
+        'A tall tree that provides shade in tropical climates',
+      ],
     }
   ),
   word('week', '주', 3, 'noun',
@@ -284,6 +368,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The manager scheduled a team meeting for next Wednesday to discuss the new project.', ko: '매니저는 새 프로젝트를 논의하기 위해 다음 주 수요일에 팀 회의를 잡았습니다.' },
         { en: 'Most employees look forward to the weekend after working hard for five days.', ko: '대부분의 직원들은 5일 동안 열심히 일한 후 주말을 고대합니다.' },
+      ],
+      wordDistractors: ['weak', 'peek', 'geek'],
+      definitionDistractors: [
+        'A single day within a calendar month',
+        'The entire duration of a calendar year',
+        'A unit of time equal to exactly sixty minutes',
       ],
     }
   ),
@@ -304,10 +394,16 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'Most families enjoy going to the park together during the sunny Saturday and Sunday.', ko: '대부분의 가족들은 화창한 토요일과 일요일 동안 함께 공원에 가는 것을 즐깁니다.' },
         { en: 'The local museum offers free admission to students every Saturday and Sunday.', ko: '지역 박물관은 매주 토요일과 일요일마다 학생들에게 무료 입장을 제공합니다.' },
       ],
+      wordDistractors: ['weekday', 'weakened', 'wrecked'],
+      definitionDistractors: [
+        'The period from Monday through Friday when most people work',
+        'A public holiday celebrated once a year by a nation',
+        'A scheduled vacation lasting two or more consecutive weeks',
+      ],
     }
   ),
   word('weigh', '무게를 달다', 4, 'verb',
-    ['가볍다', '길이', '부피', '속도', '높이', '거리', '온도', '밀도', '각도', '넓이'],
+    ['측정하다', '계산하다', '비교하다', '추정하다', '평가하다', '가늠하다', '따지다', '산출하다', '분석하다', '환산하다'],
     tips({
       etymology: '고대 영어 \'wegan\'에서 유래했으며, 이는 \'운반하다\' 혹은 \'움직이다\'라는 뜻을 가지고 있어 무게를 재기 위해 물건을 들어 올리는 동작과 연결됩니다.',
       visual: '양팔 저울의 한쪽에 물건을 올려놓고 바늘이 움직이는 것을 지켜보는 모습을 상상해 보세요.',
@@ -322,6 +418,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The butcher will carefully determine the mass of the meat before wrapping it for the customer.', ko: '정육점 주인은 고객을 위해 고기를 포장하기 전에 무게를 주의 깊게 잴 것입니다.' },
         { en: 'You should compare the pros and cons of each option before making a final decision.', ko: '최종 결정을 내리기 전에 각 선택지의 장단점을 따져보아야 합니다.' },
+      ],
+      wordDistractors: ['weigh', 'reign', 'sleigh'],
+      definitionDistractors: [
+        'To count the total number of items in a collection',
+        'To estimate the distance between two fixed points',
+        'To pour a liquid from one container into another',
       ],
     }
   ),
@@ -342,6 +444,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The silver lifting trophy felt much heavier than its actual size suggested.', ko: '은빛 우승 트로피는 실제 크기에 비해 훨씬 더 무겁게 느껴졌습니다.' },
         { en: 'Doctors recommend maintaining a healthy body through regular exercise and diet.', ko: '의사들은 규칙적인 운동과 식단을 통해 건강한 체중을 유지할 것을 권장합니다.' },
       ],
+      wordDistractors: ['wait', 'freight', 'height'],
+      definitionDistractors: [
+        'The total length of an object measured from end to end',
+        'The speed at which an object moves through space',
+        'The temperature of a substance in degrees Celsius',
+      ],
     }
   ),
   word('weird', '불가사의한', 5, 'adjective',
@@ -361,10 +469,16 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The old mansion had a mysterious and eerie atmosphere that felt quite unsettling to the visitors.', ko: '그 오래된 저택은 방문객들에게 꽤 불안하게 느껴지는 신비롭고 기이한 분위기를 풍겼다.' },
         { en: 'A series of bizarre coincidences led the investigators to believe something supernatural was occurring.', ko: '일련의 기묘한 우연들이 수사관들로 하여금 초자연적인 일이 일어나고 있다고 믿게 만들었다.' },
       ],
+      wordDistractors: ['wired', 'weary', 'wield'],
+      definitionDistractors: [
+        'Completely ordinary and expected in every way',
+        'Extremely attractive and pleasing to the eye',
+        'Scientifically proven and based on solid evidence',
+      ],
     }
   ),
   word('welcome', '환영', 3, 'noun',
-    ['관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표'],
+    ['인사', '작별', '초대', '축하', '안부', '소개', '답례', '접대', '배웅', '만남'],
     tips({
       etymology: '고대 영어 wilcuma에서 유래했으며, \'의도(will)\'와 \'오다(come)\'가 합쳐져 \'기쁘게 찾아온 손님\'을 뜻합니다.',
       visual: '집 현관문 앞에 놓인 \'WELCOME\' 매트와 그 위를 밟고 들어오는 웃는 얼굴의 손님을 상상해 보세요.',
@@ -379,6 +493,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The local villagers gave the travelers a warm and sincere welcome.', ko: '현지 마을 사람들은 여행자들에게 따뜻하고 진심 어린 환영을 해주었습니다.' },
         { en: 'The host stood at the door to offer a friendly welcome to every guest.', ko: '주인은 모든 손님에게 친절한 환영의 인사를 건네기 위해 문 앞에 서 있었습니다.' },
+      ],
+      wordDistractors: ['welfare', 'outcome', 'income'],
+      definitionDistractors: [
+        'A formal farewell given to someone who is leaving',
+        'A written invitation sent through the postal service',
+        'A warning issued to prevent someone from entering',
       ],
     }
   ),
@@ -399,6 +519,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The government is responsible for the social security and general health of its citizens.', ko: '정부는 시민들의 사회 보장과 전반적인 복지를 책임질 의무가 있다.' },
         { en: 'Parents are naturally concerned about the physical and emotional safety of their children.', ko: '부모들은 본능적으로 자녀들의 신체적, 정서적 안녕에 대해 걱정한다.' },
       ],
+      wordDistractors: ['warfare', 'wafer', 'farewell'],
+      definitionDistractors: [
+        'A system of punishments imposed by the government on criminals',
+        'The total amount of taxes collected by a state each year',
+        'A competitive struggle between businesses for market dominance',
+      ],
     }
   ),
   word('well', '잘', 1, 'adverb',
@@ -417,6 +543,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'She speaks English very well after living in London for three years.', ko: '런던에서 3년간 살고 난 뒤 그녀는 영어를 매우 잘 합니다.' },
         { en: 'The students performed well on the final exam thanks to their hard work.', ko: '학생들은 열심히 공부한 덕분에 기말 시험을 잘 치렀습니다.' },
+      ],
+      wordDistractors: ['wall', 'will', 'bell'],
+      definitionDistractors: [
+        'In a poor or unsatisfactory manner below expectations',
+        'With great difficulty and extreme effort required',
+        'In a rapid and hurried way without careful thought',
       ],
     }
   ),
@@ -437,6 +569,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The sun sets in the evening and disappears below the horizon.', ko: '해는 저녁에 서쪽으로 저물어 지평선 아래로 사라집니다.' },
         { en: 'They decided to travel across the country to reach the coastal cities.', ko: '그들은 해안 도시들에 도달하기 위해 나라를 가로질러 서쪽으로 여행하기로 결정했습니다.' },
       ],
+      wordDistractors: ['rest', 'best', 'nest'],
+      definitionDistractors: [
+        'The direction from which the sun rises each morning',
+        'The highest point on a compass located at the top of a map',
+        'The exact center point between two opposite directions',
+      ],
     }
   ),
   word('wet', '축축한', 3, 'adjective',
@@ -455,6 +593,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'Be careful not to slip on the wet floor after the cleaning.', ko: '청소 후에 바닥이 축축하니 미끄러지지 않게 조심하세요.' },
         { en: 'The dog shook its body to get rid of the water from its wet fur.', ko: '그 개는 축축한 털에서 물기를 제거하기 위해 몸을 흔들었습니다.' },
+      ],
+      wordDistractors: ['wit', 'pet', 'net'],
+      definitionDistractors: [
+        'Completely dry and free from any trace of moisture',
+        'Heated to a very high temperature by direct flame',
+        'Frozen solid at extremely low temperatures',
       ],
     }
   ),
@@ -475,10 +619,16 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The blue species is known to be the largest animal ever to have lived on Earth.', ko: '흰긴수염고래는 지구상에 살았던 동물 중 가장 큰 것으로 알려져 있습니다.' },
         { en: 'A massive tail emerged from the ocean waves before disappearing back into the deep water.', ko: '거대한 꼬리가 바다 물결 위로 나타났다가 다시 깊은 물 속으로 사라졌습니다.' },
       ],
+      wordDistractors: ['wail', 'shale', 'trail'],
+      definitionDistractors: [
+        'A small freshwater fish commonly found in rivers and ponds',
+        'A type of large reptile that lives in tropical swamps',
+        'A deep-sea invertebrate that attaches itself to rocks',
+      ],
     }
   ),
   word('what', '무엇', 1, 'pronoun',
-    ['문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인'],
+    ['누구', '어디', '언제', '어떻게', '왜', '어느 것', '이것', '저것', '모두', '아무것'],
     tips({
       etymology: '고대 영어 \'hwæt\'에서 유래했으며, 의문을 제기하거나 특정 대상을 지칭할 때 사용됩니다.',
       visual: '물음표(?)가 그려진 커다란 상자 안에 어떤 물건이 들어있는지 궁금해하는 모습을 상상하세요.',
@@ -494,10 +644,16 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'Tell me exactly is on your mind right now.', ko: '지금 네 마음속에 있는 것이 정확히 무엇인지 말해줘.' },
         { en: 'Nobody knows happened during the secret meeting yesterday.', ko: '어제 비밀 회의 중에 무슨 일이 일어났는지 아무도 모른다.' },
       ],
+      wordDistractors: ['that', 'chat', 'whet'],
+      definitionDistractors: [
+        'A word used to describe the manner in which something is done',
+        'A response given to confirm agreement with a statement',
+        'A term used to indicate the specific location of an object',
+      ],
     }
   ),
   word('wheat', '밀', 4, 'noun',
-    ['옥수수', '보리', '귀리', '호밀', '쌀', '콩', '수수', '메밀', '조', '밀가루'],
+    ['옥수수', '보리', '귀리', '호밀', '쌀', '콩', '수수', '메밀', '인대', '밀가루'],
     tips({
       etymology: '고대 영어 \'hwæte\'에서 유래했으며, \'희다\'라는 뜻의 white와 어원이 같아 가루를 내었을 때 하얀 곡물을 의미합니다.',
       visual: '황금빛으로 물든 넓은 들판에서 이삭이 바람에 흔들리는 농장의 풍경을 상상해 보세요.',
@@ -513,10 +669,16 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'Farmers harvested the golden crop before the heavy rain started.', ko: '농부들은 폭우가 시작되기 전에 황금빛 밀 작물을 수확했습니다.' },
         { en: 'Whole grain flour is much healthier than highly processed white varieties.', ko: '통밀가루는 고도로 가공된 흰 밀가루 종류보다 훨씬 건강에 좋습니다.' },
       ],
+      wordDistractors: ['whet', 'sweat', 'cheat'],
+      definitionDistractors: [
+        'A root vegetable that grows underground in cool climates',
+        'A leafy green herb used to season soups and salads',
+        'A sweet tropical fruit harvested from palm trees',
+      ],
     }
   ),
   word('wheel', '바퀴', 5, 'noun',
-    ['상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미'],
+    ['타이어', '기어', '핸들', '페달', '브레이크', '엔진', '축', '체인', '스프링', '볼트'],
     tips({
       etymology: '고대 영어 hweol에서 유래되었으며, 회전하는 원형 물체를 뜻하는 인도유럽어근 kʷel-과 연결됩니다.',
       visual: '자전거가 굴러갈 때 팽팽하게 돌아가는 동그란 바퀴살의 모양을 상상해 보세요.',
@@ -531,6 +693,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The front left part of the bicycle was wobbling because a spoke was broken.', ko: '바퀴살 하나가 부러져서 자전거의 왼쪽 앞부분이 흔들거리고 있었다.' },
         { en: 'Heavy luggage is much easier to transport if the suitcase has a sturdy set of rollers attached.', ko: '여행 가방에 튼튼한 바퀴 세트가 달려 있으면 무거운 짐을 운반하기가 훨씬 쉽다.' },
+      ],
+      wordDistractors: ['wheal', 'heel', 'reel'],
+      definitionDistractors: [
+        'A flat surface used as a platform for placing objects',
+        'A metal rod that connects two mechanical parts together',
+        'A curved handle attached to a door for pulling it open',
       ],
     }
   ),
@@ -551,10 +719,16 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'When does the train arrive at the central station?', ko: '기차가 중앙역에 언제 도착하나요?' },
         { en: 'Call me when you get home so I know you arrived safely.', ko: '집에 도착하면 전화해 주세요, 안전하게 도착했는지 알 수 있게요.' },
       ],
+      wordDistractors: ['wren', 'then', 'whine'],
+      definitionDistractors: [
+        'In which place or location something can be found',
+        'The person responsible for performing a specific action',
+        'The reason or cause behind a particular event',
+      ],
     }
   ),
   word('where', '어디에', 3, 'adverb',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['언제', '왜', '어떻게', '누구', '무엇', '여기', '저기', '어느 곳', '모든 곳', '아무 데'],
     tips({
       etymology: '고대 영어 \'hwær\'에서 유래했으며, \'어느 곳에\'라는 위치를 묻는 의문사로 발전했습니다.',
       visual: '지도 위에서 손가락으로 특정 지점을 가리키며 궁금해하는 모습을 상상해 보세요.',
@@ -570,10 +744,16 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'Do you know the exact spot the treasure is hidden?', ko: '보물이 숨겨진 정확한 장소를 알고 있나요?' },
         { en: 'The restaurant we ate at last night was very expensive.', ko: '우리가 어제 저녁에 먹었던 식당은 매우 비쌌습니다.' },
       ],
+      wordDistractors: ['were', 'whir', 'ware'],
+      definitionDistractors: [
+        'At what point in time an event is expected to occur',
+        'The specific manner or method used to accomplish a task',
+        'The identity of the person who performed an action',
+      ],
     }
   ),
-  word('whereas', '반면에', 10, 'conjunction',
-    ['변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념'],
+  word('whereas', '반면에', 5, 'conjunction',
+    ['그래서', '왜냐하면', '그러므로', '따라서', '게다가', '한편', '그리고', '또는', '그런데', '결국'],
     tips({
       etymology: 'where와 as가 결합된 형태로, 두 가지 사실을 나란히 놓고 비교할 때 사용됩니다.',
       visual: '저울의 양쪽에 서로 다른 색깔의 공이 놓여 있는 모습을 상상해 보세요.',
@@ -589,10 +769,16 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'Some people prefer to work in the morning, others enjoy working late at night.', ko: '어떤 사람들은 아침에 일하는 것을 선호하는 반면, 다른 사람들은 밤늦게 일하는 것을 즐깁니다.' },
         { en: 'The north of the country is very mountainous, the south is mostly flat plains.', ko: '그 나라의 북부는 산이 매우 많은 반면, 남부는 대부분 평평한 평원입니다.' },
       ],
+      wordDistractors: ['whereby', 'wherein', 'wherever'],
+      definitionDistractors: [
+        'Used to add extra information that supports the main point',
+        'Used to show that two events happened at exactly the same time',
+        'Used to indicate a cause and its direct result',
+      ],
     }
   ),
   word('whether', '~인지', 6, 'conjunction',
-    ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
+    ['그리고', '하지만', '그래서', '왜냐하면', '또는', '그러나', '따라서', '게다가', '그런데', '만약'],
     tips({
       etymology: '고대 영어 \'hwæther\'에서 유래했으며, \'둘 중 어느 쪽\'을 의미하는 의문 대명사에서 접속사로 발전했습니다.',
       visual: '갈림길 앞에 서서 왼쪽으로 갈지 오른쪽으로 갈지 고민하는 표지판을 상상해 보세요.',
@@ -608,10 +794,16 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The committee has not yet decided whether to proceed with the project or cancel it.', ko: '위원회는 프로젝트를 진행할지 아니면 취소할지 아직 결정하지 않았습니다.' },
         { en: 'Success depends on whether you are willing to put in the necessary effort every day.', ko: '성공은 당신이 매일 필요한 노력을 기울일 의지가 있는지에 달려 있습니다.' },
       ],
+      wordDistractors: ['weather', 'wither', 'gather'],
+      definitionDistractors: [
+        'Stating a fact that is absolutely certain and beyond question',
+        'Giving a command that must be followed without exception',
+        'Describing an event that has already been confirmed to happen',
+      ],
     }
   ),
   word('which', '어느, 어떤', 7, 'pronoun',
-    ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
+    ['누구', '무엇', '어디', '언제', '왜', '이것', '저것', '그것', '모두', '아무것'],
     tips({
       etymology: '고대 영어 hwilc에서 유래되었으며, \'어떤 종류의\'라는 뜻을 가진 hwi(누구/무엇)와 lic(형태)가 결합된 형태입니다.',
       visual: '여러 개의 선물 상자 앞에서 손가락으로 하나를 가리키며 고르는 모습을 상상해 보세요.',
@@ -627,10 +819,16 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'Tell me which color you prefer for the new living room curtains.', ko: '새 거실 커튼으로 어떤 색상을 더 선호하는지 말씀해 주세요.' },
         { en: 'The restaurant offers several desserts, but I do not know which is the best.', ko: '그 식당은 여러 디저트를 제공하지만, 어느 것이 가장 좋은지 모르겠습니다.' },
       ],
+      wordDistractors: ['witch', 'stitch', 'switch'],
+      definitionDistractors: [
+        'A word used to describe the total quantity of something',
+        'A term indicating the exact time when an event occurred',
+        'A pronoun that refers to no specific person or thing at all',
+      ],
     }
   ),
   word('while', '동안', 4, 'noun',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['순간', '기간', '시절', '시대', '세월', '찰나', '시각', '기한', '주기', '간격'],
     tips({
       etymology: '고대 영어 hwil에서 유래하여 \'휴식\'이나 \'시간의 한 조각\'을 의미하던 것이 현재의 \'잠시\'나 \'동안\'으로 발전했습니다.',
       visual: '시계의 초침이 한 바퀴를 다 돌기 전, 아주 짧은 구간만 색칠되어 있는 이미지를 떠올려 보세요.',
@@ -645,6 +843,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'We sat on the park bench and talked for a long time.', ko: '우리는 공원 벤치에 앉아 한참 동안 이야기를 나누었습니다.' },
         { en: 'Please wait here for a short period until the manager arrives.', ko: '매니저가 도착할 때까지 여기서 잠시만 기다려 주세요.' },
+      ],
+      wordDistractors: ['whine', 'wile', 'tile'],
+      definitionDistractors: [
+        'A permanent state that lasts forever without any end',
+        'A precise measurement of distance between two locations',
+        'A sudden and unexpected event that happens without warning',
       ],
     }
   ),
@@ -665,6 +869,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The chef had to quickly beat the cream until it became thick and fluffy.', ko: '요리사는 크림이 걸쭉하고 부드러워질 때까지 빠르게 휘저어야 했습니다.' },
         { en: 'Strong winds caused the loose branches to lash against the window pane.', ko: '강풍으로 인해 느슨해진 나뭇가지들이 창문을 세게 때렸습니다.' },
       ],
+      wordDistractors: ['chip', 'ship', 'quip'],
+      definitionDistractors: [
+        'To gently stroke or caress something with a soft touch',
+        'To slowly stir a thick liquid in a circular motion',
+        'To carefully wrap an object in layers of protective cloth',
+      ],
     }
   ),
   word('whisper', '속삭이다', 5, 'verb',
@@ -683,6 +893,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'She whispered the secret into her friend\'s ear so that nobody else could hear.', ko: '그녀는 다른 사람이 듣지 못하게 친구의 귀에 비밀을 속삭였다.' },
         { en: 'The students whispered to each other during the library study session.', ko: '학생들은 도서관 학습 시간 동안 서로 속삭였다.' },
+      ],
+      wordDistractors: ['whimper', 'whisker', 'whistle'],
+      definitionDistractors: [
+        'To shout loudly in order to get the attention of a crowd',
+        'To sing a melody at full volume with clear pronunciation',
+        'To read aloud from a written text in a formal setting',
       ],
     }
   ),
@@ -703,6 +919,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The referee blew his metal instrument to signal the end of the first half.', ko: '심판은 전반전 종료를 알리기 위해 금속 호루라기를 불었습니다.' },
         { en: 'A sharp sound from the tea kettle alerted everyone that the water was boiling.', ko: '찻주전자의 날카로운 휘슬 소리는 물이 끓고 있다는 것을 모두에게 알렸습니다.' },
       ],
+      wordDistractors: ['thistle', 'bristle', 'whisker'],
+      definitionDistractors: [
+        'A deep rumbling sound produced by large vibrating objects',
+        'A soft humming noise made by an electrical appliance',
+        'A rhythmic tapping sound created by fingers on a surface',
+      ],
     }
   ),
   word('white', '흰', 1, 'adjective',
@@ -721,6 +943,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The bride wore a beautiful dress that glowed under the lights.', ko: '신부는 조명 아래에서 빛나는 아름다운 흰색 드레스를 입었습니다.' },
         { en: 'Fresh snow covered the entire mountain range in a thick blanket.', ko: '신선한 눈이 산맥 전체를 두꺼운 흰색 덮개처럼 뒤덮었습니다.' },
+      ],
+      wordDistractors: ['whine', 'quite', 'write'],
+      definitionDistractors: [
+        'The darkest color, absorbing all visible light completely',
+        'A bright shade of red associated with danger and warmth',
+        'A deep shade of blue resembling the open ocean at noon',
       ],
     }
   ),
@@ -741,6 +969,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The mysterious guest at the party asked me if I knew the host.', ko: '파티에 온 신비한 손님은 내가 주최자가 누구인지 아는지 물었다.' },
         { en: 'A person is standing behind the door, but I cannot see their face clearly.', ko: '누군가 문 뒤에 서 있지만, 나는 그들의 얼굴을 명확히 볼 수 없다.' },
       ],
+      wordDistractors: ['how', 'hew', 'woo'],
+      definitionDistractors: [
+        'The specific object or thing being discussed or referred to',
+        'The place or location where an event is taking place',
+        'The exact time at which something is scheduled to happen',
+      ],
     }
   ),
   word('whole', '전체의', 7, 'adjective',
@@ -759,6 +993,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The hungry child ate the cake by himself in just ten minutes.', ko: '배고픈 아이는 단 10분 만에 케이크 전체를 혼자 다 먹었다.' },
         { en: 'Our family spent the summer vacation at a quiet beach resort.', ko: '우리 가족은 여름 휴가 전체를 조용한 해변 리조트에서 보냈다.' },
+      ],
+      wordDistractors: ['hole', 'pole', 'sole'],
+      definitionDistractors: [
+        'Divided into several separate and distinct sections',
+        'Missing a significant portion or key element',
+        'Containing only a small fraction of the total amount',
       ],
     }
   ),
@@ -779,6 +1019,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'Why did you decide to change your major in the middle of the semester?', ko: '왜 학기 중간에 전공을 바꾸기로 결정했나요?' },
         { en: 'Nobody could explain why the machine suddenly stopped working.', ko: '아무도 그 기계가 왜 갑자기 작동을 멈췄는지 설명할 수 없었다.' },
       ],
+      wordDistractors: ['wry', 'shy', 'sly'],
+      definitionDistractors: [
+        'At what specific location something can be found',
+        'The identity of the person involved in an event',
+        'The exact way in which a process is carried out',
+      ],
     }
   ),
   word('wicked', '사악한', 9, 'adjective',
@@ -797,6 +1043,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The villain devised a wicked plan to take over the entire kingdom.', ko: '악당은 왕국 전체를 차지하려는 사악한 계획을 세웠다.' },
         { en: 'A cold and wicked wind blew through the abandoned graveyard at night.', ko: '밤이 되자 버려진 묘지 사이로 차갑고 매서운 바람이 불어왔다.' },
+      ],
+      wordDistractors: ['wicker', 'waded', 'witted'],
+      definitionDistractors: [
+        'Extremely kind and generous toward everyone without exception',
+        'Showing great bravery and courage in the face of danger',
+        'Having a cheerful and playful personality that delights others',
       ],
     }
   ),
@@ -817,6 +1069,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The river is so broad that we cannot see the other side clearly.', ko: '그 강은 폭이 너무 넓어서 반대편이 명확하게 보이지 않습니다.' },
         { en: 'She opened her eyes in amazement when she saw the surprise gift.', ko: '그녀는 깜짝 선물을 보고 놀라서 눈을 커다랗게 떴습니다.' },
       ],
+      wordDistractors: ['ride', 'hide', 'wine'],
+      definitionDistractors: [
+        'Extremely narrow and confined with very little room to move',
+        'Having great depth extending far below the surface',
+        'Very tall and towering high above the surrounding area',
+      ],
     }
   ),
   word('widespread', '광범위한', 5, 'adjective',
@@ -836,9 +1094,15 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'The use of smartphones has become a global phenomenon affecting all age groups.', ko: '스마트폰의 사용은 모든 연령대에 영향을 미치는 광범위한 세계적 현상이 되었습니다.' },
         { en: 'Heavy rain caused flooding across the entire valley last night.', ko: '어젯밤 폭우로 인해 계곡 전체에 걸쳐 광범위한 홍수가 발생했습니다.' },
       ],
+      wordDistractors: ['windswept', 'bedspread', 'outspread'],
+      definitionDistractors: [
+        'Occurring only in a very small and isolated area',
+        'Known by only a few specialists in a narrow field',
+        'Happening once and never repeated or seen again',
+      ],
     }
   ),
-  word('widow', '미망인', 10, 'noun',
+  word('widow', '미망인', 4, 'noun',
     ['홀아비', '고아', '상속인', '배우자', '독신자', '친척', '후손', '조상', '가족', '보호자'],
     tips({
       etymology: '인도유럽어 어근 \'widhew\'에서 유래했으며 \'비어 있다\' 또는 \'분리되다\'라는 의미를 담고 있습니다.',
@@ -854,6 +1118,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The elderly woman lived alone in the large house after becoming a widow last year.', ko: '그 노년의 여성은 작년에 미망인이 된 후 큰 집에서 혼자 살았습니다.' },
         { en: 'She devoted her life to helping other women who had lost their husbands in the war.', ko: '그녀는 전쟁에서 남편을 잃은 다른 미망인들을 돕는 데 평생을 바쳤습니다.' },
+      ],
+      wordDistractors: ['window', 'willow', 'shadow'],
+      definitionDistractors: [
+        'A man whose wife has died and who has not remarried',
+        'A young woman who has never been married before',
+        'A child who has lost both parents at an early age',
       ],
     }
   ),
@@ -874,6 +1144,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'He bought a beautiful bouquet of roses for his spouse on their anniversary.', ko: '그는 기념일을 맞아 아내를 위해 아름다운 장미 꽃다발을 샀습니다.' },
         { en: 'My married partner works as a talented architect in a large firm.', ko: '제 아내는 큰 회사에서 유능한 건축가로 일하고 있습니다.' },
       ],
+      wordDistractors: ['life', 'knife', 'strife'],
+      definitionDistractors: [
+        'A male partner in a legally recognized marriage',
+        'A close female friend who shares living expenses',
+        'A female relative related by blood or adoption',
+      ],
     }
   ),
   word('wild', '야생의', 6, 'adjective',
@@ -893,10 +1169,16 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'Many species of flowers grow in the mountains during the spring season.', ko: '봄철 동안 산에는 많은 종류의 야생화들이 자라납니다.' },
         { en: 'The documentary captures the lives of animals living in their natural habitat.', ko: '그 다큐멘터리는 자연 서식지에서 살아가는 야생 동물들의 삶을 포착합니다.' },
       ],
+      wordDistractors: ['wile', 'mild', 'guild'],
+      definitionDistractors: [
+        'Carefully trained and obedient to human commands',
+        'Grown in controlled indoor conditions using artificial light',
+        'Calm and peaceful in temperament without any aggression',
+      ],
     }
   ),
   word('will', '의지', 2, 'noun',
-    ['사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획'],
+    ['결심', '각오', '열정', '용기', '결단', '신념', '집념', '투지', '끈기', '인내'],
     tips({
       etymology: '고대 영어 \'willa\'에서 유래하여 소망이나 결심을 나타내는 뿌리를 가지고 있습니다.',
       visual: '거대한 바위를 맨손으로 밀어내려는 사람의 단단한 눈빛을 상상해 보세요.',
@@ -911,6 +1193,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'She showed a strong desire to succeed despite many obstacles.', ko: '그녀는 많은 장애물에도 불구하고 성공하겠다는 강한 의지를 보여주었다.' },
         { en: 'Human beings have the power of free choice to decide their own future.', ko: '인간은 자신의 미래를 결정할 수 있는 자유 의지를 가지고 있다.' },
+      ],
+      wordDistractors: ['well', 'wilt', 'fill'],
+      definitionDistractors: [
+        'The physical ability to lift heavy objects with ease',
+        'A legal document outlining how property should be distributed',
+        'A strong emotional feeling of sadness or regret',
       ],
     }
   ),
@@ -931,6 +1219,12 @@ export const vocabBatch69: VocabItem[] = [
         { en: 'Our team worked hard all season and finally won the championship game.', ko: '우리 팀은 시즌 내내 열심히 노력했고 마침내 챔피언십 경기에서 이겼습니다.' },
         { en: 'She hopes to win the science competition by presenting her original research.', ko: '그녀는 독창적인 연구를 발표하여 과학 대회에서 이기기를 희망합니다.' },
       ],
+      wordDistractors: ['bin', 'pin', 'grin'],
+      definitionDistractors: [
+        'To lose badly and accept defeat without any resistance',
+        'To participate in a contest without caring about the outcome',
+        'To withdraw from a competition before it officially begins',
+      ],
     }
   ),
   word('wind', '바람', 1, 'noun',
@@ -949,6 +1243,12 @@ export const vocabBatch69: VocabItem[] = [
       exampleSentences: [
         { en: 'The strong gust blew the hat right off the boy\'s head.', ko: '강한 바람이 소년의 머리에서 모자를 바로 날려버렸습니다.' },
         { en: 'A gentle breeze cooled the garden during the hot summer afternoon.', ko: '더운 여름 오후에 부드러운 바람이 정원을 식혀주었습니다.' },
+      ],
+      wordDistractors: ['wand', 'bind', 'find'],
+      definitionDistractors: [
+        'A steady flow of water running through a narrow channel',
+        'A bright beam of light shining from a distant source',
+        'A loud vibration caused by heavy machinery underground',
       ],
     }
   ),

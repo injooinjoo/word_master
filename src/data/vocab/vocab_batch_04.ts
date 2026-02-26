@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch04: VocabItem[] = [
-  word('Accept', '받아들이다', 2, 'verb',
+  word('accept', '받아들이다', 2, 'verb',
     ['거절하다', '무시하다', '버리다', '미루다', '숨기다', '피하다', '잃다', '던지다', '막다', '깨뜨리다'],
     tips({
       etymology: '라틴어 \'accipere\'에서 유래하며, \'ac(~으로)\'와 \'capere(잡다)\'가 결합되어 내게 오는 것을 잡는다는 의미를 가집니다.',
@@ -15,13 +15,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'to agree to receive or take something offered',
       synonyms: ['receive', 'admit', 'acquire'],
       antonyms: ['reject', 'refuse', 'decline'],
+      wordDistractors: ['Accent', 'Access', 'Except'],
+      definitionDistractors: [
+        'to move upward or climb to a higher position',
+        'to speed up or increase the rate of something',
+        'to reach a place or obtain something desired',
+      ],
       exampleSentences: [
         { en: 'She accepted the job offer.', ko: '그녀는 그 일자리 제의를 수락했다.' },
         { en: 'Please accept my apology.', ko: '제 사과를 받아주세요.' },
       ],
     }
   ),
-  word('Answer', '대답하다', 2, 'verb',
+  word('answer', '대답하다', 2, 'verb',
     ['질문하다', '묻다', '말하다', '부르다', '외치다', '속삭이다', '이야기하다', '논쟁하다', '토론하다', '지적하다'],
     tips({
       etymology: 'and(~에 대하여)와 swear(맹세하다)가 합쳐져 사실에 대해 엄숙하게 말한다는 어원에서 유래했습니다.',
@@ -34,13 +40,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'to say, write, or do something as a reaction to a question, letter, or situation',
       synonyms: ['reply', 'respond', 'retort'],
       antonyms: ['ask', 'question', 'inquire'],
+      wordDistractors: ['Anchor', 'Anger', 'Antler'],
+      definitionDistractors: [
+        'to fasten or secure something firmly in place',
+        'to move toward a specific destination or goal',
+        'to make a formal request or application for something',
+      ],
       exampleSentences: [
         { en: 'Can you answer the question?', ko: '질문에 답할 수 있나요?' },
         { en: 'He answered the phone immediately.', ko: '그는 전화를 바로 받았다.' },
       ],
     }
   ),
-  word('Aunt', '이모, 고모', 2, 'noun',
+  word('aunt', '이모, 고모', 2, 'noun',
     ['아버지', '어머니', '형제', '자매', '삼촌', '할아버지', '할머니', '조카', '사촌', '시아버지'],
     tips({
       etymology: '라틴어 amita에서 유래하여 부모님의 여자 형제를 뜻하게 되었습니다.',
@@ -53,13 +65,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'The sister of your father or mother, or the woman who is married to your uncle.',
       synonyms: ['auntie', 'relative', 'kinswoman'],
       antonyms: ['uncle', 'nephew', 'niece'],
+      wordDistractors: ['Ant', 'Haunt', 'Gaunt'],
+      definitionDistractors: [
+        'a small insect known for living in large colonies',
+        'a female friend or companion who is not related by blood',
+        'a woman who serves as a legal guardian for a child',
+      ],
       exampleSentences: [
         { en: 'My aunt lives in Seoul.', ko: '내 이모는 서울에 산다.' },
         { en: 'Her aunt baked cookies for the party.', ko: '그녀의 고모가 파티용 쿠키를 구웠다.' },
       ],
     }
   ),
-  word('Autumn', '가을', 2, 'noun',
+  word('autumn', '가을', 2, 'noun',
     ['봄', '여름', '겨울', '계절', '날씨', '단풍', '수확', '바람', '하늘', '낙엽'],
     tips({
       etymology: '라틴어 autumnus에서 유래하여 \'수확의 시기\'라는 의미를 담고 있습니다.',
@@ -72,13 +90,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'the period of the year between summer and winter when the weather becomes cooler',
       synonyms: ['fall', 'harvest time', 'twilight of the year'],
       antonyms: ['spring', 'summer', 'winter'],
+      wordDistractors: ['Author', 'Auction', 'Austria'],
+      definitionDistractors: [
+        'a strong wind that brings heavy rainfall and flooding',
+        'the process of gathering crops from fields after they ripen',
+        'a period of rest and inactivity during the coldest months',
+      ],
       exampleSentences: [
         { en: 'The leaves turn red and gold in autumn.', ko: '가을에는 나뭇잎이 빨갛고 금빛으로 변합니다.' },
         { en: 'Farmers are busy gathering their crops in autumn.', ko: '농부들은 가을에 농작물을 거두느라 바쁩니다.' },
       ],
     }
   ),
-  word('Bake', '굽다', 2, 'verb',
+  word('bake', '굽다', 2, 'verb',
     ['찌다', '튀기다', '볶다', '삶다', '썰다', '섞다', '붓다', '담그다', '절이다', '말리다'],
     tips({
       etymology: '고대 영어 bacan에서 유래하여 건조한 열로 음식을 익히는 과정을 의미합니다.',
@@ -91,13 +115,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'to cook food in an oven using dry heat',
       synonyms: ['roast', 'cook', 'grill'],
       antonyms: ['freeze', 'chill', 'cool'],
+      wordDistractors: ['Brake', 'Fake', 'Lake'],
+      definitionDistractors: [
+        'to heat a liquid until it bubbles and produces steam',
+        'to mix ingredients together thoroughly using a spoon or whisk',
+        'to cut food into thin flat pieces with a knife',
+      ],
       exampleSentences: [
         { en: 'She likes to bake cakes on weekends.', ko: '그녀는 주말에 케이크를 굽는 것을 좋아한다.' },
         { en: 'I baked bread this morning.', ko: '오늘 아침에 빵을 구웠다.' },
       ],
     }
   ),
-  word('Balloon', '풍선', 2, 'noun',
+  word('balloon', '풍선', 2, 'noun',
     ['공', '비누', '기구', '종이', '리본', '깃발', '꽃', '초', '등', '불'],
     tips({
       etymology: '이탈리아어 \'ballone\'에서 유래했으며, \'ball(공)\'에 \'큰 것\'을 뜻하는 접미사가 붙어 \'커다란 공\'이라는 의미가 되었습니다.',
@@ -110,13 +140,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A flexible bag that can be inflated with a gas, such as helium or air, often used as a child\'s toy or for decoration.',
       synonyms: ['blimp', 'aerostat', 'inflatable'],
       antonyms: ['anchor', 'weight', 'stone'],
+      wordDistractors: ['Ballot', 'Balcony', 'Bassoon'],
+      definitionDistractors: [
+        'a large basket used for carrying goods to market',
+        'a round object used in sports and games',
+        'a piece of paper used for casting a vote in an election',
+      ],
       exampleSentences: [
         { en: 'The child released the colorful balloon into the sky.', ko: '아이는 알록달록한 풍선을 하늘로 날려 보냈다.' },
         { en: 'We used dozens of red and white balloons to decorate the hall for the party.', ko: '우리는 파티를 위해 홀을 장식하려고 수십 개의 빨간색과 흰색 풍선을 사용했다.' },
       ],
     }
   ),
-  word('Battle', '전투', 2, 'noun',
+  word('battle', '전투', 2, 'noun',
     ['평화', '휴전', '협상', '대화', '친목', '우정', '동맹', '휴식', '안전', '구원'],
     tips({
       etymology: '라틴어 battualia에서 유래하여 \'두드리는 것\' 혹은 \'격투\'라는 의미를 담고 있습니다.',
@@ -129,13 +165,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A sustained fight between large organized armed forces in a specific area.',
       synonyms: ['combat', 'conflict', 'clash'],
       antonyms: ['peace', 'truce', 'harmony'],
+      wordDistractors: ['Bottle', 'Baffle', 'Rattle'],
+      definitionDistractors: [
+        'a formal agreement between two nations to end hostilities',
+        'a military exercise conducted for training purposes only',
+        'a protective barrier built around a city or fortress',
+      ],
       exampleSentences: [
         { en: 'The soldiers prepared themselves for the upcoming battle.', ko: '군인들은 다가오는 전투를 준비했다.' },
         { en: 'She won her long battle against the severe illness.', ko: '그녀는 중병에 맞선 긴 싸움에서 승리했다.' },
       ],
     }
   ),
-  word('Belt', '벨트', 2, 'noun',
+  word('belt', '벨트', 2, 'noun',
     ['넥타이', '스카프', '모자', '장갑', '양말', '신발', '지갑', '가방', '시계', '반지'],
     tips({
       etymology: '라틴어 balteus에서 유래하여 허리에 두르는 띠를 의미하게 되었습니다.',
@@ -148,13 +190,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'a flexible band or strap, typically made of leather or fabric, worn around the waist to support clothing or for decoration',
       synonyms: ['strap', 'band', 'girdle'],
       antonyms: ['necklace', 'bracelet', 'headband'],
+      wordDistractors: ['Bolt', 'Melt', 'Felt'],
+      definitionDistractors: [
+        'a piece of jewelry worn around the neck on a chain',
+        'a fastening device made of metal used to hold a door shut',
+        'a protective covering worn on the head during construction',
+      ],
       exampleSentences: [
         { en: 'He tightened his leather belt to keep his trousers from falling.', ko: '그는 바지가 흘러내리지 않도록 가죽 벨트를 조였다.' },
         { en: 'The dress comes with a matching belt for the waist.', ko: '그 드레스에는 허리에 매는 같은 재질의 벨트가 포함되어 있다.' },
       ],
     }
   ),
-  word('Birthday', '생일', 2, 'noun',
+  word('birthday', '생일', 2, 'noun',
     ['기념일', '휴일', '주말', '방학', '결혼식', '장례식', '파티', '축제', '연휴', '휴가'],
     tips({
       etymology: '태어남을 뜻하는 birth와 날을 뜻하는 day가 결합되어 탄생한 날을 의미합니다.',
@@ -167,13 +215,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'the anniversary of the day on which a person was born',
       synonyms: ['anniversary', 'natal day', 'celebration'],
       antonyms: ['deathday', 'funeral', 'passing'],
+      wordDistractors: ['Birthplace', 'Biweekly', 'Weekday'],
+      definitionDistractors: [
+        'a national holiday celebrated by an entire country',
+        'the place where a person was born and raised',
+        'a formal ceremony marking a wedding or graduation',
+      ],
       exampleSentences: [
         { en: 'Happy birthday to you!', ko: '생일 축하해요!' },
         { en: 'We threw a surprise party for her birthday.', ko: '우리는 그녀의 생일을 위해 깜짝 파티를 열었다.' },
       ],
     }
   ),
-  word('Blanket', '담요', 2, 'noun',
+  word('blanket', '담요', 2, 'noun',
     ['침대', '베개', '매트리스', '시트', '쿠션', '카펫', '커튼', '수건', '옷', '자켓'],
     tips({
       etymology: '프랑스어 \'blanchet\'(흰색 천)에서 유래하여 오늘날 몸을 덮는 물건을 뜻하게 되었습니다.',
@@ -186,13 +240,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'a large piece of cloth used to keep warm in bed',
       synonyms: ['cover', 'quilt', 'rug'],
       antonyms: ['fan', 'cooler', 'vent'],
+      wordDistractors: ['Bracket', 'Brisket', 'Basket'],
+      definitionDistractors: [
+        'a soft cushion placed under the head for sleeping',
+        'a flat sheet placed directly on a mattress for comfort',
+        'a thick mat placed on the floor to cushion footsteps',
+      ],
       exampleSentences: [
         { en: 'She wrapped herself in a warm blanket.', ko: '그녀는 따뜻한 담요로 몸을 감쌌다.' },
         { en: 'The blanket kept the baby warm.', ko: '담요가 아기를 따뜻하게 해주었다.' },
       ],
     }
   ),
-  word('Blind', '눈먼', 2, 'adjective',
+  word('blind', '눈먼', 2, 'adjective',
     ['눈썹', '보이는', '밝은', '똑똑한', '시력', '안경', '접촉', '감각', '청각', '듣는'],
     tips({
       etymology: '고대 영어 blind에서 유래하여 \'혼란스러운\' 혹은 \'보이지 않는\'을 뜻합니다.',
@@ -205,13 +265,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'Unable to see because of injury, disease, or a genetic condition; lacking the sense of sight.',
       synonyms: ['sightless', 'unseeing', 'visionless'],
       antonyms: ['sighted', 'seeing', 'observant'],
+      wordDistractors: ['Blend', 'Bland', 'Bind'],
+      definitionDistractors: [
+        'unable to hear sounds due to a medical condition',
+        'feeling dizzy or disoriented after spinning around',
+        'having poor memory or difficulty recalling information',
+      ],
       exampleSentences: [
         { en: 'He has been blind since birth and uses a guide dog.', ko: '그는 태어날 때부터 시각장애인이며 안내견을 동반합니다.' },
         { en: 'The bright light momentarily made me blind.', ko: '밝은 빛 때문에 순간적으로 눈이 멀었습니다.' },
       ],
     }
   ),
-  word('Blood', '피', 2, 'noun',
+  word('blood', '피', 2, 'noun',
     ['물', '땀', '눈물', '침', '피부', '근육', '뼈', '장기', '심장', '폐'],
     tips({
       etymology: '고대 영어 blōd에서 유래하여 생명의 근원이 되는 액체를 뜻합니다.',
@@ -224,13 +290,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'the red fluid that flows through the body\'s veins and arteries',
       synonyms: ['plasma', 'gore', 'lifeblood'],
       antonyms: ['water', 'sap', 'void'],
+      wordDistractors: ['Flood', 'Bloom', 'Brood'],
+      definitionDistractors: [
+        'a clear liquid that the body produces when overheated',
+        'the tissue that covers and protects the outside of the body',
+        'a vital organ that pumps nutrients throughout the body',
+      ],
       exampleSentences: [
         { en: 'Blood was dripping from the wound.', ko: '상처에서 피가 뚝뚝 떨어지고 있었다.' },
         { en: 'She donates blood every month.', ko: '그녀는 매달 헌혈을 한다.' },
       ],
     }
   ),
-  word('Board', '나무판, 이사회', 2, 'noun',
+  word('board', '나무판, 이사회', 2, 'noun',
     ['유리', '종이', '천', '플라스틱', '금속', '가죽', '나무', '대리석', '타일', '벽돌'],
     tips({
       etymology: '고대 영어 bord에서 유래하여 평평한 나무판자를 의미하게 되었습니다.',
@@ -243,13 +315,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A flat, thin, and usually rectangular piece of stiff material used for a specific purpose such as writing or building.',
       synonyms: ['plank', 'panel', 'committee'],
       antonyms: ['sphere', 'orb', 'void'],
+      wordDistractors: ['Broad', 'Bored', 'Beard'],
+      definitionDistractors: [
+        'a round object used for playing sports or games',
+        'a sharp tool used for cutting wood or metal',
+        'a large container used for storing grain or supplies',
+      ],
       exampleSentences: [
         { en: 'The teacher wrote the homework assignment on the board.', ko: '선생님께서 게시판에 숙제를 적으셨다.' },
         { en: 'The board of directors approved the new marketing strategy.', ko: '이사회가 새로운 마케팅 전략을 승인했다.' },
       ],
     }
   ),
-  word('Bowl', '그릇', 2, 'noun',
+  word('bowl', '그릇', 2, 'noun',
     ['접시', '컵', '쟁반', '냄비', '프라이팬', '수저', '포크', '나이프', '병', '항아리'],
     tips({
       etymology: '라틴어 bulla(둥근 물체)에서 유래하여 오목하고 둥근 형태의 그릇을 뜻하게 되었습니다.',
@@ -262,13 +340,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A deep, round container open at the top, used for holding, serving, or preparing food.',
       synonyms: ['dish', 'basin', 'vessel'],
       antonyms: ['plate', 'tray', 'platter'],
+      wordDistractors: ['Bow', 'Fowl', 'Howl'],
+      definitionDistractors: [
+        'a flat circular dish used for serving individual portions of food',
+        'a tall narrow container used for drinking beverages',
+        'a large pot with a lid used for cooking soups on a stove',
+      ],
       exampleSentences: [
         { en: 'She ate cereal from a bowl.', ko: '그녀는 그릇에 시리얼을 담아 먹었다.' },
         { en: 'He poured the hot soup into a large bowl.', ko: '그는 뜨거운 수프를 커다란 그릇에 부었다.' },
       ],
     }
   ),
-  word('Bread', '빵', 2, 'noun',
+  word('bread', '빵', 2, 'noun',
     ['밥', '고기', '과일', '채소', '우유', '치즈', '과자', '케이크', '파이', '쿠키'],
     tips({
       etymology: '고대 영어 brēad에서 유래하여 본래 \'조각\' 혹은 \'음식\'을 의미했습니다.',
@@ -281,13 +365,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A common food item prepared from a dough of flour and water, usually by baking.',
       synonyms: ['loaf', 'pastry', 'baked good'],
       antonyms: ['meat', 'beverage', 'vegetable'],
+      wordDistractors: ['Breed', 'Braid', 'Dread'],
+      definitionDistractors: [
+        'a sweet dessert made with eggs, sugar, and cream',
+        'a type of grain harvested from fields and stored in silos',
+        'a thick liquid made by blending fruits together',
+      ],
       exampleSentences: [
         { en: 'I bought fresh bread from the bakery this morning.', ko: '나는 오늘 아침에 빵집에서 신선한 빵을 샀다.' },
         { en: 'Bread and butter is a very simple breakfast.', ko: '빵과 버터는 매우 간단한 아침 식사이다.' },
       ],
     }
   ),
-  word('Bridge', '다리', 2, 'noun',
+  word('bridge', '다리', 2, 'noun',
     ['터널', '도로', '강', '바다', '호수', '산', '빌딩', '탑', '벽', '울타리'],
     tips({
       etymology: '고대 영어 brycg에서 유래하여 두 지점을 잇는 구조물을 의미하게 되었습니다.',
@@ -300,13 +390,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A structure carrying a pathway or roadway over a depression or obstacle such as a river.',
       synonyms: ['span', 'viaduct', 'overpass'],
       antonyms: ['gap', 'chasm', 'abyss'],
+      wordDistractors: ['Ridge', 'Badge', 'Fridge'],
+      definitionDistractors: [
+        'a long narrow passage dug underground for transportation',
+        'a wall built to hold back water and prevent flooding',
+        'a paved path along the side of a road for pedestrians',
+      ],
       exampleSentences: [
         { en: 'We crossed the bridge at sunset.', ko: '우리는 해질녘에 다리를 건넜다.' },
         { en: 'The old bridge was built in 1900.', ko: '그 오래된 다리는 1900년에 지어졌다.' },
       ],
     }
   ),
-  word('Busy', '바쁜', 2, 'adjective',
+  word('busy', '바쁜', 2, 'adjective',
     ['여유로운', '느린', '한가한', '게으른', '졸린', '피곤한', '쉬는', '휴식하는', '빈', '공허한'],
     tips({
       etymology: '고대 영어 bisig에서 유래하여 무언가에 주의를 기울여 열심히 일하는 상태를 의미합니다.',
@@ -319,13 +415,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'having a great deal of tasks to complete or being fully engaged in an activity',
       synonyms: ['occupied', 'active', 'engaged'],
       antonyms: ['idle', 'free', 'inactive'],
+      wordDistractors: ['Buzzy', 'Bushy', 'Dusty'],
+      definitionDistractors: [
+        'feeling extremely tired and in need of rest or sleep',
+        'moving quickly from one place to another without stopping',
+        'feeling worried or anxious about an upcoming event',
+      ],
       exampleSentences: [
         { en: 'I am too busy to talk now.', ko: '지금은 너무 바빠서 이야기할 수 없어요.' },
         { en: 'The street was busy with shoppers.', ko: '거리는 쇼핑객들로 붐볐다.' },
       ],
     }
   ),
-  word('Button', '단추', 2, 'noun',
+  word('button', '단추', 2, 'noun',
     ['지퍼', '리본', '장식', '버클', '고리', '걸쇠', '클립', '핀', '찌르개', '바늘'],
     tips({
       etymology: '프랑스어 bouton(튀어나온 것)에서 유래하여 옷을 고정하는 도구를 뜻하게 되었습니다.',
@@ -338,13 +440,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'a small disk or knob sewn to clothing for fastening or a small part of a machine that you press to make it work',
       synonyms: ['fastener', 'knob', 'stud'],
       antonyms: ['zipper', 'hole', 'tear'],
+      wordDistractors: ['Butter', 'Mutton', 'Kitten'],
+      definitionDistractors: [
+        'a sliding fastener with interlocking metal teeth on clothing',
+        'a decorative pin worn on the lapel of a jacket',
+        'a handle attached to a door for pulling it open or shut',
+      ],
       exampleSentences: [
         { en: 'She sewed a button on her coat.', ko: '그녀는 코트에 단추를 달았다.' },
         { en: 'Press the button to start the machine.', ko: '기계를 시작하려면 버튼을 누르세요.' },
       ],
     }
   ),
-  word('Cabin', '오두막', 2, 'noun',
+  word('cabin', '오두막', 2, 'noun',
     ['아파트', '빌라', '주택', '성', '탑', '창고', '헛간', '창문', '현관', '지붕'],
     tips({
       etymology: '프랑스어 cabane에서 유래하여 작고 소박한 거처를 뜻하게 되었습니다.',
@@ -357,13 +465,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'a small wooden house, especially in a forest or by a lake',
       synonyms: ['hut', 'cottage', 'lodge'],
       antonyms: ['mansion', 'palace', 'skyscraper'],
+      wordDistractors: ['Cabinet', 'Cable', 'Carbon'],
+      definitionDistractors: [
+        'a large luxurious house with many rooms and servants',
+        'a piece of furniture with shelves used for storing dishes',
+        'a vehicle used for transporting passengers for a fare',
+      ],
       exampleSentences: [
         { en: 'We stayed in a cabin by the lake.', ko: '우리는 호숫가 오두막에서 묵었다.' },
         { en: 'The cabin had no electricity.', ko: '그 오두막에는 전기가 들어오지 않았다.' },
       ],
     }
   ),
-  word('Cage', '새장', 2, 'noun',
+  word('cage', '새장, 우리', 2, 'noun',
     ['우리', '울타리', '담', '벽', '문', '창', '문턱', '계단', '복도', '마당'],
     tips({
       etymology: '라틴어 cavea(빈 공간)에서 유래하여 무언가를 가두는 장소를 뜻하게 되었습니다.',
@@ -376,13 +490,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A structure made of metal bars or wires used to keep animals or birds confined',
       synonyms: ['enclosure', 'pen', 'coop'],
       antonyms: ['wild', 'freedom', 'open'],
+      wordDistractors: ['Cape', 'Sage', 'Page'],
+      definitionDistractors: [
+        'an open outdoor area where animals can roam freely',
+        'a deep hole in the ground used for storing water',
+        'a fenced area of farmland where crops are grown',
+      ],
       exampleSentences: [
         { en: 'The bird escaped from its cage.', ko: '새가 새장에서 탈출했다.' },
         { en: 'He cleaned the hamster cage every week.', ko: '그는 매주 햄스터 우리를 청소했다.' },
       ],
     }
   ),
-  word('Calm', '차분한', 2, 'adjective',
+  word('calm', '차분한', 2, 'adjective',
     ['흥분한', '불안한', '초조한', '화난', '걱정하는', '두려운', '급한', '시끄러운', '폭력적인', '거친'],
     tips({
       etymology: '라틴어 cauma(열기)에서 유래하여, 한낮의 더위에 바람이 잦아든 상태를 뜻합니다.',
@@ -395,13 +515,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'free from disturbance or excitement; peaceful',
       synonyms: ['peaceful', 'tranquil', 'serene'],
       antonyms: ['excited', 'stormy', 'agitated'],
+      wordDistractors: ['Claim', 'Clam', 'Palm'],
+      definitionDistractors: [
+        'feeling extremely happy and full of energy',
+        'being completely silent without any sound at all',
+        'moving slowly and carefully to avoid making mistakes',
+      ],
       exampleSentences: [
         { en: 'Stay calm and keep your composure.', ko: '침착함을 유지하고 안정을 취하세요.' },
         { en: 'The sea was calm and still this morning.', ko: '오늘 아침 바다는 잔잔했다.' },
       ],
     }
   ),
-  word('Camp', '캠프', 2, 'noun',
+  word('camp', '캠프', 2, 'noun',
     ['호텔', '모텔', '여관', '숙소', '텐트', '침낭', '등산', '하이킹', '피크닉', '바베큐'],
     tips({
       etymology: '라틴어 campus(들판)에서 유래하여 탁 트인 야외 공간에서 지내는 것을 의미합니다.',
@@ -414,13 +540,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'a place where people stay in tents or temporary shelters',
       synonyms: ['campsite', 'bivouac', 'encampment'],
       antonyms: ['home', 'hotel', 'residence'],
+      wordDistractors: ['Clamp', 'Champ', 'Damp'],
+      definitionDistractors: [
+        'a permanent building designed for comfortable long-term living',
+        'a large open field used for growing crops and farming',
+        'a recreational park with rides and entertainment attractions',
+      ],
       exampleSentences: [
         { en: 'We went to summer camp.', ko: '우리는 여름 캠프에 갔다.' },
         { en: 'They set up camp by the river.', ko: '그들은 강가에 진을 쳤다.' },
       ],
     }
   ),
-  word('Captain', '선장, 대장', 2, 'noun',
+  word('captain', '선장, 대장', 2, 'noun',
     ['선원', '승객', '경비원', '안내인', '조종사', '기관사', '부하', '병사', '일병', '이등병'],
     tips({
       etymology: '라틴어 capitaneus(우두머리)에서 유래하여 집단의 장을 뜻합니다.',
@@ -433,13 +565,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'The person in charge of a ship, aircraft, or sports team',
       synonyms: ['leader', 'commander', 'skipper'],
       antonyms: ['follower', 'crew', 'subordinate'],
+      wordDistractors: ['Caption', 'Capsule', 'Certain'],
+      definitionDistractors: [
+        'a written description displayed beneath an image or photo',
+        'a member of a team who follows instructions from a leader',
+        'a passenger traveling on a ship or airplane for leisure',
+      ],
       exampleSentences: [
         { en: 'The captain gave orders to the crew to prepare for the storm.', ko: '선장은 선원들에게 폭풍에 대비하라는 명령을 내렸다.' },
         { en: 'She was chosen as the captain of the national soccer team.', ko: '그녀는 축구 국가대표팀의 주장으로 선발되었다.' },
       ],
     }
   ),
-  word('Castle', '성', 2, 'noun',
+  word('castle', '성', 2, 'noun',
     ['궁전', '성당', '탑', '성벽', '해자', '다리', '문', '광장', '정원', '마을'],
     tips({
       etymology: '라틴어 castellum에서 유래되었으며, 이는 \'작은 요새\'를 의미하는 단어에서 발전했습니다.',
@@ -452,13 +590,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A large building typically of the medieval period, fortified against attack with thick walls, battlements, and often a moat.',
       synonyms: ['fortress', 'palace', 'citadel'],
       antonyms: ['shack', 'cabin', 'hut'],
+      wordDistractors: ['Cattle', 'Casual', 'Coastal'],
+      definitionDistractors: [
+        'a small simple dwelling made of rough materials in rural areas',
+        'a tall modern building used for offices in a city center',
+        'a place of worship with stained glass windows and pews',
+      ],
       exampleSentences: [
         { en: 'We visited an old castle in Scotland.', ko: '우리는 스코틀랜드의 오래된 성을 방문했다.' },
         { en: 'The castle stood on a hill.', ko: '그 성은 언덕 위에 우뚝 서 있었다.' },
       ],
     }
   ),
-  word('Catch', '잡다', 2, 'verb',
+  word('catch', '잡다', 2, 'verb',
     ['놓다', '던지다', '놓치다', '풀다', '해제하다', '떠나다', '포기하다', '놓아주다', '실패하다', '잃다'],
     tips({
       etymology: '라틴어 captare에서 유래하여 무언가를 쫓아가서 손에 넣는다는 의미를 담고 있습니다.',
@@ -471,13 +615,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'to intercept and take hold of an object that is moving through the air or falling',
       synonyms: ['grab', 'seize', 'capture'],
       antonyms: ['drop', 'release', 'miss'],
+      wordDistractors: ['Match', 'Latch', 'Patch'],
+      definitionDistractors: [
+        'to throw an object forcefully toward a target',
+        'to let go of something held tightly in the hand',
+        'to search carefully for a lost or hidden item',
+      ],
       exampleSentences: [
         { en: 'Can you catch the ball if I throw it to you?', ko: '내가 공을 던지면 잡을 수 있니?' },
         { en: 'I had to run fast to catch the last bus home.', ko: '집으로 가는 마지막 버스를 타기 위해 빨리 달려야 했다.' },
       ],
     }
   ),
-  word('Cave', '동굴', 2, 'noun',
+  word('cave', '동굴', 2, 'noun',
     ['산', '바위', '절벽', '골짜기', '호수', '강', '바다', '숲', '수풀', '개울'],
     tips({
       etymology: '라틴어 cavus에서 유래하여 \'텅 빈 공간\'이라는 의미를 담고 있습니다.',
@@ -490,13 +640,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A natural underground chamber or large hollow space in the side of a hill or cliff.',
       synonyms: ['cavern', 'grotto', 'hollow'],
       antonyms: ['mountain', 'summit', 'peak'],
+      wordDistractors: ['Cove', 'Carve', 'Gave'],
+      definitionDistractors: [
+        'a tall rocky formation that rises sharply above the surrounding land',
+        'a deep narrow valley with steep sides formed by a river',
+        'a sheltered bay along a coastline protected from waves',
+      ],
       exampleSentences: [
         { en: 'The explorers used flashlights to see inside the dark cave.', ko: '탐험가들은 어두운 동굴 내부를 보기 위해 손전등을 사용했다.' },
         { en: 'They discovered ancient paintings on the walls of the cave.', ko: '그들은 동굴 벽에서 고대 벽화를 발견했다.' },
       ],
     }
   ),
-  word('Chain', '사슬', 2, 'noun',
+  word('chain', '사슬', 2, 'noun',
     ['로프', '밧줄', '와이어', '끈', '줄', '테이프', '고리', '훅', '걸쇠', '빗장'],
     tips({
       etymology: '라틴어 catena에서 유래하여 고리들이 연결된 형태를 의미합니다.',
@@ -509,13 +665,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A series of connected metal rings used for fastening, pulling, or securing objects.',
       synonyms: ['link', 'series', 'shackle'],
       antonyms: ['separation', 'disconnection', 'fragment'],
+      wordDistractors: ['Chair', 'Charm', 'Grain'],
+      definitionDistractors: [
+        'a thick rope made of twisted fibers used for tying objects',
+        'a thin wire used to conduct electricity between devices',
+        'a metal bar used as a lever for prying things open',
+      ],
       exampleSentences: [
         { en: 'He used a heavy metal chain to lock his bicycle to the fence.', ko: '그는 자전거를 울타리에 묶기 위해 무거운 금속 사슬을 사용했다.' },
         { en: 'The prisoner was bound in heavy iron chains.', ko: '그 죄수는 무거운 철사슬에 묶여 있었다.' },
       ],
     }
   ),
-  word('Chance', '기회', 2, 'noun',
+  word('chance', '기회', 2, 'noun',
     ['위험', '실패', '실수', '불운', '재난', '곤경', '장애', '좌절', '실망', '절망'],
     tips({
       etymology: '라틴어 cadere(떨어지다)에서 유래하여 주사위가 바닥에 떨어져 결정되는 운을 의미합니다.',
@@ -528,13 +690,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'a possibility or opportunity for something to happen',
       synonyms: ['opportunity', 'possibility', 'prospect'],
       antonyms: ['certainty', 'impossibility', 'design'],
+      wordDistractors: ['Change', 'Chant', 'Dance'],
+      definitionDistractors: [
+        'a deliberate plan or strategy designed to achieve a goal',
+        'a risk or danger that could result in harm or loss',
+        'a firm decision that has already been made and confirmed',
+      ],
       exampleSentences: [
         { en: 'This is your last chance to win the grand prize.', ko: '이것이 당신이 대상을 탈 수 있는 마지막 기회입니다.' },
         { en: 'There is a slight chance of rain later this afternoon.', ko: '오늘 오후 늦게 비가 올 가능성이 약간 있다.' },
       ],
     }
   ),
-  word('Change', '바꾸다', 2, 'verb',
+  word('change', '바꾸다', 2, 'verb',
     ['유지하다', '고수하다', '그대로두다', '보존하다', '고정하다', '동결하다', '멈추다', '중단하다', '취소하다', '되돌리다'],
     tips({
       etymology: '라틴어 cambire에서 유래하여 무언가를 주고받거나 교환한다는 의미를 담고 있습니다.',
@@ -547,13 +715,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'to make someone or something different, or to become different from a previous state',
       synonyms: ['alter', 'modify', 'transform'],
       antonyms: ['keep', 'preserve', 'remain'],
+      wordDistractors: ['Chance', 'Charge', 'Range'],
+      definitionDistractors: [
+        'to keep something exactly the same without any variation',
+        'to exchange money from one currency to another',
+        'to move from one location to a completely different place',
+      ],
       exampleSentences: [
         { en: 'The caterpillar will eventually change into a butterfly.', ko: '애벌레는 결국 나비로 변할 것이다.' },
         { en: 'She decided to change her hairstyle for the new semester.', ko: '그녀는 새 학기를 맞아 헤어스타일을 바꾸기로 결심했다.' },
       ],
     }
   ),
-  word('Cheap', '저렴한', 2, 'adjective',
+  word('cheap', '저렴한', 2, 'adjective',
     ['비싼', '고급의', '값비싼', '사치스러운', '귀한', '희귀한', '비쌈', '돈 많이드는', '과한', '과다한'],
     tips({
       etymology: '고대 영어 ceap(거래, 시장)에서 유래하여 \'거래하기 좋은 가격\'이라는 의미에서 \'값이 싼\'으로 발전했습니다.',
@@ -566,13 +740,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'low in price; costing little money',
       synonyms: ['inexpensive', 'affordable', 'economical'],
       antonyms: ['expensive', 'costly', 'pricey'],
+      wordDistractors: ['Cheat', 'Heap', 'Sheep'],
+      definitionDistractors: [
+        'of very high quality and made from premium materials',
+        'available in limited quantities and therefore hard to find',
+        'offered at no cost or completely free of charge',
+      ],
       exampleSentences: [
         { en: 'The street food in this market is very cheap and delicious.', ko: '이 시장의 길거리 음식은 매우 저렴하고 맛있다.' },
         { en: 'I bought a cheap watch, but it broke after only two days.', ko: '저렴한 시계를 샀는데, 이틀 만에 고장 났다.' },
       ],
     }
   ),
-  word('Cheese', '치즈', 2, 'noun',
+  word('cheese', '치즈', 2, 'noun',
     ['버터', '크림', '요거트', '우유', '계란', '밀가루', '설탕', '소금', '후추', '식용유'],
     tips({
       etymology: '라틴어 caseus에서 유래하여 발효된 우유 제품을 뜻하게 되었습니다.',
@@ -583,15 +763,21 @@ export const vocabBatch04: VocabItem[] = [
     }),
     {
       definition: 'A solid food product produced from the pressed curds of milk, often used in cooking or eaten alone.',
-      synonyms: ['cheddar', 'mozzarella', 'dairy'],
+      synonyms: ['dairy product', 'fromage', 'curd'],
       antonyms: ['meat', 'vegetable', 'fruit'],
+      wordDistractors: ['Choose', 'Cheek', 'Breeze'],
+      definitionDistractors: [
+        'a white liquid produced by cows that is commonly drunk',
+        'a soft yellow spread made by churning cream',
+        'a thick creamy dessert made from eggs and sugar',
+      ],
       exampleSentences: [
         { en: 'The chef sprinkled extra cheese over the hot pasta.', ko: '요리사는 뜨거운 파스타 위에 치즈를 추가로 뿌렸다.' },
         { en: 'Mice are often depicted eating a small wedge of cheese.', ko: '쥐들은 종종 작은 치즈 조각을 먹는 모습으로 묘사된다.' },
       ],
     }
   ),
-  word('Cherry', '체리', 2, 'noun',
+  word('cherry', '체리', 2, 'noun',
     ['사과', '배', '포도', '딸기', '복숭아', '바나나', '오렌지', '레몬', '수박', '멜론'],
     tips({
       etymology: '고대 그리스어 kerasos에서 유래하여 라틴어 cerasum을 거쳐 영어로 정착되었습니다.',
@@ -604,13 +790,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A small, round, fleshy fruit that is typically bright red or dark purple and contains a single hard stone.',
       synonyms: ['berry', 'drupe', 'stone fruit'],
       antonyms: ['vegetable', 'root', 'leaf'],
+      wordDistractors: ['Charity', 'Cheery', 'Sherry'],
+      definitionDistractors: [
+        'a large tropical fruit with a thick green rind and pink flesh',
+        'a small blue or purple fruit that grows in clusters on bushes',
+        'a citrus fruit with a sour taste commonly used in drinks',
+      ],
       exampleSentences: [
         { en: 'She placed a bright red cherry on top of the ice cream sundae.', ko: '그녀는 아이스크림 선데이 위에 밝은 빨간색 체리를 올렸다.' },
         { en: 'The birds are eating all the ripe cherries from our tree.', ko: '새들이 우리 나무에 열린 익은 체리를 모두 먹고 있다.' },
       ],
     }
   ),
-  word('Chest', '가슴', 2, 'noun',
+  word('chest', '가슴', 2, 'noun',
     ['배', '등', '어깨', '허리', '목', '팔', '다리', '손', '발', '머리'],
     tips({
       etymology: '고대 영어 \'cest\'에서 유래되었으며, 원래는 \'상자\'를 의미하다가 몸의 상부 구조를 뜻하게 되었습니다.',
@@ -623,13 +815,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'the front part of the body between the neck and abdomen',
       synonyms: ['breast', 'thorax', 'torso'],
       antonyms: ['back', 'rear', 'spine'],
+      wordDistractors: ['Chess', 'Crest', 'Guest'],
+      definitionDistractors: [
+        'the middle section of the body containing the stomach and intestines',
+        'the upper part of the arm between the shoulder and elbow',
+        'the area of the body below the waist including the hips',
+      ],
       exampleSentences: [
         { en: 'The athlete felt a sharp pain in his chest while running.', ko: '그 운동선수는 달리는 동안 가슴에 날카로운 통증을 느꼈다.' },
         { en: 'The pirates buried a wooden chest filled with gold coins.', ko: '해적들은 금화로 가득 찬 나무 궤짝을 묻었다.' },
       ],
     }
   ),
-  word('Choose', '고르다', 2, 'verb',
+  word('choose', '고르다', 2, 'verb',
     ['버리다', '차버리다', '거절하다', '포기하다', '미루다', '무시하다', '혼돈하다', '섞다', '섞어버리다', '잃다'],
     tips({
       etymology: '고대 영어 ceosan에서 유래하여 \'맛보다\' 혹은 \'시험해보고 고르다\'라는 의미를 담고 있습니다.',
@@ -642,13 +840,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'to pick out from a number of possibilities',
       synonyms: ['select', 'pick', 'elect'],
       antonyms: ['reject', 'refuse', 'discard'],
+      wordDistractors: ['Cheese', 'Goose', 'Loose'],
+      definitionDistractors: [
+        'to give away something you no longer need or want',
+        'to arrange items in a specific order or sequence',
+        'to combine multiple things into a single group',
+      ],
       exampleSentences: [
         { en: 'It was difficult to choose which dress to wear for the wedding.', ko: '결혼식에 어떤 드레스를 입고 갈지 고르는 것은 어려웠다.' },
         { en: 'Customers can choose from a wide variety of fresh vegetables.', ko: '고객들은 매우 다양한 신선한 채소 중에서 선택할 수 있다.' },
       ],
     }
   ),
-  word('Church', '교회', 2, 'noun',
+  word('church', '교회', 2, 'noun',
     ['사원', '성당', '절', '신전', '기도실', '예배당', '수도원', '신학교', '묘지', '공원'],
     tips({
       etymology: '그리스어 kyriakon에서 유래하여 \'주님의 집\'이라는 의미를 담고 있습니다.',
@@ -661,13 +865,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A building where Christians gather to perform religious ceremonies and worship.',
       synonyms: ['chapel', 'cathedral', 'sanctuary'],
       antonyms: ['market', 'stadium', 'theater'],
+      wordDistractors: ['Clutch', 'Churn', 'Couch'],
+      definitionDistractors: [
+        'a government building where legal trials and hearings are held',
+        'a large hall used for public meetings and political gatherings',
+        'a commercial building where goods are bought and sold',
+      ],
       exampleSentences: [
         { en: 'The local church holds a charity event every Christmas.', ko: '지역 교회는 매년 크리스마스마다 자선 행사를 연다.' },
         { en: 'We could hear the sound of the church bells from our house.', ko: '우리는 집에서 교회 종소리를 들을 수 있었다.' },
       ],
     }
   ),
-  word('Clock', '시계', 2, 'noun',
+  word('clock', '시계', 2, 'noun',
     ['알람', '타이머', '스톱워치', '캘린더', '일정표', '달력', '시간', '분', '초', '순간'],
     tips({
       etymology: '라틴어 \'clocca\'에서 유래되었으며, 원래는 시간을 알리기 위해 치는 \'종\'을 의미했습니다.',
@@ -680,13 +890,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'An instrument used for measuring and indicating time, typically by means of hands moving on a dial or displayed numbers.',
       synonyms: ['timepiece', 'chronometer', 'ticker'],
       antonyms: ['timelessness', 'eternity', 'infinity'],
+      wordDistractors: ['Block', 'Cloak', 'Flock'],
+      definitionDistractors: [
+        'a small device worn on the wrist to tell the time',
+        'a calendar showing the days and months of the year',
+        'a loud alarm that rings to wake someone from sleep',
+      ],
       exampleSentences: [
         { en: 'The old grandfather clock in the hallway chimed every hour.', ko: '복도에 있는 오래된 괘종시계가 매 시간 종을 울렸다.' },
         { en: 'I looked at the clock on the wall and realized I was going to be late.', ko: '벽에 걸린 시계를 보고 내가 늦을 것이라는 걸 깨달았다.' },
       ],
     }
   ),
-  word('Close', '닫다', 2, 'verb',
+  word('close', '닫다', 2, 'verb',
     ['열다', '펼치다', '시작하다', '켜다', '가동하다', '움직이다', '떠나다', '나가다', '열어주다', '해제하다'],
     tips({
       etymology: '라틴어 claudere에서 유래하여 무언가를 차단하거나 막는다는 의미를 담고 있습니다.',
@@ -699,13 +915,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'to move a door, window, or lid so that an opening is no longer accessible',
       synonyms: ['shut', 'seal', 'fasten'],
       antonyms: ['open', 'unlock', 'unseal'],
+      wordDistractors: ['Cloth', 'Clone', 'Chose'],
+      definitionDistractors: [
+        'to move nearer to someone or something in distance',
+        'to wrap or cover something entirely with a material',
+        'to bring an activity to a successful conclusion or finish',
+      ],
       exampleSentences: [
         { en: 'Please close the window before the rain starts coming in.', ko: '비가 들이치기 전에 창문을 닫아 주세요.' },
         { en: 'The library will close early for the national holiday.', ko: '도서관은 공휴일을 맞아 일찍 문을 닫을 것이다.' },
       ],
     }
   ),
-  word('Cloth', '천', 2, 'noun',
+  word('cloth', '천', 2, 'noun',
     ['가죽', '종이', '플라스틱', '금속', '나무', '유리', '벽돌', '돌', '모래', '흙'],
     tips({
       etymology: '고대 영어 clath에서 유래하여 무언가를 덮거나 감싸는 물건을 의미하게 되었습니다.',
@@ -718,13 +940,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A flexible material made by weaving or knitting fibers together, often used for garments or household tasks.',
       synonyms: ['fabric', 'textile', 'material'],
       antonyms: ['metal', 'plastic', 'stone'],
+      wordDistractors: ['Close', 'Clothes', 'Sloth'],
+      definitionDistractors: [
+        'a finished garment ready to be worn on the body',
+        'a thin sheet of paper used for writing or printing',
+        'a hard surface made from compressed wood particles',
+      ],
       exampleSentences: [
         { en: 'She used a damp cloth to wipe the dust off the bookshelf.', ko: '그녀는 책장의 먼지를 닦기 위해 젖은 천을 사용했다.' },
         { en: 'The tailor selected a fine piece of wool cloth for the suit.', ko: '재단사는 정장을 만들기 위해 질 좋은 울 천을 골랐다.' },
       ],
     }
   ),
-  word('Coin', '동전', 2, 'noun',
+  word('coin', '동전', 2, 'noun',
     ['지폐', '수표', '카드', '현금', '금', '은', '보석', '메달', '훈장', '장식품'],
     tips({
       etymology: '라틴어 cuneus(쐐기)에서 유래하여 금속을 찍어내는 도구를 뜻했습니다.',
@@ -737,13 +965,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'a small, flat, and usually round piece of metal used as money',
       synonyms: ['change', 'specie', 'token'],
       antonyms: ['bill', 'note', 'check'],
+      wordDistractors: ['Coil', 'Join', 'Loin'],
+      definitionDistractors: [
+        'a rectangular piece of paper printed by a government as currency',
+        'a plastic card used to make electronic payments at stores',
+        'a small precious stone used in jewelry and decorations',
+      ],
       exampleSentences: [
         { en: 'I found a rare silver coin while walking in the park.', ko: '공원을 걷다가 희귀한 은색 동전을 발견했다.' },
         { en: 'He flipped a coin to decide who would go first in the game.', ko: '그는 누가 게임을 먼저 할지 정하기 위해 동전을 던졌다.' },
       ],
     }
   ),
-  word('Collect', '수집하다', 2, 'verb',
+  word('collect', '수집하다', 2, 'verb',
     ['버리다', '분산하다', '흩다', '나눠주다', '기부하다', '포기하다', '잃다', '던지다', '해체하다', '해산하다'],
     tips({
       etymology: '라틴어 어근 col(함께)과 lect(선택하여 모으다)가 결합되어 여러 개를 한데 모은다는 의미가 되었습니다.',
@@ -756,13 +990,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'to bring together various items or information into one group or place',
       synonyms: ['gather', 'accumulate', 'assemble'],
       antonyms: ['scatter', 'disperse', 'distribute'],
+      wordDistractors: ['Connect', 'Correct', 'Collapse'],
+      definitionDistractors: [
+        'to throw away items that are no longer needed or useful',
+        'to arrange objects in a neat and organized display',
+        'to send packages or letters to various destinations',
+      ],
       exampleSentences: [
         { en: 'The children went to the beach to collect beautiful seashells.', ko: '아이들은 예쁜 조개껍데기를 수집하러 해변에 갔다.' },
         { en: 'The charity began to collect warm clothes for the homeless.', ko: '자선 단체는 노숙자들을 위해 따뜻한 옷을 모으기 시작했다.' },
       ],
     }
   ),
-  word('Cool', '시원한', 2, 'adjective',
+  word('cool', '시원한', 2, 'adjective',
     ['뜨거운', '따뜻한', '더운', '뜨끈한', '작열하는', '불타는', '타는', '뜨거워지는', '데우는', '가열하는'],
     tips({
       etymology: '고대 영어 \'col\'에서 유래하여 \'차갑지도 뜨겁지도 않은 상태\'를 의미하게 되었습니다.',
@@ -775,13 +1015,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'having a moderately low temperature that is often perceived as refreshing or pleasant',
       synonyms: ['chilly', 'refreshing', 'nippy'],
       antonyms: ['warm', 'hot', 'tepid'],
+      wordDistractors: ['Coal', 'Pool', 'Fool'],
+      definitionDistractors: [
+        'extremely cold to the point of being uncomfortable or freezing',
+        'having a very high temperature that can cause burns',
+        'being fashionable or trendy in appearance or behavior',
+      ],
       exampleSentences: [
         { en: 'A cool breeze made the summer evening very pleasant.', ko: '시원한 산들바람이 여름 저녁을 매우 즐겁게 만들었다.' },
         { en: 'Wait for the soup to cool down before you eat it.', ko: '국이 식을 때까지 기다렸다가 드세요.' },
       ],
     }
   ),
-  word('Copy', '복사하다', 2, 'verb',
+  word('copy', '복사하다', 2, 'verb',
     ['원본', '만들다', '창작하다', '발명하다', '고안하다', '변형하다', '바꾸다', '지우다', '삭제하다', '없애다'],
     tips({
       etymology: '라틴어 copia(풍부함)에서 유래하여 똑같은 것을 많이 만든다는 의미로 확장되었습니다.',
@@ -794,13 +1040,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'to make a duplicate or reproduction of something',
       synonyms: ['duplicate', 'replicate', 'imitate'],
       antonyms: ['originate', 'create', 'invent'],
+      wordDistractors: ['Cope', 'Copper', 'Cozy'],
+      definitionDistractors: [
+        'to create something entirely new and original from scratch',
+        'to delete or permanently remove a file or document',
+        'to write or compose a piece of text for the first time',
+      ],
       exampleSentences: [
         { en: 'Can you copy these files onto a USB drive for me?', ko: '이 파일들을 USB 드라이브에 복사해 줄 수 있니?' },
         { en: 'The student was punished for trying to copy his friend\'s homework.', ko: '그 학생은 친구의 숙제를 베끼려다 벌을 받았다.' },
       ],
     }
   ),
-  word('Count', '세다', 2, 'verb',
+  word('count', '세다', 2, 'verb',
     ['놓치다', '무시하다', '추측하다', '대략하다', '어림하다', '잊다', '혼란', '흐트러뜨리다', '섞다', '합치다'],
     tips({
       etymology: '라틴어 computare에서 유래하여 \'함께 계산하다\'라는 의미를 담고 있습니다.',
@@ -813,13 +1065,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'to determine the total number of items in a group by assigning a number to each one',
       synonyms: ['calculate', 'enumerate', 'tally'],
       antonyms: ['ignore', 'disregard', 'guess'],
+      wordDistractors: ['Court', 'Mount', 'County'],
+      definitionDistractors: [
+        'to make a rough estimate without careful measurement',
+        'to divide a total amount into equal smaller portions',
+        'to write numbers in sequence on a piece of paper',
+      ],
       exampleSentences: [
         { en: 'The shepherd had to count his sheep every evening.', ko: '양치기는 매일 저녁 양의 수를 세어야 했다.' },
         { en: 'Every vote will count in this important election.', ko: '이 중요한 선거에서는 모든 투표가 중요할 것이다.' },
       ],
     }
   ),
-  word('Crash', '충돌', 2, 'noun',
+  word('crash', '충돌', 2, 'noun',
     ['평화', '조화', '통과', '성공', '안전', '보호', '예방', '회피', '우회', '면제'],
     tips({
       etymology: '무언가 강하게 부서질 때 발생하는 파열음을 흉내 낸 의성어에서 유래한 단어입니다.',
@@ -832,13 +1090,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A sudden loud noise as of something breaking or hitting another object with great force.',
       synonyms: ['collision', 'impact', 'smash'],
       antonyms: ['avoidance', 'near-miss', 'safety'],
+      wordDistractors: ['Crush', 'Clash', 'Trash'],
+      definitionDistractors: [
+        'a gentle tap or light touch between two objects',
+        'a loud sound made by clapping hands together repeatedly',
+        'a slow gradual decline in value over a long period',
+      ],
       exampleSentences: [
         { en: 'We heard a loud crash from the kitchen after the plate fell.', ko: '접시가 떨어진 후 부엌에서 크게 부서지는 소리가 났다.' },
         { en: 'Luckily, no one was hurt in the car crash on the highway.', ko: '다행히 고속도로에서 발생한 자동차 충돌 사고에서 다친 사람은 없었다.' },
       ],
     }
   ),
-  word('Cream', '크림', 2, 'noun',
+  word('cream', '크림', 2, 'noun',
     ['물', '기름', '초', '연고', '로션', '파우더', '립스틱', '마스카라', '셰이딩', '베이스'],
     tips({
       etymology: '라틴어 chrisma에서 유래하여 원래는 \'기름을 바르는 것\'을 의미했습니다.',
@@ -851,13 +1115,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'The thick, fatty substance that forms on top of milk or a smooth substance applied to the skin.',
       synonyms: ['lotion', 'ointment', 'paste'],
       antonyms: ['liquid', 'water', 'solid'],
+      wordDistractors: ['Dream', 'Stream', 'Crease'],
+      definitionDistractors: [
+        'a thin watery liquid used as a base for soups and broths',
+        'a powdery substance used for baking cakes and pastries',
+        'a frozen dairy dessert served in cones or cups',
+      ],
       exampleSentences: [
         { en: 'I like to put a little bit of cream in my morning coffee.', ko: '나는 아침 커피에 크림을 약간 넣는 것을 좋아한다.' },
         { en: 'She applied a soothing cream to her sunburned skin.', ko: '그녀는 햇볕에 탄 피부에 진정 크림을 발랐다.' },
       ],
     }
   ),
-  word('Cross', '건너다', 2, 'verb',
+  word('cross', '건너다', 2, 'verb',
     ['돌아가다', '물러서다', '피하다', '우회하다', '멈추다', '서다', '대기하다', '기다리다', '지켜보다', '관망하다'],
     tips({
       etymology: '라틴어 crux(십자가)에서 유래하여 두 선이 교차하거나 가로지른다는 의미로 발전했습니다.',
@@ -870,13 +1140,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'to go or extend across from one side to the other',
       synonyms: ['traverse', 'span', 'bridge'],
       antonyms: ['stay', 'remain', 'stop'],
+      wordDistractors: ['Crush', 'Gross', 'Toss'],
+      definitionDistractors: [
+        'to walk alongside a road without changing direction',
+        'to mark an item with an X to indicate completion',
+        'to feel angry or annoyed about a situation or person',
+      ],
       exampleSentences: [
         { en: 'Be careful and look both ways before you cross the street.', ko: '길을 건너기 전에 조심해서 양쪽을 살피세요.' },
         { en: 'The hikers had to cross a small river to reach the camp.', ko: '하이커들은 캠프에 도착하기 위해 작은 강을 건너야 했다.' },
       ],
     }
   ),
-  word('Crowd', '군중', 2, 'noun',
+  word('crowd', '군중', 2, 'noun',
     ['개인', '혼자', '소수', '한 명', '빈 공간', '공허', '적막', '고요', '평화', '조용함'],
     tips({
       etymology: '고대 영어 crudan(밀다)에서 유래하여 서로 밀치는 많은 사람을 뜻합니다.',
@@ -889,13 +1165,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'a large number of people gathered together in a disorganized or unruly way',
       synonyms: ['multitude', 'throng', 'gathering'],
       antonyms: ['individual', 'solitude', 'vacuum'],
+      wordDistractors: ['Crown', 'Cloud', 'Proud'],
+      definitionDistractors: [
+        'a single person acting alone without any companions',
+        'a small organized group working together on a project',
+        'a formal line of people waiting patiently in order',
+      ],
       exampleSentences: [
         { en: 'A huge crowd gathered to watch the fireworks display.', ko: '불꽃놀이를 보기 위해 거대한 군중이 모였다.' },
         { en: 'I lost sight of my friend in the busy holiday crowd.', ko: '나는 붐비는 휴일 인파 속에서 친구를 놓쳤다.' },
       ],
     }
   ),
-  word('Cry', '울다', 2, 'verb',
+  word('cry', '울다', 2, 'verb',
     ['웃다', '미소짓다', '환호하다', '기뻐하다', '축하하다', '만족하다', '흐뭇해하다', '평온하다', '차분하다', '즐겁다'],
     tips({
       etymology: '라틴어 quiritare(도움을 요청하며 부르짖다)에서 유래하여 소리 내어 우는 행위를 뜻하게 되었습니다.',
@@ -908,13 +1190,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'to shed tears, typically as an expression of distress, pain, or sorrow',
       synonyms: ['weep', 'sob', 'wail'],
       antonyms: ['laugh', 'smile', 'rejoice'],
+      wordDistractors: ['Fry', 'Dry', 'Pry'],
+      definitionDistractors: [
+        'to shout loudly in order to get attention from others',
+        'to express joy and happiness through laughter and smiles',
+        'to whisper softly so that only nearby people can hear',
+      ],
       exampleSentences: [
         { en: 'The little boy started to cry when he fell off his bike.', ko: '어린 소년은 자전거에서 떨어지자 울기 시작했다.' },
         { en: 'Sometimes people cry because they are extremely happy.', ko: '때때로 사람들은 너무 행복해서 울기도 한다.' },
       ],
     }
   ),
-  word('Curly', '곱슬거리는', 2, 'adjective',
+  word('curly', '곱슬거리는', 2, 'adjective',
     ['곧은', '뻣뻣한', '늘어진', '부드러운', '단정한', '날카로운', '각진', '뭉툭한', '매끄러운', '딱딱한'],
     tips({
       etymology: '무언가를 둥글게 말다라는 뜻의 동사 curl에 형용사 접미사 y가 결합되어 만들어졌습니다.',
@@ -927,13 +1215,19 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'formed into a series of curves or spirals rather than being straight',
       synonyms: ['wavy', 'coiled', 'frizzy'],
       antonyms: ['straight', 'flat', 'smooth'],
+      wordDistractors: ['Early', 'Burly', 'Surly'],
+      definitionDistractors: [
+        'perfectly straight without any bends or curves at all',
+        'having a rough or bumpy texture on the surface',
+        'extremely long and flowing past the shoulders',
+      ],
       exampleSentences: [
         { en: 'She was born with naturally curly hair that is hard to brush.', ko: '그녀는 빗질하기 힘든 타고난 곱슬머리를 가지고 태어났다.' },
         { en: 'The pig has a cute, curly tail.', ko: '그 돼지는 귀엽고 꼬불꼬불한 꼬리를 가지고 있다.' },
       ],
     }
   ),
-  word('Curtain', '커튼', 2, 'noun',
+  word('curtain', '커튼', 2, 'noun',
     ['블라인드', '셔터', '창문', '유리', '벽', '천장', '바닥', '카펫', '매트', '스크린'],
     tips({
       etymology: '라틴어 cortina에서 유래했으며, 원래는 울타리나 막을 의미했습니다.',
@@ -946,6 +1240,12 @@ export const vocabBatch04: VocabItem[] = [
       definition: 'A hanging piece of fabric used to shut out light from a window or to provide privacy',
       synonyms: ['drape', 'blind', 'shutter'],
       antonyms: ['exposure', 'opening', 'unveiling'],
+      wordDistractors: ['Certain', 'Carton', 'Captain'],
+      definitionDistractors: [
+        'a solid wall built to separate two rooms in a building',
+        'a glass panel fitted into a window frame to let in light',
+        'a decorative rug placed on the floor of a living room',
+      ],
       exampleSentences: [
         { en: 'She pulled the curtain shut to keep the sunlight out of the bedroom.', ko: '그녀는 침실에 햇빛이 들어오지 않도록 커튼을 쳤다.' },
         { en: 'The heavy velvet curtain rose, signaling the start of the opera.', ko: '두꺼운 벨벳 커튼이 올라가며 오페라의 시작을 알렸다.' },

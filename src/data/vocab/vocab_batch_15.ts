@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch15: VocabItem[] = [
-  word('Defer', '미루다', 7, 'verb',
+  word('defer', '미루다', 7, 'verb',
     ['단행하다', '즉시하다', '서두르다', '강행하다', '밀쳐내다', '촉진하다', '재촉하다', '당장하다', '급행하다', '강제하다'],
     tips({
       etymology: 'de(아래로/뒤로) + fer(나르다)가 합쳐져 \'나중으로 옮기다\'라는 의미가 되었습니다.',
@@ -19,9 +19,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'He decided to defer his decision until next week.', ko: '그는 다음 주까지 결정을 미루기로 했다.' },
         { en: 'The bank agreed to defer the loan payment.', ko: '은행은 대출 상환을 유예하기로 했다.' },
       ],
+      wordDistractors: ['deter', 'differ', 'deffer'],
+      definitionDistractors: [
+        'To show great respect or submission to someone in authority.',
+        'To transfer ownership of property or assets to another party.',
+        'To reduce the intensity or severity of a situation.',
+      ],
     }
   ),
-  word('Defy', '대항하다', 7, 'verb',
+  word('defy', '대항하다', 7, 'verb',
     ['복종하다', '따르다', '굴복하다', '순응하다', '항복하다', '순종하다', '응하다', '굴종하다', '수용하다', '동의하다'],
     tips({
       etymology: '라틴어 dis-(반대)와 fidare(믿다)에서 유래하여, 기존의 신뢰나 충성을 저버리고 정면으로 맞선다는 의미를 담고 있습니다.',
@@ -38,9 +44,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The brave soldiers decided to defy the enemy\'s ultimatum and continue fighting.', ko: '용감한 군인들은 적의 최후통첩에 대항하여 계속 싸우기로 결심했다.' },
         { en: 'The beauty of the landscape seemed to defy any written description.', ko: '그 풍경의 아름다움은 그 어떤 서술로도 표현하기 불가능해 보였다.' },
       ],
+      wordDistractors: ['defer', 'defile', 'decry'],
+      definitionDistractors: [
+        'To postpone or delay an action to a later time.',
+        'To make something dirty or impure through contamination.',
+        'To formally accuse someone of a crime in a court of law.',
+      ],
     }
   ),
-  word('Delegate', '위임하다', 7, 'verb',
+  word('delegate', '위임하다', 7, 'verb',
     ['독단하다', '독점하다', '보유하다', '집행하다', '회수하다', '거두다', '고수하다', '간직하다', '직행하다', '장악하다'],
     tips({
       etymology: '라틴어 \'de(멀리)\'와 \'legare(보내다)\'가 결합된 단어로, 자신의 권한을 다른 사람에게 멀리 보내어 대신 처리하게 한다는 의미에서 유래했습니다.',
@@ -57,9 +69,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'A successful manager knows how to delegate tasks to their team.', ko: '성공적인 관리자는 팀원에게 업무를 위임하는 방법을 압니다.' },
         { en: 'The director decided to delegate the decision-making authority to the local branch.', ko: '이사는 의사 결정 권한을 현지 지사에 위임하기로 결정했습니다.' },
       ],
+      wordDistractors: ['delicate', 'dedicate', 'relegate'],
+      definitionDistractors: [
+        'To remove someone from a position of authority or power.',
+        'To carefully examine a document for errors or inconsistencies.',
+        'To officially approve or authorize a new regulation.',
+      ],
     }
   ),
-  word('Delineate', '묘사하다', 7, 'verb',
+  word('delineate', '묘사하다', 7, 'verb',
     ['흐리다', '모호하게하다', '숨기다', '왜곡하다', '어지럽히다', '혼동하다', '가리다', '지우다', '뭉뚱그리다', '은폐하다'],
     tips({
       etymology: '라틴어 de(완전히)와 lineare(선을 긋다)가 결합되어, 사물의 테두리를 선으로 명확히 그린다는 의미에서 유래했습니다.',
@@ -76,9 +94,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The law clearly defines the boundaries that delineate the private property.', ko: '그 법은 사유 재산을 구분 짓는 경계선을 명확하게 규정하고 있습니다.' },
         { en: 'The architect will delineate the main features of the building in his presentation.', ko: '건축가는 발표에서 건물의 주요 특징들을 상세하게 설명할 것입니다.' },
       ],
+      wordDistractors: ['delineation', 'delimitate', 'designate'],
+      definitionDistractors: [
+        'To intentionally remove or erase written content from a document.',
+        'To assign official authority or power to a specific person.',
+        'To gradually weaken or undermine the foundation of something.',
+      ],
     }
   ),
-  word('Demeanor', '태도', 7, 'noun',
+  word('demeanor', '태도', 7, 'noun',
     ['본질', '내면', '의도', '속마음', '실체', '진심', '핵심', '정체', '영혼', '본성'],
     tips({
       etymology: '프랑스어 demener(이끌다/처신하다)에서 유래하여 겉으로 드러나는 몸가짐을 뜻하게 되었습니다.',
@@ -95,9 +119,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'His calm demeanor put everyone at ease during the crisis.', ko: '위기 상황에서 그의 차분한 태도는 모든 사람을 안심시켰다.' },
         { en: 'Her professional demeanor impressed the interviewers immediately.', ko: '그녀의 전문적인 태도는 즉시 면접관들에게 깊은 인상을 주었다.' },
       ],
+      wordDistractors: ['demesne', 'demure', 'demeter'],
+      definitionDistractors: [
+        'A formal complaint or grievance filed against an organization.',
+        'The underlying motivation or intention behind a particular action.',
+        'A permanent personality trait that defines a person\'s character.',
+      ],
     }
   ),
-  word('Denounce', '비난하다', 7, 'verb',
+  word('denounce', '비난하다', 7, 'verb',
     ['칭찬하다', '찬미하다', '옹호하다', '지지하다', '찬성하다', '장려하다', '승인하다', '추켜세우다', '환영하다', '격려하다'],
     tips({
       etymology: 'de(아래로/나쁘게) + nounce(알리다)가 합쳐져 \'공개적으로 나쁘게 알리다\'라는 뜻에서 유래했습니다.',
@@ -114,9 +144,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The leader publicly denounced the violence.', ko: '지도자는 그 폭력을 공개적으로 비난했다.' },
         { en: 'Several countries denounced the human rights violation.', ko: '여러 국가가 그 인권 침해를 비난했다.' },
       ],
+      wordDistractors: ['announce', 'renounce', 'pronounce'],
+      definitionDistractors: [
+        'To officially declare the beginning of a new governmental policy.',
+        'To make a formal public announcement about an upcoming event.',
+        'To voluntarily give up a claim or right to something.',
+      ],
     }
   ),
-  word('Deplete', '고갈시키다', 7, 'verb',
+  word('deplete', '고갈시키다', 7, 'verb',
     ['채우다', '보충하다', '증가시키다', '축적하다', '풍부하게하다', '보강하다', '충전하다', '증대하다', '쌓다', '늘리다'],
     tips({
       etymology: '라틴어 \'de(반대/제거)\'와 \'plere(채우다)\'가 결합되어, 가득 차 있던 것을 비워낸다는 의미에서 유래했습니다.',
@@ -133,9 +169,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'Overfishing has severely depleted the fish population in many oceans.', ko: '과도한 어업은 많은 해양의 물고기 개체 수를 심각하게 고갈시켰습니다.' },
         { en: 'Running a marathon without proper hydration will quickly deplete your body\'s energy reserves.', ko: '적절한 수분 섭취 없이 마라톤을 하는 것은 신체의 에너지 비축량을 빠르게 고갈시킬 것입니다.' },
       ],
+      wordDistractors: ['delete', 'replete', 'depict'],
+      definitionDistractors: [
+        'To completely fill or stock something to its maximum capacity.',
+        'To remove a specific item permanently from a database or record.',
+        'To distribute resources equally among a group of people.',
+      ],
     }
   ),
-  word('Deploy', '배치하다', 7, 'verb',
+  word('deploy', '배치하다', 7, 'verb',
     ['철수하다', '해제하다', '회수하다', '분산하다', '해체하다', '거두다', '복귀하다', '중단하다', '취소하다', '철거하다'],
     tips({
       etymology: '라틴어 \'displicare\'에서 유래하여 \'de(반대)\'와 \'ply(접다)\'가 결합된 단어입니다. 즉, \'접혀 있던 것을 펼치다\'라는 어원을 가집니다.',
@@ -152,9 +194,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The United Nations decided to deploy peacekeeping forces to the conflict zone.', ko: '유엔은 분쟁 지역에 평화 유지군을 배치하기로 결정했다.' },
         { en: 'The engineering team is ready to deploy the latest update to the production server.', ko: '엔지니어링 팀은 운영 서버에 최신 업데이트를 배포할 준비가 되었다.' },
       ],
+      wordDistractors: ['decoy', 'employ', 'destroy'],
+      definitionDistractors: [
+        'To dismantle or take apart a complex system into smaller components.',
+        'To hire or recruit qualified personnel for a specific role.',
+        'To transport goods or equipment to a storage facility.',
+      ],
     }
   ),
-  word('Deprecate', '비난하다', 7, 'verb',
+  word('deprecate', '비난하다', 7, 'verb',
     ['권장하다', '촉진하다', '승인하다', '선호하다', '옹호하다', '찬성하다', '장려하다', '지지하다', '추천하다', '수용하다'],
     tips({
       etymology: '라틴어 \'de-\'(반대/멀리)와 \'precari\'(기도하다)가 결합되어, 나쁜 일이 생기지 않기를 기도하며 반대하거나 가치를 깎아내린다는 뜻에서 유래했습니다.',
@@ -171,9 +219,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The software developers decided to deprecate the old API in the latest update.', ko: '소프트웨어 개발자들은 최신 업데이트에서 이전 API 사용을 권장하지 않기로 결정했다.' },
         { en: 'Many critics deprecate the use of violence in modern cinema.', ko: '많은 비평가들이 현대 영화에서의 폭력 사용을 비난한다.' },
       ],
+      wordDistractors: ['depreciate', 'dedicate', 'depredate'],
+      definitionDistractors: [
+        'To decrease in monetary value over a period of time.',
+        'To formally assign something for a particular purpose or cause.',
+        'To restore or update outdated software to a newer version.',
+      ],
     }
   ),
-  word('Destitute', '궁핍한', 7, 'adjective',
+  word('destitute', '궁핍한', 7, 'adjective',
     ['부유한', '풍요한', '풍부한', '넉넉한', '여유로운', '호화로운', '부강한', '유복한', '충분한', '안정된'],
     tips({
       etymology: '라틴어 de(분리)와 stare(서다)에서 유래하여, 사회적 기반 위에 서지 못하고 멀어져 버린 상태를 의미합니다.',
@@ -190,9 +244,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The charity provides food and shelter for destitute families in the city.', ko: '그 자선 단체는 도시의 궁핍한 가정들에게 음식과 숙소를 제공한다.' },
         { en: 'After the stock market crash, many investors were left destitute.', ko: '주식 시장 폭락 이후, 많은 투자자들이 완전히 빈털터리가 되었다.' },
       ],
+      wordDistractors: ['dissolute', 'institute', 'substitute'],
+      definitionDistractors: [
+        'Lacking moral discipline and devoted to pleasure or excess.',
+        'Having a modest income but managing basic expenses adequately.',
+        'Being temporarily displaced from one\'s home due to natural disaster.',
+      ],
     }
   ),
-  word('Deter', '억제하다', 7, 'verb',
+  word('deter', '억제하다', 7, 'verb',
     ['촉진하다', '장려하다', '유도하다', '선동하다', '재촉하다', '부추기다', '고무하다', '돕다', '허용하다', '권장하다'],
     tips({
       etymology: '라틴어 de(멀리)와 terrere(겁주다)가 결합된 단어로, 상대에게 공포나 불안감을 주어 행동을 포기하게 만든다는 어원을 가지고 있습니다.',
@@ -209,9 +269,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'High fines are intended to deter people from speeding on the highway.', ko: '높은 벌금은 사람들이 고속도로에서 과속하는 것을 억제하기 위한 목적이다.' },
         { en: 'The presence of a guard dog will deter most intruders.', ko: '경비견의 존재는 대부분의 침입자를 단념시킬 것이다.' },
       ],
+      wordDistractors: ['defer', 'dither', 'detect'],
+      definitionDistractors: [
+        'To find or identify the presence of something hidden or obscure.',
+        'To postpone making a decision until a more suitable time.',
+        'To formally accuse a person of wrongdoing in an official proceeding.',
+      ],
     }
   ),
-  word('Deviate', '벗어나다', 7, 'verb',
+  word('deviate', '벗어나다', 7, 'verb',
     ['따르다', '준수하다', '유지하다', '수렴하다', '일치하다', '순응하다', '고수하다', '동조하다', '지키다', '합치하다'],
     tips({
       etymology: '라틴어 de(떨어져)와 via(길)가 결합된 단어로, 원래 가야 할 길에서 멀어진다는 뜻에서 유래했습니다.',
@@ -228,9 +294,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The aircraft had to deviate from its original flight path due to the storm.', ko: '폭풍 때문에 그 항공기는 원래의 비행 경로에서 벗어나야 했다.' },
         { en: 'He never allowed himself to deviate from his strict daily routine.', ko: '그는 자신의 엄격한 일과에서 결코 벗어나는 법이 없었다.' },
       ],
+      wordDistractors: ['derivate', 'devastate', 'deviant'],
+      definitionDistractors: [
+        'To cause severe and overwhelming destruction to a place or thing.',
+        'To carefully plan and execute a strategic maneuver.',
+        'To invent or create something entirely new and original.',
+      ],
     }
   ),
-  word('Devoid', '~이 없는', 7, 'adjective',
+  word('devoid', '~이 없는', 7, 'adjective',
     ['가득한', '충만한', '풍부한', '넘치는', '풍요한', '완전한', '밀집한', '충분한', '빽빽한', '유복한'],
     tips({
       etymology: '접두사 de-(완전히)와 void(텅 빈)가 결합하여, 어떤 공간이나 대상이 완전히 비어 있는 상태를 의미합니다.',
@@ -247,9 +319,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The landscape was bleak and devoid of any signs of life.', ko: '그 풍경은 황량했고 어떤 생명의 흔적도 없었다.' },
         { en: 'Her voice was completely devoid of emotion as she told the story.', ko: '그녀가 이야기를 할 때 그녀의 목소리에는 감정이 전혀 실려 있지 않았다.' },
       ],
+      wordDistractors: ['devout', 'devoted', 'avoid'],
+      definitionDistractors: [
+        'Deeply committed to a religious belief or spiritual practice.',
+        'Containing a small but noticeable amount of something.',
+        'Deliberately choosing to avoid or stay away from something.',
+      ],
     }
   ),
-  word('Dexterity', '솜씨', 7, 'noun',
+  word('dexterity', '솜씨', 7, 'noun',
     ['서툼', '어색함', '미숙', '재주없음', '둔함', '어설픔', '무능', '둔감', '비숙련', '투박함'],
     tips({
       etymology: '라틴어 dexter(오른손의)에서 유래하여, 전통적으로 오른손잡이가 도구를 잘 다루듯 능숙함을 뜻합니다.',
@@ -266,9 +344,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The surgeon\'s dexterity allowed him to perform the delicate operation with minimal bleeding.', ko: '외과 의사의 숙련된 솜씨 덕분에 출혈을 최소화하며 정교한 수술을 마칠 수 있었다.' },
         { en: 'Playing a musical instrument requires both physical dexterity and a good ear for rhythm.', ko: '악기를 연주하는 것은 신체적인 능숙함과 리듬을 타는 좋은 청력 모두를 필요로 한다.' },
       ],
+      wordDistractors: ['dexterus', 'density', 'texturity'],
+      definitionDistractors: [
+        'The physical strength required to lift heavy objects repeatedly.',
+        'A natural talent for understanding abstract mathematical concepts.',
+        'The quality of being rigid and inflexible in one\'s approach.',
+      ],
     }
   ),
-  word('Dichotomy', '이분법', 7, 'noun',
+  word('dichotomy', '이분법', 7, 'noun',
     ['통합', '융합', '연속체', '공존', '조화', '결합', '일치', '화합', '단일성', '연결'],
     tips({
       etymology: '그리스어 \'dicho(둘로)\'와 \'tomy(자르다)\'가 결합된 단어로, 하나를 두 조각으로 쪼갠다는 어원을 가지고 있습니다.',
@@ -285,9 +369,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The dichotomy between what he says and what he does is striking.', ko: '그가 말하는 것과 행동하는 것 사이의 이분법적 차이는 놀라울 정도다.' },
         { en: 'In nature, the dichotomy of predator and prey is essential for balance.', ko: '자연에서 포식자와 피식자의 이분법적 관계는 균형을 위해 필수적이다.' },
       ],
+      wordDistractors: ['dichromate', 'diplomacy', 'taxonomy'],
+      definitionDistractors: [
+        'A gradual blending of two opposing ideas into a unified theory.',
+        'A hierarchical classification system used in biological sciences.',
+        'A formal negotiation process between two conflicting nations.',
+      ],
     }
   ),
-  word('Diffuse', '확산하다', 7, 'verb',
+  word('diffuse', '확산하다', 7, 'verb',
     ['집중하다', '모으다', '한정하다', '밀집하다', '수렴하다', '축소하다', '압축하다', '고정하다', '가두다', '응축하다'],
     tips({
       etymology: '라틴어 \'dis(멀리)\'와 \'fundere(붓다)\'가 결합된 단어로, 액체를 쏟아 사방으로 흩뿌린다는 어원을 가지고 있습니다.',
@@ -304,9 +394,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The internet has made it much easier to diffuse information across the globe instantly.', ko: '인터넷은 전 세계에 정보를 즉각적으로 확산시키는 것을 훨씬 더 쉽게 만들었다.' },
         { en: 'The fan helped to diffuse the cooling air throughout the entire office.', ko: '선풍기는 시원한 공기를 사무실 전체로 퍼뜨리는 데 도움을 주었다.' },
       ],
+      wordDistractors: ['defuse', 'refuse', 'infuse'],
+      definitionDistractors: [
+        'To remove the fuse from a bomb to prevent it from exploding.',
+        'To inject a substance directly into a liquid or solution.',
+        'To gather and consolidate scattered items into one location.',
+      ],
     }
   ),
-  word('Digress', '본론에서 벗어나다', 7, 'verb',
+  word('digress', '본론에서 벗어나다', 7, 'verb',
     ['집중하다', '직행하다', '수렴하다', '따르다', '일치하다', '몰입하다', '고수하다', '유지하다', '정진하다', '관통하다'],
     tips({
       etymology: 'di(떨어져)와 gress(가다)가 합쳐져 원래 가려던 길에서 벗어나는 것을 의미합니다.',
@@ -323,9 +419,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'Let me digress for a moment to explain the background.', ko: '배경을 설명하기 위해 잠시 본론에서 벗어나겠습니다.' },
         { en: 'The speaker tended to digress into unrelated personal anecdotes.', ko: '연사는 관련 없는 개인적인 일화로 빠지는 경향이 있었다.' },
       ],
+      wordDistractors: ['disgress', 'regress', 'progress'],
+      definitionDistractors: [
+        'To move backward to a previous or less advanced state.',
+        'To make steady forward progress toward a specific goal.',
+        'To express strong disapproval of someone\'s actions publicly.',
+      ],
     }
   ),
-  word('Diligent', '부지런한', 7, 'adjective',
+  word('diligent', '부지런한', 7, 'adjective',
     ['게으른', '태만한', '나태한', '소홀한', '무성의한', '부주의한', '안일한', '둔감한', '방치하는', '해이한'],
     tips({
       etymology: '라틴어 \'dis-\'(따로)와 \'legere\'(고르다)에서 유래하여, 가치 있는 것을 신중하게 골라내어 집중하는 태도를 의미합니다.',
@@ -342,9 +444,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'She is a diligent worker who never misses a deadline.', ko: '그녀는 마감 기한을 한 번도 어기지 않는 부지런한 일꾼이다.' },
         { en: 'Diligent students often achieve the best academic results.', ko: '부지런한 학생들이 종종 최고의 학업 성과를 낸다.' },
       ],
+      wordDistractors: ['dilligent', 'negligent', 'indulgent'],
+      definitionDistractors: [
+        'Excessively lenient or permissive toward someone\'s behavior.',
+        'Failing to take proper care or attention in one\'s responsibilities.',
+        'Naturally gifted or talented without needing to practice.',
+      ],
     }
   ),
-  word('Discern', '간파하다', 7, 'verb',
+  word('discern', '간파하다', 7, 'verb',
     ['놓치다', '혼동하다', '무시하다', '간과하다', '오해하다', '망각하다', '방관하다', '흐리다', '은폐하다', '방해하다'],
     tips({
       etymology: '접두사 dis(분리)와 어근 cern(체로 치다)이 결합되어, 여러 요소가 섞인 곳에서 체질을 하듯 진짜를 골라낸다는 의미에서 유래했습니다.',
@@ -361,9 +469,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'I could barely discern the outline of the building in the fog.', ko: '나는 안개 속에서 건물의 윤곽을 거의 식별할 수 없었다.' },
         { en: 'It is difficult to discern the truth from the lies in this case.', ko: '이 사건에서 거짓 속의 진실을 간파하기는 어렵다.' },
       ],
+      wordDistractors: ['concern', 'discernt', 'disclaim'],
+      definitionDistractors: [
+        'To publicly reject responsibility for a particular outcome.',
+        'To carefully arrange items in a specific order or sequence.',
+        'To express worry or anxiety about a potential problem.',
+      ],
     }
   ),
-  word('Disclose', '공개하다', 7, 'verb',
+  word('disclose', '공개하다', 7, 'verb',
     ['숨기다', '은폐하다', '봉인하다', '가리다', '비밀로하다', '억제하다', '차단하다', '매립하다', '잠그다', '위장하다'],
     tips({
       etymology: '접두사 dis-(반대)와 close(닫다)가 결합하여 \'닫혀 있던 것을 열어젖히다\'라는 의미에서 유래했습니다.',
@@ -380,9 +494,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'He refused to disclose the details of the confidential agreement.', ko: '그는 비밀 계약의 세부 사항을 공개하기를 거부했다.' },
         { en: 'The company must disclose its financial statements every year.', ko: '회사는 매년 재무제표를 공개해야 한다.' },
       ],
+      wordDistractors: ['enclose', 'foreclose', 'dispose'],
+      definitionDistractors: [
+        'To surround or seal something within a protective barrier.',
+        'To permanently shut down or close a business operation.',
+        'To arrange or organize items in a neat and orderly manner.',
+      ],
     }
   ),
-  word('Discord', '불화', 7, 'noun',
+  word('discord', '불화', 7, 'noun',
     ['화합', '조화', '일치', '협력', '우호', '합의', '평화', '공존', '단결', '친목'],
     tips({
       etymology: '라틴어 어근 dis(분리)와 cord(심장)가 결합되어, 마음이 서로 다른 방향을 향하고 있는 상태를 의미합니다.',
@@ -399,9 +519,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The family was torn apart by internal discord over the inheritance.', ko: '그 가족은 유산 상속을 둘러싼 내부 불화로 갈라졌다.' },
         { en: 'The discord between the two political parties delayed the bill.', ko: '두 정당 간의 불일치가 법안 처리를 지연시켰다.' },
       ],
+      wordDistractors: ['concord', 'discard', 'discourse'],
+      definitionDistractors: [
+        'A formal agreement or treaty between two or more parties.',
+        'A lengthy written or spoken discussion on a particular topic.',
+        'The act of throwing away something that is no longer needed.',
+      ],
     }
   ),
-  word('Discrepancy', '불일치', 7, 'noun',
+  word('discrepancy', '불일치', 7, 'noun',
     ['일치', '부합', '동일', '균형', '정확', '유사', '적합', '상응', '일관', '동조'],
     tips({
       etymology: '라틴어 dis(분리)와 crepare(소리나다)가 합쳐진 단어로, 부품들이 서로 맞지 않아 삐걱거리는 소리가 나는 상태에서 유래했습니다.',
@@ -418,9 +544,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The police found a serious discrepancy in the suspect\'s story.', ko: '경찰은 용의자의 진술에서 심각한 불일치를 발견했다.' },
         { en: 'The committee is investigating the discrepancy between the budget and actual spending.', ko: '위원회는 예산과 실제 지출 사이의 불일치를 조사하고 있다.' },
       ],
+      wordDistractors: ['discretion', 'discrepance', 'disparity'],
+      definitionDistractors: [
+        'The freedom to make decisions based on personal judgment.',
+        'A gradual increase in the value of an asset over time.',
+        'A formal process of verifying the accuracy of financial records.',
+      ],
     }
   ),
-  word('Disdain', '경멸', 7, 'noun',
+  word('disdain', '경멸', 7, 'noun',
     ['존경', '존중', '선망', '호의', '찬사', '애정', '숭배', '동경', '인정', '친절'],
     tips({
       etymology: '부정을 뜻하는 dis와 가치 있음을 뜻하는 dain이 결합되어, 상대가 가치 없다고 여기는 마음에서 유래했습니다.',
@@ -437,9 +569,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'She looked at the messy room with a look of pure disdain.', ko: '그녀는 순전한 경멸의 눈빛으로 지저분한 방을 쳐다보았다.' },
         { en: 'He treated the suggestions of his juniors with disdain.', ko: '그는 후배들의 제안을 경멸조로 대했다.' },
       ],
+      wordDistractors: ['distain', 'disdaine', 'sustain'],
+      definitionDistractors: [
+        'A feeling of deep admiration for someone\'s achievements.',
+        'A mild sense of disappointment about an unexpected outcome.',
+        'A strong emotional attachment to a person or place.',
+      ],
     }
   ),
-  word('Dismal', '비참한', 7, 'adjective',
+  word('dismal', '비참한', 7, 'adjective',
     ['밝은', '희망찬', '유쾌한', '화창한', '성공적인', '활기찬', '기쁜', '긍정적인', '찬란한', '즐거운'],
     tips({
       etymology: '라틴어 \'dies mali(불길한 날들)\'에서 유래하여, 운이 없고 우울한 상태를 뜻합니다.',
@@ -456,9 +594,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The weather forecast for the weekend is quite dismal.', ko: '주말 일기 예보가 상당히 음산하고 우울하다.' },
         { en: 'The team\'s performance was dismal, leading to a heavy defeat.', ko: '팀의 경기력은 형편없었으며, 결국 대패로 이어졌다.' },
       ],
+      wordDistractors: ['dismiss', 'abysmal', 'dismay'],
+      definitionDistractors: [
+        'Causing a sudden feeling of shock or alarm about danger.',
+        'Extremely impressive and awe-inspiring in scale or beauty.',
+        'Moderately satisfactory but not exceptional in quality.',
+      ],
     }
   ),
-  word('Disparity', '불균형', 7, 'noun',
+  word('disparity', '불균형', 7, 'noun',
     ['균형', '평등', '일치', '동등', '조화', '유사', '동질', '공정', '안정', '통합'],
     tips({
       etymology: 'dis(아닌) + par(동등한) + ity(상태)가 합쳐져 \'같지 않음\'을 뜻합니다.',
@@ -475,9 +619,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'There is a huge economic disparity between the two regions.', ko: '두 지역 사이에는 거대한 경제적 불균형이 존재한다.' },
         { en: 'The disparity between rich and poor is growing every year.', ko: '빈부 격차가 매년 커지고 있다.' },
       ],
+      wordDistractors: ['disperity', 'desperate', 'disparage'],
+      definitionDistractors: [
+        'A feeling of hopelessness caused by an extreme situation.',
+        'The act of speaking about someone in a belittling manner.',
+        'A fair and balanced distribution of resources among groups.',
+      ],
     }
   ),
-  word('Disseminate', '유포하다', 8, 'verb',
+  word('disseminate', '유포하다', 8, 'verb',
     ['숨기다', '억압하다', '차단하다', '제한하다', '봉인하다', '수집하다', '은폐하다', '축소하다', '독점하다', '회수하다'],
     tips({
       etymology: '라틴어 어근 \'semin\'은 씨앗(seed)을 의미합니다. 즉, 씨를 사방으로 널리 뿌리는 행위에서 정보의 전파라는 뜻이 유래되었습니다.',
@@ -494,9 +644,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The health organization works to disseminate vital information about disease prevention.', ko: '그 보건 기구는 질병 예방에 관한 필수 정보를 유포하기 위해 노력한다.' },
         { en: 'Social media has become a powerful tool to disseminate political ideologies.', ko: '소셜 미디어는 정치적 이데올로기를 전파하는 강력한 도구가 되었다.' },
       ],
+      wordDistractors: ['discriminate', 'inseminate', 'dissimilate'],
+      definitionDistractors: [
+        'To treat people unfairly based on their background or identity.',
+        'To gather and compile data from multiple different sources.',
+        'To carefully examine and evaluate the quality of information.',
+      ],
     }
   ),
-  word('Dissent', '반대', 8, 'noun',
+  word('dissent', '반대', 8, 'noun',
     ['동의', '찬성', '합의', '일치', '승인', '수용', '결속', '조화', '지지', '순응'],
     tips({
       etymology: '라틴어 dis(따로)와 sentire(느끼다)가 결합되어 \'남과 다르게 느끼다\'라는 어원을 가집니다.',
@@ -513,9 +669,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'There was growing dissent within the political party regarding the new policy.', ko: '새로운 정책에 대해 정당 내부에서 반대 의견이 거세지고 있었다.' },
         { en: 'The supreme court justice wrote a strong dissent against the majority ruling.', ko: '대법관은 다수결 판결에 대해 강력한 반대 의견서를 작성했다.' },
       ],
+      wordDistractors: ['descent', 'assent', 'dissect'],
+      definitionDistractors: [
+        'A downward movement or slope from a higher to a lower position.',
+        'An expression of approval or agreement with a proposal.',
+        'The act of cutting something apart for detailed examination.',
+      ],
     }
   ),
-  word('Dissolution', '해산', 8, 'noun',
+  word('dissolution', '해산', 8, 'noun',
     ['구성', '결성', '융합', '통합', '연합', '설립', '창설', '조직', '결합', '유지'],
     tips({
       etymology: 'dis(분리) + solut(풀다) + ion(명사형)으로 \'풀어서 흩어지게 함\'을 뜻합니다.',
@@ -532,9 +694,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The dissolution of the partnership was amicable.', ko: '동업 관계의 해산은 우호적으로 이루어졌다.' },
         { en: 'The sudden dissolution of the government led to an early election.', ko: '정부의 갑작스러운 해산은 조기 선거로 이어졌다.' },
       ],
+      wordDistractors: ['resolution', 'disillusion', 'absolution'],
+      definitionDistractors: [
+        'A firm decision to do or not do something.',
+        'A feeling of disappointment from discovering something is not as good as expected.',
+        'The process of combining separate elements into a single unified entity.',
+      ],
     }
   ),
-  word('Diverge', '갈라지다', 8, 'verb',
+  word('diverge', '갈라지다', 8, 'verb',
     ['합류하다', '수렴하다', '만나다', '일치하다', '융합하다', '모이다', '결합하다', '연결되다', '집중하다', '동일하다'],
     tips({
       etymology: 'di(두 갈래)와 verge(기울다/향하다)가 결합되어 \'두 방향으로 뻗어 나가다\'라는 의미를 형성합니다.',
@@ -551,9 +719,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The two paths in the woods began to diverge after the bridge.', ko: '다리를 지나자 숲속의 두 갈래 길이 갈라지기 시작했다.' },
         { en: 'Over time, the evolutionary lines of the two species started to diverge.', ko: '시간이 흐르면서 두 종의 진화 노선은 서로 갈라지기 시작했다.' },
       ],
+      wordDistractors: ['converge', 'diverse', 'diverve'],
+      definitionDistractors: [
+        'To come together from different directions and meet at a single point.',
+        'To plunge downward rapidly into water or another substance.',
+        'To change direction suddenly in order to avoid an obstacle.',
+      ],
     }
   ),
-  word('Dormant', '휴면의', 8, 'adjective',
+  word('dormant', '휴면의', 8, 'adjective',
     ['활동적인', '각성한', '활발한', '깨어있는', '작동중인', '예민한', '신속한', '유효한', '진행중인', '열정적인'],
     tips({
       etymology: '라틴어 dormire(자다)에서 유래하여 현재는 활동을 멈추고 잠자고 있는 상태를 뜻합니다.',
@@ -570,9 +744,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The volcano has been dormant for hundreds of years, but scientists still monitor it closely.', ko: '그 화산은 수백 년 동안 휴면 상태였지만, 과학자들은 여전히 그것을 면밀히 관찰하고 있다.' },
         { en: 'Many plants have seeds that remain dormant in the soil until the spring rains arrive.', ko: '많은 식물들은 봄비가 내릴 때까지 토양 속에서 휴면 상태로 남아 있는 씨앗을 가지고 있다.' },
       ],
+      wordDistractors: ['dominant', 'doormat', 'dormitory'],
+      definitionDistractors: [
+        'Having the most power or influence over others in a group.',
+        'Completely extinct with no possibility of returning to activity.',
+        'Growing or developing at an unusually rapid pace.',
+      ],
     }
   ),
-  word('Dubious', '의심스러운', 8, 'adjective',
+  word('dubious', '의심스러운', 8, 'adjective',
     ['확실한', '믿을만한', '명백한', '절대적인', '신뢰하는', '정확한', '진실한', '분명한', '당연한', '안전한'],
     tips({
       etymology: '라틴어 dubius에서 유래되었으며, \'두 가지(duo)\' 상태 사이에서 갈팡질팡하며 결정하지 못하는 마음을 나타냅니다.',
@@ -589,9 +769,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The critics were dubious about the director\'s ability to handle such a large budget.', ko: '비평가들은 그 감독이 그렇게 큰 예산을 다룰 능력이 있는지에 대해 의구심을 가졌다.' },
         { en: 'She gave me a dubious look when I told her I had finished the entire project in one night.', ko: '내가 하룻밤 만에 프로젝트 전체를 끝냈다고 말하자 그녀는 의심스러운 눈초리로 나를 쳐다보았다.' },
       ],
+      wordDistractors: ['dutious', 'dubius', 'devious'],
+      definitionDistractors: [
+        'Showing a strong sense of moral obligation and duty.',
+        'Deliberately dishonest or deceitful in one\'s dealings.',
+        'Completely confident and certain about a particular outcome.',
+      ],
     }
   ),
-  word('Duplicity', '이중성', 8, 'noun',
+  word('duplicity', '이중성', 8, 'noun',
     ['솔직함', '일관성', '정직', '순수', '단일성', '성실', '투명', '진실', '신뢰', '청렴'],
     tips({
       etymology: 'du(둘) + plic(접다) + ity(상태)로 \'마음을 두 겹으로 접어 숨김\'을 뜻합니다.',
@@ -608,9 +794,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The politician was accused of duplicity by his opponents.', ko: '그 정치인은 상대 진영으로부터 이중성에 대해 비난받았다.' },
         { en: 'She was shocked by the duplicity of her closest friend.', ko: '그녀는 가장 친한 친구의 이중성에 충격을 받았다.' },
       ],
+      wordDistractors: ['duplicate', 'complicity', 'simplicity'],
+      definitionDistractors: [
+        'The act of making an exact copy of a document or object.',
+        'Involvement as a partner in a wrongful or criminal act.',
+        'The quality of being easy to understand or uncomplicated.',
+      ],
     }
   ),
-  word('Eclectic', '절충주의의', 8, 'adjective',
+  word('eclectic', '절충주의의', 8, 'adjective',
     ['일관된', '단일한', '배타적인', '협소한', '제한적인', '획일적인', '편협한', '고정된', '단조로운', '정형화된'],
     tips({
       etymology: '그리스어 ek(밖으로)와 leg(고르다)가 합쳐져 \'여러 곳에서 골라낸\'이라는 의미를 가집니다.',
@@ -627,9 +819,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'Her eclectic collection of art reflects her diverse interests.', ko: '그녀의 절충적인 예술 수집품은 그녀의 다방면에 걸친 관심을 반영한다.' },
         { en: 'The gallery is known for its eclectic mix of styles, from classical to modern pieces.', ko: '그 갤러리는 고전부터 현대 작품까지 절충적인 스타일 혼합으로 유명하다.' },
       ],
+      wordDistractors: ['electric', 'elective', 'eccentric'],
+      definitionDistractors: [
+        'Powered by or relating to electrical energy or current.',
+        'Chosen by a vote or based on personal preference rather than requirement.',
+        'Focusing exclusively on a single style or tradition without variation.',
+      ],
     }
   ),
-  word('Edify', '교화하다', 8, 'verb',
+  word('edify', '교화하다', 8, 'verb',
     ['타락시키다', '현혹하다', '부패시키다', '오염시키다', '혼란스럽게하다', '망치다', '속이다', '해치다', '무너뜨리다', '방해하다'],
     tips({
       etymology: '라틴어 aedificare에서 유래했으며, 본래 \'건물을 세우다\'라는 뜻에서 \'정신적 토대를 세우다\'로 의미가 확장되었습니다.',
@@ -646,9 +844,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The professor hoped that his lecture would help to edify the young students.', ko: '교수는 그의 강연이 젊은 학생들을 교화하는 데 도움이 되기를 바랐다.' },
         { en: 'She sought out books that would edify her spirit rather than just provide entertainment.', ko: '그녀는 단순히 즐거움을 주는 책보다 자신의 정신을 고양시킬 수 있는 책들을 찾았다.' },
       ],
+      wordDistractors: ['edit', 'edible', 'edifice'],
+      definitionDistractors: [
+        'To make changes or corrections to a written text or document.',
+        'To construct or build a large, imposing physical structure.',
+        'To amuse or entertain someone with light-hearted activities.',
+      ],
     }
   ),
-  word('Efficacy', '효능', 8, 'noun',
+  word('efficacy', '효능', 8, 'noun',
     ['무효', '무능', '비효율', '부작용', '역효과', '무력함', '결함', '실패', '부족', '불능'],
     tips({
       etymology: '라틴어 \'efficere(해내다, 완수하다)\'에서 유래하여, 어떤 목적을 달성할 수 있는 실제적인 힘을 의미합니다.',
@@ -665,9 +869,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The clinical trials demonstrated the high efficacy of the new medication.', ko: '임상 시험을 통해 새 약물의 높은 효능이 입증되었습니다.' },
         { en: 'Scientists are questioning the efficacy of the current strategy in reducing pollution.', ko: '과학자들은 오염을 줄이는 데 있어 현재 전략의 효능에 의문을 제기하고 있습니다.' },
       ],
+      wordDistractors: ['efficiency', 'effigacy', 'audacity'],
+      definitionDistractors: [
+        'The ability to accomplish a task with minimal waste of time or resources.',
+        'The total cost of producing a particular medical treatment.',
+        'The harmful side effects caused by a pharmaceutical substance.',
+      ],
     }
   ),
-  word('Elicit', '끌어내다', 8, 'verb',
+  word('elicit', '끌어내다', 8, 'verb',
     ['숨기다', '억압하다', '차단하다', '은폐하다', '억제하다', '덮다', '막다', '거부하다', '무시하다', '잠재우다'],
     tips({
       etymology: 'e(밖으로)와 lacere(유혹하다)가 합쳐져 \'잠잠하던 것을 밖으로 꾀어내다\'라는 의미가 되었습니다.',
@@ -684,9 +894,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The comedian\'s jokes failed to elicit any laughter from the audience.', ko: '그 코미디언의 농담은 관객들로부터 어떠한 웃음도 이끌어내지 못했다.' },
         { en: 'The questionnaire is designed to elicit honest opinions about the new product.', ko: '이 설문지는 신제품에 대한 솔직한 의견을 끌어내기 위해 설계되었습니다.' },
       ],
+      wordDistractors: ['illicit', 'explicit', 'solicit'],
+      definitionDistractors: [
+        'To engage in activities that are forbidden by law or regulation.',
+        'To clearly and directly state something without any ambiguity.',
+        'To formally request donations or support from the public.',
+      ],
     }
   ),
-  word('Eloquent', '웅변의', 8, 'adjective',
+  word('eloquent', '웅변의', 8, 'adjective',
     ['어눌한', '서툰', '말주변없는', '더듬거리는', '불명료한', '침묵하는', '무뚝뚝한', '어색한', '조잡한', '난해한'],
     tips({
       etymology: '라틴어 e(밖으로)와 loqui(말하다)가 결합되어, 자신의 생각을 밖으로 막힘없이 쏟아낸다는 의미에서 유래했습니다.',
@@ -703,10 +919,16 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The president delivered an eloquent appeal for peace that moved the entire nation.', ko: '대통령은 온 국민을 감동시킨 평화를 향한 설득력 있는 호소를 전달했습니다.' },
         { en: 'Her eyes were more eloquent than any words she could have spoken at that moment.', ko: '그녀의 눈빛은 그 순간 그녀가 할 수 있었던 그 어떤 말보다 더 많은 것을 표현하고 있었습니다.' },
       ],
+      wordDistractors: ['elegant', 'elocquent', 'frequent'],
+      definitionDistractors: [
+        'Having a refined and graceful appearance or style.',
+        'Speaking in an excessively loud and aggressive manner.',
+        'Tending to use very few words when communicating with others.',
+      ],
     }
   ),
-  word('Emancipate', '해방하다', 8, 'verb',
-    ['속속하다', '예속시키다', '억압하다', '감금하다', '굴복시키다', '구속하다', '노예화하다', '가두다', '제한하다', '강제하다'],
+  word('emancipate', '해방하다', 8, 'verb',
+    ['속박하다', '예속시키다', '억압하다', '감금하다', '굴복시키다', '구속하다', '노예화하다', '가두다', '제한하다', '강제하다'],
     tips({
       etymology: 'e(밖으로)와 manus(손), capere(잡다)가 합쳐져 \'손아귀에서 놓아주다\'라는 의미에서 유래했습니다.',
       visual: '손목을 꽉 조이고 있던 쇠사슬이 끊어지며 자유롭게 팔을 뻗는 모습을 상상해 보세요.',
@@ -722,9 +944,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The slaves were emancipated in 1865.', ko: '노예들은 1865년에 해방되었다.' },
         { en: 'Women were emancipated from many legal restrictions in the twentieth century.', ko: '여성들은 20세기에 많은 법적 제한에서 해방되었다.' },
       ],
+      wordDistractors: ['emanate', 'emaciate', 'encapsulate'],
+      definitionDistractors: [
+        'To issue or spread out from a particular source or origin.',
+        'To become extremely thin and weak due to illness or hunger.',
+        'To place someone under greater control or supervision.',
+      ],
     }
   ),
-  word('Embellish', '장식하다', 8, 'verb',
+  word('embellish', '장식하다', 8, 'verb',
     ['벗기다', '간소화하다', '축소하다', '절제하다', '해체하다', '훼손하다', '깎다', '단순화하다', '드러내다', '생략하다'],
     tips({
       etymology: 'em(만들다)과 bell(아름다운)이 합쳐져 \'아름답게 꾸미다\'라는 뜻이 되었습니다.',
@@ -741,9 +969,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'He tends to embellish his stories to make them more exciting.', ko: '그는 이야기를 더 흥미진진하게 만들기 위해 내용을 꾸며내는 경향이 있다.' },
         { en: 'She embellished the dress with lace and pearls for the wedding.', ko: '그녀는 결혼식을 위해 드레스를 레이스와 진주로 장식했다.' },
       ],
+      wordDistractors: ['embezzle', 'demolish', 'establish'],
+      definitionDistractors: [
+        'To steal money that has been entrusted to one\'s care.',
+        'To completely destroy or tear down a building or structure.',
+        'To remove all decorations and return something to its original state.',
+      ],
     }
   ),
-  word('Eminent', '저명한', 8, 'adjective',
+  word('eminent', '저명한', 8, 'adjective',
     ['무명의', '하찮은', '미미한', '비천한', '평범한', '알려지지않은', '낮은', '보통의', '열등한', '무시당하는'],
     tips({
       etymology: 'e(밖으로)와 minere(돌출하다)가 합쳐져 \'남들보다 밖으로 툭 튀어나온\' 즉, 뛰어난 상태를 말합니다.',
@@ -760,9 +994,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'She is an eminent scholar in her field.', ko: '그녀는 그 분야의 저명한 학자이다.' },
         { en: 'An eminent architect designed the new building.', ko: '저명한 건축가가 새 건물을 설계했다.' },
       ],
+      wordDistractors: ['imminent', 'emanent', 'prominent'],
+      definitionDistractors: [
+        'About to happen very soon, especially something threatening.',
+        'Existing within something as a permanent or essential quality.',
+        'Having average or ordinary status within a profession.',
+      ],
     }
   ),
-  word('Encompass', '포함하다', 8, 'verb',
+  word('encompass', '포함하다', 8, 'verb',
     ['제외하다', '배제하다', '누락하다', '한정하다', '축소하다', '분리하다', '거부하다', '방출하다', '삭제하다', '무시하다'],
     tips({
       etymology: '접두사 en-(안에 넣다)과 compass(범위, 나침반)가 결합되어 \'특정 범위 안에 모두 집어넣다\'라는 의미를 형성합니다.',
@@ -779,9 +1019,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The new curriculum aims to encompass a broad range of cultural perspectives.', ko: '새로운 커리큘럼은 폭넓은 문화적 관점을 포괄하는 것을 목표로 한다.' },
         { en: 'The national park encompasses several mountains and a large lake.', ko: '그 국립공원은 여러 개의 산과 커다란 호수를 포함하고 있다.' },
       ],
+      wordDistractors: ['encamp', 'encumber', 'compass'],
+      definitionDistractors: [
+        'To deliberately leave out certain items from a collection.',
+        'To navigate using a directional instrument or tool.',
+        'To physically travel around the perimeter of an area.',
+      ],
     }
   ),
-  word('Encroach', '침해하다', 8, 'verb',
+  word('encroach', '침해하다', 8, 'verb',
     ['물러나다', '존중하다', '배려하다', '경계하다', '멀어지다', '후퇴하다', '지키다', '보호하다', '준수하다', '양보하다'],
     tips({
       etymology: 'en(안으로) + croach(갈고리)가 합쳐져 갈고리를 걸어 남의 영역을 조금씩 끌어당기는 모습에서 유래했습니다.',
@@ -798,9 +1044,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'New housing developments continue to move forward and onto the forest, which will encroach on wildlife habitat.', ko: '새로운 주택 개발이 계속 진행되어 숲으로 향하고 있으며, 이는 야생동물 서식지를 침해할 것입니다.' },
         { en: 'It is important to set boundaries so that professional responsibilities do not encroach on your personal life.', ko: '직업적 책임이 개인적인 삶을 침해하지 않도록 경계를 설정하는 것이 중요합니다.' },
       ],
+      wordDistractors: ['approach', 'reproach', 'encrouch'],
+      definitionDistractors: [
+        'To come near or draw closer to someone or something.',
+        'To express sharp criticism or disapproval toward someone.',
+        'To retreat or withdraw completely from an occupied area.',
+      ],
     }
   ),
-  word('Endemic', '풍토성의', 8, 'adjective',
+  word('endemic', '풍토성의', 8, 'adjective',
     ['흔한', '보편적', '전세계적', '외래의', '이질적', '범용의', '일시적', '수입된', '낯선', '광범위한'],
     tips({
       etymology: 'en(안에) + dem(사람들)이 합쳐져 특정 지역 사람들 사이에 머물러 있다는 뜻입니다.',
@@ -817,9 +1069,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'Malaria is endemic to tropical regions.', ko: '말라리아는 열대 지역의 풍토병이다.' },
         { en: 'Corruption was endemic in the old regime.', ko: '부패는 구 정권에 만연해 있었다.' },
       ],
+      wordDistractors: ['epidemic', 'pandemic', 'academic'],
+      definitionDistractors: [
+        'Spreading rapidly across a large population in a short time.',
+        'Affecting every country and continent simultaneously worldwide.',
+        'Occurring only temporarily before being completely eradicated.',
+      ],
     }
   ),
-  word('Engender', '일으키다', 8, 'verb',
+  word('engender', '일으키다', 8, 'verb',
     ['막다', '억제하다', '종식시키다', '제거하다', '소멸시키다', '파괴하다', '중단하다', '방해하다', '금지하다', '거부하다'],
     tips({
       etymology: 'en(만들다)과 gender(종류/발생)가 결합되어 새로운 상태나 감정을 낳는다는 의미를 형성합니다.',
@@ -836,9 +1094,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The minister\'s speech was designed to engender confidence in the economy.', ko: '장관의 연설은 경제에 대한 신뢰를 불러일으키기 위해 계획되었습니다.' },
         { en: 'Poor communication can often engender misunderstanding between team members.', ko: '서툰 의사소통은 종종 팀원들 사이에 오해를 일으킬 수 있습니다.' },
       ],
+      wordDistractors: ['endanger', 'engrave', 'gender'],
+      definitionDistractors: [
+        'To put someone or something at risk of harm or destruction.',
+        'To completely eliminate or put an end to a particular situation.',
+        'To formally classify items into distinct categories or groups.',
+      ],
     }
   ),
-  word('Enigma', '수수께끼', 8, 'noun',
+  word('enigma', '수수께끼', 8, 'noun',
     ['명백함', '해답', '투명', '단순', '평범', '진실', '공개', '사실', '설명', '이해'],
     tips({
       etymology: '그리스어 ainigma에서 유래했으며, \'어둡게 말하기\' 즉 수수께끼를 뜻합니다.',
@@ -855,9 +1119,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'Her motives for leaving so suddenly remain an enigma.', ko: '그녀가 그렇게 갑자기 떠난 동기는 여전히 수수께끼이다.' },
         { en: 'The disappearance of the plane remains an enigma.', ko: '그 비행기의 실종은 여전히 수수께끼로 남아 있다.' },
       ],
+      wordDistractors: ['enema', 'stigma', 'enigmatic'],
+      definitionDistractors: [
+        'A mark of disgrace or shame associated with a circumstance.',
+        'A well-known fact that is easily understood by everyone.',
+        'A detailed explanation that clarifies a complex topic.',
+      ],
     }
   ),
-  word('Enmity', '적의', 8, 'noun',
+  word('enmity', '적의', 8, 'noun',
     ['우정', '화해', '우호', '친선', '협력', '사랑', '평화', '친밀', '동맹', '호의'],
     tips({
       etymology: '단어 내부에 \'enemy(적)\'의 흔적이 보입니다. 라틴어 \'inimicitia\'에서 유래하여 적대적인 상태를 뜻하게 되었습니다.',
@@ -874,9 +1144,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'There was deep enmity between the two rival families.', ko: '두 라이벌 가문 사이에는 깊은 적의가 있었다.' },
         { en: 'The two nations have a long history of enmity.', ko: '두 나라는 오랜 적대 관계의 역사를 가지고 있다.' },
       ],
+      wordDistractors: ['amenity', 'entity', 'amity'],
+      definitionDistractors: [
+        'A useful or desirable feature of a building or place.',
+        'A warm and friendly relationship between people or nations.',
+        'An independent organization or being that exists on its own.',
+      ],
     }
   ),
-  word('Enumerate', '열거하다', 8, 'verb',
+  word('enumerate', '열거하다', 8, 'verb',
     ['생략하다', '요약하다', '종합하다', '통합하다', '하나로 묶다', '무시하다', '감추다', '축약하다', '합치다', '건너뛰다'],
     tips({
       etymology: 'e(밖으로) + numer(숫자)가 합쳐져 숫자를 세듯 하나하나 밖으로 꺼내 말한다는 뜻입니다.',
@@ -893,9 +1169,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'She enumerated the reasons for her decision.', ko: '그녀는 자신의 결정에 대한 이유들을 일일이 열거했다.' },
         { en: 'The report enumerates all the costs involved in the project.', ko: '그 보고서는 프로젝트에 포함된 모든 비용을 열거하고 있다.' },
       ],
+      wordDistractors: ['innumerate', 'emulate', 'numerate'],
+      definitionDistractors: [
+        'To imitate or try to equal someone\'s achievements or qualities.',
+        'To provide a brief summary without going into specific details.',
+        'To calculate the precise numerical value of a mathematical expression.',
+      ],
     }
   ),
-  word('Ephemeral', '덧없는', 8, 'adjective',
+  word('ephemeral', '덧없는', 8, 'adjective',
     ['영구적인', '지속적인', '오래가는', '변치 않는', '불멸의', '고정된', '영원한', '장기적인', '무한한', '안정적인'],
     tips({
       etymology: '그리스어 \'ephemeros\'에서 유래했으며, 이는 \'단 하루뿐인\'이라는 뜻으로 하루살이처럼 수명이 매우 짧음을 의미합니다.',
@@ -912,9 +1194,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'The joy of winning the lottery proved to be ephemeral as the money quickly ran out.', ko: '복권 당첨의 기쁨은 돈이 금방 바닥나면서 덧없는 것으로 드러났다.' },
         { en: 'Artists often try to capture the ephemeral beauty of a sunset through their paintings.', ko: '예술가들은 종종 그림을 통해 일몰의 순식간에 사라지는 아름다움을 포착하려고 노력한다.' },
       ],
+      wordDistractors: ['ethereal', 'empirical', 'ephemera'],
+      definitionDistractors: [
+        'Extremely delicate and light, seeming too perfect for this world.',
+        'Based on observation and experiment rather than theory.',
+        'Lasting for an extremely long time or seemingly forever.',
+      ],
     }
   ),
-  word('Equanimity', '침착', 8, 'noun',
+  word('equanimity', '침착', 8, 'noun',
     ['동요', '흥분', '불안', '초조', '좌절', '격분', '혼란', '공포', '당황', '분노'],
     tips({
       etymology: '라틴어 aequus(같은, 평등한)와 animus(마음, 정신)가 결합되어 \'항상 일정한 마음 상태\'를 의미합니다.',
@@ -931,9 +1219,15 @@ export const vocabBatch15: VocabItem[] = [
         { en: 'She faced the crisis with equanimity, never losing her cool.', ko: '그녀는 냉정함을 잃지 않고 침착하게 위기에 맞섰다.' },
         { en: 'He accepted the verdict with remarkable equanimity.', ko: '그는 놀라울 정도로 평정심을 유지하며 판결을 받아들였다.' },
       ],
+      wordDistractors: ['equality', 'equinity', 'unanimity'],
+      definitionDistractors: [
+        'The state of being equal in status, rights, or opportunities.',
+        'A shared agreement or opinion held by all members of a group.',
+        'A sudden burst of extreme anger or emotional outrage.',
+      ],
     }
   ),
-  word('Equitable', '공정한', 8, 'adjective',
+  word('equitable', '공정한', 8, 'adjective',
     ['불공정한', '편파적인', '차별적인', '부당한', '불균형한', '편향된', '치우친', '독단적인', '불평등한', '주관적인'],
     tips({
       etymology: '라틴어 aequitas(공정)에서 유래하여 모두에게 동등한 권리를 준다는 의미를 담고 있습니다.',
@@ -949,6 +1243,12 @@ export const vocabBatch15: VocabItem[] = [
       exampleSentences: [
         { en: 'The goal is to ensure an equitable distribution of resources among all citizens.', ko: '목표는 모든 시민들 사이에 자원이 공정하게 분배되도록 보장하는 것이다.' },
         { en: 'The new tax system aims to be more equitable for low-income families.', ko: '새로운 세제는 저소득 가구에게 더 공정하게 적용되는 것을 목표로 한다.' },
+      ],
+      wordDistractors: ['equinox', 'equivocal', 'suitable'],
+      definitionDistractors: [
+        'Open to more than one interpretation; deliberately ambiguous.',
+        'Suitable or good enough to live in comfortably.',
+        'Favoring one group over another based on personal preference.',
       ],
     }
   ),

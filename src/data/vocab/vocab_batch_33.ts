@@ -19,6 +19,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'It took a long time, but they eventually reached a decision.', ko: '오랜 시간이 걸렸지만, 그들은 결국 결정을 내렸다.' },
         { en: 'Keep trying, and you will eventually succeed.', ko: '계속 노력하다 보면, 너는 결국 성공할 거야.' },
       ],
+      wordDistractors: ['evidently', 'evenly', 'eventfully'],
+      definitionDistractors: [
+        'In a manner that is obvious or clearly visible to others',
+        'At regular intervals without any variation or change',
+        'In a way that happens suddenly without any prior warning',
+      ],
     }
   ),
   word('ever', '언제든', 5, 'adverb',
@@ -37,6 +43,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'Have you ever traveled to a foreign country alone?', ko: '혼자 외국 여행을 가본 적이 있나요?' },
         { en: 'Nothing ever seems to change in this quiet little town.', ko: '이 조용하고 작은 마을에서는 그 어떤 것도 결코 변하지 않는 것 같다.' },
+      ],
+      wordDistractors: ['even', 'every', 'over'],
+      definitionDistractors: [
+        'Only during a specific and predetermined moment',
+        'Repeatedly and consistently without any interruption',
+        'Under no circumstances or conditions whatsoever',
       ],
     }
   ),
@@ -57,6 +69,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The teacher handed out a new textbook to every student in the classroom.', ko: '선생님은 교실에 있는 모든 학생에게 새 교과서를 나누어 주었습니다.' },
         { en: 'She makes sure to drink a glass of water every morning right after waking up.', ko: '그녀는 매일 아침 일어난 직후에 물 한 잔을 꼭 마십니다.' },
       ],
+      wordDistractors: ['ever', 'even', 'very'],
+      definitionDistractors: [
+        'Referring to only a select few members of a group',
+        'Happening occasionally but not on a regular basis',
+        'Describing something that occurs only once in total',
+      ],
     }
   ),
   word('evident', '명백한', 6, 'adjective',
@@ -76,10 +94,16 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The joy on her face was clear to everyone when she received the good news.', ko: '그녀가 기쁜 소식을 들었을 때 얼굴에 나타난 기쁨은 누가 봐도 명백했습니다.' },
         { en: 'It became increasingly certain that the initial plan would not work as expected.', ko: '처음 계획이 예상대로 진행되지 않을 것이라는 점이 점점 분명해졌습니다.' },
       ],
+      wordDistractors: ['evidence', 'evasive', 'eventual'],
+      definitionDistractors: [
+        'Deliberately hidden or concealed from public view',
+        'Based on personal opinion rather than objective fact',
+        'Requiring careful investigation to be understood',
+      ],
     }
   ),
   word('evolve', '진화하다', 7, 'verb',
-    ['퇴보하다', '퇴화하다', '관련시키다', '회전하다', '반복하다', '유지하다', '중단하다', '되돌리다', '고정하다', '정체되다'],
+    ['퇴보하다', '퇴화하다', '관련시키다', '회전하다', '줄어들다', '입다', '~을 넌지시 언급하다', '되돌리다', '고정하다', '정체되다'],
     tips({
       etymology: '라틴어 \'evolvere\'에서 유래했으며, \'e(밖으로)\'와 \'volvere(굴리다/말다)\'가 합쳐져 돌면서 밖으로 펼쳐지듯 발전한다는 뜻입니다.',
       visual: '작은 세포가 점점 복잡한 생명체로 변하거나, 구식 휴대폰이 최신 스마트폰으로 변하는 타임랩스 영상을 상상해 보세요.',
@@ -94,6 +118,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'Many species had to adapt and change their physical traits to survive in the changing climate.', ko: '많은 종들은 변화하는 기후에서 살아남기 위해 적응하고 신체적 특성을 진화시켜야 했습니다.' },
         { en: 'The small startup began to transform into a global corporation over the next decade.', ko: '그 작은 스타트업은 향후 10년에 걸쳐 글로벌 기업으로 진화하기 시작했습니다.' },
+      ],
+      wordDistractors: ['revolve', 'involve', 'resolve'],
+      definitionDistractors: [
+        'To spin or rotate around a central axis repeatedly',
+        'To return to a previous and simpler state of being',
+        'To suddenly transform without any gradual process',
       ],
     }
   ),
@@ -114,6 +144,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'She stayed up all night to prepare for the final exam.', ko: '그녀는 기말고사를 준비하기 위해 밤을 꼬박 새웠다.' },
         { en: 'The entrance exam consists of three different sections.', ko: '입학 시험은 세 개의 다른 섹션으로 구성되어 있다.' },
       ],
+      wordDistractors: ['exact', 'example', 'examine'],
+      definitionDistractors: [
+        'A casual conversation between two or more people',
+        'A written document summarizing research findings',
+        'A physical exercise routine designed for fitness',
+      ],
     }
   ),
   word('example', '예', 2, 'noun',
@@ -132,6 +168,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'The teacher provided a clear illustration to help the students understand the complex theory.', ko: '선생님은 학생들이 복잡한 이론을 이해하도록 돕기 위해 명확한 예를 제시했습니다.' },
         { en: 'Please look at the first sample shown on the page before you start the exercise.', ko: '연습 문제를 시작하기 전에 페이지에 나와 있는 첫 번째 보기를 확인하세요.' },
+      ],
+      wordDistractors: ['examine', 'exasperate', 'exempt'],
+      definitionDistractors: [
+        'A rule or regulation that must be strictly followed',
+        'An exception to a general pattern or trend',
+        'A theoretical concept not yet proven by evidence',
       ],
     }
   ),
@@ -152,6 +194,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The chef received a standing ovation for the excellent meal he prepared.', ko: '요리사는 그가 준비한 훌륭한 식사 덕분에 기립 박수를 받았습니다.' },
         { en: 'Her academic record is excellent, showing top marks in every single subject.', ko: '그녀의 학업 성적은 모든 과목에서 최고 점수를 보여줄 정도로 훌륭합니다.' },
       ],
+      wordDistractors: ['eloquent', 'exuberant', 'elegance'],
+      definitionDistractors: [
+        'Barely meeting the minimum acceptable standard',
+        'Average in quality without any notable distinction',
+        'Showing a slight improvement over previous results',
+      ],
     }
   ),
   word('excess', '과다', 5, 'noun',
@@ -170,6 +218,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'We need to cut down on excess spending to save money for the trip.', ko: '여행 자금을 모으기 위해 과도한 지출을 줄여야 합니다.' },
         { en: 'The recipe said to remove any excess water from the cooked noodles.', ko: '레시피에는 삶은 면에서 남는 물기를 제거하라고 되어 있었습니다.' },
+      ],
+      wordDistractors: ['access', 'excel', 'excise'],
+      definitionDistractors: [
+        'The right or ability to approach or enter a place',
+        'A precise quantity that matches a requirement exactly',
+        'A shortage or lack of something that is needed',
       ],
     }
   ),
@@ -190,6 +244,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The total price of the tour will leave out personal expenses and tips.', ko: '투어 총 가격에서 개인 비용과 팁은 제외될 것입니다.' },
         { en: 'The club decided to keep out anyone who did not meet the strict membership criteria.', ko: '그 클럽은 엄격한 회원 기준을 충족하지 못하는 사람은 누구든 제외하기로 결정했습니다.' },
       ],
+      wordDistractors: ['include', 'excuse', 'execute'],
+      definitionDistractors: [
+        'To actively welcome and incorporate into a group',
+        'To carry out or perform a specific planned action',
+        'To forgive someone for a minor mistake or offense',
+      ],
     }
   ),
   word('executive', '경영의', 8, 'adjective',
@@ -208,6 +268,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'He holds a high-level position at the company with significant decision-making power.', ko: '그는 회사에서 상당한 의사 결정권을 가진 고위 경영직을 맡고 있다.' },
         { en: 'The board of directors will gather next week to discuss the new corporate strategy.', ko: '경영진 이사회는 새로운 기업 전략을 논의하기 위해 다음 주에 모일 것이다.' },
+      ],
+      wordDistractors: ['exclusive', 'exhaustive', 'excessive'],
+      definitionDistractors: [
+        'Relating to entry-level positions with limited authority',
+        'Pertaining to legislative or law-making responsibilities',
+        'Involving routine clerical work without decision-making power',
       ],
     }
   ),
@@ -228,6 +294,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The emergency door is located at the rear of the theater.', ko: '비상구는 극장 뒷면에 위치해 있습니다.' },
         { en: 'Passengers should proceed toward the gate marked with a green sign.', ko: '승객들은 초록색 표지판이 표시된 나가는 곳으로 향해야 합니다.' },
       ],
+      wordDistractors: ['exist', 'exile', 'exert'],
+      definitionDistractors: [
+        'A main entrance through which people arrive at a building',
+        'A corridor connecting two separate sections of a building',
+        'A waiting area located near the front of a building',
+      ],
     }
   ),
   word('expensive', '비싼', 7, 'adjective',
@@ -246,6 +318,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'Maintaining a vintage sports car can be incredibly costly over time.', ko: '빈티지 스포츠카를 유지하는 것은 시간이 갈수록 엄청나게 비용이 많이 들 수 있습니다.' },
         { en: 'Dining at that five-star restaurant was the most lavish experience of our trip.', ko: '그 5성급 레스토랑에서 식사한 것은 우리 여행 중 가장 돈이 많이 드는 경험이었습니다.' },
+      ],
+      wordDistractors: ['expansive', 'expressive', 'explosive'],
+      definitionDistractors: [
+        'Available at a very low price or cost to consumers',
+        'Offered for free without any payment required',
+        'Moderately priced and within a typical budget range',
       ],
     }
   ),
@@ -266,6 +344,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'Traveling alone across Europe was a life-changing event that gave me valuable perspective.', ko: '유럽을 홀로 여행한 것은 나에게 소중한 관점을 준 인생을 바꾼 경험이었다.' },
         { en: 'The job description requires at least five years of professional work in software development.', ko: '해당 직무 기술서는 소프트웨어 개발 분야에서 최소 5년의 전문적인 업무 경험을 요구한다.' },
       ],
+      wordDistractors: ['experiment', 'expertise', 'expectation'],
+      definitionDistractors: [
+        'A scientific procedure carried out to test a hypothesis',
+        'A theoretical understanding gained only from reading books',
+        'An abstract idea formed without any real-world basis',
+      ],
     }
   ),
   word('expertise', '전문 지식', 9, 'noun',
@@ -284,6 +368,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'The software developer demonstrated remarkable technical knowledge during the system migration.', ko: '그 소프트웨어 개발자는 시스템 이전 과정에서 놀라운 기술적 전문 지식을 보여주었다.' },
         { en: 'Hiring a consultant with financial mastery can help the company avoid costly mistakes.', ko: '재무적 전문성을 갖춘 컨설턴트를 고용하는 것은 회사가 비용이 많이 드는 실수를 피하는 데 도움이 될 수 있다.' },
+      ],
+      wordDistractors: ['experience', 'expedite', 'exquisite'],
+      definitionDistractors: [
+        'A beginner-level understanding of a broad topic',
+        'General awareness without deep knowledge of a subject',
+        'The act of delegating work to someone more qualified',
       ],
     }
   ),
@@ -304,6 +394,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The authorities are still trying to determine the full extent of the environmental damage.', ko: '당국은 여전히 환경 파괴의 전체 범위를 파악하려 노력 중이다.' },
         { en: 'To a certain extent, your success depends on how well you cooperate with others.', ko: '어느 정도까지는, 당신의 성공은 타인과 얼마나 잘 협력하느냐에 달려 있다.' },
       ],
+      wordDistractors: ['extend', 'extract', 'extinct'],
+      definitionDistractors: [
+        'The exact center point of something measurable',
+        'A strict boundary that cannot be crossed or exceeded',
+        'The process of stretching something to make it longer',
+      ],
     }
   ),
   word('external', '외부의', 6, 'adjective',
@@ -322,6 +418,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'The skin acts as a protective barrier against external bacteria.', ko: '피부는 외부 박테리아에 대항하는 보호막 역할을 한다.' },
         { en: 'Many companies rely on external funding to expand their operations.', ko: '많은 기업들이 사업 확장을 위해 외부 자금 조달에 의존한다.' },
+      ],
+      wordDistractors: ['eternal', 'extreme', 'extraneous'],
+      definitionDistractors: [
+        'Relating to the innermost core or center of something',
+        'Lasting forever without any end or conclusion',
+        'Reaching the highest possible degree or intensity',
       ],
     }
   ),
@@ -342,6 +444,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The dodo bird became completely gone from the earth in the late 17th century.', ko: '도도새는 17세기 후반에 지구상에서 완전히 멸종되었습니다.' },
         { en: 'Scientists are studying why certain ancient civilizations became inactive and disappeared.', ko: '과학자들은 왜 특정 고대 문명들이 활동을 멈추고 사라졌는지 연구하고 있습니다.' },
       ],
+      wordDistractors: ['instinct', 'distinct', 'extant'],
+      definitionDistractors: [
+        'Currently thriving and growing in large numbers',
+        'Temporarily inactive but expected to return soon',
+        'Rarely seen but still existing in remote areas',
+      ],
     }
   ),
   word('extra', '추가의', 4, 'adjective',
@@ -360,6 +468,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'We need more time to complete the report by Friday.', ko: '금요일까지 보고서를 완성하려면 추가 시간이 필요합니다.' },
         { en: 'The hotel provides blankets for guests during the winter.', ko: '호텔은 겨울 동안 투숙객에게 추가 담요를 제공합니다.' },
+      ],
+      wordDistractors: ['extract', 'extreme', 'extrude'],
+      definitionDistractors: [
+        'Included as part of the standard or basic package',
+        'Removed from an existing collection or inventory',
+        'Required as a mandatory component of something',
       ],
     }
   ),
@@ -380,6 +494,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The young pianist displayed an amazing talent that far exceeded his peers.', ko: '그 어린 피아니스트는 또래를 훨씬 능가하는 비범한 재능을 보여주었다.' },
         { en: 'Scientists are investigating the rare phenomenon that occurred during the solar eclipse.', ko: '과학자들은 일식 동안 발생한 그 비범한 현상을 조사하고 있다.' },
       ],
+      wordDistractors: ['extravagant', 'extraneous', 'extremity'],
+      definitionDistractors: [
+        'Completely ordinary and expected in every way',
+        'Slightly better than average but not noteworthy',
+        'Unusual in a negative or undesirable manner',
+      ],
     }
   ),
   word('eyebrow', '눈썹', 5, 'noun',
@@ -398,6 +518,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'She shaped her eyebrows at the salon.', ko: '그녀는 미용실에서 눈썹을 다듬었다.' },
         { en: 'He raised his eyebrows in disbelief.', ko: '그는 믿을 수 없다는 듯 눈썹을 치켜올렸다.' },
+      ],
+      wordDistractors: ['eyelash', 'eyeball', 'eyelid'],
+      definitionDistractors: [
+        'The thin fold of skin that covers and protects the eye',
+        'The row of fine hairs growing along the edge of the eyelid',
+        'The colored circular part of the eye surrounding the pupil',
       ],
     }
   ),
@@ -418,6 +544,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The new software was designed to help streamline the workflow and improve overall productivity.', ko: '새로운 소프트웨어는 작업 흐름을 원활하게 하고 전반적인 생산성을 높이기 위해 설계되었습니다.' },
         { en: 'Modern infrastructure can often help speed up the distribution of essential goods to remote areas.', ko: '현대적인 기반 시설은 종종 오지까지 필수 물자의 유통을 용이하게 하는 데 도움이 됩니다.' },
       ],
+      wordDistractors: ['fabricate', 'fascinate', 'fluctuate'],
+      definitionDistractors: [
+        'To make a task more difficult or complicated than before',
+        'To create something entirely new from raw materials',
+        'To prevent an action from taking place or succeeding',
+      ],
     }
   ),
   word('fact', '사실', 1, 'noun',
@@ -436,6 +568,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'The scientist gathered every available piece of evidence to support the established fact.', ko: '그 과학자는 확립된 사실을 뒷받침하기 위해 가능한 모든 증거를 수집했습니다.' },
         { en: 'Despite many rumors, the historical fact remains unchanged by public opinion.', ko: '많은 소문에도 불구하고, 역사적 사실은 대중의 의견에 의해 변하지 않고 남아 있습니다.' },
+      ],
+      wordDistractors: ['factor', 'faculty', 'facet'],
+      definitionDistractors: [
+        'A personal belief or opinion held without solid evidence',
+        'An unverified rumor circulated among a group of people',
+        'A fictional story created for entertainment purposes',
       ],
     }
   ),
@@ -456,6 +594,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The automobile company decided to build a new assembly line at their local site.', ko: '자동차 회사는 현지 부지에 새로운 조립 라인 공장을 짓기로 결정했습니다.' },
         { en: 'Many workers are employed to operate the heavy machinery inside the industrial facility.', ko: '많은 노동자들이 산업 시설 내부의 중장비를 가동하기 위해 고용되었습니다.' },
       ],
+      wordDistractors: ['faculty', 'factor', 'facility'],
+      definitionDistractors: [
+        'A small retail shop where goods are sold directly to customers',
+        'A storage building used to keep finished products temporarily',
+        'An office building where administrative tasks are performed',
+      ],
     }
   ),
   word('faculty', '교수진', 9, 'noun',
@@ -474,6 +618,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'The university is proud of its world-class faculty members who have won numerous awards.', ko: '그 대학교는 수많은 상을 받은 세계적인 수준의 교수진을 자랑스럽게 여깁니다.' },
         { en: 'A meeting was held to discuss the new curriculum with the entire arts faculty.', ko: '새로운 커리큘럼을 논의하기 위해 예술 학부 교수진 전체와 회의가 열렸습니다.' },
+      ],
+      wordDistractors: ['factory', 'facility', 'fallacy'],
+      definitionDistractors: [
+        'The student body enrolled at an educational institution',
+        'The administrative support staff at a university',
+        'The physical buildings and grounds of a campus',
       ],
     }
   ),
@@ -494,6 +644,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The bright colors of the curtains began to disappear after years of exposure to direct sunlight.', ko: '직사광선에 수년간 노출된 후 커튼의 밝은 색상들이 바래기 시작했습니다.' },
         { en: 'Memories of that summer evening will slowly diminish as time goes by.', ko: '그 여름 밤의 기억들은 시간이 흐름에 따라 천천히 희미해질 것입니다.' },
       ],
+      wordDistractors: ['faze', 'fake', 'face'],
+      definitionDistractors: [
+        'To become brighter and more vivid over time',
+        'To remain completely unchanged in appearance or condition',
+        'To rapidly increase in intensity or strength',
+      ],
     }
   ),
   word('fail', '실패하다', 3, 'verb',
@@ -512,6 +668,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'Many small businesses struggle and eventually close because they lack enough funding.', ko: '많은 소규모 기업들이 자금 부족으로 고군분투하다 결국 문을 닫습니다.' },
         { en: 'The braking system might stop working if the fluid level drops too low.', ko: '액체 수위가 너무 낮아지면 제동 장치가 제대로 작동하지 않을 수 있습니다.' },
+      ],
+      wordDistractors: ['fall', 'flail', 'frail'],
+      definitionDistractors: [
+        'To achieve a goal or accomplish something successfully',
+        'To attempt something without making a final decision',
+        'To improve steadily over a long period of time',
       ],
     }
   ),
@@ -532,6 +694,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The heat in the crowded room was so intense that several people began to feel lightheaded and eventually collapsed.', ko: '붐비는 방 안의 열기가 너무 심해서 몇몇 사람들이 어지러움을 느끼기 시작하더니 결국 기절했습니다.' },
         { en: 'She nearly lost consciousness when she heard the shocking news about the accident.', ko: '그녀는 사고에 관한 충격적인 소식을 들었을 때 거의 기절할 뻔했습니다.' },
       ],
+      wordDistractors: ['feint', 'saint', 'paint'],
+      definitionDistractors: [
+        'To become fully alert and energized after resting',
+        'To pretend to be injured or weak to deceive others',
+        'To experience a sudden burst of physical strength',
+      ],
     }
   ),
   word('fair', '공정한', 4, 'adjective',
@@ -550,6 +718,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'The referee made a balanced decision that seemed reasonable to both teams.', ko: '심판은 양 팀 모두에게 합리적으로 보이는 공정한 결정을 내렸습니다.' },
         { en: 'Every citizen deserves a neutral trial regardless of their social status.', ko: '모든 시민은 사회적 지위에 상관없이 공정한 재판을 받을 자격이 있습니다.' },
+      ],
+      wordDistractors: ['fare', 'flair', 'affair'],
+      definitionDistractors: [
+        'Favoring one side over the other in a dispute',
+        'Making decisions based solely on personal preference',
+        'Applying different standards depending on the situation',
       ],
     }
   ),
@@ -570,6 +744,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'Watch out or you might slip on the ice and land hard on the ground.', ko: '조심하지 않으면 얼음 위에서 미끄러져 바닥에 세게 넘어질 수도 있어요.' },
         { en: 'The colorful leaves begin to come down from the trees as soon as autumn arrives.', ko: '가을이 오자마자 알록달록한 잎들이 나무에서 떨어지기 시작합니다.' },
       ],
+      wordDistractors: ['fail', 'hall', 'tall'],
+      definitionDistractors: [
+        'To move upward steadily toward a higher position',
+        'To remain stationary in one place without any motion',
+        'To float gently in the air without descending',
+      ],
     }
   ),
   word('false', '거짓의', 5, 'adjective',
@@ -588,6 +768,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'The witness provided a false statement to the police during the investigation.', ko: '그 증인은 조사 중에 경찰에게 거짓 진술을 했다.' },
         { en: 'Many people were misled by the false advertising of the new product.', ko: '많은 사람들이 신제품의 허위 광고에 속았다.' },
+      ],
+      wordDistractors: ['faults', 'farce', 'falter'],
+      definitionDistractors: [
+        'Completely accurate and verified by multiple sources',
+        'Partially correct but missing some minor details',
+        'Based on a personal interpretation of the facts',
       ],
     }
   ),
@@ -608,6 +794,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The city is widely recognized for its ancient architecture and historic landmarks.', ko: '그 도시는 고대 건축물과 역사적 명소들로 널리 유명합니다.' },
         { en: 'Many talented artists struggle for years before they finally become successful and recognized.', ko: '많은 재능 있는 예술가들이 마침내 성공하고 유명해지기 전까지 수년 동안 고군분투합니다.' },
       ],
+      wordDistractors: ['famished', 'famine', 'familial'],
+      definitionDistractors: [
+        'Known only within a small local community',
+        'Deliberately kept secret from the general public',
+        'Recognized primarily for negative or harmful actions',
+      ],
     }
   ),
   word('fan', '팬', 3, 'noun',
@@ -626,6 +818,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'Thousands of people gathered at the stadium to cheer for their favorite team.', ko: '수천 명의 사람들이 자신이 가장 좋아하는 팀을 응원하기 위해 경기장에 모였습니다.' },
         { en: 'She has been a loyal follower of this rock band since their debut album.', ko: '그녀는 이 록 밴드의 데뷔 앨범 때부터 충성스러운 지지자였습니다.' },
+      ],
+      wordDistractors: ['van', 'ban', 'pan'],
+      definitionDistractors: [
+        'A person who strongly criticizes or opposes something',
+        'A mechanical device used to circulate air in a room',
+        'A casual observer with no strong interest or opinion',
       ],
     }
   ),
@@ -646,6 +844,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The child\'s mind was filled with a wild fancy about dragons living in the attic.', ko: '아이의 마음은 다락방에 용이 살고 있다는 엉뚱한 공상으로 가득 차 있었다.' },
         { en: 'It was just a passing fancy that had no basis in the real world.', ko: '그것은 현실 세계에 근거가 없는 그저 지나가는 공상일 뿐이었다.' },
       ],
+      wordDistractors: ['frenzy', 'fiancé', 'finance'],
+      definitionDistractors: [
+        'A well-documented fact supported by solid evidence',
+        'A logical conclusion reached through careful reasoning',
+        'A memory of something that actually happened in the past',
+      ],
     }
   ),
   word('fantastic', '환상적인', 1, 'adjective',
@@ -665,6 +869,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The view from the top of the mountain was absolutely breathtaking and wonderful.', ko: '산 정상에서 본 풍경은 정말 숨이 막힐 정도로 환상적이었다.' },
         { en: 'She did a marvelous job on her final presentation and received a standing ovation.', ko: '그녀는 기말 발표를 환상적으로 해내어 기립 박수를 받았다.' },
       ],
+      wordDistractors: ['fanatic', 'fantasy', 'frantic'],
+      definitionDistractors: [
+        'Extremely poor in quality and deeply disappointing',
+        'Completely average and unremarkable in every way',
+        'Slightly above normal but not particularly impressive',
+      ],
     }
   ),
   word('far', '먼', 2, 'adverb',
@@ -681,8 +891,14 @@ export const vocabBatch33: VocabItem[] = [
       synonyms: ['distant', 'remote', 'away'],
       antonyms: ['near', 'close', 'nearby'],
       exampleSentences: [
-        { en: 'The lighthouse is located across the ocean, too away for us to see clearly.', ko: '등대는 바다 너머 아주 멀리 위치해 있어서 우리가 명확히 볼 수 없습니다.' },
+        { en: 'The lighthouse is located across the ocean, too far away for us to see clearly.', ko: '등대는 바다 너머 아주 멀리 위치해 있어서 우리가 명확히 볼 수 없습니다.' },
         { en: 'How much further do we have to walk before we reach the mountain peak?', ko: '산 정상에 도착하려면 얼마나 더 멀리 걸어가야 하나요?' },
+      ],
+      wordDistractors: ['fair', 'fare', 'farm'],
+      definitionDistractors: [
+        'At a very close and easily reachable distance',
+        'Moving in a circular pattern around a fixed point',
+        'Positioned directly next to something without any gap',
       ],
     }
   ),
@@ -703,6 +919,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The bus driver asked the passengers to have the exact change ready for their travel cost.', ko: '버스 기사는 승객들에게 요금으로 낼 정확한 잔돈을 준비해달라고 요청했습니다.' },
         { en: 'Train prices have increased significantly over the last decade due to rising fuel costs.', ko: '연료비 상승으로 인해 지난 10년 동안 기차 요금이 상당히 올랐습니다.' },
       ],
+      wordDistractors: ['fair', 'flare', 'flair'],
+      definitionDistractors: [
+        'A penalty imposed for breaking a rule or regulation',
+        'A voluntary donation given to support a charitable cause',
+        'The total salary earned by an employee each month',
+      ],
     }
   ),
   word('fascinate', '매혹하다', 4, 'verb',
@@ -722,10 +944,16 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The intricate details of the ancient map continue to interest and pull in historians from around the world.', ko: '그 고대 지도의 복잡한 세부 사항들은 전 세계 역사학자들을 계속해서 매료시키고 있습니다.' },
         { en: 'Space exploration stories always grab the imagination of young children who dream of becoming astronauts.', ko: '우주 탐험 이야기는 우주비행사를 꿈꾸는 어린 아이들의 상상력을 항상 사로잡습니다.' },
       ],
+      wordDistractors: ['fabricate', 'facilitate', 'fluctuate'],
+      definitionDistractors: [
+        'To cause someone to feel bored and uninterested',
+        'To deliberately push someone away from an activity',
+        'To confuse someone by providing misleading information',
+      ],
     }
   ),
   word('fasten', '잠그다, 고정하다', 5, 'verb',
-    ['헐겁게', '느슨하게', '빠르게', '천천히', '곧', '이미', '직접', '간접적으로', '즉시', '뒤늦게'],
+    ['풀다', '열다', '떼다', '느슨하게 하다', '분리하다', '해체하다', '벗기다', '뜯다', '끊다', '제거하다'],
     tips({
       etymology: '고정된 상태를 뜻하는 fast에 \'만들다\'라는 의미의 접미사 en이 붙어 단단히 고정한다는 뜻이 되었습니다.',
       visual: '비행기 이착륙 시 좌석 벨트를 딸깍 소리 나게 채우는 승무원의 동작을 상상해 보세요.',
@@ -740,6 +968,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'Please make sure to secure your seatbelt before the plane takes off.', ko: '비행기가 이륙하기 전에 좌석 벨트를 단단히 매어 주십시오.' },
         { en: 'The carpenter used long screws to fix the wooden board to the wall.', ko: '목수는 나무 판자를 벽에 단단히 고정하기 위해 긴 나사를 사용했습니다.' },
+      ],
+      wordDistractors: ['fashion', 'flatten', 'hasten'],
+      definitionDistractors: [
+        'To loosen or release something from a fixed position',
+        'To break apart or disassemble a connected structure',
+        'To move something freely without any attachment',
       ],
     }
   ),
@@ -760,6 +994,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The neighbor\'s cat has grown quite large and heavy after the winter.', ko: '이웃집 고양이는 겨울이 지난 후 꽤 크고 살이 쪘다.' },
         { en: 'Eating too many sugary snacks can make a person become overweight quickly.', ko: '설탕이 든 간식을 너무 많이 먹으면 사람이 금방 살이 찔 수 있다.' },
       ],
+      wordDistractors: ['fad', 'flat', 'feat'],
+      definitionDistractors: [
+        'Having a very lean and muscular body composition',
+        'Describing food that is low in calories and nutritious',
+        'Being physically fit and in excellent athletic shape',
+      ],
     }
   ),
   word('fatal', '치명적인', 10, 'adjective',
@@ -778,6 +1018,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'The driver suffered a fatal injury in the high-speed collision on the highway.', ko: '운전자는 고속도로에서의 고속 충돌 사고로 치명적인 부상을 입었습니다.' },
         { en: 'A fatal flaw in the software design allowed hackers to access private data easily.', ko: '소프트웨어 설계상의 치명적인 결함으로 인해 해커들이 개인 정보에 쉽게 접근할 수 있었습니다.' },
+      ],
+      wordDistractors: ['fetal', 'feudal', 'facial'],
+      definitionDistractors: [
+        'Causing only minor inconvenience without lasting harm',
+        'Providing a beneficial or healing effect on the body',
+        'Easily preventable with basic safety precautions',
       ],
     }
   ),
@@ -798,6 +1044,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The two long-lost friends met again by a strange twist of fate in a foreign country.', ko: '오랫동안 소식이 끊겼던 두 친구는 타국에서 기묘한 운명의 장난으로 다시 만났다.' },
         { en: 'Many ancient Greek tragedies explore the idea that no mortal can escape their preordained fate.', ko: '많은 고대 그리스 비극은 어떤 필멸자도 정해진 운명을 피할 수 없다는 아이디어를 탐구한다.' },
       ],
+      wordDistractors: ['faith', 'fete', 'gate'],
+      definitionDistractors: [
+        'A deliberate choice made freely by an individual',
+        'A random event with no deeper meaning or significance',
+        'A reward given for outstanding personal achievement',
+      ],
     }
   ),
   word('father', '아버지', 1, 'noun',
@@ -816,6 +1068,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'My male parent taught me how to ride a bicycle in the park.', ko: '나의 아버지는 공원에서 나에게 자전거 타는 법을 가르쳐 주셨다.' },
         { en: 'He became a proud parent of a newborn baby last night.', ko: '그는 어젯밤 갓 태어난 아기의 자랑스러운 아버지가 되었다.' },
+      ],
+      wordDistractors: ['feather', 'further', 'lather'],
+      definitionDistractors: [
+        'A female parent who raises and cares for a child',
+        'A close friend who acts as a guardian or mentor',
+        'An older sibling who takes on a protective role',
       ],
     }
   ),
@@ -836,6 +1094,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'Engineers identified a major mechanical flaw that caused the system to fail.', ko: '엔지니어들은 시스템 고장을 일으킨 주요한 기계적 결함을 찾아냈습니다.' },
         { en: 'It is not your responsibility even if the plan does not work out as expected.', ko: '계획이 예상대로 풀리지 않더라도 그것은 당신의 잘못이 아닙니다.' },
       ],
+      wordDistractors: ['vault', 'foul', 'faults'],
+      definitionDistractors: [
+        'A positive quality or strength in a person or object',
+        'A deliberate action taken to achieve a specific goal',
+        'A recognized achievement or accomplishment',
+      ],
     }
   ),
   word('favor', '호의', 4, 'noun',
@@ -854,6 +1118,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'Could you do me a small favor and pick up my mail while I am away?', ko: '제가 없는 동안 제 우편물을 좀 챙겨주는 작은 호의를 베풀어 주실 수 있나요?' },
         { en: 'The judge showed favor toward the defendant because of his sincere apology.', ko: '판사는 피고인의 진심 어린 사과 덕분에 그에게 호의를 보였습니다.' },
+      ],
+      wordDistractors: ['fever', 'flavor', 'savor'],
+      definitionDistractors: [
+        'An act of hostility or aggression toward another person',
+        'A formal complaint filed against someone in authority',
+        'A demand for repayment of a debt or obligation',
       ],
     }
   ),
@@ -874,6 +1144,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'Blue has always been my top choice for a bedroom wall color.', ko: '파란색은 항상 내가 가장 좋아하는 침실 벽지 색깔이었다.' },
         { en: 'The chef prepared his signature dish for the regular customers.', ko: '요리사는 단골 손님들을 위해 그가 가장 자신 있어 하는 요리를 준비했다.' },
       ],
+      wordDistractors: ['favorable', 'flavored', 'favored'],
+      definitionDistractors: [
+        'Strongly disliked or avoided whenever possible',
+        'Chosen at random without any personal preference',
+        'Considered acceptable but not particularly enjoyable',
+      ],
     }
   ),
   word('fear', '두려움', 5, 'noun',
@@ -892,6 +1168,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'The sudden loud noise filled the young child with intense terror.', ko: '갑작스러운 큰 소음은 어린 아이를 강렬한 두려움으로 채웠다.' },
         { en: 'She had to overcome her deep anxiety of heights to climb the mountain.', ko: '그녀는 산에 오르기 위해 고소공포증을 극복해야만 했다.' },
+      ],
+      wordDistractors: ['feat', 'hear', 'near'],
+      definitionDistractors: [
+        'A feeling of complete calm and relaxation',
+        'A strong sense of excitement about future possibilities',
+        'An overwhelming feeling of joy and happiness',
       ],
     }
   ),
@@ -912,6 +1194,12 @@ export const vocabBatch33: VocabItem[] = [
         { en: 'The most unique aspect of this new car is its advanced safety system.', ko: '이 새 자동차의 가장 독특한 특징은 첨단 안전 시스템입니다.' },
         { en: 'Her large blue eyes are her most striking physical quality.', ko: '그녀의 커다란 파란 눈은 그녀의 가장 눈에 띄는 신체적 특징입니다.' },
       ],
+      wordDistractors: ['fracture', 'creature', 'lecture'],
+      definitionDistractors: [
+        'A flaw or defect that reduces the overall quality',
+        'The complete and total sum of all parts combined',
+        'A temporary condition that changes frequently over time',
+      ],
     }
   ),
   word('fee', '수수료', 7, 'noun',
@@ -929,7 +1217,13 @@ export const vocabBatch33: VocabItem[] = [
       antonyms: ['refund', 'rebate', 'discount'],
       exampleSentences: [
         { en: 'The university increased the annual tuition for all incoming students this year.', ko: '대학교는 올해 모든 신입생의 연간 등록금을 인상했습니다.' },
-        { en: 'You must pay a small processing to complete your application online.', ko: '온라인 신청을 완료하려면 소정의 처리 수수료를 지불해야 합니다.' },
+        { en: 'You must pay a small processing fee to complete your application online.', ko: '온라인 신청을 완료하려면 소정의 처리 수수료를 지불해야 합니다.' },
+      ],
+      wordDistractors: ['flee', 'free', 'foe'],
+      definitionDistractors: [
+        'A gift given voluntarily without expecting anything back',
+        'A monetary reward for completing work ahead of schedule',
+        'A reduction in price offered during a promotional sale',
       ],
     }
   ),
@@ -949,6 +1243,12 @@ export const vocabBatch33: VocabItem[] = [
       exampleSentences: [
         { en: 'The zookeeper goes to the enclosure every morning to provide meals to the lions.', ko: '사육사는 사자들에게 먹이를 주기 위해 매일 아침 우리로 갑니다.' },
         { en: 'Parents often wake up in the middle of the night to give milk to their hungry infants.', ko: '부모들은 종종 배고픈 아기들에게 우유를 먹이기 위해 한밤중에 일어납니다.' },
+      ],
+      wordDistractors: ['feet', 'freed', 'weed'],
+      definitionDistractors: [
+        'To withhold food or resources from a living being',
+        'To consume food or drink for personal nourishment',
+        'To prepare ingredients for cooking a meal',
       ],
     }
   ),

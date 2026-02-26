@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch02: VocabItem[] = [
-  word('Baby', '아기', 1, 'noun',
+  word('baby', '아기', 1, 'noun',
     ['어른', '청소년', '노인', '학생', '선생님', '부모님', '동료', '상사', '군인', '의사'],
     tips({
       etymology: '중세 영어 \'babi\'에서 유래되었으며, 아기들이 내는 옹알이 소리를 흉내 낸 말에서 시작되었습니다.',
@@ -15,13 +15,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A human offspring at the earliest stage of life, before they can walk or talk.',
       synonyms: ['infant', 'newborn', 'toddler'],
       antonyms: ['adult', 'grown-up', 'elder'],
+      wordDistractors: ['Badly', 'Barely', 'Maybe'],
+      definitionDistractors: [
+        'A small domesticated animal kept as a pet or for companionship',
+        'A young plant or seedling in its early stage of growth',
+        'A miniature version or model of something larger',
+      ],
       exampleSentences: [
         { en: 'The baby is sleeping peacefully in the crib.', ko: '아기가 요람에서 평온하게 자고 있다.' },
         { en: 'She held the baby in her arms and sang a lullaby.', ko: '그녀는 품에 아기를 안고 자장가를 불러주었다.' },
       ],
     }
   ),
-  word('Bed', '침대', 1, 'noun',
+  word('bed', '침대', 1, 'noun',
     ['의자', '소파', '탁자', '선반', '책상', '서랍장', '화장대', '옷장', '식탁', '캐비닛'],
     tips({
       etymology: '고대 게르만어에서 유래하여 \'잠을 자기 위해 마련된 장소\'라는 의미를 가집니다.',
@@ -34,13 +40,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A piece of furniture that provides a place to sleep or rest, typically consisting of a mattress on a frame.',
       synonyms: ['mattress', 'couch', 'cot'],
       antonyms: ['floor', 'desk', 'chair'],
+      wordDistractors: ['Bead', 'Bread', 'Bend'],
+      definitionDistractors: [
+        'A flat surface supported by legs, used for working or eating',
+        'A soft cushioned seat for multiple people to sit on',
+        'A structure with shelves for storing or displaying items',
+      ],
       exampleSentences: [
         { en: 'She jumped onto her new bed to see how comfortable it was.', ko: '그녀는 얼마나 편안한지 확인하기 위해 새 침대 위로 뛰어올랐다.' },
         { en: 'After a long day of work, all he wanted was to lie down on his bed.', ko: '긴 하루 일과를 마친 후, 그가 원한 것은 오직 침대에 눕는 것뿐이었다.' },
       ],
     }
   ),
-  word('Bird', '새', 1, 'noun',
+  word('bird', '새', 1, 'noun',
     ['나비', '벌', '파리', '개', '고양이', '물고기', '말', '소', '돼지', '양'],
     tips({
       etymology: '고대 영어 \'bridd\'에서 유래되었으며, 원래는 \'새끼 새\'를 뜻하는 단어였습니다.',
@@ -53,13 +65,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A creature with feathers and wings, typically capable of flight and laying eggs.',
       synonyms: ['fowl', 'avian', 'songbird'],
       antonyms: ['mammal', 'reptile', 'fish'],
+      wordDistractors: ['Beard', 'Birth', 'Bored'],
+      definitionDistractors: [
+        'A small flying insect with colorful wings that goes through metamorphosis',
+        'A nocturnal flying mammal that uses echolocation to navigate',
+        'A powered flying vehicle with wings and an engine',
+      ],
       exampleSentences: [
         { en: 'The colorful bird built a small nest in the apple tree.', ko: '그 화려한 색깔의 새는 사과나무에 작은 둥지를 틀었습니다.' },
         { en: 'Many species of bird migrate south for the winter.', ko: '많은 종의 새들이 겨울을 나기 위해 남쪽으로 이동합니다.' },
       ],
     }
   ),
-  word('Blue', '파란색', 1, 'adjective',
+  word('blue', '파란색', 1, 'adjective',
     ['빨간색', '초록색', '노란색', '검은색', '흰색', '주황색', '보라색', '분홍색', '갈색', '회색'],
     tips({
       etymology: '고대 영어 \'blāw\'에서 유래되었으며, 이는 밝은 색이나 빛나는 색을 의미하는 어원에서 시작되었습니다.',
@@ -72,13 +90,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'having the color of the clear sky or the deep sea',
       synonyms: ['azure', 'cobalt', 'navy'],
       antonyms: ['red', 'orange', 'yellow'],
+      wordDistractors: ['Blew', 'Blur', 'Clue'],
+      definitionDistractors: [
+        'having the color of grass, leaves, or emeralds',
+        'having the color of ripe lemons or sunflowers',
+        'having the color of blood, fire, or rubies',
+      ],
       exampleSentences: [
         { en: 'The ocean looked deep blue under the bright summer sun.', ko: '바다는 밝은 여름 햇살 아래 진한 파란색으로 보였다.' },
         { en: 'He wore a blue shirt that matched the color of his eyes.', ko: '그는 자신의 눈 색깔과 어울리는 파란색 셔츠를 입고 있었다.' },
       ],
     }
   ),
-  word('Box', '상자', 1, 'noun',
+  word('box', '상자', 1, 'noun',
     ['가방', '서랍', '병', '통', '바구니', '자루', '캔', '컵', '냄비', '봉투'],
     tips({
       etymology: '그리스어 \'pyxis\'에서 유래되었으며, 원래 회중나무로 만든 작은 함을 의미했습니다.',
@@ -91,13 +115,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A square or rectangular container with stiff sides and sometimes a lid, used for holding or carrying things.',
       synonyms: ['container', 'carton', 'case'],
       antonyms: ['sphere', 'surface', 'opening'],
+      wordDistractors: ['Fox', 'Boxed', 'Boss'],
+      definitionDistractors: [
+        'A flexible container made of fabric or leather with handles for carrying items',
+        'A cylindrical container typically made of metal for storing liquids or food',
+        'A woven container made of strips of material used for holding or carrying items',
+      ],
       exampleSentences: [
         { en: 'Please put the old books into the cardboard box.', ko: '헌 책들을 판지 상자에 넣어 주세요.' },
         { en: 'He opened the large box to see what was inside.', ko: '그는 안에 무엇이 들어있는지 보려고 커다란 상자를 열었습니다.' },
       ],
     }
   ),
-  word('Bus', '버스', 1, 'noun',
+  word('bus', '버스', 1, 'noun',
     ['기차', '지하철', '택시', '자동차', '비행기', '배', '정류장', '표', '운전사', '승객'],
     tips({
       etymology: '라틴어 \'omnibus\'에서 유래했으며, \'모든 사람을 위한 것\'이라는 의미를 담고 있습니다.',
@@ -110,13 +140,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A large road vehicle designed to carry many people along a fixed route.',
       synonyms: ['coach', 'shuttle', 'transit vehicle'],
       antonyms: ['private car', 'bicycle', 'motorcycle'],
+      wordDistractors: ['Busy', 'Bust', 'Buzz'],
+      definitionDistractors: [
+        'A railway vehicle that runs on tracks and carries passengers or freight',
+        'A motor vehicle with four wheels used for transporting small numbers of people',
+        'An underground railway system used for urban public transportation',
+      ],
       exampleSentences: [
         { en: 'I take the bus to school every morning.', ko: '나는 매일 아침 버스를 타고 학교에 간다.' },
         { en: 'The bus driver waited for the last passenger to board.', ko: '버스 기사는 마지막 승객이 탑승할 때까지 기다렸다.' },
       ],
     }
   ),
-  word('Cake', '케이크', 1, 'noun',
+  word('cake', '케이크', 1, 'noun',
     ['빵', '쿠키', '파이', '과자', '아이스크림', '사탕', '초콜릿', '푸딩', '도넛', '머핀'],
     tips({
       etymology: '고대 노르웨이어 \'kaka\'에서 유래되었으며, 원래는 작고 납작한 빵을 의미했습니다.',
@@ -129,13 +165,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A sweetened food made by baking a mixture of flour, eggs, sugar, and other ingredients, often decorated with icing.',
       synonyms: ['pastry', 'gateau', 'dessert'],
       antonyms: ['vegetable', 'meat', 'main course'],
+      wordDistractors: ['Cane', 'Lake', 'Bake'],
+      definitionDistractors: [
+        'A small baked food item typically crunchy and often eaten as a snack',
+        'A sweet frozen dessert made from cream, milk, and sugar',
+        'A baked bread product that is long and narrow in shape',
+      ],
       exampleSentences: [
         { en: 'She baked a chocolate cake for her best friend\'s party.', ko: '그녀는 가장 친한 친구의 파티를 위해 초콜릿 케이크를 구웠다.' },
         { en: 'The wedding cake was decorated with beautiful white roses.', ko: '그 결혼식 케이크는 아름다운 흰 장미들로 장식되어 있었다.' },
       ],
     }
   ),
-  word('City', '도시', 1, 'noun',
+  word('city', '도시', 1, 'noun',
     ['나라', '마을', '시골', '산', '바다', '숲', '들판', '섬', '강', '호수'],
     tips({
       etymology: '라틴어 \'civitas\'에서 유래되었으며, 이는 시민들의 공동체를 의미합니다.',
@@ -148,13 +190,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A large and important town where many people live and work close together.',
       synonyms: ['metropolis', 'municipality', 'town'],
       antonyms: ['countryside', 'village', 'hamlet'],
+      wordDistractors: ['Pity', 'Ditty', 'Fifty'],
+      definitionDistractors: [
+        'A small settlement in a rural area with few inhabitants',
+        'A nation or state with its own government and borders',
+        'An area of land characterized by farms and natural landscapes',
+      ],
       exampleSentences: [
         { en: 'The lights of the city look beautiful from the airplane at night.', ko: '밤에 비행기에서 내려다보는 도시의 불빛은 아름답다.' },
         { en: 'Public transportation is very convenient in this city.', ko: '이 도시의 대중교통은 매우 편리하다.' },
       ],
     }
   ),
-  word('Cold', '추운', 1, 'adjective',
+  word('cold', '추운', 1, 'adjective',
     ['따뜻한', '뜨거운', '시원한', '더운', '미지근한', '뜨뜻한', '열띤', '무더운', '화끈한', '건조한'],
     tips({
       etymology: '고대 영어 ceald에서 유래되었으며, \'차갑다\'는 근본적인 의미를 지니고 있습니다.',
@@ -167,13 +215,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'having a low temperature or lacking comfortable warmth',
       synonyms: ['chilly', 'freezing', 'icy'],
       antonyms: ['hot', 'warm', 'burning'],
+      wordDistractors: ['Gold', 'Bold', 'Fold'],
+      definitionDistractors: [
+        'having a high temperature or producing great heat',
+        'having a moderate and pleasant temperature',
+        'having little or no moisture or humidity',
+      ],
       exampleSentences: [
         { en: 'The cold winter air felt biting against my skin.', ko: '차가운 겨울 공기가 피부에 매섭게 느껴졌습니다.' },
         { en: 'Make sure to wear a thick coat because it is very cold outdoors.', ko: '밖이 매우 추우니 반드시 두꺼운 코트를 입으세요.' },
       ],
     }
   ),
-  word('Cup', '컵', 1, 'noun',
+  word('cup', '컵', 1, 'noun',
     ['그릇', '접시', '병', '냄비', '수저', '포크', '나이프', '프라이팬', '주전자', '주걱'],
     tips({
       etymology: '라틴어 \'cuppa\'에서 유래되었으며, 이는 통이나 그릇을 의미합니다.',
@@ -186,13 +240,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A small, open container typically used for drinking liquids, often featuring a handle.',
       synonyms: ['mug', 'vessel', 'beaker'],
       antonyms: ['plate', 'platter', 'saucer'],
+      wordDistractors: ['Cap', 'Pup', 'Cop'],
+      definitionDistractors: [
+        'A flat dish used for serving or eating food',
+        'A cylindrical container with a narrow neck used for liquids',
+        'A deep round container used for mixing or serving food',
+      ],
       exampleSentences: [
         { en: 'Would you like a cup of tea?', ko: '차 한 잔 드시겠어요?' },
         { en: 'She filled the cup with fresh water.', ko: '그녀는 컵에 깨끗한 물을 가득 채웠다.' },
       ],
     }
   ),
-  word('Dance', '춤추다', 1, 'verb',
+  word('dance', '춤추다', 1, 'verb',
     ['노래하다', '연주하다', '걷다', '뛰다', '달리다', '놀다', '웃다', '울다', '앉다', '서다'],
     tips({
       etymology: '고대 프랑스어 \'dancier\'에서 유래되었으며, 원래는 \'줄을 지어 움직이다\'라는 의미를 담고 있었습니다.',
@@ -205,13 +265,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'to move your body in a rhythmic way, usually following the beat of music',
       synonyms: ['sway', 'groove', 'boogie'],
       antonyms: ['stand', 'sit', 'freeze'],
+      wordDistractors: ['Chance', 'Glance', 'Prance'],
+      definitionDistractors: [
+        'to produce musical sounds with the voice in a melodic way',
+        'to move at a regular speed by placing one foot in front of the other',
+        'to jump or spring quickly and suddenly from the ground',
+      ],
       exampleSentences: [
         { en: 'The couple decided to dance to their favorite song at the wedding.', ko: '그 커플은 결혼식에서 자신들이 가장 좋아하는 노래에 맞춰 춤을 추기로 했다.' },
         { en: 'Children often dance with joy when they are excited.', ko: '아이들은 신이 나면 종종 기뻐서 춤을 춘다.' },
       ],
     }
   ),
-  word('Door', '문', 1, 'noun',
+  word('door', '문', 1, 'noun',
     ['창문', '벽', '천장', '바닥', '지붕', '열쇠', '자물쇠', '손잡이', '현관', '복도'],
     tips({
       etymology: '고대 영어 \'duru\'에서 유래되었으며, 통로를 막거나 여는 구조물을 뜻합니다.',
@@ -224,13 +290,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A movable barrier used to close off an entrance or exit to a room, building, or vehicle.',
       synonyms: ['entrance', 'gateway', 'entryway'],
       antonyms: ['wall', 'barrier', 'blockade'],
+      wordDistractors: ['Bore', 'Donor', 'Floor'],
+      definitionDistractors: [
+        'A transparent opening in a wall that allows light and air to enter',
+        'A solid vertical structure that divides or encloses an area',
+        'A horizontal passage or hallway connecting rooms in a building',
+      ],
       exampleSentences: [
         { en: 'Please make sure to lock the front door before you go to bed.', ko: '자기 전에 현관문을 꼭 잠그도록 하세요.' },
         { en: 'She heard a loud knock on the door and went to see who it was.', ko: '그녀는 문에서 큰 노크 소리를 듣고 누구인지 보러 갔다.' },
       ],
     }
   ),
-  word('Egg', '달걀', 1, 'noun',
+  word('egg', '달걀', 1, 'noun',
     ['고기', '우유', '치즈', '버터', '빵', '쌀', '과일', '야채', '닭', '수프'],
     tips({
       etymology: '고대 노르웨이어 \'egg\'에서 유래했으며, 아주 오래전부터 인류의 주요 단백질원이었습니다.',
@@ -243,13 +315,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'An oval or round object laid by a female bird, reptile, fish, or insect, often containing a developing embryo and used as food.',
       synonyms: ['ovum', 'seed', 'spawn'],
       antonyms: ['offspring', 'adult', 'animal'],
+      wordDistractors: ['Beg', 'Leg', 'Peg'],
+      definitionDistractors: [
+        'A white liquid produced by mammals used as food and drink',
+        'A solid dairy product made from pressed milk curds',
+        'The flesh of an animal used as food',
+      ],
       exampleSentences: [
         { en: 'She boiled an egg for three minutes to keep the yolk soft.', ko: '그녀는 노른자를 부드럽게 유지하기 위해 달걀을 3분 동안 삶았다.' },
         { en: 'Be careful not to crack the egg when you put it in the basket.', ko: '바구니에 담을 때 달걀이 깨지지 않도록 조심해라.' },
       ],
     }
   ),
-  word('Eye', '눈', 1, 'noun',
+  word('eye', '눈', 1, 'noun',
     ['귀', '코', '입', '얼굴', '머리', '손', '발', '머리카락', '눈썹', '속눈썹'],
     tips({
       etymology: '고대 영어 \'ēage\'에서 유래했으며, 독일어 \'Auge\'와도 어원이 같습니다.',
@@ -262,13 +340,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'The specialized body part that humans and animals use to see and detect light.',
       synonyms: ['eyeball', 'orb', 'optic'],
       antonyms: ['blindness', 'darkness', 'concealment'],
+      wordDistractors: ['Dye', 'Rye', 'Pie'],
+      definitionDistractors: [
+        'The organ of hearing located on each side of the head',
+        'The protruding part of the face used for smelling and breathing',
+        'The opening in the face used for eating and speaking',
+      ],
       exampleSentences: [
         { en: 'She has beautiful brown eyes.', ko: '그녀는 아름다운 갈색 눈을 가지고 있다.' },
         { en: 'He closed his eyes and fell asleep.', ko: '그는 눈을 감고 잠들었다.' },
       ],
     }
   ),
-  word('Face', '얼굴', 1, 'noun',
+  word('face', '얼굴', 1, 'noun',
     ['머리', '목', '손', '발', '몸', '가슴', '등', '배', '어깨', '허리'],
     tips({
       etymology: '라틴어 \'facies\'에서 유래되었으며, 원래 \'형태\'나 \'겉모습\'을 의미하던 단어가 머리의 앞부분을 뜻하게 되었습니다.',
@@ -281,13 +365,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'the front part of the head that includes the eyes, nose, and mouth',
       synonyms: ['countenance', 'features', 'visage'],
       antonyms: ['back', 'rear', 'occiput'],
+      wordDistractors: ['Pace', 'Race', 'Lace'],
+      definitionDistractors: [
+        'The upper part of the human body containing the brain and sensory organs',
+        'The part of the body connecting the head to the shoulders',
+        'The rear or posterior part of the body opposite to the front',
+      ],
       exampleSentences: [
         { en: 'Wash your face before bed.', ko: '자기 전에 얼굴을 씻으세요.' },
         { en: 'She has a friendly face.', ko: '그녀는 인상이 참 좋네요.' },
       ],
     }
   ),
-  word('Food', '음식', 1, 'noun',
+  word('food', '음식', 1, 'noun',
     ['물', '공기', '불', '흙', '돌', '나무', '종이', '플라스틱', '유리', '금속'],
     tips({
       etymology: '고대 영어 fōda에서 유래했으며, \'기르다\' 또는 \'먹이다\'라는 의미를 담고 있습니다.',
@@ -300,13 +390,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'Any nutritious substance that people or animals eat or drink or that plants absorb in order to maintain life and growth.',
       synonyms: ['meal', 'cuisine', 'sustenance'],
       antonyms: ['starvation', 'famine', 'poison'],
+      wordDistractors: ['Mood', 'Good', 'Flood'],
+      definitionDistractors: [
+        'A transparent, tasteless liquid essential for most life forms',
+        'The invisible gaseous substance surrounding the earth',
+        'Clothing or garments worn on the body',
+      ],
       exampleSentences: [
         { en: 'We need food to live and grow healthy.', ko: '우리는 살아가고 건강하게 성장하기 위해 음식이 필요하다.' },
         { en: 'The food at this restaurant is delicious and well-prepared.', ko: '이 레스토랑의 음식은 맛있고 정성스럽게 준비되어 있다.' },
       ],
     }
   ),
-  word('Girl', '소녀', 1, 'noun',
+  word('girl', '소녀', 1, 'noun',
     ['소년', '남자', '여자', '아이', '어른', '엄마', '아빠', '언니', '오빠', '동생'],
     tips({
       etymology: '고대 영어 \'gyrela\'에서 유래되었으며, 원래는 성별에 상관없이 \'어린아이\'를 뜻하는 말이었습니다.',
@@ -319,13 +415,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A young female human who has not yet reached adulthood.',
       synonyms: ['lass', 'maiden', 'schoolgirl'],
       antonyms: ['boy', 'man', 'adult'],
+      wordDistractors: ['Grill', 'Guilt', 'Gill'],
+      definitionDistractors: [
+        'A young male human who has not yet reached adulthood',
+        'A fully grown female human person',
+        'A very young human offspring in the earliest stage of life',
+      ],
       exampleSentences: [
         { en: 'The little girl is playing with her favorite doll in the garden.', ko: '그 어린 소녀는 정원에서 자신이 가장 아끼는 인형을 가지고 놀고 있다.' },
         { en: 'She was a very bright and curious girl who loved reading books.', ko: '그녀는 책 읽기를 좋아하는 아주 영리하고 호기심 많은 소녀였다.' },
       ],
     }
   ),
-  word('Green', '초록색', 1, 'adjective',
+  word('green', '초록색', 1, 'adjective',
     ['빨간색', '파란색', '노란색', '검은색', '흰색', '주황색', '보라색', '갈색', '회색', '분홍색'],
     tips({
       etymology: '고대 영어 \'grēne\'에서 유래했으며, \'자라다(grow)\'라는 단어와 어원이 같아 생명력을 상징합니다.',
@@ -338,13 +440,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'having the color of growing grass or emeralds, formed by mixing blue and yellow',
       synonyms: ['verdant', 'leafy', 'emerald'],
       antonyms: ['red', 'withered', 'pale'],
+      wordDistractors: ['Greed', 'Grin', 'Grain'],
+      definitionDistractors: [
+        'having the color of blood, fire, or ripe tomatoes',
+        'having the color of the clear sky or deep ocean',
+        'having the color of sunshine or ripe lemons',
+      ],
       exampleSentences: [
         { en: 'The hills become green and vibrant after the heavy rain.', ko: '폭우가 내린 후 언덕들이 초록색으로 생기 넘치게 변합니다.' },
         { en: 'She wore a beautiful green dress to the party.', ko: '그녀는 파티에 아름다운 초록색 드레스를 입고 갔습니다.' },
       ],
     }
   ),
-  word('Hat', '모자', 1, 'noun',
+  word('hat', '모자', 1, 'noun',
     ['코트', '재킷', '셔츠', '바지', '신발', '양말', '스카프', '장갑', '안경', '우산'],
     tips({
       etymology: '고대 영어 \'hætt\'에서 유래되었으며, 머리를 덮는 덮개라는 의미를 가지고 있습니다.',
@@ -357,13 +465,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'An item of clothing worn on the head for protection against the weather or as a fashion accessory.',
       synonyms: ['cap', 'headgear', 'bonnet'],
       antonyms: ['shoes', 'socks', 'trousers'],
+      wordDistractors: ['Heat', 'Hate', 'Bat'],
+      definitionDistractors: [
+        'A piece of clothing worn on the foot, typically inside a shoe',
+        'A garment worn around the neck for warmth or fashion',
+        'Hand coverings worn for warmth or protection',
+      ],
       exampleSentences: [
         { en: 'She took off her hat when she entered the building.', ko: '그녀는 건물에 들어설 때 모자를 벗었다.' },
         { en: 'You should wear a wide-brimmed hat to protect your face from the sun.', ko: '햇빛으로부터 얼굴을 보호하려면 챙이 넓은 모자를 써야 한다.' },
       ],
     }
   ),
-  word('Home', '집', 1, 'noun',
+  word('home', '집', 1, 'noun',
     ['학교', '회사', '병원', '가게', '공원', '길', '산', '바다', '숲', '사무실'],
     tips({
       etymology: '고대 영어 hām에서 유래되었으며, 단순히 건물을 뜻하는 house와 달리 정서적 안식처라는 의미가 강합니다.',
@@ -376,13 +490,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'The specific residence or social unit where an individual or family lives and feels a sense of belonging.',
       synonyms: ['residence', 'dwelling', 'abode'],
       antonyms: ['abroad', 'wilderness', 'office'],
+      wordDistractors: ['Dome', 'Roam', 'Poem'],
+      definitionDistractors: [
+        'A building used for educational instruction and learning',
+        'A place where people go to work or conduct business',
+        'A large outdoor area with grass and trees for recreation',
+      ],
       exampleSentences: [
         { en: 'After a long trip, it feels wonderful to finally be home.', ko: '긴 여행 끝에 마침내 집에 오니 기분이 정말 좋다.' },
         { en: 'She wanted to create a warm and welcoming home for her children.', ko: '그녀는 아이들을 위해 따뜻하고 환영받는 집을 만들고 싶어 했다.' },
       ],
     }
   ),
-  word('King', '왕', 1, 'noun',
+  word('king', '왕', 1, 'noun',
     ['여왕', '공주', '왕자', '기사', '신하', '대통령', '총리', '백성', '노예', '황제'],
     tips({
       etymology: '고대 영어 \'cyning\'에서 유래되었으며, \'가문\'이나 \'혈통\'을 뜻하는 단어와 연결되어 혈통에 의한 통치자를 의미합니다.',
@@ -395,13 +515,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A male sovereign who rules a kingdom, usually inheriting the position by birth and holding it for life.',
       synonyms: ['monarch', 'ruler', 'sovereign'],
       antonyms: ['subject', 'commoner', 'servant'],
+      wordDistractors: ['Ring', 'Wing', 'Sing'],
+      definitionDistractors: [
+        'A female sovereign who rules a kingdom or empire',
+        'The son of a king or queen who may inherit the throne',
+        'An elected head of state in a republic',
+      ],
       exampleSentences: [
         { en: 'The people gathered in the square to catch a glimpse of the new king.', ko: '사람들은 새 왕을 한 번 보기 위해 광장에 모였다.' },
         { en: 'In many fairy tales, the king lives in a magnificent castle with his family.', ko: '많은 동화에서 왕은 가족과 함께 웅장한 성에 산다.' },
       ],
     }
   ),
-  word('Leg', '다리', 1, 'noun',
+  word('leg', '다리', 1, 'noun',
     ['팔', '손', '발', '머리', '목', '허리', '등', '가슴', '어깨', '무릎'],
     tips({
       etymology: '고대 노르웨이어 \'leggr\'에서 유래되었으며, 원래는 뼈나 줄기를 의미했습니다.',
@@ -414,13 +540,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'One of the long parts of the body that a person or animal uses for standing and moving.',
       synonyms: ['limb', 'member', 'shank'],
       antonyms: ['arm', 'torso', 'head'],
+      wordDistractors: ['Log', 'Beg', 'Peg'],
+      definitionDistractors: [
+        'One of the upper limbs used for grasping and manipulating objects',
+        'The end part of the leg below the ankle used for standing',
+        'The joint in the middle of the leg that bends when walking',
+      ],
       exampleSentences: [
         { en: 'She stretched her legs after sitting for a long time.', ko: '그녀는 오랫동안 앉아 있은 후에 다리를 쭉 폈다.' },
         { en: 'The wooden table has four sturdy legs.', ko: '그 나무 탁자는 네 개의 튼튼한 다리를 가지고 있다.' },
       ],
     }
   ),
-  word('Man', '남자', 1, 'noun',
+  word('man', '남자', 1, 'noun',
     ['여자', '아이', '소년', '소녀', '어른', '노인', '아버지', '아들', '형제', '사과'],
     tips({
       etymology: '고대 영어 \'mann\'에서 유래되었으며, 원래는 성별에 관계없이 \'사람\' 전체를 일컫는 말이었습니다.',
@@ -433,13 +565,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A fully grown male person as distinguished from a woman or a boy.',
       synonyms: ['male', 'gentleman', 'fellow'],
       antonyms: ['woman', 'lady', 'female'],
+      wordDistractors: ['Men', 'Can', 'Pan'],
+      definitionDistractors: [
+        'A fully grown female person as distinguished from a man or girl',
+        'A young male human who has not yet reached adulthood',
+        'A human offspring at the earliest stage of life',
+      ],
       exampleSentences: [
         { en: 'The man is walking his dog in the park.', ko: '그 남자가 공원에서 개를 산책시키고 있다.' },
         { en: 'He is a man of his word and always keeps his promises.', ko: '그는 약속을 반드시 지키는 신용 있는 남자이다.' },
       ],
     }
   ),
-  word('Nose', '코', 1, 'noun',
+  word('nose', '코', 1, 'noun',
     ['눈', '입', '귀', '얼굴', '머리', '턱', '볼', '이마', '목', '가슴'],
     tips({
       etymology: '고대 영어 \'nosu\'에서 유래되었으며, 독일어 \'Nase\'와도 어원이 같습니다.',
@@ -452,13 +590,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'The part of the face that sticks out above the mouth, used for breathing and smelling odors.',
       synonyms: ['snout', 'beak', 'proboscis'],
       antonyms: ['ear', 'eye', 'mouth'],
+      wordDistractors: ['Rose', 'Hose', 'Noise'],
+      definitionDistractors: [
+        'The organ of hearing located on the side of the head',
+        'The opening in the lower part of the face used for eating and speaking',
+        'The organ of sight that detects light and allows vision',
+      ],
       exampleSentences: [
         { en: 'She has a small nose that wrinkles when she laughs.', ko: '그녀는 웃을 때 찡긋거리는 작은 코를 가지고 있다.' },
         { en: 'He has a cold and his nose is completely stuffed up.', ko: '그는 감기에 걸려서 코가 완전히 꽉 막혔다.' },
       ],
     }
   ),
-  word('Old', '오래된', 1, 'adjective',
+  word('old', '오래된', 1, 'adjective',
     ['새로운', '젊은', '어린', '신선한', '최신의', '현대적인', '최근의', '싱싱한', '풋풋한', '초보의'],
     tips({
       etymology: '고대 영어 \'eald\'에서 유래되었으며, 성숙함이나 오랜 시간을 견뎌온 상태를 의미합니다.',
@@ -471,13 +615,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'having existed for a long period of time or being far advanced in years',
       synonyms: ['ancient', 'aged', 'antique'],
       antonyms: ['young', 'modern', 'recent'],
+      wordDistractors: ['Cold', 'Bold', 'Sold'],
+      definitionDistractors: [
+        'having existed for only a short time or recently made',
+        'being in the early part of life or development',
+        'relating to present or recent times as opposed to the past',
+      ],
       exampleSentences: [
         { en: 'The library is full of old books that smell like history.', ko: '그 도서관은 역사적인 냄새가 나는 오래된 책들로 가득하다.' },
         { en: 'He still drives his old car even though it breaks down often.', ko: '그는 자주 고장이 나는데도 여전히 자신의 낡은 차를 운전한다.' },
       ],
     }
   ),
-  word('Again', '다시', 2, 'adverb',
+  word('again', '다시', 2, 'adverb',
     ['처음', '한번만', '절대', '가끔', '자주', '아직', '이미', '곧', '나중에', '영원히'],
     tips({
       etymology: '고대 영어 \'ongean\'에서 유래되었으며, 원래는 \'반대 방향으로\' 또는 \'맞서서\'라는 의미를 가지고 있었습니다.',
@@ -490,13 +640,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'on another occasion or one more time than before',
       synonyms: ['anew', 'repeatedly', 'furthermore'],
       antonyms: ['once', 'never', 'finally'],
+      wordDistractors: ['Against', 'Gain', 'Rain'],
+      definitionDistractors: [
+        'at the present time or at this moment',
+        'at all times or on all occasions',
+        'at no time in the past or future',
+      ],
       exampleSentences: [
         { en: 'If you fail the first time, you should try again.', ko: '처음에 실패한다면, 다시 시도해야 합니다.' },
         { en: 'It was great to see my old childhood friends again after all these years.', ko: '수년이 지난 후에 어린 시절 친구들을 다시 만나서 정말 좋았습니다.' },
       ],
     }
   ),
-  word('Begin', '시작하다', 2, 'verb',
+  word('begin', '시작하다', 2, 'verb',
     ['끝내다', '멈추다', '계속하다', '추가하다', '빼다', '바꾸다', '움직이다', '쉬다', '대기하다', '준비하다'],
     tips({
       etymology: '고대 영어 \'beginnan\'에서 유래했으며, \'무언가를 열다\'라는 의미의 어원을 가지고 있습니다.',
@@ -509,13 +665,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'to perform the first part of an action or to come into existence',
       synonyms: ['start', 'commence', 'initiate'],
       antonyms: ['finish', 'conclude', 'terminate'],
+      wordDistractors: ['Began', 'Being', 'Begun'],
+      definitionDistractors: [
+        'to bring something to an end or complete an action',
+        'to go on with an activity without interruption',
+        'to make something ready for use or action',
+      ],
       exampleSentences: [
         { en: 'The concert will begin in ten minutes.', ko: '콘서트는 10분 후에 시작될 것입니다.' },
         { en: 'She decided to begin a new career as a writer.', ko: '그녀는 작가로서 새로운 경력을 시작하기로 결심했습니다.' },
       ],
     }
   ),
-  word('Body', '몸', 2, 'noun',
+  word('body', '몸', 2, 'noun',
     ['머리', '팔', '다리', '손', '발', '심장', '뇌', '피', '뼈', '근육'],
     tips({
       etymology: '고대 영어 \'bodig\'에서 유래되었으며, 원래는 사람이나 동물의 물리적인 실체 전체를 의미합니다.',
@@ -528,13 +690,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'The entire physical substance and structure of a living being, including the bones, flesh, and organs.',
       synonyms: ['physique', 'figure', 'torso'],
       antonyms: ['soul', 'mind', 'spirit'],
+      wordDistractors: ['Buddy', 'Bloody', 'Badly'],
+      definitionDistractors: [
+        'The non-physical part of a person that includes thoughts and feelings',
+        'The organ inside the head that controls thought and feeling',
+        'The central organ that pumps blood through the body',
+      ],
       exampleSentences: [
         { en: 'Regular exercise helps to keep your body healthy and strong.', ko: '규칙적인 운동은 당신의 몸을 건강하고 튼튼하게 유지하도록 도와줍니다.' },
         { en: 'The main body of the report contains all the essential data.', ko: '보고서의 본문에는 모든 필수적인 데이터가 포함되어 있습니다.' },
       ],
     }
   ),
-  word('Bring', '가져오다', 2, 'verb',
+  word('bring', '가져오다', 2, 'verb',
     ['가져가다', '보내다', '받다', '주다', '던지다', '놓다', '찾다', '잃다', '사다', '팔다'],
     tips({
       etymology: '고대 영어 bringan에서 유래되었으며, 물건을 옮기거나 동반한다는 의미를 담고 있습니다.',
@@ -547,13 +715,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'to carry, convey, or lead someone or something to the place where the speaker is',
       synonyms: ['carry', 'fetch', 'deliver'],
       antonyms: ['take', 'remove', 'leave'],
+      wordDistractors: ['Ring', 'Spring', 'String'],
+      definitionDistractors: [
+        'to carry or move something away from the speaker to another place',
+        'to transport something from one place to another by holding it',
+        'to go and get something or someone and bring them back',
+      ],
       exampleSentences: [
         { en: 'Don\'t forget to bring your umbrella in case it rains.', ko: '비가 올 경우를 대비해 우산을 가져오는 것을 잊지 마세요.' },
         { en: 'Could you bring me the report by the end of the day?', ko: '오늘 일과가 끝나기 전까지 그 보고서를 저에게 가져다 주시겠어요?' },
       ],
     }
   ),
-  word('Child', '아이', 2, 'noun',
+  word('child', '아이', 2, 'noun',
     ['어른', '청소년', '노인', '부모', '형제', '친구', '선생님', '학생', '아기', '유아'],
     tips({
       etymology: '고대 영어 \'cild\'에서 유래되었으며, 원래는 \'태아\'나 \'갓 태어난 아기\'를 의미했습니다.',
@@ -566,13 +740,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A young human being below the age of full physical development or the legal age of majority.',
       synonyms: ['kid', 'juvenile', 'youngster'],
       antonyms: ['adult', 'grown-up', 'elder'],
+      wordDistractors: ['Chilled', 'Mild', 'Wild'],
+      definitionDistractors: [
+        'A fully grown person who has reached maturity',
+        'A person in the transitional phase between childhood and adulthood',
+        'A very young infant in the earliest stage of life',
+      ],
       exampleSentences: [
         { en: 'Every child deserves to grow up in a safe and loving environment.', ko: '모든 아이는 안전하고 사랑 넘치는 환경에서 자랄 자격이 있다.' },
         { en: 'The child was building a sandcastle on the beach with a small shovel.', ko: '그 아이는 작은 삽을 가지고 해변에서 모래성을 쌓고 있었다.' },
       ],
     }
   ),
-  word('Color', '색', 2, 'noun',
+  word('color', '색', 2, 'noun',
     ['모양', '크기', '무게', '질감', '그림', '소리', '냄새', '온도', '길이', '부피'],
     tips({
       etymology: '라틴어 \'color\'에서 유래되었으며, 원래 \'덮개\'나 \'가리는 것\'이라는 의미에서 사물의 겉모습을 뜻하게 되었습니다.',
@@ -585,13 +765,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'The property possessed by an object of producing different sensations on the eye as a result of the way it reflects or emits light.',
       synonyms: ['hue', 'shade', 'tint'],
       antonyms: ['colorlessness', 'paleness', 'achromatism'],
+      wordDistractors: ['Collar', 'Cooler', 'Caller'],
+      definitionDistractors: [
+        'The external form, contour, or outline of an object',
+        'The physical dimensions or magnitude of something',
+        'The feel or appearance of a surface or substance',
+      ],
       exampleSentences: [
         { en: 'The artist mixed different colors to create a unique shade of blue.', ko: '화가는 독특한 푸른색을 만들기 위해 여러 가지 색을 섞었습니다.' },
         { en: 'Autumn leaves change color from green to vibrant red and gold.', ko: '가을 잎들은 초록색에서 선명한 빨간색과 금색으로 색이 변합니다.' },
       ],
     }
   ),
-  word('Country', '나라', 2, 'noun',
+  word('country', '나라', 2, 'noun',
     ['도시', '마을', '지역', '대륙', '세계', '수도', '국경', '시골', '해외', '고향'],
     tips({
       etymology: '라틴어 \'contrata\'에서 유래되었으며, \'눈앞에 펼쳐진 땅\'이라는 의미를 담고 있습니다.',
@@ -604,13 +790,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A distinct territorial body or political entity that possesses its own government and sovereign borders.',
       synonyms: ['nation', 'state', 'land'],
       antonyms: ['city', 'metropolis', 'province'],
+      wordDistractors: ['County', 'Counter', 'Century'],
+      definitionDistractors: [
+        'A large and important town with many buildings and people',
+        'A rural area characterized by farms and natural landscapes',
+        'A large landmass that contains multiple countries',
+      ],
       exampleSentences: [
         { en: 'Every country has its own unique culture and traditions.', ko: '모든 나라는 저마다의 고유한 문화와 전통을 가지고 있다.' },
         { en: 'He traveled to a foreign country to study international relations.', ko: '그는 국제 관계를 공부하기 위해 외국으로 여행을 떠났다.' },
       ],
     }
   ),
-  word('Dark', '어두운', 2, 'adjective',
+  word('dark', '어두운', 2, 'adjective',
     ['밝은', '환한', '빛나는', '투명한', '선명한', '하얀', '눈부신', '화창한', '반짝이는', '명쾌한'],
     tips({
       etymology: '고대 영어 \'deorc\'에서 유래되었으며, 빛이 없는 상태나 사악함을 의미하는 뿌리를 가지고 있습니다.',
@@ -623,13 +815,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'With little or no light, or having a color that is close to black rather than white.',
       synonyms: ['dim', 'gloomy', 'shadowy'],
       antonyms: ['bright', 'light', 'luminous'],
+      wordDistractors: ['Park', 'Bark', 'Mark'],
+      definitionDistractors: [
+        'Having or giving off a lot of light; shining or radiant',
+        'Having a pale or light color rather than a deep or strong one',
+        'Clear and easy to see or understand',
+      ],
       exampleSentences: [
         { en: 'The sky grew dark as the storm approached.', ko: '폭풍이 다가오자 하늘이 어두워졌습니다.' },
         { en: 'She prefers wearing dark colors like navy blue and charcoal.', ko: '그녀는 남색이나 숯색처럼 어두운 색깔의 옷을 입는 것을 선호합니다.' },
       ],
     }
   ),
-  word('Earth', '지구', 2, 'noun',
+  word('earth', '지구', 2, 'noun',
     ['달', '태양', '화성', '금성', '우주', '은하수', '대기권', '지평선', '천체', '혜성'],
     tips({
       etymology: '고대 영어 \'eorthe\'에서 유래되었으며, 원래는 \'땅\'이나 \'흙\'을 의미하던 단어가 우리가 사는 행성 전체를 뜻하게 되었습니다.',
@@ -642,13 +840,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'The third planet from the sun in our solar system, which is the only known celestial body to support life.',
       synonyms: ['globe', 'world', 'planet'],
       antonyms: ['sky', 'space', 'heaven'],
+      wordDistractors: ['Birth', 'Worth', 'North'],
+      definitionDistractors: [
+        'The natural satellite that orbits around the Earth',
+        'The star at the center of our solar system that provides light and heat',
+        'The fourth planet from the sun, known as the red planet',
+      ],
       exampleSentences: [
         { en: 'The Earth takes about 365 days to complete one orbit around the Sun.', ko: '지구가 태양 주위를 한 바퀴 도는 데는 약 365일이 걸립니다.' },
         { en: 'Environmental groups are working hard to reduce pollution on Earth.', ko: '환경 단체들은 지구의 오염을 줄이기 위해 열심히 노력하고 있습니다.' },
       ],
     }
   ),
-  word('Fast', '빠른', 2, 'adjective',
+  word('fast', '빠른', 2, 'adjective',
     ['느린', '천천히', '정지된', '여유로운', '지연된', '늦은', '완만한', '정체된', '둔한', '나태한'],
     tips({
       etymology: '고대 영어 fæst에서 유래되었으며, 원래는 \'단단히 고정된\'이라는 의미였으나 시간이 흐르며 \'빠르게 움직이는\'이라는 뜻으로 변화했습니다.',
@@ -661,13 +865,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'Moving or capable of moving at high speed or performing a task in a short amount of time.',
       synonyms: ['quick', 'rapid', 'swift'],
       antonyms: ['slow', 'sluggish', 'leisurely'],
+      wordDistractors: ['Feast', 'Fist', 'Last'],
+      definitionDistractors: [
+        'Moving or operating at a reduced speed or taking a long time',
+        'Occurring suddenly or without delay',
+        'Having great physical power or strength',
+      ],
       exampleSentences: [
         { en: 'The cheetah is the fastest land animal in the world.', ko: '치타는 세계에서 가장 빠른 육상 동물입니다.' },
         { en: 'She gave a fast response to the urgent email.', ko: '그녀는 긴급한 이메일에 빠른 답장을 보냈습니다.' },
       ],
     }
   ),
-  word('Friend', '친구', 2, 'noun',
+  word('friend', '친구', 2, 'noun',
     ['적', '낯선 사람', '경쟁자', '동료', '이웃', '선생님', '상사', '부모님', '형제', '원수'],
     tips({
       etymology: '고대 영어 \'freond\'에서 유래했으며, 이는 \'사랑하다\'라는 의미의 동사 어근과 연결되어 사랑하는 사람을 뜻합니다.',
@@ -680,13 +890,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A person with whom one has a bond of mutual affection, typically one exclusive of sexual or family relations.',
       synonyms: ['companion', 'buddy', 'pal'],
       antonyms: ['enemy', 'foe', 'rival'],
+      wordDistractors: ['Fiend', 'Trend', 'Blend'],
+      definitionDistractors: [
+        'A person who is actively opposed or hostile to someone',
+        'A person who competes with another for the same objective',
+        'A person who works jointly with others in the same organization',
+      ],
       exampleSentences: [
         { en: 'We have been best friends since our early childhood.', ko: '우리는 어린 시절부터 가장 친한 친구 사이였습니다.' },
         { en: 'A true friend will stand by you even in difficult times.', ko: '진정한 친구는 어려운 시기에도 당신의 곁을 지켜줄 것입니다.' },
       ],
     }
   ),
-  word('Game', '게임', 2, 'noun',
+  word('game', '게임', 2, 'noun',
     ['운동', '놀이', '경기', '승부', '규칙', '플레이어', '점수', '시합', '대회', '토너먼트'],
     tips({
       etymology: '고대 영어 \'gamen\'에서 유래했으며, 즐거움, 재미, 또는 오락이라는 의미를 담고 있습니다.',
@@ -699,13 +915,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'An entertaining activity or competitive sport played according to a specific set of rules.',
       synonyms: ['match', 'contest', 'pastime'],
       antonyms: ['work', 'labor', 'chore'],
+      wordDistractors: ['Fame', 'Name', 'Tame'],
+      definitionDistractors: [
+        'Activity involving mental or physical effort done to achieve a purpose',
+        'An activity that one engages in for amusement without competition',
+        'A form of physical activity for exercise or competition',
+      ],
       exampleSentences: [
         { en: 'The children are playing a board game in the living room.', ko: '아이들이 거실에서 보드게임을 하고 있다.' },
         { en: 'Our team won the final game of the season.', ko: '우리 팀이 이번 시즌의 마지막 경기에서 승리했다.' },
       ],
     }
   ),
-  word('Group', '그룹', 2, 'noun',
+  word('group', '그룹', 2, 'noun',
     ['개인', '단독', '개체', '독창', '일인', '고립', '분리', '독립', '단일', '파편'],
     tips({
       etymology: '이탈리아어 \'gruppo\'에서 유래되었으며, 원래는 조각가들이 여러 인물을 한데 묶어 표현한 예술 작품을 뜻했습니다.',
@@ -718,13 +940,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A collection of individuals, animals, or objects that are located close together or share common characteristics.',
       synonyms: ['cluster', 'assembly', 'collection'],
       antonyms: ['individual', 'single', 'entity'],
+      wordDistractors: ['Grope', 'Troop', 'Droop'],
+      definitionDistractors: [
+        'A single person considered separately from a group',
+        'An organized body of people with a particular purpose',
+        'A set of things belonging to the same category',
+      ],
       exampleSentences: [
         { en: 'The teacher divided the class into a small group for the discussion.', ko: '선생님은 토론을 위해 학급을 작은 그룹으로 나누었다.' },
         { en: 'A large group of tourists gathered in front of the palace gates.', ko: '많은 수의 관광객 무리가 궁전 정문 앞에 모였다.' },
       ],
     }
   ),
-  word('Head', '머리', 2, 'noun',
+  word('head', '머리', 2, 'noun',
     ['가슴', '어깨', '다리', '손가락', '발가락', '허리', '무릎', '팔꿈치', '등', '목구멍'],
     tips({
       etymology: '고대 영어 hēafod에서 유래되었으며, 신체의 가장 윗부분이나 우두머리를 뜻합니다.',
@@ -737,13 +965,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'The uppermost part of the human body that contains the brain, eyes, ears, nose, and mouth.',
       synonyms: ['skull', 'brain', 'chief'],
       antonyms: ['foot', 'tail', 'bottom'],
+      wordDistractors: ['Heard', 'Bead', 'Lead'],
+      definitionDistractors: [
+        'The organ inside the skull that controls thought, memory, and feeling',
+        'The front part of the head containing eyes, nose, and mouth',
+        'The part of the body connecting the head to the shoulders',
+      ],
       exampleSentences: [
         { en: 'She wore a beautiful hat on her head.', ko: '그녀는 머리에 예쁜 모자를 쓰고 있었다.' },
         { en: 'The athlete suffered a minor injury to his head during the game.', ko: '그 선수는 경기 중 머리에 경미한 부상을 입었다.' },
       ],
     }
   ),
-  word('Heart', '심장', 2, 'noun',
+  word('heart', '심장', 2, 'noun',
     ['뇌', '폐', '간', '위', '신장', '혈액', '근육', '신체', '세포', '뼈'],
     tips({
       etymology: '고대 영어 \'heorte\'에서 유래되었으며, 생명의 중심이라는 의미를 담고 있습니다.',
@@ -756,13 +990,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'The muscular organ in the chest that pumps blood throughout the body by rhythmic contraction and dilation.',
       synonyms: ['cardiac organ', 'core', 'center'],
       antonyms: ['exterior', 'periphery', 'surface'],
+      wordDistractors: ['Heard', 'Start', 'Chart'],
+      definitionDistractors: [
+        'The organ that controls thought, memory, and bodily functions',
+        'The organs in the chest that enable breathing and oxygen exchange',
+        'The large organ in the abdomen that processes nutrients from food',
+      ],
       exampleSentences: [
         { en: 'The athlete has a very strong and healthy heart.', ko: '그 운동선수는 매우 튼튼하고 건강한 심장을 가지고 있다.' },
         { en: 'Exercise helps to improve your blood circulation and heart rate.', ko: '운동은 혈액 순환과 심박수 개선에 도움을 준다.' },
       ],
     }
   ),
-  word('Horse', '말', 2, 'noun',
+  word('horse', '말', 2, 'noun',
     ['소', '양', '돼지', '닭', '개', '고양이', '토끼', '당나귀', '염소', '사슴'],
     tips({
       etymology: '고대 영어 \'hors\'에서 유래되었으며, 독일어 \'Ross\'와도 어원이 닿아 있는 유서 깊은 단어입니다.',
@@ -775,13 +1015,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A large four-legged mammal with hooves and a mane, commonly used for riding, racing, or pulling heavy loads.',
       synonyms: ['steed', 'stallion', 'equine'],
       antonyms: ['donkey', 'mule', 'pony'],
+      wordDistractors: ['House', 'Hose', 'Hoarse'],
+      definitionDistractors: [
+        'A large domesticated mammal raised for meat, milk, or leather',
+        'A long-eared domesticated animal used for carrying loads',
+        'A large wild animal with antlers found in forests',
+      ],
       exampleSentences: [
         { en: 'The professional rider guided the horse gracefully over the tall wooden fence.', ko: '전문 기수는 말을 능숙하게 몰아 높은 나무 울타리를 우아하게 넘었습니다.' },
         { en: 'Farmers used to rely on the horse to pull heavy plows across the fields before tractors existed.', ko: '트랙터가 존재하기 전, 농부들은 들판에서 무거운 쟁기를 끌기 위해 말에게 의지하곤 했습니다.' },
       ],
     }
   ),
-  word('Large', '큰', 2, 'adjective',
+  word('large', '큰', 2, 'adjective',
     ['작은', '좁은', '짧은', '얇은', '가벼운', '적은', '미세한', '협소한', '부족한', '빈약한'],
     tips({
       etymology: '라틴어 largus에서 유래되었으며, 원래는 \'풍부한\' 또는 \'관대한\'이라는 의미를 담고 있었습니다.',
@@ -794,13 +1040,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'of considerable or relatively great size, quantity, or extent',
       synonyms: ['big', 'huge', 'sizeable'],
       antonyms: ['small', 'tiny', 'little'],
+      wordDistractors: ['Barge', 'Charge', 'Enlarge'],
+      definitionDistractors: [
+        'of a size that is less than normal or usual',
+        'having a great distance from one side to the other',
+        'having great vertical extent or height',
+      ],
       exampleSentences: [
         { en: 'The company has a large number of employees working in this building.', ko: '그 회사는 이 건물에서 근무하는 아주 많은 수의 직원을 보유하고 있습니다.' },
         { en: 'They live in a large house with a beautiful garden in the backyard.', ko: '그들은 뒷마당에 아름다운 정원이 딸린 큰 집에 삽니다.' },
       ],
     }
   ),
-  word('Letter', '편지', 2, 'noun',
+  word('letter', '편지', 2, 'noun',
     ['우편', '이메일', '알파벳', '글자', '단어', '문장', '책', '신문', '메시지', '연락'],
     tips({
       etymology: '라틴어 littera에서 유래하여 글자나 기록된 문서를 뜻하게 되었습니다.',
@@ -813,13 +1065,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A written or printed communication addressed to a person or organization and usually transmitted by mail.',
       synonyms: ['note', 'message', 'missive'],
       antonyms: ['silence', 'speech', 'void'],
+      wordDistractors: ['Litter', 'Latter', 'Better'],
+      definitionDistractors: [
+        'A single symbol of the alphabet used in writing',
+        'Electronic mail sent and received via computer',
+        'A conversation or spoken communication between people',
+      ],
       exampleSentences: [
         { en: 'I received a handwritten letter from my grandmother this morning.', ko: '나는 오늘 아침 할머니로부터 손편지를 받았다.' },
         { en: 'She carefully folded the letter and placed it inside the envelope.', ko: '그녀는 편지를 조심스럽게 접어서 봉투 안에 넣었다.' },
       ],
     }
   ),
-  word('Light', '빛', 2, 'noun',
+  word('light', '빛', 2, 'noun',
     ['어둠', '그림자', '불꽃', '연기', '안개', '소리', '냄새', '먼지', '습기', '온도'],
     tips({
       etymology: '고대 영어 lēoht에서 유래되었으며, 인도유럽어족의 \'빛나다\'라는 어근에서 시작되었습니다.',
@@ -832,13 +1090,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'The natural agent that stimulates sight and makes things visible.',
       synonyms: ['illumination', 'radiance', 'brightness'],
       antonyms: ['darkness', 'shadow', 'obscurity'],
+      wordDistractors: ['Flight', 'Night', 'Sight'],
+      definitionDistractors: [
+        'The absence of light; the state of being dark',
+        'Sound or vibrations that travel through the air',
+        'A burning flame that produces heat and light',
+      ],
       exampleSentences: [
         { en: 'The morning sun filled the entire room with golden light.', ko: '아침 햇살이 방 안을 황금빛으로 가득 채웠다.' },
         { en: 'We could see a faint light coming from the distant cabin.', ko: '우리는 멀리 떨어진 오두막에서 나오는 희미한 빛을 볼 수 있었다.' },
       ],
     }
   ),
-  word('Magic', '마법', 2, 'noun',
+  word('magic', '마법', 2, 'noun',
     ['현실', '과학', '기술', '논리', '사실', '증거', '이성', '실제', '법칙', '상식'],
     tips({
       etymology: '고대 페르시아의 사제 계급인 \'magus\'에서 유래하여 초자연적인 힘을 다루는 기술을 뜻하게 되었습니다.',
@@ -851,13 +1115,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A mysterious power that allows people to do things that seem impossible in the natural world.',
       synonyms: ['sorcery', 'wizardry', 'witchcraft'],
       antonyms: ['reality', 'science', 'fact'],
+      wordDistractors: ['Tragic', 'Fabric', 'Logic'],
+      definitionDistractors: [
+        'The systematic study of the natural world through observation and experiment',
+        'Something that actually exists or has occurred',
+        'Reasoning conducted according to strict principles of validity',
+      ],
       exampleSentences: [
         { en: 'The fairy godmother used her wand to perform magic.', ko: '요정 대모는 지팡이를 사용하여 마법을 부렸습니다.' },
         { en: 'In many fairy tales, magic is used to turn pumpkins into carriages.', ko: '많은 동화에서 마법은 호박을 마차로 바꾸는 데 사용됩니다.' },
       ],
     }
   ),
-  word('Music', '음악', 2, 'noun',
+  word('music', '음악', 2, 'noun',
     ['노래', '악기', '멜로디', '리듬', '소리', '소음', '고요', '춤', '연극', '영화'],
     tips({
       etymology: '그리스 신화에서 예술을 관장하는 여신들인 \'뮤즈(Muse)\'의 기술이라는 뜻에서 유래되었습니다.',
@@ -870,13 +1140,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A pattern of sounds made by instruments or voices which are combined in a way that is pleasant or interesting to hear.',
       synonyms: ['melody', 'tune', 'composition'],
       antonyms: ['silence', 'noise', 'quiet'],
+      wordDistractors: ['Musty', 'Mystic', 'Rustic'],
+      definitionDistractors: [
+        'The complete absence of sound',
+        'Loud, unpleasant, or disturbing sounds',
+        'Spoken or written words used for communication',
+      ],
       exampleSentences: [
         { en: 'I listen to music every day to relax after work.', ko: '나는 퇴근 후 휴식을 취하기 위해 매일 음악을 듣는다.' },
         { en: 'She studied classical music at a famous university.', ko: '그녀는 유명한 대학교에서 클래식 음악을 공부했다.' },
       ],
     }
   ),
-  word('North', '북쪽', 2, 'noun',
+  word('north', '북쪽', 2, 'noun',
     ['남쪽', '동쪽', '서쪽', '위쪽', '아래쪽', '방향', '좌표', '나침반', '지도', '위치'],
     tips({
       etymology: '고대 영어 \'norþ\'에서 유래했으며, 이는 \'왼쪽\'을 의미하는 인도유럽어 어근에서 왔을 가능성이 큽니다. 해가 뜨는 동쪽을 바라볼 때 왼쪽이 북쪽이기 때문입니다.',
@@ -889,13 +1165,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'The cardinal point of the compass that is at 0 degrees and is the opposite of south.',
       synonyms: ['northern part', 'arctic', 'boreal'],
       antonyms: ['south', 'southern part', 'antarctic'],
+      wordDistractors: ['Worth', 'Forth', 'Fourth'],
+      definitionDistractors: [
+        'The direction toward the point of the horizon where the sun sets',
+        'The direction toward the point where the sun rises',
+        'The direction opposite to north on a compass',
+      ],
       exampleSentences: [
         { en: 'The birds fly south in the winter and return to the north in the spring.', ko: '새들은 겨울에 남쪽으로 날아갔다가 봄에 다시 북쪽으로 돌아온다.' },
         { en: 'The compass needle always points toward the magnetic north.', ko: '나침반 바늘은 항상 자북 방향을 가리킨다.' },
       ],
     }
   ),
-  word('Picture', '그림', 2, 'noun',
+  word('picture', '그림', 2, 'noun',
     ['사진', '도화지', '화가', '프레임', '갤러리', '미술', '디자인', '그림자', '영상', '영화'],
     tips({
       etymology: '라틴어 \'pictus(그리다)\'에서 유래하여 눈에 보이는 형상을 묘사한 것을 뜻합니다.',
@@ -908,13 +1190,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'A visual representation of a person, object, or scene, typically created on a flat surface using tools like pencils or brushes.',
       synonyms: ['painting', 'illustration', 'sketch'],
       antonyms: ['reality', 'original', 'subject'],
+      wordDistractors: ['Pitcher', 'Feature', 'Capture'],
+      definitionDistractors: [
+        'An image captured by a camera using light',
+        'A piece of written text, especially in a book or newspaper',
+        'A three-dimensional representation or model of something',
+      ],
       exampleSentences: [
         { en: 'The artist spent several months finishing this detailed picture of the mountains.', ko: '그 화가는 이 세밀한 산 그림을 완성하는 데 몇 달을 보냈다.' },
         { en: 'Please draw a simple picture to show what your dream house looks like.', ko: '당신의 꿈의 집이 어떻게 생겼는지 보여주기 위해 간단한 그림을 그려 주세요.' },
       ],
     }
   ),
-  word('Ready', '준비된', 2, 'adjective',
+  word('ready', '준비된', 2, 'adjective',
     ['준비 안 된', '바쁜', '여유로운', '당황한', '불안한', '확신한', '의심하는', '완성된', '미완성', '진행중'],
     tips({
       etymology: '고대 영어 rǣde에서 유래되었으며, 원래 \'말을 탈 준비가 된\' 또는 \'정돈된\'이라는 의미를 담고 있습니다.',
@@ -927,13 +1215,19 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'fully prepared for action or use and available to be used immediately',
       synonyms: ['prepared', 'set', 'equipped'],
       antonyms: ['unprepared', 'unready', 'unwilling'],
+      wordDistractors: ['Steady', 'Already', 'Greedy'],
+      definitionDistractors: [
+        'not prepared or made ready for something',
+        'feeling nervous or anxious about something',
+        'having already happened or been done',
+      ],
       exampleSentences: [
         { en: 'The team is fully prepared and ready for the final match tomorrow.', ko: '그 팀은 내일 있을 결승전을 위해 모든 준비를 마쳤습니다.' },
         { en: 'Please let me know when the report is ready for review.', ko: '보고서 검토 준비가 완료되면 저에게 알려주세요.' },
       ],
     }
   ),
-  word('South', '남쪽', 2, 'noun',
+  word('south', '남쪽', 2, 'noun',
     ['북쪽', '동쪽', '서쪽', '위쪽', '아래쪽', '방향', '적도', '남반구', '지도', '위치'],
     tips({
       etymology: '고대 영어 sūþ에서 유래되었으며, \'태양의 방향\'이라는 의미를 담고 있습니다.',
@@ -946,6 +1240,12 @@ export const vocabBatch02: VocabItem[] = [
       definition: 'The direction that is to your right when you are facing the rising sun, or the part of the world towards the bottom of a map.',
       synonyms: ['southern part', 'meridian', 'southerly direction'],
       antonyms: ['North', 'Arctic', 'northern region'],
+      wordDistractors: ['Mouth', 'Youth', 'Couch'],
+      definitionDistractors: [
+        'The direction toward the top of a map and opposite to south',
+        'The direction toward the point where the sun rises',
+        'The direction toward the point where the sun sets',
+      ],
       exampleSentences: [
         { en: 'Many birds fly to the warmer regions in the south during winter.', ko: '많은 새들이 겨울 동안 남쪽의 더 따뜻한 지역으로 날아갑니다.' },
         { en: 'The city is located about fifty miles to the south of the capital.', ko: '그 도시는 수도에서 남쪽으로 약 50마일 떨어진 곳에 위치해 있습니다.' },

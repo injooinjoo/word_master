@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch12: VocabItem[] = [
-  word('Elaborate', '정교한', 6, 'adjective',
+  word('elaborate', '정교한', 6, 'adjective',
     ['단순한', '조악한', '대충 만든', '미완성', '기본적인', '원시적인', '투박한', '조잡한', '수수한', '간소한'],
     tips({
       etymology: '접두사 e-(밖으로)와 labor(노동/수고)가 결합되어, 정성과 노력을 밖으로 쏟아부어 완성했다는 의미에서 유래되었습니다.',
@@ -19,9 +19,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The ceiling was decorated with an elaborate floral pattern.', ko: '천장은 정교한 꽃무늬로 장식되어 있었다.' },
         { en: 'They made elaborate preparations for the royal wedding.', ko: '그들은 왕실 결혼식을 위해 정교하고 치밀한 준비를 했다.' },
       ],
+      wordDistractors: ['laborate', 'evaporate', 'deliberate'],
+      definitionDistractors: [
+        'To express strong disapproval of something in a formal statement.',
+        'To repeat an action multiple times until it becomes automatic.',
+        'To remove unnecessary parts from a written document.',
+      ],
     }
   ),
-  word('Embrace', '포용하다', 6, 'verb',
+  word('embrace', '포용하다', 6, 'verb',
     ['거부하다', '밀어내다', '회피하다', '배척하다', '추방하다', '거절하다', '배제하다', '소외시키다', '차단하다', '무시하다'],
     tips({
       etymology: 'em(안에)과 brace(팔)가 결합되어 \'팔 안에 품다\'라는 의미에서 유래했습니다.',
@@ -38,9 +44,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'We must embrace diversity to build a better community.', ko: '더 나은 공동체를 만들기 위해 우리는 다양성을 포용해야 한다.' },
         { en: 'She embraced her daughter warmly after the long journey.', ko: '긴 여행 끝에 그녀는 딸을 따뜻하게 껴안았다.' },
       ],
+      wordDistractors: ['embark', 'embroil', 'emboss'],
+      definitionDistractors: [
+        'To carefully examine the details of a legal contract before signing.',
+        'To forcibly remove someone from a position of authority.',
+        'To wrap a fragile object in protective material for shipping.',
+      ],
     }
   ),
-  word('Emission', '배출', 6, 'noun',
+  word('emission', '배출', 6, 'noun',
     ['흡수', '저장', '차단', '억제', '제거', '저감', '봉쇄', '보관', '정화', '채집'],
     tips({
       etymology: '접두사 e-(밖으로)와 어근 mit(보내다)가 결합되어, 무언가를 외부로 내보내는 행위를 뜻합니다.',
@@ -57,9 +69,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The government introduced new laws to limit carbon dioxide emission from vehicles.', ko: '정부는 차량의 이산화탄소 배출을 제한하기 위한 새로운 법안을 도입했습니다.' },
         { en: 'The sun\'s energy emission provides the necessary heat for life on Earth.', ko: '태양의 에너지 방출은 지구상의 생명체에 필요한 열을 제공합니다.' },
       ],
+      wordDistractors: ['emulsion', 'omission', 'admission'],
+      definitionDistractors: [
+        'The act of formally accepting someone into a group or institution.',
+        'A written statement expressing an official position on a public issue.',
+        'The process of absorbing nutrients from food into the bloodstream.',
+      ],
     }
   ),
-  word('Empathy', '공감', 6, 'noun',
+  word('empathy', '공감', 6, 'noun',
     ['냉담', '무관심', '무시', '적대', '혐오', '냉대', '무감동', '냉소', '거리감', '이질'],
     tips({
       etymology: '접두사 em(안으로)과 어근 path(감정)가 결합되어 타인의 감정 속으로 직접 들어간다는 의미를 형성합니다.',
@@ -76,9 +94,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The therapist listened with deep empathy to help the patient feel understood.', ko: '상담사는 환자가 이해받고 있다고 느끼도록 깊은 공감을 하며 경청했습니다.' },
         { en: 'Developing empathy allows us to build stronger and more meaningful relationships with others.', ko: '공감 능력을 기르는 것은 타인과 더 강하고 의미 있는 관계를 쌓을 수 있게 해줍니다.' },
       ],
+      wordDistractors: ['apathy', 'entropy', 'epigraph'],
+      definitionDistractors: [
+        'A strong feeling of dislike or hostility toward another person.',
+        'The ability to recall past events with photographic accuracy.',
+        'A formal agreement between two parties to resolve a dispute.',
+      ],
     }
   ),
-  word('Empirical', '경험적인', 6, 'adjective',
+  word('empirical', '경험적인', 6, 'adjective',
     ['이론적인', '추상적인', '가설적인', '관념적인', '상상속의', '비실증적인', '추측에 근거한', '공상적인', '비현실적인', '형이상학적인'],
     tips({
       etymology: '그리스어 empeiria(경험)에서 유래되었으며, 머릿속의 논리가 아닌 실제 몸으로 겪은 일을 강조합니다.',
@@ -95,9 +119,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The researchers provided empirical evidence to support their controversial new theory.', ko: '연구원들은 자신들의 논란 많은 새로운 이론을 뒷받침하기 위해 경험적 증거를 제시했습니다.' },
         { en: 'We cannot rely on intuition alone; we need empirical data to make an informed decision.', ko: '직관에만 의존할 수는 없습니다. 현명한 결정을 내리기 위해서는 실증적인 데이터가 필요합니다.' },
       ],
+      wordDistractors: ['imperial', 'ephemeral', 'empyreal'],
+      definitionDistractors: [
+        'Based on inherited cultural traditions passed down through generations.',
+        'Relating to the authority of a ruling monarch or emperor.',
+        'Determined by popular consensus rather than individual expertise.',
+      ],
     }
   ),
-  word('Endorse', '승인하다', 6, 'verb',
+  word('endorse', '승인하다', 6, 'verb',
     ['거부하다', '반대하다', '비난하다', '거절하다', '무효화하다', '취소하다', '철회하다', '부인하다', '금지하다', '배척하다'],
     tips({
       etymology: '라틴어 \'dorsum(등)\'에서 유래하여, 서류의 뒷면(등)에 서명하여 승인한다는 의미에서 시작되었습니다.',
@@ -114,9 +144,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The former president decided to endorse the new candidate\'s campaign.', ko: '전직 대통령은 새 후보의 선거 운동을 공식적으로 지지하기로 결정했습니다.' },
         { en: 'Many professional athletes endorse specific sports brands for additional income.', ko: '많은 프로 운동선수들이 추가 수입을 위해 특정 스포츠 브랜드를 홍보합니다.' },
       ],
+      wordDistractors: ['enforce', 'enclose', 'engross'],
+      definitionDistractors: [
+        'To formally withdraw a previous statement or legal claim.',
+        'To impose a financial penalty on someone for breaking a rule.',
+        'To secretly monitor the activities of a political opponent.',
+      ],
     }
   ),
-  word('Enforce', '시행하다', 6, 'verb',
+  word('enforce', '시행하다', 6, 'verb',
     ['방치하다', '무시하다', '철회하다', '완화하다', '해제하다', '포기하다', '방임하다', '소홀히하다', '유예하다', '폐지하다'],
     tips({
       etymology: '접두사 en-(만들다)과 force(힘)가 결합되어 \'힘을 가해 실제로 실행되게 만들다\'라는 의미를 가집니다.',
@@ -133,9 +169,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The police are responsible for enforcing traffic regulations.', ko: '경찰은 교통 규정을 시행할 책임이 있다.' },
         { en: 'It is difficult to enforce these new safety measures without additional funding.', ko: '추가 예산 없이는 이러한 새로운 안전 조치들을 시행하기 어렵다.' },
       ],
+      wordDistractors: ['endorse', 'engorge', 'enclose'],
+      definitionDistractors: [
+        'To provide financial assistance to an organization in need.',
+        'To voluntarily step down from a position of leadership.',
+        'To offer a detailed explanation of a complicated subject.',
+      ],
     }
   ),
-  word('Engage', '참여시키다', 6, 'verb',
+  word('engage', '참여시키다', 6, 'verb',
     ['배제하다', '무시하다', '해제하다', '떠나게 하다', '소외시키다', '거부하다', '해산하다', '이탈하다', '방치하다', '회피하다'],
     tips({
       etymology: 'en(안에)과 gage(약속/담보)가 합쳐져 \'약속 안으로 끌어들이다\'라는 어원을 가집니다.',
@@ -152,9 +194,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The speaker used humor to engage the audience effectively.', ko: '연설가는 청중을 효과적으로 참여시키기 위해 유머를 사용했습니다.' },
         { en: 'It is often difficult to engage young children in a long lesson.', ko: '긴 수업 시간 동안 어린 아이들을 참여시키는 것은 종종 어렵습니다.' },
       ],
+      wordDistractors: ['enrage', 'enlarge', 'engrave'],
+      definitionDistractors: [
+        'To formally terminate a business relationship or partnership.',
+        'To arrange items in a specific sequence based on their size.',
+        'To publicly criticize someone for their poor performance.',
+      ],
     }
   ),
-  word('Enhance', '향상시키다', 6, 'verb',
+  word('enhance', '향상시키다', 6, 'verb',
     ['악화시키다', '훼손하다', '약화시키다', '감소시키다', '저하시키다', '방해하다', '퇴보하다', '해치다', '손상시키다', '억제하다'],
     tips({
       etymology: '접두사 en(만들다)과 hance(높은 곳으로 올리다)가 결합하여 가치나 질을 더 높게 만든다는 뜻이 되었습니다.',
@@ -171,9 +219,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The new software will enhance the performance of your computer.', ko: '새 소프트웨어는 당신의 컴퓨터 성능을 향상시킬 것입니다.' },
         { en: 'Adding spices can enhance the flavor of the dish.', ko: '향신료를 추가하면 요리의 풍미를 돋울 수 있습니다.' },
       ],
+      wordDistractors: ['enchant', 'ensnare', 'endure'],
+      definitionDistractors: [
+        'To break something down into smaller, more manageable pieces.',
+        'To maintain the current condition without any modification.',
+        'To reverse the effects of a previously applied treatment.',
+      ],
     }
   ),
-  word('Enterprise', '기업', 6, 'noun',
+  word('enterprise', '기업', 6, 'noun',
     ['개인', '취미', '무계획', '비조직', '해체', '공백', '비영리', '단순노동', '휴식', '정체'],
     tips({
       etymology: 'enter(사이에)와 prise(잡다)가 합쳐져 \'어떤 일에 착수하다\'라는 뜻에서 유래했습니다.',
@@ -190,9 +244,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The new enterprise created hundreds of jobs in the local area.', ko: '그 새로운 기업은 지역 사회에 수백 개의 일자리를 창출했습니다.' },
         { en: 'Starting a business is a risky enterprise.', ko: '사업을 시작하는 것은 위험이 따르는 일입니다.' },
       ],
+      wordDistractors: ['entertain', 'entrance', 'envision'],
+      definitionDistractors: [
+        'A government-funded program designed to provide social welfare benefits.',
+        'A brief period of rest taken between two demanding activities.',
+        'The legal process of transferring ownership of property to another person.',
+      ],
     }
   ),
-  word('Entity', '실체', 6, 'noun',
+  word('entity', '실체', 6, 'noun',
     ['공허', '환상', '추상', '개념', '무형', '착각', '환영', '허구', '가상', '부재'],
     tips({
       etymology: '라틴어 \'ens(존재하는 것)\'에서 유래하여, 다른 것과 섞이지 않고 독립적으로 존재하는 대상을 의미합니다.',
@@ -209,9 +269,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The two companies merged but remained separate legal entities.', ko: '두 회사는 합병했지만 별개의 법적 실체로 남았습니다.' },
         { en: 'The church is a separate entity from the state.', ko: '교회는 국가와 분리된 독립된 실체입니다.' },
       ],
+      wordDistractors: ['enmity', 'eternity', 'identity'],
+      definitionDistractors: [
+        'A theoretical framework used to explain natural phenomena.',
+        'A temporary state of emotional distress caused by external events.',
+        'The process of combining separate elements into a unified whole.',
+      ],
     }
   ),
-  word('Epidemic', '유행병', 6, 'noun',
+  word('epidemic', '유행병', 6, 'noun',
     ['회복', '치유', '예방', '소멸', '완치', '정상화', '안정', '건강', '종식', '면역'],
     tips({
       etymology: '그리스어 epi(위에)와 demos(사람들)가 결합되어 사람들 사이에 널리 퍼져 있는 상태를 뜻합니다.',
@@ -228,9 +294,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The flu epidemic caused many schools to close temporarily.', ko: '독감 유행병으로 인해 많은 학교가 임시 휴교했습니다.' },
         { en: 'The city is facing an epidemic of drug abuse.', ko: '그 도시는 약물 남용의 급격한 확산 문제에 직면해 있습니다.' },
       ],
+      wordDistractors: ['endemic', 'academic', 'episodic'],
+      definitionDistractors: [
+        'A sudden improvement in economic conditions across a region.',
+        'A formal ceremony held to honor distinguished public servants.',
+        'A gradual decline in population due to migration patterns.',
+      ],
     }
   ),
-  word('Equip', '갖추다', 6, 'verb',
+  word('equip', '갖추다', 6, 'verb',
     ['벗기다', '탈취하다', '해제하다', '제거하다', '미비하다', '박탈하다', '빼앗다', '버리다', '방치하다', '소홀히하다'],
     tips({
       etymology: '고대 프랑스어 \'esquiper\'에서 유래했으며, 본래 \'배에 필요한 물자를 싣고 출항 준비를 하다\'라는 의미에서 시작되었습니다.',
@@ -247,9 +319,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The laboratory is equipped with the latest technology.', ko: '그 실험실은 최신 기술 장비들을 갖추고 있습니다.' },
         { en: 'The course will equip you with the skills needed for the job.', ko: '이 과정은 당신에게 업무에 필요한 기술을 갖추게 해 줄 것입니다.' },
       ],
+      wordDistractors: ['quip', 'equity', 'esquire'],
+      definitionDistractors: [
+        'To disassemble a machine into its individual component parts.',
+        'To formally request additional funding from an oversight committee.',
+        'To train someone in the art of public speaking and debate.',
+      ],
     }
   ),
-  word('Equivalent', '동등한', 6, 'adjective',
+  word('equivalent', '동등한', 6, 'adjective',
     ['불균형한', '비대칭의', '열등한', '우월한', '이질적인', '불일치하는', '상이한', '비등가적인', '상반된', '부족한'],
     tips({
       etymology: '라틴어의 equi(동일한)와 valere(가치가 있다)가 결합되어 \'가치가 같다\'는 의미를 형성합니다.',
@@ -266,9 +344,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'Eight kilometers is roughly equivalent to five miles.', ko: '8킬로미터는 대략 5마일과 동등한 거리입니다.' },
         { en: 'Silence is sometimes equivalent to an admission of guilt.', ko: '침묵은 때때로 죄를 인정하는 것과 같은 의미를 가집니다.' },
       ],
+      wordDistractors: ['eloquent', 'equivocal', 'equipment'],
+      definitionDistractors: [
+        'Existing in greater quantity or superior quality compared to others.',
+        'Occurring at regular intervals throughout a specified time period.',
+        'Completely unrelated and having no connection to the matter at hand.',
+      ],
     }
   ),
-  word('Erode', '침식하다', 6, 'verb',
+  word('erode', '침식하다', 6, 'verb',
     ['축적하다', '쌓다', '건설하다', '보강하다', '보존하다', '강화하다', '증가시키다', '고치다', '유지하다', '창조하다'],
     tips({
       etymology: '라틴어 \'erodere\'에서 유래되었으며, \'e(밖으로)\'와 \'rodere(갉아먹다)\'가 합쳐져 표면을 갉아내어 없앤다는 의미를 가집니다.',
@@ -285,9 +369,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The coastline is slowly being eroded by the constant action of the sea.', ko: '해안선이 바다의 지속적인 작용에 의해 서서히 침식되고 있습니다.' },
         { en: 'Repeated scandals began to erode the public\'s trust in the government.', ko: '반복된 스캔들이 정부에 대한 대중의 신뢰를 갉아먹기 시작했습니다.' },
       ],
+      wordDistractors: ['erupt', 'evade', 'encode'],
+      definitionDistractors: [
+        'To rapidly increase in size or volume due to internal pressure.',
+        'To carefully reconstruct a damaged structure to its original form.',
+        'To distribute resources equally among all participants in a group.',
+      ],
     }
   ),
-  word('Ethic', '윤리', 6, 'noun',
+  word('ethic', '윤리', 6, 'noun',
     ['무도덕', '비양심', '부정', '부패', '타락', '비윤리', '무원칙', '방종', '해이', '부도덕'],
     tips({
       etymology: '그리스어 ethos(성품, 관습)에서 유래하여 사회적 도리를 뜻합니다.',
@@ -304,9 +394,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The medical profession has a strict code of ethics.', ko: '의료직은 엄격한 윤리 강령을 가지고 있습니다.' },
         { en: 'She has a very strong work ethic and never leaves early.', ko: '그녀는 직업 윤리 의식이 매우 강해서 절대 일찍 퇴근하지 않습니다.' },
       ],
+      wordDistractors: ['ethnic', 'ether', 'epoch'],
+      definitionDistractors: [
+        'A legally binding document that outlines the terms of employment.',
+        'The study of logical reasoning and systematic argumentation.',
+        'A physical sensation triggered by exposure to extreme temperatures.',
+      ],
     }
   ),
-  word('Ethnic', '민족적', 6, 'adjective',
+  word('ethnic', '민족적', 6, 'adjective',
     ['국제적', '보편적', '세계적', '혼합된', '다문화의', '무국적의', '동질적인', '통합된', '융합된', '일반적인'],
     tips({
       etymology: '그리스어 ethnos(민족, 사람들)에서 유래하여 특정 집단의 고유한 특성을 나타냅니다.',
@@ -323,9 +419,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The city is known for its vibrant mix of different ethnic groups.', ko: '그 도시는 다양한 민족 집단이 활기차게 섞여 있는 것으로 유명하다.' },
         { en: 'She enjoys collecting ethnic jewelry from her travels around the world.', ko: '그녀는 세계 여행을 다니며 민족 색채가 강한 장신구를 수집하는 것을 즐긴다.' },
       ],
+      wordDistractors: ['ethic', 'aesthetic', 'eclectic'],
+      definitionDistractors: [
+        'Describing a style of art that rejects traditional techniques and conventions.',
+        'Pertaining to the economic policies of a particular government.',
+        'Characteristic of behavior learned through formal academic training.',
+      ],
     }
   ),
-  word('Evolution', '진화', 6, 'noun',
+  word('evolution', '진화', 6, 'noun',
     ['퇴화', '퇴보', '고정', '정체', '불변', '퇴행', '해체', '소멸', '정지', '고착'],
     tips({
       etymology: '접두사 e(밖으로)와 volut(구르다/말다)가 결합하여, 안으로 말려있던 잠재력이 밖으로 펼쳐지며 발전한다는 의미를 담고 있습니다.',
@@ -342,9 +444,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The theory of evolution explains how species change over generations.', ko: '진화론은 종이 세대를 거쳐 어떻게 변화하는지 설명해 준다.' },
         { en: 'We are witnessing a rapid evolution in the way humans communicate through digital tools.', ko: '우리는 디지털 도구를 통한 인간의 의사소통 방식의 급격한 진화를 목격하고 있다.' },
       ],
+      wordDistractors: ['revolution', 'evaluation', 'elevation'],
+      definitionDistractors: [
+        'A sudden and dramatic overthrow of an existing political system.',
+        'The careful assessment of performance based on established criteria.',
+        'The physical distance measured between sea level and a geographic point.',
+      ],
     }
   ),
-  word('Exaggerate', '과장하다', 6, 'verb',
+  word('exaggerate', '과장하다', 6, 'verb',
     ['축소하다', '축약하다', '최소화하다', '왜소화하다', '절제하다', '생략하다', '무시하다', '낮추다', '요약하다', '감추다'],
     tips({
       etymology: '라틴어 ex(강조)와 agger(더미)가 결합되어 \'더미를 높게 쌓아 올리다\'라는 어원에서 유래했습니다.',
@@ -361,9 +469,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The media tends to exaggerate minor incidents.', ko: '언론은 사소한 사건들을 과장하는 경향이 있다.' },
         { en: 'I am not trying to exaggerate, but we are in serious trouble.', ko: '과장하려는 것은 아니지만, 우리는 지금 심각한 곤경에 처해 있다.' },
       ],
+      wordDistractors: ['exasperate', 'elaborate', 'evaporate'],
+      definitionDistractors: [
+        'To carefully verify each detail of a report for factual accuracy.',
+        'To gradually reduce the intensity of a bright light source.',
+        'To translate a text from one language into another with precision.',
+      ],
     }
   ),
-  word('Excerpt', '발췌', 6, 'noun',
+  word('excerpt', '발췌', 6, 'noun',
     ['전문', '전체', '원본', '완본', '총괄', '총론', '개론', '통합본', '종합', '전집'],
     tips({
       etymology: '라틴어 \'ex(밖으로)\'와 \'carpere(뽑다)\'가 결합되어 긴 글에서 특정 부분을 밖으로 뽑아냈다는 뜻이 되었습니다.',
@@ -380,9 +494,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The professor distributed a brief excerpt from the historical document for the students to analyze.', ko: '교수님은 학생들이 분석할 수 있도록 역사적 문헌에서 발췌한 짧은 부분을 나누어 주었다.' },
         { en: 'I only had time to listen to a short musical excerpt of the symphony before the meeting started.', ko: '회의가 시작되기 전에 교향곡에서 발췌한 짧은 부분만 들을 시간이 있었다.' },
       ],
+      wordDistractors: ['exert', 'expert', 'exempt'],
+      definitionDistractors: [
+        'A comprehensive summary that covers all key points of a long report.',
+        'An original manuscript written by the author before any editing.',
+        'A formal critique of a published academic paper or study.',
+      ],
     }
   ),
-  word('Exclusive', '독점적인', 6, 'adjective',
+  word('exclusive', '독점적인', 6, 'adjective',
     ['포괄적인', '공개적인', '개방적인', '대중적인', '공통의', '보편적인', '공유된', '협력적인', '통합된', '포용적인'],
     tips({
       etymology: '접두사 ex(밖으로)와 claudere(닫다)가 결합되어, 외부 사람들을 차단하고 문을 닫아버린다는 의미에서 유래되었습니다.',
@@ -399,9 +519,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The hotel offers an exclusive beach area for its guests.', ko: '그 호텔은 투숙객들을 위해 독점적인 해변 구역을 제공한다.' },
         { en: 'They signed an exclusive contract to sell the product in Asia.', ko: '그들은 아시아에서 그 제품을 판매하기 위한 독점 계약을 체결했다.' },
       ],
+      wordDistractors: ['elusive', 'excessive', 'explosive'],
+      definitionDistractors: [
+        'Available to everyone without any restrictions or membership requirements.',
+        'Produced in extremely large quantities to meet overwhelming consumer demand.',
+        'Designed to be easily understood by people of all educational backgrounds.',
+      ],
     }
   ),
-  word('Execute', '실행하다', 6, 'verb',
+  word('execute', '실행하다', 6, 'verb',
     ['중단하다', '취소하다', '생략하다', '포기하다', '방치하다', '해제하다', '철회하다', '정지하다', '지연시키다', '거부하다'],
     tips({
       etymology: '라틴어 ex(완전히)와 secut(따르다)가 결합되어, 어떤 일을 끝까지 따라가서 완수한다는 의미를 담고 있습니다.',
@@ -418,9 +544,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The team worked together to execute the strategy effectively.', ko: '팀은 전략을 효과적으로 실행하기 위해 협력했습니다.' },
         { en: 'The soldiers executed the order without any hesitation.', ko: '병사들은 망설임 없이 명령을 수행했습니다.' },
       ],
+      wordDistractors: ['executive', 'excavate', 'exorcise'],
+      definitionDistractors: [
+        'To carefully review and approve a document before it is published.',
+        'To delay taking action until all necessary information has been gathered.',
+        'To permanently remove a digital file from a computer storage system.',
+      ],
     }
   ),
-  word('Exempt', '면제하다', 6, 'verb',
+  word('exempt', '면제하다', 6, 'verb',
     ['적용하다', '포함하다', '부과하다', '의무화하다', '강제하다', '징수하다', '속박하다', '제한하다', '구속하다', '연루시키다'],
     tips({
       etymology: '라틴어 ex(밖으로)와 emere(가져가다)가 결합되어, 의무의 영역 밖으로 끄집어내어 준다는 의미에서 유래했습니다.',
@@ -437,9 +569,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The government decided to exempt low-income families from the new property tax.', ko: '정부는 저소득 가구에 대해 새로운 재산세를 면제해 주기로 결정했다.' },
         { en: 'Students with high grades may be exempted from taking the final examination.', ko: '성적이 우수한 학생들은 기말고사를 치르는 것을 면제받을 수도 있다.' },
       ],
+      wordDistractors: ['example', 'exert', 'excerpt'],
+      definitionDistractors: [
+        'To require someone to complete additional training before certification.',
+        'To impose a heavier penalty than originally specified by law.',
+        'To voluntarily participate in a community service program.',
+      ],
     }
   ),
-  word('Exhaust', '소진하다', 6, 'verb',
+  word('exhaust', '소진하다', 6, 'verb',
     ['보충하다', '충전하다', '축적하다', '채우다', '보존하다', '비축하다', '저장하다', '생성하다', '회복하다', '유지하다'],
     tips({
       etymology: '라틴어 ex(밖으로)와 haurire(퍼내다)가 결합되어, 안에 있는 것을 바닥날 때까지 다 퍼낸다는 의미에서 유래되었습니다.',
@@ -456,9 +594,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The long hike exhausted the entire group.', ko: '긴 하이킹은 그룹 전체를 기진맥진하게 만들었다.' },
         { en: 'We have exhausted all our financial resources.', ko: '우리는 모든 재정적 자원을 소진했다.' },
       ],
+      wordDistractors: ['exhort', 'exhibit', 'exhume'],
+      definitionDistractors: [
+        'To carefully organize and categorize items in a storage facility.',
+        'To generate a surplus of energy beyond what is currently needed.',
+        'To gradually introduce a new product to an untested market.',
+      ],
     }
   ),
-  word('Exile', '추방하다', 6, 'verb',
+  word('exile', '추방하다', 6, 'verb',
     ['환영하다', '귀환시키다', '초대하다', '수용하다', '복귀시키다', '귀국시키다', '환송하다', '영접하다', '환대하다', '입국시키다'],
     tips({
       etymology: '라틴어 exilium에서 유래하여 \'밖으로 나감\'을 의미하며, 고국 밖으로 강제로 보내지는 상황을 나타냅니다.',
@@ -475,9 +619,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The government decided to exile the rebel leader to a remote island.', ko: '정부는 반란군 지도자를 외딴 섬으로 추방하기로 결정했다.' },
         { en: 'After the coup failed, the former president was exiled to a foreign land.', ko: '쿠데타가 실패한 후, 전직 대통령은 타국으로 추방되었다.' },
       ],
+      wordDistractors: ['exalt', 'exhale', 'excise'],
+      definitionDistractors: [
+        'To promote someone to a higher rank within an organization.',
+        'To confine a person to a specific area for medical observation.',
+        'To formally invite a foreign dignitary to attend a state ceremony.',
+      ],
     }
   ),
-  word('Exotic', '이국적인', 6, 'adjective',
+  word('exotic', '이국적인', 6, 'adjective',
     ['토착의', '국내산', '흔한', '일상적인', '국산의', '보편적인', '전형적인', '평범한', '국내의', '친숙한'],
     tips({
       etymology: '그리스어 \'exotikos\'에서 유래되었으며, \'exo\'는 \'바깥\'을 의미하여 외부 세계에서 온 낯선 것을 뜻합니다.',
@@ -494,9 +644,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'She loves trying exotic food from faraway countries.', ko: '그녀는 먼 나라의 이국적인 음식을 먹어보는 것을 좋아한다.' },
         { en: 'The garden was filled with exotic plants from tropical regions.', ko: '그 정원은 열대 지역에서 온 이국적인 식물들로 가득했다.' },
       ],
+      wordDistractors: ['erotic', 'exorcist', 'ecstatic'],
+      definitionDistractors: [
+        'Extremely old and belonging to a historical era long since passed.',
+        'Designed for everyday household use with no special features.',
+        'Having a chemical composition that resists natural decomposition.',
+      ],
     }
   ),
-  word('Exploit', '이용하다', 6, 'verb',
+  word('exploit', '이용하다', 6, 'verb',
     ['보호하다', '돌보다', '지키다', '방어하다', '수호하다', '보존하다', '아끼다', '옹호하다', '비호하다', '방치하다'],
     tips({
       etymology: 'ex(밖으로)와 ploit(접다)가 합쳐져 \'접힌 것을 펼쳐서 성과를 내다\'라는 의미에서 유래했습니다.',
@@ -513,9 +669,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The company was accused of exploiting the labor of underage workers.', ko: '그 회사는 미성년 노동자들의 노동력을 착취했다는 비난을 받았다.' },
         { en: 'We need to find new ways to exploit renewable energy sources.', ko: '우리는 재생 가능한 에너지원을 활용할 새로운 방법들을 찾아야 한다.' },
       ],
+      wordDistractors: ['explicit', 'explore', 'export'],
+      definitionDistractors: [
+        'To carefully preserve natural resources for future generations.',
+        'To explain the details of a complicated theory in simple terms.',
+        'To refuse to acknowledge the existence of a known problem.',
+      ],
     }
   ),
-  word('Exposure', '노출', 6, 'noun',
+  word('exposure', '노출', 6, 'noun',
     ['차단', '은폐', '보호', '차폐', '숨김', '비공개', '봉쇄', '격리', '은닉', '보안'],
     tips({
       etymology: '접두사 ex(밖으로)와 어근 pos(놓다)가 결합되어 무언가를 \'밖에 내놓음\'을 의미합니다.',
@@ -532,9 +694,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'Prolonged exposure to the sun can cause severe skin damage.', ko: '햇빛에 장시간 노출되는 것은 심각한 피부 손상을 유발할 수 있다.' },
         { en: 'The scandal gained wide exposure after the journalist published the report.', ko: '그 기자가 보고서를 발표한 후 그 스캔들은 널리 대중에게 노출되었다.' },
       ],
+      wordDistractors: ['composure', 'enclosure', 'expressway'],
+      definitionDistractors: [
+        'The deliberate act of shielding someone from potential danger.',
+        'A formal statement issued by an authority to clarify a misunderstanding.',
+        'The gradual process of building immunity to a common illness.',
+      ],
     }
   ),
-  word('Exterior', '외부', 6, 'noun',
+  word('exterior', '외부', 6, 'noun',
     ['내부', '심장부', '중앙', '안쪽', '핵심', '내면', '내측', '실내', '속', '본질'],
     tips({
       etymology: '라틴어 \'exter\'(밖의)에서 유래하여 \'더 바깥쪽에 위치한 부분\'이라는 의미를 가집니다.',
@@ -551,9 +719,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The building\'s exterior was cleaned to restore its original beauty.', ko: '건물의 외부를 청소하여 원래의 아름다움을 되찾았다.' },
         { en: 'Despite his rugged exterior, he has a very kind heart.', ko: '거친 외부 모습과는 달리 그는 매우 친절한 마음씨를 가지고 있다.' },
       ],
+      wordDistractors: ['interior', 'anterior', 'posterior'],
+      definitionDistractors: [
+        'The internal structure that provides support to a building or organism.',
+        'A decorative pattern applied to the inner walls of a room.',
+        'The emotional character or personality traits of an individual.',
+      ],
     }
   ),
-  word('Extract', '추출하다', 6, 'verb',
+  word('extract', '추출하다', 6, 'verb',
     ['주입하다', '삽입하다', '혼합하다', '방치하다', '결합하다', '유지하다', '보존하다', '첨가하다', '매립하다', '고정하다'],
     tips({
       etymology: '라틴어 접두사 ex-(밖으로)와 trahere(끌다)가 결합되어, 무언가를 밖으로 끌어낸다는 의미를 형성합니다.',
@@ -570,9 +744,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'Scientists managed to extract DNA from the ancient bone sample.', ko: '과학자들은 고대 뼈 샘플에서 DNA를 추출하는 데 성공했다.' },
         { en: 'The machine is designed to extract juice from fruit without losing any nutrients.', ko: '이 기계는 영양소 손실 없이 과일에서 과즙을 추출하도록 설계되었습니다.' },
       ],
+      wordDistractors: ['abstract', 'detract', 'distract'],
+      definitionDistractors: [
+        'To combine multiple substances together to form a new compound.',
+        'To seal a container tightly to prevent any leakage of contents.',
+        'To gradually add layers of material to build up a surface.',
+      ],
     }
   ),
-  word('Faction', '파벌', 6, 'noun',
+  word('faction', '파벌', 6, 'noun',
     ['통합', '단결', '일치', '조화', '연합', '협력', '화합', '공동체', '전체', '통일'],
     tips({
       etymology: '라틴어 facere(만들다, 행하다)에서 유래하여, 큰 집단 안에서 따로 행동하기 위해 만들어진 작은 무리를 뜻합니다.',
@@ -589,9 +769,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The political party was split by internal fighting between rival factions.', ko: '그 정당은 라이벌 파벌 간의 내부 다툼으로 분열되었다.' },
         { en: 'A small faction within the committee blocked the new proposal.', ko: '위원회 내의 한 작은 파벌이 새로운 제안을 저지했다.' },
       ],
+      wordDistractors: ['fraction', 'fiction', 'function'],
+      definitionDistractors: [
+        'A mathematical operation used to divide a number into equal parts.',
+        'A large unified organization that represents an entire industry.',
+        'A complete and detailed account of historical events in chronological order.',
+      ],
     }
   ),
-  word('Feasible', '실행 가능한', 6, 'adjective',
+  word('feasible', '실행 가능한', 6, 'adjective',
     ['불가능한', '비현실적인', '실현불가능한', '무리한', '비실용적인', '막연한', '환상적인', '어려운', '복잡한', '이론적인'],
     tips({
       etymology: '라틴어 facere(하다)에서 유래하여 \'할 수 있는\'이라는 의미를 담고 있습니다.',
@@ -608,9 +794,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The committee is looking for a more economically feasible solution for the city\'s traffic problem.', ko: '위원회는 도시 교통 문제에 대해 경제적으로 더 실행 가능한 해결책을 찾고 있다.' },
         { en: 'It is not technically feasible to build a colony on Mars within the next two years.', ko: '향후 2년 안에 화성에 식민지를 건설하는 것은 기술적으로 실행 가능하지 않다.' },
       ],
+      wordDistractors: ['visible', 'flexible', 'plausible'],
+      definitionDistractors: [
+        'Extremely profitable and likely to generate substantial financial returns.',
+        'Approved by a regulatory body as meeting all safety requirements.',
+        'Easily understood without requiring any specialized knowledge or training.',
+      ],
     }
   ),
-  word('Federal', '연방의', 6, 'adjective',
+  word('federal', '연방의', 6, 'adjective',
     ['지방의', '국가적', '단일의', '독립적인', '자치적인', '분리된', '지역적인', '개별적인', '단독의', '비연방의'],
     tips({
       etymology: '라틴어 foedus(조약, 동맹)에서 유래하여 여러 주가 조약을 통해 하나로 뭉친 상태를 뜻합니다.',
@@ -627,9 +819,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The federal agency handles crimes that cross state borders.', ko: '연방 기관이 주 경계를 넘는 범죄를 처리한다.' },
         { en: 'The federal government announced a new policy affecting all states.', ko: '연방 정부는 모든 주에 영향을 미치는 새로운 정책을 발표했다.' },
       ],
+      wordDistractors: ['feudal', 'feral', 'fervent'],
+      definitionDistractors: [
+        'Relating to the private financial affairs of an individual citizen.',
+        'Governed by a single absolute ruler without any democratic process.',
+        'Pertaining to military operations conducted during times of peace.',
+      ],
     }
   ),
-  word('Fierce', '사나운', 6, 'adjective',
+  word('fierce', '사나운', 6, 'adjective',
     ['온순한', '순한', '부드러운', '완화된', '평화적인', '우호적인', '온화한', '유순한', '차분한', '친절한'],
     tips({
       etymology: '라틴어 ferus(야생의)에서 유래하여 길들여지지 않은 거칠고 강력한 상태를 의미합니다.',
@@ -646,9 +844,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The two rival teams engaged in a fierce battle for the championship title.', ko: '두 라이벌 팀은 우승컵을 차지하기 위해 사나운 결전을 벌였다.' },
         { en: 'A fierce wind blew across the open plains, making it difficult to stand upright.', ko: '탁 트인 평원에 사나운 바람이 불어와 똑바로 서 있기가 힘들었다.' },
       ],
+      wordDistractors: ['pierce', 'farce', 'force'],
+      definitionDistractors: [
+        'Extremely cautious and unwilling to take any unnecessary risks.',
+        'Displaying a quiet confidence that inspires trust in others.',
+        'Moving at a slow and steady pace without any sudden changes.',
+      ],
     }
   ),
-  word('Fiscal', '재정의', 6, 'adjective',
+  word('fiscal', '재정의', 6, 'adjective',
     ['비재정의', '민간의', '개인적인', '군사적인', '사회적인', '문화적인', '감정적인', '도덕적인', '법률적인', '정신적인'],
     tips({
       etymology: '라틴어 fiscus(바구니, 국고)에서 유래하여 나라의 돈 주머니를 관리한다는 의미를 담고 있습니다.',
@@ -665,9 +869,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The government is implementing a new fiscal policy to reduce the national deficit.', ko: '정부는 국가 적자를 줄이기 위해 새로운 재정 정책을 시행하고 있다.' },
         { en: 'The company\'s fiscal year ends in December, while the government\'s starts in April.', ko: '그 회사의 회계 연도는 12월에 끝나지만, 정부의 회계 연도는 4월에 시작된다.' },
       ],
+      wordDistractors: ['physical', 'fistful', 'frugal'],
+      definitionDistractors: [
+        'Relating to the physical health and well-being of a community.',
+        'Concerning the legal rights of individuals in criminal proceedings.',
+        'Pertaining to the environmental impact of industrial manufacturing.',
+      ],
     }
   ),
-  word('Fluctuate', '변동하다', 6, 'verb',
+  word('fluctuate', '변동하다', 6, 'verb',
     ['안정되다', '고정되다', '일정하다', '불변하다', '정체되다', '고착되다', '유지하다', '정지하다', '멈추다', '확정하다'],
     tips({
       etymology: '라틴어 \'fluctuare(파도치다)\'에서 유래했습니다. 물결이 위아래로 출렁이는 모양을 떠올려 보세요.',
@@ -684,9 +894,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'Vegetable prices tend to fluctuate according to the season and weather conditions.', ko: '채소 가격은 계절과 날씨 상태에 따라 변동하는 경향이 있다.' },
         { en: 'The patient\'s body temperature continued to fluctuate throughout the night.', ko: '환자의 체온이 밤새도록 계속 변동했다.' },
       ],
+      wordDistractors: ['fascinate', 'fabricate', 'facilitate'],
+      definitionDistractors: [
+        'To remain perfectly still and unchanged over a long period of time.',
+        'To move in a single consistent direction without deviation.',
+        'To permanently fix something in place so it cannot be altered.',
+      ],
     }
   ),
-  word('Forbid', '금지하다', 6, 'verb',
+  word('forbid', '금지하다', 6, 'verb',
     ['허용하다', '승인하다', '허가하다', '촉진하다', '장려하다', '방임하다', '권장하다', '지지하다', '찬성하다', '조력하다'],
     tips({
       etymology: '접두사 for-(멀리, 반대)와 bid(명령하다)가 결합하여 \'하지 말라고 명령하다\'라는 의미에서 유래했습니다.',
@@ -703,9 +919,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'My doctor forbade me from eating fast food.', ko: '의사 선생님은 나에게 패스트푸드를 먹는 것을 금지했다.' },
         { en: 'The law forbids companies from dumping waste into the river.', ko: '법은 기업들이 강에 폐기물을 버리는 것을 금지한다.' },
       ],
+      wordDistractors: ['forgive', 'forfeit', 'forsake'],
+      definitionDistractors: [
+        'To strongly encourage someone to pursue a particular course of action.',
+        'To grant special privileges to members of a distinguished group.',
+        'To temporarily suspend a rule during an emergency situation.',
+      ],
     }
   ),
-  word('Forecast', '예측하다', 6, 'verb',
+  word('forecast', '예측하다', 6, 'verb',
     ['무시하다', '오판하다', '회고하다', '망각하다', '방치하다', '실수하다', '기억하다', '검토하다', '후회하다', '간과하다'],
     tips({
       etymology: '접두사 fore(미리)와 cast(던지다)가 결합되어, 시선을 앞쪽으로 미리 던져본다는 의미에서 유래되었습니다.',
@@ -722,9 +944,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'Experts are trying to forecast the economic impact of the new policy.', ko: '전문가들은 새로운 정책의 경제적 영향을 예측하려 노력하고 있다.' },
         { en: 'The weather station forecasts heavy snow for tomorrow.', ko: '기상청은 내일 폭설을 예보한다.' },
       ],
+      wordDistractors: ['foreclose', 'forestall', 'foresight'],
+      definitionDistractors: [
+        'To look back on past events and analyze what went wrong.',
+        'To broadcast a live event to a large television audience.',
+        'To document the exact sequence of events as they happened.',
+      ],
     }
   ),
-  word('Formula', '공식', 6, 'noun',
+  word('formula', '공식', 6, 'noun',
     ['무질서', '직관', '임의', '흐름', '경험', '실험', '모호', '비공식', '우연', '혼란'],
     tips({
       etymology: '라틴어 forma(형태)에서 유래한 단어로, \'작은 형태\'나 \'정해진 규칙\'을 의미합니다.',
@@ -741,9 +969,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The scientist spent years searching for the right formula to solve the problem.', ko: '그 과학자는 문제를 해결하기 위한 올바른 공식을 찾는 데 수년을 보냈다.' },
         { en: 'There is no single formula for a happy marriage.', ko: '행복한 결혼 생활을 위한 단 하나의 공식은 없다.' },
       ],
+      wordDistractors: ['formal', 'forum', 'formidable'],
+      definitionDistractors: [
+        'A type of legal contract that binds two parties to a joint venture.',
+        'An informal gathering of people to discuss current social issues.',
+        'A physical instrument used to measure temperature or pressure.',
+      ],
     }
   ),
-  word('Foster', '육성하다', 6, 'verb',
+  word('foster', '육성하다', 6, 'verb',
     ['방치하다', '억제하다', '좌절시키다', '방해하다', '훼손하다', '저해하다', '파괴하다', '무시하다', '중단하다', '거부하다'],
     tips({
       etymology: '고대 영어 fostrian(기르다, 먹이다)에서 유래하여 성장을 돕는 것을 뜻합니다.',
@@ -760,9 +994,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The teacher tried to foster the students\' curiosity by creating an engaging environment.', ko: '선생님은 흥미로운 환경을 조성하여 학생들의 호기심을 육성하려 노력했다.' },
         { en: 'The government has introduced new policies to foster the growth of small businesses.', ko: '정부는 중소기업 성장을 육성하기 위한 새로운 정책들을 도입했다.' },
       ],
+      wordDistractors: ['fluster', 'falter', 'fester'],
+      definitionDistractors: [
+        'To deliberately slow down the progress of a competitor.',
+        'To strictly control every aspect of a subordinate\'s daily routine.',
+        'To quickly discard items that are no longer considered useful.',
+      ],
     }
   ),
-  word('Foundation', '기초', 6, 'noun',
+  word('foundation', '기초', 6, 'noun',
     ['상층', '정상', '꼭대기', '결과', '말단', '외부', '표면', '정점', '끝', '지붕'],
     tips({
       etymology: '라틴어 fundare(바닥을 만들다)에서 유래하여 건물의 가장 아래쪽을 의미합니다.',
@@ -779,9 +1019,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'Education is the foundation of society.', ko: '교육은 사회의 기초이다.' },
         { en: 'Workers laid the foundation for the new hospital.', ko: '노동자들이 새 병원의 기초를 놓았다.' },
       ],
+      wordDistractors: ['fountain', 'formation', 'frustration'],
+      definitionDistractors: [
+        'The highest level of achievement in a competitive ranking system.',
+        'A decorative element added to the exterior of a finished building.',
+        'The final stage of a manufacturing process before distribution.',
+      ],
     }
   ),
-  word('Fraction', '분수', 6, 'noun',
+  word('fraction', '분수', 6, 'noun',
     ['전체', '전량', '합계', '전부', '통째', '완전', '총합', '일체', '총량', '만점'],
     tips({
       etymology: '라틴어 fractus(부서진)에서 유래하여 전체에서 깨져 나온 조각을 뜻합니다.',
@@ -798,9 +1044,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'Only a small fraction of the population attended the local meeting.', ko: '인구의 아주 적은 일부만이 지역 회의에 참석했습니다.' },
         { en: 'The teacher explained how to add a fraction to a whole number.', ko: '선생님은 정수에 분수를 더하는 방법을 설명해 주셨습니다.' },
       ],
+      wordDistractors: ['faction', 'friction', 'traction'],
+      definitionDistractors: [
+        'A complete set of items collected and displayed as a single unit.',
+        'The total amount of money earned before any deductions are applied.',
+        'A measurement unit used to calculate the speed of moving objects.',
+      ],
     }
   ),
-  word('Framework', '틀', 6, 'noun',
+  word('framework', '틀', 6, 'noun',
     ['무질서', '혼란', '무구조', '분산', '해체', '비체계', '산발', '무계획', '혼재', '난잡'],
     tips({
       etymology: 'frame(뼈대)와 work(작업)이 합쳐져 전체를 지탱하는 구조물을 뜻합니다.',
@@ -817,9 +1069,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'We need a legal framework for this project.', ko: '이 프로젝트를 위한 법적 틀이 필요합니다.' },
         { en: 'The framework guides our decision-making process.', ko: '그 체계가 우리의 의사결정 과정을 안내합니다.' },
       ],
+      wordDistractors: ['farmwork', 'firework', 'footwork'],
+      definitionDistractors: [
+        'A detailed written report summarizing the results of an investigation.',
+        'The raw materials needed to begin a construction project.',
+        'A temporary solution applied while a permanent fix is being developed.',
+      ],
     }
   ),
-  word('Franchise', '가맹점', 6, 'noun',
+  word('franchise', '가맹점', 6, 'noun',
     ['독립점', '자영점', '직영', '본점', '비가맹', '독립', '자영', '단독', '본사', '개인샵'],
     tips({
       etymology: '고대 프랑스어 franchir(자유롭게 하다)에서 유래하여 특정 권리를 허가한다는 뜻입니다.',
@@ -836,9 +1094,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'He owns a fast-food franchise in the city.', ko: '그는 도시에서 패스트푸드 가맹점을 운영하고 있다.' },
         { en: 'The franchise expanded nationwide last year.', ko: '그 가맹 사업은 작년에 전국적으로 확장되었다.' },
       ],
+      wordDistractors: ['fragrance', 'freelance', 'finance'],
+      definitionDistractors: [
+        'A personal guarantee given by an individual to secure a bank loan.',
+        'The exclusive right to vote in a national or local election.',
+        'A charitable donation made to support a community development project.',
+      ],
     }
   ),
-  word('Friction', '마찰', 6, 'noun',
+  word('friction', '마찰', 6, 'noun',
     ['윤활', '부드러움', '조화', '협력', '화합', '원활', '유동', '평화', '일치', '공조'],
     tips({
       etymology: '라틴어 fricare(문지르다)에서 유래하여 두 물체가 서로 맞닿아 비벼지는 현상을 의미합니다.',
@@ -855,9 +1119,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The constant friction between the neighbors eventually led to a formal complaint.', ko: '이웃들 사이의 지속적인 마찰은 결국 공식적인 항의로 이어졌다.' },
         { en: 'Rough surfaces create more friction and heat due to increased physical contact.', ko: '거친 표면은 증가된 물리적 접촉으로 인해 더 많은 마찰과 열을 발생시킨다.' },
       ],
+      wordDistractors: ['fraction', 'fiction', 'function'],
+      definitionDistractors: [
+        'The attractive force that pulls objects toward the center of the Earth.',
+        'A smooth and effortless transition between two phases of a process.',
+        'The ability of a material to conduct electricity efficiently.',
+      ],
     }
   ),
-  word('Frontier', '국경', 6, 'noun',
+  word('frontier', '국경', 6, 'noun',
     ['내부', '수도', '안쪽', '중앙', '내륙', '핵심', '본토', '내지', '심장부', '도심'],
     tips({
       etymology: '라틴어 front(앞)에서 유래하여 국가나 지식의 가장 앞쪽 경계선을 의미합니다.',
@@ -874,9 +1144,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'Space is often called the final frontier.', ko: '우주는 종종 마지막 개척지라고 불린다.' },
         { en: 'They crossed the frontier at dawn.', ko: '그들은 새벽에 국경을 넘었다.' },
       ],
+      wordDistractors: ['furniture', 'fracture', 'frontage'],
+      definitionDistractors: [
+        'The central administrative district of a major metropolitan city.',
+        'A natural waterway that connects two larger bodies of water.',
+        'A densely populated residential area within an urban community.',
+      ],
     }
   ),
-  word('Fulfill', '완수하다', 6, 'verb',
+  word('fulfill', '완수하다', 6, 'verb',
     ['포기하다', '중단하다', '실패하다', '잊다', '소홀히하다', '방치하다', '거절하다', '무시하다', '어기다', '누락하다'],
     tips({
       etymology: 'full(가득한)과 fill(채우다)이 합쳐진 형태로, 비어 있는 요구사항이나 기대를 가득 채워 완료한다는 의미에서 유래되었습니다.',
@@ -893,9 +1169,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'The company must fulfill all the conditions specified in the contract.', ko: '그 회사는 계약서에 명시된 모든 조건을 이행해야 한다.' },
         { en: 'He worked hard to fulfill his potential as a professional musician.', ko: '그는 전문 음악가로서 자신의 잠재력을 발휘하기 위해 열심히 노력했다.' },
       ],
+      wordDistractors: ['faithful', 'fruitful', 'fanciful'],
+      definitionDistractors: [
+        'To intentionally avoid completing a task that has been assigned.',
+        'To temporarily pause a project while awaiting further instructions.',
+        'To formally submit a request for an extension on a deadline.',
+      ],
     }
   ),
-  word('Fundamental', '근본적인', 6, 'adjective',
+  word('fundamental', '근본적인', 6, 'adjective',
     ['부수적인', '표면적인', '사소한', '피상적인', '부가적인', '말단의', '외관상의', '지엽적인', '세부적인', '일시적인'],
     tips({
       etymology: '라틴어 \'fundamentum\'에서 유래하며, 건물의 기초나 토대를 의미하는 \'foundation\'과 뿌리가 같습니다.',
@@ -912,9 +1194,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'Freedom of speech is a fundamental right in a democratic society.', ko: '표현의 자유는 민주주의 사회에서 근본적인 권리이다.' },
         { en: 'The two theories have a fundamental difference in their approach to the problem.', ko: '그 두 이론은 문제에 대한 접근 방식에 있어 근본적인 차이가 있다.' },
       ],
+      wordDistractors: ['sentimental', 'instrumental', 'monumental'],
+      definitionDistractors: [
+        'Relating to the outermost layer or surface of a physical object.',
+        'Occurring only temporarily and likely to change in the near future.',
+        'Added as an optional enhancement rather than a required component.',
+      ],
     }
   ),
-  word('Generous', '관대한', 6, 'adjective',
+  word('generous', '관대한', 6, 'adjective',
     ['인색한', '아까워하는', '짠돌이의', '보수적인', '검소한', '탐욕스러운', '이기적인', '편협한', '야박한', '속좁은'],
     tips({
       etymology: '라틴어 generosus에서 유래하며, 원래 \'고귀한 가문에서 태어난\'이라는 뜻에서 \'고귀한 성품을 지닌\'이라는 의미로 발전했습니다.',
@@ -931,9 +1219,15 @@ export const vocabBatch12: VocabItem[] = [
         { en: 'He is known for being generous and donating a large portion of his income to charity.', ko: '그는 관대하여 수입의 큰 부분을 자선 단체에 기부하는 것으로 알려져 있다.' },
         { en: 'The host was extremely generous and provided a bountiful feast for all the guests.', ko: '주인은 매우 관대했으며 모든 손님들에게 풍성한 만찬을 대접했다.' },
       ],
+      wordDistractors: ['generic', 'genesis', 'genuine'],
+      definitionDistractors: [
+        'Extremely cautious about spending money or sharing possessions.',
+        'Known for being highly critical and difficult to satisfy.',
+        'Preferring to work independently rather than in collaborative groups.',
+      ],
     }
   ),
-  word('Genetic', '유전적인', 6, 'adjective',
+  word('genetic', '유전적인', 6, 'adjective',
     ['후천적인', '환경적인', '학습된', '인위적인', '외부의', '경험적인', '습득된', '비유전적인', '우연한', '사회적인'],
     tips({
       etymology: '그리스어 genesis(기원, 탄생)에서 유래하여 생명의 근원을 다루는 의미를 담고 있습니다.',
@@ -949,6 +1243,12 @@ export const vocabBatch12: VocabItem[] = [
       exampleSentences: [
         { en: 'Scientists are studying genetic code to find a cure for the inherited disorder.', ko: '과학자들은 그 유전 질환의 치료법을 찾기 위해 유전자 코드를 연구하고 있다.' },
         { en: 'Eye color is a prime example of a genetic trait passed down from parents.', ko: '눈 색깔은 부모로부터 물려받는 유전적 형질의 대표적인 예이다.' },
+      ],
+      wordDistractors: ['generic', 'genesis', 'generous'],
+      definitionDistractors: [
+        'Resulting from prolonged exposure to specific environmental conditions.',
+        'Acquired through intensive study and deliberate practice over time.',
+        'Relating to the dietary habits and nutritional intake of an organism.',
       ],
     }
   ),

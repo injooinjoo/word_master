@@ -19,6 +19,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'Please complete the attached form and return it to the human resources department by Friday.', ko: '첨부된 설문지를 작성하여 금요일까지 인사과로 보내주시기 바랍니다.' },
         { en: 'Researchers distributed a detailed set of questions to evaluate the effectiveness of the new medical treatment.', ko: '연구원들은 새로운 치료법의 효과를 평가하기 위해 상세한 질문지를 배포했습니다.' },
       ],
+      wordDistractors: ['quarantine', 'quintessence', 'quandary'],
+      definitionDistractors: [
+        'a formal request submitted to an authority for approval or permission',
+        'a statistical method used to analyze numerical data patterns',
+        'a brief spoken exchange between two or more individuals',
+      ],
     }
   ),
   word('quick', '빠른', 3, 'adjective',
@@ -38,10 +44,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'A brief shower in the morning helped him feel refreshed and ready for work.', ko: '아침에 가볍게 한 빠른 샤워는 그가 상쾌함을 느끼고 업무 준비를 마치는 데 도움을 주었다.' },
         { en: 'The athlete made a sudden turn to avoid the defender and scored a goal.', ko: '그 운동선수는 수비수를 피하기 위해 빠르게 방향을 틀어 골을 넣었다.' },
       ],
+      wordDistractors: ['quiche', 'quilt', 'quirk'],
+      definitionDistractors: [
+        'remaining perfectly still without any movement or sound',
+        'having a sharp or bitter taste that lingers on the tongue',
+        'arranged in a careful and methodical order or sequence',
+      ],
     }
   ),
   word('quit', '그만두다', 4, 'verb',
-    ['도착', '시작', '계속', '유지', '참여', '진입', '수용', '결합', '복귀', '전진'],
+    ['시작하다', '계속하다', '유지하다', '참여하다', '진입하다', '수용하다', '결합하다', '복귀하다', '전진하다', '도전하다'],
     tips({
       etymology: '라틴어 quietus에서 유래하여 \'조용해지다\' 혹은 \'의무에서 자유로워지다\'라는 의미를 담고 있습니다.',
       visual: '직장 책상 위에 사직서를 올려두고 사무실 문을 나서는 뒷모습을 상상해 보세요.',
@@ -56,6 +68,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'He decided to leave his current position to pursue a career in music.', ko: '그는 음악 분야의 경력을 쌓기 위해 현재 직장을 그만두기로 결정했다.' },
         { en: 'Many people find it extremely difficult to stop smoking after many years.', ko: '많은 사람들이 수년 후에 담배를 끊는 것이 매우 어렵다는 것을 깨닫는다.' },
+      ],
+      wordDistractors: ['quip', 'quilt', 'quiz'],
+      definitionDistractors: [
+        'to begin a new task or activity with great enthusiasm',
+        'to move rapidly from one location to another without pausing',
+        'to repair or restore something to its original working condition',
       ],
     }
   ),
@@ -76,10 +94,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The exam was actually quite difficult despite my extensive preparation.', ko: '광범위한 준비에도 불구하고 그 시험은 실제로 꽤 어려웠습니다.' },
         { en: 'She was quite surprised to see her old friend at the airport.', ko: '그녀는 공항에서 옛 친구를 보고 상당히 놀랐습니다.' },
       ],
+      wordDistractors: ['quiet', 'quiche', 'quaint'],
+      definitionDistractors: [
+        'in a manner that is entirely complete with no exceptions whatsoever',
+        'with an extremely loud and forceful intensity that overwhelms',
+        'occurring at irregular intervals without any discernible pattern',
+      ],
     }
   ),
   word('quote', '인용하다', 10, 'verb',
-    ['분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다'],
+    ['분석하다', '정리하다', '하다', '체포하다', '~을 벗다; (비행기가) 이륙하다', '철자하다', '숨기다', '상쇄하다', '격투하다', '~을 채우다, 써넣다; ~을 메우다'],
     tips({
       etymology: '라틴어 \'quot\'에서 유래하여 \'얼마나 많은지 매기다\'라는 뜻에서 \'특정 구절을 언급하다\'로 발전했습니다.',
       visual: '유명한 작가의 책 페이지를 손가락으로 가리키며 그대로 옮겨 적는 모습을 상상해 보세요.',
@@ -94,6 +118,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'The journalist decided to cite the president\'s speech directly to ensure accuracy.', ko: '그 기자는 정확성을 기하기 위해 대통령의 연설을 직접 인용하기로 결정했습니다.' },
         { en: 'Please include the source whenever you use a passage from another author\'s work.', ko: '다른 저자의 저작물에서 구절을 인용할 때는 항상 출처를 포함해 주세요.' },
+      ],
+      wordDistractors: ['quorum', 'quota', 'quaver'],
+      definitionDistractors: [
+        'to create an entirely new piece of writing without any external reference',
+        'to provide a numerical estimate of cost for goods or services',
+        'to express disagreement with a previously stated opinion or claim',
       ],
     }
   ),
@@ -114,10 +144,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The white animal hopped across the garden and disappeared into a small hole.', ko: '그 하얀 동물은 정원을 가로질러 깡충깡충 뛰어간 뒤 작은 구멍 속으로 사라졌다.' },
         { en: 'Children love to feed fresh carrots to the long-eared creature at the petting zoo.', ko: '아이들은 어린이 동물원에서 귀가 긴 생물에게 신선한 당근을 주는 것을 좋아한다.' },
       ],
+      wordDistractors: ['rabbet', 'ratchet', 'racket'],
+      definitionDistractors: [
+        'a large reptile with a hard shell that moves very slowly on land',
+        'a domesticated bird commonly raised on farms for its eggs and meat',
+        'a nocturnal insect known for producing a distinctive chirping sound',
+      ],
     }
   ),
   word('race', '인종', 2, 'noun',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['베일, 장막', '아침밥', '위치', '하드웨어, 철물', '분쟁', '부재, 결석', '공연, 수행', '안개', '카페', '성격'],
     tips({
       etymology: '이탈리아어 \'razza\'에서 유래되었으며, 공통된 조상을 가진 집단을 분류하는 데 사용되었습니다.',
       visual: '올림픽 개막식에서 다양한 피부색과 배경을 가진 선수들이 각국의 국기를 들고 행진하는 모습을 상상하세요.',
@@ -133,10 +169,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The census collected data on age, gender, and race to better understand the population.', ko: '인구 조사는 인구 구성을 더 잘 이해하기 위해 나이, 성별, 인종에 대한 데이터를 수집했습니다.' },
         { en: 'Discrimination based on race is strictly prohibited by the company\'s code of conduct.', ko: '인종에 근거한 차별은 회사의 행동 강령에 의해 엄격히 금지되어 있습니다.' },
       ],
+      wordDistractors: ['lace', 'brace', 'trace'],
+      definitionDistractors: [
+        'a competitive event in which participants attempt to complete a course fastest',
+        'the natural rate at which a heart beats per minute during rest',
+        'a designated open area used for public gatherings and community events',
+      ],
     }
   ),
   word('racial', '인종의', 6, 'adjective',
-    ['일반적인', '예외적인', '안정적인', '불안정한', '효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한'],
+    ['일반적인', '예외적인', '안정적인', '불안정한', '엄한', '심리적인, 정신적인', '무형의', '~과 일치된', '고요한, 평온한', '거짓의'],
     tips({
       etymology: '인종을 뜻하는 race에 형용사형 접미사 -ial이 붙어 형성된 단어입니다.',
       visual: '올림픽 개막식에서 다양한 피부색의 선수들이 각국의 국기를 들고 입장하는 모습을 상상해 보세요.',
@@ -151,6 +193,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'The government is working hard to eliminate discrimination and promote equality in the workplace.', ko: '정부는 직장 내 인종 차별을 없애고 평등을 증진하기 위해 열심히 노력하고 있습니다.' },
         { en: 'The city boasts a diverse population with a rich variety of cultural and backgrounds.', ko: '그 도시는 풍부하고 다양한 문화적, 인종적 배경을 가진 다양한 인구를 자랑합니다.' },
+      ],
+      wordDistractors: ['radial', 'rascal', 'radical'],
+      definitionDistractors: [
+        'pertaining to the mathematical study of spatial relationships and geometry',
+        'describing a formal style of dress appropriate for official ceremonies',
+        'related to the economic policies governing international trade agreements',
       ],
     }
   ),
@@ -171,6 +219,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'His face turned bright red with uncontrollable fury during the heated argument.', ko: '격렬한 논쟁 도중 그의 얼굴은 걷잡을 수 없는 격노로 새빨갛게 변했습니다.' },
         { en: 'The storm lashed the coastline with a terrifying intensity that destroyed several buildings.', ko: '폭풍이 무서운 격노로 해안선을 강타하여 건물 여러 채를 파괴했습니다.' },
       ],
+      wordDistractors: ['sage', 'cage', 'gauge'],
+      definitionDistractors: [
+        'a state of deep sadness and prolonged mourning over a personal loss',
+        'a quiet feeling of contentment experienced during peaceful moments',
+        'a sudden burst of uncontrollable laughter caused by amusement',
+      ],
     }
   ),
   word('rail', '가로장', 7, 'noun',
@@ -189,6 +243,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'Please hold onto the metal bar while walking down the steep stairs.', ko: '가파른 계단을 내려갈 때는 금속 가로장을 꼭 잡으세요.' },
         { en: 'The wooden fence was built with a sturdy top beam to keep the cattle inside.', ko: '가축들이 나가지 못하도록 튼튼한 상단 가로장을 갖춘 나무 울타리가 세워졌습니다.' },
+      ],
+      wordDistractors: ['trail', 'frail', 'snail'],
+      definitionDistractors: [
+        'a sharp metal tool used for cutting through thick materials',
+        'a narrow pathway through a dense forest or mountainous terrain',
+        'a lightweight fabric curtain hung over a window for decoration',
       ],
     }
   ),
@@ -209,6 +269,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'A beautiful multi-colored arch appeared in the sky after the heavy thunderstorm.', ko: '심한 폭풍우가 지나간 뒤 하늘에 아름다운 다채로운 색의 아치가 나타났다.' },
         { en: 'Children often believe that a pot of gold is hidden at the end of this colorful phenomenon.', ko: '아이들은 종종 이 알록달록한 현상의 끝에 황금 항아리가 숨겨져 있다고 믿는다.' },
       ],
+      wordDistractors: ['raincoat', 'railway', 'raisin'],
+      definitionDistractors: [
+        'a heavy downpour of water falling continuously from thick clouds',
+        'a circular halo of light appearing around the moon at night',
+        'a strong gust of wind that bends trees and scatters loose objects',
+      ],
     }
   ),
   word('raise', '올리다', 4, 'verb',
@@ -228,10 +294,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The students were asked to lift their hands if they knew the correct answer.', ko: '정답을 아는 학생들은 손을 들어 달라는 요청을 받았습니다.' },
         { en: 'The local charity aims to collect enough funds to build a new community center.', ko: '지역 자선 단체는 새로운 커뮤니티 센터를 짓기 위해 충분한 자금을 모으는 것을 목표로 합니다.' },
       ],
+      wordDistractors: ['raze', 'raisin', 'praise'],
+      definitionDistractors: [
+        'to demolish a building or structure completely down to the ground',
+        'to maintain something at its current level without any change',
+        'to speak in a low and quiet voice so that others cannot hear',
+      ],
     }
   ),
   word('rally', '규합하다', 9, 'verb',
-    ['유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다'],
+    ['고되게 일하다', '고립시키다', '전멸시키다', '탐험하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다'],
     tips({
       etymology: '프랑스어 rallier에서 유래했으며, \'re-(다시)\'와 \'allier(결합하다)\'가 합쳐져 흩어진 것을 다시 모은다는 의미를 가집니다.',
       visual: '흩어져 있던 사람들이 깃발 아래로 하나둘씩 모여들어 큰 무리를 이루는 장면을 상상해 보세요.',
@@ -246,6 +318,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'The leader managed to gather enough supporters to organize a massive protest in the city square.', ko: '지도자는 시내 광장에서 대규모 시위를 조직하기 위해 충분한 지지자들을 규합하는 데 성공했습니다.' },
         { en: 'The team captain gave a powerful speech to encourage his teammates during the final minutes of the game.', ko: '팀 주장은 경기 마지막 몇 분 동안 팀원들을 규합하고 사기를 높이기 위해 강력한 연설을 했습니다.' },
+      ],
+      wordDistractors: ['alley', 'valley', 'tally'],
+      definitionDistractors: [
+        'to quietly retreat from a conflict without drawing any attention',
+        'to distribute resources evenly among all members of a group',
+        'to formally announce a decision made by a governing authority',
       ],
     }
   ),
@@ -266,6 +344,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The computer generates a sequence of numbers for the security system.', ko: '컴퓨터는 보안 시스템을 위해 일련의 무작위 숫자를 생성합니다.' },
         { en: 'A stranger approached me on the street and asked for the time.', ko: '길거리에서 전혀 모르는 사람이 나에게 다가와 시간을 물어보았습니다.' },
       ],
+      wordDistractors: ['ransom', 'rancid', 'rampart'],
+      definitionDistractors: [
+        'following a strict and predetermined schedule without any deviation',
+        'carefully organized according to a specific set of logical rules',
+        'chosen after thorough analysis and deliberate consideration of all options',
+      ],
     }
   ),
   word('range', '줄', 6, 'noun',
@@ -285,10 +369,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'A magnificent mountain range stretches across the northern border of the country.', ko: '웅장한 산맥이 그 나라의 북쪽 국경을 가로질러 뻗어 있다.' },
         { en: 'The store offers a wide range of products to satisfy every customer\'s needs.', ko: '그 상점은 모든 고객의 요구를 만족시키기 위해 넓은 범위의 제품들을 제공한다.' },
       ],
+      wordDistractors: ['mange', 'grange', 'flange'],
+      definitionDistractors: [
+        'a single isolated point or fixed location on a map or chart',
+        'a deep underground tunnel used for transporting goods secretly',
+        'a sudden sharp decline in temperature lasting several hours',
+      ],
     }
   ),
   word('rank', '열', 7, 'noun',
-    ['사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보'],
+    ['교의', '타락', '이모, 고모', '통찰', '창문', '마룻바닥', '포옹', '경제학', '곤충', '왕좌, 옥좌'],
     tips({
       etymology: '고대 프랑스어 \'renc\'에서 유래하여 군대나 조직에서 사람들이 일렬로 늘어선 줄을 의미하게 되었습니다.',
       visual: '군인들이나 체스판의 말들이 가로로 길게 한 줄로 정렬되어 있는 모습을 상상해 보세요.',
@@ -303,6 +393,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'The soldiers stood in a long straight line, waiting for the commander\'s order.', ko: '군인들이 지휘관의 명령을 기다리며 긴 일렬 횡대로 서 있었다.' },
         { en: 'The front row of the audience was filled with local dignitaries.', ko: '관객석의 앞열은 지역 귀빈들로 가득 찼다.' },
+      ],
+      wordDistractors: ['rink', 'rank', 'dank'],
+      definitionDistractors: [
+        'a position of authority or status within a hierarchical organization',
+        'a foul and unpleasant odor emanating from decaying organic matter',
+        'a sealed container used for storing liquids under high pressure',
       ],
     }
   ),
@@ -323,6 +419,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The city has undergone rapid transformation over the last decade due to urban development.', ko: '그 도시는 도시 개발로 인해 지난 10년 동안 급격한 변화를 겪었습니다.' },
         { en: 'The patient showed rapid improvement after receiving the new medical treatment.', ko: '그 환자는 새로운 치료를 받은 후 빠른 호전을 보였습니다.' },
       ],
+      wordDistractors: ['rabid', 'vapid', 'rancid'],
+      definitionDistractors: [
+        'extremely cautious and deliberate in making any kind of decision',
+        'occurring repeatedly at fixed and predictable time intervals',
+        'relating to the structural integrity of a building or bridge',
+      ],
     }
   ),
   word('rare', '희귀한', 5, 'adjective',
@@ -341,6 +443,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'Collectors are willing to pay a fortune for such a unique and scarce stamp.', ko: '수집가들은 그렇게 독특하고 희귀한 우표에 거금을 기꺼이 지불합니다.' },
         { en: 'It is highly unusual to see this species of bird in this part of the country.', ko: '나라의 이 지역에서 이 종의 새를 보는 것은 매우 드문 일입니다.' },
+      ],
+      wordDistractors: ['flare', 'fare', 'glare'],
+      definitionDistractors: [
+        'happening with great frequency and regularity throughout the year',
+        'cooked thoroughly until the interior reaches a very high temperature',
+        'widely available and easily accessible to the general public',
       ],
     }
   ),
@@ -361,6 +469,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The hungry rodent scurried across the kitchen floor looking for crumbs.', ko: '배고픈 쥐가 부스러기를 찾아 주방 바닥을 가로질러 빠르게 달려갔다.' },
         { en: 'Health inspectors found evidence of a severe infestation in the basement of the old restaurant.', ko: '위생 검사관들은 오래된 식당 지하에서 심각한 쥐 떼의 흔적을 발견했다.' },
       ],
+      wordDistractors: ['vat', 'mat', 'raft'],
+      definitionDistractors: [
+        'a large domesticated animal commonly used for pulling heavy loads on farms',
+        'a brightly colored tropical fish popular in home aquariums',
+        'a thick protective layer of fur covering a mammals body in winter',
+      ],
     }
   ),
   word('rate', '율, 비율', 7, 'noun',
@@ -379,6 +493,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'The unemployment rate has decreased significantly over the past year.', ko: '지난 한 해 동안 실업률이 크게 감소했습니다.' },
         { en: 'The bank offered a competitive interest rate on savings accounts.', ko: '은행은 저축 계좌에 경쟁력 있는 이자율을 제공했습니다.' },
+      ],
+      wordDistractors: ['grate', 'crate', 'irate'],
+      definitionDistractors: [
+        'a single large payment made in full at the time of purchase',
+        'the total number of items counted in a specific inventory check',
+        'a written evaluation describing the quality of a product or service',
       ],
     }
   ),
@@ -399,6 +519,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The ending of the movie was not sad but rather quite uplifting.', ko: '그 영화의 결말은 슬프지 않았고 오히려 상당히 희망적이었다.' },
         { en: 'She chose to walk home rather than take the crowded bus.', ko: '그녀는 만원 버스를 타느니 차라리 집까지 걸어가는 것을 택했다.' },
       ],
+      wordDistractors: ['lather', 'gather', 'bather'],
+      definitionDistractors: [
+        'with absolute certainty and no room for doubt or hesitation',
+        'in a manner that is completely unexpected and without warning',
+        'to a very small and almost unnoticeable degree or extent',
+      ],
     }
   ),
   word('rational', '합리적인', 10, 'adjective',
@@ -417,6 +543,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'We need to make a calm and sensible decision based on facts rather than fear.', ko: '우리는 두려움보다는 사실에 근거하여 차분하고 합리적인 결정을 내려야 합니다.' },
         { en: 'No one can provide a logical explanation for his sudden change in behavior.', ko: '그의 갑작스러운 행동 변화에 대해 누구도 합리적인 설명을 내놓지 못하고 있습니다.' },
+      ],
+      wordDistractors: ['ration', 'rationale', 'national'],
+      definitionDistractors: [
+        'driven primarily by strong personal feelings and subjective preferences',
+        'marked by impulsive actions taken without any forethought or planning',
+        'characterized by excessive generosity beyond what is considered normal',
       ],
     }
   ),
@@ -437,10 +569,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'Eating raw fish requires careful preparation to ensure it is safe and fresh.', ko: '날생선을 먹는 것은 그것이 안전하고 신선한지 확인하기 위해 세심한 준비가 필요합니다.' },
         { en: 'The artist used raw talent to create a masterpiece without any formal training.', ko: '그 예술가는 정식 교육 없이도 가공되지 않은 재능을 사용하여 걸작을 만들어냈습니다.' },
       ],
+      wordDistractors: ['thaw', 'claw', 'gnaw'],
+      definitionDistractors: [
+        'prepared carefully using advanced techniques and sophisticated methods',
+        'dried thoroughly under direct sunlight over an extended period of time',
+        'mixed together with several other ingredients to form a smooth blend',
+      ],
     }
   ),
   word('reach', '도착하다', 6, 'verb',
-    ['확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다'],
+    ['나르다', '감염시키다', '번영하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다'],
     tips({
       etymology: '고대 영어 rǣcan에서 유래하여 \'손을 뻗다\'라는 의미에서 목표 지점에 \'닿다\' 혹은 \'도착하다\'로 발전했습니다.',
       visual: '등산객이 산 정상에 올라가 깃발을 꽂는 장면이나 마라톤 선수가 결승선을 통과하는 모습을 상상하세요.',
@@ -455,6 +593,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'The hikers finally managed to get to the mountain summit before the sun went down.', ko: '등산객들은 해가 지기 전에 마침내 산 정상에 도착할 수 있었습니다.' },
         { en: 'Both parties worked hard for hours to arrive at a mutual agreement regarding the contract.', ko: '양측은 계약에 관한 상호 합의에 도달하기 위해 몇 시간 동안 열심히 노력했습니다.' },
+      ],
+      wordDistractors: ['breach', 'preach', 'bleach'],
+      definitionDistractors: [
+        'to withdraw from a position or location in an orderly manner',
+        'to scatter objects widely across a large open area or surface',
+        'to communicate a message by speaking loudly across a great distance',
       ],
     }
   ),
@@ -475,6 +619,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The stock market tended to respond sharply to the unexpected news from the central bank.', ko: '주식 시장은 중앙은행의 예상치 못한 소식에 급격하게 반응하는 경향이 있었다.' },
         { en: 'How did your parents behave when you told them about your decision to move abroad?', ko: '당신이 해외로 이주하겠다는 결정을 말했을 때 부모님은 어떻게 반응하셨나요?' },
       ],
+      wordDistractors: ['enact', 'exact', 'retract'],
+      definitionDistractors: [
+        'to carefully plan an action well in advance of its execution',
+        'to observe something passively without taking any further steps',
+        'to deliberately delay making a decision until more information is available',
+      ],
     }
   ),
   word('read', '읽다', 1, 'verb',
@@ -493,6 +643,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'She likes to spend her Sunday afternoons with a good book to enjoy.', ko: '그녀는 일요일 오후를 즐거운 책 한 권을 읽으며 보내는 것을 좋아합니다.' },
         { en: 'Please look at the instructions carefully before you start the exam.', ko: '시험을 시작하기 전에 지시 사항을 주의 깊게 읽어 주시기 바랍니다.' },
+      ],
+      wordDistractors: ['reed', 'bead', 'lead'],
+      definitionDistractors: [
+        'to write down words or sentences onto paper using a pen or pencil',
+        'to speak aloud to an audience during a formal presentation or lecture',
+        'to memorize information by repeating it multiple times until retained',
       ],
     }
   ),
@@ -513,10 +669,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The movie is based on a true story about a person who lived in the eighteenth century.', ko: '그 영화는 18세기에 살았던 한 인물에 대한 실화에 바탕을 두고 있습니다.' },
         { en: 'Scientists are searching for evidence of life on other planets to see if it is truly there.', ko: '과학자들은 다른 행성에 생명체가 실제로 존재하는지 확인하기 위해 증거를 찾고 있습니다.' },
       ],
+      wordDistractors: ['regal', 'renal', 'repeal'],
+      definitionDistractors: [
+        'created entirely by human effort rather than occurring naturally',
+        'existing only as a concept or theory without physical form',
+        'visible on the surface but lacking substance or true depth',
+      ],
     }
   ),
   word('realize', '깨닫다', 5, 'verb',
-    ['행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다'],
+    ['(관심, 노력 등을) 돌리다, 쏟다', '당혹시키다', '밝게 하다; 명확하게 하다', '소생하다', '훈계하다, 따지다', '못쓰게 만들다', '카페인을 제거하다', '길들이다', '선택하다', '결정하다'],
     tips({
       etymology: '현실을 뜻하는 real에 \'~하게 만들다\'는 ize가 붙어, 머릿속 생각을 현실로 명확히 인지한다는 뜻이 됩니다.',
       visual: '어두운 방에서 갑자기 전등 스위치를 켜서 주변 사물이 환하게 보이는 장면을 상상해 보세요.',
@@ -531,6 +693,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'She did not become aware of her mistake until the meeting was over.', ko: '그녀는 회의가 끝날 때까지 자신의 실수를 깨닫지 못했다.' },
         { en: 'Many people eventually grasp the importance of health after getting sick.', ko: '많은 이들이 병에 걸리고 나서야 결국 건강의 중요성을 깨닫는다.' },
+      ],
+      wordDistractors: ['revitalize', 'rationalize', 'finalize'],
+      definitionDistractors: [
+        'to intentionally forget or dismiss a piece of information as unimportant',
+        'to fabricate an entirely fictional account of events that never occurred',
+        'to predict the outcome of a future event based on available evidence',
       ],
     }
   ),
@@ -551,6 +719,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The passengers were asked to enter the bus through the door at the back.', ko: '승객들은 버스 뒤쪽에 있는 문을 통해 탑승해 달라는 요청을 받았습니다.' },
         { en: 'A small garden is located at the very end of the house property.', ko: '집 부지의 맨 뒤편에는 작은 정원이 위치해 있습니다.' },
       ],
+      wordDistractors: ['shear', 'spear', 'smear'],
+      definitionDistractors: [
+        'the very top or highest point of a structure or natural formation',
+        'a side entrance typically used for emergency evacuation purposes',
+        'the central interior section of a building where people congregate',
+      ],
     }
   ),
   word('reason', '이성', 6, 'noun',
@@ -569,6 +743,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'Humans are often distinguished from other animals by their ability to use logic and objective thought.', ko: '인간은 논리와 객관적 사고를 사용하는 능력에 의해 종종 다른 동물들과 구별됩니다.' },
         { en: 'We must appeal to people\'s sense of logical judgment rather than their fears.', ko: '우리는 사람들의 공포심보다는 그들의 논리적 판단력에 호소해야 합니다.' },
+      ],
+      wordDistractors: ['season', 'treason', 'beacon'],
+      definitionDistractors: [
+        'a deep emotional response triggered by a surprising or traumatic event',
+        'a fixed belief held without evidence or logical justification',
+        'the physical ability to perceive the world through the five senses',
       ],
     }
   ),
@@ -589,10 +769,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The young man was known as a rebel who constantly challenged the strict rules of his school.', ko: '그 젊은이는 학교의 엄격한 규칙에 끊임없이 도전하는 반항아로 알려져 있었다.' },
         { en: 'Historical records describe him as a brave rebel who fought for the rights of the common people.', ko: '역사 기록은 그를 서민들의 권리를 위해 싸운 용감한 반역자로 묘사한다.' },
       ],
+      wordDistractors: ['revel', 'repel', 'relabel'],
+      definitionDistractors: [
+        'a trusted advisor who provides guidance and support to a leader',
+        'a neutral mediator who helps resolve disputes between opposing parties',
+        'a devoted follower who carries out instructions without questioning them',
+      ],
     }
   ),
   word('recall', '리콜, 회수', 7, 'noun',
-    ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
+    ['하늘', '일격', '몰래 행동하는 사람', '별, 스타', '시대정신', '외과', '의견', '적성', '다발', '노, 패들'],
     tips({
       etymology: '다시를 뜻하는 re-와 부르다를 뜻하는 call이 합쳐져 물건을 다시 불러들이는 상황을 나타냅니다.',
       visual: '결함이 발견된 자동차들이 줄지어 공장으로 다시 들어가는 장면을 상상해 보세요.',
@@ -607,6 +793,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'The automobile manufacturer issued a massive recall due to a faulty braking system.', ko: '자동차 제조업체는 결함이 있는 제동 장치 때문에 대규모 회수 조치를 발표했습니다.' },
         { en: 'Customers were notified of the immediate recall of the contaminated food products.', ko: '고객들은 오염된 식품의 즉각적인 회수 통보를 받았습니다.' },
+      ],
+      wordDistractors: ['recoil', 'recal', 'recap'],
+      definitionDistractors: [
+        'a formal announcement promoting the launch of a brand-new product',
+        'the ability to remember past events with perfect clarity and detail',
+        'a routine inspection conducted to verify compliance with safety standards',
       ],
     }
   ),
@@ -627,6 +819,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'Please acknowledge the arrival of the documents immediately upon their delivery.', ko: '서류를 수령하는 즉시 도착 사실을 알려주시기 바랍니다.' },
         { en: 'The confirmation email was sent to the customer shortly after the transaction was completed.', ko: '거래가 완료된 직후 고객에게 수령 확인 이메일이 발송되었습니다.' },
       ],
+      wordDistractors: ['deceit', 'conceit', 'receipts'],
+      definitionDistractors: [
+        'a printed document showing the amount paid for a purchase',
+        'the formal process of sending a package to a designated address',
+        'a written contract binding two parties to fulfill specific obligations',
+      ],
     }
   ),
   word('receive', '받다', 5, 'verb',
@@ -645,6 +843,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'The charity will receive a generous donation from an anonymous benefactor tomorrow.', ko: '그 자선 단체는 내일 익명의 후원자로부터 관대한 기부금을 받을 것입니다.' },
         { en: 'Please confirm via email once you receive the attached documents for the meeting.', ko: '회의를 위한 첨부 서류를 받으시면 이메일로 확인해 주시기 바랍니다.' },
+      ],
+      wordDistractors: ['perceive', 'deceive', 'conceive'],
+      definitionDistractors: [
+        'to hand over or deliver an item to another person directly',
+        'to discard or throw away something that is no longer needed',
+        'to borrow an item temporarily with the intention of returning it later',
       ],
     }
   ),
@@ -665,6 +869,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The company\'s stock price dropped significantly following a series of recent scandals.', ko: '일련의 최근 스캔들 이후 그 회사의 주가가 크게 하락했습니다.' },
         { en: 'Scientists have discovered a new species of frog during their most recent expedition to the Amazon.', ko: '과학자들은 가장 최근의 아마존 탐사 중에 새로운 개구리 종을 발견했습니다.' },
       ],
+      wordDistractors: ['decent', 'reticent', 'crescent'],
+      definitionDistractors: [
+        'belonging to a time period in the distant and remote past',
+        'expected to take place at some unspecified point in the future',
+        'continuing unchanged over a very long span of time without interruption',
+      ],
     }
   ),
   word('reception', '받음', 7, 'noun',
@@ -683,6 +893,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'The new art gallery opening received a very warm reception from the local community.', ko: '새로운 미술관 개관은 지역 사회로부터 매우 따뜻한 환영을 받았습니다.' },
         { en: 'Poor satellite reception caused the television broadcast to flicker during the storm.', ko: '좋지 않은 위성 수신 상태 때문에 폭풍우 동안 TV 방송이 깜빡거렸습니다.' },
+      ],
+      wordDistractors: ['deception', 'perception', 'inception'],
+      definitionDistractors: [
+        'the act of transmitting a signal outward from a broadcasting station',
+        'a formal ceremony held to honor a retiring employee or official',
+        'a structured interview process used to evaluate job candidates',
       ],
     }
   ),
@@ -703,6 +919,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'My grandmother refused to share her secret for the perfect apple pie.', ko: '우리 할머니께서는 완벽한 사과 파이를 만드는 그녀의 비밀 조리법을 공유하기를 거부하셨다.' },
         { en: 'Following a strict can help beginners achieve consistent results in the kitchen.', ko: '엄격한 요리법을 따르는 것은 초보자들이 주방에서 일관된 결과를 얻는 데 도움을 줄 수 있다.' },
       ],
+      wordDistractors: ['receipt', 'recede', 'respite'],
+      definitionDistractors: [
+        'a list of raw materials needed to construct a building or structure',
+        'a detailed inventory of items stored in a warehouse or stockroom',
+        'a formal agenda outlining the topics to be discussed at a meeting',
+      ],
     }
   ),
   word('recognize', '인정하다', 5, 'verb',
@@ -721,6 +943,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'The committee decided to formally honor his lifelong contribution to the field of science.', ko: '위원회는 과학 분야에 대한 그의 평생의 공헌을 공식적으로 인정하기로 결정했습니다.' },
         { en: 'She could barely see the old house through the thick fog after all these years.', ko: '그녀는 수년이 지난 후 짙은 안개 속에서 그 오래된 집을 거의 알아볼 수 없었습니다.' },
+      ],
+      wordDistractors: ['reorganize', 'reconcile', 'recollect'],
+      definitionDistractors: [
+        'to deliberately conceal something from public view or awareness',
+        'to assign a new name or label to an existing object or concept',
+        'to express strong disapproval of someone or something in public',
       ],
     }
   ),
@@ -741,10 +969,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The librarian can suggest several books that match your interests perfectly.', ko: '사서 선생님은 당신의 관심사에 딱 맞는 책 몇 권을 권해줄 수 있습니다.' },
         { en: 'Many travel experts advise visiting the island during the spring season.', ko: '많은 여행 전문가들은 봄철에 그 섬을 방문할 것을 권장합니다.' },
       ],
+      wordDistractors: ['recompense', 'recombine', 'recommit'],
+      definitionDistractors: [
+        'to strictly prohibit someone from participating in a specific activity',
+        'to demand immediate repayment of a previously owed financial debt',
+        'to formally withdraw a statement or opinion previously made public',
+      ],
     }
   ),
   word('record', '기록하다', 7, 'verb',
-    ['정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다'],
+    ['정리하다', '가라앉다', '기다리다', '을 중심으로 돌다', '짜다', '응시하다', '버리다, 포기하다', '수출하다', '보충하다', '벌다'],
     tips({
       etymology: '라틴어 \'re(다시)\'와 \'cor(심장/마음)\'이 합쳐져 \'다시 마음속에 불러오다\'라는 의미에서 유래했습니다.',
       visual: '중요한 순간을 놓치지 않으려고 수첩에 꼼꼼히 적거나 카메라 셔터를 누르는 모습을 상상해 보세요.',
@@ -760,10 +994,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The historian spent years trying to document every detail of the ancient civilization.', ko: '그 역사가는 고대 문명의 모든 세부 사항을 기록하기 위해 수년을 보냈습니다.' },
         { en: 'Please make sure to note down the exact time each participant enters the room.', ko: '각 참가자가 방에 들어오는 정확한 시간을 반드시 기록해 주세요.' },
       ],
+      wordDistractors: ['reword', 'recourse', 'discord'],
+      definitionDistractors: [
+        'to permanently destroy all copies of a document or digital file',
+        'to verbally communicate information to another person in conversation',
+        'to perform a live musical piece in front of an assembled audience',
+      ],
     }
   ),
   word('recover', '되찾다', 4, 'verb',
-    ['상실', '파괴', '망각', '포기', '손실', '거절', '지연', '중단', '삭제', '방치'],
+    ['잃다', '포기하다', '버리다', '놓치다', '상실하다', '양보하다', '방치하다', '중단하다', '거절하다', '파괴하다'],
     tips({
       etymology: '라틴어 recuperare에서 유래했으며, re(다시)와 capere(잡다)가 합쳐져 잃어버린 것을 다시 손에 넣는다는 의미를 가집니다.',
       visual: '바닥에 떨어진 지갑을 다시 주워 주머니에 넣는 모습을 상상해 보세요.',
@@ -778,6 +1018,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'The police managed to find the stolen vehicle and return it to its rightful owner.', ko: '경찰은 도난 차량을 찾아내어 정당한 소유주에게 되찾아 주었습니다.' },
         { en: 'It took several months for the local economy to bounce back after the natural disaster.', ko: '자연재해 이후 지역 경제가 원래 상태를 되찾는 데 몇 달이 걸렸습니다.' },
+      ],
+      wordDistractors: ['uncover', 'discover', 'rollover'],
+      definitionDistractors: [
+        'to permanently give away possessions to another person or charity',
+        'to intentionally damage or break something beyond any possible repair',
+        'to conceal an object in a secure location where it cannot be found',
       ],
     }
   ),
@@ -798,10 +1044,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The drill sergeant spent the entire afternoon training the young recruit on how to salute properly.', ko: '훈련 교관은 오후 내내 어린 신병에게 제대로 경례하는 법을 가르치는 데 시간을 보냈다.' },
         { en: 'Every new recruit must undergo a rigorous physical examination before starting basic training.', ko: '모든 신병은 기초 훈련을 시작하기 전에 엄격한 신체검사를 받아야 한다.' },
       ],
+      wordDistractors: ['refute', 'repute', 'requite'],
+      definitionDistractors: [
+        'a senior officer who has served in the military for many decades',
+        'a civilian contractor hired temporarily to complete a specific project',
+        'a decorated war hero awarded for exceptional bravery in combat',
+      ],
     }
   ),
-  word('recycle', '이용하다', 5, 'verb',
-    ['정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다'],
+  word('recycle', '재활용하다', 5, 'verb',
+    ['정리하다', '미리 보다; 시사회', '비웃다, 경멸하다', '~와 협력하다', '열망하다', '만들었다 (make의 과거)', '공고히 하다 / 합하다', '교육하다', '변장/가장하다', '열거하다'],
     tips({
       etymology: '다시를 뜻하는 re-와 순환을 뜻하는 cycle이 합쳐져 자원을 다시 돌려 쓴다는 의미가 됩니다.',
       visual: '초록색 화살표 세 개가 삼각형 모양으로 서로를 가리키며 뱅글뱅글 도는 마크를 상상해 보세요.',
@@ -816,6 +1068,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'Many cities encourage residents to sort their trash to effectively process reusable materials.', ko: '많은 도시들이 재사용 가능한 재료들을 효과적으로 처리하기 위해 주민들에게 쓰레기 분리배출을 권장합니다.' },
         { en: 'Old glass bottles can be melted down and transformed into new containers.', ko: '오래된 유리병들은 녹여서 새로운 용기로 다시 만들어질 수 있습니다.' },
+      ],
+      wordDistractors: ['bicycle', 'icicle', 'receptacle'],
+      definitionDistractors: [
+        'to bury unwanted items deep underground in a designated landfill',
+        'to transport goods from one warehouse to another for storage purposes',
+        'to consume natural resources at a faster rate than they can be replaced',
       ],
     }
   ),
@@ -836,6 +1094,12 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The sunset painted the entire sky in a deep shade of crimson and orange.', ko: '노을이 온 하늘을 짙은 붉은색과 오렌지색으로 물들였습니다.' },
         { en: 'She wore a bright dress to the party to make sure she stood out in the crowd.', ko: '그녀는 군중 속에서 확실히 눈에 띄기 위해 파티에 밝은 빨간색 드레스를 입고 갔습니다.' },
       ],
+      wordDistractors: ['rod', 'rid', 'rad'],
+      definitionDistractors: [
+        'having a cool blue tone reminiscent of clear ocean water',
+        'completely transparent and allowing all light to pass through',
+        'displaying a pale yellowish hue similar to freshly churned butter',
+      ],
     }
   ),
   word('reduce', '줄이다', 6, 'verb',
@@ -855,10 +1119,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The company plans to cut costs and minimize waste to improve efficiency.', ko: '그 회사는 효율성을 높이기 위해 비용을 절감하고 폐기물을 줄일 계획입니다.' },
         { en: 'Eating more vegetables can help lower the risk of heart disease significantly.', ko: '채소를 더 많이 먹는 것은 심장병의 위험을 상당히 낮추는 데 도움이 될 수 있습니다.' },
       ],
+      wordDistractors: ['deduce', 'produce', 'induce'],
+      definitionDistractors: [
+        'to make something larger or more extensive than it was before',
+        'to maintain something at exactly the same level without any change',
+        'to divide a single entity into multiple smaller equal parts',
+      ],
     }
   ),
-  word('refer', '조회시키다', 7, 'verb',
-    ['행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다'],
+  word('refer', '의뢰하다', 7, 'verb',
+    ['펑크내다, 나다/(자신감, 자존심)없어지게 하다, 상하게 하다', '개시하다, 시작하다', '보강하다', '혁신을 일으키다', '~을 잘하다', '수렴하다', '버리다', '닮다', '선택하다', '결정하다'],
     tips({
       etymology: '라틴어 \'re-(다시)\'와 \'ferre(가져오다)\'가 합쳐져 정보를 다시 가져와 확인한다는 의미를 가집니다.',
       visual: '도서관 사서가 질문을 받고 백과사전의 특정 페이지를 가리키는 모습을 상상해 보세요.',
@@ -874,9 +1144,15 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The general practitioner decided to send the patient to a specialist for further examination.', ko: '일반의는 정밀 검사를 위해 환자를 전문의에게 조회시키기로 결정했다.' },
         { en: 'Please look at the appendix at the back of the book for more detailed statistical data.', ko: '더 자세한 통계 자료를 위해 책 뒤편의 부록을 조회해 주십시오.' },
       ],
+      wordDistractors: ['defer', 'infer', 'confer'],
+      definitionDistractors: [
+        'to keep something entirely to oneself without sharing with others',
+        'to reject a proposal or suggestion made by a colleague or peer',
+        'to physically transport an object from one place to a distant location',
+      ],
     }
   ),
-  word('refine', '정제정련하다', 8, 'verb',
+  word('refine', '정제하다', 8, 'verb',
     ['오염시키다', '방치하다', '파괴하다', '무시하다', '혼합하다', '낭비하다', '거칠게하다', '중단하다', '지연시키다', '훼손하다'],
     tips({
       etymology: '다시를 뜻하는 re와 순수한 상태를 뜻하는 fine이 결합하여 다시 순수하게 만든다는 의미가 되었습니다.',
@@ -893,10 +1169,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'Engineers continue to improve the technology to further process and purify the raw materials.', ko: '엔지니어들은 원자재를 더욱 정제하고 가공하기 위해 기술을 계속 개선하고 있습니다.' },
         { en: 'The author spent several months working to polish and improve the final manuscript before publication.', ko: '작가는 출판 전 최종 원고를 다듬고 개선하는 데 몇 달을 보냈습니다.' },
       ],
+      wordDistractors: ['define', 'confine', 'recline'],
+      definitionDistractors: [
+        'to deliberately contaminate a substance by introducing harmful agents',
+        'to disassemble a machine or device into its individual component parts',
+        'to combine multiple raw materials together without any quality control',
+      ],
     }
   ),
   word('reflect', '반사하다', 4, 'verb',
-    ['변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다'],
+    ['고용하다', '시연하다', '익숙하게 하다', '달성하다', '길들이다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다'],
     tips({
       etymology: '라틴어 \'reflectere\'에서 유래했으며 \'re(뒤로)\'와 \'flectere(굽히다)\'가 합쳐져 빛이나 생각이 되돌아오는 것을 의미합니다.',
       visual: '거울 앞에 서서 자신의 모습이 그대로 비치는 장면이나 잔잔한 호수 위에 산이 비치는 모습을 상상해 보세요.',
@@ -912,10 +1194,16 @@ export const vocabBatch54: VocabItem[] = [
         { en: 'The calm surface of the lake acted like a mirror to show the surrounding mountains.', ko: '잔잔한 호수 표면이 거울처럼 작용하여 주변의 산들을 비추었다.' },
         { en: 'Take some time at the end of the year to think deeply about your achievements and failures.', ko: '연말에 시간을 내어 당신의 성취와 실패에 대해 깊이 되돌아보세요.' },
       ],
+      wordDistractors: ['deflect', 'inflect', 'neglect'],
+      definitionDistractors: [
+        'to completely absorb all incoming light without any visible effect',
+        'to transmit a signal forward to a distant receiver or antenna',
+        'to bend an object permanently into a new shape using applied force',
+      ],
     }
   ),
   word('reform', '개혁하다', 5, 'verb',
-    ['파괴하다', '유지하다', '방치하다', '무시하다', '반복하다', '수행하다', '확인하다', '시작하다', '처리하다', '적용하다'],
+    ['파괴하다', '교화하다', '방치하다', '무시하다', '찬성하다, 지지하다, 용인하다, 참다', '노출하다', '재고하다', '완화하다', '직면하다', '표현하다'],
     tips({
       etymology: '다시를 뜻하는 re와 형태를 뜻하는 form이 합쳐져 모양을 다시 고쳐 만든다는 어원을 가집니다.',
       visual: '낡고 찌그러진 건물을 새롭고 튼튼한 구조로 다시 짓는 공사 현장을 상상해 보세요.',
@@ -930,6 +1218,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'The government announced a new plan to improve the healthcare system next year.', ko: '정부는 내년에 의료 체계를 개선하기 위한 새로운 계획을 발표했습니다.' },
         { en: 'Activists are demanding that the authorities change the outdated legal structure immediately.', ko: '활동가들은 당국이 시대에 뒤떨어진 법적 구조를 즉각 개혁할 것을 요구하고 있습니다.' },
+      ],
+      wordDistractors: ['perform', 'inform', 'deform'],
+      definitionDistractors: [
+        'to completely destroy an existing system without replacing it',
+        'to maintain traditional practices exactly as they have always been',
+        'to temporarily suspend operations until a future review is completed',
       ],
     }
   ),
@@ -949,6 +1243,12 @@ export const vocabBatch54: VocabItem[] = [
       exampleSentences: [
         { en: 'Please put the leftover pizza back in the kitchen appliance so it stays fresh.', ko: '남은 피자가 신선하게 유지되도록 주방 가전제품 안에 다시 넣어주세요.' },
         { en: 'The milk turned sour because someone forgot to close the door of the cooling unit.', ko: '누군가 냉각 장치의 문을 닫는 것을 잊어버려서 우유가 상했습니다.' },
+      ],
+      wordDistractors: ['reverberate', 'regenerator', 'remunerate'],
+      definitionDistractors: [
+        'a heating device used to warm rooms during cold winter months',
+        'a machine that rapidly dries wet clothing using hot circulating air',
+        'an industrial oven designed to bake large quantities of bread at once',
       ],
     }
   ),

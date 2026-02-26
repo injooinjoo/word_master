@@ -19,10 +19,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'She will receive her diploma when she finishes all her credits next spring.', ko: '그녀는 내년 봄에 모든 학점을 이수하면 졸업장을 수여받을 것입니다.' },
         { en: 'The university decided to confer honorary degrees upon the distinguished guests.', ko: '대학교는 귀빈들에게 명예 학위를 수여하기로 결정했습니다.' },
       ],
+      wordDistractors: ['gradual', 'gratitude', 'grandeur'],
+      definitionDistractors: [
+        'to slowly decrease in intensity or strength over time',
+        'to formally withdraw from a professional organization',
+        'to assign a numerical ranking to a set of items',
+      ],
     }
   ),
   word('grain', '곡물', 4, 'noun',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['회기', '고생', '조리법', '실험[실습]실', '엉덩이', '진행', '예방조치, 예방책', '실례', '베토벤', '(만날) 약속, 임명'],
     tips({
       etymology: '라틴어 \'granum\'에서 유래했으며, 이는 씨앗이나 작은 알갱이를 의미합니다.',
       visual: '황금빛 논밭에서 벼 이삭이 바람에 흔들리며 낱알이 떨어지는 모습을 상상해 보세요.',
@@ -37,6 +43,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'The farmers harvested a record amount of grain this autumn.', ko: '농부들은 이번 가을에 기록적인 양의 곡물을 수확했습니다.' },
         { en: 'Whole grain bread is generally considered healthier than white bread.', ko: '통곡물 빵은 일반적으로 흰 빵보다 더 건강에 좋은 것으로 여겨집니다.' },
+      ],
+      wordDistractors: ['groin', 'drain', 'grin'],
+      definitionDistractors: [
+        'a coarse powder made by grinding dried herbs or spices',
+        'the direction or pattern in which wood fibers run',
+        'a thin layer of paint applied to a canvas as a base coat',
       ],
     }
   ),
@@ -57,6 +69,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The royal family hosted a banquet in the grand ballroom of the palace.', ko: '왕실 가족은 궁전의 웅장한 연회장에서 만찬을 개최했습니다.' },
         { en: 'His grand plan for the city\'s renovation impressed the entire council.', ko: '도시 혁신을 위한 그의 원대한 계획은 의회 전체에 깊은 인상을 남겼습니다.' },
       ],
+      wordDistractors: ['grant', 'brand', 'grind'],
+      definitionDistractors: [
+        'relating to or involving a formal legal agreement between parties',
+        'extremely small in physical size or microscopic in nature',
+        'performed hastily without proper preparation or planning',
+      ],
     }
   ),
   word('grandfather', '할아버지', 1, 'noun',
@@ -75,6 +93,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'My mother\'s father is a very kind and wise man.', ko: '나의 외할아버지는 매우 친절하고 지혜로운 분이시다.' },
         { en: 'Every summer we visit the old farm where my male ancestor lives.', ko: '매년 여름 우리는 할아버지가 사시는 오래된 농장을 방문한다.' },
+      ],
+      wordDistractors: ['grandmother', 'grandchild', 'godfather'],
+      definitionDistractors: [
+        'the male head of a large corporation or organization',
+        'an elderly man who serves as a community leader',
+        'the oldest surviving member of any biological species',
       ],
     }
   ),
@@ -95,6 +119,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The government decided to grant citizenship to all eligible applicants.', ko: '정부는 자격을 갖춘 모든 지원자에게 시민권을 수여하기로 결정했습니다.' },
         { en: 'The judge agreed to grant the defendant bail under strict conditions.', ko: '판사는 엄격한 조건 하에 피고인에게 보석을 허가하기로 동의했습니다.' },
       ],
+      wordDistractors: ['grand', 'grunt', 'graft'],
+      definitionDistractors: [
+        'to forcefully take something away from someone without permission',
+        'to publicly announce the results of an official investigation',
+        'to lend money at a fixed interest rate over a set period',
+      ],
     }
   ),
   word('grape', '포도', 2, 'noun',
@@ -114,10 +144,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The farmer harvested a large bunch of purple fruit from the vine.', ko: '농부는 덩굴에서 커다란 보라색 포도 한 송이를 수확했습니다.' },
         { en: 'Fresh juice made from this fruit is both sweet and slightly tart.', ko: '이 과일로 만든 신선한 주스는 달콤하면서도 약간 새콤합니다.' },
       ],
+      wordDistractors: ['grace', 'drape', 'gripe'],
+      definitionDistractors: [
+        'a type of citrus fruit with a thick yellow rind',
+        'a dried legume commonly used in soups and stews',
+        'a flowering shrub that produces aromatic blossoms in spring',
+      ],
     }
   ),
   word('graphic', '그래픽', 7, 'noun',
-    ['기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건'],
+    ['빈민가', '대성당', '인플레이션, 물가 상승', '10월', '로켓', '명 tion, mal', '의무', '정력, 활기, 열정', '정치', '방랑자, 부랑자 / 방랑하는 / (생각) 변덕스런, 불안정한'],
     tips({
       etymology: '그리스어 \'graphikos\'에서 유래하여 \'쓰다\' 또는 \'그리다\'라는 의미를 담고 있습니다.',
       visual: '컴퓨터 화면에 아주 선명하고 생생하게 그려진 도표나 그림을 상상해 보세요.',
@@ -133,10 +169,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The news report included a detailed map and a helpful information chart.', ko: '뉴스 보도에는 상세한 지도와 도움이 되는 정보 도표가 포함되었습니다.' },
         { en: 'Modern video games feature incredibly realistic visual elements that mimic real life.', ko: '현대 비디오 게임은 실제 삶을 흉내 내는 믿을 수 없을 정도로 사실적인 시각적 요소들을 특징으로 합니다.' },
       ],
+      wordDistractors: ['traffic', 'gravel', 'drastic'],
+      definitionDistractors: [
+        'a written transcript of a formal interview or speech',
+        'a numerical table used for calculating statistical averages',
+        'the process of encoding data into a compressed digital format',
+      ],
     }
   ),
   word('grasp', '붙잡다', 8, 'verb',
-    ['포기', '방출', '무지', '해방', '거절', '상실', '실패', '혼란', '망각', '배제'],
+    ['놓다', '놓치다', '던지다', '밀다', '떨어뜨리다', '포기하다', '놓아주다', '미끄러지다', '흩뿌리다', '풀다'],
     tips({
       etymology: '고대 영어 \'græpian\'에서 유래하여 손으로 꽉 쥐는 동작에서 지식의 습득으로 의미가 확장되었습니다.',
       visual: '어두운 곳에서 손을 뻗어 단단한 손잡이를 꽉 잡는 모습을 상상해 보세요.',
@@ -145,12 +187,18 @@ export const vocabBatch37: VocabItem[] = [
       synonymAntonym: 'grip은 꽉 쥐는 힘을 강조하고, release는 잡았던 것을 놓아주는 반대 행동입니다.',
     }),
     {
-      definition: 'the act of gripping something firmly with the hands or the ability to understand a complex idea',
+      definition: 'to seize and hold something firmly with the hands, or to fully understand a complex idea',
       synonyms: ['grip', 'understanding', 'comprehension'],
       antonyms: ['release', 'ignorance', 'misunderstanding'],
       exampleSentences: [
         { en: 'The climber kept a firm hold, making sure his fingers did not lose their strength.', ko: '등반가는 손가락의 힘이 빠지지 않도록 단단히 붙잡는 힘을 유지했습니다.' },
         { en: 'Advanced calculus is often beyond the intellectual reach of most high school students.', ko: '고급 미적분학은 대다수 고등학생들의 지적 이해 범위를 벗어나는 경우가 많습니다.' },
+      ],
+      wordDistractors: ['gasp', 'clasp', 'graze'],
+      definitionDistractors: [
+        'to throw an object with great force toward a distant target',
+        'to carefully arrange items in a specific order or sequence',
+        'to whisper something quietly so that others cannot hear',
       ],
     }
   ),
@@ -171,6 +219,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The children enjoyed running barefoot on the soft green lawn after the rain.', ko: '아이들은 비가 온 뒤 부드러운 초록색 풀밭 위를 맨발로 뛰노는 것을 즐겼다.' },
         { en: 'Cows spend most of their day grazing on the lush hillsides of the farm.', ko: '소들은 하루의 대부분을 농장의 푸른 언덕 위에서 풀을 뜯으며 보낸다.' },
       ],
+      wordDistractors: ['glass', 'brass', 'grace'],
+      definitionDistractors: [
+        'a type of lightweight fabric woven from natural fibers',
+        'the outer bark of a tree used in traditional medicine',
+        'a shallow body of still water found in marshy areas',
+      ],
     }
   ),
   word('grateful', '고마운', 4, 'adjective',
@@ -189,6 +243,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'The rescue team was deeply touched by the letters from the survivors.', ko: '구조팀은 생존자들이 보낸 편지에 깊은 고마움을 느꼈습니다.' },
         { en: 'She felt immensely appreciative for the support her family provided during the crisis.', ko: '그녀는 위기 동안 가족이 보내준 지지에 대해 대단히 고맙게 생각했습니다.' },
+      ],
+      wordDistractors: ['graceful', 'grated', 'gratified'],
+      definitionDistractors: [
+        'experiencing a strong sense of pride in one\'s own achievements',
+        'feeling anxious or worried about an upcoming event',
+        'being deeply moved by a piece of music or art',
       ],
     }
   ),
@@ -209,6 +269,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The family gathered to place fresh flowers on their grandfather\'s final resting place.', ko: '가족들은 할아버지의 마지막 안식처인 무덤에 생화를 놓기 위해 모였다.' },
         { en: 'Archaeologists carefully uncovered an ancient stone chamber hidden beneath the soil.', ko: '고고학자들은 흙 아래 숨겨진 고대 석실 무덤을 조심스럽게 발굴했다.' },
       ],
+      wordDistractors: ['grove', 'gravel', 'crave'],
+      definitionDistractors: [
+        'a large stone monument erected to commemorate a historical event',
+        'a deep underground tunnel used for mining precious metals',
+        'a sacred altar found in ancient religious temples',
+      ],
     }
   ),
   word('great', '커다란', 1, 'adjective',
@@ -227,6 +293,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'A great wall was built around the city to protect the citizens from invaders.', ko: '침략자들로부터 시민들을 보호하기 위해 도시 주변에 커다란 성벽이 세워졌습니다.' },
         { en: 'The artist showed great skill in capturing the subtle details of the landscape.', ko: '그 화가는 풍경의 미묘한 세부 사항을 포착하는 데 있어 커다란 기량을 보여주었습니다.' },
+      ],
+      wordDistractors: ['greet', 'treat', 'grate'],
+      definitionDistractors: [
+        'occurring at regular intervals throughout the day',
+        'having a bitter or unpleasant taste when consumed',
+        'being average or ordinary in quality without distinction',
       ],
     }
   ),
@@ -247,10 +319,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The corporate executive\'s relentless pursuit of profit was driven by pure personal gain and material desire.', ko: '그 기업 임원의 끊임없는 이윤 추구는 순수한 개인적 이득과 물질적 탐욕에 의해 움직였다.' },
         { en: 'Many ancient fables warn that excessive hunger for wealth often leads to a person\'s ultimate downfall.', ko: '많은 고대 우화들은 부에 대한 과도한 탐욕이 종종 사람의 궁극적인 몰락을 초래한다고 경고한다.' },
       ],
+      wordDistractors: ['creed', 'breed', 'freed'],
+      definitionDistractors: [
+        'a sudden feeling of sadness caused by a personal loss',
+        'the act of sharing resources equally among a group of people',
+        'a strong determination to achieve a specific long-term goal',
+      ],
     }
   ),
   word('greet', '인사하다', 7, 'verb',
-    ['설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다'],
+    ['설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '간섭하다', '자극하다, 촉진하다', '나무라다', '(도시, 가로 등) 불규칙하게 넓어지다[뻗다]', '(미리) 가정하다'],
     tips({
       etymology: '고대 영어 \'gretan\'에서 유래했으며, 누군가에게 다가가 말을 걸거나 환영한다는 의미를 담고 있습니다.',
       visual: '공항 입국장에서 환하게 웃으며 손을 흔들어 손님을 맞이하는 가이드의 모습을 상상해 보세요.',
@@ -265,6 +343,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'The host stood at the door to welcome and shake hands with every guest.', ko: '주인은 모든 손님과 인사하고 악수하기 위해 문 앞에 서 있었습니다.' },
         { en: 'Local residents gathered at the pier to cheer and wave as the ship arrived.', ko: '배가 도착하자 지역 주민들이 부두에 모여 환호하고 손을 흔들며 맞이했습니다.' },
+      ],
+      wordDistractors: ['great', 'fleet', 'treat'],
+      definitionDistractors: [
+        'to formally introduce oneself at a business conference',
+        'to send a written invitation for an upcoming event',
+        'to express disapproval or criticism toward someone publicly',
       ],
     }
   ),
@@ -285,6 +369,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The sky looked heavy and dull before the storm began.', ko: '폭풍이 시작되기 전 하늘은 무겁고 흐린 회색빛이었습니다.' },
         { en: 'He noticed several silver hairs appearing around his temples.', ko: '그는 관자놀이 주변에 흰머리가 몇 가닥 생겨난 것을 발견했습니다.' },
       ],
+      wordDistractors: ['gray', 'prey', 'tray'],
+      definitionDistractors: [
+        'having a deep shade of blue similar to the ocean at dusk',
+        'completely transparent or see-through like clear glass',
+        'displaying multiple vivid colors in a striped pattern',
+      ],
     }
   ),
   word('grief', '슬픔', 4, 'noun',
@@ -303,6 +393,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'The entire community shared her profound sorrow and sense of loss after the accident.', ko: '사고 이후 온 마을 공동체가 그녀의 깊은 슬픔과 상실감을 함께 나누었습니다.' },
         { en: 'Time is often said to be the only thing that can truly heal such intense emotional pain.', ko: '시간만이 그러한 강렬한 정서적 고통을 진정으로 치유할 수 있는 유일한 것이라고 흔히들 말합니다.' },
+      ],
+      wordDistractors: ['grieve', 'brief', 'thief'],
+      definitionDistractors: [
+        'a formal written complaint filed with a legal authority',
+        'a mild annoyance caused by a trivial daily inconvenience',
+        'a feeling of relief after escaping a dangerous situation',
       ],
     }
   ),
@@ -323,6 +419,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The mountain climber maintained a firm hold on the rope to ensure his safety.', ko: '등산가는 안전을 확보하기 위해 밧줄을 꽉 잡은 상태를 유지했다.' },
         { en: 'Panic began to take hold of the crowd as the smoke filled the room.', ko: '방에 연기가 차오르자 군중들 사이에 공포가 엄습하기 시작했다.' },
       ],
+      wordDistractors: ['trip', 'drip', 'grit'],
+      definitionDistractors: [
+        'a sudden involuntary movement caused by surprise or fear',
+        'the ability to move quickly and change direction with ease',
+        'a small portable bag used for carrying personal belongings',
+      ],
     }
   ),
   word('grocery', '식품잡화류', 6, 'noun',
@@ -341,6 +443,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'We need to stop at the local store to pick up some fresh milk and other daily supplies.', ko: '우리는 신선한 우유와 다른 일상 식품들을 사기 위해 동네 가게에 들러야 합니다.' },
         { en: 'The delivery service brought the bags of vegetables and fruit right to my front door.', ko: '배달 서비스가 채소와 과일이 든 봉지들을 내 집 앞까지 바로 가져다주었습니다.' },
+      ],
+      wordDistractors: ['grocer', 'grotto', 'gopher'],
+      definitionDistractors: [
+        'a large warehouse used for storing industrial equipment',
+        'a specialty shop that sells handmade crafts and artwork',
+        'a type of outdoor market that operates only on weekends',
       ],
     }
   ),
@@ -361,6 +469,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The company reported a significant increase in its annual income before taxes.', ko: '그 회사는 세전 연간 총수입이 크게 증가했다고 보고했습니다.' },
         { en: 'National wealth is often measured by the value of all goods produced within a country.', ko: '국가 부는 종종 한 국가 내에서 생산된 모든 재화의 총가치로 측정됩니다.' },
       ],
+      wordDistractors: ['gloss', 'cross', 'grouse'],
+      definitionDistractors: [
+        'extremely refined or delicate in texture and quality',
+        'remaining after all deductions and expenses have been subtracted',
+        'having an unpleasant or disgusting physical appearance',
+      ],
     }
   ),
   word('ground', '땅', 3, 'noun',
@@ -380,10 +494,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The fallen leaves covered the entire surface of the garden.', ko: '낙엽들이 정원 바닥 전체를 뒤덮었습니다.' },
         { en: 'Heavy rain made the playing field too soft for the match to continue.', ko: '폭우로 인해 경기장 바닥이 너무 질척거려 경기를 계속할 수 없었습니다.' },
       ],
+      wordDistractors: ['mound', 'round', 'grout'],
+      definitionDistractors: [
+        'the ceiling or upper interior surface of a building',
+        'a flat area of paved road designed for vehicle traffic',
+        'a raised wooden platform used for public speaking events',
+      ],
     }
   ),
   word('grow', '성장하다', 1, 'verb',
-    ['설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다'],
+    ['설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '규제하다', '되찾다', '명중하다', '결혼하다', '이의제기하다, 반대하다 (at, to, about ~)'],
     tips({
       etymology: '고대 영어 \'growan\'에서 유래했으며, 식물이 푸르게 변하며 자라나는 생명력을 의미합니다.',
       visual: '작은 씨앗에서 싹이 터서 거대한 나무로 뻗어 나가는 모습을 상상해 보세요.',
@@ -399,10 +519,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'Children tend to increase in height very quickly during their teenage years.', ko: '아이들은 십 대 시절에 키가 매우 빠르게 자라는 경향이 있습니다.' },
         { en: 'The small startup managed to expand into a global corporation within a decade.', ko: '그 작은 스타트업은 10년 만에 글로벌 기업으로 성장해냈습니다.' },
       ],
+      wordDistractors: ['glow', 'crow', 'throw'],
+      definitionDistractors: [
+        'to move rapidly from one location to another without stopping',
+        'to carefully trim or cut back the branches of a tree',
+        'to reduce in value or importance over a long period',
+      ],
     }
   ),
   word('guarantee', '보증하다', 7, 'verb',
-    ['행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다'],
+    ['비하하다, 격하시키다', '풍요롭게 하다', '전멸시키다', '스며 나오다', '애타게 하다', '미루다, 꾸물거리다', '포착하다', '위치시키다', '선택하다', '결정하다'],
     tips({
       etymology: '프랑스어 \'garant\'에서 유래했으며, 무언가를 보호하거나 안전하게 지키겠다는 약속에서 시작되었습니다.',
       visual: '가전제품을 샀을 때 들어있는 \'품질 보증서\'에 금색 도장이 찍혀 있는 모습을 상상해 보세요.',
@@ -418,9 +544,15 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The manufacturer offers a two-year warranty to provide full protection for your purchase.', ko: '제조업체는 귀하의 구매 제품을 완전히 보호하기 위해 2년의 품질 보증을 제공합니다.' },
         { en: 'Hard work alone does not always promise success in every competitive field.', ko: '노력만으로는 모든 경쟁 분야에서 성공을 항상 약속할 수는 없습니다.' },
       ],
+      wordDistractors: ['guidance', 'garnish', 'quarantine'],
+      definitionDistractors: [
+        'to formally request the return of a previously donated item',
+        'to privately express doubt about a plan without offering alternatives',
+        'to temporarily postpone a scheduled meeting or appointment',
+      ],
     }
   ),
-  word('guardian', '보호자', 10, 'noun',
+  word('guardian', '보호자', 4, 'noun',
     ['침입자', '방관자', '범죄자', '관찰자', '조력자', '기술자', '예술가', '여행자', '수혜자', '상속인'],
     tips({
       etymology: '프랑스어 \'garder(지키다)\'에서 유래하여 무언가를 지키고 돌보는 사람을 뜻합니다.',
@@ -436,6 +568,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'The court appointed an aunt as the legal protector for the orphaned children.', ko: '법원은 고아가 된 아이들의 법적 보호자로 고모를 선임했습니다.' },
         { en: 'Museum staff act as the dedicated keepers of these ancient historical artifacts.', ko: '박물관 직원들은 이 고대 역사 유물들의 헌신적인 수호자 역할을 합니다.' },
+      ],
+      wordDistractors: ['gardener', 'warden', 'curtain'],
+      definitionDistractors: [
+        'a professional advisor who manages financial investments',
+        'a government official responsible for collecting public taxes',
+        'a volunteer who organizes community recreational events',
       ],
     }
   ),
@@ -456,6 +594,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'Can you estimate how many jelly beans are in the jar without counting them?', ko: '세어보지 않고 병 안에 젤리빈이 몇 개나 들어있는지 맞혀볼 수 있나요?' },
         { en: 'She had to provide an answer even though she was not entirely sure of the facts.', ko: '그녀는 사실을 완전히 확신하지 못했음에도 불구하고 답변을 추측해서 내놓아야 했습니다.' },
       ],
+      wordDistractors: ['guest', 'quest', 'guise'],
+      definitionDistractors: [
+        'to carefully verify a fact by consulting multiple reliable sources',
+        'to make a confident prediction based on thorough scientific analysis',
+        'to deliberately withhold an answer despite knowing the correct response',
+      ],
     }
   ),
   word('guest', '손님', 4, 'noun',
@@ -475,10 +619,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The hotel staff welcomed every newcomer with a warm smile and a refreshing drink.', ko: '호텔 직원들은 모든 방문객을 따뜻한 미소와 시원한 음료로 맞이했습니다.' },
         { en: 'We are expecting a special visitor for dinner at our house tonight.', ko: '오늘 밤 우리 집 저녁 식사에 특별한 손님이 오실 예정입니다.' },
       ],
+      wordDistractors: ['guess', 'quest', 'gust'],
+      definitionDistractors: [
+        'a person who permanently resides in a particular household',
+        'a hired employee who serves food at a restaurant',
+        'an uninvited stranger who trespasses on private property',
+      ],
     }
   ),
   word('guide', '안내자', 3, 'noun',
-    ['관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표'],
+    ['조각, 파편', '낮선 사람', '해군', '압박', '중앙', '비통, 고뇌 / (비통의 원인), 어려움', '교외', '야구장; 대략적인', '덮개, (날개를) 퍼덕이다', '농작물'],
     tips({
       etymology: '고대 프랑스어 \'guider\'에서 유래했으며, 길을 보여주거나 방향을 제시한다는 의미를 담고 있습니다.',
       visual: '박물관에서 깃발을 들고 관람객들을 앞장서서 안내하는 사람의 모습을 상상해 보세요.',
@@ -494,10 +644,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The experienced mountain climber acted as a reliable leader for the group during the storm.', ko: '경험 많은 등산가는 폭풍우 속에서 그룹을 위한 믿음직한 인도자 역할을 했습니다.' },
         { en: 'This comprehensive handbook serves as a practical manual for students learning how to code.', ko: '이 종합적인 핸드북은 코딩을 배우는 학생들에게 실용적인 지침서 역할을 합니다.' },
       ],
+      wordDistractors: ['glide', 'guile', 'guild'],
+      definitionDistractors: [
+        'a rigid schedule that must be followed without any flexibility',
+        'a physical map showing the boundaries of a geographic region',
+        'an automated tool that performs repetitive calculations',
+      ],
     }
   ),
   word('guideline', '지침', 5, 'noun',
-    ['절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동'],
+    ['다양화', '총계', '측면', '사면', '곤충', '(고도의) 지식', '소란, 야단법석', '염소', '더미, 무더기', '추방자'],
     tips({
       etymology: '안내하다라는 뜻의 guide와 선을 의미하는 line이 합쳐져 행동의 방향을 잡아주는 선이라는 의미가 됩니다.',
       visual: '박물관 바닥에 그어진 관람객용 화살표 선을 따라 걷는 모습을 상상해 보세요.',
@@ -512,6 +668,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'The government issued a new safety guideline for public transportation users.', ko: '정부는 대중교통 이용자들을 위한 새로운 안전 지침을 발표했습니다.' },
         { en: 'Please follow every specific guideline provided in the manual to avoid any technical errors.', ko: '기술적 오류를 피하기 위해 매뉴얼에 제공된 모든 세부 지침을 준수해 주세요.' },
+      ],
+      wordDistractors: ['sideline', 'deadline', 'pipeline'],
+      definitionDistractors: [
+        'a strict law that carries severe penalties for violations',
+        'a personal opinion expressed informally during a casual conversation',
+        'the outer boundary or border of a designated playing field',
       ],
     }
   ),
@@ -532,6 +694,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The jury found the defendant responsible for the crime after a long deliberation.', ko: '배심원단은 긴 심의 끝에 피고인이 그 범죄에 대해 유죄라고 판결했습니다.' },
         { en: 'She felt a deep sense of regret for lying to her best friend about the incident.', ko: '그녀는 그 사건에 대해 가장 친한 친구에게 거짓말을 한 것에 대해 깊은 죄책감을 느꼈습니다.' },
       ],
+      wordDistractors: ['gullible', 'quilted', 'gilded'],
+      definitionDistractors: [
+        'feeling physically exhausted after prolonged manual labor',
+        'being extremely cautious and suspicious of others\' motives',
+        'having been officially cleared of all charges in a trial',
+      ],
     }
   ),
   word('gulf', '만', 8, 'noun',
@@ -550,6 +718,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'The oil rig was situated in the middle of the expansive gulf.', ko: '석유 시추선은 광활한 만 한가운데에 위치해 있었다.' },
         { en: 'A growing gulf between the rich and the poor remains a serious social issue.', ko: '빈부 사이의 커지는 격차는 여전히 심각한 사회적 문제로 남아 있다.' },
+      ],
+      wordDistractors: ['gulp', 'gull', 'bluff'],
+      definitionDistractors: [
+        'a narrow river flowing between steep mountain valleys',
+        'a flat sandy beach along a tropical coastline',
+        'a small freshwater lake formed by glacial activity',
       ],
     }
   ),
@@ -570,10 +744,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The police officer carried a small firearm holstered at his hip for safety.', ko: '경찰관은 안전을 위해 엉덩이춤에 작은 총기를 휴대하고 있었다.' },
         { en: 'Hunters must follow strict regulations regarding the use of any projectile weapon in the forest.', ko: '사냥꾼들은 숲에서 발사형 무기를 사용하는 것에 관한 엄격한 규정을 따라야 한다.' },
       ],
+      wordDistractors: ['gum', 'nun', 'bun'],
+      definitionDistractors: [
+        'a heavy piece of metal used as an anchor for ships',
+        'a handheld tool used for cutting through thick rope or wire',
+        'a cylindrical container designed for storing compressed air',
+      ],
     }
   ),
   word('guy', '녀석', 1, 'noun',
-    ['변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념'],
+    ['파편, 잔해', '해군 장군[제독]', '실수, (시간의) 경과', '쓸모없는 것, 쓰레기', '장비', '어색함/서투름', '오락, 즐거움', '기차', '수족관', '위안, 아늑함을 주는 것 [adj] balmy'],
     tips({
       etymology: '1605년 영국 국회의사당 폭파 음모를 꾸몄던 가이 포크스(Guy Fawkes)의 이름에서 유래하여 사람을 가리키는 말이 되었습니다.',
       visual: '청바지를 입고 편하게 웃으며 손을 흔드는 젊은 남자의 모습을 상상해 보세요.',
@@ -588,6 +768,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'That guy wearing the red hat is my younger brother.', ko: '빨간 모자를 쓰고 있는 저 녀석이 내 남동생이야.' },
         { en: 'He seems like a really nice guy once you get to know him.', ko: '그는 알고 보면 정말 괜찮은 사람인 것 같아.' },
+      ],
+      wordDistractors: ['buy', 'guide', 'gaze'],
+      definitionDistractors: [
+        'a formal title given to a high-ranking military officer',
+        'a young child under the age of ten years old',
+        'a professional colleague working in the same department',
       ],
     }
   ),
@@ -608,10 +794,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The school basketball team practices in the large indoor facility every afternoon.', ko: '학교 농구팀은 매일 오후 대형 실내 체육관에서 연습합니다.' },
         { en: 'Badminton matches were held inside the building because of the heavy rain outside.', ko: '바깥에 비가 많이 와서 배드민턴 경기가 건물 내부 실내 체조장에서 열렸습니다.' },
       ],
+      wordDistractors: ['gymnast', 'symposium', 'aquarium'],
+      definitionDistractors: [
+        'a large outdoor amphitheater used for open-air concerts',
+        'a private study room found in academic library buildings',
+        'a covered marketplace where merchants sell their goods',
+      ],
     }
   ),
   word('habit', '습관', 2, 'noun',
-    ['관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표'],
+    ['폐, 허파', '친절', '케이 (이름)', '지구, 지구본; 구체', '파트너, 동반자', '고객', '가게 주인', '기둥', '배달', '완곡어'],
     tips({
       etymology: '라틴어 \'habere(가지다, 소유하다)\'에서 유래하여 몸에 배어 가지게 된 행동을 뜻합니다.',
       visual: '매일 아침 알람이 울리자마자 물 한 잔을 마시는 자신의 반복적인 모습을 상상해 보세요.',
@@ -627,10 +819,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'Reading a few pages of a book before bed has become a relaxing nightly practice for her.', ko: '자기 전에 책을 몇 페이지 읽는 것은 그녀에게 편안한 밤의 습관이 되었습니다.' },
         { en: 'Breaking a bad behavioral cycle requires a lot of willpower and consistent effort over time.', ko: '나쁜 행동 습관을 고치는 데는 많은 의지력과 시간이 흐름에 따른 꾸준한 노력이 필요합니다.' },
       ],
+      wordDistractors: ['rabbit', 'inhabit', 'hobbit'],
+      definitionDistractors: [
+        'a single isolated event that occurs only once in a lifetime',
+        'a conscious and deliberate choice made after careful analysis',
+        'an official uniform worn by members of a religious order',
+      ],
     }
   ),
   word('habitat', '서식지', 9, 'noun',
-    ['상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미'],
+    ['커튼', '과거', '교환, 교류; 교환하다', '운전자, 기사', '독특함, 고유성', '결함', '측면', '배달', '다양성', '(크기, 무게 때문에) 다루기 힘든'],
     tips({
       etymology: '라틴어 habitare(거주하다)에서 유래하여 생물이 본래 살고 있는 장소를 뜻합니다.',
       visual: '울창한 밀림 속에서 오랑우탄이 나무 사이를 옮겨 다니는 보금자리를 상상해 보세요.',
@@ -646,10 +844,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The tropical rainforest provides a rich and diverse environment for many endangered species.', ko: '열대 우림은 많은 멸종 위기 종들에게 풍부하고 다양한 자연 서식지를 제공합니다.' },
         { en: 'Pollution and deforestation are destroying the natural areas where these animals live.', ko: '오염과 삼림 벌채는 이 동물들이 사는 자연 서식지를 파괴하고 있습니다.' },
       ],
+      wordDistractors: ['habit', 'inhabit', 'exhibit'],
+      definitionDistractors: [
+        'the typical diet or food source consumed by a particular species',
+        'a man-made structure built to house domesticated animals',
+        'the migratory route traveled by birds during seasonal changes',
+      ],
     }
   ),
   word('hair', '털', 3, 'noun',
-    ['결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회'],
+    ['애들레이드', '속임수/사기/기만', '성인', '보존', '다리', '젓가락', '갈대', '이동성', '북쪽', '폭동'],
     tips({
       etymology: '고대 영어 \'hær\'에서 유래했으며, 게르만어권 언어들에서 공통적으로 동물의 털이나 사람의 머리카락을 뜻합니다.',
       visual: '빗질을 할 때 빗 사이에 끼어 있는 가느다란 가닥들을 상상해 보세요.',
@@ -664,6 +868,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'She decided to dye her long black hair a bright shade of red.', ko: '그녀는 자신의 긴 검은 머리카락을 밝은 빨간색으로 염색하기로 결정했다.' },
         { en: 'The cat left a lot of white hair on the blue sofa.', ko: '고양이가 파란 소파 위에 하얀 털을 많이 남겨 놓았다.' },
+      ],
+      wordDistractors: ['hare', 'heir', 'fair'],
+      definitionDistractors: [
+        'the outermost layer of skin covering the human body',
+        'a type of natural fiber used in weaving textiles',
+        'a thin wire used in electronic circuits for conducting electricity',
       ],
     }
   ),
@@ -684,10 +894,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'Cut the apple in two equal pieces and give one to your younger brother.', ko: '사과를 똑같은 두 조각으로 잘라서 하나는 남동생에게 주어라.' },
         { en: 'More than fifty percent of the students in this class are from overseas.', ko: '이 학급 학생들의 절반 이상이 외국에서 왔다.' },
       ],
+      wordDistractors: ['halt', 'calf', 'halve'],
+      definitionDistractors: [
+        'the complete or total amount of something without any reduction',
+        'a measurement unit used to quantify weight in the metric system',
+        'a small fragment broken off from a much larger object',
+      ],
     }
   ),
   word('hall', '회관', 6, 'noun',
-    ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
+    ['비단', '노예상태', '계약자, 도급업자', '기계', '나머지', '지출, 비용', '가위', '지우개', '경기침체기, 쇠퇴', '캐시 (여성 이름)'],
     tips({
       etymology: '고대 영어 \'heall\'에서 유래했으며, 지붕이 덮인 넓은 공간이나 거주지를 의미했습니다.',
       visual: '마을 한복판에 커다란 지붕과 기둥이 있는 공공 건물을 상상해 보세요.',
@@ -703,10 +919,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The local community gathered in the town hall to discuss the new park project.', ko: '지역 사회 주민들은 새로운 공원 프로젝트를 논의하기 위해 마을 회관에 모였습니다.' },
         { en: 'A famous orchestra is scheduled to perform at the concert hall this Saturday.', ko: '이번 주 토요일에 유명한 오케스트라가 콘서트홀에서 공연할 예정입니다.' },
       ],
+      wordDistractors: ['haul', 'hull', 'tall'],
+      definitionDistractors: [
+        'a narrow corridor connecting two separate buildings',
+        'a small private room used for personal meditation',
+        'an open-air courtyard surrounded by stone walls',
+      ],
     }
   ),
   word('halt', '멈춰서다', 10, 'verb',
-    ['가속', '진행', '출발', '연속', '흐름', '확장', '성장', '유지', '통과', '허가'],
+    ['출발하다', '가속하다', '진행하다', '전진하다', '달리다', '나아가다', '이동하다', '속행하다', '재개하다', '돌진하다'],
     tips({
       etymology: '독일어 \'halt\'에서 유래하여 군대에서 \'멈춰!\'라고 외치는 명령에서 시작되었습니다.',
       visual: '빨간색 정지 표지판 앞에서 자동차가 급브레이크를 밟으며 끼익 소리를 내며 멈추는 장면을 상상하세요.',
@@ -715,12 +937,18 @@ export const vocabBatch37: VocabItem[] = [
       synonymAntonym: '움직임을 멈추는 stop과 유사하며, 계속 나아가는 start와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'a complete stop or a temporary interruption in movement or progress',
+      definition: 'to bring or come to an abrupt stop; to cease all movement or progress',
       synonyms: ['standstill', 'cessation', 'stoppage'],
       antonyms: ['continuation', 'commencement', 'advancement'],
       exampleSentences: [
         { en: 'The heavy snowstorm brought all traffic in the city to a complete halt.', ko: '심한 폭설로 인해 도시의 모든 교통이 완전히 멈춰 섰습니다.' },
         { en: 'Production came to a sudden halt after the main power generator failed.', ko: '메인 발전기가 고장 난 후 생산이 갑자기 중단되었습니다.' },
+      ],
+      wordDistractors: ['malt', 'vault', 'exalt'],
+      definitionDistractors: [
+        'to gradually accelerate or increase in speed and momentum',
+        'to hesitate briefly before making an important decision',
+        'to stumble or trip while walking on an uneven surface',
       ],
     }
   ),
@@ -741,10 +969,16 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'He used a heavy tool to drive the long nail into the wooden plank.', ko: '그는 나무 판자에 긴 못을 박기 위해 무거운 도구를 사용했습니다.' },
         { en: 'The blacksmith struck the glowing iron repeatedly on the anvil.', ko: '대장장이는 모루 위에서 달궈진 철을 반복해서 내리쳤습니다.' },
       ],
+      wordDistractors: ['hamper', 'stammer', 'glamour'],
+      definitionDistractors: [
+        'a sharp blade attached to a long wooden pole for harvesting crops',
+        'a precision instrument used to measure temperature changes',
+        'a large flat surface used for preparing food in a kitchen',
+      ],
     }
   ),
   word('handicap', '불리한 조건, 핸디캡', 4, 'noun',
-    ['유리한', '공평한', '우월한', '신속한', '정확한', '강력한', '안정된', '유연한', '독립적인', '풍부한'],
+    ['유리함', '장점', '혜택', '강점', '특권', '보너스', '이점', '기회', '능력', '자격'],
     tips({
       etymology: '과거 모자에 손을 넣어 내기를 하던 \'hand in cap\'에서 유래하여, 공평한 경기를 위해 실력이 좋은 사람에게 주는 불리한 조건을 뜻하게 되었습니다.',
       visual: '달리기 경주에서 다른 선수들보다 훨씬 뒤쪽 출발선에 서 있는 선수의 모습을 상상해 보세요.',
@@ -753,17 +987,23 @@ export const vocabBatch37: VocabItem[] = [
       synonymAntonym: 'disadvantageous와 유의어 관계이며, 반대로 유리한 상황을 뜻하는 advantageous와 대조됩니다.',
     }),
     {
-      definition: 'putting someone in a less favorable position or making success more difficult to achieve.',
+      definition: 'a circumstance or condition that makes progress or success more difficult; a disadvantage',
       synonyms: ['disadvantageous', 'unfavorable', 'impeding'],
       antonyms: ['advantageous', 'beneficial', 'favorable'],
       exampleSentences: [
         { en: 'The lack of modern equipment proved to be a major handicap for the local startup.', ko: '현대적인 장비의 부족은 지역 스타트업에게 큰 불리한 요소로 작용했다.' },
         { en: 'Poor infrastructure can act as a significant handicap to economic growth in developing regions.', ko: '열악한 인프라는 개발도상국 지역의 경제 성장에 상당한 불리한 장애물이 될 수 있다.' },
       ],
+      wordDistractors: ['handcraft', 'handcuff', 'handiwork'],
+      definitionDistractors: [
+        'a special talent or skill that gives someone a competitive edge',
+        'an official permit granting access to a restricted area',
+        'a monetary bonus awarded for outstanding job performance',
+      ],
     }
   ),
   word('handle', '손잡이', 5, 'noun',
-    ['사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보'],
+    ['병렬/병치', '바이올리니스트', '주식회사, 법인', '사망', '심리학', '송아지', '연습', '손잡이', '카운슬러, 상담원', '병원균/병원체'],
     tips({
       etymology: '손을 뜻하는 \'hand\'에 도구를 나타내는 접미사 \'-le\'가 붙어 손으로 잡는 부분을 의미하게 되었습니다.',
       visual: '문고리나 가방 끈처럼 손으로 꽉 움켜쥐고 있는 모습을 상상해 보세요.',
@@ -778,6 +1018,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'The metal on the door was too hot to touch after being in the sun all day.', ko: '하루 종일 햇볕을 받은 문 손잡이는 만지기에 너무 뜨거웠다.' },
         { en: 'She grabbed the leather of her suitcase and headed toward the airport check-in counter.', ko: '그녀는 여행 가방의 손잡이를 잡고 공항 체크인 카운터로 향했다.' },
+      ],
+      wordDistractors: ['candle', 'mantle', 'bundle'],
+      definitionDistractors: [
+        'the central body or main frame of a mechanical device',
+        'a decorative ornament attached to the front of a door',
+        'the sharp cutting edge of a blade or knife',
       ],
     }
   ),
@@ -798,6 +1044,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The actor looked very charming and impressive in his black tuxedo.', ko: '그 배우는 검은색 턱시도를 입고 매우 매력적이고 멋져 보였습니다.' },
         { en: 'He inherited his father\'s strong jawline and striking facial features.', ko: '그는 아버지의 강인한 턱선과 눈에 띄는 이목구비를 물려받았습니다.' },
       ],
+      wordDistractors: ['ransom', 'blossom', 'phantom'],
+      definitionDistractors: [
+        'appearing tired or worn out from excessive physical activity',
+        'dressed in expensive clothing regardless of personal style',
+        'having a loud and commanding voice that demands attention',
+      ],
     }
   ),
   word('hang', '걸다', 2, 'verb',
@@ -810,12 +1062,18 @@ export const vocabBatch37: VocabItem[] = [
       synonymAntonym: 'Suspend는 공중에 매달다라는 뜻으로 비슷하며, Drop은 아래로 떨어뜨리는 반대 의미를 가집니다.',
     }),
     {
-      definition: 'The way in which a garment or fabric falls or drapes when it is suspended.',
+      definition: 'to attach or suspend something from above so that it does not touch the ground',
       synonyms: ['drape', 'suspension', 'slope'],
       antonyms: ['ascent', 'rise', 'stiffness'],
       exampleSentences: [
         { en: 'The tailor adjusted the fabric to ensure a perfect hang for the evening gown.', ko: '재단사는 이브닝 드레스가 완벽하게 떨어지도록 옷감을 조정했습니다.' },
         { en: 'The heavy curtains have a natural hang that blocks out the sunlight effectively.', ko: '두꺼운 커튼은 자연스럽게 늘어지는 모양 덕분에 햇빛을 효과적으로 차단합니다.' },
+      ],
+      wordDistractors: ['gang', 'bang', 'rang'],
+      definitionDistractors: [
+        'to place an object firmly on a flat horizontal surface',
+        'to fold a piece of fabric into a neat square shape',
+        'to wrap something tightly around a cylindrical pole',
       ],
     }
   ),
@@ -836,6 +1094,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'Accidents often take place when drivers are not paying attention to the road.', ko: '운전자들이 도로에 주의를 기울이지 않을 때 사고가 자주 일어납니다.' },
         { en: 'Something strange is about to take place in this quiet little town.', ko: '이 조용하고 작은 마을에 곧 이상한 일이 일어날 것 같습니다.' },
       ],
+      wordDistractors: ['hamper', 'harden', 'hasten'],
+      definitionDistractors: [
+        'to deliberately cause an event through careful planning',
+        'to prevent something from taking place by intervening early',
+        'to repeat a specific action multiple times in succession',
+      ],
     }
   ),
   word('harbor', '항구', 7, 'noun',
@@ -854,6 +1118,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'Several fishing boats returned to the safety of the sheltered area before the storm hit.', ko: '폭풍이 치기 전 여러 척의 어선들이 안전한 항구 안으로 돌아왔다.' },
         { en: 'The city is famous for its natural deep-water location which allows large cruise ships to dock.', ko: '그 도시는 대형 크루즈선이 정박할 수 있는 천혜의 심해 항구로 유명하다.' },
+      ],
+      wordDistractors: ['barber', 'arbor', 'marble'],
+      definitionDistractors: [
+        'a tall lighthouse built on a rocky cliff to guide ships at night',
+        'a long wooden bridge extending over a wide river',
+        'a floating platform used for transporting cargo across lakes',
       ],
     }
   ),
@@ -874,6 +1144,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The ground was so frozen and tough that it was impossible to dig a hole.', ko: '땅이 너무 얼고 단단해서 구멍을 파는 것이 불가능했다.' },
         { en: 'Diamonds are known for being the most durable natural substance on Earth.', ko: '다이아몬드는 지구상에서 가장 단단한 천연 물질로 알려져 있다.' },
       ],
+      wordDistractors: ['harp', 'herd', 'harm'],
+      definitionDistractors: [
+        'extremely soft and easily deformed by slight pressure',
+        'requiring great effort and determination to accomplish',
+        'having a smooth and polished surface texture',
+      ],
     }
   ),
   word('hardly', '거의 아니다', 4, 'adverb',
@@ -892,6 +1168,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'The music was so quiet that I could hear it over the noise of the crowd.', ko: '음악 소리가 너무 작아서 군중의 소음 속에서 거의 들을 수 없었다.' },
         { en: 'They had known each other for only two days, so they were acquainted.', ko: '그들은 서로 안 지 이틀밖에 되지 않아서 거의 모르는 사이나 다름없었다.' },
+      ],
+      wordDistractors: ['hearty', 'hastily', 'harshly'],
+      definitionDistractors: [
+        'with great enthusiasm and energy throughout the entire process',
+        'in a very precise and careful manner with close attention to detail',
+        'occurring repeatedly and consistently over a long period of time',
       ],
     }
   ),
@@ -912,6 +1194,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The heavy storm caused significant physical damage to the coastal villages.', ko: '심한 폭풍은 해안가 마을들에 상당한 물리적 피해를 입혔다.' },
         { en: 'Smoking can lead to serious long-term health issues for your lungs.', ko: '흡연은 폐 건강에 심각하고 장기적인 해를 끼칠 수 있다.' },
       ],
+      wordDistractors: ['charm', 'farm', 'harp'],
+      definitionDistractors: [
+        'a positive outcome that benefits all parties involved equally',
+        'a protective layer that shields against external threats',
+        'a calming influence that promotes relaxation and well-being',
+      ],
     }
   ),
   word('harsh', '거친, 가혹한', 6, 'adjective',
@@ -931,6 +1219,12 @@ export const vocabBatch37: VocabItem[] = [
         { en: 'The mountain climbers had to endure extremely cold and punishing weather conditions.', ko: '등산객들은 극도로 차갑고 혹독한 기상 조건을 견뎌야만 했습니다.' },
         { en: 'Critics gave the new movie a very negative review, calling it a failure.', ko: '비평가들은 그 새 영화에 대해 실패작이라 부르며 매우 가혹한 평가를 내렸습니다.' },
       ],
+      wordDistractors: ['marsh', 'crash', 'brash'],
+      definitionDistractors: [
+        'pleasantly warm and comfortable in temperature or atmosphere',
+        'spoken in a gentle and encouraging tone of voice',
+        'smooth and soothing to the touch like silk fabric',
+      ],
     }
   ),
   word('harvest', '수확', 7, 'noun',
@@ -949,6 +1243,12 @@ export const vocabBatch37: VocabItem[] = [
       exampleSentences: [
         { en: 'Farmers are working long hours in the fields to ensure a successful autumn gathering of crops.', ko: '농부들은 성공적인 가을 작물 수확을 보장하기 위해 들판에서 장시간 일하고 있습니다.' },
         { en: 'The heavy rains during the summer months resulted in a very poor grain output this year.', ko: '여름철의 폭우로 인해 올해 곡물 수확량이 매우 저조했습니다.' },
+      ],
+      wordDistractors: ['harness', 'haven', 'hatchet'],
+      definitionDistractors: [
+        'the process of planting seeds in freshly prepared soil',
+        'a period of drought when crops fail to grow properly',
+        'the act of storing surplus food in underground cellars',
       ],
     }
   ),

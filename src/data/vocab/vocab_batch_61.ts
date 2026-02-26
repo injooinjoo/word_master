@@ -15,13 +15,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'Being more than what is currently needed or used; kept in reserve for potential future use.',
       synonyms: ['extra', 'additional', 'surplus'],
       antonyms: ['necessary', 'essential', 'insufficient'],
+      wordDistractors: ['spore', 'stare', 'snare'],
+      definitionDistractors: [
+        'To fix or mend something that is broken or damaged',
+        'To move quickly through a narrow passage or opening',
+        'To divide something into equal portions for distribution',
+      ],
       exampleSentences: [
         { en: 'We keep a set of keys in the drawer just in case someone loses theirs.', ko: '누군가 열쇠를 잃어버릴 경우를 대비해 서랍에 여분의 열쇠 한 세트를 보관하고 있습니다.' },
         { en: 'Do you have any moments this afternoon to discuss the new project details?', ko: '오늘 오후에 새 프로젝트 세부 사항을 논의할 여유 시간이 좀 있으신가요?' },
       ],
     }
   ),
-  word('spark', '불꽃', 6, 'noun',
+  word('spark', '불꽃', 4, 'noun',
     ['연기', '재', '불길', '석탄', '성냥', '화재', '연료', '폭발', '그을음', '화염'],
     tips({
       etymology: '고대 영어 \'spearca\'에서 유래했으며, 작게 튀어 오르는 불씨를 의미합니다.',
@@ -34,6 +40,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A small fiery particle thrown off from a fire or produced by striking two hard surfaces together.',
       synonyms: ['glint', 'flicker', 'flash'],
       antonyms: ['darkness', 'extinguishment', 'dullness'],
+      wordDistractors: ['stark', 'spank', 'shark'],
+      definitionDistractors: [
+        'A large area of open land covered with grass and few trees',
+        'A tool used for cutting or trimming branches from trees',
+        'A loud sharp sound produced by a sudden impact or collision',
+      ],
       exampleSentences: [
         { en: 'A tiny ember flew from the fireplace and created a bright flash on the rug.', ko: '벽난로에서 작은 불똥이 튀어 나와 카펫 위에 밝은 불꽃을 일으켰다.' },
         { en: 'The sudden debate provided the necessary inspiration to begin the new project.', ko: '갑작스러운 토론은 새로운 프로젝트를 시작하는 데 필요한 영감의 불꽃을 제공했다.' },
@@ -53,13 +65,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'To utter words or articulate sounds with the ordinary voice in order to express thoughts or opinions.',
       synonyms: ['talk', 'converse', 'utter'],
       antonyms: ['listen', 'be silent', 'refrain'],
+      wordDistractors: ['sneak', 'speck', 'streak'],
+      definitionDistractors: [
+        'To reach the top of a mountain or high structure by climbing',
+        'To scatter small objects across a wide surface area',
+        'To fasten two pieces of material together using thread',
+      ],
       exampleSentences: [
         { en: 'She can communicate fluently in three different languages.', ko: '그녀는 3개 국어를 유창하게 말할 수 있습니다.' },
         { en: 'Please address the audience clearly so everyone can hear you.', ko: '모든 사람이 들을 수 있도록 청중에게 명확하게 말씀해 주세요.' },
       ],
     }
   ),
-  word('special', '특별한', 7, 'adjective',
+  word('special', '특별한', 3, 'adjective',
     ['평범한', '일반적인', '공통의', '전형적인', '사소한', '지루한', '익숙한', '보편적인', '단순한', '흔한'],
     tips({
       etymology: '라틴어 \'species\'에서 유래하여 \'특정한 종류\'나 \'개별적인 특징\'을 가진 상태를 나타냅니다.',
@@ -72,6 +90,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'Better, greater, or otherwise different from what is usual or ordinary.',
       synonyms: ['exceptional', 'unique', 'distinctive'],
       antonyms: ['ordinary', 'common', 'typical'],
+      wordDistractors: ['spatial', 'speckle', 'spectral'],
+      definitionDistractors: [
+        'Arranged in a particular order based on size or weight',
+        'Relating to the study of ancient languages and writing systems',
+        'Having a rough or uneven surface texture that is hard to smooth',
+      ],
       exampleSentences: [
         { en: 'She prepared a unique meal for her mother\'s birthday celebration.', ko: '그녀는 어머니의 생신 축하를 위해 특별한 식사를 준비했습니다.' },
         { en: 'This tool requires a specific type of battery to function correctly.', ko: '이 도구는 올바르게 작동하기 위해 특별한 종류의 배터리가 필요합니다.' },
@@ -91,6 +115,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A group of living organisms consisting of similar individuals capable of exchanging genes or interbreeding.',
       synonyms: ['breed', 'category', 'class'],
       antonyms: ['genus', 'whole', 'individual'],
+      wordDistractors: ['spices', 'specious', 'specimen'],
+      definitionDistractors: [
+        'A formal document granting permission to perform a specific activity',
+        'A device used to measure the intensity of light or sound waves',
+        'A particular style or manner of performing artistic works',
+      ],
       exampleSentences: [
         { en: 'Scientists discovered a rare bird that belongs to a previously unknown group of animals.', ko: '과학자들은 이전에 알려지지 않은 동물 종에 속하는 희귀한 새를 발견했습니다.' },
         { en: 'Many unique plants are currently facing the threat of extinction due to climate change.', ko: '기후 변화로 인해 현재 많은 고유한 생물 종들이 멸종 위기에 처해 있습니다.' },
@@ -110,13 +140,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'clearly defined or identified; precise and particular rather than general',
       synonyms: ['precise', 'particular', 'definite'],
       antonyms: ['general', 'vague', 'ambiguous'],
+      wordDistractors: ['specifier', 'spastic', 'skeptic'],
+      definitionDistractors: [
+        'Moving at a fast pace without stopping or hesitation',
+        'Having a bright and colorful appearance that attracts attention',
+        'Capable of producing a large quantity of goods or materials',
+      ],
       exampleSentences: [
         { en: 'The doctor asked me to describe the location of the pain in a more detailed way.', ko: '의사는 통증의 위치를 더 구체적인 방식으로 설명해 달라고 요청했습니다.' },
         { en: 'Each plant species requires a set of unique environmental conditions to thrive.', ko: '각 식물 종은 번성하기 위해 특정한 일련의 환경 조건을 필요로 합니다.' },
       ],
     }
   ),
-  word('spectacle', '광경', 10, 'noun',
+  word('spectacle', '광경', 4, 'noun',
     ['사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보'],
     tips({
       etymology: '라틴어 \'spectare(보다)\'에서 유래하여 눈으로 보는 대단한 장면을 뜻합니다.',
@@ -129,6 +165,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A visually striking performance or display that is impressive or unusual to watch.',
       synonyms: ['pageant', 'exhibition', 'extravaganza'],
       antonyms: ['ordinariness', 'hiding', 'insignificance'],
+      wordDistractors: ['spectacular', 'specter', 'sceptacle'],
+      definitionDistractors: [
+        'A scientific instrument used to analyze chemical compounds',
+        'A written account of events that happened in the distant past',
+        'A physical barrier constructed to prevent entry or passage',
+      ],
       exampleSentences: [
         { en: 'The sunset over the Grand Canyon was a magnificent natural display for all the tourists.', ko: '그랜드 캐니언 너머로 지는 일몰은 모든 관광객들에게 장엄한 자연의 광경이었습니다.' },
         { en: 'He made a public scene by shouting at the waiter in the middle of the crowded restaurant.', ko: '그는 붐비는 식당 한복판에서 웨이터에게 소리를 질러 공공연한 구경거리가 되었습니다.' },
@@ -148,13 +190,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A broad range of varied but related ideas, objects, or qualities that form a continuous scale.',
       synonyms: ['range', 'gamut', 'span'],
       antonyms: ['point', 'limit', 'extreme'],
+      wordDistractors: ['specter', 'scepter', 'speckle'],
+      definitionDistractors: [
+        'A ghost or phantom believed to haunt a particular location',
+        'A formal ceremony held to honor distinguished achievements',
+        'A protective covering placed over an object to shield it from damage',
+      ],
       exampleSentences: [
         { en: 'The politician\'s views cover a wide range of the political scale.', ko: '그 정치인의 견해는 정치적 스펙트럼의 넓은 범위를 아우른다.' },
         { en: 'Scientists analyzed the full array of light emitted by the distant star.', ko: '과학자들은 먼 별에서 방출되는 빛의 전체 스펙트럼을 분석했다.' },
       ],
     }
   ),
-  word('speech', '연설', 6, 'noun',
+  word('speech', '연설', 3, 'noun',
     ['절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동'],
     tips({
       etymology: '말하다라는 뜻의 동사 speak의 명사형으로, 입 밖으로 내뱉는 행위 자체를 의미합니다.',
@@ -167,6 +215,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A formal talk or address delivered to an audience to express thoughts or provide information.',
       synonyms: ['address', 'oration', 'lecture'],
       antonyms: ['silence', 'quiet', 'muteness'],
+      wordDistractors: ['screech', 'sleeve', 'breach'],
+      definitionDistractors: [
+        'A written document outlining the terms of a legal agreement',
+        'The process of converting raw materials into finished products',
+        'A short musical composition performed by a single instrument',
+      ],
       exampleSentences: [
         { en: 'The president delivered a moving address to the nation about the new policy.', ko: '대통령은 새로운 정책에 대해 국민들에게 감동적인 연설을 했습니다.' },
         { en: 'Public speaking requires a lot of practice to overcome nervousness before a large crowd.', ko: '대중 앞에서 연설하는 것은 많은 군중 앞에서의 긴장감을 극복하기 위해 많은 연습이 필요합니다.' },
@@ -186,13 +240,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'The rate at which someone or something moves or operates.',
       synonyms: ['velocity', 'pace', 'tempo'],
       antonyms: ['slowness', 'delay', 'sluggishness'],
+      wordDistractors: ['steed', 'spleen', 'steep'],
+      definitionDistractors: [
+        'The total distance covered during a journey from start to finish',
+        'A feeling of intense excitement or nervous anticipation',
+        'The weight of an object measured under standard conditions',
+      ],
       exampleSentences: [
         { en: 'The driver was pulled over by the police for exceeding the limit on the highway.', ko: '운전자는 고속도로에서 제한 속도를 초과하여 경찰에 의해 차를 세워야 했습니다.' },
         { en: 'Modern computers process vast amounts of data at an incredible rate.', ko: '현대적인 컴퓨터는 엄청난 속도로 방대한 양의 데이터를 처리합니다.' },
       ],
     }
   ),
-  word('spell', '철자하다', 7, 'verb',
+  word('spell', '철자하다', 4, 'verb',
     ['행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다'],
     tips({
       etymology: '고대 프랑스어 \'espeller\'에서 유래했으며, 원래 \'말하다\' 또는 \'설명하다\'라는 의미에서 글자를 하나씩 읽는 것으로 발전했습니다.',
@@ -205,6 +265,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'To write or name the letters that form a word in the correct order.',
       synonyms: ['orthographize', 'write', 'letter'],
       antonyms: ['misspell', 'garble', 'scramble'],
+      wordDistractors: ['shell', 'swell', 'spelt'],
+      definitionDistractors: [
+        'To cast a magical enchantment over a person or object',
+        'To rotate an object quickly around its central axis',
+        'To arrange items in a particular sequence based on size',
+      ],
       exampleSentences: [
         { en: 'Could you please tell me how to write your last name correctly?', ko: '당신의 성을 어떻게 철자하는지 알려주실 수 있나요?' },
         { en: 'Children often learn to form simple words before they start elementary school.', ko: '아이들은 보통 초등학교에 들어가기 전에 간단한 단어들의 철자를 쓰는 법을 배웁니다.' },
@@ -224,6 +290,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'To give money as a payment for goods or services, or to use time for a particular purpose.',
       synonyms: ['expend', 'disburse', 'consume'],
       antonyms: ['save', 'earn', 'hoard'],
+      wordDistractors: ['blend', 'splend', 'spleen'],
+      definitionDistractors: [
+        'To bend or curve something into a circular shape',
+        'To repair a damaged surface by filling in cracks or holes',
+        'To send a written message to someone at a distant location',
+      ],
       exampleSentences: [
         { en: 'Many people prefer to use their vacation days to travel abroad with family.', ko: '많은 사람들은 휴가를 가족과 함께 해외 여행을 하는 데 쓰는 것을 선호합니다.' },
         { en: 'The government decided to allocate more resources to improve public transportation.', ko: '정부는 대중교통 개선을 위해 더 많은 자원을 소비하기로 결정했습니다.' },
@@ -243,13 +315,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A solid geometric figure where every point on the surface is equidistant from the center.',
       synonyms: ['globe', 'orb', 'ball'],
       antonyms: ['cube', 'square', 'plane'],
+      wordDistractors: ['sheer', 'spear', 'steer'],
+      definitionDistractors: [
+        'A layer of protective material applied to the outside of a structure',
+        'A flat circular disk used for storing digital information',
+        'An enclosed area designed for growing plants in controlled conditions',
+      ],
       exampleSentences: [
         { en: 'The earth is not a perfect sphere because it bulges slightly at the equator.', ko: '지구는 적도 부분이 약간 불룩하기 때문에 완벽한 구형은 아닙니다.' },
         { en: 'This new discovery falls outside my professional sphere of expertise.', ko: '이 새로운 발견은 나의 전문적인 지식 영역 밖에 있습니다.' },
       ],
     }
   ),
-  word('spill', '엎지르다', 10, 'verb',
+  word('spill', '엎지르다', 3, 'verb',
     ['채우다', '닦다', '던지다', '숨기다', '고치다', '마시다', '섞다', '얼리다', '태우다', '자르다'],
     tips({
       etymology: '고대 영어 \'spillan\'에서 유래했으며 본래 \'죽이다\'나 \'파괴하다\'라는 뜻이었으나 시간이 흐르며 액체를 흘려 낭비한다는 의미로 변했습니다.',
@@ -262,6 +340,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'To cause or allow liquid to flow over the edge of its container accidentally.',
       synonyms: ['overflow', 'slosh', 'splatter'],
       antonyms: ['contain', 'hold', 'collect'],
+      wordDistractors: ['skill', 'shill', 'swill'],
+      definitionDistractors: [
+        'To ignite a fire using a match or lighter in an outdoor setting',
+        'To polish a surface until it becomes smooth and reflective',
+        'To wrap an object tightly in cloth or paper for storage',
+      ],
       exampleSentences: [
         { en: 'Be careful not to spill your coffee on the keyboard while working.', ko: '작업하는 동안 키보드에 커피를 엎지르지 않도록 조심하세요.' },
         { en: 'The child accidentally spilled milk all over the kitchen table.', ko: '아이가 실수로 주방 테이블 전체에 우유를 엎질렀습니다.' },
@@ -281,6 +365,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'To turn or cause to turn around a central point repeatedly and quickly.',
       synonyms: ['rotate', 'whirl', 'twirl'],
       antonyms: ['stop', 'halt', 'stand still'],
+      wordDistractors: ['shin', 'span', 'spun'],
+      definitionDistractors: [
+        'To weave threads together to create a piece of fabric',
+        'To insert a thin pointed object into a soft material',
+        'To measure the width of an opening using a standard ruler',
+      ],
       exampleSentences: [
         { en: 'The figure skater began to spin faster and faster on the ice.', ko: '피겨 스케이팅 선수가 빙판 위에서 점점 더 빠르게 회전하기 시작했습니다.' },
         { en: 'The washing machine started to spin rapidly during the final cycle.', ko: '세탁기가 마지막 탈수 과정에서 빠르게 회전하기 시작했습니다.' },
@@ -300,14 +390,20 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'The non-physical part of a person which is the seat of emotions and character; the soul.',
       synonyms: ['soul', 'psyche', 'essence'],
       antonyms: ['body', 'flesh', 'matter'],
+      wordDistractors: ['sprint', 'sprite', 'spigot'],
+      definitionDistractors: [
+        'A liquid substance used for cleaning surfaces and removing dirt',
+        'The physical structure of a building or architectural design',
+        'A period of rest taken during the middle of a workday',
+      ],
       exampleSentences: [
         { en: 'The team showed a great competitive drive and a winning attitude throughout the tournament.', ko: '그 팀은 토너먼트 내내 훌륭한 경쟁 정신과 승부욕을 보여주었습니다.' },
         { en: 'Although he is no longer with us, his creative energy lives on in his beautiful paintings.', ko: '비록 그는 더 이상 우리 곁에 없지만, 그의 예술적 혼은 아름다운 그림들 속에 살아있습니다.' },
       ],
     }
   ),
-  word('spit', '침을 뱉다', 8, 'verb',
-    ['땀', '눈물', '콧물', '혈액', '소변', '먼지', '거품', '점액', '수분', '증기'],
+  word('spit', '침을 뱉다', 4, 'verb',
+    ['삼키다', '마시다', '빨다', '씹다', '핥다', '불다', '흡입하다', '들이키다', '가글하다', '삼다'],
     tips({
       etymology: '고대 영어 \'spittan\'에서 유래했으며, 입 밖으로 무언가를 강하게 내뱉는 소리를 흉내 낸 의성어적 성격이 강합니다.',
       visual: '운동선수가 경기 중 바닥에 침을 뱉거나, 입안에 고인 액체를 밖으로 내보내는 모습을 상상해 보세요.',
@@ -319,13 +415,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'To forcefully eject saliva or another substance from the mouth.',
       synonyms: ['expectorate', 'spew', 'discharge'],
       antonyms: ['swallow', 'ingest', 'absorb'],
+      wordDistractors: ['spat', 'split', 'skit'],
+      definitionDistractors: [
+        'To attach two surfaces together using a strong adhesive material',
+        'To carefully examine a document for errors or inconsistencies',
+        'To distribute equal portions of food among a group of people',
+      ],
       exampleSentences: [
         { en: 'The runner paused to spit on the ground before continuing the race.', ko: '달리기 선수는 경주를 계속하기 전에 잠시 멈춰 바닥에 침을 뱉었습니다.' },
         { en: 'The child tasted the bitter medicine and immediately tried to spit it out.', ko: '아이는 쓴 약을 맛보자마자 즉시 뱉어내려고 했습니다.' },
       ],
     }
   ),
-  word('spite', '악의', 9, 'noun',
+  word('spite', '악의', 6, 'noun',
     ['친절', '관용', '자비', '호의', '존경', '협력', '평화', '우정', '배려', '칭찬'],
     tips({
       etymology: '라틴어 despectus에서 유래하여 \'내려다보다\' 혹은 \'경멸하다\'라는 의미가 담겨 있습니다.',
@@ -338,14 +440,20 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A desire to hurt, annoy, or offend someone, often arising from a feeling of resentment.',
       synonyms: ['malice', 'animosity', 'venom'],
       antonyms: ['benevolence', 'goodwill', 'kindness'],
+      wordDistractors: ['sprite', 'spire', 'smite'],
+      definitionDistractors: [
+        'A feeling of deep admiration for someone or something',
+        'The act of giving generously without expecting anything in return',
+        'A formal agreement between two parties to cooperate on a project',
+      ],
       exampleSentences: [
         { en: 'He broke his sister\'s favorite toy out of pure spite after their argument.', ko: '그는 말다툼을 한 뒤 순전히 악의를 품고 누나가 가장 아끼는 장난감을 부쉈다.' },
         { en: 'The neighbor refused to trim the hedge just to spite the family next door.', ko: '이웃집 사람은 옆집 가족을 괴롭히려는 마음에서 울타리 다듬기를 거부했다.' },
       ],
     }
   ),
-  word('splash', '튀기다', 10, 'verb',
-    ['물방울', '파도', '강물', '소리', '바닥', '그림자', '먼지', '조각', '거품', '안개'],
+  word('splash', '튀기다', 3, 'verb',
+    ['닦다', '적시다', '흡수하다', '말리다', '건조하다', '붓다', '따르다', '뿌리다', '흘리다', '쏟다'],
     tips({
       etymology: '물이 튀는 소리를 흉내 낸 의성어에서 유래하여 액체가 흩뿌려지는 동작을 나타냅니다.',
       visual: '웅덩이에 돌을 던졌을 때 사방으로 물줄기가 솟구치는 장면을 상상해 보세요.',
@@ -357,6 +465,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'To cause liquid to fly about in drops or scatter upon impact with a surface.',
       synonyms: ['spatter', 'splatter', 'spray'],
       antonyms: ['dry', 'absorb', 'collect'],
+      wordDistractors: ['slash', 'flash', 'smash'],
+      definitionDistractors: [
+        'To carefully arrange objects in a neat and orderly row',
+        'To heat a solid material until it melts into liquid form',
+        'To cover a wound with a bandage to prevent further bleeding',
+      ],
       exampleSentences: [
         { en: 'The children love to splash water at each other in the swimming pool.', ko: '아이들은 수영장에서 서로에게 물을 튀기는 것을 좋아합니다.' },
         { en: 'A passing car splashed muddy water all over the pedestrians on the sidewalk.', ko: '지나가던 차가 보도의 보행자들에게 진흙탕 물을 튀겼습니다.' },
@@ -364,7 +478,7 @@ export const vocabBatch61: VocabItem[] = [
     }
   ),
   word('split', '쪼개다', 8, 'verb',
-    ['결합', '융합', '통합', '연결', '고정', '부착', '조립', '수집', '보존', '유지'],
+    ['결합하다', '융합하다', '통합하다', '연결하다', '고정하다', '부착하다', '조립하다', '수집하다', '보존하다', '유지하다'],
     tips({
       etymology: '네덜란드어 \'splitten\'에서 유래하여 무언가를 날카롭게 가르거나 나누는 동작을 의미합니다.',
       visual: '잘 익은 수박 한가운데에 칼을 대자마자 양옆으로 쩍 갈라지는 모습을 상상해 보세요.',
@@ -376,6 +490,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'To break or cause to break forcibly into parts, especially into halves or along a natural line.',
       synonyms: ['divide', 'cleave', 'sever'],
       antonyms: ['unite', 'merge', 'combine'],
+      wordDistractors: ['slit', 'spilt', 'splint'],
+      definitionDistractors: [
+        'To join two pieces of metal together by applying intense heat',
+        'To carefully stitch a torn piece of cloth back together',
+        'To stack objects on top of each other in a tall column',
+      ],
       exampleSentences: [
         { en: 'He used an axe to split the firewood into smaller pieces for the campfire.', ko: '그는 캠프파이어를 위해 도끼로 장작을 작은 조각으로 쪼갰습니다.' },
         { en: 'The couple decided to split the bill equally at the restaurant.', ko: '커플은 식당에서 계산서를 균등하게 나누기로 결정했습니다.' },
@@ -395,6 +515,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'to diminish or destroy the value, quality, or pleasure of something',
       synonyms: ['ruin', 'damage', 'mar'],
       antonyms: ['improve', 'enhance', 'preserve'],
+      wordDistractors: ['spool', 'spore', 'spoilt'],
+      definitionDistractors: [
+        'To carefully organize items into categories for easy retrieval',
+        'To increase the size or scale of a structure significantly',
+        'To decorate or embellish a surface with colorful patterns',
+      ],
       exampleSentences: [
         { en: 'The sudden rain shower threatened to ruin the outdoor wedding reception.', ko: '갑작스러운 소나기가 야외 결혼 피로연을 망쳐놓을 기세였다.' },
         { en: 'Grandparents often tend to indulge their grandchildren with too many gifts and sweets.', ko: '조부모님들은 종종 너무 많은 선물과 사탕으로 손주들의 버릇을 망쳐놓곤 한다.' },
@@ -414,6 +540,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'An implement consisting of a small, shallow oval or round bowl on a long handle, used for eating, stirring, or serving food.',
       synonyms: ['ladle', 'scoop', 'utensil'],
       antonyms: ['fork', 'knife', 'skewer'],
+      wordDistractors: ['spoof', 'spool', 'swoon'],
+      definitionDistractors: [
+        'A sharp tool used for cutting through thick materials like wood',
+        'A flat surface used for preparing and chopping ingredients',
+        'A deep container with handles used for boiling water on a stove',
+      ],
       exampleSentences: [
         { en: 'She used a silver tool to stir the sugar into her hot tea.', ko: '그녀는 뜨거운 차에 설탕을 젓기 위해 은색 도구를 사용했습니다.' },
         { en: 'A small wooden implement was placed next to the soup bowl.', ko: '작은 나무 도구가 수프 그릇 옆에 놓여 있었습니다.' },
@@ -433,13 +565,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A particular place, point, or position in space.',
       synonyms: ['location', 'site', 'position'],
       antonyms: ['whole', 'entirety', 'expanse'],
+      wordDistractors: ['spout', 'slot', 'shot'],
+      definitionDistractors: [
+        'A dark mark or shadow cast by an object blocking light',
+        'A unit of measurement used to calculate distance on a map',
+        'A brief period of warm weather occurring unexpectedly in winter',
+      ],
       exampleSentences: [
         { en: 'We found a perfect shady area for our picnic near the lake.', ko: '우리는 호수 근처에서 소풍을 즐기기에 완벽하고 그늘진 장소를 찾았습니다.' },
         { en: 'There is a small parking space available right in front of the building.', ko: '건물 바로 앞에 주차할 수 있는 작은 장소가 하나 있습니다.' },
       ],
     }
   ),
-  word('spouse', '배우자', 9, 'noun',
+  word('spouse', '배우자', 5, 'noun',
     ['자녀', '부모', '형제', '사촌', '동료', '이웃', '친구', '조카', '상사', '후배'],
     tips({
       etymology: '라틴어 sponsus(약속된 사람)에서 유래하여 결혼을 통해 맺어진 동반자를 의미합니다.',
@@ -452,13 +590,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A person\'s husband or wife, considered in relation to their partner.',
       synonyms: ['partner', 'companion', 'mate'],
       antonyms: ['stranger', 'enemy', 'rival'],
+      wordDistractors: ['sponge', 'spruce', 'grouse'],
+      definitionDistractors: [
+        'A professional colleague who works in the same department',
+        'A person who provides financial support to an organization',
+        'A close friend who has been known since childhood',
+      ],
       exampleSentences: [
         { en: 'Employees are encouraged to bring their spouse to the annual holiday party.', ko: '직원들은 연례 연휴 파티에 배우자를 동반하도록 권장됩니다.' },
         { en: 'The insurance policy provides comprehensive coverage for both the policyholder and their spouse.', ko: '해당 보험은 보험 가입자와 그 배우자 모두에게 포괄적인 보장을 제공합니다.' },
       ],
     }
   ),
-  word('spread', '펴다', 5, 'verb',
+  word('spread', '펼침, 확산', 5, 'noun',
     ['상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미'],
     tips({
       etymology: '게르만어권에서 유래하여 \'흩뿌리다\' 혹은 \'확장하다\'라는 의미를 담고 있습니다.',
@@ -471,6 +615,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'An instance of opening or stretching something out to its full width or extent.',
       synonyms: ['expansion', 'extension', 'stretch'],
       antonyms: ['reduction', 'compression', 'contraction'],
+      wordDistractors: ['spree', 'shred', 'tread'],
+      definitionDistractors: [
+        'A sudden decrease in temperature lasting several consecutive days',
+        'A narrow passageway connecting two larger rooms in a building',
+        'The process of removing moisture from a wet surface using heat',
+      ],
       exampleSentences: [
         { en: 'The hotel offered a lavish breakfast with a wide variety of dishes.', ko: '그 호텔은 아주 다양한 요리가 차려진 호화로운 아침 식사를 제공했습니다.' },
         { en: 'Scientists are monitoring the rapid increase of the virus across the continent.', ko: '과학자들은 대륙 전역에 걸친 바이러스의 급격한 확산을 감시하고 있습니다.' },
@@ -490,6 +640,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'having four equal sides and four right angles at the corners',
       synonyms: ['quadrate', 'equilateral', 'rectangular'],
       antonyms: ['round', 'circular', 'curved'],
+      wordDistractors: ['squire', 'quare', 'stare'],
+      definitionDistractors: [
+        'Shaped like a triangle with three unequal sides and angles',
+        'Having a smooth rounded surface without any sharp edges',
+        'Arranged in a spiral pattern that winds inward toward the center',
+      ],
       exampleSentences: [
         { en: 'The baker cut the brownies into small pieces so everyone could have a taste.', ko: '제빵사는 모든 사람이 맛볼 수 있도록 브라우니를 작은 정사각형 조각으로 잘랐습니다.' },
         { en: 'A large wooden table sits in the middle of the dining room to accommodate eight guests.', ko: '8명의 손님을 수용하기 위해 다이닝룸 중앙에 커다란 정사각형 나무 탁자가 놓여 있습니다.' },
@@ -509,6 +665,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'To firmly press something from opposite sides typically to extract liquid or to fit into a tight space.',
       synonyms: ['compress', 'clench', 'constrict'],
       antonyms: ['release', 'expand', 'loosen'],
+      wordDistractors: ['squeal', 'squash', 'breeze'],
+      definitionDistractors: [
+        'To gently stroke the surface of an object with the fingertips',
+        'To stretch an elastic material until it snaps apart',
+        'To carefully pour a liquid from a large container into a smaller one',
+      ],
       exampleSentences: [
         { en: 'Fresh orange juice tastes much better if you extract it by hand.', ko: '손으로 직접 짜서 만든 신선한 오렌지 주스는 맛이 훨씬 더 좋습니다.' },
         { en: 'The commuters tried to push themselves into the crowded subway train during rush hour.', ko: '통근자들은 출퇴근 시간대에 혼잡한 지하철 안으로 몸을 밀어 넣으려 애썼습니다.' },
@@ -528,13 +690,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'Firmly established and not likely to change, fail, or move suddenly.',
       synonyms: ['steady', 'constant', 'secure'],
       antonyms: ['unsteady', 'volatile', 'shaky'],
+      wordDistractors: ['staple', 'stale', 'sable'],
+      definitionDistractors: [
+        'Changing rapidly and unpredictably without any clear pattern',
+        'Made of a material that is flexible and easy to bend',
+        'Designed to be used only once before being discarded',
+      ],
       exampleSentences: [
         { en: 'The patient\'s condition remains firm and shows no signs of worsening after the surgery.', ko: '수술 후 환자의 상태는 안정적이며 악화될 기미가 보이지 않습니다.' },
         { en: 'Investors prefer a predictable market environment where prices do not fluctuate wildly.', ko: '투자자들은 가격이 심하게 요동치지 않는 안정적인 시장 환경을 선호합니다.' },
       ],
     }
   ),
-  word('stack', '더미', 10, 'noun',
+  word('stack', '더미', 3, 'noun',
     ['상자', '기둥', '울타리', '창고', '바구니', '그물', '선반', '자루', '수레', '가방'],
     tips({
       etymology: '고대 노르웨이어 \'stakkr\'에서 유래하여 물건을 차곡차곡 쌓아 올린 더미를 의미합니다.',
@@ -547,6 +715,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A neat pile of objects arranged one on top of another.',
       synonyms: ['pile', 'heap', 'mound'],
       antonyms: ['scattering', 'disarray', 'fragment'],
+      wordDistractors: ['slack', 'stalk', 'snack'],
+      definitionDistractors: [
+        'A single row of items lined up horizontally on a shelf',
+        'An empty space between two objects placed side by side',
+        'A container with a lid used for storing dry food products',
+      ],
       exampleSentences: [
         { en: 'There was a tall stack of books on his desk that he needed to read.', ko: '그의 책상 위에 읽어야 할 책 더미가 높이 쌓여 있었습니다.' },
         { en: 'She placed the clean plates in a neat stack inside the cupboard.', ko: '그녀는 깨끗한 접시들을 찬장 안에 깔끔한 더미로 정리했습니다.' },
@@ -566,6 +740,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A raised floor or platform or area in a theater on which actors, entertainers, or speakers perform.',
       synonyms: ['platform', 'podium', 'arena'],
       antonyms: ['backstage', 'audience', 'offstage'],
+      wordDistractors: ['sage', 'stake', 'stave'],
+      definitionDistractors: [
+        'A private room used for storing costumes and personal belongings',
+        'A large open field used for outdoor sporting events and activities',
+        'A long narrow corridor connecting different sections of a building',
+      ],
       exampleSentences: [
         { en: 'The lead singer walked onto the platform and waved to the cheering crowd.', ko: '리드 보컬이 무대로 걸어 나와 환호하는 군중에게 손을 흔들었습니다.' },
         { en: 'Every actor felt a bit nervous before stepping out for the opening scene.', ko: '모든 배우는 첫 장면을 위해 무대로 나서기 전 약간의 긴장감을 느꼈습니다.' },
@@ -573,7 +753,7 @@ export const vocabBatch61: VocabItem[] = [
     }
   ),
   word('stain', '더럽히다', 6, 'verb',
-    ['청결', '세탁', '광택', '투명', '순수', '보호', '장식', '수리', '복구', '정화'],
+    ['닦다', '세탁하다', '광내다', '정화하다', '보호하다', '장식하다', '수리하다', '복구하다', '청소하다', '표백하다'],
     tips({
       etymology: '라틴어 \'distingere\'에서 유래하여 색을 입히거나 변색시킨다는 의미에서 \'얼룩\'으로 발전했습니다.',
       visual: '흰 셔츠에 붉은 와인 한 방울이 떨어져 번지는 모습을 상상해 보세요.',
@@ -585,13 +765,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'To mark or discolor something with a substance that is difficult to remove.',
       synonyms: ['discolor', 'blemish', 'tarnish'],
       antonyms: ['clean', 'purify', 'bleach'],
+      wordDistractors: ['strain', 'slain', 'staid'],
+      definitionDistractors: [
+        'To repair a damaged piece of furniture by replacing worn parts',
+        'To preserve food by sealing it in an airtight container',
+        'To illuminate a dark room by turning on an overhead light',
+      ],
       exampleSentences: [
         { en: 'Red wine can easily stain a white tablecloth if not cleaned immediately.', ko: '레드 와인은 즉시 닦지 않으면 흰 식탁보를 쉽게 더럽힐 수 있습니다.' },
         { en: 'The scandal threatened to stain the politician\'s reputation permanently.', ko: '그 스캔들은 정치인의 명성을 영구적으로 더럽힐 위험이 있었습니다.' },
       ],
     }
   ),
-  word('stairs', '계단', 7, 'noun',
+  word('stairs', '계단', 2, 'noun',
     ['엘리베이터', '복도', '지붕', '창문', '현관', '마루', '벽지', '기둥', '천장', '난간'],
     tips({
       etymology: '고대 영어 \'stæger\'에서 유래했으며, \'오르다\'라는 의미의 어근을 포함하고 있어 위층으로 올라가는 수단을 뜻합니다.',
@@ -604,6 +790,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A set of steps leading from one floor of a building to another, typically located inside.',
       synonyms: ['staircase', 'stairway', 'steps'],
       antonyms: ['elevator', 'escalator', 'flat ground'],
+      wordDistractors: ['stares', 'stars', 'snares'],
+      definitionDistractors: [
+        'A flat horizontal surface used for displaying decorative objects',
+        'A sliding door mechanism that opens automatically when approached',
+        'A long ramp built at a gentle incline for wheelchair accessibility',
+      ],
       exampleSentences: [
         { en: 'The young boy ran up the wooden steps to his bedroom on the second floor.', ko: '어린 소년은 2층에 있는 자신의 침실로 가기 위해 나무 계단을 뛰어 올라갔다.' },
         { en: 'Taking the vertical path instead of the lift is a great way to get some daily exercise.', ko: '엘리베이터 대신 계단을 이용하는 것은 일상적인 운동을 하는 좋은 방법이다.' },
@@ -623,6 +815,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A small tool with a carved design used for imprinting a mark or pattern onto a surface.',
       synonyms: ['seal', 'imprint', 'die'],
       antonyms: ['blank', 'void', 'erasure'],
+      wordDistractors: ['stomp', 'stump', 'clamp'],
+      definitionDistractors: [
+        'A decorative frame used for displaying photographs on a wall',
+        'A written signature placed at the bottom of an official letter',
+        'A metal clasp used to hold sheets of paper together securely',
+      ],
       exampleSentences: [
         { en: 'The officer pressed the official seal onto the document to verify its authenticity.', ko: '담당관은 서류의 진위 여부를 확인하기 위해 공식 도장을 찍었습니다.' },
         { en: 'Collectors often look for rare designs that were used on vintage envelopes.', ko: '수집가들은 종종 오래된 봉투에 사용된 희귀한 도장 문양을 찾습니다.' },
@@ -642,6 +840,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'To be in an upright position on one\'s feet, or to rise to an upright position.',
       synonyms: ['rise', 'get up', 'be upright'],
       antonyms: ['sit', 'lie', 'recline'],
+      wordDistractors: ['strand', 'bland', 'brand'],
+      definitionDistractors: [
+        'To move in a circular path around a fixed central point',
+        'To place an object carefully on a flat surface without dropping it',
+        'To lower the body into a crouching position close to the ground',
+      ],
       exampleSentences: [
         { en: 'Please stand when the judge enters the courtroom.', ko: '판사가 법정에 들어올 때 일어서 주세요.' },
         { en: 'She had to stand in line for over an hour to buy concert tickets.', ko: '그녀는 콘서트 티켓을 사기 위해 한 시간 넘게 줄을 서야 했습니다.' },
@@ -661,6 +865,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'a level of quality or attainment that is considered acceptable or desirable as a basis for comparison',
       synonyms: ['criterion', 'benchmark', 'norm'],
       antonyms: ['exception', 'abnormality', 'deviation'],
+      wordDistractors: ['stander', 'stranded', 'stamina'],
+      definitionDistractors: [
+        'A reward given to someone for outstanding performance in their field',
+        'A detailed instruction manual for assembling complex machinery',
+        'A temporary structure erected for use during a construction project',
+      ],
       exampleSentences: [
         { en: 'The safety regulations must meet the highest international requirements to ensure public protection.', ko: '공공의 보호를 보장하기 위해 안전 규정은 반드시 가장 높은 국제적 기준을 충족해야 합니다.' },
         { en: 'Every employee is expected to maintain a professional level of conduct while representing the company.', ko: '모든 직원은 회사를 대표하는 동안 전문적인 행동 수준을 유지할 것으로 기대됩니다.' },
@@ -680,6 +890,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'To look directly at someone or something for a long time without moving the eyes, often due to surprise, fear, or rudeness.',
       synonyms: ['gaze', 'glare', 'gawk'],
       antonyms: ['glance', 'glimpse', 'ignore'],
+      wordDistractors: ['stair', 'snare', 'glare'],
+      definitionDistractors: [
+        'To quickly turn away from something unpleasant or frightening',
+        'To close the eyes tightly to block out bright light',
+        'To scan a page of text by reading only the main headings',
+      ],
       exampleSentences: [
         { en: 'It is considered impolite to look at strangers with such a fixed and intense expression.', ko: '낯선 사람을 그렇게 빤히 응시하는 것은 무례한 일로 여겨집니다.' },
         { en: 'The child continued to watch the colorful fish in the aquarium with wide, curious eyes.', ko: '아이는 수족관 속의 알록달록한 물고기들을 호기심 가득한 눈으로 계속해서 응시했습니다.' },
@@ -699,13 +915,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'to begin doing something or to cause an event or process to happen',
       synonyms: ['begin', 'commence', 'launch'],
       antonyms: ['finish', 'end', 'stop'],
+      wordDistractors: ['smart', 'stark', 'chart'],
+      definitionDistractors: [
+        'To bring an ongoing activity to a complete and final conclusion',
+        'To pause briefly in the middle of an action before resuming',
+        'To repeat a previously completed task from the very beginning',
+      ],
       exampleSentences: [
         { en: 'The marathon runners will begin their long race at exactly eight o\'clock tomorrow morning.', ko: '마라톤 선수들은 내일 아침 정확히 8시에 긴 경주를 시작할 것입니다.' },
         { en: 'Pressing the green button on the control panel will activate the entire assembly line.', ko: '제어판의 초록색 버튼을 누르면 전체 조립 라인이 가동되기 시작합니다.' },
       ],
     }
   ),
-  word('starve', '굶주리다', 8, 'verb',
+  word('starve', '굶주리다', 5, 'verb',
     ['배부르다', '풍족하다', '성장하다', '공급하다', '저장하다', '낭비하다', '소비하다', '수확하다', '요리하다', '식사하다'],
     tips({
       etymology: '고대 영어 \'steorfan\'(죽다)에서 유래하여, 현대에는 음식 부족으로 고통받는 의미로 굳어졌습니다.',
@@ -718,13 +940,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'to suffer severely or die from a lack of food, or to feel very hungry',
       synonyms: ['famish', 'perish', 'hunger'],
       antonyms: ['feast', 'gorge', 'satiate'],
+      wordDistractors: ['stave', 'swerve', 'carve'],
+      definitionDistractors: [
+        'To consume an excessive amount of food in a single sitting',
+        'To prepare a meal by combining various fresh ingredients together',
+        'To store leftover food in a refrigerator for later consumption',
+      ],
       exampleSentences: [
         { en: 'Many wild animals struggle to find enough food and may suffer during the harsh winter months.', ko: '많은 야생 동물들이 충분한 먹이를 찾기 위해 분투하며 혹독한 겨울 동안 굶주림을 겪을 수 있습니다.' },
         { en: 'The long hike took much longer than expected, leaving the entire group feeling ready for a massive meal.', ko: '긴 하이킹이 예상보다 훨씬 오래 걸려서 그룹 전체가 몹시 허기진 상태가 되었습니다.' },
       ],
     }
   ),
-  word('state', '진술하다', 7, 'verb',
+  word('state', '진술하다', 3, 'verb',
     ['확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다'],
     tips({
       etymology: '라틴어 \'status\'에서 유래하여 \'서 있는 모습\'이나 \'정해진 방식\'을 뜻하며, 공식적으로 의견을 세워 말한다는 의미로 확장되었습니다.',
@@ -737,6 +965,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'to express something definitely or clearly in speech or writing',
       synonyms: ['declare', 'announce', 'assert'],
       antonyms: ['deny', 'conceal', 'withhold'],
+      wordDistractors: ['slate', 'skate', 'crate'],
+      definitionDistractors: [
+        'To ask a question in order to obtain specific information',
+        'To whisper something quietly so that others cannot hear',
+        'To translate written text from one language into another',
+      ],
       exampleSentences: [
         { en: 'The witness was asked to clearly declare the facts of the incident during the trial.', ko: '증인은 재판 중에 사건의 사실 관계를 명확하게 진술하라는 요청을 받았습니다.' },
         { en: 'Please clearly specify your full name and address on the application form.', ko: '신청서에 귀하의 성함과 주소를 명확히 기재해 주시기 바랍니다.' },
@@ -756,13 +990,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A regular stopping place on a public transportation route, especially one with a building and other facilities.',
       synonyms: ['stop', 'terminal', 'depot'],
       antonyms: ['motion', 'transit', 'departure'],
+      wordDistractors: ['stallion', 'statin', 'ration'],
+      definitionDistractors: [
+        'A vehicle used for transporting goods over long distances',
+        'A large warehouse where products are stored before shipment',
+        'A ticket booth where passengers can purchase travel passes',
+      ],
       exampleSentences: [
         { en: 'The high-speed train will arrive at the central platform in ten minutes.', ko: '고속 열차가 10분 후에 중앙 승강장에 도착할 것입니다.' },
         { en: 'Many commuters gather at the subway entrance during the morning rush hour.', ko: '아침 혼잡 시간대에 많은 통근자들이 지하철 입구에 모입니다.' },
       ],
     }
   ),
-  word('statistic', '통계', 9, 'noun',
+  word('statistic', '통계', 5, 'noun',
     ['이론', '가설', '의견', '추측', '감상', '소문', '직감', '전설', '인상', '편견'],
     tips({
       etymology: '국가를 뜻하는 state에서 유래하여, 국가 운영에 필요한 수치 자료를 모으는 것에서 시작되었습니다.',
@@ -775,6 +1015,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A fact or piece of data obtained from a study of a large quantity of numerical information.',
       synonyms: ['data', 'figure', 'number'],
       antonyms: ['opinion', 'guess', 'conjecture'],
+      wordDistractors: ['static', 'statics', 'statist'],
+      definitionDistractors: [
+        'A personal belief formed without evidence or factual support',
+        'A fictional story created for the purpose of entertainment',
+        'A visual diagram showing the layout of a building floor plan',
+      ],
       exampleSentences: [
         { en: 'The most alarming statistic shows that unemployment has risen by five percent.', ko: '가장 놀라운 통계는 실업률이 5퍼센트 증가했다는 것을 보여줍니다.' },
         { en: 'Every statistic in the report was carefully verified before publication.', ko: '보고서의 모든 통계 자료는 출판 전에 신중하게 검증되었습니다.' },
@@ -794,6 +1040,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A three-dimensional work of art representing a person or animal, usually carved from stone or cast in metal.',
       synonyms: ['sculpture', 'monument', 'figure'],
       antonyms: ['human', 'original', 'entity'],
+      wordDistractors: ['stature', 'statute', 'satire'],
+      definitionDistractors: [
+        'A flat painting hung on a wall to decorate a living space',
+        'A written set of rules governing the conduct of an organization',
+        'A miniature model of a building used for architectural planning',
+      ],
       exampleSentences: [
         { en: 'The bronze monument of the famous leader stands tall in the center of the city square.', ko: '그 유명한 지도자의 청동 조상이 도시 광장 중앙에 높이 서 있다.' },
         { en: 'Tourists gathered around the ancient marble figure to take photographs of its intricate details.', ko: '관광객들이 정교한 세부 묘사를 사진에 담기 위해 고대 대리석 조상 주위로 모여들었다.' },
@@ -813,6 +1065,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'The relative social, professional, or legal standing of someone or something.',
       synonyms: ['rank', 'standing', 'prestige'],
       antonyms: ['insignificance', 'lowliness', 'unimportance'],
+      wordDistractors: ['statue', 'stature', 'stratus'],
+      definitionDistractors: [
+        'The physical height of a person measured from head to toe',
+        'A temporary emotional reaction caused by an unexpected event',
+        'The total number of members belonging to a particular group',
+      ],
       exampleSentences: [
         { en: 'The doctor\'s high social position granted him a lot of respect in the community.', ko: '그 의사의 높은 사회적 신분은 지역 사회에서 그에게 많은 존경을 가져다주었습니다.' },
         { en: 'They are still waiting for an update on the current legal position of their application.', ko: '그들은 자신들의 신청서에 대한 현재 법적 상태의 업데이트를 여전히 기다리고 있습니다.' },
@@ -832,6 +1090,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A period of time spent living or remaining in a particular place as a guest or visitor.',
       synonyms: ['sojourn', 'visit', 'stopover'],
       antonyms: ['departure', 'exit', 'withdrawal'],
+      wordDistractors: ['stray', 'sway', 'slay'],
+      definitionDistractors: [
+        'A sudden departure from a planned route or schedule',
+        'The act of packing personal belongings before a long trip',
+        'A brief stop at a location without intending to remain overnight',
+      ],
       exampleSentences: [
         { en: 'The family enjoyed a relaxing two-week holiday at a seaside resort.', ko: '그 가족은 해변 리조트에서 편안한 2주간의 휴가를 즐겼습니다.' },
         { en: 'Heavy snow forced the travelers to extend their time at the mountain hotel.', ko: '폭설로 인해 여행객들은 산속 호텔에서의 체류 기간을 연장해야만 했습니다.' },
@@ -851,6 +1115,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'firmly fixed, supported, or balanced, and not shaking or moving.',
       synonyms: ['stable', 'constant', 'consistent'],
       antonyms: ['unstable', 'shaky', 'variable'],
+      wordDistractors: ['steamy', 'steed', 'seedy'],
+      definitionDistractors: [
+        'Rapidly accelerating without any signs of slowing down',
+        'Easily broken or shattered when subjected to minor pressure',
+        'Occurring at irregular intervals with no predictable pattern',
+      ],
       exampleSentences: [
         { en: 'The surgeon maintained a firm and balanced hand throughout the delicate operation.', ko: '외과 의사는 정교한 수술 내내 확고하고 흔들림 없는 손길을 유지했습니다.' },
         { en: 'A continuous and regular flow of water is essential for the cooling system to function.', ko: '냉각 시스템이 작동하려면 물의 지속적이고 일정한 흐름이 필수적입니다.' },
@@ -870,6 +1140,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'to take something that belongs to someone else without permission and without intending to return it',
       synonyms: ['pilfer', 'thieve', 'filch'],
       antonyms: ['give', 'return', 'donate'],
+      wordDistractors: ['steel', 'stale', 'steam'],
+      definitionDistractors: [
+        'To purchase an item from a store using a credit card',
+        'To borrow something temporarily with the intention of returning it',
+        'To exchange goods or services of equal value between two parties',
+      ],
       exampleSentences: [
         { en: 'The thief managed to take the expensive jewelry from the display case without being noticed.', ko: '도둑은 눈에 띄지 않고 진열장에서 비싼 보석을 훔치는 데 성공했다.' },
         { en: 'Hackers often try to gain access to private databases to obtain sensitive personal information.', ko: '해커들은 민감한 개인 정보를 훔치기 위해 종종 개인 데이터베이스에 접근하려고 시도한다.' },
@@ -889,6 +1165,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'The hot mist that forms when water boils and turns into gas.',
       synonyms: ['vapor', 'mist', 'exhalation'],
       antonyms: ['ice', 'solid', 'liquid'],
+      wordDistractors: ['stream', 'gleam', 'seam'],
+      definitionDistractors: [
+        'A thick cloud of dark smoke produced by burning wood or coal',
+        'A gentle breeze that carries the scent of flowers through the air',
+        'A thin layer of frost that forms on surfaces during cold nights',
+      ],
       exampleSentences: [
         { en: 'The kitchen windows were covered in white mist because of the boiling water.', ko: '끓는 물 때문에 주방 창문이 하얀 증기로 뒤덮였습니다.' },
         { en: 'Early locomotives used the power of heated water to move heavy loads across the country.', ko: '초기 기관차들은 무거운 짐을 전국으로 운반하기 위해 가열된 물의 힘을 이용했습니다.' },
@@ -908,13 +1190,19 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'A strong, hard metal made of iron mixed with carbon, used for making buildings, tools, and vehicles.',
       synonyms: ['alloy', 'ironware', 'hard metal'],
       antonyms: ['plastic', 'rubber', 'fabric'],
+      wordDistractors: ['steal', 'steer', 'steep'],
+      definitionDistractors: [
+        'A lightweight synthetic material used for packaging consumer goods',
+        'A type of natural stone quarried from mountains for construction',
+        'A flexible sheet of woven cotton used for making clothing',
+      ],
       exampleSentences: [
         { en: 'The skyscraper was constructed with a massive frame made of reinforced metal beams.', ko: '그 마천루는 강화 금속 빔으로 만들어진 거대한 골조로 건설되었습니다.' },
         { en: 'Modern chefs prefer knives crafted from high-quality stainless materials for better durability.', ko: '현대 요리사들은 더 나은 내구성을 위해 고품질 스테인리스 재질로 제작된 칼을 선호합니다.' },
       ],
     }
   ),
-  word('steep', '가파른', 10, 'adjective',
+  word('steep', '가파른', 3, 'adjective',
     ['평평한', '완만한', '부드러운', '얕은', '수평의', '매끄러운', '낮은', '넓은', '희미한', '무딘'],
     tips({
       etymology: '고대 영어 \'steap\'에서 유래하여 \'높이 솟아오른\' 또는 \'돌출된\'이라는 의미를 담고 있습니다.',
@@ -927,6 +1215,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'rising or falling at a very sharp angle, making it difficult to climb or descend',
       synonyms: ['sheer', 'abrupt', 'precipitous'],
       antonyms: ['gradual', 'gentle', 'flat'],
+      wordDistractors: ['sleep', 'sweep', 'creep'],
+      definitionDistractors: [
+        'Having a perfectly level surface with no bumps or inclines',
+        'Moving at a gradual and leisurely pace without rushing',
+        'Covered in a thick layer of soft material that cushions impact',
+      ],
       exampleSentences: [
         { en: 'The hikers struggled to carry their heavy backpacks up the steep mountain trail.', ko: '등산객들은 무거운 배낭을 메고 가파른 산길을 오르느라 애를 먹었다.' },
         { en: 'The company faced a steep decline in profits after the new regulations were introduced.', ko: '그 회사는 새로운 규제가 도입된 이후 이익이 급격히 감소하는 상황에 직면했다.' },
@@ -946,6 +1240,12 @@ export const vocabBatch61: VocabItem[] = [
       definition: 'The main long thin part of a plant that rises above the ground and supports the leaves and flowers.',
       synonyms: ['stalk', 'trunk', 'stock'],
       antonyms: ['flower', 'leaf', 'root'],
+      wordDistractors: ['stern', 'steam', 'stew'],
+      definitionDistractors: [
+        'The broad flat part of a plant that captures sunlight for energy',
+        'The underground portion of a plant that absorbs water and nutrients',
+        'A colorful blossom that attracts pollinating insects during spring',
+      ],
       exampleSentences: [
         { en: 'The child carefully held the flower by its thin green stem.', ko: '아이는 가느다란 초록색 줄기를 잡고 조심스럽게 꽃을 들었다.' },
         { en: 'Cut the rose at the base of the stem before putting it in water.', ko: '장미를 물에 넣기 전에 줄기 아랫부분을 자르세요.' },

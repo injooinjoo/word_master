@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch10: VocabItem[] = [
-  word('Caution', '주의', 5, 'noun',
+  word('caution', '주의', 5, 'noun',
     ['무관심', '태만', '대담', '무모', '경솔', '무시', '방치', '소홀', '무지', '과신'],
     tips({
       etymology: '라틴어 cautio(조심함)에서 유래했으며 \'미리 살피다\'라는 의미를 담고 있습니다.',
@@ -19,9 +19,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'You should exercise extreme caution when driving in heavy snow.', ko: '폭설 속에서 운전할 때는 각별한 주의를 기울여야 합니다.' },
         { en: 'The investigator approached the suspicious package with great caution.', ko: '조사관은 아주 조심스럽게 그 의심스러운 상자에 접근했습니다.' },
       ],
+      wordDistractors: ['Caption', 'Cushion', 'Auction'],
+      definitionDistractors: [
+        'A formal written or spoken statement expressing a strong opinion',
+        'The act of giving someone official permission to proceed',
+        'A feeling of deep admiration for someone or something',
+      ],
     }
   ),
-  word('Cease', '중단하다', 5, 'verb',
+  word('cease', '중단하다', 5, 'verb',
     ['시작하다', '재개하다', '계속하다', '지속하다', '이어가다', '발동하다', '가속하다', '촉진하다', '강화하다', '확대하다'],
     tips({
       etymology: '라틴어 cedere(그만두다, 물러나다)에서 유래하여 어떤 상태나 행동에서 물러나 멈추는 것을 의미합니다.',
@@ -38,9 +44,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The fighting ceased at dawn.', ko: '전투는 새벽에 중단되었다.' },
         { en: 'The company will cease operations next month.', ko: '회사는 다음 달에 사업을 중단할 예정이다.' },
       ],
+      wordDistractors: ['Crease', 'Lease', 'Seize'],
+      definitionDistractors: [
+        'To begin a new project or venture with great enthusiasm',
+        'To gradually increase in speed or intensity over time',
+        'To officially approve or authorize a plan or proposal',
+      ],
     }
   ),
-  word('Challenge', '도전', 5, 'noun',
+  word('challenge', '도전', 5, 'noun',
     ['포기', '회피', '편안', '쉬움', '평온', '안정', '소극', '수동', '복종', '순응'],
     tips({
       etymology: '라틴어 calumnia(비방, 고소)에서 유래하여 상대에게 정당성을 묻는 행위에서 시작되었습니다.',
@@ -57,9 +69,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'She accepted the challenge.', ko: '그녀는 도전을 받아들였다.' },
         { en: 'Learning a new language is a great challenge.', ko: '새로운 언어를 배우는 것은 큰 도전이다.' },
       ],
+      wordDistractors: ['Channel', 'Chance', 'Change'],
+      definitionDistractors: [
+        'A reward given for outstanding performance in a competition',
+        'A formal agreement between two parties to achieve a common goal',
+        'A period of rest and relaxation after completing hard work',
+      ],
     }
   ),
-  word('Chaos', '혼란', 5, 'noun',
+  word('chaos', '혼란', 5, 'noun',
     ['질서', '정돈', '조화', '균형', '체계', '규율', '안정', '평온', '조직', '구조'],
     tips({
       etymology: '그리스어 khaos에서 유래하여 본래 아무것도 없는 거대한 틈이나 심연을 뜻했으나, 현재는 형체 없는 무질서한 상태를 의미합니다.',
@@ -76,9 +94,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The sudden power outage plunged the entire city into a state of total chaos.', ko: '갑작스러운 정전으로 인해 도시 전체가 완전한 혼란 상태에 빠졌습니다.' },
         { en: 'The classroom was in absolute chaos until the teacher finally arrived.', ko: '선생님이 마침내 도착하기 전까지 교실은 그야말로 난장판이었습니다.' },
       ],
+      wordDistractors: ['Chase', 'Chasm', 'Chain'],
+      definitionDistractors: [
+        'A carefully designed system of rules that governs behavior',
+        'A peaceful gathering of people for a shared celebration',
+        'The process of arranging items in a logical sequence',
+      ],
     }
   ),
-  word('Chronic', '만성적인', 5, 'adjective',
+  word('chronic', '만성적인', 5, 'adjective',
     ['급성의', '일시적인', '순간적인', '임시의', '단발성의', '일과성의', '찰나의', '가끔의', '간헐적인', '단기적인'],
     tips({
       etymology: '그리스어 \'khronos(시간)\'에서 유래하여, 오랜 시간 동안 지속된다는 의미를 담고 있습니다.',
@@ -95,9 +119,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The country is facing a chronic shortage of skilled teachers in rural areas.', ko: '그 나라는 시골 지역의 숙련된 교사 부족이라는 만성적인 문제에 직면해 있다.' },
         { en: 'Many elderly patients require long-term care for their chronic conditions.', ko: '많은 고령 환자들이 자신들의 만성 질환을 위해 장기적인 치료를 필요로 한다.' },
       ],
+      wordDistractors: ['Chronicle', 'Chrome', 'Clinic'],
+      definitionDistractors: [
+        'Happening suddenly and with great intensity but lasting only briefly',
+        'Relating to the study of time and its measurement',
+        'Occurring at regular, predictable intervals throughout the year',
+      ],
     }
   ),
-  word('Circumstance', '상황', 5, 'noun',
+  word('circumstance', '상황', 5, 'noun',
     ['불변', '본질', '규칙', '원칙', '정형', '고정', '일관', '표준', '기본', '핵심'],
     tips({
       etymology: '라틴어 circum(주변)과 stare(서 있다)가 결합된 단어로, 내 주변을 둘러싸고 서 있는 환경을 의미합니다.',
@@ -114,9 +144,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'Under the circumstances, we had no choice but to cancel the event.', ko: '그러한 상황 하에서 우리는 행사를 취소할 수밖에 없었다.' },
         { en: 'Your financial circumstance may change depending on the market trends.', ko: '당신의 재정 상황은 시장 흐름에 따라 변할 수 있습니다.' },
       ],
+      wordDistractors: ['Circumvent', 'Circumscribe', 'Circumference'],
+      definitionDistractors: [
+        'A formal ceremony held to mark an important milestone',
+        'The physical boundary that separates two distinct areas',
+        'A deliberate action taken to achieve a specific outcome',
+      ],
     }
   ),
-  word('Civil', '시민의', 5, 'adjective',
+  word('civil', '시민의', 5, 'adjective',
     ['군사적', '무력', '폭력적', '야만적', '무례한', '거친', '야생', '원시', '전투적', '호전적'],
     tips({
       etymology: '라틴어 civilis에서 유래되었으며, 이는 도시 국가의 구성원인 시민과 관련된 모든 것을 의미합니다.',
@@ -133,9 +169,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The country returned to civil rule after years of military dictatorship.', ko: '그 나라는 수년간의 군사 독재 이후 시민 통치 체제로 복귀했다.' },
         { en: 'They managed to have a civil conversation despite their strong disagreements.', ko: '그들은 강한 의견 차이에도 불구하고 예의 바른 대화를 나눌 수 있었다.' },
       ],
+      wordDistractors: ['Civic', 'Civilian', 'Vivid'],
+      definitionDistractors: [
+        'Belonging to or associated with a religious institution or clergy',
+        'Characterized by aggressive behavior and hostile confrontation',
+        'Related to the construction of large public infrastructure projects',
+      ],
     }
   ),
-  word('Classify', '분류하다', 5, 'verb',
+  word('classify', '분류하다', 5, 'verb',
     ['혼합하다', '결합하다', '뒤섞다', '통합하다', '무시하다', '해체하다', '분산시키다', '흐트러뜨리다', '방치하다', '삭제하다'],
     tips({
       etymology: '계층이나 부류를 뜻하는 \'class\'와 동사형 접미사 \'-ify\'가 합쳐져 \'부류별로 만들다\'라는 의미가 되었습니다.',
@@ -152,9 +194,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'Biologists use a specific system to classify living organisms.', ko: '생물학자들은 생명체를 분류하기 위해 특정한 체계를 사용한다.' },
         { en: 'The librarian needs to classify these books by genre.', ko: '사서는 이 책들을 장르에 따라 분류해야 한다.' },
       ],
+      wordDistractors: ['Clarify', 'Classic', 'Cluster'],
+      definitionDistractors: [
+        'To remove all items from a collection and start over',
+        'To make something secret or hidden from public knowledge',
+        'To combine several different things into a single unified group',
+      ],
     }
   ),
-  word('Client', '고객', 5, 'noun',
+  word('client', '고객', 5, 'noun',
     ['판매자', '공급자', '경쟁자', '적대자', '낯선 사람', '무관인', '외부인', '적', '반대자', '비고객'],
     tips({
       etymology: '라틴어 cliens에서 유래했으며, 원래는 유력자의 보호를 받는 의뢰인을 뜻했습니다.',
@@ -171,9 +219,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'She has many loyal clients who trust her legal advice.', ko: '그녀에게는 그녀의 법률적 조언을 신뢰하는 충성스러운 고객들이 많다.' },
         { en: 'The client requested a meeting to discuss the project details.', ko: '그 고객은 프로젝트 세부 사항을 논의하기 위해 회의를 요청했다.' },
       ],
+      wordDistractors: ['Climate', 'Clinic', 'Cliff'],
+      definitionDistractors: [
+        'A person who provides professional services to others for a fee',
+        'A competitor in a business or market who seeks the same customers',
+        'An employee who works under the supervision of a manager',
+      ],
     }
   ),
-  word('Collapse', '붕괴하다', 5, 'verb',
+  word('collapse', '붕괴하다', 5, 'verb',
     ['세우다', '건설하다', '유지하다', '강화하다', '지탱하다', '보강하다', '복구하다', '재건하다', '회복하다', '상승하다'],
     tips({
       etymology: '함께를 뜻하는 col-과 미끄러지다를 뜻하는 labi가 결합되어 모든 것이 한꺼번에 미끄러져 내린다는 어원을 가집니다.',
@@ -190,9 +244,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The old building is expected to collapse if the support beams fail.', ko: '지지대가 고장 나면 그 낡은 건물은 붕괴할 것으로 예상된다.' },
         { en: 'He felt dizzy and feared he might collapse on the floor.', ko: '그는 어지러움을 느꼈고 바닥에 쓰러질까 봐 두려워했다.' },
       ],
+      wordDistractors: ['Collage', 'Colleague', 'Collide'],
+      definitionDistractors: [
+        'To gradually expand in size or influence over a long period',
+        'To assemble separate parts into a functioning structure',
+        'To move quickly from one location to another without stopping',
+      ],
     }
   ),
-  word('Colleague', '동료', 5, 'noun',
+  word('colleague', '동료', 5, 'noun',
     ['상사', '경쟁자', '적대자', '낯선 사람', '외부인', '적', '반대자', '경쟁사', '타인', '이질'],
     tips({
       etymology: '함께를 뜻하는 \'col\'과 파견하다 혹은 선택하다를 뜻하는 \'legare\'가 결합되어 같은 직무를 위해 함께 일하는 사람을 의미합니다.',
@@ -209,9 +269,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'My colleague recommended this book to help with the new software.', ko: '내 동료가 새 소프트웨어 사용에 도움이 될 만한 이 책을 추천해 주었다.' },
         { en: 'She discussed the upcoming project details with her colleagues during the meeting.', ko: '그녀는 회의 중에 동료들과 다가올 프로젝트의 세부 사항을 논의했다.' },
       ],
+      wordDistractors: ['College', 'Collage', 'Collagen'],
+      definitionDistractors: [
+        'A person who supervises and manages a team of employees',
+        'A close friend with whom one shares personal secrets',
+        'A student enrolled in the same educational institution',
+      ],
     }
   ),
-  word('Colony', '식민지', 5, 'noun',
+  word('colony', '식민지', 5, 'noun',
     ['본국', '독립국', '자유지', '해방구', '자치구', '핵심', '중앙', '수도', '본토', '메트로폴리스'],
     tips({
       etymology: '라틴어 colere(경작하다)에서 유래하여 정착하여 농사를 짓는 땅을 의미하게 되었습니다.',
@@ -228,9 +294,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The British had many colonies across the globe during the nineteenth century.', ko: '영국은 19세기에 전 세계적으로 많은 식민지를 보유했다.' },
         { en: 'The colony gained independence in 1947 after years of political struggle.', ko: '그 식민지는 수년간의 정치적 투쟁 끝에 1947년에 독립을 얻었다.' },
       ],
+      wordDistractors: ['Column', 'Colonel', 'Cologne'],
+      definitionDistractors: [
+        'An independent nation that governs itself without external influence',
+        'A military base established for temporary defensive operations',
+        'A large urban center known for its cultural and economic significance',
+      ],
     }
   ),
-  word('Commerce', '상업', 5, 'noun',
+  word('commerce', '상업', 5, 'noun',
     ['무역 금지', '자급자족', '폐쇄', '고립', '침체', '멈춤', '정지', '공백', '휴업', '폐업'],
     tips({
       etymology: '라틴어 \'com(함께)\'과 \'merx(상품)\'가 합쳐진 단어로, 여러 사람이 모여 물건을 서로 주고받는 행위에서 유래했습니다.',
@@ -247,9 +319,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The internet has revolutionized the way global commerce is conducted.', ko: '인터넷은 글로벌 상업이 이루어지는 방식을 혁신적으로 변화시켰습니다.' },
         { en: 'The city has been a major center of commerce for centuries due to its strategic port.', ko: '그 도시는 전략적 항구 덕분에 수 세기 동안 주요 상업 중심지였습니다.' },
       ],
+      wordDistractors: ['Commence', 'Commode', 'Coerce'],
+      definitionDistractors: [
+        'A formal agreement between governments to share military resources',
+        'The scientific study of how societies produce and distribute goods',
+        'A small retail shop that sells everyday household items',
+      ],
     }
   ),
-  word('Commit', '약속하다', 5, 'verb',
+  word('commit', '약속하다', 5, 'verb',
     ['회피하다', '거절하다', '배반하다', '포기하다', '미루다', '주저하다', '철회하다', '취소하다', '해제하다', '탈퇴하다'],
     tips({
       etymology: '라틴어 com(함께)과 mittere(보내다)가 결합되어, 자신의 의지나 자원을 한곳에 완전히 보낸다는 의미에서 유래했습니다.',
@@ -266,9 +344,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The government has yet to commit to investing more money in education.', ko: '정부는 아직 교육에 더 많은 돈을 투자하겠다고 약속하지 않았다.' },
         { en: 'Borrowing money for a house means you commit to a long-term repayment plan.', ko: '집을 사기 위해 돈을 빌리는 것은 장기적인 상환 계획에 약속하는 것을 의미한다.' },
       ],
+      wordDistractors: ['Comet', 'Comment', 'Commute'],
+      definitionDistractors: [
+        'To casually suggest an idea without any serious intention of following through',
+        'To publicly announce a decision that has already been made by others',
+        'To formally reject a proposal after careful consideration',
+      ],
     }
   ),
-  word('Communicate', '소통하다', 5, 'verb',
+  word('communicate', '소통하다', 5, 'verb',
     ['숨기다', '침묵하다', '고립되다', '차단하다', '은폐하다', '비밀 유지', '거부하다', '무시하다', '분리하다', '단절하다'],
     tips({
       etymology: '라틴어 communis(공통의)에서 유래하여 정보를 공통으로 나누는 것을 뜻합니다.',
@@ -285,9 +369,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'We need to communicate better to avoid any misunderstandings.', ko: '오해를 피하기 위해 우리는 더 잘 소통해야 한다.' },
         { en: 'She communicated her concerns to the team during the meeting.', ko: '그녀는 회의 중에 팀에 자신의 우려 사항을 전달했다.' },
       ],
+      wordDistractors: ['Commute', 'Commune', 'Commemorate'],
+      definitionDistractors: [
+        'To travel regularly between home and a place of work',
+        'To store information in a secure digital database',
+        'To carefully listen to someone without offering a response',
+      ],
     }
   ),
-  word('Companion', '동반자', 5, 'noun',
+  word('companion', '동반자', 5, 'noun',
     ['적', '경쟁자', '적대자', '낯선 사람', '외로운 존재', '독립자', '고립자', '반대자', '타인', '이질'],
     tips({
       etymology: 'com(함께)과 panis(빵)가 합쳐져 \'함께 빵을 나누어 먹는 사이\'라는 따뜻한 유래가 있습니다.',
@@ -304,9 +394,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'She was my constant companion on the long journey across the country.', ko: '그녀는 전국을 횡단하는 긴 여정 동안 나의 든든한 동반자였다.' },
         { en: 'Dogs are known to be loyal companions to humans.', ko: '개는 인간에게 충성스러운 동반자가 되는 것으로 알려져 있다.' },
       ],
+      wordDistractors: ['Comparison', 'Compassion', 'Company'],
+      definitionDistractors: [
+        'A person who competes against you in professional settings',
+        'A hired guide who leads groups through unfamiliar territories',
+        'A family member related to you by blood or marriage',
+      ],
     }
   ),
-  word('Compel', '강제하다', 5, 'verb',
+  word('compel', '강제하다', 5, 'verb',
     ['선택권을 주다', '허용하다', '권유하다', '제안하다', '방치하다', '자유롭게 하다', '해제하다', '포기하다', '거절하다', '미루다'],
     tips({
       etymology: 'com(완전히) + pel(밀다)의 결합으로, 뒤에서 강하게 밀어붙인다는 의미에서 유래했습니다.',
@@ -323,9 +419,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The law compels us to pay taxes.', ko: '법은 우리에게 세금을 내도록 강제한다.' },
         { en: 'Nothing could compel him to change his mind.', ko: '그의 마음을 바꾸게 할 수 있는 것은 아무것도 없었다.' },
       ],
+      wordDistractors: ['Compile', 'Compare', 'Compete'],
+      definitionDistractors: [
+        'To gently encourage someone to consider a different perspective',
+        'To attract or fascinate someone with charm or beauty',
+        'To formally request assistance from a higher authority',
+      ],
     }
   ),
-  word('Compensate', '보상하다', 5, 'verb',
+  word('compensate', '보상하다', 5, 'verb',
     ['손해를 주다', '빼앗다', '부당하게 대하다', '무시하다', '방치하다', '차단하다', '억누르다', '박탈하다', '손실을 입히다', '해약하다'],
     tips({
       etymology: 'com(함께) + pens(달다/지불하다)가 합쳐져 저울의 양쪽 무게를 맞추듯 손실을 메워준다는 뜻입니다.',
@@ -342,9 +444,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The company will compensate the victims for their loss.', ko: '회사는 피해자들의 손실에 대해 보상할 것이다.' },
         { en: 'Hard work can often compensate for a lack of natural talent.', ko: '열심히 노력하면 타고난 재능의 부족함을 보상할 수 있다.' },
       ],
+      wordDistractors: ['Complicate', 'Contemplate', 'Compassionate'],
+      definitionDistractors: [
+        'To impose a financial penalty on someone for breaking the rules',
+        'To evaluate the quality of work done by an employee',
+        'To distribute resources equally among all members of a group',
+      ],
     }
   ),
-  word('Complex', '복잡한', 5, 'adjective',
+  word('complex', '복잡한', 5, 'adjective',
     ['단순한', '쉬운', '명료한', '평이한', '직선적인', '기본적인', '원시적인', '미개발된', '초보적인', '간단한'],
     tips({
       etymology: '함께를 뜻하는 com과 접다를 뜻하는 plex가 결합되어, 여러 겹으로 겹쳐져 있어 풀기 어렵다는 어원을 가집니다.',
@@ -361,9 +469,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The issue is more complex than it seems.', ko: '그 문제는 보이는 것보다 더 복잡하다.' },
         { en: 'The human brain is an incredibly complex organ.', ko: '인간의 뇌는 놀랍도록 복잡한 기관이다.' },
       ],
+      wordDistractors: ['Compact', 'Compliant', 'Convex'],
+      definitionDistractors: [
+        'Easy to understand because of its clear and simple structure',
+        'Consisting of a single element with no internal variation',
+        'Arranged in a neat and orderly fashion for easy access',
+      ],
     }
   ),
-  word('Component', '구성 요소', 5, 'noun',
+  word('component', '구성 요소', 5, 'noun',
     ['전체', '통합체', '혼합물', '융합', '일체', '단일체', '종합', '총체', '복합체', '결과물'],
     tips({
       etymology: '라틴어 com(함께)과 ponere(놓다)가 합쳐진 단어로, 무언가를 만들기 위해 함께 놓인 조각들을 의미합니다.',
@@ -380,9 +494,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'Each component has a specific function within the engine.', ko: '엔진 내부의 각 구성 요소는 특정한 기능을 수행합니다.' },
         { en: 'Trust is a key component of any healthy relationship.', ko: '신뢰는 모든 건강한 관계의 핵심 구성 요소입니다.' },
       ],
+      wordDistractors: ['Compliment', 'Competent', 'Opponent'],
+      definitionDistractors: [
+        'The complete finished product that results from a manufacturing process',
+        'A tool or instrument used to measure physical properties',
+        'A decorative feature added to enhance the appearance of an object',
+      ],
     }
   ),
-  word('Compose', '구성하다', 5, 'verb',
+  word('compose', '구성하다', 5, 'verb',
     ['분해하다', '해체하다', '흩뜨리다', '분산하다', '무질서하게 만들다', '혼란시키다', '파괴하다', '해체시키다', '분리하다', '해산하다'],
     tips({
       etymology: 'com(함께)과 pose(놓다)가 결합된 단어로, 여러 요소를 한곳에 모아 질서 있게 배치한다는 어원을 가집니다.',
@@ -399,9 +519,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The artist spent several months trying to compose a piece that would perfectly represent his vision.', ko: '그 예술가는 자신의 비전을 완벽하게 표현할 작품을 작곡하기 위해 몇 달을 보냈다.' },
         { en: 'Ten distinct nations compose the new economic alliance.', ko: '열 개의 서로 다른 국가들이 새로운 경제 동맹을 구성하고 있다.' },
       ],
+      wordDistractors: ['Compost', 'Compass', 'Depose'],
+      definitionDistractors: [
+        'To take apart an existing structure into its individual pieces',
+        'To randomly scatter elements without any pattern or purpose',
+        'To express strong disapproval of someone else\'s creative work',
+      ],
     }
   ),
-  word('Comprehend', '이해하다', 5, 'verb',
+  word('comprehend', '이해하다', 5, 'verb',
     ['오해하다', '혼동하다', '무시하다', '못 알아듣다', '착각하다', '착오를 일으키다', '잘못 판단하다', '불명확하게 하다', '혼란을 겪다', '간과하다'],
     tips({
       etymology: '어원적으로 com(완전히)과 prehend(잡다)가 합쳐져, 지식을 머릿속으로 완전히 움켜쥐는 것을 의미합니다.',
@@ -418,9 +544,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The child could not fully comprehend the complexity of the situation.', ko: '그 아이는 상황의 복잡함을 완전히 이해할 수 없었다.' },
         { en: 'Scientists are still struggling to comprehend how the brain functions.', ko: '과학자들은 뇌가 어떻게 작동하는지 이해하기 위해 여전히 고군분투하고 있다.' },
       ],
+      wordDistractors: ['Comprehensive', 'Compress', 'Apprehend'],
+      definitionDistractors: [
+        'To memorize facts or data without truly understanding their meaning',
+        'To deliberately ignore information that contradicts one\'s beliefs',
+        'To communicate an idea clearly so that others can follow along',
+      ],
     }
   ),
-  word('Compromise', '타협', 5, 'noun',
+  word('compromise', '타협', 5, 'noun',
     ['고집', '완강함', '극단', '대립', '갈등', '불화', '불타협', '원칙 고수', '일방적 통보', '단결 거부'],
     tips({
       etymology: '함께를 뜻하는 com과 약속을 뜻하는 promise가 결합되어, 서로 양보하여 함께 지킬 약속을 만든다는 의미에서 유래했습니다.',
@@ -437,9 +569,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'After hours of negotiation, the two parties finally reached a compromise.', ko: '몇 시간의 협상 끝에 두 당사자는 마침내 타협에 도달했다.' },
         { en: 'A healthy marriage requires a constant sense of compromise from both partners.', ko: '건강한 결혼 생활은 양쪽 파트너 모두의 지속적인 타협 정신을 필요로 한다.' },
       ],
+      wordDistractors: ['Comprise', 'Promise', 'Composite'],
+      definitionDistractors: [
+        'A complete victory achieved by one side over the other',
+        'A firm refusal to negotiate or consider alternative viewpoints',
+        'A detailed written plan outlining the steps needed to achieve a goal',
+      ],
     }
   ),
-  word('Concentrate', '집중하다', 5, 'verb',
+  word('concentrate', '집중하다', 5, 'verb',
     ['산만해지다', '흩어지다', '분산하다', '방치하다', '무시하다', '소홀히 하다', '방황하다', '분주하다', '혼란스럽다', '해이해지다'],
     tips({
       etymology: '함께를 뜻하는 con과 중심을 뜻하는 centr가 결합하여 모든 힘을 한 중심점으로 모은다는 의미가 되었습니다.',
@@ -456,9 +594,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'You need to concentrate on the road while driving.', ko: '운전하는 동안에는 도로에 집중해야 합니다.' },
         { en: 'The company decided to concentrate its resources on developing new technology.', ko: '그 회사는 신기술 개발에 자원을 집중하기로 결정했습니다.' },
       ],
+      wordDistractors: ['Concatenate', 'Consecrate', 'Concentric'],
+      definitionDistractors: [
+        'To spread resources evenly across multiple different projects',
+        'To relax the mind by letting thoughts wander freely',
+        'To physically separate a mixture into its individual components',
+      ],
     }
   ),
-  word('Conclude', '결론을 내리다', 5, 'verb',
+  word('conclude', '결론을 내리다', 5, 'verb',
     ['시작하다', '미결', '보류하다', '의문을 남기다', '열어두다', '논의 중', '검토 중', '미정', '추측', '가설'],
     tips({
       etymology: '라틴어 con(완전히)과 clude(닫다)가 합쳐져 \'완전히 문을 닫아 마무리하다\'라는 의미가 되었습니다.',
@@ -475,9 +619,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'We concluded that the plan was flawed.', ko: '우리는 그 계획에 결함이 있다는 결론을 내렸습니다.' },
         { en: 'The meeting concluded with a vote.', ko: '회의는 투표로 마무리되었습니다.' },
       ],
+      wordDistractors: ['Concede', 'Include', 'Exclude'],
+      definitionDistractors: [
+        'To introduce a new topic at the beginning of a discussion',
+        'To postpone a decision until additional information is available',
+        'To openly disagree with the majority opinion in a meeting',
+      ],
     }
   ),
-  word('Concrete', '구체적인', 5, 'adjective',
+  word('concrete', '구체적인', 5, 'adjective',
     ['추상적인', '모호한', '이론적인', '가상의', '몽상적인', '공허한', '허구의', '개념적인', '비현실적인', '애매한'],
     tips({
       etymology: '라틴어 \'concretus\'에서 유래하며, \'함께(con) 성장하여(crete) 굳어진\'이라는 의미를 담고 있습니다.',
@@ -494,9 +644,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The police are looking for concrete evidence to link him to the crime.', ko: '경찰은 그를 범죄와 연결시킬 구체적인 증거를 찾고 있습니다.' },
         { en: 'It is difficult to make a decision without a concrete plan in place.', ko: '구체적인 계획이 마련되지 않은 상태에서 결정을 내리기는 어렵습니다.' },
       ],
+      wordDistractors: ['Conceit', 'Concert', 'Contrite'],
+      definitionDistractors: [
+        'Based on imagination or theoretical ideas rather than observable facts',
+        'Extremely difficult to understand due to advanced technical language',
+        'Relating to the emotional or sentimental aspects of a situation',
+      ],
     }
   ),
-  word('Conduct', '수행하다', 5, 'verb',
+  word('conduct', '수행하다', 5, 'verb',
     ['방치하다', '소홀하다', '중단하다', '포기하다', '그만두다', '유기하다', '거부하다', '피하다', '회피하다', '태만하다'],
     tips({
       etymology: '함께를 뜻하는 con과 이끌다를 뜻하는 duct가 합쳐져 여러 요소를 하나로 모아 이끌어 나간다는 의미에서 유래되었습니다.',
@@ -513,9 +669,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The research team will conduct a series of experiments to test the new drug.', ko: '연구팀은 신약을 테스트하기 위해 일련의 실험을 수행할 것입니다.' },
         { en: 'The committee decided to conduct an internal investigation into the matter.', ko: '위원회는 그 사안에 대해 내부 조사를 실시하기로 결정했습니다.' },
       ],
+      wordDistractors: ['Conduit', 'Contact', 'Contest'],
+      definitionDistractors: [
+        'To observe an event from a distance without participating in it',
+        'To officially prohibit an activity through legal channels',
+        'To record detailed notes about a process for future reference',
+      ],
     }
   ),
-  word('Conference', '회의', 5, 'noun',
+  word('conference', '회의', 5, 'noun',
     ['고립', '단독', '불참', '별도', '개인', '비공개', '비밀', '은퇴', '분리', '해산'],
     tips({
       etymology: '함께를 뜻하는 con과 나르다를 뜻하는 fer가 결합되어 의견을 한곳으로 모으는 자리를 의미합니다.',
@@ -532,9 +694,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The annual conference will be held in London next month.', ko: '연례 회의가 다음 달 런던에서 개최될 예정입니다.' },
         { en: 'She was invited to speak at an international conference on climate change.', ko: '그녀는 기후 변화에 관한 국제 회의에서 연설해 달라는 초청을 받았습니다.' },
       ],
+      wordDistractors: ['Confidence', 'Confluence', 'Deference'],
+      definitionDistractors: [
+        'A private conversation between two individuals about personal matters',
+        'A written document that outlines the terms of a business deal',
+        'A short informal chat among friends over coffee or lunch',
+      ],
     }
   ),
-  word('Confine', '제한하다', 5, 'verb',
+  word('confine', '제한하다', 5, 'verb',
     ['해방하다', '확장하다', '방출하다', '허용하다', '완화하다', '분산시키다', '방치하다', '전파하다', '개방하다', '촉진하다'],
     tips({
       etymology: '함께를 뜻하는 con과 끝/경계를 뜻하는 fine이 합쳐져 \'경계선 안에 가두다\'라는 의미가 되었습니다.',
@@ -551,9 +719,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'Please confine your comments to the topic under discussion.', ko: '발언을 논의 중인 주제 내로 한정해 주시기 바랍니다.' },
         { en: 'The illness confined him to bed for several weeks.', ko: '그는 병 때문에 몇 주 동안 침대에만 누워 있어야 했습니다.' },
       ],
+      wordDistractors: ['Confirm', 'Confide', 'Define'],
+      definitionDistractors: [
+        'To expand the boundaries of a project beyond its original scope',
+        'To officially approve or validate a previous decision',
+        'To share private information with someone you trust deeply',
+      ],
     }
   ),
-  word('Conflict', '갈등', 5, 'noun',
+  word('conflict', '갈등', 5, 'noun',
     ['화해', '조화', '협력', '일치', '동의', '평화', '우호', '협조', '합의', '단결'],
     tips({
       etymology: '함께를 뜻하는 con과 치다를 뜻하는 flict가 결합되어 서로 맞부딪치는 상황을 묘사합니다.',
@@ -570,9 +744,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The manager tried to resolve the conflict between the two employees.', ko: '매니저는 두 직원 사이의 갈등을 해결하려고 노력했습니다.' },
         { en: 'There is a direct conflict between her personal values and her job requirements.', ko: '그녀의 개인적인 가치관과 업무 요구 사항 사이에 직접적인 충돌이 있습니다.' },
       ],
+      wordDistractors: ['Conflate', 'Comfort', 'Inflict'],
+      definitionDistractors: [
+        'A mutual agreement where both sides are completely satisfied',
+        'A formal alliance between nations for economic cooperation',
+        'A period of calm and stability following a major event',
+      ],
     }
   ),
-  word('Confront', '직면하다', 5, 'verb',
+  word('confront', '직면하다', 5, 'verb',
     ['회피하다', '도망치다', '숨다', '무시하다', '외면하다', '방관하다', '우회하다', '피하다', '굴복하다', '후퇴하다'],
     tips({
       etymology: '함께를 뜻하는 con과 이마를 뜻하는 front가 결합되어, 서로 이마를 맞대고 정면으로 마주 선다는 의미에서 유래되었습니다.',
@@ -589,9 +769,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'He refused to confront the problem.', ko: '그는 그 문제에 직면하기를 거부했습니다.' },
         { en: 'She had to confront her fears.', ko: '그녀는 자신의 두려움과 맞서야 했습니다.' },
       ],
+      wordDistractors: ['Comfort', 'Conform', 'Confound'],
+      definitionDistractors: [
+        'To secretly plan an action without informing others involved',
+        'To politely excuse oneself from an uncomfortable social situation',
+        'To provide emotional support and reassurance to someone in distress',
+      ],
     }
   ),
-  word('Conscience', '양심', 5, 'noun',
+  word('conscience', '양심', 5, 'noun',
     ['무양심', '냉담', '무감각', '무덕', '비도덕', '잔인', '냉혹', '무정', '무관심', '이기심'],
     tips({
       etymology: '함께를 뜻하는 con과 알다를 뜻하는 sci가 결합되어, 스스로 무엇이 옳은지 내면에서 함께 알고 있다는 의미에서 유래했습니다.',
@@ -608,9 +794,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'His conscience troubled him after he lied to his parents.', ko: '부모님께 거짓말을 한 후 그의 양심이 그를 괴롭혔습니다.' },
         { en: 'I could not do it in good conscience knowing the potential risks.', ko: '잠재적인 위험을 알고 있는 상황에서 양심상 도저히 그 일을 할 수 없었습니다.' },
       ],
+      wordDistractors: ['Conscious', 'Consensus', 'Conceit'],
+      definitionDistractors: [
+        'The ability to recall detailed memories from the distant past',
+        'A logical argument used to persuade others in a formal debate',
+        'The state of being fully awake and aware of one\'s surroundings',
+      ],
     }
   ),
-  word('Conscious', '의식적인', 5, 'adjective',
+  word('conscious', '의식적인', 5, 'adjective',
     ['무의식적인', '무지각한', '혼미한', '졸린', '몽롱한', '무감각한', '반사적인', '자동적인', '본능적인', '잠재적인'],
     tips({
       etymology: '어근 con(함께)과 sci(알다)가 결합하여 자기 자신과 주변을 \'함께 모두 알고 있는\' 상태를 의미합니다.',
@@ -627,9 +819,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'She was conscious of his stare.', ko: '그녀는 그가 쳐다보는 것을 의식했다.' },
         { en: 'He made a conscious effort to be polite.', ko: '그는 예의 바르게 행동하려고 의식적으로 노력했다.' },
       ],
+      wordDistractors: ['Conscience', 'Consensus', 'Cautious'],
+      definitionDistractors: [
+        'Feeling guilty or remorseful about a past mistake or wrongdoing',
+        'Acting without thinking or planning, driven purely by impulse',
+        'Extremely knowledgeable about a specific academic subject or field',
+      ],
     }
   ),
-  word('Consensus', '합의', 5, 'noun',
+  word('consensus', '합의', 5, 'noun',
     ['불일치', '분열', '대립', '갈등', '반대', '불화', '논쟁', '분쟁', '의견 차이', '불협화음'],
     tips({
       etymology: '함께를 뜻하는 con-과 느끼다를 뜻하는 sensus가 결합되어, 모두가 같은 마음으로 느끼는 상태를 말합니다.',
@@ -646,9 +844,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The committee finally reached a consensus after hours of intense discussion.', ko: '위원회는 몇 시간 동안의 치열한 토론 끝에 마침내 합의에 도달했습니다.' },
         { en: 'There is a growing scientific consensus that global temperatures are rising.', ko: '지구의 기온이 상승하고 있다는 점에 대해 과학계의 합의가 커지고 있습니다.' },
       ],
+      wordDistractors: ['Census', 'Consent', 'Censure'],
+      definitionDistractors: [
+        'A vote taken to determine the majority opinion in an election',
+        'A strong personal belief that cannot be changed by external pressure',
+        'An official count of the population conducted by the government',
+      ],
     }
   ),
-  word('Consequence', '결과', 5, 'noun',
+  word('consequence', '결과', 5, 'noun',
     ['원인', '시작', '시초', '출발', '계기', '선행', '전제', '조건', '무관', '독립'],
     tips({
       etymology: 'con(함께)과 sequ(따라가다)가 결합하여 \'사건 뒤에 따라오는 것\'을 뜻합니다.',
@@ -665,9 +869,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'Consider the consequences of your actions before making a final decision.', ko: '최종 결정을 내리기 전에 당신의 행동이 불러올 결과들을 고려하세요.' },
         { en: 'The decrease in sales was a direct consequence of the poor marketing strategy.', ko: '매출 감소는 부실한 마케팅 전략의 직접적인 결과였습니다.' },
       ],
+      wordDistractors: ['Sequence', 'Conscience', 'Eloquence'],
+      definitionDistractors: [
+        'The initial event or action that triggers a chain of events',
+        'A deliberate choice made after weighing all available options',
+        'A prediction about what will happen in the near future',
+      ],
     }
   ),
-  word('Conservation', '보존', 5, 'noun',
+  word('conservation', '보존', 5, 'noun',
     ['낭비', '파괴', '소비', '탕진', '고갈', '훼손', '폐기', '해체', '해산', '소멸'],
     tips({
       etymology: '함께를 뜻하는 con과 지키다를 뜻하는 serv가 결합되어, 소중한 자원을 다 같이 유지하고 지킨다는 의미를 담고 있습니다.',
@@ -684,9 +894,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The local government is committed to the conservation of historic buildings in the city center.', ko: '지방 정부는 도심의 역사적 건물들을 보존하는 데 전념하고 있습니다.' },
         { en: 'New laws were passed to promote water conservation during the severe drought.', ko: '심각한 가뭄 동안 물 절약을 장려하기 위해 새로운 법안들이 통과되었습니다.' },
       ],
+      wordDistractors: ['Conversation', 'Conviction', 'Convention'],
+      definitionDistractors: [
+        'The process of transforming raw materials into finished products',
+        'A large-scale exchange of goods between countries for profit',
+        'The act of discussing ideas and opinions with another person',
+      ],
     }
   ),
-  word('Considerable', '상당한', 5, 'adjective',
+  word('considerable', '상당한', 5, 'adjective',
     ['미미한', '무시할 만한', '하찮은', '사소한', '부족한', '빈약한', '적은', '표면적인', '피상적인', '소량의'],
     tips({
       etymology: '동사 consider(고려하다)에 -able(~할 수 있는)이 붙어, \'무시하지 못하고 반드시 고려해야 할 만큼 큰\'이라는 의미가 되었습니다.',
@@ -703,9 +919,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The project requires considerable time and effort to complete.', ko: '그 프로젝트를 완수하기 위해서는 상당한 시간과 노력이 필요하다.' },
         { en: 'The new policy has caused considerable debate among the public.', ko: '새로운 정책은 대중들 사이에서 상당한 논란을 불러일으켰다.' },
       ],
+      wordDistractors: ['Considerate', 'Comparable', 'Conservative'],
+      definitionDistractors: [
+        'Too small or unimportant to have any meaningful impact',
+        'Showing kindness and thoughtfulness toward other people',
+        'Being traditional and resistant to new ideas or changes',
+      ],
     }
   ),
-  word('Consist', '구성되다', 5, 'verb',
+  word('consist', '구성되다', 5, 'verb',
     ['분해되다', '흩어지다', '해체되다', '소멸하다', '변질되다', '변형하다', '분리하다', '해산하다', '붕괴하다', '소실되다'],
     tips({
       etymology: '함께를 뜻하는 con과 서 있다를 뜻하는 sist가 결합하여 여러 요소가 한자리에 모여 서 있는 상태를 나타냅니다.',
@@ -722,9 +944,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The committee consists of ten elected officials.', ko: '위원회는 10명의 선출직 공무원들로 구성되어 있다.' },
         { en: 'True happiness does not consist in the possession of money.', ko: '진정한 행복은 돈을 소유하는 것에 있지 않다.' },
       ],
+      wordDistractors: ['Insist', 'Persist', 'Resist'],
+      definitionDistractors: [
+        'To firmly demand that something be done in a particular way',
+        'To gradually change in nature or character over a period of time',
+        'To remain in a particular place without moving or changing',
+      ],
     }
   ),
-  word('Consistent', '일관된', 5, 'adjective',
+  word('consistent', '일관된', 5, 'adjective',
     ['변덕스러운', '불규칙한', '모순된', '불일치하는', '요동치는', '산만한', '불안정한', '변동하는', '이중적인', '엇갈리는'],
     tips({
       etymology: '함께를 뜻하는 con과 서다를 뜻하는 sist가 결합하여, 여러 요소가 한데 모여 흐트러짐 없이 서 있는 상태를 의미합니다.',
@@ -741,9 +969,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'Her story was consistent throughout the entire investigation.', ko: '그녀의 이야기는 조사 내내 일관되었다.' },
         { en: 'We need to maintain a consistent approach to this problem.', ko: '우리는 이 문제에 대해 일관된 접근 방식을 유지해야 한다.' },
       ],
+      wordDistractors: ['Persistent', 'Insistent', 'Resistant'],
+      definitionDistractors: [
+        'Changing frequently and unpredictably without any clear pattern',
+        'Stubbornly refusing to accept advice or guidance from others',
+        'Existing only for a brief moment before disappearing entirely',
+      ],
     }
   ),
-  word('Conspiracy', '음모', 5, 'noun',
+  word('conspiracy', '음모', 5, 'noun',
     ['공개', '투명', '정직', '정직함', '솔직', '개방', '공표', '발표', '공개성', '투명성'],
     tips({
       etymology: 'con(함께)과 spir(숨쉬다)가 합쳐져 \'몰래 모여 함께 숨을 죽이고 속삭이다\'라는 뜻에서 유래했습니다.',
@@ -760,9 +994,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'They were accused of conspiracy.', ko: '그들은 음모 혐의로 기소되었다.' },
         { en: 'The conspiracy to overthrow the government was uncovered.', ko: '정부를 전복하려는 음모가 밝혀졌다.' },
       ],
+      wordDistractors: ['Constancy', 'Consonant', 'Piracy'],
+      definitionDistractors: [
+        'An open and transparent collaboration between public organizations',
+        'A theory that explains a widely observed natural phenomenon',
+        'A legal investigation conducted by authorities to uncover the truth',
+      ],
     }
   ),
-  word('Constitute', '구성하다', 5, 'verb',
+  word('constitute', '구성하다', 5, 'verb',
     ['분해하다', '해체하다', '파괴하다', '해산하다', '무효화하다', '철폐하다', '폐지하다', '붕괴시키다', '분리하다', '해체시키다'],
     tips({
       etymology: 'con(함께)과 stitute(세우다)가 결합하여 여러 요소를 한데 모아 전체를 세운다는 의미에서 유래했습니다.',
@@ -779,9 +1019,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'Twelve months constitute a year.', ko: '12개월이 모여 1년을 구성한다.' },
         { en: 'These findings constitute strong evidence against the suspect.', ko: '이러한 발견들은 용의자에게 불리한 강력한 증거가 된다.' },
       ],
+      wordDistractors: ['Substitute', 'Institute', 'Prostitute'],
+      definitionDistractors: [
+        'To officially replace one element with another of equal value',
+        'To permanently remove a part from a larger whole',
+        'To legally establish an organization or governing body',
+      ],
     }
   ),
-  word('Consult', '상담하다', 5, 'verb',
+  word('consult', '상담하다', 5, 'verb',
     ['무시하다', '단독결정하다', '독단적으로행동하다', '배제하다', '회피하다', '거절하다', '방치하다', '외면하다', '고집부리다', '은폐하다'],
     tips({
       etymology: '함께를 뜻하는 \'con\'과 앉다를 뜻하는 \'sult\'가 결합되어, 전문가와 나란히 앉아 의견을 주고받는다는 어원을 가집니다.',
@@ -798,9 +1044,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'You should consult a specialist about your back pain.', ko: '허리 통증에 대해서는 전문의와 상담하는 것이 좋겠다.' },
         { en: 'The architect consulted the blueprints before making changes.', ko: '건축가는 설계를 변경하기 전에 청사진을 참조했다.' },
       ],
+      wordDistractors: ['Console', 'Counsel', 'Insult'],
+      definitionDistractors: [
+        'To give orders to subordinates without accepting any feedback',
+        'To independently make a decision without gathering outside opinions',
+        'To formally assign a task to a specific person or department',
+      ],
     }
   ),
-  word('Consume', '소비하다', 5, 'verb',
+  word('consume', '소비하다', 5, 'verb',
     ['생산하다', '절약하다', '보존하다', '축적하다', '저장하다', '아끼다', '보관하다', '비축하다', '창조하다', '유지하다'],
     tips({
       etymology: '라틴어 \'con(완전히)\'과 \'sumere(취하다)\'가 결합된 단어로, 자원을 남김없이 다 써버리거나 음식을 먹어치운다는 어원을 가집니다.',
@@ -817,9 +1069,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'Small cars consume less fuel than large SUVs.', ko: '소형차는 대형 SUV보다 연료를 적게 소비한다.' },
         { en: 'The fire quickly consumed the dry wooden shed.', ko: '불길이 마른 나무 창고를 순식간에 집어삼켰다.' },
       ],
+      wordDistractors: ['Costume', 'Presume', 'Resume'],
+      definitionDistractors: [
+        'To produce or manufacture goods for commercial distribution',
+        'To carefully preserve and protect valuable natural resources',
+        'To collect and store items for use at a later time',
+      ],
     }
   ),
-  word('Contemporary', '동시대의', 5, 'adjective',
+  word('contemporary', '동시대의', 5, 'adjective',
     ['고대의', '구식의', '미래의', '과거의', '원시적인', '레트로의', '옛날의', '미래형의', '전통적인', '노후한'],
     tips({
       etymology: '라틴어 \'con(함께)\'과 \'tempus(시간)\'가 결합되어 \'같은 시간 안에 있는\'이라는 의미를 형성합니다.',
@@ -836,9 +1094,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The museum features both historical and contemporary works of art.', ko: '그 박물관은 역사적인 예술품과 동시대의 예술품을 모두 전시한다.' },
         { en: 'Many people find it difficult to understand contemporary music.', ko: '많은 사람들이 동시대 음악을 이해하는 것을 어려워한다.' },
       ],
+      wordDistractors: ['Contemplate', 'Temporary', 'Complimentary'],
+      definitionDistractors: [
+        'Belonging to a historical period that ended centuries ago',
+        'Planned or expected to occur at some point in the distant future',
+        'Created in a traditional style that follows established artistic rules',
+      ],
     }
   ),
-  word('Contempt', '경멸', 5, 'noun',
+  word('contempt', '경멸', 5, 'noun',
     ['존경', '경의', '존중', '애정', '호의', '찬미', '칭송', '예우', '숭배', '친절'],
     tips({
       etymology: '라틴어 \'contemptus\'에서 유래했으며, con(강조)과 temnere(가볍게 여기다)가 결합하여 상대를 완전히 무시하고 낮게 본다는 의미를 형성합니다.',
@@ -855,9 +1119,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'She looked at him with utter contempt after he lied again.', ko: '그가 다시 거짓말을 하자 그녀는 그를 완전히 경멸하는 눈빛으로 쳐다보았다.' },
         { en: 'The protesters showed their contempt for the new law by tearing up the posters.', ko: '시위대들은 포스터를 찢음으로써 새 법안에 대한 경멸을 드러냈다.' },
       ],
+      wordDistractors: ['Content', 'Attempt', 'Contend'],
+      definitionDistractors: [
+        'A deep feeling of respect and admiration for someone\'s achievements',
+        'A mild sense of disappointment when expectations are not met',
+        'The emotional state of being satisfied and content with life',
+      ],
     }
   ),
-  word('Context', '맥락', 5, 'noun',
+  word('context', '맥락', 5, 'noun',
     ['고립', '단편', '단절', '분리', '무맥락', '추상', '공허', '독립', '단독', '파편'],
     tips({
       etymology: '라틴어 \'con(함께)\'과 \'texere(짜다)\'가 결합된 단어로, 여러 요소가 함께 짜여 하나의 흐름을 만든다는 뜻입니다.',
@@ -874,9 +1144,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'It is important to look at the historical context of the novel.', ko: '그 소설의 역사적 배경을 살펴보는 것이 중요하다.' },
         { en: 'His comments were taken out of context by the media.', ko: '그의 발언은 언론에 의해 앞뒤 맥락 없이 인용되었다.' },
       ],
+      wordDistractors: ['Contact', 'Content', 'Contest'],
+      definitionDistractors: [
+        'The main subject or theme that a written work is about',
+        'A specific passage or quotation taken directly from a book',
+        'The personal opinion of an author expressed in a text',
+      ],
     }
   ),
-  word('Contradict', '모순되다', 5, 'verb',
+  word('contradict', '모순되다', 5, 'verb',
     ['일치하다', '부합하다', '동의하다', '확인하다', '지지하다', '보완하다', '조화롭다', '합치하다', '승인하다', '찬성하다'],
     tips({
       etymology: '라틴어 \'contra(반대하여)\'와 \'dicere(말하다)\'가 합쳐진 단어로, 상대방의 말에 정면으로 반대되는 말을 한다는 어원을 가지고 있습니다.',
@@ -893,9 +1169,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The witness\'s story began to contradict the physical evidence found at the scene.', ko: '목격자의 진술이 현장에서 발견된 물적 증거와 모순되기 시작했다.' },
         { en: 'Recent studies contradict the earlier belief that this medication was completely safe.', ko: '최근 연구들은 이 약이 완전히 안전하다는 이전의 믿음이 틀렸음을 보여준다.' },
       ],
+      wordDistractors: ['Contract', 'Contrast', 'Contrite'],
+      definitionDistractors: [
+        'To fully support and agree with a statement made by another person',
+        'To present additional evidence that strengthens an existing argument',
+        'To carefully compare two things in order to find similarities',
+      ],
     }
   ),
-  word('Convention', '관례', 5, 'noun',
+  word('convention', '관례', 5, 'noun',
     ['비정통', '이색', '이변', '예외', '특이', '파격', '혁신', '파괴', '탈피', '우연'],
     tips({
       etymology: '함께를 뜻하는 con과 오다를 뜻하는 vent가 결합되어, 사람들이 한자리에 모여 합의한 규칙이나 모임을 의미합니다.',
@@ -912,9 +1194,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The artist decided to break away from artistic convention.', ko: '그 예술가는 예술적 관습에서 탈피하기로 결심했다.' },
         { en: 'The annual medical convention will be held in Geneva this year.', ko: '연례 의학 컨벤션이 올해 제네바에서 열릴 예정이다.' },
       ],
+      wordDistractors: ['Conviction', 'Conversation', 'Invention'],
+      definitionDistractors: [
+        'A groundbreaking new idea that challenges existing norms',
+        'A legally binding contract signed between two business partners',
+        'A personal habit that someone develops over many years',
+      ],
     }
   ),
-  word('Convert', '변환하다', 5, 'verb',
+  word('convert', '변환하다', 5, 'verb',
     ['유지하다', '고수하다', '보존하다', '그대로 두다', '불변', '고정', '동결', '정지', '방치하다', '지속하다'],
     tips({
       etymology: '라틴어 \'con(완전히)\'과 \'vertere(돌리다)\'가 합쳐져 성질이나 상태를 완전히 바꾼다는 의미가 되었습니다.',
@@ -931,9 +1219,15 @@ export const vocabBatch10: VocabItem[] = [
         { en: 'The software allows users to convert their documents into different digital formats.', ko: '이 소프트웨어는 사용자들이 문서를 다른 디지털 형식으로 변환할 수 있게 해준다.' },
         { en: 'They decided to convert the old factory into a trendy art gallery.', ko: '그들은 오래된 공장을 세련된 미술관으로 전환하기로 결정했다.' },
       ],
+      wordDistractors: ['Convent', 'Covert', 'Converge'],
+      definitionDistractors: [
+        'To keep something in its original state without making any changes',
+        'To transport goods from one location to another by vehicle',
+        'To carefully inspect and evaluate the quality of a product',
+      ],
     }
   ),
-  word('Cooperate', '협력하다', 5, 'verb',
+  word('cooperate', '협력하다', 5, 'verb',
     ['거부하다', '대립하다', '방해하다', '경쟁하다', '분열하다', '갈등하다', '반대하다', '저항하다', '독단적으로행하다', '방관하다'],
     tips({
       etymology: '함께를 뜻하는 \'co-\'와 일하다를 뜻하는 \'operate\'가 결합하여 \'함께 일하다\'라는 의미가 되었습니다.',
@@ -949,6 +1243,12 @@ export const vocabBatch10: VocabItem[] = [
       exampleSentences: [
         { en: 'The two companies decided to cooperate on the new technology project.', ko: '두 회사는 새로운 기술 프로젝트를 위해 협력하기로 결정했다.' },
         { en: 'Witnesses are being asked to cooperate with the authorities in the ongoing investigation.', ko: '목격자들은 진행 중인 수사에서 당국에 협력해 달라는 요청을 받고 있다.' },
+      ],
+      wordDistractors: ['Corporate', 'Coordinate', 'Copulate'],
+      definitionDistractors: [
+        'To compete fiercely against others for limited resources or recognition',
+        'To work independently without relying on assistance from others',
+        'To supervise and direct the actions of a group of people',
       ],
     }
   ),

@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch08: VocabItem[] = [
-  word('Emotion', '감정', 4, 'noun',
+  word('emotion', '감정', 4, 'noun',
     ['이성', '논리', '사실', '규칙', '습관', '지식', '기술', '정보', '계획', '결과'],
     tips({
       etymology: '라틴어 \'emovere\'에서 유래하며, \'e(밖으로)\'와 \'movere(움직이다)\'가 결합되어 마음의 움직임이 외부로 표출되는 것을 의미합니다.',
@@ -15,13 +15,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'A natural instinctive state of mind deriving from one\'s circumstances, mood, or relationships with others.',
       synonyms: ['feeling', 'sentiment', 'passion'],
       antonyms: ['reason', 'logic', 'indifference'],
+      wordDistractors: ['emulsion', 'erosion', 'edition'],
+      definitionDistractors: [
+        'a physical movement performed to express an idea',
+        'a logical argument based on observable evidence',
+        'a chemical reaction that produces heat and light',
+      ],
       exampleSentences: [
         { en: 'She could not hide her emotion when she heard the news.', ko: '그녀는 그 소식을 들었을 때 자신의 감정을 숨길 수 없었다.' },
         { en: 'Music often evokes strong emotions in listeners.', ko: '음악은 종종 청취자들에게 강렬한 감정을 불러일으킨다.' },
       ],
     }
   ),
-  word('Employ', '고용하다', 4, 'verb',
+  word('employ', '고용하다', 4, 'verb',
     ['해고하다', '해임하다', '거절하다', '퇴직하다', '사임하다', '그만두다', '포기하다', '방치하다', '무시하다', '기권하다'],
     tips({
       etymology: 'em(안으로)과 ploy(접다/연루시키다)가 합쳐져 사람을 업무의 영역 안으로 끌어들인다는 어원을 가집니다.',
@@ -34,13 +40,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to provide a person with a paid job or to make use of a particular method or skill',
       synonyms: ['hire', 'recruit', 'utilize'],
       antonyms: ['dismiss', 'fire', 'discharge'],
+      wordDistractors: ['embody', 'implore', 'deploy'],
+      definitionDistractors: [
+        'to destroy or dismantle a structure completely',
+        'to travel across a large body of water by ship',
+        'to arrange items in alphabetical or numerical order',
+      ],
       exampleSentences: [
         { en: 'The factory plans to employ more staff to increase production.', ko: '그 공장은 생산량을 늘리기 위해 더 많은 직원을 고용할 계획이다.' },
         { en: 'The investigators decided to employ a new technique to solve the case.', ko: '수사관들은 사건을 해결하기 위해 새로운 기법을 이용하기로 했다.' },
       ],
     }
   ),
-  word('Enable', '가능하게 하다', 4, 'verb',
+  word('enable', '가능하게 하다', 4, 'verb',
     ['방해하다', '막다', '금지하다', '차단하다', '제한하다', '억제하다', '거부하다', '중단시키다', '방치하다', '지연시키다'],
     tips({
       etymology: '접두사 en-(만들다)과 able(할 수 있는)이 합쳐져 \'할 수 있는 상태로 만들다\'라는 의미가 됩니다.',
@@ -53,13 +65,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to provide someone with the ability or opportunity to do something, or to make a process achievable',
       synonyms: ['allow', 'permit', 'empower'],
       antonyms: ['disable', 'prevent', 'hinder'],
+      wordDistractors: ['enact', 'endure', 'enclose'],
+      definitionDistractors: [
+        'to record information in a written or digital format',
+        'to physically carry an object from one location to another',
+        'to reduce the intensity or volume of something gradually',
+      ],
       exampleSentences: [
         { en: 'Technology enables us to work from anywhere.', ko: '기술은 우리가 어디서든 일할 수 있게 해준다.' },
         { en: 'This feature enables faster data processing.', ko: '이 기능은 더 빠른 데이터 처리를 가능하게 한다.' },
       ],
     }
   ),
-  word('Encounter', '마주치다', 4, 'verb',
+  word('encounter', '마주치다', 4, 'verb',
     ['회피하다', '피하다', '놓치다', '무시하다', '소홀히하다', '지나치다', '도망하다', '숨다', '외면하다', '피신하다'],
     tips({
       etymology: 'en(안에)과 counter(반대하여/마주하여)가 결합되어, 예상치 못한 대상을 정면으로 마주하게 됨을 의미합니다.',
@@ -72,13 +90,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to unexpectedly experience or come into contact with someone or something',
       synonyms: ['meet', 'confront', 'face'],
       antonyms: ['avoid', 'evade', 'shun'],
+      wordDistractors: ['enounter', 'encumber', 'enchant'],
+      definitionDistractors: [
+        'to prepare a detailed financial report for an organization',
+        'to deliberately conceal something from public view',
+        'to construct a barrier or wall around a property',
+      ],
       exampleSentences: [
         { en: 'I encountered an old friend at the mall while I was shopping.', ko: '쇼핑을 하던 중에 쇼핑몰에서 우연히 옛 친구를 마주쳤다.' },
         { en: 'The team may encounter several technical difficulties during the project.', ko: '그 팀은 프로젝트를 진행하는 동안 몇 가지 기술적인 난관에 봉착할 수도 있다.' },
       ],
     }
   ),
-  word('Encourage', '격려하다', 4, 'verb',
+  word('encourage', '격려하다', 4, 'verb',
     ['좌절시키다', '낙담시키다', '비난하다', '비판하다', '무시하다', '거절하다', '방해하다', '위협하다', '억제하다', '회피하다'],
     tips({
       etymology: '접두사 en(~하게 만들다)과 courage(용기)가 결합되어, 상대방의 마음속에 용기가 생기도록 만든다는 어원을 가집니다.',
@@ -91,13 +115,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to inspire someone with the spirit, confidence, or hope needed to take action or continue a task',
       synonyms: ['motivate', 'support', 'inspire'],
       antonyms: ['discourage', 'dissuade', 'deter'],
+      wordDistractors: ['enclose', 'encroach', 'endanger'],
+      definitionDistractors: [
+        'to calculate the total cost of goods and services',
+        'to physically restrain someone from leaving a place',
+        'to officially register a document with a government agency',
+      ],
       exampleSentences: [
         { en: 'The teacher tried to encourage her students to ask more questions during the lecture.', ko: '선생님은 학생들이 강의 중에 더 많은 질문을 하도록 격려하려고 노력했다.' },
         { en: 'My friends encouraged me to pursue my dream of becoming a professional musician.', ko: '내 친구들은 내가 전문 음악가가 되려는 꿈을 쫓도록 격려해 주었다.' },
       ],
     }
   ),
-  word('Enormous', '거대한', 4, 'adjective',
+  word('enormous', '거대한', 4, 'adjective',
     ['미세한', '작은', '조그마한', '미미한', '소형의', '소규모의', '적은', '보통의', '평범한', '사소한'],
     tips({
       etymology: '라틴어 \'e-(밖으로)\'와 \'norma(표준/규격)\'가 결합된 단어로, 일반적인 규격을 훌쩍 벗어날 정도로 크다는 의미에서 유래되었습니다.',
@@ -110,13 +140,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'extraordinarily large in size, extent, or amount; far exceeding the common measure',
       synonyms: ['huge', 'gigantic', 'massive'],
       antonyms: ['tiny', 'small', 'minute'],
+      wordDistractors: ['envious', 'ominous', 'eminent'],
+      definitionDistractors: [
+        'lacking any distinguishing or remarkable qualities',
+        'arranged in a precise mathematical sequence',
+        'moving at a slow and steady pace without interruption',
+      ],
       exampleSentences: [
         { en: 'The project required an enormous amount of time and effort from the entire team.', ko: '그 프로젝트는 팀 전체의 엄청난 시간과 노력을 필요로 했다.' },
         { en: 'They live in an enormous house with ten bedrooms and a private swimming pool.', ko: '그들은 침실 10개와 개인 수영장이 딸린 거대한 집에 산다.' },
       ],
     }
   ),
-  word('Ensure', '확보하다', 4, 'verb',
+  word('ensure', '확보하다', 4, 'verb',
     ['불확실하다', '의심하다', '위험하다', '방치하다', '소홀히하다', '무시하다', '우연에맡기다', '나태하다', '불안해하다', '혼란스럽다'],
     tips({
       etymology: '접두사 en(~하게 만들다)과 sure(확실한)가 결합되어, 어떤 상황을 확실한 상태로 만든다는 뜻입니다.',
@@ -129,13 +165,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to make certain that a particular event, situation, or outcome will happen',
       synonyms: ['guarantee', 'assure', 'confirm'],
       antonyms: ['risk', 'endanger', 'neglect'],
+      wordDistractors: ['endure', 'insure', 'ensnare'],
+      definitionDistractors: [
+        'to remove impurities from a liquid through filtration',
+        'to officially approve a new law or regulation',
+        'to distribute resources equally among participants',
+      ],
       exampleSentences: [
         { en: 'The new law will help to ensure that all children receive a quality education.', ko: '새로운 법은 모든 아이들이 양질의 교육을 받는 것을 보장하는 데 도움이 될 것입니다.' },
         { en: 'Please check the document carefully to ensure there are no spelling mistakes.', ko: '철자 오류가 없는지 확인하기 위해 문서를 주의 깊게 검토해 주세요.' },
       ],
     }
   ),
-  word('Entire', '전체의', 4, 'adjective',
+  word('entire', '전체의', 4, 'adjective',
     ['일부의', '부분적인', '절반의', '파편화된', '미미한', '제한된', '결핍된', '부족한', '사소한', '단편적인'],
     tips({
       etymology: '라틴어 \'integer\'에서 유래되었으며, 이는 \'손대지 않은\' 또는 \'완전한\'이라는 의미를 담고 있어 어떤 것도 빠지지 않은 상태를 나타냅니다.',
@@ -148,13 +190,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'Including every part of something without any exceptions or omissions.',
       synonyms: ['whole', 'complete', 'total'],
       antonyms: ['partial', 'incomplete', 'limited'],
+      wordDistractors: ['entice', 'empire', 'enquire'],
+      definitionDistractors: [
+        'located at the outermost boundary of a region',
+        'occurring at regular intervals throughout the year',
+        'designed to be used only once before disposal',
+      ],
       exampleSentences: [
         { en: 'I spent the entire day cleaning my room.', ko: '나는 하루 종일 방을 청소하며 시간을 보냈다.' },
         { en: 'The entire team celebrated the victory together.', ko: '팀 전체가 함께 승리를 축하했다.' },
       ],
     }
   ),
-  word('Environment', '환경', 4, 'noun',
+  word('environment', '환경', 4, 'noun',
     ['실내', '폐쇄', '격리', '고립', '단일', '단독', '인공', '가상', '추상', '내부'],
     tips({
       etymology: '프랑스어 \'environ(둘러싸다)\'에 명사형 접미사 \'-ment\'가 결합되어 우리를 둘러싸고 있는 모든 조건을 의미하게 되었습니다.',
@@ -167,13 +215,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'the complex of physical, chemical, and biotic factors that act upon an organism or an ecological community and ultimately determine its form and survival',
       synonyms: ['surroundings', 'ecosystem', 'habitat'],
       antonyms: ['interior', 'isolation', 'vacuum'],
+      wordDistractors: ['enrollment', 'entertainment', 'endowment'],
+      definitionDistractors: [
+        'a formal ceremony held to mark a significant occasion',
+        'the process of converting raw materials into finished goods',
+        'a written agreement between two or more legal parties',
+      ],
       exampleSentences: [
         { en: 'We must protect the environment for future generations.', ko: '우리는 미래 세대를 위해 환경을 보호해야 한다.' },
         { en: 'Children learn best in a supportive and safe environment.', ko: '아이들은 지지적이고 안전한 환경에서 가장 잘 배운다.' },
       ],
     }
   ),
-  word('Equal', '동등한', 4, 'adjective',
+  word('equal', '동등한', 4, 'adjective',
     ['불균형', '차이', '우열', '상이', '비대칭', '불편', '편차', '격차', '차등', '차별'],
     tips({
       etymology: '라틴어 aequalis에서 유래했으며, \'평평하다\' 또는 \'수평이다\'라는 의미를 담고 있습니다.',
@@ -186,13 +240,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'being the same in quantity, size, degree, or value as another person or thing',
       synonyms: ['identical', 'equivalent', 'uniform'],
       antonyms: ['different', 'uneven', 'disproportionate'],
+      wordDistractors: ['equip', 'eagle', 'sequel'],
+      definitionDistractors: [
+        'positioned at the highest point of a vertical structure',
+        'consisting of multiple layers stacked on top of each other',
+        'moving in a circular pattern around a central axis',
+      ],
       exampleSentences: [
         { en: 'All citizens should have an equal opportunity to succeed regardless of their background.', ko: '모든 시민은 배경에 상관없이 성공할 수 있는 동등한 기회를 가져야 한다.' },
         { en: 'The recipe requires you to mix the flour and water in equal proportions.', ko: '그 레시피는 밀가루와 물을 동등한 비율로 섞을 것을 요구한다.' },
       ],
     }
   ),
-  word('Equipment', '장비', 4, 'noun',
+  word('equipment', '장비', 4, 'noun',
     ['맨손', '무기', '기본', '간단', '수동', '인력', '자연', '원시', '도구 없음', '맨몸'],
     tips({
       etymology: '동사 equip(갖추다)에 명사형 접미사 -ment가 결합하여, 특정 목적을 위해 갖추어 놓은 물건들을 뜻합니다.',
@@ -205,13 +265,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'The necessary items, tools, or machines needed for a particular purpose or activity.',
       synonyms: ['gear', 'apparatus', 'tackle'],
       antonyms: ['hand', 'material', 'component'],
+      wordDistractors: ['equivalent', 'eloquent', 'equation'],
+      definitionDistractors: [
+        'a formal agreement between two nations regarding trade',
+        'the process of training individuals for a specific profession',
+        'a financial document summarizing annual income and expenses',
+      ],
       exampleSentences: [
         { en: 'The hikers carried heavy equipment for their mountain trip.', ko: '등산객들은 산행을 위해 무거운 장비를 운반했다.' },
         { en: 'The gym is filled with modern exercise equipment.', ko: '그 체육관은 최신 운동 장비로 가득 차 있다.' },
       ],
     }
   ),
-  word('Escape', '탈출하다', 4, 'verb',
+  word('escape', '탈출하다', 4, 'verb',
     ['갇히다', '들어가다', '포획되다', '붙잡히다', '침입하다', '진입하다', '복귀하다', '돌아오다', '유지하다', '머무르다'],
     tips({
       etymology: '라틴어 ex(밖으로)와 cappa(망토)가 합쳐진 단어로, 누군가 망토를 붙잡았을 때 망토를 벗어 던지고 몸만 빠져나가는 모습에서 유래되었습니다.',
@@ -224,13 +290,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to get away from a place where one has been kept as a prisoner or in a confined space',
       synonyms: ['flee', 'abscond', 'evade'],
       antonyms: ['remain', 'stay', 'confront'],
+      wordDistractors: ['escort', 'eclipse', 'estate'],
+      definitionDistractors: [
+        'to permanently attach one object to another using adhesive',
+        'to formally introduce a speaker at a public event',
+        'to carefully measure the dimensions of a physical space',
+      ],
       exampleSentences: [
         { en: 'The prisoner managed to escape from his cell during the night.', ko: '그 수감자는 밤사이에 감방에서 탈출하는 데 성공했다.' },
         { en: 'They went to the mountains to escape the heat of the city.', ko: '그들은 도시의 열기를 피해 산으로 떠났다.' },
       ],
     }
   ),
-  word('Essential', '필수적인', 4, 'adjective',
+  word('essential', '필수적인', 4, 'adjective',
     ['불필요한', '선택적인', '부수적인', '사소한', '과잉의', '임의의', '부가적인', '지엽적인', '가변적인', '무관한'],
     tips({
       etymology: '라틴어 \'esse(존재하다)\'에서 유래한 \'essence(본질)\'의 형용사형으로, 존재 자체에 없어서는 안 될 핵심을 의미합니다.',
@@ -243,13 +315,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'absolutely necessary or extremely important for a particular activity or situation',
       synonyms: ['vital', 'crucial', 'indispensable'],
       antonyms: ['optional', 'secondary', 'superfluous'],
+      wordDistractors: ['existential', 'eventual', 'especial'],
+      definitionDistractors: [
+        'relating to the study of ancient historical artifacts',
+        'capable of being dissolved in water or other solvents',
+        'produced in large quantities for commercial distribution',
+      ],
       exampleSentences: [
         { en: 'Water is essential for all living organisms to survive.', ko: '물은 모든 생명체가 생존하는 데 필수적이다.' },
         { en: 'Good communication is essential for a successful marriage.', ko: '원활한 소통은 성공적인 결혼 생활에 필수적이다.' },
       ],
     }
   ),
-  word('Establish', '설립하다', 4, 'verb',
+  word('establish', '설립하다', 4, 'verb',
     ['해체하다', '폐쇄하다', '무너뜨리다', '해산하다', '종료하다', '폐지하다', '무효화하다', '취소하다', '제거하다', '파괴하다'],
     tips({
       etymology: '안정된 상태를 뜻하는 \'stable\'과 어원이 같습니다. 어떤 대상을 흔들리지 않게 고정하여 세운다는 의미에서 유래했습니다.',
@@ -262,13 +340,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'To set up an organization, system, or set of rules on a firm or permanent basis.',
       synonyms: ['found', 'institute', 'constitute'],
       antonyms: ['abolish', 'demolish', 'destroy'],
+      wordDistractors: ['embellish', 'astonish', 'extinguish'],
+      definitionDistractors: [
+        'to temporarily pause an activity and resume it later',
+        'to transport heavy materials across a long distance',
+        'to convert a solid substance into a liquid form',
+      ],
       exampleSentences: [
         { en: 'The committee was established to help the local community create new safety guidelines.', ko: '위원회는 지역 사회가 새로운 안전 지침을 수립하는 것을 돕기 위해 설립되었다.' },
         { en: 'It takes many years of hard work to establish a reputation as a reliable professional.', ko: '신뢰할 수 있는 전문가로서의 명성을 확립하는 데는 수년간의 노력이 필요하다.' },
       ],
     }
   ),
-  word('Estimate', '추정하다', 4, 'verb',
+  word('estimate', '추정하다', 4, 'verb',
     ['확정하다', '입증하다', '무시하다', '실측하다', '단정하다', '검증하다', '정확히측정하다', '확인하다', '부인하다', '결정하다'],
     tips({
       etymology: '라틴어 aestimare에서 유래되었으며, 이는 물건의 가치(value)를 매기거나 평가한다는 의미를 담고 있습니다.',
@@ -281,13 +365,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to form an approximate opinion or judgment about the size, amount, or cost of something based on available information',
       synonyms: ['approximate', 'gauge', 'evaluate'],
       antonyms: ['calculate', 'measure', 'ascertain'],
+      wordDistractors: ['esteem', 'eliminate', 'emanate'],
+      definitionDistractors: [
+        'to officially approve a proposal after careful review',
+        'to permanently remove an item from a collection or list',
+        'to divide a large object into smaller equal portions',
+      ],
       exampleSentences: [
         { en: 'They estimate that thousands of people will attend, but it is difficult to know the exact number.', ko: '그들은 수천 명이 참석할 것으로 추정하지만, 정확한 숫자를 알기는 어렵다.' },
         { en: 'It is necessary to estimate the potential risks before starting the new project.', ko: '새로운 프로젝트를 시작하기 전에 잠재적인 위험 요소를 추정해 보는 것이 필요하다.' },
       ],
     }
   ),
-  word('Evaluate', '평가하다', 4, 'verb',
+  word('evaluate', '평가하다', 4, 'verb',
     ['무시하다', '방치하다', '생략하다', '회피하다', '거절하다', '보류하다', '간과하다', '포기하다', '방관하다', '누락하다'],
     tips({
       etymology: 'e(밖으로)와 value(가치)가 결합된 단어로, 대상이 가진 가치를 밖으로 끌어내어 확인한다는 의미에서 유래되었습니다.',
@@ -300,13 +390,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'To carefully judge or determine the quality, importance, amount, or value of something.',
       synonyms: ['assess', 'appraise', 'estimate'],
       antonyms: ['ignore', 'neglect', 'overlook'],
+      wordDistractors: ['elevate', 'evaporate', 'evacuate'],
+      definitionDistractors: [
+        'to increase the speed of a moving vehicle or machine',
+        'to combine two or more substances into a single mixture',
+        'to translate written text from one language into another',
+      ],
       exampleSentences: [
         { en: 'The committee will evaluate the performance of each employee before the promotion.', ko: '위원회는 승진 전에 각 직원의 성과를 평가할 것이다.' },
         { en: 'It is difficult to evaluate the effectiveness of the new policy in such a short time.', ko: '그렇게 짧은 시간 안에 새로운 정책의 효과를 평가하기는 어렵다.' },
       ],
     }
   ),
-  word('Eventual', '최종적인', 4, 'adjective',
+  word('eventual', '최종적인', 4, 'adjective',
     ['초기', '당장', '즉시', '임시', '과도기', '중간', '일시적', '보류', '미정', '불확실'],
     tips({
       etymology: '사건을 뜻하는 event에 형용사 접미사 -ual이 결합하여, 여러 사건들이 다 일어난 뒤에 오는 상태를 뜻하게 되었습니다.',
@@ -319,13 +415,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'happening at the very end of a long series of events or a long period of time',
       synonyms: ['ultimate', 'final', 'concluding'],
       antonyms: ['immediate', 'initial', 'primary'],
+      wordDistractors: ['evidential', 'elemental', 'essential'],
+      definitionDistractors: [
+        'relating to or involving physical motion through space',
+        'designed specifically for temporary or short-term use',
+        'based on personal opinion rather than established facts',
+      ],
       exampleSentences: [
         { en: 'Success is the eventual outcome of hard work.', ko: '성공은 노력의 최종적인 결과이다.' },
         { en: 'The eventual winner will receive a prize.', ko: '최종 우승자는 상을 받을 것이다.' },
       ],
     }
   ),
-  word('Evidence', '증거', 4, 'noun',
+  word('evidence', '증거', 4, 'noun',
     ['추측', '의심', '혐의', '미확인', '불문서', '구두', '모호', '애매', '낭설', '소문'],
     tips({
       etymology: '라틴어 \'evidere\'에서 유래하며, \'e(밖으로)\'와 \'videre(보다)\'가 결합되어 \'밖으로 명확히 드러나 보이는 것\'이라는 의미를 담고 있습니다.',
@@ -338,13 +440,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'A collection of facts or signs indicating whether a belief or proposition is true or valid.',
       synonyms: ['proof', 'confirmation', 'data'],
       antonyms: ['disproof', 'contradiction', 'rebuttal'],
+      wordDistractors: ['eminence', 'eloquence', 'emergence'],
+      definitionDistractors: [
+        'a formal speech delivered at a public ceremony or gathering',
+        'the physical process of changing from solid to liquid state',
+        'a written summary of rules governing an organization',
+      ],
       exampleSentences: [
         { en: 'There is no evidence to support that claim.', ko: '그 주장을 뒷받침할 증거가 없다.' },
         { en: 'The police found evidence at the crime scene.', ko: '경찰은 범죄 현장에서 증거를 발견했다.' },
       ],
     }
   ),
-  word('Evil', '악한', 4, 'adjective',
+  word('evil', '악한', 4, 'adjective',
     ['선한', '착한', '정의로운', '도덕적인', '순수한', '자비로운', '친절한', '올바른', '훌륭한', '어진'],
     tips({
       etymology: '고대 영어 \'yfel\'에서 유래되었으며, 원래 \'범위를 벗어난\' 또는 \'도를 넘은\'이라는 의미에서 \'나쁜\'이라는 뜻으로 발전했습니다.',
@@ -357,13 +465,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'profoundly immoral, malevolent, or characterized by a desire to cause harm and suffering',
       synonyms: ['wicked', 'sinful', 'malicious'],
       antonyms: ['good', 'virtuous', 'holy'],
+      wordDistractors: ['easel', 'anvil', 'oval'],
+      definitionDistractors: [
+        'extremely tired or exhausted after prolonged physical effort',
+        'having a sharp or bitter taste that is unpleasant',
+        'relating to events that occurred in ancient civilizations',
+      ],
       exampleSentences: [
         { en: 'No one is born evil.', ko: '아무도 악하게 태어나지 않는다.' },
         { en: 'The villain had an evil plan to destroy the city.', ko: '그 악당은 도시를 파괴하려는 악한 계획을 가지고 있었다.' },
       ],
     }
   ),
-  word('Exact', '정확한', 4, 'adjective',
+  word('exact', '정확한', 4, 'adjective',
     ['대략적인', '모호한', '부정확한', '왜곡된', '희미한', '불분명한', '틀린', '어림잡은', '추상적인', '엉성한'],
     tips({
       etymology: '라틴어 \'exactus\'에서 유래했으며, \'ex(밖으로)\'와 \'agere(행하다/몰다)\'가 결합되어 \'철저하게 완성된\' 또는 \'정밀하게 다듬어진\' 상태를 의미합니다.',
@@ -376,13 +490,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'strictly correct in every detail and admitting no deviation from the truth or a standard',
       synonyms: ['precise', 'accurate', 'specific'],
       antonyms: ['approximate', 'vague', 'incorrect'],
+      wordDistractors: ['exalt', 'extract', 'extent'],
+      definitionDistractors: [
+        'happening spontaneously without any prior preparation',
+        'belonging to a category that is difficult to classify',
+        'gradually decreasing in brightness or intensity over time',
+      ],
       exampleSentences: [
         { en: 'Please give me the exact time so I can synchronize my watch.', ko: '시계를 맞출 수 있도록 정확한 시간을 알려 주세요.' },
         { en: 'I need the exact measurements of the room before buying the furniture.', ko: '가구를 사기 전에 방의 정확한 치수가 필요합니다.' },
       ],
     }
   ),
-  word('Examine', '조사하다', 4, 'verb',
+  word('examine', '조사하다', 4, 'verb',
     ['무시하다', '지나치다', '넘기다', '추측하다', '오해하다', '생략하다', '회피하다', '방치하다', '간과하다', '망각하다'],
     tips({
       etymology: '라틴어 examinare에서 유래했으며, 원래 \'저울의 바늘\'을 의미하는 examen에서 나와 \'정확히 무게를 달아보며 살피다\'라는 뜻을 담고 있습니다.',
@@ -395,13 +515,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to look at something in a careful way to learn more about it or find problems',
       synonyms: ['inspect', 'scrutinize', 'investigate'],
       antonyms: ['ignore', 'neglect', 'overlook'],
+      wordDistractors: ['example', 'exasperate', 'excavate'],
+      definitionDistractors: [
+        'to assemble separate parts into a complete structure',
+        'to publicly announce the results of an election',
+        'to preserve food by storing it at low temperatures',
+      ],
       exampleSentences: [
         { en: 'The doctor will examine your throat to see what is wrong.', ko: '의사가 무엇이 문제인지 알아보기 위해 목 안을 진찰할 것이다.' },
         { en: 'Scientists must examine the data thoroughly before reaching a final conclusion.', ko: '과학자들은 최종 결론에 도달하기 전에 데이터를 철저히 조사해야 한다.' },
       ],
     }
   ),
-  word('Exceed', '초과하다', 4, 'verb',
+  word('exceed', '초과하다', 4, 'verb',
     ['미달하다', '부족하다', '미치지 못하다', '밑돌다', '모자라다', '감소하다', '축소하다', '제한하다', '억제하다', '유지하다'],
     tips({
       etymology: '접두사 ex(밖으로)와 어근 ceed(가다)가 결합되어, 정해진 경계나 선 밖으로 나아간다는 의미를 형성합니다.',
@@ -414,13 +540,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to be greater than a particular number or amount, or to go beyond a permitted boundary',
       synonyms: ['surpass', 'transcend', 'outdo'],
       antonyms: ['fail', 'fall short', 'trail'],
+      wordDistractors: ['excise', 'excrete', 'excel'],
+      definitionDistractors: [
+        'to formally request permission from an authority figure',
+        'to slowly deteriorate due to exposure to harsh weather',
+        'to arrange musical notes in ascending or descending order',
+      ],
       exampleSentences: [
         { en: 'Drivers who exceed the speed limit will be fined heavily.', ko: '속도 제한을 초과하는 운전자들은 무거운 벌금을 물게 될 것입니다.' },
         { en: 'The final cost of the project must not exceed the original budget.', ko: '프로젝트의 최종 비용은 원래 예산을 초과해서는 안 됩니다.' },
       ],
     }
   ),
-  word('Except', '~을 제외하고', 4, 'preposition',
+  word('except', '~을 제외하고', 4, 'preposition',
     ['포함하여', '함께', '덧붙여', '더하여', '통째로', '전체', '모두', '일체', '전부', '총체'],
     tips({
       etymology: '라틴어 ex(밖으로)와 cept(잡다)가 결합되어, 전체 무리에서 특정 대상을 \'밖으로 따로 잡아 빼놓다\'는 의미를 형성합니다.',
@@ -433,13 +565,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'not including; other than the person or thing mentioned',
       synonyms: ['excluding', 'barring', 'besides'],
       antonyms: ['including', 'plus', 'with'],
+      wordDistractors: ['accept', 'expect', 'excerpt'],
+      definitionDistractors: [
+        'to add extra features to an existing product or service',
+        'to move forward in a straight line without turning',
+        'to repeat a statement for emphasis or clarification',
+      ],
       exampleSentences: [
         { en: 'Everyone attended the meeting except the manager.', ko: '매니저를 제외하고 모든 사람이 회의에 참석했습니다.' },
         { en: 'The museum is open every day except Monday.', ko: '그 박물관은 월요일을 제외하고 매일 개관합니다.' },
       ],
     }
   ),
-  word('Exchange', '교환하다', 4, 'verb',
+  word('exchange', '교환하다', 4, 'verb',
     ['유지하다', '보유하다', '독점하다', '고수하다', '고집하다', '고정하다', '거부하다', '정지하다', '정체하다', '보존하다'],
     tips({
       etymology: 'ex(밖으로)와 change(바꾸다)가 결합하여 \'서로의 것을 밖으로 내어 바꾸다\'는 의미를 가집니다.',
@@ -452,13 +590,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to give something to someone and receive something of the same kind or value from them',
       synonyms: ['swap', 'trade', 'interchange'],
       antonyms: ['keep', 'retain', 'withhold'],
+      wordDistractors: ['exhaust', 'enhance', 'excursion'],
+      definitionDistractors: [
+        'to expand the physical boundaries of a building or room',
+        'to record a series of events in chronological order',
+        'to separate a mixture into its individual chemical elements',
+      ],
       exampleSentences: [
         { en: 'The two countries decided to exchange ambassadors to improve their relationship.', ko: '두 나라는 관계 개선을 위해 대사를 교환하기로 결정했다.' },
         { en: 'I would like to exchange this shirt for a larger size.', ko: '이 셔츠를 더 큰 사이즈로 교환하고 싶습니다.' },
       ],
     }
   ),
-  word('Excite', '흥분시키다', 4, 'verb',
+  word('excite', '흥분시키다', 4, 'verb',
     ['진정시키다', '지루하게 하다', '낙담시키다', '무관심하다', '억제하다', '차분해지다', '실망시키다', '우울하게 하다', '냉대하다', '방관하다'],
     tips({
       etymology: '라틴어 ex(밖으로)와 citare(움직이다)가 결합되어, 내면의 감정을 밖으로 강하게 끌어내어 움직이게 한다는 어원을 가집니다.',
@@ -471,13 +615,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to arouse strong feelings of enthusiasm, eagerness, or intense emotional activity in someone',
       synonyms: ['thrill', 'stimulate', 'rouse'],
       antonyms: ['bore', 'calm', 'depress'],
+      wordDistractors: ['excise', 'recite', 'exile'],
+      definitionDistractors: [
+        'to carefully remove damaged tissue from a wound',
+        'to officially declare the end of a legal contract',
+        'to shape raw metal into a specific form using heat',
+      ],
       exampleSentences: [
         { en: 'The news about the surprise vacation plans will surely excite the children.', ko: '깜짝 휴가 계획에 대한 소식은 분명 아이들을 흥분시킬 것이다.' },
         { en: 'The upcoming world tour began to excite the young fans.', ko: '다가오는 월드 투어는 젊은 팬들을 흥분시키기 시작했다.' },
       ],
     }
   ),
-  word('Excuse', '변명', 4, 'noun',
+  word('excuse', '변명', 4, 'noun',
     ['사실', '인정', '솔직', '직설', '정직', '고백', '투명', '명료', '해명', '증명'],
     tips({
       etymology: 'ex(밖으로)와 causa(원인/소송)가 결합하여 책임의 원인에서 벗어나려 한다는 뜻에서 유래했습니다.',
@@ -490,13 +640,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'a reason or explanation put forward to defend or justify a fault or offense',
       synonyms: ['apology', 'justification', 'plea'],
       antonyms: ['truth', 'confession', 'accusation'],
+      wordDistractors: ['exclude', 'execute', 'excursion'],
+      definitionDistractors: [
+        'a detailed plan outlining steps for achieving a goal',
+        'a device used to measure atmospheric pressure changes',
+        'a formal gathering of experts to discuss technical topics',
+      ],
       exampleSentences: [
         { en: 'He always has a creative excuse for why his homework is late.', ko: '그는 숙제가 왜 늦었는지에 대해 항상 창의적인 변명을 한다.' },
         { en: 'There is no acceptable excuse for being so rude to the guests.', ko: '손님들에게 그렇게 무례하게 행동한 것에 대해서는 어떠한 용납될 만한 핑계도 없다.' },
       ],
     }
   ),
-  word('Exercise', '운동', 4, 'noun',
+  word('exercise', '운동', 4, 'noun',
     ['휴식', '안정', '정지', '비활동', '게으름', '나태', '침묵', '고요', '휴면', '방치'],
     tips({
       etymology: '라틴어 exercere에서 유래하여 \'가두어 둔 것을 풀어놓아 활동하게 하다\'는 의미를 담고 있습니다.',
@@ -509,13 +665,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'Physical activity that is performed to maintain or improve health and fitness.',
       synonyms: ['workout', 'practice', 'drill'],
       antonyms: ['rest', 'inactivity', 'idleness'],
+      wordDistractors: ['exorcise', 'excise', 'expertise'],
+      definitionDistractors: [
+        'a brief written message sent through electronic channels',
+        'the act of transferring ownership of property to another person',
+        'a decorative pattern applied to the surface of furniture',
+      ],
       exampleSentences: [
         { en: 'Swimming is considered one of the best forms of exercise for the whole body.', ko: '수영은 전신을 위한 가장 좋은 형태의 운동 중 하나로 여겨진다.' },
         { en: 'You should try to get some exercise every day to stay healthy.', ko: '건강을 유지하기 위해 매일 어느 정도 운동을 하도록 노력해야 한다.' },
       ],
     }
   ),
-  word('Exhibit', '전시하다', 4, 'verb',
+  word('exhibit', '전시하다', 4, 'verb',
     ['숨기다', '은닉하다', '정리하다', '제거하다', '봉인하다', '감추다', '덮다', '가리다', '포장하다', '밀봉하다'],
     tips({
       etymology: '라틴어 ex(밖으로)와 habere(가지다)가 결합된 단어로, 안에 가지고 있던 것을 밖으로 꺼내어 보여준다는 의미에서 유래했습니다.',
@@ -528,13 +690,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to present an object or a quality for others to see in a public space or through behavior',
       synonyms: ['display', 'show', 'reveal'],
       antonyms: ['hide', 'conceal', 'cover'],
+      wordDistractors: ['inhabit', 'inhibit', 'exhume'],
+      definitionDistractors: [
+        'to prohibit someone from entering a restricted area',
+        'to repair a damaged structure to its original condition',
+        'to collect and organize data for statistical analysis',
+      ],
       exampleSentences: [
         { en: 'The local gallery will exhibit the works of young artists next month.', ko: '지역 갤러리는 다음 달에 젊은 예술가들의 작품을 전시할 예정이다.' },
         { en: 'He did not exhibit any signs of fear during the dangerous rescue.', ko: '그는 위험한 구조 작업 동안 어떠한 두려움의 기색도 보이지 않았다.' },
       ],
     }
   ),
-  word('Exist', '존재하다', 4, 'verb',
+  word('exist', '존재하다', 4, 'verb',
     ['없다', '소멸하다', '사라지다', '멸망하다', '소실되다', '부재하다', '공허하다', '무시하다', '비존재', '허무하다'],
     tips({
       etymology: '라틴어 ex(밖으로)와 sistere(서다)가 결합된 단어로, 세상 밖으로 나와 뚜렷하게 서 있는 모습을 나타냅니다.',
@@ -547,13 +715,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to have actual being or to be real and found in the physical world',
       synonyms: ['be', 'live', 'survive'],
       antonyms: ['perish', 'die', 'vanish'],
+      wordDistractors: ['exit', 'exert', 'elicit'],
+      definitionDistractors: [
+        'to intentionally create something from raw materials',
+        'to change the direction of a moving object using force',
+        'to communicate information using a coded system of symbols',
+      ],
       exampleSentences: [
         { en: 'Scientists are looking for evidence that life might exist on other planets.', ko: '과학자들은 다른 행성에 생명체가 존재할 수도 있다는 증거를 찾고 있다.' },
         { en: 'Many ancient traditions still exist in modern society today.', ko: '많은 고대 전통들이 오늘날 현대 사회에도 여전히 존재한다.' },
       ],
     }
   ),
-  word('Expand', '확장하다', 4, 'verb',
+  word('expand', '확장하다', 4, 'verb',
     ['수축하다', '축소하다', '줄이다', '압축하다', '감소하다', '위축되다', '좁히다', '제한하다', '억제하다', '단축하다'],
     tips({
       etymology: '라틴어 ex(밖으로)와 pandere(펼치다)가 결합된 단어로, 안에서 밖으로 밀어내며 면적이나 부피를 넓게 펼친다는 어원을 가지고 있습니다.',
@@ -566,13 +740,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to increase in size, number, volume, or importance',
       synonyms: ['grow', 'extend', 'enlarge'],
       antonyms: ['shrink', 'contract', 'narrow'],
+      wordDistractors: ['expend', 'expanse', 'exploit'],
+      definitionDistractors: [
+        'to rotate an object clockwise along a fixed axis',
+        'to apply a thin layer of protective coating to a surface',
+        'to formally request an extension of a legal deadline',
+      ],
       exampleSentences: [
         { en: 'The small bakery decided to expand its business by opening a second shop.', ko: '그 작은 빵집은 두 번째 가게를 열어 사업을 확장하기로 결정했다.' },
         { en: 'Reading books is a great way to expand your vocabulary and knowledge.', ko: '독서는 어휘력과 지식을 확장하는 아주 좋은 방법이다.' },
       ],
     }
   ),
-  word('Expect', '기대하다', 4, 'verb',
+  word('expect', '기대하다', 4, 'verb',
     ['실망하다', '의외', '놀라다', '예상 밖', '혼란', '불확실', '회의', '비관', '포기', '체념'],
     tips({
       etymology: 'ex(밖으로)와 spectare(보다)가 합쳐져 미래의 일을 밖으로 내다보며 기다린다는 뜻입니다.',
@@ -585,13 +765,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to believe that something will happen or that someone will arrive',
       synonyms: ['anticipate', 'await', 'predict'],
       antonyms: ['doubt', 'despair', 'surprise'],
+      wordDistractors: ['expend', 'except', 'inspect'],
+      definitionDistractors: [
+        'to physically transport materials to a distant location',
+        'to issue a formal warning about potential legal consequences',
+        'to carefully examine a written document for factual errors',
+      ],
       exampleSentences: [
         { en: 'We did not expect such a large crowd to show up for the event.', ko: '우리는 그 행사에 그렇게 많은 군중이 나타날 것이라고는 예상하지 못했다.' },
         { en: 'Parents often expect their children to work hard at school.', ko: '부모들은 흔히 자녀들이 학교에서 열심히 공부하기를 기대한다.' },
       ],
     }
   ),
-  word('Expense', '비용', 4, 'noun',
+  word('expense', '비용', 4, 'noun',
     ['수입', '이익', '절약', '절감', '무료', '공짜', '보너스', '이득', '수익', '저축'],
     tips({
       etymology: '라틴어 ex(밖으로)와 pendere(지불하다)가 결합된 단어로, 주머니 밖으로 돈이 나가는 것을 의미합니다.',
@@ -604,13 +790,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'the amount of money that is needed to pay for or buy something',
       synonyms: ['cost', 'expenditure', 'outlay'],
       antonyms: ['income', 'profit', 'revenue'],
+      wordDistractors: ['expanse', 'expertise', 'suspense'],
+      definitionDistractors: [
+        'a period of rapid growth in a particular industry',
+        'the physical distance between two geographical locations',
+        'a legal right granted to an inventor for a new product',
+      ],
       exampleSentences: [
         { en: 'The expense of repairing the car was much higher than we expected.', ko: '차를 수리하는 비용이 우리가 예상했던 것보다 훨씬 더 많이 나왔다.' },
         { en: 'He traveled to Europe at his own expense to study art history.', ko: '그는 미술사를 공부하기 위해 자비로 유럽을 여행했다.' },
       ],
     }
   ),
-  word('Experiment', '실험', 4, 'noun',
+  word('experiment', '실험', 4, 'noun',
     ['이론', '추측', '가설', '상상', '공상', '추상', '실무', '현장', '일상', '경험'],
     tips({
       etymology: '라틴어 ex(밖으로)와 per(시도)가 합쳐져 \'밖으로 시도해 보다\'라는 의미에서 유래했습니다.',
@@ -623,13 +815,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'A scientific procedure undertaken to make a discovery, test a hypothesis, or demonstrate a known fact.',
       synonyms: ['test', 'trial', 'investigation'],
       antonyms: ['theory', 'guess', 'assumption'],
+      wordDistractors: ['experience', 'expedient', 'excrement'],
+      definitionDistractors: [
+        'a large public gathering organized for entertainment purposes',
+        'a document listing the ingredients needed for cooking a dish',
+        'the regular maintenance schedule for industrial machinery',
+      ],
       exampleSentences: [
         { en: 'The researchers conducted an experiment to see how the new drug affects sleep patterns.', ko: '연구원들은 새로운 약이 수면 패턴에 어떤 영향을 미치는지 확인하기 위해 실험을 수행했다.' },
         { en: 'The chemistry teacher demonstrated a simple experiment during the afternoon lab session.', ko: '화학 선생님은 오후 실험 시간에 간단한 실험을 시연해 주셨다.' },
       ],
     }
   ),
-  word('Expert', '전문가', 4, 'noun',
+  word('expert', '전문가', 4, 'noun',
     ['초보자', '아마추어', '외인', '비전문가', '생초보', '입문자', '비숙련자', '견습생', '하수', '문외한'],
     tips({
       etymology: '라틴어 \'expertus\'에서 유래했으며, \'ex(밖으로)\'와 \'peritus(시도된/경험된)\'가 합쳐져 \'많은 시도를 통해 숙련된 상태\'를 의미합니다.',
@@ -642,13 +840,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'A person who has acquired extensive skill or knowledge in a specific field through experience or training.',
       synonyms: ['specialist', 'professional', 'master'],
       antonyms: ['amateur', 'beginner', 'novice'],
+      wordDistractors: ['export', 'excerpt', 'exert'],
+      definitionDistractors: [
+        'a mechanical device used to lift heavy objects vertically',
+        'a person who travels frequently for recreational purposes',
+        'a brief written statement summarizing key financial figures',
+      ],
       exampleSentences: [
         { en: 'She is a leading expert in the field of renewable energy.', ko: '그녀는 재생 에너지 분야의 선도적인 전문가이다.' },
         { en: 'The company hired an outside expert to audit their financial records.', ko: '그 회사는 재무 기록을 감사하기 위해 외부 전문가를 고용했다.' },
       ],
     }
   ),
-  word('Explain', '설명하다', 4, 'verb',
+  word('explain', '설명하다', 4, 'verb',
     ['혼란시키다', '오해시키다', '숨기다', '은폐하다', '모호하게하다', '생략하다', '무시하다', '축소하다', '왜곡하다', '방해하다'],
     tips({
       etymology: 'ex(밖으로)와 plain(평평한)이 합쳐져 \'복잡하게 꼬인 것을 평평하게 펼쳐서 보여주다\'라는 의미에서 유래되었습니다.',
@@ -661,13 +865,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to make something clear or easy to understand by describing it in more detail or giving relevant facts',
       synonyms: ['describe', 'clarify', 'illustrate'],
       antonyms: ['confuse', 'obscure', 'hide'],
+      wordDistractors: ['exclaim', 'exploit', 'complain'],
+      definitionDistractors: [
+        'to physically demonstrate a technique by performing it',
+        'to offer an apology for a mistake or misunderstanding',
+        'to predict the outcome of a future event based on data',
+      ],
       exampleSentences: [
         { en: 'Can you explain how this machine works?', ko: '이 기계가 어떻게 작동하는지 설명해 줄 수 있나요?' },
         { en: 'The teacher used a diagram to explain the process.', ko: '선생님은 그 과정을 설명하기 위해 도표를 사용했다.' },
       ],
     }
   ),
-  word('Explode', '폭발하다', 4, 'verb',
+  word('explode', '폭발하다', 4, 'verb',
     ['침묵', '조용히', '안정', '평온', '수축', '압축', '억제', '억압', '진정', '냉각'],
     tips({
       etymology: '라틴어 \'explodere\'에서 유래했으며, 원래 \'박수를 쳐서 배우를 무대 밖으로 몰아내다\'라는 뜻이 \'갑자기 튀어나오다\'로 변했습니다.',
@@ -680,13 +890,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to burst or shatter violently and noisily as a result of rapid combustion or internal pressure',
       synonyms: ['burst', 'detonate', 'erupt'],
       antonyms: ['implode', 'collapse', 'shrink'],
+      wordDistractors: ['explore', 'exploit', 'expose'],
+      definitionDistractors: [
+        'to gradually dissolve a substance in a warm liquid',
+        'to assemble components into a functioning electronic device',
+        'to carefully fold a piece of paper into a specific shape',
+      ],
       exampleSentences: [
         { en: 'The bomb could explode at any moment.', ko: '그 폭탄은 언제든 폭발할 수 있다.' },
         { en: 'Fireworks exploded in the night sky.', ko: '불꽃놀이가 밤하늘에서 터졌다.' },
       ],
     }
   ),
-  word('Explore', '탐험하다', 4, 'verb',
+  word('explore', '탐험하다', 4, 'verb',
     ['회피하다', '무시하다', '지나치다', '거절하다', '방치하다', '숨기다', '포기하다', '중단하다', '거부하다', '외면하다'],
     tips({
       etymology: 'ex(밖으로)와 plore(외치다)가 합쳐져 \'사냥꾼이 짐승을 쫓아 밖으로 외치며 다니다\'라는 의미에서 유래했습니다.',
@@ -699,13 +915,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to travel through an unfamiliar area or investigate a subject in detail to learn new information',
       synonyms: ['investigate', 'examine', 'inspect'],
       antonyms: ['ignore', 'neglect', 'overlook'],
+      wordDistractors: ['explode', 'implore', 'deplore'],
+      definitionDistractors: [
+        'to extract valuable minerals from deep underground',
+        'to compile a list of all available resources in an area',
+        'to establish formal diplomatic relations between two nations',
+      ],
       exampleSentences: [
         { en: 'The researchers want to explore Mars to search for signs of water.', ko: '연구원들은 물의 흔적을 찾기 위해 화성을 탐사하고 싶어 한다.' },
         { en: 'We spent the entire afternoon exploring the hidden alleys of the city.', ko: '우리는 오후 내내 도시의 숨겨진 골목들을 탐험하며 보냈다.' },
       ],
     }
   ),
-  word('Export', '수출하다', 4, 'verb',
+  word('export', '수출하다', 4, 'verb',
     ['수입하다', '들여오다', '보관하다', '저장하다', '축적하다', '보유하다', '유지하다', '보존하다', '소비하다', '구매하다'],
     tips({
       etymology: '접두사 ex(밖으로)와 port(항구/나르다)가 결합되어 \'항구 밖으로 물건을 실어 나르다\'라는 의미가 되었습니다.',
@@ -718,13 +940,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'To send products or services to a different nation in order to sell them there.',
       synonyms: ['ship abroad', 'sell overseas', 'transmit'],
       antonyms: ['import', 'bring in', 'buy locally'],
+      wordDistractors: ['exhort', 'extort', 'escort'],
+      definitionDistractors: [
+        'to carefully inspect the quality of manufactured products',
+        'to publicly display artwork in a museum or gallery',
+        'to convert digital files from one format to another',
+      ],
       exampleSentences: [
         { en: 'Korea exports cars to many countries.', ko: '한국은 많은 국가에 자동차를 수출한다.' },
         { en: 'The company exports software worldwide.', ko: '그 회사는 전 세계에 소프트웨어를 수출한다.' },
       ],
     }
   ),
-  word('Expose', '노출하다', 4, 'verb',
+  word('expose', '노출하다', 4, 'verb',
     ['숨기다', '은닉하다', '덮다', '가리다', '보호하다', '차단하다', '밀봉하다', '봉인하다', '감추다', '은폐하다'],
     tips({
       etymology: '접두사 ex(밖으로)와 pose(두다)가 결합되어, 안에 숨겨져 있던 것을 밖으로 꺼내 놓는다는 어원을 가집니다.',
@@ -737,13 +965,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'To leave something uncovered or unprotected, or to make a secret or hidden fact known to the public.',
       synonyms: ['reveal', 'uncover', 'disclose'],
       antonyms: ['hide', 'conceal', 'cover'],
+      wordDistractors: ['compose', 'impose', 'dispose'],
+      definitionDistractors: [
+        'to apply pressure to compress an object into a smaller shape',
+        'to arrange flowers in a decorative pattern for display',
+        'to officially authorize the construction of a new building',
+      ],
       exampleSentences: [
         { en: 'The melting snow began to expose the ground underneath.', ko: '녹는 눈이 그 아래의 땅을 드러내기 시작했다.' },
         { en: 'The report was intended to expose the company\'s unethical practices.', ko: '그 보고서는 회사의 비윤리적인 관행을 폭로하기 위한 것이었다.' },
       ],
     }
   ),
-  word('Express', '표현하다', 4, 'verb',
+  word('express', '표현하다', 4, 'verb',
     ['숨기다', '억압하다', '삼가다', '참다', '묵살하다', '은폐하다', '가두다', '보류하다', '외면하다', '침묵하다'],
     tips({
       etymology: 'ex(밖으로)와 press(누르다)가 합쳐져 \'마음속에 있는 것을 밖으로 꾹 눌러 짜내다\'라는 뜻에서 유래했습니다.',
@@ -756,13 +990,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to communicate a thought or feeling through words, facial appearances, or actions',
       synonyms: ['convey', 'articulate', 'manifest'],
       antonyms: ['suppress', 'conceal', 'repress'],
+      wordDistractors: ['impress', 'espresso', 'compress'],
+      definitionDistractors: [
+        'to rapidly transport goods using a dedicated delivery service',
+        'to store information in a compressed digital file format',
+        'to permanently engrave a design onto a metal surface',
+      ],
       exampleSentences: [
         { en: 'He found it difficult to express his feelings in words.', ko: '그는 자신의 감정을 말로 표현하는 것이 어렵다는 것을 알게 되었다.' },
         { en: 'The artist used vibrant colors to express her inner joy.', ko: '그 예술가는 자신의 내면적인 기쁨을 표현하기 위해 강렬한 색채를 사용했다.' },
       ],
     }
   ),
-  word('Extend', '연장하다', 4, 'verb',
+  word('extend', '연장하다', 4, 'verb',
     ['단축하다', '줄이다', '축소하다', '제한하다', '끊다', '종료하다', '단절하다', '중단하다', '회수하다', '되돌리다'],
     tips({
       etymology: '라틴어 ex(밖으로)와 tendere(뻗다)가 결합되어, 범위를 밖으로 더 넓히거나 길게 늘린다는 의미를 가집니다.',
@@ -775,13 +1015,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'to cause something to reach out or stretch to a greater distance or a later time',
       synonyms: ['lengthen', 'stretch', 'prolong'],
       antonyms: ['shorten', 'abbreviate', 'contract'],
+      wordDistractors: ['extent', 'extort', 'extinct'],
+      definitionDistractors: [
+        'to rapidly cool a heated substance below room temperature',
+        'to permanently attach two pieces of wood with adhesive',
+        'to interpret the meaning of a text written in code',
+      ],
       exampleSentences: [
         { en: 'Can we extend the deadline by one week?', ko: '마감 기한을 일주일만 연장할 수 있을까요?' },
         { en: 'The road extends for another five miles along the coast.', ko: '그 도로는 해안을 따라 5마일 더 뻗어 있습니다.' },
       ],
     }
   ),
-  word('Extreme', '극단적인', 4, 'adjective',
+  word('extreme', '극단적인', 4, 'adjective',
     ['온건한', '절충적인', '중도의', '보통의', '평균의', '일반적인', '적당한', '균형잡힌', '절제된', '완화된'],
     tips({
       etymology: '라틴어 extremus에서 유래되었으며, \'가장 바깥쪽 끝\'이라는 의미를 담고 있습니다.',
@@ -794,13 +1040,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'reaching a high or the highest degree; very severe or intense in nature',
       synonyms: ['excessive', 'utmost', 'intense'],
       antonyms: ['moderate', 'mild', 'average'],
+      wordDistractors: ['extrude', 'extricate', 'external'],
+      definitionDistractors: [
+        'located precisely in the center of a defined area',
+        'following a predictable and consistent daily pattern',
+        'produced in limited quantities for exclusive distribution',
+      ],
       exampleSentences: [
         { en: 'Extreme weather is becoming more common due to climate change.', ko: '기후 변화로 인해 극단적인 날씨가 더 흔해지고 있습니다.' },
         { en: 'They took extreme measures to solve the financial crisis.', ko: '그들은 재정 위기를 해결하기 위해 극단적인 조치를 취했습니다.' },
       ],
     }
   ),
-  word('Fabric', '직물', 4, 'noun',
+  word('fabric', '직물', 4, 'noun',
     ['금속', '플라스틱', '목재', '벽돌', '유리', '종이', '가죽', '콘크리트', '고무', '석재'],
     tips({
       etymology: '라틴어 fabrica에서 유래하여 \'무언가를 만드는 재료\' 또는 \'작업장\'이라는 뜻에서 시작되었습니다.',
@@ -813,13 +1065,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'A flexible substance made by weaving, knitting, or pressing natural or synthetic fibers together.',
       synonyms: ['cloth', 'material', 'textile'],
       antonyms: ['void', 'nothingness', 'vacuum'],
+      wordDistractors: ['fable', 'facet', 'facade'],
+      definitionDistractors: [
+        'a tool used for cutting and shaping hard materials',
+        'a system of interconnected electronic components',
+        'a chemical compound used to neutralize acidic solutions',
+      ],
       exampleSentences: [
         { en: 'This fabric is soft and durable, making it perfect for shirts.', ko: '이 직물은 부드럽고 내구성이 좋아 셔츠를 만들기에 완벽합니다.' },
         { en: 'She chose a beautiful silk fabric for her wedding dress.', ko: '그녀는 웨딩드레스를 위해 아름다운 실크 옷감을 골랐습니다.' },
       ],
     }
   ),
-  word('Facility', '시설', 4, 'noun',
+  word('facility', '시설', 4, 'noun',
     ['야외', '자연', '광야', '황야', '공터', '빈터', '미개발지', '원시상태', '폐허', '오지'],
     tips({
       etymology: '어근 \'facil\'은 \'쉬운(easy)\'을 뜻하며, 여기에 명사형 접미사가 붙어 \'어떤 일을 쉽게 하도록 돕는 것\'이라는 의미가 되었습니다.',
@@ -832,13 +1090,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'a building, structure, or area designed to serve a particular function or provide a specific service',
       synonyms: ['amenity', 'establishment', 'installation'],
       antonyms: ['obstacle', 'hindrance', 'difficulty'],
+      wordDistractors: ['faculty', 'felicity', 'fallacy'],
+      definitionDistractors: [
+        'a natural ability to learn new languages quickly',
+        'a legal permit required to operate a motor vehicle',
+        'a mathematical formula for calculating compound interest',
+      ],
       exampleSentences: [
         { en: 'The hotel has excellent leisure facilities, including a pool.', ko: '그 호텔에는 수영장을 포함한 훌륭한 레저 시설이 있습니다.' },
         { en: 'The fitness facility is open 24 hours a day for members.', ko: '그 피트니스 시설은 회원들을 위해 하루 24시간 운영됩니다.' },
       ],
     }
   ),
-  word('Factor', '요소', 4, 'noun',
+  word('factor', '요소', 4, 'noun',
     ['전체', '결과', '합계', '총체', '결론', '완성품', '단독', '무관함', '배제', '우연'],
     tips({
       etymology: '라틴어 \'facere(만들다)\'에서 유래하여, 어떤 결과를 \'만들어내는\' 원인이나 성분을 뜻합니다.',
@@ -851,13 +1115,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'one of the elements contributing to a particular result or situation',
       synonyms: ['element', 'component', 'determinant'],
       antonyms: ['result', 'consequence', 'outcome'],
+      wordDistractors: ['fracture', 'tractor', 'factory'],
+      definitionDistractors: [
+        'a person responsible for managing daily business operations',
+        'the final product of a manufacturing or assembly process',
+        'a unit of measurement used in scientific calculations',
+      ],
       exampleSentences: [
         { en: 'Time is an important factor to consider in this project.', ko: '시간은 이 프로젝트에서 고려해야 할 중요한 요소입니다.' },
         { en: 'Cost was a major factor in our decision to move.', ko: '비용은 우리가 이사를 결정하게 된 주요 요소였습니다.' },
       ],
     }
   ),
-  word('Failure', '실패', 4, 'noun',
+  word('failure', '실패', 4, 'noun',
     ['성공', '달성', '성취', '승리', '완수', '성과', '업적', '합격', '영광', '번영'],
     tips({
       etymology: '동사 fail(실패하다)에 명사를 만드는 접미사 -ure가 결합하여 \'실패한 상태\'를 뜻하게 되었습니다.',
@@ -870,13 +1140,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'the state or condition of not meeting a desirable or intended objective or the act of ceasing to function properly',
       synonyms: ['defeat', 'fiasco', 'breakdown'],
       antonyms: ['success', 'triumph', 'achievement'],
+      wordDistractors: ['feature', 'fissure', 'fixture'],
+      definitionDistractors: [
+        'a temporary disruption caused by external environmental factors',
+        'the gradual improvement of a skill through repeated practice',
+        'a formal ceremony recognizing outstanding contributions to society',
+      ],
       exampleSentences: [
         { en: 'Failure is often a necessary step toward success.', ko: '실패는 종종 성공을 향한 필수적인 단계입니다.' },
         { en: 'The project ended in failure due to a lack of funding.', ko: '그 프로젝트는 자금 부족으로 인해 실패로 끝났습니다.' },
       ],
     }
   ),
-  word('Faith', '신뢰', 4, 'noun',
+  word('faith', '신뢰', 4, 'noun',
     ['의심', '불신', '회의', '냉소', '배신', '불충', '불성실', '의구심', '불신앙', '거부'],
     tips({
       etymology: '라틴어 fides에서 유래되었으며, 변치 않는 확신과 충실함을 의미합니다.',
@@ -889,13 +1165,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'A strong feeling of trust, confidence, or reliance in a person, concept, or entity.',
       synonyms: ['trust', 'belief', 'conviction'],
       antonyms: ['doubt', 'disbelief', 'mistrust'],
+      wordDistractors: ['fate', 'faint', 'fable'],
+      definitionDistractors: [
+        'a physical characteristic inherited from biological parents',
+        'the amount of effort required to complete a difficult task',
+        'a detailed schedule listing events in chronological order',
+      ],
       exampleSentences: [
         { en: 'I have full faith in your ability to lead the team.', ko: '나는 팀을 이끄는 당신의 능력을 전적으로 신뢰합니다.' },
         { en: 'She kept her faith even during the most difficult times.', ko: '그녀는 가장 힘든 시기에도 신념을 잃지 않았습니다.' },
       ],
     }
   ),
-  word('Fame', '명성', 4, 'noun',
+  word('fame', '명성', 4, 'noun',
     ['무명', '익명', '망각', '침묵', '불명예', '평범', '무관심', '냉대', '은둔', '비하'],
     tips({
       etymology: '라틴어 fama에서 유래했으며, 사람들 사이에서 널리 퍼지는 \'소문\'이나 \'평판\'을 뜻했습니다.',
@@ -908,13 +1190,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'the state of being widely known, recognized, or talked about by many people, especially for notable achievements',
       synonyms: ['renown', 'celebrity', 'reputation'],
       antonyms: ['obscurity', 'anonymity', 'insignificance'],
+      wordDistractors: ['flame', 'frame', 'famine'],
+      definitionDistractors: [
+        'a strong feeling of anger directed toward a specific person',
+        'the total amount of wealth accumulated over a lifetime',
+        'a geographic region known for its natural mineral deposits',
+      ],
       exampleSentences: [
         { en: 'The young actor achieved international fame overnight.', ko: '그 젊은 배우는 하룻밤 사이에 국제적인 명성을 얻었습니다.' },
         { en: 'Fame and fortune do not always lead to a happy life.', ko: '명성과 부가 항상 행복한 삶으로 이어지는 것은 아닙니다.' },
       ],
     }
   ),
-  word('Familiar', '익숙한', 4, 'adjective',
+  word('familiar', '익숙한', 4, 'adjective',
     ['낯선', '이상한', '미지의', '애매한', '모호한', '신비로운', '긴장되는', '불편한', '어색한', '수줍은'],
     tips({
       etymology: '가족을 뜻하는 family와 어원이 같아 가족처럼 가깝고 잘 안다는 의미에서 유래했습니다.',
@@ -927,13 +1215,19 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'easily recognized because of being seen, met, or heard before',
       synonyms: ['known', 'accustomed', 'recognizable'],
       antonyms: ['unfamiliar', 'strange', 'unknown'],
+      wordDistractors: ['familial', 'feminine', 'formula'],
+      definitionDistractors: [
+        'belonging to a specific category of living organisms',
+        'occurring only during certain seasons of the year',
+        'related to the formal structure of a government body',
+      ],
       exampleSentences: [
         { en: 'The melody sounded familiar, but I couldn\'t remember the lyrics.', ko: '그 멜로디가 익숙하게 들렸지만 가사가 기억나지 않았다.' },
         { en: 'I am not very familiar with this computer software yet.', ko: '나는 아직 이 컴퓨터 소프트웨어에 익숙하지 않다.' },
       ],
     }
   ),
-  word('Fantasy', '환상', 4, 'noun',
+  word('fantasy', '환상', 4, 'noun',
     ['현실', '사실', '실제', '진실', '확실', '일상', '보통', '실용', '논리', '증거'],
     tips({
       etymology: '그리스어 phantasia에서 유래되었으며, \'눈앞에 나타나게 하는 것\' 즉 마음속으로 그려내는 상상을 의미합니다.',
@@ -946,6 +1240,12 @@ export const vocabBatch08: VocabItem[] = [
       definition: 'the faculty or activity of imagining impossible or improbable things',
       synonyms: ['imagination', 'illusion', 'daydream'],
       antonyms: ['reality', 'actuality', 'fact'],
+      wordDistractors: ['fanatic', 'phantom', 'fallacy'],
+      definitionDistractors: [
+        'a structured method for solving complex mathematical problems',
+        'a recurring event that follows a strict seasonal schedule',
+        'a physical sensation caused by direct contact with heat',
+      ],
       exampleSentences: [
         { en: 'The movie is a dark fantasy set in a magical kingdom.', ko: '그 영화는 마법 왕국을 배경으로 한 어두운 판타지이다.' },
         { en: 'He stopped living in a fantasy world and faced the truth.', ko: '그는 환상의 세계에서 사는 것을 그만두고 진실을 직시했다.' },

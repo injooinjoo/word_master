@@ -3,7 +3,7 @@ import { word, tips } from './helpers';
 
 export const vocabBatch51: VocabItem[] = [
   word('plant', '식물', 4, 'noun',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['수의사', '복원자', '아이스맨 (캐릭터/인물)', '올리브나무', '실례', '추측\n(speculate, suppose, guess, infer 추측하다)', '허브, 약초', '광택, 윤기', '오작동, 기능불량', '블랙넬 (고유명사)'],
     tips({
       etymology: '라틴어 \'planta\'에서 유래하여 땅에 심어 뿌리를 내린 생명체라는 의미에서 시작되었습니다.',
       visual: '화분에 심겨진 초록색 잎사귀가 햇빛을 받으며 자라나는 모습을 상상해 보세요.',
@@ -19,10 +19,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The gardener watered every small sprout to ensure the garden stayed healthy.', ko: '정원사는 정원이 건강하게 유지되도록 모든 작은 싹에 물을 주었습니다.' },
         { en: 'Scientists discovered a rare species of moss growing deep inside the damp cave.', ko: '과학자들은 축축한 동굴 깊은 곳에서 자라는 희귀한 이끼 종을 발견했습니다.' },
       ],
+      wordDistractors: ['pliant', 'plaint', 'slant'],
+      definitionDistractors: [
+        'A detailed scheme or method worked out beforehand for accomplishing an objective',
+        'A flat area of ground designated for a specific purpose such as building',
+        'A large piece of industrial machinery used in manufacturing processes',
+      ],
     }
   ),
   word('plate', '도금하다', 5, 'verb',
-    ['분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다'],
+    ['분석하다', '정리하다', '명확히 말하다', '번갈아 일어나다', '더럽히다', '취소, 철회하다', '비웃다', '비교하다', '(모양,구조, 특징) 바꾸다', '방랑하다, 배회하다, 떠돌아다니다'],
     tips({
       etymology: '라틴어 \'plattus(평평한)\'에서 유래하여 금속이나 유리를 얇고 평평한 층으로 덮는 동작을 의미합니다.',
       visual: '은색 페인트나 얇은 금속판을 물체 표면에 매끄럽게 입히는 장인의 모습을 상상하세요.',
@@ -37,6 +43,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The jeweler will plate the copper ring with a thick layer of 24-karat gold.', ko: '보석 세공사는 구리 반지에 24캐럿 금을 두껍게 도금할 것입니다.' },
         { en: 'Manufacturers often plate steel parts with zinc to prevent rust and corrosion.', ko: '제조업체들은 녹과 부식을 방지하기 위해 강철 부품에 아연을 입히곤 합니다.' },
+      ],
+      wordDistractors: ['plait', 'placate', 'plaque'],
+      definitionDistractors: [
+        'To arrange food attractively on a dish before serving it to guests',
+        'A flat rigid sheet of metal or glass used in construction',
+        'To flatten or press something into a thin even layer',
       ],
     }
   ),
@@ -57,6 +69,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The politician stood on the raised wooden structure to address the gathering crowd.', ko: '그 정치인은 모여든 군중에게 연설하기 위해 높은 나무 단 위에 섰습니다.' },
         { en: 'Passengers waited patiently on the concrete area for the express train to arrive.', ko: '승객들은 급행열차가 도착하기를 콘크리트 승강장에서 인내심 있게 기다렸습니다.' },
       ],
+      wordDistractors: ['platoon', 'platter', 'platinum'],
+      definitionDistractors: [
+        'A political program or set of principles adopted by a party or candidate',
+        'A digital software system used for managing online transactions',
+        'A shallow container used for holding or serving food at meals',
+      ],
     }
   ),
   word('play', '놀다', 1, 'verb',
@@ -76,9 +94,15 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The children went outside to play in the park after school.', ko: '아이들은 방과 후 공원에 나가서 놀았습니다.' },
         { en: 'She likes to play the piano every evening after dinner.', ko: '그녀는 매일 저녁 식사 후에 피아노를 치는 것을 좋아합니다.' },
       ],
+      wordDistractors: ['ploy', 'pray', 'flay'],
+      definitionDistractors: [
+        'To display or exhibit something prominently for others to see',
+        'To place a wager or bet on the outcome of a competition',
+        'To arrange items in a specific order according to a set of rules',
+      ],
     }
   ),
-  word('pleasant', '기분 좋은', 7, 'adjective',
+  word('pleasant', '기분 좋은', 4, 'adjective',
     ['불쾌한', '지루한', '끔찍한', '평범한', '복잡한', '위험한', '어두운', '시끄러운', '차가운', '무거운'],
     tips({
       etymology: '기쁘게 하다라는 뜻의 프랑스어 \'plaisir\'에서 유래하여 남을 기분 좋게 만드는 성질을 뜻합니다.',
@@ -95,10 +119,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The garden provided a peaceful and lovely atmosphere for a walk.', ko: '그 정원은 산책하기에 평화롭고 기분 좋은 분위기를 제공했습니다.' },
         { en: 'We spent the entire afternoon having a very charming conversation over tea.', ko: '우리는 차를 마시며 오후 내내 매우 즐겁고 기분 좋은 대화를 나누었습니다.' },
       ],
+      wordDistractors: ['pheasant', 'peasant', 'pleas'],
+      definitionDistractors: [
+        'Having a mild temperament and rarely showing signs of anger',
+        'Relating to a rural area with simple and traditional customs',
+        'Producing a sharp or pungent taste that lingers on the tongue',
+      ],
     }
   ),
   word('please', '기쁘게 하다', 2, 'verb',
-    ['유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다'],
+    ['복원하다', '파내다, 발굴하다', '물다', '디지털화하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다'],
     tips({
       etymology: '라틴어 placere에서 유래하여 누군가를 기쁘게 하거나 만족시킨다는 본래의 의미를 가지고 있습니다.',
       visual: '상대방이 내가 원하는 일을 해주었을 때 활짝 웃으며 만족해하는 표정을 상상해 보세요.',
@@ -113,6 +143,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The young chef worked hard to satisfy the customers and make them happy with his cooking.', ko: '젊은 요리사는 손님들을 기쁘게 하고 그의 요리에 만족하게 하려고 열심히 노력했습니다.' },
         { en: 'It is difficult to satisfy everyone\'s expectations all the time.', ko: '모든 사람의 기대치를 항상 만족시키는 것은 어려운 일입니다.' },
+      ],
+      wordDistractors: ['pleas', 'fleece', 'appease'],
+      definitionDistractors: [
+        'To formally request or beg someone for assistance or mercy',
+        'To fold or crease a piece of fabric into neat sections',
+        'To arrange items in a tidy and organized manner on a shelf',
       ],
     }
   ),
@@ -133,6 +169,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'Reading a good book by the fireplace gives me immense satisfaction and joy.', ko: '벽난로 옆에서 좋은 책을 읽는 것은 나에게 커다란 즐거움을 준다.' },
         { en: 'She takes great pride and happiness in tending to her small rooftop garden.', ko: '그녀는 자신의 작은 옥상 정원을 가꾸는 것에서 큰 즐거움을 얻는다.' },
       ],
+      wordDistractors: ['pleasing', 'treasure', 'measure'],
+      definitionDistractors: [
+        'A strong physical pressure applied to a surface or object',
+        'An obligation or duty that must be fulfilled within a given time',
+        'A formal period of rest granted to someone after hard work',
+      ],
     }
   ),
   word('plenty', '많음', 5, 'noun',
@@ -152,10 +194,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'We have had a large harvest this year, so there is food for everyone.', ko: '올해 수확량이 많아서 모두가 먹을 음식이 충분합니다.' },
         { en: 'Don\'t rush your meal because we have time before the train departs.', ko: '기차가 출발하기 전까지 시간이 넉넉하니 식사를 서두르지 마세요.' },
       ],
+      wordDistractors: ['penalty', 'pliant', 'pantry'],
+      definitionDistractors: [
+        'A severe punishment imposed for breaking a rule or law',
+        'A small number or amount that is barely sufficient for a purpose',
+        'A feeling of contentment that comes from achieving a personal goal',
+      ],
     }
   ),
   word('plot', '음모', 6, 'noun',
-    ['목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계'],
+    ['긴장, 갈등', '제레미 (인명)', '피어슨 (인명)', '10억', '장황함', '오페라', '설치', '삭감, 공제', '파괴', '일본인'],
     tips({
       etymology: '작은 땅 조각(plat)을 표시하는 지도에서 시작하여, 비밀리에 계획을 짜는 행위로 의미가 확장되었습니다.',
       visual: '어두운 방 안에서 여러 명의 사람들이 지도를 펼쳐놓고 비밀스럽게 속삭이는 장면을 상상해 보세요.',
@@ -170,6 +218,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The rebels hatched a secret plan to overthrow the current government.', ko: '반란군들은 현 정부를 전복시키기 위한 비밀스러운 음모를 꾸몄다.' },
         { en: 'Police officers managed to uncover a dangerous assassination attempt before it could be carried out.', ko: '경찰관들은 위험한 암살 음모가 실행되기 전에 그것을 가까스로 찾아냈다.' },
+      ],
+      wordDistractors: ['plod', 'blot', 'slot'],
+      definitionDistractors: [
+        'A small piece of land used for growing vegetables or flowers',
+        'The main sequence of events in a novel, film, or play',
+        'A mark or stain left on a surface after spilling a liquid',
       ],
     }
   ),
@@ -190,6 +244,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The temperature stayed at a steady five degrees above zero during the day.', ko: '낮 동안 기온은 영상 5도를 안정적으로 유지했습니다.' },
         { en: 'Having previous experience in sales is a definite advantage for this position.', ko: '영업 분야의 이전 경험이 있는 것은 이 직책에 확실한 이점입니다.' },
       ],
+      wordDistractors: ['plush', 'pulse', 'plume'],
+      definitionDistractors: [
+        'Being soft, luxurious, and richly comfortable in texture',
+        'Containing a surplus amount that exceeds what is needed',
+        'Occurring at regular intervals in a predictable pattern',
+      ],
     }
   ),
   word('P.M.', '오후', 3, 'noun',
@@ -208,6 +268,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The meeting is scheduled to begin at exactly 2:00 P.M. in the main conference room.', ko: '회의는 메인 회의실에서 정확히 오후 2시에 시작될 예정입니다.' },
         { en: 'Most coffee shops in this neighborhood close their doors at 10:00 P.M. on weekdays.', ko: '이 동네의 대부분의 커피숍은 평일 오후 10시에 문을 닫습니다.' },
+      ],
+      wordDistractors: ['P.E.', 'P.O.', 'P.S.'],
+      definitionDistractors: [
+        'The period of time from midnight until noon in a given day',
+        'An abbreviation for a public message added after the main text',
+        'A unit of measurement used to calculate distance in navigation',
       ],
     }
   ),
@@ -228,6 +294,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'He reached into his jacket to find the car keys.', ko: '그는 자동차 열쇠를 찾기 위해 재킷 주머니 속으로 손을 뻗었다.' },
         { en: 'Small coins were jingling inside the boy\'s denim pants.', ko: '소년의 데님 바지 주머니 안에서 작은 동전들이 딸랑거리고 있었다.' },
       ],
+      wordDistractors: ['socket', 'rocket', 'locket'],
+      definitionDistractors: [
+        'A small handbag carried on the shoulder or held in the hand',
+        'A protective case designed to hold a specific electronic device',
+        'A hollow space carved into a wall for storing decorative items',
+      ],
     }
   ),
   word('poem', '시', 4, 'noun',
@@ -246,6 +318,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The young author recited a moving piece about the changing seasons during the festival.', ko: '젊은 작가는 축제 기간 동안 계절의 변화에 관한 감동적인 시를 낭독했습니다.' },
         { en: 'Every line in this literary work captures the deep sorrow of a lost love.', ko: '이 문학 작품의 모든 구절은 잃어버린 사랑에 대한 깊은 슬픔을 담아내고 있습니다.' },
+      ],
+      wordDistractors: ['poise', 'plume', 'prose'],
+      definitionDistractors: [
+        'A short prose passage written to convey factual information clearly',
+        'A dramatic script intended to be performed on stage by actors',
+        'A musical composition arranged for a solo instrument or voice',
       ],
     }
   ),
@@ -266,6 +344,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The young writer dreamed of becoming a famous artist who captures the beauty of nature in verse.', ko: '그 젊은 작가는 자연의 아름다움을 시구에 담아내는 유명한 시인이 되기를 꿈꿨다.' },
         { en: 'Every word chosen by the master reflects a deep understanding of human emotions and sorrow.', ko: '거장이 선택한 모든 단어는 인간의 감정과 슬픔에 대한 깊은 이해를 반영한다.' },
       ],
+      wordDistractors: ['pivot', 'poser', 'posit'],
+      definitionDistractors: [
+        'A scholar who studies ancient texts and translates them into modern languages',
+        'A professional editor who reviews manuscripts before publication',
+        'A performer who recites memorized speeches on stage before an audience',
+      ],
     }
   ),
   word('point', '점', 2, 'noun',
@@ -284,6 +368,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The artist placed a single black dot at the center of the canvas.', ko: '예술가는 캔버스 중앙에 검은 점 하나를 찍었습니다.' },
         { en: 'Please show me the exact location on the map where we are standing.', ko: '우리가 서 있는 지도의 정확한 지점을 보여주세요.' },
+      ],
+      wordDistractors: ['pint', 'joint', 'poise'],
+      definitionDistractors: [
+        'The sharp tip of a writing instrument used for drawing lines',
+        'A numerical score awarded for correct answers in a competition',
+        'The main argument or central idea of a discussion or debate',
       ],
     }
   ),
@@ -304,6 +394,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The bright colors of certain frogs serve as a warning that they carry a deadly substance.', ko: '특정 개구리들의 밝은 색깔은 그들이 치명적인 독을 품고 있다는 경고 역할을 합니다.' },
         { en: 'Jealousy acted like a slow-acting chemical that destroyed their long friendship.', ko: '질투는 그들의 오랜 우정을 파괴하는 서서히 퍼지는 독처럼 작용했습니다.' },
       ],
+      wordDistractors: ['potion', 'piston', 'prison'],
+      definitionDistractors: [
+        'A medicinal liquid brewed from herbs and natural ingredients for healing',
+        'A chemical compound used to preserve food and prevent spoilage',
+        'A concentrated extract added to beverages for enhanced flavor',
+      ],
     }
   ),
   word('polar', '극지의', 7, 'adjective',
@@ -322,6 +418,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'Scientists are studying the melting of the polar ice caps due to global warming.', ko: '과학자들은 지구 온난화로 인한 극지방 빙하의 해빙을 연구하고 있습니다.' },
         { en: 'The expedition team faced extreme conditions during their journey across the polar plateau.', ko: '탐험대는 남극 고원을 가로지르는 여정 동안 극한의 상황에 직면했습니다.' },
+      ],
+      wordDistractors: ['pillar', 'molar', 'solar'],
+      definitionDistractors: [
+        'Having a strong magnetic charge that attracts nearby metallic objects',
+        'Describing something that divides opinion into two opposing sides',
+        'Relating to a circular orbit around a central gravitational body',
       ],
     }
   ),
@@ -342,6 +444,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'He used a long pole to hang the flag at the top of the building.', ko: '그는 건물 꼭대기에 깃발을 걸기 위해 긴 장대를 사용했다.' },
         { en: 'The North Pole is covered with ice and is one of the coldest places on Earth.', ko: '북극은 얼음으로 뒤덮여 있으며 지구에서 가장 추운 곳 중 하나입니다.' },
       ],
+      wordDistractors: ['poll', 'poke', 'mole'],
+      definitionDistractors: [
+        'A deep hole dug in the ground to extract water or minerals',
+        'A flat open area of land used for agricultural purposes',
+        'A vertical support structure embedded in concrete for stability',
+      ],
     }
   ),
   word('police', '경찰', 3, 'noun',
@@ -361,10 +469,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The police arrived at the scene within minutes of receiving the emergency call.', ko: '경찰은 긴급 신고를 받은 지 몇 분 만에 현장에 도착했습니다.' },
         { en: 'Local police are working hard to keep the neighborhood safe.', ko: '지역 경찰은 동네의 안전을 지키기 위해 열심히 일하고 있습니다.' },
       ],
+      wordDistractors: ['polite', 'polish', 'policy'],
+      definitionDistractors: [
+        'A private security company hired to protect commercial buildings',
+        'A volunteer group that organizes community events and fundraisers',
+        'A government agency responsible for managing public transportation',
+      ],
     }
   ),
   word('policy', '정책', 5, 'noun',
-    ['사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획'],
+    ['10월', '시각, 비전', '동료', '(집합적)고객들,\n(변호사,건축가 등의)모든 의뢰인', '음조', '사전', '로스앤젤레스', '애리조나 (미국 주)', '존경, 공경', '힌트, 암시'],
     tips({
       etymology: '도시를 뜻하는 그리스어 \'polis\'에서 유래하여 국가나 조직을 다스리는 원칙을 의미하게 되었습니다.',
       visual: '회사의 규정집이나 정부의 공식 문서를 들고 있는 정치인의 모습을 상상해 보세요.',
@@ -380,10 +494,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The government recently implemented a new environmental protection measure to reduce carbon emissions.', ko: '정부는 탄소 배출을 줄이기 위해 새로운 환경 보호 정책을 최근 시행했습니다.' },
         { en: 'Every employee must strictly follow the company safety regulations while operating heavy machinery.', ko: '모든 직원은 중장비를 운전하는 동안 회사의 안전 정책을 엄격히 준수해야 합니다.' },
       ],
+      wordDistractors: ['polity', 'politic', 'poultice'],
+      definitionDistractors: [
+        'A formal written contract between two parties outlining legal obligations',
+        'An elected representative who speaks on behalf of a constituency',
+        'A public statement issued by an authority to announce a new regulation',
+      ],
     }
   ),
   word('polish', '닦다', 8, 'verb',
-    ['먼지', '거칠음', '얼룩', '흠집', '무광택', '부식', '균열', '파편', '오염', '마모'],
+    ['더럽히다', '긁다', '부식시키다', '산화시키다', '변색시키다', '훼손하다', '손상시키다', '흐리게하다', '마모시키다', '퇴색시키다'],
     tips({
       etymology: '라틴어 \'polire\'에서 유래되었으며, 이는 \'매끄럽게 만들다\'라는 의미를 담고 있습니다.',
       visual: '구두약이나 광택제를 천에 묻혀 낡은 구두가 반짝거릴 때까지 문지르는 모습을 상상하세요.',
@@ -398,6 +518,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'He spent the afternoon polishing his shoes until they gleamed.', ko: '그는 오후 내내 구두가 반짝거릴 때까지 닦았다.' },
         { en: 'She polished the silver candlesticks before the dinner party.', ko: '그녀는 만찬 파티 전에 은 촛대를 닦았다.' },
+      ],
+      wordDistractors: ['abolish', 'relish', 'publish'],
+      definitionDistractors: [
+        'To remove unwanted marks or blemishes from a painted surface',
+        'To apply a protective coating to prevent damage from moisture',
+        'To refine or improve a written document through careful editing',
       ],
     }
   ),
@@ -418,6 +544,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The young man offered his seat to the elderly woman in a very respectful manner.', ko: '그 젊은 남자는 매우 예의 바른 태도로 노인 여성에게 자리를 양보했습니다.' },
         { en: 'It is important to use a gentle tone of voice when speaking to strangers.', ko: '낯선 사람과 대화할 때는 부드러운 목소리 톤을 사용하는 것이 중요합니다.' },
       ],
+      wordDistractors: ['politic', 'petite', 'finite'],
+      definitionDistractors: [
+        'Speaking in a formal and elaborate manner using complex vocabulary',
+        'Being cautious and reserved when expressing personal opinions',
+        'Acting in a quiet and subdued way to avoid drawing attention',
+      ],
     }
   ),
   word('politics', '정치', 7, 'noun',
@@ -437,10 +569,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'Many young people are becoming increasingly interested in local government and national affairs.', ko: '많은 젊은이들이 지방 정부와 국가 사무에 점점 더 많은 관심을 보이고 있습니다.' },
         { en: 'The discussion at the dinner table quickly turned to the upcoming presidential election.', ko: '저녁 식사 자리에서의 토론은 곧 다가올 대통령 선거 이야기로 빠르게 전환되었습니다.' },
       ],
+      wordDistractors: ['polemics', 'logistics', 'analytics'],
+      definitionDistractors: [
+        'The study of ethical principles and moral philosophy in society',
+        'The management of financial resources within a large organization',
+        'The practice of negotiating trade agreements between foreign nations',
+      ],
     }
   ),
   word('poll', '투표', 4, 'noun',
-    ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
+    ['그물', '행위, 증서', '민주주의자', '거절, 부인', '양, 금액', '고생물학자', '미끄러짐', '~한 마음 상태', '조각, 패치', '하늘'],
     tips({
       etymology: '중세 영어에서 \'머리\'를 뜻하던 단어로, 투표할 때 사람들의 머릿수를 세던 것에서 유래했습니다.',
       visual: '선거날 사람들이 투표소 앞에 길게 줄을 서서 차례를 기다리는 모습을 상상해 보세요.',
@@ -455,6 +593,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The latest public opinion shows that the majority of citizens support the new environmental policy.', ko: '최근의 여론조사는 대다수의 시민들이 새로운 환경 정책을 지지한다는 것을 보여줍니다.' },
         { en: 'Long queues formed at every local station as people rushed to cast their votes before closing time.', ko: '마감 시간 전에 투표를 하려는 사람들이 몰려들면서 모든 지역 투표소에 긴 줄이 늘어섰습니다.' },
+      ],
+      wordDistractors: ['toll', 'stroll', 'doll'],
+      definitionDistractors: [
+        'A long wooden or metal bar used to propel a boat through water',
+        'A tax or fee charged for using a road, bridge, or tunnel',
+        'A formal gathering of people to discuss matters of shared interest',
       ],
     }
   ),
@@ -475,6 +619,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'Toxic chemicals from the factory continue to contaminate the local river system.', ko: '공장에서 나오는 독성 화학 물질이 지역 강 시스템을 계속해서 오염시키고 있습니다.' },
         { en: 'Exhaust fumes from millions of cars significantly degrade the air quality in the city.', ko: '수백만 대의 자동차에서 나오는 배기가스는 도시의 공기 질을 심각하게 더럽힙니다.' },
       ],
+      wordDistractors: ['pollard', 'volute', 'dilute'],
+      definitionDistractors: [
+        'To scatter seeds or small particles evenly across a wide area',
+        'To reduce the concentration of a solution by adding more liquid',
+        'To circulate fresh air through a room or enclosed space',
+      ],
     }
   ),
   word('pond', '못', 6, 'noun',
@@ -493,6 +643,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The children enjoyed feeding the ducks at the local park.', ko: '아이들은 지역 공원에 있는 연못에서 오리들에게 먹이 주는 것을 즐겼습니다.' },
         { en: 'Goldfish were swimming peacefully beneath the surface of the garden water feature.', ko: '금붕어들이 정원 연못의 수면 아래에서 평화롭게 헤엄치고 있었습니다.' },
+      ],
+      wordDistractors: ['bond', 'fond', 'wand'],
+      definitionDistractors: [
+        'A wide, fast-flowing stream that empties into a larger river',
+        'A deep underground reservoir that stores rainwater naturally',
+        'A large artificial basin constructed for recreational swimming',
       ],
     }
   ),
@@ -513,6 +669,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The winner of the poker tournament took home the entire pool of prize money.', ko: '포커 대회의 우승자가 상금 판돈 전체를 집으로 가져갔다.' },
         { en: 'Everyone contributed ten dollars to the betting pool for the final match.', ko: '모두가 결승전을 위한 내기 판돈으로 10달러씩 기부했다.' },
       ],
+      wordDistractors: ['spool', 'stool', 'drool'],
+      definitionDistractors: [
+        'A shared collection of vehicles available for use by a group of people',
+        'A shallow body of standing water formed after heavy rainfall',
+        'A group of skilled workers assembled for a specific temporary project',
+      ],
     }
   ),
   word('poor', '가난한', 1, 'adjective',
@@ -531,6 +693,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The charity provides food and shelter for families living in the most deprived areas.', ko: '그 자선 단체는 가장 빈곤한 지역에 사는 가족들에게 음식과 숙소를 제공합니다.' },
         { en: 'Despite his humble beginnings and lack of money, he never lost his dignity.', ko: '그의 가난한 시작과 돈의 부족에도 불구하고, 그는 결코 존엄성을 잃지 않았습니다.' },
+      ],
+      wordDistractors: ['pour', 'pore', 'moor'],
+      definitionDistractors: [
+        'Having a low quality or standard that fails to meet expectations',
+        'Feeling physically weak or exhausted after a long period of effort',
+        'Lacking in flavor or seasoning, resulting in a bland taste',
       ],
     }
   ),
@@ -551,6 +719,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The radio station plays the latest hits from the global music charts all day long.', ko: '그 라디오 방송국은 하루 종일 세계 음악 차트의 최신 유행곡들을 틀어줍니다.' },
         { en: 'Many teenagers enjoy listening to catchy melodies and upbeat rhythms during their free time.', ko: '많은 십 대들이 여가 시간에 기억하기 쉬운 멜로디와 경쾌한 리듬을 듣는 것을 즐깁니다.' },
       ],
+      wordDistractors: ['prop', 'plop', 'chop'],
+      definitionDistractors: [
+        'A sudden sharp explosive sound made by bursting something',
+        'A sweetened carbonated beverage sold in bottles or cans',
+        'A quick informal visit to a nearby place or person',
+      ],
     }
   ),
   word('pope', '교황', 9, 'noun',
@@ -570,10 +744,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'Thousands of people gathered in the square to hear the speech delivered by the holy leader.', ko: '수천 명의 사람들이 성스러운 지도자의 연설을 듣기 위해 광장에 모였습니다.' },
         { en: 'The election of a new sovereign of the Vatican is a process steeped in centuries of tradition.', ko: '바티칸의 새로운 통치자를 선출하는 것은 수세기의 전통이 깃든 과정입니다.' },
       ],
+      wordDistractors: ['rope', 'cope', 'scope'],
+      definitionDistractors: [
+        'A senior military officer who commands a large division of troops',
+        'A respected elder in a community who mediates local disputes',
+        'A head of state who governs a constitutional monarchy',
+      ],
     }
   ),
   word('popular', '인기 있는', 5, 'adjective',
-    ['모호한', '적절한', '부적절한', '긍정적인', '부정적인', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인'],
+    ['추정의', '야심 있는', '끝없는', '비범한', '인색한', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인'],
     tips({
       etymology: '라틴어 populus(사람들)에서 유래하여 많은 사람들에게 속하거나 사랑받는다는 뜻을 가집니다.',
       visual: '수많은 팬들이 연예인을 향해 환호하며 둘러싸고 있는 콘서트장을 상상해 보세요.',
@@ -589,10 +769,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The new cafe became very famous for its unique desserts and cozy atmosphere.', ko: '그 새로운 카페는 독특한 디저트와 아늑한 분위기로 매우 인기가 많아졌습니다.' },
         { en: 'Soccer is the most widely played sport in many countries around the world.', ko: '축구는 전 세계 많은 국가에서 가장 널리 즐기는 스포츠입니다.' },
       ],
+      wordDistractors: ['populace', 'modular', 'peculiar'],
+      definitionDistractors: [
+        'Being widely available in stores and easy to purchase at low cost',
+        'Having a traditional design that has remained unchanged for decades',
+        'Relating to something that appeals only to a small niche audience',
+      ],
     }
   ),
   word('population', '인구', 6, 'noun',
-    ['기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과'],
+    ['조용함, 고요', '은뎀부 (아프리카 민족)', '관개, 관수', '협박', '브라질', '불협화음', '용제, 용매', '시설', '지옥', '물가'],
     tips({
       etymology: '라틴어 \'populus(사람들)\'에서 유래하여 특정 지역에 거주하는 전체 사람들의 집단을 의미합니다.',
       visual: '지도 위에 수많은 점이 찍혀 있고 그 점들이 모여 거대한 숫자를 이루는 모습을 상상해 보세요.',
@@ -607,6 +793,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The government is concerned about the rapidly aging society and the shrinking number of young people.', ko: '정부는 급격히 고령화되는 사회와 줄어드는 젊은 층 인구에 대해 우려하고 있습니다.' },
         { en: 'Tokyo has a massive density of residents compared to other major cities in the world.', ko: '도쿄는 세계의 다른 주요 도시들과 비교했을 때 엄청난 인구 밀도를 가지고 있습니다.' },
+      ],
+      wordDistractors: ['pollution', 'simulation', 'publication'],
+      definitionDistractors: [
+        'The spread of people from cities to rural areas over a long period',
+        'A statistical measure of economic output within a specific region',
+        'The diversity of species found within a particular ecosystem',
       ],
     }
   ),
@@ -627,6 +819,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'Many traditional Korean dishes feature spicy marinated meat from a pig.', ko: '많은 전통 한국 요리들은 매콤하게 양념된 돼지고기를 특징으로 합니다.' },
         { en: 'The chef roasted the meat slowly until it became tender and juicy.', ko: '요리사는 고기가 부드럽고 육즙이 풍부해질 때까지 천천히 구웠습니다.' },
       ],
+      wordDistractors: ['porch', 'fork', 'cork'],
+      definitionDistractors: [
+        'A thick stew made from various root vegetables and seasoning',
+        'The outer rind or skin of a fruit that is removed before eating',
+        'A cut of red meat taken from the rib section of cattle',
+      ],
     }
   ),
   word('port', '항구', 4, 'noun',
@@ -645,6 +843,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The cargo ship docked at the busy harbor to unload thousands of containers.', ko: '화물선은 수천 개의 컨테이너를 내리기 위해 붐비는 항구에 정박했습니다.' },
         { en: 'Many coastal cities grew wealthy by becoming major centers for international maritime trade.', ko: '많은 해안 도시들은 국제 해상 무역의 주요 거점 항구가 됨으로써 부유해졌습니다.' },
+      ],
+      wordDistractors: ['fort', 'sort', 'sport'],
+      definitionDistractors: [
+        'A type of strong, sweet red wine originally produced in Portugal',
+        'A small opening in a ship through which cannons are fired',
+        'The left side of a ship or aircraft when facing forward',
       ],
     }
   ),
@@ -665,6 +869,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'A significant portion of the annual budget is allocated to medical research and development.', ko: '연간 예산의 상당 부분이 의료 연구 및 개발에 할당됩니다.' },
         { en: 'The restaurant serves a generous portion of pasta that is enough for two people to share.', ko: '그 식당은 두 사람이 나누어 먹기에 충분할 정도로 푸짐한 양의 파스타를 제공합니다.' },
       ],
+      wordDistractors: ['potion', 'caution', 'motion'],
+      definitionDistractors: [
+        'A specific ratio used to measure ingredients in a recipe',
+        'A legal document that grants someone a share of an inheritance',
+        'A designated area of land set aside for public recreation',
+      ],
     }
   ),
   word('portrait', '초상', 5, 'noun',
@@ -684,10 +894,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The artist spent several months working on a detailed oil portrait of the queen.', ko: '그 화가는 여왕의 정교한 유화 초상화를 그리는 데 몇 달을 보냈다.' },
         { en: 'A large framed portrait of his grandfather hung prominently above the fireplace.', ko: '그의 할아버지의 커다란 액자 초상화가 벽난로 위에 눈에 띄게 걸려 있었다.' },
       ],
+      wordDistractors: ['portray', 'partisan', 'patriot'],
+      definitionDistractors: [
+        'A wide scenic view of a natural landscape painted on a large canvas',
+        'A detailed written biography describing the life of a famous person',
+        'A sculpture carved from stone or marble depicting a historical figure',
+      ],
     }
   ),
   word('pose', '자세', 6, 'noun',
-    ['목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계'],
+    ['명 동물', '런던', '아빠', '시계소리', '내과 의사', '끄덕임', '동 mis', '추측', '아버지', '비애, 연민'],
     tips({
       etymology: '라틴어 \'ponere(놓다)\'에서 유래하여 몸을 특정 위치에 놓는다는 의미를 가집니다.',
       visual: '사진 작가 앞에서 허리에 손을 얹고 멋지게 서 있는 모델의 모습을 상상해 보세요.',
@@ -703,10 +919,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The model held a striking stance for the fashion photographer.', ko: '모델은 패션 사진작가를 위해 인상적인 자세를 취했습니다.' },
         { en: 'Yoga practitioners often maintain a steady balance in each physical alignment.', ko: '요가 수련자들은 각 신체 동작에서 종종 안정적인 균형을 유지합니다.' },
       ],
+      wordDistractors: ['prose', 'poise', 'doze'],
+      definitionDistractors: [
+        'A difficult question or puzzle presented as a challenge to solve',
+        'A deliberate act of pretending to be someone else to deceive others',
+        'A brief dramatic performance presented on stage without dialogue',
+      ],
     }
   ),
   word('position', '위치', 7, 'noun',
-    ['상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미'],
+    ['형 al', '동굴', '목요일', '쌍동이', '뮤지컬; 음악의', '특성, 특징', '서명, 친필 사인', '형 ic', '고통', '정원'],
     tips({
       etymology: '라틴어 \'ponere(놓다)\'에서 유래하여 사물이 놓인 자리를 의미합니다.',
       visual: '지도 위에 핀이 꽂혀 있는 특정 지점을 상상해 보세요.',
@@ -722,29 +944,41 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The GPS tracker showed the exact coordinates of the vehicle\'s current location.', ko: 'GPS 추적기는 차량의 현재 위치에 대한 정확한 좌표를 보여주었습니다.' },
         { en: 'She applied for a managerial role to secure a higher rank within the company.', ko: '그녀는 회사 내에서 더 높은 직위를 확보하기 위해 관리직에 지원했습니다.' },
       ],
+      wordDistractors: ['partition', 'petition', 'perdition'],
+      definitionDistractors: [
+        'A personal viewpoint or opinion held about a controversial topic',
+        'The arrangement of furniture within a room for optimal comfort',
+        'A competitive ranking assigned based on performance in a tournament',
+      ],
     }
   ),
-  word('positive', '명확한', 4, 'adjective',
-    ['간접적인', '모호한', '적절한', '부적절한', '부정적인', '대표적인', '기본적인', '중요한', '희미한', '불확실한'],
+  word('positive', '긍정적인', 4, 'adjective',
+    ['부정적인', '비관적인', '소극적인', '냉소적인', '비판적인', '회의적인', '무관심한', '절망적인', '부정확한', '불리한'],
     tips({
-      etymology: '라틴어 \'ponere(놓다)\'에서 유래하여, 눈앞에 확실하게 놓여 있는 상태를 의미합니다.',
-      visual: '법정에서 판사가 망치를 두드리며 확정 판결을 내리는 단호한 모습을 상상해 보세요.',
-      soundAlike: '\'파지티브\'라고 발음하며, 손에 무언가를 꽉 \'파지(잡고)\' 있는 확실한 느낌을 연상하세요.',
-      context: '단순히 \'좋은\'이라는 뜻 외에도 증거나 태도가 의심의 여지 없이 분명할 때 자주 쓰입니다.',
-      synonymAntonym: '확실함을 뜻하는 definite와 반대되는 모호함의 vague를 함께 기억하면 좋습니다.',
+      etymology: '라틴어 \'ponere(놓다)\'에서 유래하여, 무언가를 확실하게 놓고 좋은 방향으로 바라본다는 의미를 담고 있습니다.',
+      visual: '엄지손가락을 치켜들며 환하게 웃는 사람의 모습을 상상해 보세요.',
+      soundAlike: '\'파지티브\'라고 발음하며, \'파이팅!\' 하고 힘차게 외치는 긍정적인 에너지를 연상하세요.',
+      context: '시험 결과가 좋거나, 밝은 미래를 기대하거나, 누군가를 격려할 때 자주 쓰입니다.',
+      synonymAntonym: '낙관적인 optimistic과 비슷하며, 부정적인 negative와 정반대의 개념입니다.',
     }),
     {
-      definition: 'leaving no possibility of doubt or confusion; certain and definite.',
-      synonyms: ['definite', 'certain', 'absolute'],
-      antonyms: ['uncertain', 'vague', 'doubtful'],
+      definition: 'expressing or characterized by approval, agreement, or a hopeful and constructive attitude',
+      synonyms: ['optimistic', 'constructive', 'favorable'],
+      antonyms: ['negative', 'pessimistic', 'unfavorable'],
       exampleSentences: [
-        { en: 'The witness provided positive identification of the suspect during the trial.', ko: '증인은 재판 중에 용의자에 대한 명확한 신원 확인을 제공했습니다.' },
-        { en: 'Scientists need positive proof before they can confirm the discovery of a new planet.', ko: '과학자들은 새로운 행성의 발견을 확인하기 전에 명확한 증거가 필요합니다.' },
+        { en: 'She always tries to maintain a positive attitude even in difficult situations.', ko: '그녀는 어려운 상황에서도 항상 긍정적인 태도를 유지하려고 노력합니다.' },
+        { en: 'The teacher gave positive feedback on the student\'s essay to encourage further improvement.', ko: '선생님은 학생의 에세이에 긍정적인 피드백을 주어 추가적인 향상을 격려했습니다.' },
+      ],
+      wordDistractors: ['posture', 'proactive', 'primitive'],
+      definitionDistractors: [
+        'Being absolutely certain about a fact without any room for doubt',
+        'Having an electrical charge that repels similar charged particles',
+        'Showing a strong preference for one option over all others',
       ],
     }
   ),
   word('possess', '소유하다', 5, 'verb',
-    ['관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다'],
+    ['관리하다', '보완하다', '분석하다', '정리하다', '자식 낳다', '환호하다, 기뻐하다', '(속박을) 풀다', '달래다', '보인 (see의 과거분사)', '망쳐놓다'],
     tips({
       etymology: '라틴어 potis(강력한)와 sedere(앉다)가 합쳐져 \'주인으로서 자리에 앉아 있다\'는 의미에서 유래했습니다.',
       visual: '금고 안에 가득 찬 보석들을 양팔로 껴안고 있는 부자의 모습을 상상해 보세요.',
@@ -760,10 +994,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The rare diamond is said to possess a mysterious power that protects its owner.', ko: '그 희귀한 다이아몬드는 소유자를 보호하는 신비한 힘을 지니고 있다고 전해진다.' },
         { en: 'Applicants for this position must possess excellent communication skills and a positive attitude.', ko: '이 직무의 지원자들은 뛰어난 의사소통 능력과 긍정적인 태도를 갖추어야 한다.' },
       ],
+      wordDistractors: ['profess', 'process', 'recess'],
+      definitionDistractors: [
+        'To forcefully seize control of property belonging to another person',
+        'To carefully inspect an object to determine its value or condition',
+        'To store items in a secure location for future retrieval',
+      ],
     }
   ),
   word('possible', '가능한', 6, 'adjective',
-    ['예외적인', '안정적인', '불안정한', '효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한', '적절한'],
+    ['예외적인', '안정적인', '불안정한', '(사람이) 지나치게 아부하는 / (물질이) 미끈미끈한', '다루기 힘든', '(멸종) 위기에 처한', '이해할 수 없는', '부당한, 근거 없는', '풀린, 펼쳐진', '긴급한, 위급한'],
     tips({
       etymology: '라틴어 \'posse(할 수 있다)\'에서 유래하여 어떤 일이 실제로 일어날 수 있는 상태를 나타냅니다.',
       visual: '미션 임파서블 영화의 긴박한 상황에서 불가능을 가능으로 바꾸는 장면을 상상해 보세요.',
@@ -778,6 +1018,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'Please let me know the results as soon as it is to do so.', ko: '결과가 나오는 대로 가능한 한 빨리 알려주세요.' },
         { en: 'Scientists are exploring every avenue to find a solution to the problem.', ko: '과학자들은 그 문제에 대한 해결책을 찾기 위해 가능한 모든 수단을 탐색하고 있습니다.' },
+      ],
+      wordDistractors: ['passable', 'plausible', 'pliable'],
+      definitionDistractors: [
+        'Being highly likely to occur based on current evidence and trends',
+        'Having the necessary skills or qualifications for a specific task',
+        'Being permitted or allowed under the rules of a given situation',
       ],
     }
   ),
@@ -798,6 +1044,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The wooden fence was held firmly in place by a heavy iron post at each corner.', ko: '나무 울타리는 각 모서리에 있는 무거운 철제 기둥에 의해 단단히 고정되어 있었다.' },
         { en: 'Construction workers hammered a metal post into the ground to mark the boundary of the property.', ko: '건설 노동자들은 부지의 경계를 표시하기 위해 금속 기둥을 땅에 박았다.' },
       ],
+      wordDistractors: ['host', 'roost', 'toast'],
+      definitionDistractors: [
+        'A message or package sent through the mail delivery system',
+        'A job or official position held within an organization',
+        'A written entry published on a website or social media platform',
+      ],
     }
   ),
   word('poster', '포스터', 4, 'noun',
@@ -816,6 +1068,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The students designed a colorful advertisement for the upcoming school festival.', ko: '학생들은 다가오는 학교 축제를 위해 화려한 광고 포스터를 디자인했습니다.' },
         { en: 'She pinned a large image of her favorite band onto the bedroom wall.', ko: '그녀는 자신이 가장 좋아하는 밴드의 커다란 포스터를 침실 벽에 핀으로 고정했습니다.' },
+      ],
+      wordDistractors: ['posture', 'rooster', 'bolster'],
+      definitionDistractors: [
+        'A person who delivers letters and packages to residential addresses',
+        'A small printed card given to customers as proof of purchase',
+        'A wooden frame used to display artwork at an exhibition',
       ],
     }
   ),
@@ -836,6 +1094,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'She carefully placed the honey inside a small ceramic container.', ko: '그녀는 작은 도자기 단지 안에 꿀을 조심스럽게 담았습니다.' },
         { en: 'The gardener filled the clay vessel with fresh soil for the flowers.', ko: '정원사는 꽃을 심기 위해 흙으로 찰흙 단지를 채웠습니다.' },
       ],
+      wordDistractors: ['pit', 'cot', 'dot'],
+      definitionDistractors: [
+        'A flat shallow dish used for serving food at the dinner table',
+        'A large metal cauldron suspended over a fire for boiling water',
+        'A decorative vase placed on a shelf to hold fresh flowers',
+      ],
     }
   ),
   word('potato', '감자', 2, 'noun',
@@ -855,10 +1119,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'She mashed the boiled vegetables with butter and milk to make a side dish.', ko: '그녀는 곁들임 요리를 만들기 위해 삶은 채소를 버터와 우유와 함께 으깼습니다.' },
         { en: 'Farmers harvested a large crop of these starchy tubers after the rainy season.', ko: '농부들은 장마가 끝난 후 이 녹말질 뿌리 작물을 대량으로 수확했습니다.' },
       ],
+      wordDistractors: ['tomato', 'placebo', 'portato'],
+      definitionDistractors: [
+        'A sweet tropical fruit with soft flesh and a large central seed',
+        'A leafy green vegetable commonly used in fresh salads',
+        'A type of grain harvested from tall grasses in warm climates',
+      ],
     }
   ),
-  word('potential', '가능한', 6, 'adjective',
-    ['적절한', '부적절한', '긍정적인', '부정적인', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인', '예외적인'],
+  word('potential', '잠재적인', 6, 'adjective',
+    ['오래된, 고풍스런', '정직한', '버려진, 유기된', '설명되지 않은', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인', '예외적인'],
     tips({
       etymology: '라틴어 \'potentia(힘, 능력)\'에서 유래하여, 현재는 숨겨져 있지만 미래에 발휘될 수 있는 힘을 뜻합니다.',
       visual: '아직 싹트지 않았지만 거대한 나무가 될 힘을 품고 있는 작은 씨앗의 이미지를 떠올려 보세요.',
@@ -873,6 +1143,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The new marketing strategy has the power to attract thousands of prospective customers.', ko: '새로운 마케팅 전략은 수천 명의 잠재적인 고객을 끌어들일 수 있는 힘이 있습니다.' },
         { en: 'Scientists are studying the latent energy stored within these chemical compounds.', ko: '과학자들은 이 화학 화합물 안에 저장된 잠재적인 에너지를 연구하고 있습니다.' },
+      ],
+      wordDistractors: ['paternal', 'perpetual', 'penitent'],
+      definitionDistractors: [
+        'Already existing and fully developed in its current form',
+        'Requiring immediate attention due to its urgent and pressing nature',
+        'Relating to a powerful force that has been demonstrated repeatedly',
       ],
     }
   ),
@@ -893,6 +1169,12 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'Carefully tilt the pitcher to fill the glass with fresh orange juice.', ko: '신선한 오렌지 주스로 잔을 채우기 위해 피처를 조심스럽게 기울여 따르세요.' },
         { en: 'Heavy rain began to fall from the dark clouds during the outdoor concert.', ko: '야외 콘서트 중에 먹구름에서 폭우가 쏟아지기 시작했습니다.' },
       ],
+      wordDistractors: ['pout', 'dour', 'tour'],
+      definitionDistractors: [
+        'To examine something closely by looking through a small opening',
+        'To stir a mixture vigorously using a circular motion',
+        'To distribute equal amounts of a substance into separate containers',
+      ],
     }
   ),
   word('powder', '가루', 4, 'noun',
@@ -912,10 +1194,16 @@ export const vocabBatch51: VocabItem[] = [
         { en: 'The chef sprinkled a fine white powder over the dessert to add sweetness.', ko: '요리사는 단맛을 더하기 위해 디저트 위에 고운 흰 가루를 뿌렸습니다.' },
         { en: 'Heavy machines grind the dried minerals into a very fine powder for industrial use.', ko: '중장비들이 산업용으로 쓰기 위해 말린 광물들을 아주 고운 가루로 갈아냅니다.' },
       ],
+      wordDistractors: ['plunder', 'ponder', 'chowder'],
+      definitionDistractors: [
+        'A thick paste or cream applied to the skin for medical treatment',
+        'A lightweight fabric woven from natural cotton fibers',
+        'A volatile liquid that evaporates quickly when exposed to air',
+      ],
     }
   ),
   word('power', '힘', 3, 'noun',
-    ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
+    ['바다 풍경', '명 사람', '경험주의', '사막', '사람', '퍼센트, 백분율', '침대', '유모', '(집 앞) 진입로, 차도', '자존심'],
     tips({
       etymology: '라틴어 \'posse(할 수 있다)\'에서 유래하여 무언가를 해낼 수 있는 능력이나 에너지를 뜻합니다.',
       visual: '번개 모양의 아이콘이나 근육질의 팔이 무거운 물건을 번쩍 들어 올리는 모습을 상상하세요.',
@@ -930,6 +1218,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The new engine provides more thrust and increased speed for the aircraft.', ko: '새 엔진은 항공기에 더 많은 추진력과 향상된 속도를 제공합니다.' },
         { en: 'Knowledge gives individuals the capacity to make better decisions in life.', ko: '지식은 개인에게 인생에서 더 나은 결정을 내릴 수 있는 능력을 부여합니다.' },
+      ],
+      wordDistractors: ['tower', 'cower', 'dower'],
+      definitionDistractors: [
+        'A large machine that generates electricity from natural resources',
+        'The legal right to make decisions on behalf of another person',
+        'A unit of measurement used to calculate the speed of a vehicle',
       ],
     }
   ),
@@ -949,6 +1243,12 @@ export const vocabBatch51: VocabItem[] = [
       exampleSentences: [
         { en: 'The course provides hands-on experience to give students skills for the real world.', ko: '이 과정은 학생들에게 실생활에 필요한 기술을 제공하기 위해 실무 경험을 제공합니다.' },
         { en: 'High heels are stylish but not very useful for a long walk in the woods.', ko: '하이힐은 멋지지만 숲속을 오래 걷기에는 그리 실용적이지 않습니다.' },
+      ],
+      wordDistractors: ['tactical', 'nautical', 'vertical'],
+      definitionDistractors: [
+        'Based on abstract reasoning and logical deduction rather than evidence',
+        'Designed primarily for visual appeal and decorative purposes',
+        'Following a strict set of traditional customs and ceremonies',
       ],
     }
   ),

@@ -15,6 +15,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'For that reason or as a consequence of what has just been mentioned.',
       synonyms: ['consequently', 'hence', 'thus'],
       antonyms: ['regardless', 'nevertheless', 'otherwise'],
+      wordDistractors: ['theorem', 'thereafter', 'thereby'],
+      definitionDistractors: [
+        'In a manner that is contrary to what was previously stated.',
+        'At a time before the event being discussed.',
+        'In spite of the circumstances or conditions mentioned.',
+      ],
       exampleSentences: [
         { en: 'The team practiced every day; they won the championship trophy.', ko: '그 팀은 매일 연습했습니다. 그 결과 그들은 우승 트로피를 차지했습니다.' },
         { en: 'New evidence has emerged, and the judge must reconsider the previous ruling.', ko: '새로운 증거가 나타났으므로 판사는 이전 판결을 재고해야 합니다.' },
@@ -34,6 +40,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'Used to refer to two or more people or things previously mentioned or easily identified.',
       synonyms: ['those people', 'the others', 'them'],
       antonyms: ['we', 'us', 'myself'],
+      wordDistractors: ['thee', 'then', 'them'],
+      definitionDistractors: [
+        'Used to refer to oneself when speaking in the first person.',
+        'A word used to address a single person directly in conversation.',
+        'A term indicating possession belonging to the speaker.',
+      ],
       exampleSentences: [
         { en: 'The children were hungry, so they ate all the sandwiches.', ko: '아이들이 배가 고파서 그들은 샌드위치를 모두 먹었습니다.' },
         { en: 'Many people believe that they can change the world through small actions.', ko: '많은 사람들은 자신들이 작은 행동을 통해 세상을 바꿀 수 있다고 믿습니다.' },
@@ -53,6 +65,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'having a large distance between opposite sides or surfaces; not thin',
       synonyms: ['dense', 'heavy', 'chunky'],
       antonyms: ['thin', 'slender', 'slight'],
+      wordDistractors: ['thicket', 'trick', 'flick'],
+      definitionDistractors: [
+        'Having a rough or coarse texture on the outer surface.',
+        'Extending a great distance from top to bottom vertically.',
+        'Resistant to bending or flexing under pressure.',
+      ],
       exampleSentences: [
         { en: 'The hikers struggled to move through the thick forest undergrowth.', ko: '등산객들은 울창하고 빽빽한 숲의 덤불을 통과하느라 애를 먹었다.' },
         { en: 'A thick layer of dust had settled on the old wooden table.', ko: '오래된 나무 탁자 위에 먼지가 두껍게 쌓여 있었다.' },
@@ -72,6 +90,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'A person who steals another person\'s property, especially by stealth and without using force or violence.',
       synonyms: ['burglar', 'robber', 'pickpocket'],
       antonyms: ['victim', 'police', 'owner'],
+      wordDistractors: ['chief', 'grief', 'brief'],
+      definitionDistractors: [
+        'A person who guards property or patrols an area for safety.',
+        'An official who investigates crimes and gathers evidence.',
+        'A witness who provides testimony about an observed event.',
+      ],
       exampleSentences: [
         { en: 'The security camera captured the face of the intruder who broke into the jewelry store.', ko: '보안 카메라는 보석 가게에 침입한 침입자의 얼굴을 포착했습니다.' },
         { en: 'Someone reported a suspicious person lurking near the parked cars last night.', ko: '어젯밤 주차된 차들 근처를 서성이는 수상한 사람을 누군가 신고했습니다.' },
@@ -91,6 +115,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'having little distance between opposite sides or surfaces; not thick or fat',
       synonyms: ['slender', 'slim', 'narrow'],
       antonyms: ['thick', 'dense', 'wide'],
+      wordDistractors: ['shin', 'twin', 'grin'],
+      definitionDistractors: [
+        'Having a smooth or polished surface that reflects light.',
+        'Lacking color or appearing washed out and faded.',
+        'Moving at a slow pace or lacking energy.',
+      ],
       exampleSentences: [
         { en: 'The ice on the lake is still too fragile and not deep enough to walk on safely.', ko: '호수의 얼음이 여전히 너무 얇아서 안전하게 걷기에는 충분하지 않다.' },
         { en: 'A layer of dust covered the old books in the attic.', ko: '다락방의 오래된 책들 위로 얇은 먼지 층이 쌓여 있었다.' },
@@ -110,6 +140,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'An object that one need not, cannot, or does not wish to give a specific name to.',
       synonyms: ['object', 'article', 'entity'],
       antonyms: ['nothing', 'void', 'nullity'],
+      wordDistractors: ['think', 'thine', 'sting'],
+      definitionDistractors: [
+        'A specific period of time set aside for a scheduled activity.',
+        'A formal event organized for a large group of people.',
+        'An abstract concept or principle in philosophy or science.',
+      ],
       exampleSentences: [
         { en: 'Pick up that heavy object and put it in the box.', ko: '저 무거운 물건을 집어서 상자 안에 넣으세요.' },
         { en: 'The most important matter right now is your health.', ko: '지금 가장 중요한 것은 당신의 건강입니다.' },
@@ -129,6 +165,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'To use the mind to form ideas, make judgments, or consider something carefully.',
       synonyms: ['believe', 'consider', 'ponder'],
       antonyms: ['forget', 'ignore', 'disregard'],
+      wordDistractors: ['thick', 'thing', 'thank'],
+      definitionDistractors: [
+        'To physically move an object from one place to another.',
+        'To speak aloud in front of a group of listeners.',
+        'To observe something carefully with focused attention.',
+      ],
       exampleSentences: [
         { en: 'Many people believe that we need to find a better solution for this problem.', ko: '많은 사람들은 우리가 이 문제에 대해 더 나은 해결책을 찾아야 한다고 생각합니다.' },
         { en: 'Please take a moment to reflect on your actions before making a final decision.', ko: '최종 결정을 내리기 전에 당신의 행동에 대해 잠시 생각해보는 시간을 가지세요.' },
@@ -136,7 +178,7 @@ export const vocabBatch65: VocabItem[] = [
     }
   ),
   word('thirst', '갈증', 2, 'noun',
-    ['절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동'],
+    ['배고픔', '피로', '졸음', '허기', '욕구', '고통', '열망', '권태', '어지러움', '두통'],
     tips({
       etymology: '고대 영어 \'thurst\'에서 유래했으며, \'마르다\'라는 뜻의 게르만어 어근과 연결되어 목마름을 뜻하게 되었습니다.',
       visual: '뜨거운 사막 한가운데서 물 한 잔을 간절히 바라는 여행자의 모습을 상상해 보세요.',
@@ -148,6 +190,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'A feeling of needing or wanting to drink something, or a strong desire for something.',
       synonyms: ['dryness', 'craving', 'longing'],
       antonyms: ['satisfaction', 'fullness', 'repletion'],
+      wordDistractors: ['thrust', 'first', 'burst'],
+      definitionDistractors: [
+        'A sudden feeling of dizziness or lightheadedness.',
+        'The physical sensation of extreme cold or shivering.',
+        'A state of deep sleep or unconsciousness.',
+      ],
       exampleSentences: [
         { en: 'The long hike in the summer heat left them with a desperate need for water.', ko: '여름 더위 속의 긴 하이킹은 그들에게 간절한 갈증을 남겼다.' },
         { en: 'Her lifelong passion for learning was driven by an insatiable curiosity.', ko: '그녀의 평생에 걸친 배움에 대한 열정은 채워지지 않는 지식에 대한 갈증에서 비롯되었다.' },
@@ -167,6 +215,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'The person, thing, or idea that is present, nearby, or just mentioned.',
       synonyms: ['it', 'the aforementioned', 'the latter'],
       antonyms: ['that', 'those', 'the former'],
+      wordDistractors: ['thus', 'thin', 'his'],
+      definitionDistractors: [
+        'A word used to describe something located far away from the speaker.',
+        'A general question word asking about the identity of a person.',
+        'A term that connects two clauses in a conditional sentence.',
+      ],
       exampleSentences: [
         { en: 'Please take a look at the document in front of you.', ko: '당신 앞에 있는 이 문서를 확인해 주세요.' },
         { en: 'A sudden change in weather caused the delay of the flight.', ko: '갑작스러운 날씨 변화가 이 비행기 지연의 원인이 되었습니다.' },
@@ -186,6 +240,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'performed or written with great care and completeness, leaving nothing out',
       synonyms: ['comprehensive', 'meticulous', 'exhaustive'],
       antonyms: ['superficial', 'cursory', 'incomplete'],
+      wordDistractors: ['through', 'borough', 'furrow'],
+      definitionDistractors: [
+        'Happening at a rapid speed without any delays.',
+        'Involving only the most basic or surface-level details.',
+        'Performed reluctantly and with minimal enthusiasm.',
+      ],
       exampleSentences: [
         { en: 'The police conducted a thorough search of the entire building to find any hidden evidence.', ko: '경찰은 숨겨진 증거를 찾기 위해 건물 전체를 철저하게 수색했습니다.' },
         { en: 'Please make sure you give the report a thorough review before submitting it to the manager.', ko: '매니저에게 제출하기 전에 보고서를 꼼꼼하게 검토했는지 확인해 주세요.' },
@@ -193,7 +253,7 @@ export const vocabBatch65: VocabItem[] = [
     }
   ),
   word('though', '~임에도', 6, 'conjunction',
-    ['조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준'],
+    ['그래서', '왜냐하면', '그러므로', '따라서', '게다가', '한편', '그리고', '또는', '그런데', '결국'],
     tips({
       etymology: '고대 영어 \'theah\'에서 유래했으며, \'그럼에도 불구하고\'라는 양보의 의미를 담고 있습니다.',
       visual: '비가 쏟아지는 창밖을 보면서도 우산을 쓰고 밖으로 나가는 사람의 모습을 상상해 보세요.',
@@ -205,6 +265,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'despite the fact that; used to introduce a statement that makes the main statement seem surprising',
       synonyms: ['although', 'nevertheless', 'nonetheless'],
       antonyms: ['consequently', 'therefore', 'accordingly'],
+      wordDistractors: ['thorough', 'thought', 'through'],
+      definitionDistractors: [
+        'Used to indicate the reason or cause behind an event.',
+        'Expressing a result that follows logically from a premise.',
+        'Indicating that something will happen at a future time.',
+      ],
       exampleSentences: [
         { en: 'The team lost the game even though they played their best.', ko: '그 팀은 최선을 다했음에도 불구하고 경기에서 졌다.' },
         { en: 'She decided to buy the dress though it was quite expensive.', ko: '그녀는 꽤 비쌌음에도 불구하고 그 드레스를 사기로 결정했다.' },
@@ -224,6 +290,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'The number equivalent to ten times one hundred.',
       synonyms: ['millenary', 'kilo', 'grand'],
       antonyms: ['zero', 'one', 'handful'],
+      wordDistractors: ['thunder', 'thimble', 'thorned'],
+      definitionDistractors: [
+        'A unit of measurement used for weighing precious metals.',
+        'The total number of items remaining after a subtraction.',
+        'A fraction representing one part divided into equal portions.',
+      ],
       exampleSentences: [
         { en: 'The stadium was filled with over a thousand excited fans.', ko: '경기장은 천 명이 넘는 흥분한 팬들로 가득 찼습니다.' },
         { en: 'This ancient tree has lived for more than a thousand years.', ko: '이 고목은 천 년 넘게 살아왔습니다.' },
@@ -243,6 +315,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'A long, thin strand of cotton, nylon, or other fibers used in sewing or weaving.',
       synonyms: ['strand', 'fiber', 'filament'],
       antonyms: ['rope', 'cable', 'cord'],
+      wordDistractors: ['tread', 'shred', 'dread'],
+      definitionDistractors: [
+        'A sharp pointed tool used for piercing holes in fabric.',
+        'A large piece of woven cloth used as a covering or blanket.',
+        'A mechanical device that holds objects together under tension.',
+      ],
       exampleSentences: [
         { en: 'The tailor selected a silk string to match the color of the suit.', ko: '재단사는 정장 색상에 맞추기 위해 실크 실을 선택했습니다.' },
         { en: 'It was difficult to follow the main plot line through the complex narrative.', ko: '복잡한 이야기 속에서 주요 줄거리를 따라가는 것은 어려웠습니다.' },
@@ -250,7 +328,7 @@ export const vocabBatch65: VocabItem[] = [
     }
   ),
   word('threat', '협박', 4, 'noun',
-    ['절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동'],
+    ['경고', '위험', '공포', '공격', '침입', '범행', '폭력', '재난', '사고', '피해'],
     tips({
       etymology: '고대 영어 \'threat\'에서 유래했으며 본래 \'군중\'이나 \'압박\'을 의미하다가 해를 끼치겠다는 의사 표시로 발전했습니다.',
       visual: '누군가 주먹을 불끈 쥐고 위협적인 자세를 취하며 상대방을 겁주는 장면을 상상해 보세요.',
@@ -262,6 +340,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'a statement of an intention to inflict pain, injury, damage, or other hostile action on someone in retribution for something done or not done',
       synonyms: ['menace', 'intimidation', 'danger'],
       antonyms: ['protection', 'safety', 'assurance'],
+      wordDistractors: ['thread', 'treat', 'thrash'],
+      definitionDistractors: [
+        'A formal written agreement between two or more parties.',
+        'A public announcement made to inform citizens of new rules.',
+        'A verbal promise to provide assistance during a difficult time.',
+      ],
       exampleSentences: [
         { en: 'The anonymous caller made a serious threat against the company\'s headquarters.', ko: '익명의 발신자가 회사 본사를 상대로 심각한 협박을 했습니다.' },
         { en: 'Rising sea levels pose a constant threat to small island nations.', ko: '해수면 상승은 작은 섬나라들에게 지속적인 위협이 됩니다.' },
@@ -281,6 +365,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'To cause someone to experience a sudden feeling of intense excitement, pleasure, or fear.',
       synonyms: ['excite', 'electrify', 'stimulate'],
       antonyms: ['bore', 'depress', 'calm'],
+      wordDistractors: ['trill', 'grill', 'frill'],
+      definitionDistractors: [
+        'To gradually reduce the intensity of a feeling over time.',
+        'To carefully organize items in a neat and orderly manner.',
+        'To deliver a formal speech in front of an audience.',
+      ],
       exampleSentences: [
         { en: 'The sudden announcement of the victory will likely excite and move the entire crowd.', ko: '갑작스러운 승리 발표는 군중 전체를 오싹할 정도로 열광시킬 것입니다.' },
         { en: 'Adventurers often seek activities that provide a physical rush and intense emotion.', ko: '모험가들은 종종 신체적인 전율과 강렬한 감정을 선사하는 활동을 찾습니다.' },
@@ -300,13 +390,19 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'The passage which leads from the back of the mouth of a person or animal to the lungs and stomach.',
       synonyms: ['pharynx', 'gullet', 'esophagus'],
       antonyms: ['nape', 'exterior', 'surface'],
+      wordDistractors: ['throb', 'froth', 'cloth'],
+      definitionDistractors: [
+        'The bony structure that forms the framework of the chest.',
+        'The outer layer of skin covering the neck and shoulders.',
+        'A tube-like organ responsible for filtering blood in the body.',
+      ],
       exampleSentences: [
         { en: 'Drinking warm honey water can help soothe a dry and irritated throat.', ko: '따뜻한 꿀물을 마시는 것은 건조하고 따가운 목을 진정시키는 데 도움이 될 수 있다.' },
         { en: 'The singer felt a sharp pain in her throat after the long concert.', ko: '가수는 긴 콘서트가 끝난 후 목에 날카로운 통증을 느꼈다.' },
       ],
     }
   ),
-  word('through', '~을 통해', 7, 'preposition',
+  word('through', '직통의', 7, 'adjective',
     ['우회하는', '정지된', '복잡한', '간접적인', '막힌', '일시적인', '단절된', '우연한', '수동적인', '불투명한'],
     tips({
       etymology: '고대 영어 \'thurh\'에서 유래하여 한쪽 끝에서 다른 쪽 끝까지 뚫고 지나가는 움직임을 나타냅니다.',
@@ -319,6 +415,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'Moving from one side to the other without stopping or changing to another vehicle or route.',
       synonyms: ['direct', 'nonstop', 'unbroken'],
       antonyms: ['indirect', 'stopping', 'interrupted'],
+      wordDistractors: ['thorough', 'though', 'trough'],
+      definitionDistractors: [
+        'Existing temporarily or lasting for only a brief period.',
+        'Positioned at an angle or diagonal to the main direction.',
+        'Occurring repeatedly at regular intervals over time.',
+      ],
       exampleSentences: [
         { en: 'Passengers can take a through flight from Seoul to New York without any layovers.', ko: '승객들은 경유지 없이 서울에서 뉴욕까지 가는 직항편을 이용할 수 있습니다.' },
         { en: 'The city council decided to build a through road to reduce traffic congestion in the suburbs.', ko: '시의회는 교외의 교통 체증을 줄이기 위해 직통 도로를 건설하기로 결정했습니다.' },
@@ -338,6 +440,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'To propel something through the air by a rapid movement of the arm and hand.',
       synonyms: ['hurl', 'toss', 'fling'],
       antonyms: ['catch', 'receive', 'keep'],
+      wordDistractors: ['throe', 'throne', 'throb'],
+      definitionDistractors: [
+        'To carefully place an object down on a flat surface.',
+        'To pull something toward oneself with steady force.',
+        'To rotate an object around a central fixed point.',
+      ],
       exampleSentences: [
         { en: 'The quarterback had to release the football quickly before being tackled.', ko: '쿼터백은 태클을 당하기 전에 미식축구 공을 빠르게 던져야 했습니다.' },
         { en: 'Please do not discard your trash on the ground; use the bin instead.', ko: '쓰레기를 바닥에 던지지 말고 쓰레기통을 이용해 주세요.' },
@@ -357,6 +465,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'the short, thick first digit of the human hand, set lower and apart from the other four fingers',
       synonyms: ['pollex', 'digit', 'finger'],
       antonyms: ['toe', 'palm', 'wrist'],
+      wordDistractors: ['thump', 'plumb', 'crumb'],
+      definitionDistractors: [
+        'The longest finger located in the center of the hand.',
+        'The joint connecting the hand to the forearm.',
+        'The curved part of the palm below the little finger.',
+      ],
       exampleSentences: [
         { en: 'The carpenter accidentally hit his left thumb with a heavy hammer.', ko: '목수는 실수로 무거운 망치로 자신의 왼쪽 엄지손가락을 쳤다.' },
         { en: 'Most primates have an opposable thumb that allows them to grasp small objects firmly.', ko: '대부분의 영장류는 작은 물체를 단단히 잡을 수 있게 해주는 마주 보는 엄지손가락을 가지고 있다.' },
@@ -376,13 +490,19 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'As a result or consequence of this; in the manner now indicated.',
       synonyms: ['consequently', 'therefore', 'hence'],
       antonyms: ['nevertheless', 'otherwise', 'regardless'],
+      wordDistractors: ['this', 'thud', 'thrust'],
+      definitionDistractors: [
+        'In a way that contradicts the previous statement entirely.',
+        'At a point in time before the events being described.',
+        'Without any connection to the matter being discussed.',
+      ],
       exampleSentences: [
         { en: 'The company reduced its expenses and was thus able to increase its profits.', ko: '그 회사는 비용을 절감했고, 이와 같이 이익을 늘릴 수 있었습니다.' },
         { en: 'The test results were positive, thus proving the theory was correct.', ko: '테스트 결과가 긍정적이었으며, 따라서 그 이론이 옳았음을 증명했습니다.' },
       ],
     }
   ),
-  word('tick', '시계소리', 10, 'noun',
+  word('tick', '시계소리', 3, 'noun',
     ['바늘', '태엽', '알람', '진동', '소음', '정적', '속도', '리듬', '박자', '초침'],
     tips({
       etymology: '시계가 돌아갈 때 나는 짧고 가벼운 소리를 흉내 낸 의성어에서 유래했습니다.',
@@ -395,6 +515,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'A short, light, rhythmic sound made by a clock or watch as it functions.',
       synonyms: ['click', 'beat', 'tapping'],
       antonyms: ['silence', 'quiet', 'stillness'],
+      wordDistractors: ['trick', 'thick', 'stick'],
+      definitionDistractors: [
+        'A loud prolonged ringing sound produced by a bell.',
+        'A deep vibrating hum coming from an engine or motor.',
+        'A sharp cracking noise made by breaking wood.',
+      ],
       exampleSentences: [
         { en: 'The constant rhythmic sound of the grandfather clock filled the empty hallway.', ko: '괘종시계의 끊임없는 규칙적인 소리가 빈 복도를 가득 채웠다.' },
         { en: 'Every single movement of the second hand produced a sharp noise in the silent room.', ko: '조용한 방 안에서 초침의 모든 움직임이 날카로운 소리를 만들어냈다.' },
@@ -414,6 +540,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'The periodic rise and fall of the sea level caused by the gravitational forces of the moon and the sun.',
       synonyms: ['current', 'flow', 'stream'],
       antonyms: ['stillness', 'stagnation', 'motionlessness'],
+      wordDistractors: ['tied', 'tine', 'time'],
+      definitionDistractors: [
+        'A strong wind that blows steadily from a single direction.',
+        'The visible layer of foam or spray on the ocean surface.',
+        'A deep underwater channel carved by volcanic activity.',
+      ],
       exampleSentences: [
         { en: 'The local fishermen always check the schedule of the rising water to ensure their safety.', ko: '현지 어부들은 안전을 보장하기 위해 항상 밀물 시간을 확인합니다.' },
         { en: 'Strong currents can be dangerous when the ocean level changes rapidly during the day.', ko: '하루 동안 해수면이 급격히 변할 때 강한 조류는 위험할 수 있습니다.' },
@@ -433,6 +565,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'arranged in good order and kept clean or neat',
       synonyms: ['neat', 'orderly', 'organized'],
       antonyms: ['messy', 'cluttered', 'disorganized'],
+      wordDistractors: ['tide', 'ditty', 'biddy'],
+      definitionDistractors: [
+        'Decorated with colorful patterns or elaborate designs.',
+        'Made from natural materials that are environmentally friendly.',
+        'Having a bright or shiny appearance that catches the eye.',
+      ],
       exampleSentences: [
         { en: 'The children were instructed to keep their play area neat and tidy after finishing their games.', ko: '아이들은 게임을 마친 후 놀이 공간을 말쑥하고 정돈된 상태로 유지하라는 지시를 받았습니다.' },
         { en: 'A tidy workspace can significantly improve your focus and productivity during long study sessions.', ko: '말쑥한 작업 공간은 긴 학습 시간 동안 집중력과 생산성을 크게 향상시킬 수 있습니다.' },
@@ -452,6 +590,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'to fasten or attach something with a string, rope, or similar cord by forming a knot or bow',
       synonyms: ['fasten', 'knot', 'bind'],
       antonyms: ['untie', 'unfasten', 'loosen'],
+      wordDistractors: ['tile', 'tire', 'dye'],
+      definitionDistractors: [
+        'To cut something into two equal pieces using a blade.',
+        'To stretch an elastic material until it reaches its limit.',
+        'To wrap a protective layer around a fragile object.',
+      ],
       exampleSentences: [
         { en: 'She helped the little boy tie his shoelaces before they went outside.', ko: '그녀는 밖에 나가기 전에 어린 소년이 신발끈을 매는 것을 도와주었다.' },
         { en: 'He tied a ribbon around the gift box to make it look more festive.', ko: '그는 선물 상자를 더 화려하게 보이게 하려고 리본을 매었다.' },
@@ -471,6 +615,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'A large carnivorous feline mammal of Asia, having a tawny coat with black transverse stripes.',
       synonyms: ['big cat', 'feline', 'predator'],
       antonyms: ['prey', 'herbivore', 'quarry'],
+      wordDistractors: ['trigger', 'liger', 'timber'],
+      definitionDistractors: [
+        'A large aquatic mammal found in rivers and lakes of Africa.',
+        'A swift four-legged animal known for its spotted coat pattern.',
+        'A nocturnal bird of prey with excellent night vision.',
+      ],
       exampleSentences: [
         { en: 'The majestic predator prowled silently through the tall grass of the jungle.', ko: '그 위엄 있는 포식자는 정글의 긴 풀숲 사이를 소리 없이 살금살금 기어갔다.' },
         { en: 'Conservationists are working hard to protect the endangered population in their natural habitat.', ko: '환경 보호 활동가들은 자연 서식지에 있는 멸종 위기 개체군을 보호하기 위해 열심히 노력하고 있다.' },
@@ -490,6 +640,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'fixed, fastened, or drawn together firmly so as to be difficult to move or undo',
       synonyms: ['firm', 'secure', 'taut'],
       antonyms: ['loose', 'slack', 'relaxed'],
+      wordDistractors: ['tilt', 'light', 'sight'],
+      definitionDistractors: [
+        'Having a rough or uneven texture across the surface.',
+        'Easily broken apart or crumbled when touched lightly.',
+        'Positioned at a steep angle relative to the ground.',
+      ],
       exampleSentences: [
         { en: 'Make sure the knot is firm and secure so it does not come undone.', ko: '매듭이 풀리지 않도록 단단하고 꽉 조여졌는지 확인하세요.' },
         { en: 'The deadline is very close, so we have a very demanding schedule this week.', ko: '마감 기한이 임박해서 이번 주 일정은 매우 빡빡합니다.' },
@@ -497,7 +653,7 @@ export const vocabBatch65: VocabItem[] = [
     }
   ),
   word('till', '~까지', 7, 'preposition',
-    ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
+    ['~동안', '~이후', '~전에', '~사이에', '~무렵', '~중에', '~이래', '~이내', '~즈음', '~경에'],
     tips({
       etymology: '고대 노르드어 \'til\'에서 유래하여 목표나 지점에 도달함을 의미합니다.',
       visual: '시계 바늘이 특정 숫자에 닿을 때까지 멈춰서 기다리는 모습을 상상하세요.',
@@ -509,6 +665,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'Up to the point in time or the event mentioned.',
       synonyms: ['until', 'up to', 'pending'],
       antonyms: ['from', 'since', 'after'],
+      wordDistractors: ['tile', 'tilt', 'fill'],
+      definitionDistractors: [
+        'During the exact moment that something occurs.',
+        'Starting from a particular point and continuing forward.',
+        'At intervals spread evenly across a span of time.',
+      ],
       exampleSentences: [
         { en: 'The local grocery store remains open till ten o\'clock at night.', ko: '그 동네 식료품점은 밤 10시까지 영업을 합니다.' },
         { en: 'Please hold the line till the operator connects your call.', ko: '교환원이 전화를 연결해 줄 때까지 끊지 말고 기다려 주세요.' },
@@ -528,6 +690,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'Wood that is prepared for use in building and carpentry.',
       synonyms: ['lumber', 'wood', 'plank'],
       antonyms: ['steel', 'concrete', 'plastic'],
+      wordDistractors: ['timbre', 'tinder', 'limber'],
+      definitionDistractors: [
+        'A type of mineral extracted from underground quarries.',
+        'Dried leaves and grass used as fuel for starting fires.',
+        'A synthetic building material made from chemical compounds.',
+      ],
       exampleSentences: [
         { en: 'The old barn was constructed entirely from heavy oak timber.', ko: '그 오래된 헛간은 전부 단단한 참나무 재목으로 지어졌습니다.' },
         { en: 'Local companies are permitted to harvest timber from this section of the forest.', ko: '지역 회사들은 숲의 이 구역에서 목재를 채취하는 것을 허가받았습니다.' },
@@ -535,7 +703,7 @@ export const vocabBatch65: VocabItem[] = [
     }
   ),
   word('time', '때', 2, 'noun',
-    ['목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계'],
+    ['공간', '순간', '기간', '세기', '시대', '날짜', '계절', '시각', '기한', '주기'],
     tips({
       etymology: '고대 영어 \'tima\'에서 유래했으며, 이는 \'나누다\'라는 의미의 어근에서 파생되어 정해진 기간이나 순간을 뜻하게 되었습니다.',
       visual: '시계 바늘이 째깍거리며 특정 숫자를 가리키는 순간이나 달력의 한 칸을 떠올려 보세요.',
@@ -547,6 +715,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'A continuous, measurable quantity in which events occur in a sequence from the past through the present to the future.',
       synonyms: ['period', 'moment', 'duration'],
       antonyms: ['eternity', 'timelessness', 'infinity'],
+      wordDistractors: ['lime', 'dime', 'mime'],
+      definitionDistractors: [
+        'The physical distance between two fixed geographic points.',
+        'A unit of energy used in scientific calculations.',
+        'The rate at which an object moves through empty space.',
+      ],
       exampleSentences: [
         { en: 'The best period to visit the park is during the spring.', ko: '그 공원을 방문하기 가장 좋은 때는 봄입니다.' },
         { en: 'Every person needs some private space to relax at some point.', ko: '모든 사람은 어느 때고 휴식을 취할 개인적인 공간이 필요합니다.' },
@@ -566,6 +740,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'A silvery-white metal element that is often used to coat other metals to prevent corrosion or to make cans for food storage.',
       synonyms: ['stannum', 'canister', 'container'],
       antonyms: ['plastic', 'wood', 'glass'],
+      wordDistractors: ['tint', 'shin', 'pin'],
+      definitionDistractors: [
+        'A hard black mineral used as a primary source of fuel.',
+        'A flexible rubber compound used in manufacturing tires.',
+        'A transparent crystalline substance formed from molten sand.',
+      ],
       exampleSentences: [
         { en: 'Ancient civilizations mixed copper with this metal to create bronze tools.', ko: '고대 문명들은 청동 도구를 만들기 위해 구리와 이 금속을 섞었습니다.' },
         { en: 'The roof was covered with corrugated sheets of this silvery material to reflect heat.', ko: '지붕은 열을 반사하기 위해 이 은색 재질의 물결 모양 판으로 덮여 있었습니다.' },
@@ -585,6 +765,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'Extremely small in size, amount, or degree.',
       synonyms: ['minuscule', 'microscopic', 'miniature'],
       antonyms: ['enormous', 'gigantic', 'immense'],
+      wordDistractors: ['tidy', 'tinny', 'shiny'],
+      definitionDistractors: [
+        'Having a soft and delicate texture when touched.',
+        'Being lightweight and easy to carry around.',
+        'Appearing faint or barely visible in dim lighting.',
+      ],
       exampleSentences: [
         { en: 'The newborn kitten had such tiny paws that they barely made a sound on the floor.', ko: '갓 태어난 새끼 고양이는 발바닥이 너무 자그마해서 바닥에서 거의 소리가 나지 않았다.' },
         { en: 'Scientists discovered a tiny crack in the glass that was invisible to the naked eye.', ko: '과학자들은 육안으로는 보이지 않는 유리의 아주 작은 균열을 발견했다.' },
@@ -592,7 +778,7 @@ export const vocabBatch65: VocabItem[] = [
     }
   ),
   word('tip', '끝', 6, 'noun',
-    ['변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념'],
+    ['가장자리', '모서리', '표면', '꼭대기', '바닥', '측면', '중심', '뿌리', '밑바닥', '가운데'],
     tips({
       etymology: '중세 영어 \'tippe\'에서 유래하여 어떤 물체의 뾰족하거나 좁은 끝부분을 가리킵니다.',
       visual: '연필의 뾰족한 심 끝이나 빙산의 일각처럼 튀어나온 윗부분을 상상해 보세요.',
@@ -604,6 +790,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'The pointed or rounded end or extremity of something thin or tapering.',
       synonyms: ['point', 'peak', 'summit'],
       antonyms: ['base', 'bottom', 'center'],
+      wordDistractors: ['trip', 'dip', 'sip'],
+      definitionDistractors: [
+        'The flat central surface area of a solid object.',
+        'A deep indentation or groove carved into a material.',
+        'The widest part of an object measured across its middle.',
+      ],
       exampleSentences: [
         { en: 'The sharp point at the very end of the pencil broke off while I was writing.', ko: '글을 쓰는 동안 연필의 아주 맨 끝부분인 날카로운 점이 부러졌다.' },
         { en: 'She carefully balanced herself on the extreme edges of her toes to reach the top shelf.', ko: '그녀는 높은 선반에 닿기 위해 발가락 끝으로 조심스럽게 균형을 잡았다.' },
@@ -623,6 +815,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'to become weary or to feel a need for rest after physical or mental effort',
       synonyms: ['exhaust', 'fatigue', 'weary'],
       antonyms: ['energize', 'invigorate', 'refresh'],
+      wordDistractors: ['tile', 'hire', 'fire'],
+      definitionDistractors: [
+        'To gradually increase the speed or intensity of an activity.',
+        'To provide nourishment or sustenance to the body.',
+        'To carefully repair or mend a broken object.',
+      ],
       exampleSentences: [
         { en: 'Long walks across the steep hills often exhaust my physical strength.', ko: '가파른 언덕을 가로지르는 긴 산책은 종종 내 체력을 소진시킨다.' },
         { en: 'She never feels weary of helping people in need within her community.', ko: '그녀는 지역 사회의 어려운 사람들을 돕는 일에 결코 지치지 않는다.' },
@@ -642,6 +840,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'a group of similar cells that work together to perform a specific function in a living organism',
       synonyms: ['structure', 'fabric', 'matter'],
       antonyms: ['void', 'nothingness', 'individual cell'],
+      wordDistractors: ['fissure', 'missile', 'thistle'],
+      definitionDistractors: [
+        'A single microscopic organism that can reproduce independently.',
+        'A liquid substance that circulates through the bloodstream.',
+        'A hard protective shell covering the exterior of an organ.',
+      ],
       exampleSentences: [
         { en: 'The surgeon examined the damaged nerve to determine the extent of the injury.', ko: '외과 의사는 부상 정도를 파악하기 위해 손상된 신경 조직을 검사했습니다.' },
         { en: 'Scarring occurs when fibrous material replaces normal skin after a deep cut.', ko: '깊은 상처 후에 섬유성 조직이 정상 피부를 대체할 때 흉터가 생깁니다.' },
@@ -649,7 +853,7 @@ export const vocabBatch65: VocabItem[] = [
     }
   ),
   word('title', '표제', 5, 'noun',
-    ['사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차', '정보'],
+    ['목차', '서문', '부제', '헤드라인', '초록', '본문', '색인', '각주', '개요', '서론'],
     tips({
       etymology: '라틴어 titulus에서 유래하여 명예로운 명칭이나 비문의 글귀를 의미하게 되었습니다.',
       visual: '책의 맨 앞 표지에 굵고 큰 글씨로 적혀 있는 책 이름을 상상해 보세요.',
@@ -661,14 +865,20 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'The name of a book, composition, or other artistic work, or a name that describes someone\'s position or job.',
       synonyms: ['heading', 'designation', 'appellation'],
       antonyms: ['content', 'substance', 'body'],
+      wordDistractors: ['tattle', 'tittle', 'riddle'],
+      definitionDistractors: [
+        'A brief summary written at the end of a document.',
+        'The main body of text in a published article or essay.',
+        'A footnote or annotation placed at the bottom of a page.',
+      ],
       exampleSentences: [
         { en: 'The author spent several weeks deciding on the perfect name for her new novel.', ko: '작가는 그녀의 새 소설을 위한 완벽한 표제를 결정하는 데 몇 주를 보냈다.' },
         { en: 'He officially received the formal rank of Senior Vice President after the promotion.', ko: '그는 승진 후 공식적으로 수석 부사장이라는 직함을 받았다.' },
       ],
     }
   ),
-  word('to', '~로', 3, 'preposition',
-    ['기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과'],
+  word('to', '~로', 1, 'preposition',
+    ['~에서', '~위에', '~아래', '~사이', '~옆에', '~뒤에', '~앞에', '~건너', '~너머', '~속에'],
     tips({
       etymology: '고대 영어 \'tō\'에서 유래하여 방향이나 도달점을 나타내는 전치사로 굳어졌습니다.',
       visual: '화살표가 특정 지점을 향해 날아가 과녁에 꽂히는 이미지를 상상해 보세요.',
@@ -680,6 +890,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'expressing motion in the direction of a particular location, person, or thing',
       synonyms: ['toward', 'unto', 'into'],
       antonyms: ['from', 'away', 'off'],
+      wordDistractors: ['too', 'two', 'do'],
+      definitionDistractors: [
+        'Indicating the origin or starting point of a journey.',
+        'Describing the position directly above another object.',
+        'Expressing a state of being located inside a container.',
+      ],
       exampleSentences: [
         { en: 'The students walked slowly to the library after their lunch break.', ko: '학생들은 점심시간이 끝난 후 도서관으로 천천히 걸어갔습니다.' },
         { en: 'Please send the completed application form to the manager by Friday.', ko: '작성된 신청서를 금요일까지 매니저에게 보내주세요.' },
@@ -687,7 +903,7 @@ export const vocabBatch65: VocabItem[] = [
     }
   ),
   word('tobacco', '담배', 6, 'noun',
-    ['조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준'],
+    ['커피', '차', '코코아', '인삼', '허브', '술', '카페인', '니코틴', '아편', '향신료'],
     tips({
       etymology: '스페인어 tabaco에서 유래되었으며, 원래는 원주민들이 잎을 말아 피우던 도구를 지칭했습니다.',
       visual: '말린 갈색 잎사귀가 가득 담긴 파이프나 종이에 말린 궐련의 모습을 상상해 보세요.',
@@ -699,6 +915,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'The dried leaves of a specific plant that are prepared for smoking, chewing, or sniffing.',
       synonyms: ['leaf', 'snuff', 'shag'],
       antonyms: ['antidote', 'remedy', 'purifier'],
+      wordDistractors: ['tomato', 'topaz', 'torment'],
+      definitionDistractors: [
+        'A sweet-smelling herb commonly used in cooking and medicine.',
+        'A fermented beverage made from crushed grapes or grains.',
+        'A type of grain harvested from tall cereal plants.',
+      ],
       exampleSentences: [
         { en: 'The government increased the tax on all products containing this dried leaf to discourage smoking.', ko: '정부는 흡연을 억제하기 위해 이 말린 잎을 포함한 모든 제품에 대한 세금을 인상했습니다.' },
         { en: 'Farmers in the southern region have cultivated these plants for generations as their primary cash crop.', ko: '남부 지역의 농부들은 수 세대 동안 이 식물들을 주요 현금 작물로 재배해 왔습니다.' },
@@ -718,6 +940,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'On or during the present day, or the period of time that is happening now.',
       synonyms: ['nowadays', 'currently', 'presently'],
       antonyms: ['yesterday', 'tomorrow', 'formerly'],
+      wordDistractors: ['toady', 'toddy', 'toupee'],
+      definitionDistractors: [
+        'A day in the past that holds special historical significance.',
+        'The final day of a week or designated work period.',
+        'An unspecified point in the distant future.',
+      ],
       exampleSentences: [
         { en: 'The weather is exceptionally warm and sunny for this time of year.', ko: '일 년 중 이맘때 날씨치고는 오늘은 유난히 따뜻하고 화창합니다.' },
         { en: 'Many people prefer working from home in the modern digital era.', ko: '현대의 디지털 시대에는 많은 사람들이 재택근무를 선호합니다.' },
@@ -737,6 +965,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'One of the five separate parts at the end of the human foot.',
       synonyms: ['digit', 'extremity', 'phalange'],
       antonyms: ['heel', 'sole', 'instep'],
+      wordDistractors: ['tow', 'foe', 'doe'],
+      definitionDistractors: [
+        'The rounded bone forming the ankle joint of the foot.',
+        'The arch-shaped underside of the foot between heel and ball.',
+        'A thick protective pad covering the bottom of the foot.',
+      ],
       exampleSentences: [
         { en: 'The athlete suffered a minor injury to his big toe during the marathon.', ko: '그 운동선수는 마라톤 도중 엄지발가락에 가벼운 부상을 입었습니다.' },
         { en: 'Please wiggle your toes to make sure the circulation is returning to your feet.', ko: '발에 혈액 순환이 돌아오고 있는지 확인하기 위해 발가락을 까딱여 보세요.' },
@@ -756,6 +990,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'in or into a single group, mass, or place with another person or thing',
       synonyms: ['jointly', 'collectively', 'combined'],
       antonyms: ['separately', 'individually', 'alone'],
+      wordDistractors: ['toddler', 'tether', 'gather'],
+      definitionDistractors: [
+        'In a sequential order, one item following the next.',
+        'At a distance that is far removed from other things.',
+        'In a competitive manner against other participants.',
+      ],
       exampleSentences: [
         { en: 'The two companies decided to work on the new project in partnership.', ko: '두 회사는 새로운 프로젝트를 위해 함께 협력하기로 결정했습니다.' },
         { en: 'Friends gathered at the park to enjoy a picnic under the sun.', ko: '친구들은 햇살 아래서 소풍을 즐기기 위해 공원에 함께 모였습니다.' },
@@ -763,7 +1003,7 @@ export const vocabBatch65: VocabItem[] = [
     }
   ),
   word('toilet', '화장실', 4, 'noun',
-    ['조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준'],
+    ['욕실', '부엌', '거실', '침실', '복도', '발코니', '다락방', '지하실', '세탁실', '주방'],
     tips({
       etymology: '프랑스어 \'toilette\'에서 유래했으며, 원래는 화장대 위에 덮는 천을 의미하다가 몸단장을 하는 방, 즉 화장실로 의미가 확장되었습니다.',
       visual: '공공장소에서 흔히 볼 수 있는 남녀 구분 표시가 그려진 문이나 하얀색 도자기 변기를 떠올려 보세요.',
@@ -775,6 +1015,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'A large bowl and its associated plumbing used for the disposal of human waste, or the room containing this fixture.',
       synonyms: ['lavatory', 'restroom', 'bathroom'],
       antonyms: ['outdoors', 'wilderness', 'open-air'],
+      wordDistractors: ['toilsome', 'turret', 'goblet'],
+      definitionDistractors: [
+        'A small enclosed space used for storing cleaning supplies.',
+        'A shallow basin mounted on a wall for washing hands only.',
+        'A heated room designed for relaxation and steam bathing.',
+      ],
       exampleSentences: [
         { en: 'Please remember to flush the handle after you use the facility.', ko: '시설을 이용한 후에는 반드시 레버를 내려 물을 내려주세요.' },
         { en: 'The public building provides a clean area for people to wash up and use the commode.', ko: '그 공공 건물은 사람들이 씻고 변기를 사용할 수 있는 깨끗한 구역을 제공합니다.' },
@@ -794,6 +1040,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'the day after the present day',
       synonyms: ['following day', 'next day', 'morrow'],
       antonyms: ['yesterday', 'past', 'prior day'],
+      wordDistractors: ['torment', 'borrow', 'sorrow'],
+      definitionDistractors: [
+        'The day that has just ended before the current one.',
+        'A regular weekly occurrence that repeats on a fixed day.',
+        'An indefinite period far ahead in the distant future.',
+      ],
       exampleSentences: [
         { en: 'The weather forecast predicts heavy rain will arrive by tomorrow morning.', ko: '일기 예보는 내일 아침까지 폭우가 올 것이라고 예측합니다.' },
         { en: 'Please finish the report and submit it to the manager before noon tomorrow.', ko: '보고서를 완성해서 내일 정오 전까지 매니저에게 제출해 주세요.' },
@@ -801,7 +1053,7 @@ export const vocabBatch65: VocabItem[] = [
     }
   ),
   word('tone', '음조', 5, 'noun',
-    ['문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인'],
+    ['음높이', '멜로디', '화음', '리듬', '박자', '가락', '선율', '음색', '음량', '떨림'],
     tips({
       etymology: '그리스어 \'tonos\'에서 유래되었으며, 이는 \'팽팽하게 당겨진 줄\'을 의미하여 소리의 높낮이나 긴장감을 나타냅니다.',
       visual: '피아노 건반을 누를 때 울려 퍼지는 파동이나 색칠된 도화지의 전체적인 색감을 상상해 보세요.',
@@ -813,6 +1065,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'The quality of a sound, voice, or piece of writing that reveals a particular emotion or attitude.',
       synonyms: ['pitch', 'inflection', 'timbre'],
       antonyms: ['silence', 'monotony', 'quiet'],
+      wordDistractors: ['bone', 'cone', 'zone'],
+      definitionDistractors: [
+        'The volume or loudness of a sound measured in decibels.',
+        'A rhythmic pattern of beats repeated in a musical piece.',
+        'The speed at which a series of notes are played.',
+      ],
       exampleSentences: [
         { en: 'His sarcastic remark changed the entire mood of the meeting.', ko: '그의 비꼬는 듯한 어조가 회의의 전체적인 분위기를 바꾸어 놓았습니다.' },
         { en: 'The artist used a warm color palette to create a welcoming atmosphere.', ko: '그 화가는 따뜻한 색조를 사용하여 환영하는 분위기를 조성했습니다.' },
@@ -832,6 +1090,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'The fleshy muscular organ in the mouth of a mammal, used for tasting, licking, swallowing, and articulating speech.',
       synonyms: ['language', 'dialect', 'speech'],
       antonyms: ['silence', 'muteness', 'quiet'],
+      wordDistractors: ['tongs', 'lunge', 'plunge'],
+      definitionDistractors: [
+        'The hard bony structure forming the roof of the mouth.',
+        'The soft tissue at the back of the throat near the tonsils.',
+        'A set of vocal cords that produce sound when vibrating.',
+      ],
       exampleSentences: [
         { en: 'The doctor asked the patient to stick out his tongue for examination.', ko: '의사는 진찰을 위해 환자에게 혀를 내밀어 보라고 요청했다.' },
         { en: 'French is her mother tongue, but she speaks English fluently.', ko: '프랑스어는 그녀의 모국어이지만, 그녀는 영어를 유창하게 구사한다.' },
@@ -851,6 +1115,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'The evening or night of the present day.',
       synonyms: ['this evening', 'this night', 'nighttime'],
       antonyms: ['today', 'tomorrow', 'yesterday'],
+      wordDistractors: ['tonic', 'tonnage', 'bonfire'],
+      definitionDistractors: [
+        'The early hours of the morning just before sunrise.',
+        'A period of late afternoon when the sun begins to set.',
+        'The middle of the day when the sun is at its highest.',
+      ],
       exampleSentences: [
         { en: 'The moon looks exceptionally bright and beautiful in the sky.', ko: '하늘에 뜬 달이 유난히 밝고 아름답다.' },
         { en: 'We are planning to watch a new movie at the cinema after dinner.', ko: '우리는 저녁 식사 후에 영화관에서 새 영화를 볼 계획이다.' },
@@ -870,6 +1140,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'In addition to what has been mentioned, or to a higher degree than is desirable.',
       synonyms: ['also', 'as well', 'excessively'],
       antonyms: ['neither', 'insufficiently', 'barely'],
+      wordDistractors: ['two', 'boo', 'moo'],
+      definitionDistractors: [
+        'Used to indicate a single option with no alternatives.',
+        'Expressing that something happened only once before.',
+        'Describing something that occurs at rare intervals.',
+      ],
       exampleSentences: [
         { en: 'She decided to join the hiking club too.', ko: '그녀 또한 등산 동호회에 가입하기로 결정했다.' },
         { en: 'The coffee was too hot to drink immediately.', ko: '그 커피는 즉시 마시기에는 너무 뜨거웠다.' },
@@ -877,7 +1153,7 @@ export const vocabBatch65: VocabItem[] = [
     }
   ),
   word('tool', '도구', 7, 'noun',
-    ['장소', '사람', '시간', '이유', '결과', '목표', '감정', '날씨', '음식', '의복'],
+    ['장비', '기계', '부품', '재료', '기구', '용품', '물자', '비품', '설비', '자재'],
     tips({
       etymology: '고대 영어 \'tol\'에서 유래했으며, 무언가를 만드는 데 쓰이는 수단을 의미합니다.',
       visual: '벨트에 망치와 드라이버를 가득 채운 목수의 모습을 상상해 보세요.',
@@ -889,6 +1165,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'A handheld device or piece of equipment used to carry out a particular function or task.',
       synonyms: ['implement', 'instrument', 'apparatus'],
       antonyms: ['hindrance', 'obstruction', 'barrier'],
+      wordDistractors: ['toll', 'stool', 'pool'],
+      definitionDistractors: [
+        'A large motorized machine used in industrial manufacturing.',
+        'A raw material that is processed into a finished product.',
+        'A protective garment worn during hazardous work conditions.',
+      ],
       exampleSentences: [
         { en: 'The mechanic reached for a specialized wrench to fix the engine.', ko: '정비공은 엔진을 수리하기 위해 특수 렌치를 집어 들었다.' },
         { en: 'Effective communication is a vital asset for any successful leader.', ko: '효과적인 의사소통은 성공적인 리더에게 필수적인 도구이다.' },
@@ -908,6 +1190,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'One of the hard white structures in the mouth used for biting and chewing food.',
       synonyms: ['fang', 'molar', 'tusk'],
       antonyms: ['gum', 'tongue', 'palate'],
+      wordDistractors: ['booth', 'sooth', 'youth'],
+      definitionDistractors: [
+        'The soft pink tissue that surrounds the base of the teeth.',
+        'A thin membrane lining the inside of the cheek.',
+        'The hinged bone structure that enables the jaw to open.',
+      ],
       exampleSentences: [
         { en: 'The dentist had to remove a decayed tooth to prevent further pain.', ko: '치과 의사는 더 이상의 통증을 막기 위해 썩은 이를 뽑아야 했습니다.' },
         { en: 'Sweet snacks can cause damage to your protective enamel layer.', ko: '단 간식은 치아의 보호 법랑질 층에 손상을 줄 수 있습니다.' },
@@ -927,6 +1215,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'The highest part, point, or upper surface of something.',
       synonyms: ['peak', 'summit', 'apex'],
       antonyms: ['bottom', 'base', 'foot'],
+      wordDistractors: ['tap', 'pop', 'hop'],
+      definitionDistractors: [
+        'The exact center point of a symmetrical structure.',
+        'The outer edge or boundary of a circular area.',
+        'The lowest layer forming the foundation of a building.',
+      ],
       exampleSentences: [
         { en: 'The hikers finally reached the snowy summit at the very peak of the mountain.', ko: '등산객들은 마침내 산의 맨 꼭대기에 있는 눈 덮인 정상에 도달했다.' },
         { en: 'She placed a bright gold star on the highest branch of the Christmas tree.', ko: '그녀는 크리스마스 트리의 가장 높은 가지 위에 밝은 황금색 별을 놓았다.' },
@@ -946,6 +1240,12 @@ export const vocabBatch65: VocabItem[] = [
       definition: 'the act of inflicting severe physical or mental pain as a punishment or to force someone to say something',
       synonyms: ['torment', 'agony', 'suffering'],
       antonyms: ['comfort', 'pleasure', 'relief'],
+      wordDistractors: ['texture', 'torsion', 'posture'],
+      definitionDistractors: [
+        'A formal process of questioning used in legal investigations.',
+        'A strict physical training regimen for military personnel.',
+        'A medical procedure performed to diagnose internal injuries.',
+      ],
       exampleSentences: [
         { en: 'The dictator used physical abuse and mental pressure as a form of torture.', ko: '독재자는 고문의 한 형태로 신체적 학대와 정신적 압박을 사용했다.' },
         { en: 'Waiting for the exam results in total silence was absolute torture for her.', ko: '완전한 침묵 속에서 시험 결과를 기다리는 것은 그녀에게 절대적인 고문이었다.' },

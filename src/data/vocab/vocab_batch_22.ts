@@ -21,7 +21,7 @@ export const vocabBatch22: VocabItem[] = [
       ],
     }
   ),
-  word('against', '…에', 3, 'preposition',
+  word('against', '~에 반대하여, ~에 맞서', 3, 'preposition',
     ['이전에', '이후에', '대신에', '통해', '기준으로', '관하여', '대하여', '안에', '밖에', '위에'],
     tips({
       etymology: '고대 영어 \'ongean\'에서 유래하여 \'반대하여\' 혹은 \'맞서서\'라는 의미를 가집니다.',
@@ -439,7 +439,7 @@ export const vocabBatch22: VocabItem[] = [
       ],
     }
   ),
-  word('along', '-을', 1, 'preposition',
+  word('along', '~을 따라', 1, 'preposition',
     ['뒤에', '근처에', '맞은편에', '동안', '이전에', '이후에', '대신에', '통해', '기준으로', '관하여'],
     tips({
       etymology: '고대 영어 \'andlang\'에서 유래했으며, \'길이를 따라 평행하게\'라는 의미를 담고 있습니다.',
@@ -933,7 +933,7 @@ export const vocabBatch22: VocabItem[] = [
       ],
     }
   ),
-  word('another', '또', 3, 'adjective',
+  word('another', '또 다른, 다른 하나의', 3, 'adjective',
     ['첫 번째의', '마지막의', '유일한', '전체의', '반대의', '비슷한', '동일한', '특별한', '평범한', '거대한'],
     tips({
       etymology: 'an(하나의)과 other(다른 것)가 합쳐져 \'하나 더\'라는 의미를 가집니다.',

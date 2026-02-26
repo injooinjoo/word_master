@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch17: VocabItem[] = [
-  word('Abnegate', '포기하다', 9, 'verb',
+  word('abnegate', '포기하다', 9, 'verb',
     ['촉진하다', '장려하다', '채택하다', '옹호하다', '수용하다', '주장하다', '획득하다', '강화하다', '보존하다', '계승하다'],
     tips({
       etymology: '라틴어 ab(멀리)와 negare(부인하다)가 결합된 단어로, 자신에게 속한 것을 멀리하며 부정한다는 뜻에서 유래했습니다.',
@@ -19,9 +19,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The monarch chose to abnegate his power and live a simple life.', ko: '그 군주는 자신의 권력을 포기하고 소박한 삶을 살기로 선택했다.' },
         { en: 'Many monks decide to abnegate all physical comforts to focus on their faith.', ko: '많은 승려들이 신앙에 집중하기 위해 모든 신체적 안락함을 포기하기로 결심한다.' },
       ],
+      wordDistractors: ['abrogate', 'abdicate', 'ablegate'],
+      definitionDistractors: [
+        'to formally accuse someone of a crime in a court of law',
+        'to shorten a written work by condensing or omitting parts',
+        'to move away from a fixed position or place of residence',
+      ],
     }
   ),
-  word('Abscond', '도망하다', 9, 'verb',
+  word('abscond', '도망하다', 9, 'verb',
     ['등장하다', '출현하다', '남다', '잔류하다', '복귀하다', '머무르다', '직면하다', '자수하다', '나타나다', '체류하다'],
     tips({
       etymology: '라틴어 ab(멀리)와 condere(숨기다)가 합쳐진 단어로, 멀리 가서 숨어버린다는 의미를 담고 있습니다.',
@@ -38,9 +44,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The accountant was found to have absconded with a large sum of the company\'s money.', ko: '그 회계사가 회사의 거액을 횡령하여 도망친 사실이 밝혀졌다.' },
         { en: 'Several prisoners managed to abscond from the low-security facility during the night.', ko: '몇몇 죄수들이 밤사이에 보안 수준이 낮은 시설에서 탈출하는 데 성공했다.' },
       ],
+      wordDistractors: ['abscess', 'absolve', 'abstain'],
+      definitionDistractors: [
+        'to formally withdraw from an organization or alliance',
+        'to absorb or take in a substance through a surface',
+        'to officially pardon someone for a wrongdoing or offense',
+      ],
     }
   ),
-  word('Abstemious', '절제하는', 9, 'adjective',
+  word('abstemious', '절제하는', 9, 'adjective',
     ['탐식하는', '과식하는', '사치스러운', '방탕한', '냉소적인', '무절제한', '탐욕스러운', '방종한', '문란한', '낭비하는'],
     tips({
       etymology: '라틴어 ab(멀리)와 temetum(강한 술)이 결합된 단어로, 술이나 음식 같은 육체적 유혹으로부터 멀리 떨어진다는 의미에서 유래했습니다.',
@@ -57,9 +69,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'His abstemious lifestyle kept him healthy and energetic even in old age.', ko: '그의 절제된 생활 방식은 노년에도 그를 건강하고 활기차게 유지해 주었다.' },
         { en: 'The monk lived an abstemious life, consuming only what was necessary for survival.', ko: '그 수도사는 생존에 필요한 것만 섭취하며 절제된 삶을 살았다.' },
       ],
+      wordDistractors: ['abstentious', 'abstinent', 'abstemous'],
+      definitionDistractors: [
+        'causing a feeling of great surprise or wonder',
+        'showing a tendency to be absent-minded or forgetful',
+        'being overly generous with food and drink at gatherings',
+      ],
     }
   ),
-  word('Accede', '동의하다', 9, 'verb',
+  word('accede', '동의하다', 9, 'verb',
     ['거부하다', '저항하다', '반대하다', '거절하다', '배척하다', '무시하다', '회피하다', '부인하다', '방해하다', '지연시키다'],
     tips({
       etymology: 'ac(~로)와 cede(가다)가 결합하여, 상대방이 원하는 방향으로 걸어 들어가 합의점에 도달한다는 의미를 담고 있습니다.',
@@ -76,9 +94,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The authorities eventually decided to accede to the protesters\' demands to avoid further conflict.', ko: '당국은 더 이상의 갈등을 피하기 위해 결국 시위대의 요구에 응하기로 결정했습니다.' },
         { en: 'It is highly unlikely that the board will accede to such an unreasonable request for a budget increase.', ko: '이사회에서 그토록 비합리적인 예산 증액 요청을 승인할 가능성은 매우 낮습니다.' },
       ],
+      wordDistractors: ['accrue', 'exceed', 'recede'],
+      definitionDistractors: [
+        'to move forward rapidly toward a destination or goal',
+        'to gradually increase in amount over a period of time',
+        'to formally withdraw a previous statement or claim',
+      ],
     }
   ),
-  word('Acerbic', '신랄한', 9, 'adjective',
+  word('acerbic', '신랄한', 9, 'adjective',
     ['부드러운', '상냥한', '우호적인', '달콤한', '온건한', '자상한', '친절한', '따뜻한', '너그러운', '유순한'],
     tips({
       etymology: '라틴어 acer(날카로운, 신)에서 유래하여 맛이 시거나 말이 날카롭다는 뜻을 가집니다.',
@@ -95,9 +119,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The comedian is famous for his acerbic humor regarding modern politics.', ko: '그 코미디언은 현대 정치에 대한 신랄한 유머로 유명하다.' },
         { en: 'She wrote an acerbic letter to the editor complaining about the new policy.', ko: '그녀는 새로운 정책에 대해 불평하는 신랄한 편지를 편집자에게 썼다.' },
       ],
+      wordDistractors: ['acetic', 'ascetic', 'acerb'],
+      definitionDistractors: [
+        'relating to or resembling vinegar in taste or smell',
+        'extremely dedicated to a spiritual or religious practice',
+        'having a smooth and pleasant manner of speaking',
+      ],
     }
   ),
-  word('Acquiesce', '묵인하다', 9, 'verb',
+  word('acquiesce', '묵인하다', 9, 'verb',
     ['저항하다', '반대하다', '거부하다', '항의하다', '투쟁하다', '반박하다', '거절하다', '대립하다', '부인하다', '충돌하다'],
     tips({
       etymology: '라틴어 ad(향해서)와 quiescere(조용히 하다)가 결합된 단어로, 조용히 상황을 받아들인다는 뜻에서 유래했습니다.',
@@ -114,9 +144,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The administration eventually decided to acquiesce to the students\' demands.', ko: '행정실은 결국 학생들의 요구를 묵인하기로 결정했다.' },
         { en: 'She did not agree with the plan but chose to acquiesce for the sake of peace.', ko: '그녀는 그 계획에 동의하지 않았지만 평화를 위해 묵인하는 쪽을 택했다.' },
       ],
+      wordDistractors: ['acquire', 'acqueduct', 'acquit'],
+      definitionDistractors: [
+        'to obtain something through effort or by purchasing it',
+        'to officially declare someone not guilty of a charge',
+        'to introduce someone to a new skill or area of knowledge',
+      ],
     }
   ),
-  word('Adulterate', '혼합하다', 9, 'verb',
+  word('adulterate', '변질시키다', 9, 'verb',
     ['정제하다', '순화하다', '여과하다', '세척하다', '분리하다', '보존하다', '강화하다', '복구하다', '검수하다', '추출하다'],
     tips({
       etymology: '라틴어 \'adulterare\'에서 유래했으며, \'ad(~에)\'와 \'alter(다른 것)\'가 결합되어 \'다른 것을 섞어 본질을 바꾸다\'라는 의미를 가집니다.',
@@ -133,9 +169,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The company was fined for trying to adulterate the olive oil with cheaper vegetable oils.', ko: '그 회사는 올리브유에 값싼 식용유를 섞어 품질을 떨어뜨리려 한 혐의로 벌금을 물었습니다.' },
         { en: 'To ensure the safety of the public, the government strictly forbids anyone to adulterate dairy products.', ko: '공공의 안전을 보장하기 위해 정부는 누구든 유제품에 불순물을 섞는 것을 엄격히 금지합니다.' },
       ],
+      wordDistractors: ['adulate', 'adulterer', 'adumbrate'],
+      definitionDistractors: [
+        'to praise someone excessively or in a flattering manner',
+        'to give a faint indication or outline of something',
+        'to cause something to mature or develop more quickly',
+      ],
     }
   ),
-  word('Aggrandize', '과대하다', 9, 'verb',
+  word('aggrandize', '부풀리다', 9, 'verb',
     ['축소하다', '폄하하다', '겸손해지다', '감소시키다', '절제하다', '비하하다', '위축되다', '경감하다', '낮추다', '쇠퇴하다'],
     tips({
       etymology: '접두사 ad-(~에)와 grandis(큰)가 결합된 단어로, 어떤 대상을 더 크게 만든다는 어원을 가지고 있습니다.',
@@ -152,9 +194,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The king attempted to aggrandize his family\'s name by building magnificent monuments.', ko: '왕은 웅장한 기념비들을 세움으로써 가문의 명성을 드높이려 시도했다.' },
         { en: 'He was accused of trying to aggrandize his role in the success of the project.', ko: '그는 프로젝트의 성공에서 자신의 역할을 과대포장하려 했다는 비난을 받았다.' },
       ],
+      wordDistractors: ['aggravate', 'aggregate', 'aggrieve'],
+      definitionDistractors: [
+        'to make a problem or situation worse or more serious',
+        'to gather together multiple items into a single collection',
+        'to cause someone to feel resentful or wronged',
+      ],
     }
   ),
-  word('Alacrity', '민첩', 9, 'noun',
+  word('alacrity', '민첩', 9, 'noun',
     ['느림', '지연', '무기력', '마지못함', '꾸물거림', '망설임', '태만', '권태', '거부', '냉담'],
     tips({
       etymology: '라틴어 alacritas에서 유래하여 \'활기차고 기쁜 상태\'를 의미합니다.',
@@ -171,9 +219,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'She accepted the invitation with great alacrity, eager to attend the event.', ko: '그녀는 그 행사에 참석하고 싶어서 아주 기꺼이 민첩하게 초대를 수락했다.' },
         { en: 'The staff responded with remarkable alacrity to the emergency.', ko: '직원들이 비상사태에 놀라운 민첩함으로 대응했다.' },
       ],
+      wordDistractors: ['audacity', 'clarity', 'acuity'],
+      definitionDistractors: [
+        'a feeling of intense anxiety or nervousness before an event',
+        'the quality of being extremely bold or daring',
+        'a state of mental sharpness and keen perception',
+      ],
     }
   ),
-  word('Altruism', '이타주의', 9, 'noun',
+  word('altruism', '이타주의', 9, 'noun',
     ['이기심', '자기중심', '욕심', '이기주의', '착취', '탐욕', '독점', '편협', '인색', '질투'],
     tips({
       etymology: '라틴어 \'alter\'(다른 사람)에서 유래하여, 나 자신이 아닌 타인을 향하는 마음을 뜻합니다.',
@@ -190,9 +244,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The billionaire\'s commitment to global health is a remarkable example of modern altruism.', ko: '그 억만장자의 세계 보건에 대한 헌신은 현대적 이타주의의 놀라운 본보기입니다.' },
         { en: 'Many animals exhibit behaviors that suggest a natural instinct for altruism within their group.', ko: '많은 동물들이 집단 내에서 이타주의에 대한 천성적인 본능을 암시하는 행동을 보입니다.' },
       ],
+      wordDistractors: ['algorithm', 'atrium', 'truism'],
+      definitionDistractors: [
+        'a widely accepted statement that is obviously true and not very interesting',
+        'a systematic method for solving mathematical problems',
+        'the practice of governing a society through strict authority',
+      ],
     }
   ),
-  word('Anachronism', '시대착오', 9, 'noun',
+  word('anachronism', '시대착오', 9, 'noun',
     ['시대적 적합', '현대성', '적시성', '동시성', '정합성', '최신식', '유행', '동시대', '일치', '조화'],
     tips({
       etymology: '그리스어 ana(거꾸로)와 chronos(시간)가 결합되어 시간이 잘못 배치되었음을 의미합니다.',
@@ -209,9 +269,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The appearance of a digital watch in a movie set in the 1700s is a glaring anachronism.', ko: '1700년대를 배경으로 한 영화에 디지털 시계가 등장하는 것은 명백한 시대착오이다.' },
         { en: 'Some people believe that the monarchy is a complete anachronism in the modern world.', ko: '어떤 이들은 군주제가 현대 사회에서 완전한 시대착오라고 믿는다.' },
       ],
+      wordDistractors: ['anarchism', 'mechanism', 'mannerism'],
+      definitionDistractors: [
+        'a political theory favoring the abolition of all government',
+        'an event that occurs at exactly the same time as another',
+        'a habitual gesture or way of speaking peculiar to an individual',
+      ],
     }
   ),
-  word('Anathema', '저주', 9, 'noun',
+  word('anathema', '저주', 9, 'noun',
     ['축복', '찬미', '영광', '선물', '은총', '칭송', '환영', '애호', '숭배', '승인'],
     tips({
       etymology: '그리스어에서 유래하여 원래 \'신에게 바쳐진 것\'이었으나, 나중에 교회에서 추방하거나 \'파문/저주\'하는 의미로 변했습니다.',
@@ -228,9 +294,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The concept of racial discrimination is a complete anathema to any democratic society.', ko: '인종 차별이라는 개념은 어떤 민주주의 사회에서도 절대 용납될 수 없는 저주스러운 것이다.' },
         { en: 'For the strict vegetarian, the idea of eating any kind of meat was anathema.', ko: '엄격한 채식주의자에게 어떤 종류의 고기든 먹는다는 생각은 혐오스러운 일이었다.' },
       ],
+      wordDistractors: ['antenna', 'anthem', 'anagram'],
+      definitionDistractors: [
+        'a sacred hymn or song of praise used in religious worship',
+        'a formal announcement made to a large group of people',
+        'a flowering plant that blooms only once a year',
+      ],
     }
   ),
-  word('Antediluvian', '대홍수 이전의', 9, 'adjective',
+  word('antediluvian', '대홍수 이전의', 9, 'adjective',
     ['현대적인', '최신식의', '진보적인', '혁신적인', '세련된', '첨단의', '동시대의', '유행하는', '미래지향적인', '신선한'],
     tips({
       etymology: '라틴어 \'ante(이전)\'와 \'diluvium(홍수)\'이 결합된 단어로, 성경에 나오는 노아의 대홍수 이전 시대를 가리키는 말에서 유래했습니다.',
@@ -247,9 +319,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The university\'s antediluvian computer system desperately needs to be upgraded.', ko: '그 대학교의 극도로 구식인 컴퓨터 시스템은 절실히 업그레이드가 필요하다.' },
         { en: 'He still holds some antediluvian attitudes toward social media and technology.', ko: '그는 여전히 소셜 미디어와 기술에 대해 극도로 구식인 태도를 가지고 있다.' },
       ],
+      wordDistractors: ['antecedent', 'antipodean', 'antebellum'],
+      definitionDistractors: [
+        'occurring or existing before a particular war or conflict',
+        'relating to the opposite side of the earth or world',
+        'serving as a preliminary introduction to a larger work',
+      ],
     }
   ),
-  word('Anthropocentric', '인간중심적', 9, 'adjective',
+  word('anthropocentric', '인간중심적', 9, 'adjective',
     ['생태중심적', '자연친화적', '우주중심적', '신중심적', '환경주의', '평등주의', '다원적', '분산적', '객관적', '동등한'],
     tips({
       etymology: '그리스어 anthropos(인간)와 kentron(중심)이 결합되어 만들어진 단어입니다.',
@@ -266,9 +344,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'We must move beyond an anthropocentric perspective that only values human needs.', ko: '우리는 오직 인간의 필요만을 가치 있게 여기는 인간중심적 관점을 넘어서야 한다.' },
         { en: 'Such anthropocentric views often ignore the intrinsic value of the environment.', ko: '그러한 인간중심적 견해는 종종 환경의 내재적 가치를 무시하곤 한다.' },
       ],
+      wordDistractors: ['anthropomorphic', 'anthropogenic', 'philanthropic'],
+      definitionDistractors: [
+        'attributing human characteristics to animals or objects',
+        'caused or produced by human activities and influence',
+        'devoted to promoting the welfare of others through charity',
+      ],
     }
   ),
-  word('Antipathy', '반감', 9, 'noun',
+  word('antipathy', '반감', 9, 'noun',
     ['호감', '우정', '동정', '친근함', '애정', '매력', '친밀', '선호', '공감', '유대'],
     tips({
       etymology: 'anti(반대)와 pathos(감정)가 결합하여 \'상대방에게 맞서는 부정적인 마음\'을 뜻하게 되었습니다.',
@@ -285,9 +369,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'There has always been a deep antipathy between the two rival families.', ko: '그 두 라이벌 가문 사이에는 항상 깊은 반감이 존재해 왔다.' },
         { en: 'His antipathy toward modern technology made it difficult for him to use a smartphone.', ko: '현대 기술에 대한 그의 반감은 그가 스마트폰을 사용하는 것을 어렵게 만들었다.' },
       ],
+      wordDistractors: ['apathy', 'empathy', 'sympathy'],
+      definitionDistractors: [
+        'a lack of interest or concern about something important',
+        'the ability to understand and share the feelings of others',
+        'a formal expression of agreement between two parties',
+      ],
     }
   ),
-  word('Apotheosis', '신격화', 9, 'noun',
+  word('apotheosis', '신격화', 9, 'noun',
     ['폄하', '비난', '욕설', '모욕', '타락', '실추', '강등', '멸시', '좌절', '쇠퇴'],
     tips({
       etymology: '그리스어 apo(변화)와 theos(신)가 결합하여 사람이 신의 지위로 격상됨을 의미합니다.',
@@ -304,9 +394,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The championship win was the apotheosis of his sporting career.', ko: '그 챔피언십 우승은 그의 스포츠 경력의 절정이었다.' },
         { en: 'The masterpiece was considered the apotheosis of the artist\'s skill.', ko: '그 걸작은 그 예술가 기술의 극치로 여겨졌다.' },
       ],
+      wordDistractors: ['hypothesis', 'apoptosis', 'apostrophe'],
+      definitionDistractors: [
+        'a proposed explanation made on the basis of limited evidence',
+        'the programmed death of cells as a natural biological process',
+        'a punctuation mark used to indicate possession or omission',
+      ],
     }
   ),
-  word('Approbation', '승인', 9, 'noun',
+  word('approbation', '승인', 9, 'noun',
     ['비난', '거부', '반대', '불찬성', '경멸', '사과', '질책', '냉대', '무시', '항의'],
     tips({
       etymology: '라틴어 ad(~에 대하여)와 probare(증명하다)가 결합되어, 어떤 것이 충분히 좋다고 증명되어 인정받는다는 의미에서 유래했습니다.',
@@ -323,9 +419,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The plan met with general approbation from the board of directors.', ko: '그 계획은 이사회로부터 전반적인 승인을 받았다.' },
         { en: 'She nodded in approbation of his proposal during the meeting.', ko: '그녀는 회의 중에 그의 제안에 찬성하며 고개를 끄덕였다.' },
       ],
+      wordDistractors: ['appropriation', 'opprobrium', 'approximation'],
+      definitionDistractors: [
+        'the act of taking something for one\'s own use without permission',
+        'an estimate or guess that is close but not exactly right',
+        'a gradual increase in the value of property or assets',
+      ],
     }
   ),
-  word('Arbiter', '중재자', 9, 'noun',
+  word('arbiter', '중재자', 9, 'noun',
     ['당사자', '참여자', '이해관계자', '방관자', '피고인', '원고', '증인', '범인', '조력자', '추종자'],
     tips({
       etymology: '라틴어 arbiter(목격자, 판단자)에서 유래하여 분쟁의 현장에서 결정을 내리는 사람을 뜻합니다.',
@@ -342,9 +444,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The judge acted as the final arbiter in the dispute between the two companies.', ko: '판사가 두 회사 사이의 분쟁에서 최종 중재자로 행동했다.' },
         { en: 'Fashion designers are often seen as the ultimate arbiters of taste.', ko: '패션 디자이너들은 종종 취향의 최종적인 결정권자로 여겨진다.' },
       ],
+      wordDistractors: ['arbor', 'arbitrage', 'arbitrary'],
+      definitionDistractors: [
+        'a shaded garden structure made of climbing plants or lattice',
+        'the practice of buying and selling assets for profit between markets',
+        'based on random choice rather than any reason or system',
+      ],
     }
   ),
-  word('Assuage', '완화하다', 9, 'verb',
+  word('assuage', '완화하다', 9, 'verb',
     ['악화시키다', '증폭하다', '자극하다', '격화시키다', '부추기다', '선동하다', '괴롭히다', '심화하다', '유발하다', '강화하다'],
     tips({
       etymology: '라틴어 ad(~에)와 suavis(달콤한)가 결합된 단어로, 쓰거나 거친 상태를 달콤하고 부드럽게 만든다는 어원을 가집니다.',
@@ -361,9 +469,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The government tried to assuage the public\'s fears about the economy.', ko: '정부는 경제에 대한 대중의 공포를 완화하기 위해 노력했다.' },
         { en: 'A gentle apology was enough to assuage his burning anger.', ko: '진심 어린 사과 한마디면 그의 타오르는 분노를 달래기에 충분했다.' },
       ],
+      wordDistractors: ['assure', 'assault', 'assume'],
+      definitionDistractors: [
+        'to physically attack someone with the intent to cause harm',
+        'to tell someone confidently that something is definitely true',
+        'to carefully evaluate the value or quality of something',
+      ],
     }
   ),
-  word('Atavism', '조상 반현', 9, 'noun',
+  word('atavism', '격세유전', 9, 'noun',
     ['진화', '발전', '혁신', '진보', '현대화', '개량', '변이', '성장', '창조', '미래주의'],
     tips({
       etymology: '라틴어 atavus(조상의 할아버지)에서 유래하여 먼 조상의 특징이 다시 나타나는 현상을 말합니다.',
@@ -377,12 +491,18 @@ export const vocabBatch17: VocabItem[] = [
       synonyms: ['throwback', 'reversion', 'recurrence'],
       antonyms: ['innovation', 'progression', 'evolution'],
       exampleSentences: [
-        { en: 'The extra toe was a clear case of atavism, a trait from a distant ancestor.', ko: '추가된 발가락은 먼 조상으로부터 물려받은 명백한 조상 반현 사례였다.' },
-        { en: 'Some consider his violent temper a form of atavism, a reversion to primitive instincts.', ko: '어떤 사람들은 그의 폭력적인 성미를 원시적 본능으로의 조상 반현으로 본다.' },
+        { en: 'The extra toe was a clear case of atavism, a trait from a distant ancestor.', ko: '추가된 발가락은 먼 조상으로부터 물려받은 명백한 격세유전 사례였다.' },
+        { en: 'Some consider his violent temper a form of atavism, a reversion to primitive instincts.', ko: '어떤 사람들은 그의 폭력적인 성미를 원시적 본능으로의 격세유전으로 본다.' },
+      ],
+      wordDistractors: ['activism', 'altruism', 'nativism'],
+      definitionDistractors: [
+        'the policy of campaigning vigorously for political or social change',
+        'selfless concern for the well-being of others',
+        'the practice of favoring native inhabitants over immigrants',
       ],
     }
   ),
-  word('Avarice', '탐욕', 9, 'noun',
+  word('avarice', '탐욕', 9, 'noun',
     ['관대함', '포기', '나눔', '만족', '겸손', '희생', '절제', '베풂', '청렴', '기부'],
     tips({
       etymology: '라틴어 \'avere(갈망하다)\'에서 유래하여, 재물에 대해 끝이 없는 욕심을 부리는 상태를 뜻합니다.',
@@ -399,9 +519,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The corporate executive\'s relentless pursuit of profit was fueled by pure avarice.', ko: '그 기업 간부의 끈질긴 이윤 추구는 순전한 탐욕에서 비롯된 것이었다.' },
         { en: 'In the classic fable, the character\'s downfall was caused by his own uncontrollable avarice.', ko: '고전 우화에서 그 등장인물의 몰락은 스스로의 억제할 수 없는 탐욕 때문에 발생했다.' },
       ],
+      wordDistractors: ['average', 'aversion', 'aviary'],
+      definitionDistractors: [
+        'a strong feeling of dislike or reluctance toward something',
+        'a large enclosure designed to house and display birds',
+        'the typical or most common amount in a set of numbers',
+      ],
     }
   ),
-  word('Axiomatic', '자명한', 9, 'adjective',
+  word('axiomatic', '자명한', 9, 'adjective',
     ['의심스러운', '불명확한', '애매한', '모순된', '거짓의', '불확실한', '논란의', '가변적인', '복잡한', '난해한'],
     tips({
       etymology: '그리스어 axioma(가치 있는 것, 공리)에서 유래하여 증명할 필요조차 없는 당연한 진리를 뜻합니다.',
@@ -418,9 +544,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'It is axiomatic that health matters.', ko: '건강이 중요하다는 것은 자명한 사실이다.' },
         { en: 'The axiomatic truth was accepted by all.', ko: '그 자명한 진리는 모두에게 받아들여졌다.' },
       ],
+      wordDistractors: ['automatic', 'aromatic', 'enigmatic'],
+      definitionDistractors: [
+        'operating by itself with minimal human intervention',
+        'having a pleasant and distinctive smell or fragrance',
+        'difficult to interpret or understand; mysterious',
+      ],
     }
   ),
-  word('Beatific', '극락의', 9, 'adjective',
+  word('beatific', '극락의', 9, 'adjective',
     ['비참한', '지옥의', '괴로운', '우울한', '고통스러운', '사악한', '불행한', '추악한', '불쾌한', '비통한'],
     tips({
       etymology: '라틴어 beatus(축복받은)에서 유래하여 천국에 있는 듯한 지복의 상태를 의미합니다.',
@@ -437,9 +569,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'She had a beatific smile on her face.', ko: '그녀의 얼굴에는 더할 나위 없이 행복한 미소가 감돌았다.' },
         { en: 'The beatific vision filled him with peace.', ko: '그 성스러운 환상은 그를 평화로 가득 채웠다.' },
       ],
+      wordDistractors: ['beauteous', 'benefic', 'pacific'],
+      definitionDistractors: [
+        'having the quality of outstanding physical beauty',
+        'producing good or helpful effects for others',
+        'tending to promote peace and calm in a situation',
+      ],
     }
   ),
-  word('Bellicose', '호전적', 9, 'adjective',
+  word('bellicose', '호전적', 9, 'adjective',
     ['평화로운', '온순한', '비폭력적인', '조용한', '중립적인', '우호적인', '친절한', '협력적인', '차분한', '유순한'],
     tips({
       etymology: '라틴어 bellum(전쟁)에서 유래하여 싸우기를 좋아하고 전쟁을 갈구하는 성향을 뜻합니다.',
@@ -456,9 +594,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The nation\'s leader was criticized for his increasingly bellicose statements toward neighboring countries.', ko: '그 국가의 지도자는 이웃 국가들을 향한 점점 더 호전적인 발언으로 비판을 받았다.' },
         { en: 'The bellicose behavior of the protesters led to a confrontation with the local police.', ko: '시위대들의 공격적인 행동은 현지 경찰과의 충돌로 이어졌다.' },
       ],
+      wordDistractors: ['belligerent', 'bellows', 'bemused'],
+      definitionDistractors: [
+        'using more words than necessary to express an idea',
+        'feeling or showing a sullen and ill-tempered disposition',
+        'characterized by elaborate and showy decoration or style',
+      ],
     }
   ),
-  word('Bifurcate', '둘로 나누다', 9, 'verb',
+  word('bifurcate', '둘로 나누다', 9, 'verb',
     ['합치다', '병합하다', '통합하다', '연결하다', '모으다', '결합하다', '융합하다', '집중시키다', '하나로만들다', '수렴하다'],
     tips({
       etymology: '접두사 bi-(둘)와 라틴어 furca(포크, 갈래)가 결합하여 \'두 갈래로 갈라지다\'라는 뜻이 되었습니다.',
@@ -475,9 +619,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The stream will bifurcate into two smaller channels just past the large rock.', ko: '개울은 큰 바위를 지나자마자 두 개의 작은 수로로 갈라질 것입니다.' },
         { en: 'The hiking trail begins to bifurcate at the summit, leading to different valleys.', ko: '하이킹 코스는 정상에서 두 갈래로 나뉘어 서로 다른 계곡으로 이어집니다.' },
       ],
+      wordDistractors: ['fabricate', 'bifocal', 'obfuscate'],
+      definitionDistractors: [
+        'to invent or create something false in order to deceive',
+        'having two different focal lengths in a single lens',
+        'to make something unclear or difficult to understand',
+      ],
     }
   ),
-  word('Blandish', '아첨하다', 9, 'verb',
+  word('blandish', '아첨하다', 9, 'verb',
     ['비난하다', '꾸짖다', '무시하다', '냉대하다', '모욕하다', '질책하다', '조롱하다', '협박하다', '강요하다', '비판하다'],
     tips({
       etymology: '라틴어 blandus(부드러운)에서 유래하여 상대의 마음을 부드럽게 녹이는 달콤한 말을 의미합니다.',
@@ -494,9 +644,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'He tried to blandish the judge with sweet words and gentle persuasion.', ko: '그는 달콤한 말과 부드러운 회유로 판사에게 아첨하려 했습니다.' },
         { en: 'She attempted to blandish her boss with constant praise to get a promotion.', ko: '그녀는 끊임없는 찬사로 상사에게 아첨하여 승진을 얻어내려 했습니다.' },
       ],
+      wordDistractors: ['brandish', 'blemish', 'banish'],
+      definitionDistractors: [
+        'to wave or flourish a weapon in a threatening manner',
+        'to send someone away from a place as a form of punishment',
+        'to damage or spoil the appearance of something',
+      ],
     }
   ),
-  word('Bombastic', '과장된', 9, 'adjective',
+  word('bombastic', '과장된', 9, 'adjective',
     ['절제된', '간결한', '겸손한', '수수한', '소박한', '검소한', '단순한', '명료한', '함축적인', '정중한'],
     tips({
       etymology: 'bombast는 원래 옷의 부피를 키우기 위해 넣는 \'솜\'을 뜻했는데, 이것이 말이 솜처럼 부풀려진 상태를 의미하게 되었습니다.',
@@ -513,9 +669,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The politician\'s bombastic speech was so full of grand words that it felt empty and insincere.', ko: '그 정치인의 과장된 연설은 너무 거창한 단어들로 가득 차 있어서 공허하고 진실되지 않게 느껴졌습니다.' },
         { en: 'Critics dismissed the new novel as bombastic, full of pretentious and overly dramatic descriptions.', ko: '비평가들은 그 새 소설을 허세 부리고 지나치게 과장된 묘사들의 집합체라며 일축했습니다.' },
       ],
+      wordDistractors: ['fantastic', 'sarcastic', 'scholastic'],
+      definitionDistractors: [
+        'remarkably creative and imaginative in approach or style',
+        'using irony to mock or convey contempt toward someone',
+        'relating to schools, education, or academic achievement',
+      ],
     }
   ),
-  word('Brazen', '뻔뻔한', 9, 'adjective',
+  word('brazen', '뻔뻔한', 9, 'adjective',
     ['수줍은', '겸손한', '부끄러워하는', '조용한', '조심스러운', '정숙한', '내성적인', '겁많은', '신중한', '예의바른'],
     tips({
       etymology: '놋쇠를 뜻하는 brass에서 유래하여, 얼굴 가죽이 놋쇠처럼 단단하고 두꺼워 부끄러움을 모르는 상태를 표현합니다.',
@@ -532,9 +694,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The thief showed a brazen disregard for the law by stealing in broad daylight.', ko: '그 도둑은 대낮에 물건을 훔치는 뻔뻔한 행태로 법을 무시하는 태도를 보였습니다.' },
         { en: 'He told a brazen lie even though the evidence of his guilt was right in front of him.', ko: '그는 유죄의 증거가 바로 앞에 있는데도 아주 파렴치한 거짓말을 했습니다.' },
       ],
+      wordDistractors: ['blazon', 'frozen', 'braise'],
+      definitionDistractors: [
+        'to display a coat of arms or emblem prominently',
+        'to cook food slowly in a covered pot with liquid',
+        'made of or resembling a reddish-brown copper alloy',
+      ],
     }
   ),
-  word('Bucolic', '전원의', 9, 'adjective',
+  word('bucolic', '전원의', 9, 'adjective',
     ['도시의', '산업의', '현대적인', '복잡한', '인공적인', '세련된', '번화한', '기술적인', '기계적인', '도시적인'],
     tips({
       etymology: '그리스어 \'boukolos(소 치는 사람)\'에서 유래하여 가축을 돌보는 평화로운 시골의 삶을 뜻하게 되었습니다.',
@@ -551,9 +719,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The painting captures the bucolic beauty of the countryside with rolling hills and grazing sheep.', ko: '그 그림은 완만한 언덕과 풀을 뜯는 양이 있는 전원의 목가적인 아름다움을 담아내고 있습니다.' },
         { en: 'After years of living in the city, they longed for a bucolic lifestyle in the countryside.', ko: '수년간 도시에서 살던 그들은 시골에서의 전원적인 생활 방식을 갈망했습니다.' },
       ],
+      wordDistractors: ['bubonic', 'symbolic', 'carbolic'],
+      definitionDistractors: [
+        'relating to a severe epidemic disease spread by fleas',
+        'serving as a symbol or representation of an abstract idea',
+        'relating to a disinfectant chemical compound derived from tar',
+      ],
     }
   ),
-  word('Cadaverous', '시체 같은', 9, 'adjective',
+  word('cadaverous', '시체 같은', 9, 'adjective',
     ['건강한', '생기있는', '활기찬', '통통한', '발그레한', '튼튼한', '강인한', '팔팔한', '윤기있는', '정정한'],
     tips({
       etymology: '라틴어 \'cadere(떨어지다, 죽다)\'에서 유래한 \'cadaver(시체)\'에 형용사형 접미사가 붙어 만들어진 단어입니다.',
@@ -570,9 +744,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'After weeks of illness, his face took on a cadaverous appearance.', ko: '몇 주간의 투병 끝에 그의 얼굴은 시체처럼 수척하고 창백해졌습니다.' },
         { en: 'The survivors of the shipwreck had a cadaverous look, skeletal and hauntingly pale.', ko: '난파선의 생존자들은 뼈만 남고 소름 끼칠 정도로 창백한 시체 같은 모습이었습니다.' },
       ],
+      wordDistractors: ['cadaver', 'cavernous', 'carnivorous'],
+      definitionDistractors: [
+        'a dead body, especially one preserved for medical study',
+        'resembling a cavern in being vast, dark, or hollow',
+        'feeding on the flesh of other animals',
+      ],
     }
   ),
-  word('Calumny', '중상', 9, 'noun',
+  word('calumny', '중상', 9, 'noun',
     ['칭찬', '찬사', '옹호', '진실', '사실', '격려', '추천', '인정', '존경', '숭배'],
     tips({
       etymology: '라틴어 calumnia에서 유래되었으며, 누군가를 속이거나 해를 끼치기 위해 지어낸 거짓 고발을 의미합니다.',
@@ -589,9 +769,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The politician was a victim of vicious calumny during the heated election campaign.', ko: '그 정치인은 치열한 선거 운동 기간 동안 악의적인 중상의 희생양이 되었습니다.' },
         { en: 'He refused to answer the accusations, dismissing them as mere calumny.', ko: '그는 그 비난들을 단순한 중상모략으로 일축하며 답변을 거부했습니다.' },
       ],
+      wordDistractors: ['calamity', 'column', 'alumni'],
+      definitionDistractors: [
+        'a sudden event that causes great damage or suffering',
+        'a tall vertical structure used for architectural support',
+        'a formal ceremony held to honor a notable achievement',
+      ],
     }
   ),
-  word('Capricious', '변덕스러운', 9, 'adjective',
+  word('capricious', '변덕스러운', 9, 'adjective',
     ['일정한', '꾸준한', '예측가능한', '신뢰할수있는', '견고한', '단호한', '변함없는', '안정적인', '지속적인', '확고한'],
     tips({
       etymology: '이탈리아어 capriccio에서 유래했으며, 원래는 공포로 인해 \'머리카락이 곤두서는 것\'을 의미하다가 갑작스러운 움직임이나 변덕을 뜻하게 되었습니다.',
@@ -608,9 +794,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The movie star was known for her capricious behavior on set, changing her mind without warning.', ko: '그 영화배우는 촬영장에서의 변덕스러운 행동으로 유명했으며, 예고 없이 마음을 바꾸곤 했습니다.' },
         { en: 'Investors are often hesitant to put money into such a capricious market.', ko: '투자자들은 종종 그렇게 변덕스러운 시장에 돈을 투자하기를 주저합니다.' },
       ],
+      wordDistractors: ['capacious', 'captious', 'rapacious'],
+      definitionDistractors: [
+        'having a lot of space inside; roomy and spacious',
+        'tending to find fault with or raise petty objections',
+        'aggressively greedy or grasping for possessions',
+      ],
     }
   ),
-  word('Castigate', '견책하다', 9, 'verb',
+  word('castigate', '견책하다', 9, 'verb',
     ['칭찬하다', '격려하다', '변호하다', '용서하다', '포상하다', '숭배하다', '추대하다', '승인하다', '방임하다', '찬양하다'],
     tips({
       etymology: '라틴어 castigare에서 유래하여 \'순수하게 만들기 위해 바로잡다\'라는 의미에서 심한 꾸짖음으로 발전했습니다.',
@@ -627,9 +819,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The media castigated the corrupt official for his unethical behavior.', ko: '언론은 부패한 공무원의 비윤리적인 행동에 대해 엄중히 견책했다.' },
         { en: 'The teacher castigated the students for cheating on the final exam.', ko: '선생님은 기말고사에서 부정행위를 한 학생들을 심하게 꾸짖었다.' },
       ],
+      wordDistractors: ['castrate', 'mitigate', 'instigate'],
+      definitionDistractors: [
+        'to cause an event or situation to begin or happen',
+        'to make something less severe or intense',
+        'to build or construct a fortified structure or barrier',
+      ],
     }
   ),
-  word('Catholic', '보편적', 9, 'adjective',
+  word('catholic', '보편적', 9, 'adjective',
     ['편협한', '제한된', '배타적인', '좁은', '편파적인', '국지적인', '독단적인', '폐쇄적인', '특수한', '소수의'],
     tips({
       etymology: '그리스어 katholikos(전체의)에서 유래하여 종교적 의미를 넘어 \'보편적이고 폭넓은\'이라는 뜻을 가집니다.',
@@ -646,9 +844,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'She has catholic tastes in music, enjoying everything from opera to heavy metal.', ko: '그녀는 오페라부터 헤비메탈까지 모든 것을 즐기는 폭넓은 음악적 취향을 가지고 있다.' },
         { en: 'He had a catholic interest in all academic subjects during his college years.', ko: '그는 대학 시절 모든 학문 분야에 대해 보편적인 관심을 가졌다.' },
       ],
+      wordDistractors: ['cathartic', 'catalytic', 'categorical'],
+      definitionDistractors: [
+        'providing psychological relief through the open expression of emotions',
+        'relating to or involving a substance that speeds up a chemical reaction',
+        'expressed in an absolute and unconditional manner',
+      ],
     }
   ),
-  word('Chicanery', '속임수', 9, 'noun',
+  word('chicanery', '속임수', 9, 'noun',
     ['정직', '솔직함', '투명성', '공정', '정의', '성실', '신뢰', '진실', '청렴', '결백'],
     tips({
       etymology: '프랑스어 chicaner(말다툼하다, 속이다)에서 유래하여 법적 절차를 악용하는 꼼수를 뜻하게 되었습니다.',
@@ -665,9 +869,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The contract was full of legal chicanery designed to confuse the signers.', ko: '그 계약서는 서명자들을 혼란스럽게 하려는 법적 속임수로 가득했다.' },
         { en: 'His political chicanery was eventually exposed by an investigative journalist.', ko: '그의 정치적 속임수는 결국 한 조사 기자에 의해 폭로되었다.' },
       ],
+      wordDistractors: ['chicory', 'chivalry', 'chimera'],
+      definitionDistractors: [
+        'the medieval knightly system with its code of honor and conduct',
+        'a wild or impossible idea existing only in the imagination',
+        'a plant whose roots are roasted and used as a coffee substitute',
+      ],
     }
   ),
-  word('Circumlocution', '완곡어법', 9, 'noun',
+  word('circumlocution', '완곡어법', 9, 'noun',
     ['직설', '직언', '노골적 표현', '단도직입', '간결', '명료', '요약', '단순화', '솔직', '정공법'],
     tips({
       etymology: '라틴어 어근 circum(주변)과 loqui(말하다)가 결합되어 \'핵심을 찌르지 않고 주변을 빙빙 돌며 말하기\'라는 의미가 형성되었습니다.',
@@ -684,9 +894,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'Politicians often use circumlocution to avoid giving a definitive \'yes\' or \'no\'.', ko: '정치인들은 확정적인 답변을 피하기 위해 종종 완곡어법을 사용한다.' },
         { en: 'His circumlocution made it difficult for the audience to understand his main point.', ko: '그의 완곡한 표현 때문에 청중이 그의 요점을 이해하기 어려웠다.' },
       ],
+      wordDistractors: ['circumscription', 'circumnavigation', 'elocution'],
+      definitionDistractors: [
+        'the act of sailing or traveling completely around something',
+        'the skill of clear and expressive speech in public',
+        'a restriction or limitation placed on someone or something',
+      ],
     }
   ),
-  word('Circumvent', '우회하다', 9, 'verb',
+  word('circumvent', '우회하다', 9, 'verb',
     ['직면하다', '맞서다', '정면돌파', '통과하다', '준수하다', '복종하다', '따르다', '직시하다', '수용하다', '직격하다'],
     tips({
       etymology: 'circum(둘레) + vent(오다)가 합쳐져 \'장애물을 돌아서 오다\'라는 의미를 형성합니다.',
@@ -703,9 +919,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'He managed to circumvent the tax laws by moving his money to an offshore account.', ko: '그는 자금을 해외 계좌로 옮겨 세법을 교묘히 우회했다.' },
         { en: 'The army chose to circumvent the enemy\'s main fortifications by taking a mountain path.', ko: '군은 산길을 이용해 적의 주요 요새를 우회하기로 했다.' },
       ],
+      wordDistractors: ['circumscribe', 'circumference', 'circumspect'],
+      definitionDistractors: [
+        'to draw a line around or restrict within limits',
+        'the distance around the edge of a circle or round object',
+        'being careful and cautious before acting or making decisions',
+      ],
     }
   ),
-  word('Clairvoyant', '통찰력 있는', 9, 'adjective',
+  word('clairvoyant', '통찰력 있는', 9, 'adjective',
     ['맹목적인', '무지한', '둔감한', '근시안적인', '평범한', '무감각한', '어리석은', '현실적인', '실증적인', '단순한'],
     tips({
       etymology: '프랑스어 clair(맑은)와 voyant(보는)이 결합되어 \'명확하게 본다\'는 어원을 가지고 있습니다.',
@@ -722,9 +944,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'Her clairvoyant analysis of the market trends helped the company avoid a major loss.', ko: '시장 동향에 대한 그녀의 통찰력 있는 분석은 회사가 큰 손실을 피하도록 도왔다.' },
         { en: 'He seemed almost clairvoyant, knowing exactly what I was going to say before I spoke.', ko: '그는 내가 말하기도 전에 무슨 말을 할지 정확히 알고 있어서 거의 신통력이 있는 것처럼 보였다.' },
       ],
+      wordDistractors: ['flamboyant', 'observant', 'buoyant'],
+      definitionDistractors: [
+        'able to float or rise to the surface of a liquid',
+        'quick to notice or perceive things through careful watching',
+        'having a strong ability to persuade others through charm',
+      ],
     }
   ),
-  word('Clandestine', '비밀의', 9, 'adjective',
+  word('clandestine', '비밀의', 9, 'adjective',
     ['공개된', '공식적인', '투명한', '노골적인', '저명한', '명백한', '드러난', '공인된', '합법적인', '공공의'],
     tips({
       etymology: '라틴어 clandestinus에서 유래했으며, \'clam(비밀리에)\'이라는 어근이 포함되어 있어 남몰래 행해지는 속성을 나타냅니다.',
@@ -741,9 +969,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The spies held a clandestine meeting in a remote cabin to exchange documents.', ko: '스파이들은 문서를 교환하기 위해 외딴 오두막에서 비밀 회의를 가졌다.' },
         { en: 'The clandestine operation to rescue the hostages was planned for months.', ko: '인질 구출을 위한 비밀 작전은 수개월 동안 계획되었다.' },
       ],
+      wordDistractors: ['candescent', 'candelabra', 'crystalline'],
+      definitionDistractors: [
+        'glowing or shining brightly with intense heat or light',
+        'having a structure that is clear and transparent like crystal',
+        'decorated in an elaborate and ornamental fashion',
+      ],
     }
   ),
-  word('Clemency', '자비', 9, 'noun',
+  word('clemency', '자비', 9, 'noun',
     ['잔인함', '엄격함', '가혹함', '무자비', '냉혹', '처벌', '응징', '복수', '강경', '박대'],
     tips({
       etymology: '라틴어 clemens(온화한, 자비로운)에서 유래하여 처벌을 줄여주는 관용을 뜻합니다.',
@@ -760,9 +994,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The defense attorney appealed to the judge for clemency, citing the defendant\'s youth.', ko: '변호인은 피고인의 어린 나이를 이유로 판사에게 자비를 호소했다.' },
         { en: 'The governor granted clemency to several prisoners on the holiday.', ko: '주지사는 공휴일을 맞아 여러 수감자들에게 자비를 베풀어 사면했다.' },
       ],
+      wordDistractors: ['clement', 'currency', 'fluency'],
+      definitionDistractors: [
+        'the ability to speak or write fluently and persuasively',
+        'the quality of being mild and gentle in weather or temperament',
+        'a system of money in general use in a particular country',
+      ],
     }
   ),
-  word('Coalesce', '결합하다', 9, 'verb',
+  word('coalesce', '결합하다', 9, 'verb',
     ['분리하다', '흩어지다', '해체하다', '분열시키다', '갈라놓다', '고립시키다', '단절하다', '파편화하다', '거부하다', '방해하다'],
     tips({
       etymology: '접두사 co-(함께)와 alescere(자라다)가 결합되어, 여러 요소가 함께 자라나며 결국 하나로 합쳐진다는 의미를 형성합니다.',
@@ -779,9 +1019,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The various local groups coalesced to form a national campaign against the new law.', ko: '다양한 지역 단체들이 새 법안에 반대하는 전국적인 캠페인을 전개하기 위해 하나로 결합했다.' },
         { en: 'As the heated gas cooled, it began to coalesce into solid particles.', ko: '가열된 가스가 식으면서 고체 입자로 결합하기 시작했다.' },
       ],
+      wordDistractors: ['collapse', 'convalesce', 'obsolescence'],
+      definitionDistractors: [
+        'to fall down or give way suddenly under pressure',
+        'to recover health and strength after an illness',
+        'the process of becoming outdated or no longer useful',
+      ],
     }
   ),
-  word('Cogitate', '숙고하다', 9, 'verb',
+  word('cogitate', '숙고하다', 9, 'verb',
     ['무시하다', '망각하다', '즉답하다', '충동적으로행동하다', '간과하다', '경시하다', '서두르다', '방치하다', '졸다', '떠들다'],
     tips({
       etymology: '라틴어 cogitare에서 유래했으며, 이는 \'함께(co) 흔들다(agitare)\' 즉 머릿속에서 여러 생각을 이리저리 흔들며 섞어본다는 의미를 담고 있습니다.',
@@ -798,9 +1044,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The philosopher needed to sit alone in the garden to cogitate on the complex moral dilemma.', ko: '그 철학자는 복잡한 도덕적 딜레마를 숙고하기 위해 정원에 홀로 앉아 있을 필요가 있었다.' },
         { en: 'Before making such a life-altering decision, you should take a few days to cogitate on the options.', ko: '인생을 바꿀 만한 결정을 내리기 전에, 며칠 동안 시간을 갖고 선택지들을 숙고해야 한다.' },
       ],
+      wordDistractors: ['conjugate', 'agitate', 'mitigate'],
+      definitionDistractors: [
+        'to stir up public opinion or feelings of unrest',
+        'to give the different forms of a verb in a fixed order',
+        'to make something less severe, serious, or painful',
+      ],
     }
   ),
-  word('Colloquial', '구어체의', 9, 'adjective',
+  word('colloquial', '구어체의', 9, 'adjective',
     ['격식체의', '문어체의', '공식적인', '학술적인', '고답적인', '딱딱한', '전문적인', '엄격한', '전통적인', '정중한'],
     tips({
       etymology: '함께를 뜻하는 col-과 말하다를 뜻하는 loqu-가 결합되어, 사람들끼리 모여 편하게 주고받는 말이라는 어원을 가집니다.',
@@ -817,9 +1069,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The dialogue was written in a colloquial style that felt natural and relaxed.', ko: '그 대화는 자연스럽고 편안하게 느껴지는 구어체 스타일로 작성되었습니다.' },
         { en: 'Colloquial expressions like slang are a common feature of everyday speech in many cultures.', ko: '속어와 같은 구어적 표현은 많은 문화권의 일상적인 말에서 흔히 나타나는 특징입니다.' },
       ],
+      wordDistractors: ['collateral', 'colloquium', 'loquacious'],
+      definitionDistractors: [
+        'something pledged as security for repayment of a loan',
+        'an academic seminar or conference on a specific topic',
+        'tending to talk a great deal; very talkative',
+      ],
     }
   ),
-  word('Commencement', '시작', 9, 'noun',
+  word('commencement', '시작', 9, 'noun',
     ['종료', '결말', '중단', '완성', '폐지', '해산', '은퇴', '마감', '소멸', '파기'],
     tips({
       etymology: 'com(완전히)과 mence(시작하다)가 결합하여 \'새로운 단계로의 진입\'을 의미합니다.',
@@ -836,9 +1094,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The commencement ceremony is at noon.', ko: '졸업식은 정오에 있다.' },
         { en: 'The commencement of the project was delayed.', ko: '프로젝트의 시작이 지연되었다.' },
       ],
+      wordDistractors: ['commandment', 'commitment', 'commensurate'],
+      definitionDistractors: [
+        'a divine rule or authoritative order to follow',
+        'the state of being dedicated to a cause or activity',
+        'corresponding in size, extent, or degree to something',
+      ],
     }
   ),
-  word('Commiserate', '동정하다', 9, 'verb',
+  word('commiserate', '동정하다', 9, 'verb',
     ['경멸하다', '조롱하다', '비웃다', '냉대하다', '질투하다', '비난하다', '무시하다', '괴롭히다', '외면하다', '박대하다'],
     tips({
       etymology: '라틴어 접두사 com(함께)과 miser(불쌍한)가 결합하여, 타인의 비참한 감정을 공유한다는 의미에서 유래했습니다.',
@@ -855,9 +1119,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The players gathered in the locker room to commiserate with each other over the narrow defeat.', ko: '선수들은 아쉬운 패배에 대해 서로를 위로하기 위해 라커룸에 모였다.' },
         { en: 'I went to the cafe to commiserate with my friend who had just lost her job.', ko: '나는 방금 직장을 잃은 친구의 슬픔을 나누고 위로해 주러 카페에 갔다.' },
       ],
+      wordDistractors: ['commemorate', 'commensurate', 'commissary'],
+      definitionDistractors: [
+        'to recall and show respect for a past event or person',
+        'equal in measure or extent; proportionate',
+        'a store that sells food and supplies on a military base',
+      ],
     }
   ),
-  word('Compunction', '양심의 가책', 9, 'noun',
+  word('compunction', '양심의 가책', 9, 'noun',
     ['뻔뻔함', '무감각', '만족', '자부심', '확신', '냉담', '무자비', '평정심', '기쁨', '안도'],
     tips({
       etymology: '어근 \'pung\'은 \'찌르다(prick)\'라는 뜻입니다. 양심이 바늘로 콕콕 찌르는 듯한 고통을 의미합니다.',
@@ -874,9 +1144,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The thief stole the money without any compunction.', ko: '그 도둑은 아무런 양심의 가책 없이 돈을 훔쳤다.' },
         { en: 'He had some compunction about taking the credit for his colleague\'s work.', ko: '그는 동료의 공로를 가로채는 것에 대해 약간의 가책을 느꼈다.' },
       ],
+      wordDistractors: ['conjunction', 'punctuation', 'compulsion'],
+      definitionDistractors: [
+        'the joining together of two or more things or events',
+        'the marks used in writing to separate sentences and clauses',
+        'an irresistible urge to behave in a certain way',
+      ],
     }
   ),
-  word('Conflagration', '대화재', 9, 'noun',
+  word('conflagration', '대화재', 9, 'noun',
     ['불꽃', '잔불', '소화', '물방울', '홍수', '가뭄', '한파', '평화', '안전', '진화'],
     tips({
       etymology: '함께를 뜻하는 con-과 타오르다를 뜻하는 flagr가 결합하여 모든 것을 집어삼키며 타오르는 상태를 나타냅니다.',
@@ -893,9 +1169,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The historic cathedral was reduced to ashes by the massive conflagration.', ko: '그 역사적인 성당은 거대한 대화재로 인해 잿더미가 되었습니다.' },
         { en: 'Strong winds fueled the conflagration, making it difficult for firefighters to control the flames.', ko: '강풍이 대화재를 부채질하여 소방관들이 불길을 잡는 데 어려움을 겪었습니다.' },
       ],
+      wordDistractors: ['congregation', 'configuration', 'confederation'],
+      definitionDistractors: [
+        'a group of people assembled for religious worship',
+        'an arrangement of parts or elements in a particular form',
+        'a union of states or groups formed for a common purpose',
+      ],
     }
   ),
-  word('Contiguous', '인접한', 9, 'adjective',
+  word('contiguous', '인접한', 9, 'adjective',
     ['떨어진', '분리된', '먼', '고립된', '단절된', '독립적인', '우회하는', '산재한', '격리된', '차단된'],
     tips({
       etymology: 'con(함께)과 tig(닿다)가 합쳐져 \'서로의 경계가 맞닿아 있는\' 상태를 말합니다.',
@@ -912,9 +1194,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'The two states are contiguous.', ko: '두 주는 인접해 있다.' },
         { en: 'The contiguous rooms shared a common wall.', ko: '인접한 방들이 공통 벽을 공유했다.' },
       ],
+      wordDistractors: ['contingent', 'ambiguous', 'continuous'],
+      definitionDistractors: [
+        'dependent on certain conditions or circumstances being met',
+        'open to more than one interpretation; unclear',
+        'forming an unbroken sequence without interruption',
+      ],
     }
   ),
-  word('Contrite', '참회하는', 9, 'adjective',
+  word('contrite', '참회하는', 9, 'adjective',
     ['거만한', '무감각한', '냉담한', '방어적인', '자랑하는', '뻔뻔한', '완고한', '무정한', '고집센', '당당한'],
     tips({
       etymology: '라틴어 \'con(완전히)\'과 \'terere(부수다/빻다)\'가 합쳐져, 죄책감으로 인해 마음이 가루처럼 부서진 상태를 의미합니다.',
@@ -931,9 +1219,15 @@ export const vocabBatch17: VocabItem[] = [
         { en: 'He seemed genuinely contrite after the accident.', ko: '그는 사고 이후 진심으로 참회하는 것처럼 보였다.' },
         { en: 'She wrote a contrite letter of apology to her teacher.', ko: '그녀는 선생님께 참회하는 마음을 담은 사과 편지를 썼다.' },
       ],
+      wordDistractors: ['contort', 'concrete', 'conceit'],
+      definitionDistractors: [
+        'to twist or bend something out of its normal shape',
+        'existing in a material or physical form; not abstract',
+        'an excessively favorable opinion of one\'s own abilities',
+      ],
     }
   ),
-  word('Conundrum', '난제', 9, 'noun',
+  word('conundrum', '난제', 9, 'noun',
     ['해답', '명확함', '단순함', '해결책', '이해', '결론', '설명', '직관', '확신', '정답'],
     tips({
       etymology: '16세기 옥스퍼드 대학생들이 장난스럽게 만든 가짜 라틴어 단어에서 유래하여 \'익살스러운 문제\'를 뜻하게 되었습니다.',
@@ -949,6 +1243,12 @@ export const vocabBatch17: VocabItem[] = [
       exampleSentences: [
         { en: 'The budget posed a difficult conundrum for the city council.', ko: '예산안은 시의회에 어려운 난제를 제기했다.' },
         { en: 'Solving this mathematical conundrum required years of research.', ko: '이 수학적 난제를 해결하는 데 수년간의 연구가 필요했다.' },
+      ],
+      wordDistractors: ['quandary', 'continuum', 'consortium'],
+      definitionDistractors: [
+        'a continuous sequence in which adjacent elements are similar',
+        'an association of several companies formed for a shared purpose',
+        'a formal agreement between two or more parties',
       ],
     }
   ),

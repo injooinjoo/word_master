@@ -3,7 +3,7 @@ import { word, tips } from './helpers';
 
 export const vocabBatch45: VocabItem[] = [
   word('mediate', '중재하다', 6, 'verb',
-    ['반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다'],
+    ['관찰하다', '굳다, 응고하다', '화해시키다', '선동하다', '오싹하다', '범인을 관할국에 인도하다', '통근하다', '절망하다', '회색으로 만들다', '선택하다'],
     tips({
       etymology: '라틴어 \'medius(중간)\'에서 유래하여 두 당사자 사이의 중간 지점에 서는 것을 의미합니다.',
       visual: '싸우고 있는 두 친구 사이에 한 사람이 들어가 양손을 뻗어 진정시키는 모습을 상상하세요.',
@@ -19,10 +19,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The United Nations was called in to help the peace talks between the two warring nations.', ko: '유엔은 전쟁 중인 두 국가 사이의 평화 회담을 중재하기 위해 소집되었습니다.' },
         { en: 'A professional counselor was hired to resolve the conflict and improve communication within the team.', ko: '팀 내 갈등을 중재하고 소통을 개선하기 위해 전문 상담사가 고용되었습니다.' },
       ],
+      wordDistractors: ['meditate', 'mitigate', 'motivate'],
+      definitionDistractors: [
+        'to contemplate or reflect deeply on a subject',
+        'to act as an official judge in a legal proceeding',
+        'to translate spoken words from one language to another in real time',
+      ],
     }
   ),
   word('medical', '의학의', 7, 'adjective',
-    ['간접적인', '명확한', '모호한', '적절한', '부적절한', '긍정적인', '부정적인', '대표적인', '기본적인', '중요한'],
+    ['불가능한', '신성 불가침의', '회개하는', '필적하는, 비교되는', '희귀한', '성공적인', '(세금 등이)연체된, 미불의', '대표적인', '기본적인', '중요한'],
     tips({
       etymology: '라틴어 \'medicus(의사)\'에서 유래하여 치료와 관련된 모든 것을 의미하게 되었습니다.',
       visual: '흰 가운을 입은 의사가 청진기를 들고 환자를 진찰하는 병원 풍경을 상상해 보세요.',
@@ -38,10 +44,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The patient required immediate medical attention after the accident.', ko: '환자는 사고 후 즉각적인 의학적 조치가 필요했습니다.' },
         { en: 'Advances in medical technology have significantly increased life expectancy.', ko: '의료 기술의 발전은 기대 수명을 크게 연장시켰습니다.' },
       ],
+      wordDistractors: ['medial', 'medieval', 'metallic'],
+      definitionDistractors: [
+        'relating to the middle position or center of something',
+        'involving the use of traditional herbal remedies rather than modern science',
+        'pertaining to legal matters or court proceedings',
+      ],
     }
   ),
   word('medicine', '약', 4, 'noun',
-    ['의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태'],
+    ['아침밥', '열정, 열의', '합의', '폐, 허파', '배심', '활력, 기백, 열정', '추천서 / 감사, 찬양의 표현', '포고령', '수동성/소극성', '불꽃'],
     tips({
       etymology: '라틴어 \'medicus(의사)\'에서 유래하여 병을 고치는 물질이나 학문을 뜻하게 되었습니다.',
       visual: '알약이 가득 담긴 병이나 하얀 가운을 입은 의사가 처방전을 건네는 모습을 상상하세요.',
@@ -56,6 +68,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The doctor prescribed a specific type of liquid to help lower the fever.', ko: '의사는 열을 내리는 데 도움이 되는 특정 종류의 물약을 처방했습니다.' },
         { en: 'Modern science has made incredible progress in finding treatments for rare diseases.', ko: '현대 의학은 희귀 질병의 치료법을 찾는 데 있어 놀라운 발전을 이루었습니다.' },
+      ],
+      wordDistractors: ['medium', 'meditate', 'mediocre'],
+      definitionDistractors: [
+        'a form of physical exercise designed to improve overall fitness',
+        'a legal document authorizing treatment or surgical procedures',
+        'a type of educational degree in the biological sciences',
       ],
     }
   ),
@@ -76,10 +94,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The city is famous for its well-preserved castles and narrow streets from the middle ages.', ko: '그 도시는 잘 보존된 성들과 중세 시대의 좁은 거리들로 유명합니다.' },
         { en: 'Scholars study ancient manuscripts to understand the social hierarchy of that era.', ko: '학자들은 그 시대의 사회적 계급 구조를 이해하기 위해 고대 필사본들을 연구합니다.' },
       ],
+      wordDistractors: ['medical', 'mediocre', 'medial'],
+      definitionDistractors: [
+        'relating to the practice of healing or treating illnesses',
+        'belonging to or characteristic of ancient Greek and Roman civilizations',
+        'describing something that is average or of moderate quality',
+      ],
     }
   ),
   word('medium', '중간', 5, 'noun',
-    ['기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과'],
+    ['초목, 식물', '존재,생물', '티베트', '변화, 변동', '구리, 동', '조수', '수수료', '학기', '시트, 침대보', '수렁, 곤경'],
     tips({
       etymology: '라틴어 \'medius\'에서 유래하여 \'가운데\'라는 핵심 의미를 담고 있습니다.',
       visual: '스테이크 굽기 정도를 떠올릴 때 핏기가 약간 있는 중간 단계를 상상해 보세요.',
@@ -95,10 +119,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The artist chose oil paint as her primary artistic vehicle for this collection.', ko: '그 예술가는 이번 컬렉션을 위한 주요 예술적 매체로 유화 물감을 선택했습니다.' },
         { en: 'A happy balance must be found between working too hard and not working at all.', ko: '너무 열심히 일하는 것과 전혀 일하지 않는 것 사이에서 행복한 절충점을 찾아야 합니다.' },
       ],
+      wordDistractors: ['median', 'medial', 'meridian'],
+      definitionDistractors: [
+        'a person who claims to communicate with spirits of the dead',
+        'a tool used for precise measurement in scientific experiments',
+        'the largest or most significant element in a given set',
+      ],
     }
   ),
   word('meet', '만나다', 3, 'verb',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['피하다', '헤어지다', '떠나다', '놓치다', '무시하다', '거절하다', '외면하다', '도망치다', '숨다', '갈라서다'],
     tips({
       etymology: '고대 영어 \'metan\'에서 유래하여 누군가와 마주하거나 한 지점에서 합쳐지는 것을 의미합니다.',
       visual: '두 사람이 길을 걷다가 중간 지점에서 반갑게 손을 흔들며 마주치는 장면을 상상하세요.',
@@ -113,6 +143,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'We should gather at the central station to discuss our travel plans for the weekend.', ko: '우리는 주말 여행 계획을 논의하기 위해 중앙역에서 만나야 합니다.' },
         { en: 'The two rivers join at the base of the mountain and flow toward the ocean.', ko: '두 강은 산기슭에서 만나 바다를 향해 흐릅니다.' },
+      ],
+      wordDistractors: ['meat', 'mete', 'meek'],
+      definitionDistractors: [
+        'to distribute or allocate resources evenly among a group',
+        'to prepare food by combining ingredients and cooking them',
+        'to compete against someone in a formal contest or match',
       ],
     }
   ),
@@ -133,10 +169,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The thick snow began to disappear as the spring sun grew warmer.', ko: '봄볕이 따뜻해지면서 두꺼운 눈이 녹기 시작했습니다.' },
         { en: 'Add a small piece of butter to the hot pan and wait for it to turn liquid.', ko: '뜨거운 팬에 버터 한 조각을 넣고 그것이 녹을 때까지 기다리세요.' },
       ],
+      wordDistractors: ['malt', 'meld', 'welt'],
+      definitionDistractors: [
+        'to mix or combine different substances into an alloy',
+        'to evaporate completely and disappear into the atmosphere',
+        'to gradually erode or wear away a surface through friction',
+      ],
     }
   ),
   word('memory', '기억', 1, 'noun',
-    ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
+    ['브라질', '호수', '교도소', '무관심함/냉담함', '겉껍질', '명예', '기구', '벤저민', '양면 가치(상반된 태도를 동시에 가짐) / 치우치지 않은', '페이지, 쪽'],
     tips({
       etymology: '라틴어 memor(기억하는)에서 유래하여 마음속에 간직하고 있는 상태를 뜻합니다.',
       visual: '머릿속에 있는 거대한 도서관에서 옛날 앨범을 꺼내 보는 장면을 상상해 보세요.',
@@ -151,6 +193,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'She has a vivid recollection of her first day at school.', ko: '그녀는 학교에 처음 갔던 날에 대한 생생한 기억을 가지고 있다.' },
         { en: 'The computer needs more storage to save every digital file.', ko: '그 컴퓨터는 모든 디지털 파일을 저장하기 위해 더 많은 기억 용량이 필요하다.' },
+      ],
+      wordDistractors: ['memoir', 'memorial', 'membrane'],
+      definitionDistractors: [
+        'a written account of historical events recorded by an observer',
+        'the capacity to imagine future scenarios and plan accordingly',
+        'a physical structure in the brain responsible for motor control',
       ],
     }
   ),
@@ -171,10 +219,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'Regular exercise is beneficial for both physical and health well-being.', ko: '규칙적인 운동은 신체적 건강과 정신적 건강 모두에 유익합니다.' },
         { en: 'The math competition required intense concentration and agility.', ko: '그 수학 경시대회는 강렬한 집중력과 지적 민첩성을 요구했습니다.' },
       ],
+      wordDistractors: ['menial', 'dental', 'rental'],
+      definitionDistractors: [
+        'relating to the physical strength and endurance of the body',
+        'involving the emotional bonds between family members',
+        'pertaining to formal education and academic credentials',
+      ],
     }
   ),
   word('mention', '언급하다', 4, 'verb',
-    ['분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다'],
+    ['분석하다', '정리하다', '감소하다', '꾸짖다, 나무라다', '의심하다', '비난하다', '침식하다', '보완하다', '압착하다', '산업화하다'],
     tips({
       etymology: '라틴어 \'mentio\'에서 유래했으며, \'마음속에 떠올리게 하다\'라는 의미에서 \'말을 꺼내다\'로 발전했습니다.',
       visual: '대화 도중 손가락을 하나 까딱하며 \'아 참, 그리고...\'라고 새로운 화제를 꺼내는 모습을 상상하세요.',
@@ -189,6 +243,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The reporter forgot to cite the original source during the live broadcast.', ko: '기자는 생방송 중에 원래 출처를 거론하는 것을 잊었습니다.' },
         { en: 'Please do not bring up my previous mistakes during the family dinner.', ko: '가족 저녁 식사 자리에서 제 이전 실수들을 말하지 말아 주세요.' },
+      ],
+      wordDistractors: ['mansion', 'mentor', 'motion'],
+      definitionDistractors: [
+        'to describe something in elaborate and thorough detail',
+        'to formally announce a decision to a large audience',
+        'to recall a past event with great emotional intensity',
       ],
     }
   ),
@@ -209,6 +269,12 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The wealthy merchant traveled across the ocean to trade silk and spices.', ko: '그 부유한 상인은 비단과 향신료를 거래하기 위해 대양을 건너 여행했습니다.' },
         { en: 'Local wine merchants are reporting a significant increase in sales this year.', ko: '지역 와인 상인들은 올해 매출이 크게 증가했다고 보고하고 있습니다.' },
       ],
+      wordDistractors: ['mercenary', 'mercury', 'marching'],
+      definitionDistractors: [
+        'a craftsperson who makes goods by hand in a workshop',
+        'a government official responsible for regulating trade and commerce',
+        'a traveling entertainer who performs at markets and fairs',
+      ],
     }
   ),
   word('mere', '단순한', 8, 'adjective',
@@ -227,6 +293,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The cost of the repair was a mere ten dollars.', ko: '수리비는 단돈 10달러에 불과했습니다.' },
         { en: 'She was a mere child when she first started playing the piano professionally.', ko: '그녀가 처음 전문적으로 피아노를 치기 시작했을 때는 고작 어린아이에 불과했습니다.' },
+      ],
+      wordDistractors: ['mire', 'more', 'mare'],
+      definitionDistractors: [
+        'pure and unadulterated in quality or composition',
+        'having great importance or value beyond expectations',
+        'existing in a complete and fully developed form',
       ],
     }
   ),
@@ -247,6 +319,12 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The two small tech companies decided to join forces and form a larger corporation.', ko: '두 작은 기술 회사는 힘을 합쳐 더 큰 법인을 설립하기 위해 합병하기로 결정했습니다.' },
         { en: 'Drivers should be careful when they enter the highway where multiple lanes become one.', ko: '운전자들은 여러 차선이 하나로 합쳐지는 고속도로에 진입할 때 주의해야 합니다.' },
       ],
+      wordDistractors: ['verge', 'purge', 'surge'],
+      definitionDistractors: [
+        'to submerge or sink below the surface of water',
+        'to suddenly appear or come into existence from nothing',
+        'to gradually reduce in size until completely gone',
+      ],
     }
   ),
   word('merit', '장점', 6, 'noun',
@@ -265,6 +343,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The committee evaluated each proposal based on its individual excellence and practical value.', ko: '위원회는 각 제안서를 개별적인 우수성과 실용적 가치에 따라 평가했습니다.' },
         { en: 'Her promotion was strictly based on her professional achievements rather than seniority.', ko: '그녀의 승진은 연공서열보다는 철저히 그녀의 전문적인 업적과 장점에 기반했습니다.' },
+      ],
+      wordDistractors: ['mirth', 'merlin', 'ferret'],
+      definitionDistractors: [
+        'a flaw or defect that reduces the overall quality of something',
+        'a formal request submitted to a court for legal review',
+        'an inherited title of nobility passed down through generations',
       ],
     }
   ),
@@ -285,6 +369,12 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The children left a huge pile of toys and paper in the living room after playing.', ko: '아이들이 놀고 난 뒤 거실에 장난감과 종이를 잔뜩 어질러 놓았다.' },
         { en: 'The sudden cancellation of the flight created a complete administrative nightmare for the airline.', ko: '갑작스러운 항공편 취소는 항공사에 완벽한 행정적 혼란을 야기했다.' },
       ],
+      wordDistractors: ['mass', 'mesh', 'mist'],
+      definitionDistractors: [
+        'a formal dining area where soldiers or workers eat together',
+        'a structured arrangement of items in a specific pattern',
+        'a brief communication or written note sent between people',
+      ],
     }
   ),
   word('metal', '금속', 4, 'noun',
@@ -304,10 +394,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'Gold is a precious material used for making jewelry and electronic components.', ko: '금은 보석과 전자 부품을 만드는 데 사용되는 귀중한 금속입니다.' },
         { en: 'The bridge was constructed using heavy beams to ensure structural stability.', ko: '그 다리는 구조적 안정성을 보장하기 위해 무거운 금속 보를 사용하여 건설되었습니다.' },
       ],
+      wordDistractors: ['mettle', 'medal', 'mental'],
+      definitionDistractors: [
+        'a type of rock formed by volcanic activity deep underground',
+        'a chemical compound created through laboratory synthesis',
+        'a decorative coating applied to surfaces for aesthetic purposes',
+      ],
     }
   ),
   word('method', '방법', 5, 'noun',
-    ['기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과'],
+    ['오두막', '속기, 약어', '에드워드 펠릭스 노튼 (인명)', '원뿔, 콘', '혁명', '가장 중요한 점', '군수품/(특히)탄약', '자동차', '수확', '검열관'],
     tips({
       etymology: '그리스어 \'meta(따라)\'와 \'hodos(길)\'가 합쳐져 \'길을 따라가는 방식\'이라는 의미에서 유래했습니다.',
       visual: '복잡한 기계를 조립할 때 옆에 놓인 체계적인 설명서나 순서도를 상상해 보세요.',
@@ -322,6 +418,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'Scientists developed a new system to purify water more efficiently.', ko: '과학자들은 물을 더 효율적으로 정화하기 위한 새로운 방법을 개발했습니다.' },
         { en: 'The traditional teaching style is still effective for many students.', ko: '전통적인 교육 방법은 여전히 많은 학생들에게 효과적입니다.' },
+      ],
+      wordDistractors: ['methane', 'metho', 'mythic'],
+      definitionDistractors: [
+        'the final result or outcome of a scientific experiment',
+        'a physical tool or instrument used for manual labor',
+        'an authoritative rule or regulation imposed by a governing body',
       ],
     }
   ),
@@ -342,6 +444,12 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The government is planning to expand the public transportation network across the entire area.', ko: '정부는 전체 수도권 지역을 가로지르는 대중교통망을 확장할 계획입니다.' },
         { en: 'Living in a large area provides easy access to diverse cultural events and job opportunities.', ko: '대도시권에 사는 것은 다양한 문화 행사와 취업 기회에 대한 쉬운 접근성을 제공합니다.' },
       ],
+      wordDistractors: ['meteorological', 'metronomic', 'metaphorical'],
+      definitionDistractors: [
+        'relating to the measurement and study of weather patterns',
+        'describing a nation or country with international influence',
+        'pertaining to underground railway systems and transit networks',
+      ],
     }
   ),
   word('microphone', '마이크', 6, 'noun',
@@ -361,10 +469,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The lead singer grabbed the stand and began to belt out the lyrics.', ko: '리드 보컬은 스탠드를 잡고 가사를 열창하기 시작했습니다.' },
         { en: 'Please speak directly into the device so that everyone in the back of the room can hear you.', ko: '방 뒤쪽에 있는 모든 사람이 들을 수 있도록 장치에 대고 직접 말씀해 주세요.' },
       ],
+      wordDistractors: ['microscope', 'microcosm', 'microlith'],
+      definitionDistractors: [
+        'a device that records visual images for playback on a screen',
+        'a speaker system that projects sound across large distances',
+        'a small electronic chip that processes digital audio signals',
+      ],
     }
   ),
   word('microwave', '전자레인지', 7, 'noun',
-    ['반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다'],
+    ['오븐', '냉장고', '토스터', '식기세척기', '가스레인지', '믹서기', '커피머신', '에어프라이어', '전기밥솥', '인덕션'],
     tips({
       etymology: '작은을 뜻하는 micro와 파동을 뜻하는 wave가 결합되어 전자기파로 음식을 데우는 원리를 담고 있습니다.',
       visual: '편의점에서 도시락을 넣고 버튼을 누른 뒤 회전판이 돌아가는 모습을 상상해 보세요.',
@@ -373,12 +487,18 @@ export const vocabBatch45: VocabItem[] = [
       synonymAntonym: 'heat up과 유사하지만 전용 기기를 사용한다는 점이 다르며, freeze와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'To cook or heat food quickly using an appliance that emits electromagnetic waves.',
-      synonyms: ['zap', 'nuke', 'heat up'],
-      antonyms: ['freeze', 'chill', 'cool'],
+      definition: 'an oven that uses electromagnetic radiation to cook or heat food quickly',
+      synonyms: ['oven', 'cooker', 'heater'],
+      antonyms: ['freezer', 'refrigerator', 'cooler'],
       exampleSentences: [
         { en: 'The office worker decided to microwave his leftovers for a quick lunch.', ko: '그 직장인은 빠른 점심 식사를 위해 남은 음식을 전자레인지에 데우기로 했다.' },
         { en: 'Please microwave the frozen burrito for two minutes until it is hot.', ko: '냉동 부리토가 뜨거워질 때까지 2분 동안 전자레인지에 돌려주세요.' },
+      ],
+      wordDistractors: ['microscope', 'microchip', 'microbial'],
+      definitionDistractors: [
+        'a small portable radio receiver used to pick up broadcast signals',
+        'a device that uses pressurized steam to sterilize medical equipment',
+        'an appliance that rapidly cools food by circulating cold air',
       ],
     }
   ),
@@ -399,10 +519,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The child sat in the seat between his two parents during the long flight.', ko: '그 아이는 긴 비행 동안 부모님 사이의 한복판 좌석에 앉았다.' },
         { en: 'A small fountain was placed in the very section of the garden to create a focal point.', ko: '정원 한복판 구역에 초점을 만들기 위해 작은 분수가 설치되었다.' },
       ],
+      wordDistractors: ['muddle', 'meddle', 'riddle'],
+      definitionDistractors: [
+        'situated at the highest or most elevated point of something',
+        'being the first or earliest in a sequence of events',
+        'located at the farthest edge or boundary of an area',
+      ],
     }
   ),
   word('might', '힘', 3, 'noun',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['껍질', '참정권 확대론자', '따뜻함', '게임', '달걀', '개선, 향상', '증거', '상습적 범행, 좋지 않았던것을 되풀이함', '수족관', '정권, 체제'],
     tips({
       etymology: '고대 영어 \'miht\'에서 유래했으며, \'할 수 있다\'는 뜻의 may와 어원이 같아 강력한 능력을 뜻하게 되었습니다.',
       visual: '거대한 거인이 바위를 번쩍 들어 올리는 압도적인 완력을 상상해 보세요.',
@@ -418,10 +544,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The Roman Empire maintained its dominance through sheer military power and strategic planning.', ko: '로마 제국은 순전한 군사적 힘과 전략적 계획을 통해 지배력을 유지했습니다.' },
         { en: 'He pushed the heavy stone door with all his physical energy until it finally creaked open.', ko: '그는 무거운 돌문이 마침내 삐걱거리며 열릴 때까지 온 힘을 다해 밀었습니다.' },
       ],
+      wordDistractors: ['mite', 'knight', 'plight'],
+      definitionDistractors: [
+        'the possibility or likelihood that something will happen in the future',
+        'a legal right granted to an individual by a governing authority',
+        'a formal title of respect given to a person of noble birth',
+      ],
     }
   ),
   word('migrate', '이주하다', 8, 'verb',
-    ['반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다'],
+    ['물리치다', '수정하다, 개정하다', '보완하다', '생산하다, 농산물', '일반화하다, 보편화하다', '짓밟다', '때려눕히다', '급증하다', '모순되다', '선택하다'],
     tips({
       etymology: '라틴어 migrare에서 유래했으며, 이는 \'한 장소에서 다른 장소로 이동하다\'라는 근본적인 의미를 담고 있습니다.',
       visual: '겨울을 나기 위해 수천 마리의 철새들이 V자 대형을 그리며 따뜻한 남쪽으로 날아가는 광경을 상상해 보세요.',
@@ -436,6 +568,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'Many species of birds fly thousands of miles to warmer climates every winter.', ko: '많은 종의 새들이 매년 겨울 더 따뜻한 기후를 찾아 수천 마일을 날아 이동합니다.' },
         { en: 'The IT department planned to transfer all user data to the new cloud server over the weekend.', ko: 'IT 부서는 주말 동안 모든 사용자 데이터를 새로운 클라우드 서버로 이전할 계획을 세웠습니다.' },
+      ],
+      wordDistractors: ['mitigate', 'militate', 'irrigate'],
+      definitionDistractors: [
+        'to transform or change the fundamental nature of a substance',
+        'to gradually adapt to new environmental conditions over time',
+        'to transport goods or cargo across long distances by vehicle',
       ],
     }
   ),
@@ -456,6 +594,12 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The doctor diagnosed him with a case of the flu that was relatively not severe.', ko: '의사는 그가 상대적으로 증상이 가벼운 독감에 걸렸다고 진단했다.' },
         { en: 'We enjoyed a walk in the park thanks to the unusually warm winter weather.', ko: '우리는 유난히 포근한 겨울 날씨 덕분에 공원 산책을 즐겼다.' },
       ],
+      wordDistractors: ['meld', 'guild', 'mold'],
+      definitionDistractors: [
+        'extremely hot and uncomfortable to the point of being unbearable',
+        'having a sharp or bitter taste that lingers on the tongue',
+        'wild and untamed in behavior or temperament',
+      ],
     }
   ),
   word('military', '군의', 5, 'adjective',
@@ -474,6 +618,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The government decided to increase its spending on national defense and equipment.', ko: '정부는 국가 방위와 군 장비에 대한 지출을 늘리기로 결정했습니다.' },
         { en: 'All young men in the country are required to perform two years of service.', ko: '그 나라의 모든 젊은 남성들은 2년 동안 군 복무를 수행해야 합니다.' },
+      ],
+      wordDistractors: ['militant', 'militate', 'millinery'],
+      definitionDistractors: [
+        'relating to manufacturing and industrial production processes',
+        'involving diplomatic negotiations between foreign nations',
+        'pertaining to civilian law enforcement and police operations',
       ],
     }
   ),
@@ -494,10 +644,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The farmer used a stone device to grind wheat into flour for baking bread.', ko: '농부는 빵을 굽기 위해 밀을 가루로 갈려고 돌로 된 맷돌을 사용했습니다.' },
         { en: 'Ancient civilizations relied on manual grinding tools to process their daily harvest.', ko: '고대 문명은 매일 수확한 농작물을 가공하기 위해 수동 맷돌 도구에 의존했습니다.' },
       ],
+      wordDistractors: ['mull', 'pill', 'grill'],
+      definitionDistractors: [
+        'a large industrial building used for manufacturing textiles',
+        'a unit of currency equal to one-tenth of a cent',
+        'a rotating blade used for cutting lumber into planks',
+      ],
     }
   ),
   word('million', '백만', 7, 'noun',
-    ['천', '만', '십만', '천만', '억', '조', '숫자', '단위', '합계', '평균'],
+    ['천', '만', '십만', '천만', '억', '플라스틱', '숫자', '단위', '합계', '평균'],
     tips({
       etymology: '이탈리아어 \'mille(천)\'에 큰 것을 뜻하는 접미사 \'-one\'이 붙어 \'큰 천(천의 천 배)\'이라는 의미에서 유래했습니다.',
       visual: '숫자 1 뒤에 동그라미가 6개(1,000,000) 붙어 있는 거대한 돈다발 더미를 상상해 보세요.',
@@ -512,6 +668,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The city has a population of over one unit of this large number.', ko: '그 도시의 인구는 백만 명이 넘습니다.' },
         { en: 'Winning the lottery would make her a very wealthy person instantly.', ko: '복권에 당첨되면 그녀는 즉시 백만장자가 될 것입니다.' },
+      ],
+      wordDistractors: ['billion', 'minion', 'mullion'],
+      definitionDistractors: [
+        'a very small fraction or percentage of a larger whole',
+        'an extremely long period of time spanning several centuries',
+        'a unit of measurement used to calculate distance in navigation',
       ],
     }
   ),
@@ -532,6 +694,12 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'A healthy body often leads to a healthy and peaceful state of thinking.', ko: '건강한 신체는 종종 건강하고 평화로운 사고 상태로 이어집니다.' },
         { en: 'Keep your goals in your thoughts to stay motivated throughout the day.', ko: '하루 종일 동기 부여를 유지하기 위해 목표를 마음속에 간직하세요.' },
       ],
+      wordDistractors: ['mine', 'mild', 'mend'],
+      definitionDistractors: [
+        'a particular opinion or attitude toward a specific subject',
+        'the physical brain organ that controls bodily functions',
+        'a strong preference or desire for a particular outcome',
+      ],
     }
   ),
   word('miner', '광산업자', 4, 'noun',
@@ -550,6 +718,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The brave individual spent ten hours a day working deep inside the coal pit.', ko: '그 용감한 사람은 석탄 구덩이 깊은 곳에서 하루에 10시간 동안 일했습니다.' },
         { en: 'Many people moved to California in 1849 hoping to strike it rich as a gold seeker.', ko: '많은 사람들이 금광 채굴자로 성공하여 부자가 되기를 희망하며 1849년에 캘리포니아로 이주했습니다.' },
+      ],
+      wordDistractors: ['minor', 'diner', 'liner'],
+      definitionDistractors: [
+        'a person who designs and builds structures above ground',
+        'a young person who has not yet reached the legal age of adulthood',
+        'a small explosive device buried beneath the surface of the ground',
       ],
     }
   ),
@@ -570,10 +744,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The mountain is rich in iron and other valuable deposits.', ko: '그 산은 철과 다른 가치 있는 광물 매장량이 풍부합니다.' },
         { en: 'Calcium is an essential nutrient for maintaining strong bones and teeth.', ko: '칼슘은 튼튼한 뼈와 치아를 유지하는 데 필수적인 무기질입니다.' },
       ],
+      wordDistractors: ['minimal', 'minister', 'minstrel'],
+      definitionDistractors: [
+        'a liquid substance found in underground springs and wells',
+        'any organic material derived from living plants or animals',
+        'a synthetic compound manufactured in a chemical laboratory',
+      ],
     }
   ),
   word('minimal', '최소한의', 6, 'adjective',
-    ['최대한의', '복잡한', '화려한', '거대한', '중요한', '명확한', '부적절한', '긍정적인', '기본적인', '대표적인'],
+    ['최대한의', '복잡한', '화려한', '거대한', '중요한', '소형의, 압축하다', '보수적인/(실제 수나 양보다)적게 잡은', '완고한, 다루기 힘든', '기본적인', '대표적인'],
     tips({
       etymology: '라틴어 \'minimus\'에서 유래하여 \'가장 작은\'이라는 의미를 담고 있습니다.',
       visual: '방 안에 가구 하나 없이 침대만 덩그러니 놓여 있는 텅 빈 공간을 상상해 보세요.',
@@ -588,6 +768,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The damage to the car was so slight that it required only a small repair.', ko: '자동차의 손상은 아주 적어서 약간의 수리만 필요했습니다.' },
         { en: 'Modern interior design often focuses on clean lines and a very simple aesthetic.', ko: '현대적인 인테리어 디자인은 종종 깔끔한 선과 매우 단순한 미학에 집중합니다.' },
+      ],
+      wordDistractors: ['criminal', 'nominal', 'maximal'],
+      definitionDistractors: [
+        'elaborate and highly decorated with intricate detail',
+        'extremely large in scale or scope beyond normal limits',
+        'relating to the bare essentials needed for basic survival',
       ],
     }
   ),
@@ -608,6 +794,12 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The law requires employers to pay their workers a specific hourly rate as a legal base.', ko: '법은 고용주가 근로자에게 법정 기준으로서 특정 시간당 임금을 지급할 것을 요구합니다.' },
         { en: 'Applicants must have at least three years of experience to be considered for this position.', ko: '이 직책에 고려되려면 지원자는 적어도 3년의 경력을 가지고 있어야 합니다.' },
       ],
+      wordDistractors: ['miniature', 'minion', 'maximize'],
+      definitionDistractors: [
+        'the average value calculated from a set of numerical data',
+        'the highest point or peak that something can reach',
+        'a baseline standard used as a reference for comparison',
+      ],
     }
   ),
   word('ministry', '부처, 부서', 4, 'noun',
@@ -626,6 +818,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The newly appointed official will lead the health department starting next month.', ko: '새로 임명된 관료는 다음 달부터 보건부를 이끌게 될 것입니다.' },
         { en: 'Several changes were implemented during his time in the high-ranking government office.', ko: '그가 장관직에 있는 동안 여러 가지 변화가 시행되었습니다.' },
+      ],
+      wordDistractors: ['minister', 'minstrel', 'industry'],
+      definitionDistractors: [
+        'a religious ceremony or service conducted in a place of worship',
+        'a private organization that provides charitable services to the public',
+        'an academic institution dedicated to research and higher education',
       ],
     }
   ),
@@ -646,6 +844,12 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The car sustained only some scratches after the small accident.', ko: '그 작은 사고 이후 자동차에는 약간의 가벼운 흠집만 생겼다.' },
         { en: 'We encountered a few issues during the software installation process.', ko: '소프트웨어 설치 과정에서 몇 가지 사소한 문제들이 발생했다.' },
       ],
+      wordDistractors: ['miner', 'manor', 'mirror'],
+      definitionDistractors: [
+        'a person who is under the legal age of adulthood',
+        'relating to a musical key that produces a bright and cheerful sound',
+        'the primary or most dominant element in a group or category',
+      ],
     }
   ),
   word('minute', '분', 6, 'noun',
@@ -665,10 +869,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The microwave will beep once the timer reaches the final sixty seconds.', ko: '타이머가 마지막 60초에 도달하면 전자레인지에서 신호음이 울릴 것입니다.' },
         { en: 'Please wait for a brief period while I finish this phone call.', ko: '전화를 마칠 때까지 잠시만 기다려 주시기 바랍니다.' },
       ],
+      wordDistractors: ['minuet', 'minutiae', 'minutes'],
+      definitionDistractors: [
+        'an extremely small or tiny physical object barely visible to the eye',
+        'a detailed written record of proceedings at a formal meeting',
+        'a precise unit of angular measurement used in navigation',
+      ],
     }
   ),
   word('miracle', '기적', 7, 'noun',
-    ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
+    ['막대', '연구자, 연구원', '저녁 식사', '시계소리', '저널리스트, 기자', '변화, 수정', '하와이', '전날 밤', '영광', '전략'],
     tips({
       etymology: '라틴어 \'mirari(놀라다)\'에서 유래하여, 인간의 능력을 넘어서는 놀라운 일을 뜻합니다.',
       visual: '불치병이 갑자기 완치되거나 마른 하늘에서 비가 내리는 마법 같은 장면을 상상해 보세요.',
@@ -683,6 +893,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The doctors said her complete recovery was nothing short of a divine intervention.', ko: '의사들은 그녀의 완전한 회복이 신의 개입이나 다름없는 놀라운 일이라고 말했다.' },
         { en: 'The team needed a last-minute goal to stay in the tournament, and they got one.', ko: '그 팀은 토너먼트에 잔류하기 위해 마지막 순간의 행운이 필요했고, 실제로 그것을 얻어냈다.' },
+      ],
+      wordDistractors: ['mirage', 'myracle', 'oracle'],
+      definitionDistractors: [
+        'a natural disaster caused by extreme weather conditions',
+        'a carefully planned strategy to achieve a difficult goal',
+        'a rare but scientifically explainable coincidence of events',
       ],
     }
   ),
@@ -703,10 +919,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'She checked her hair in the hallway before leaving the house.', ko: '그녀는 집을 나서기 전 복도에 있는 거울로 머리 모양을 확인했다.' },
         { en: 'The calm surface of the lake acted as a perfect natural glass for the mountains.', ko: '호수의 잔잔한 표면은 산들을 비추는 완벽한 천연 거울 역할을 했다.' },
       ],
+      wordDistractors: ['mirage', 'mister', 'minor'],
+      definitionDistractors: [
+        'a transparent glass panel installed in a wall to let in light',
+        'an optical device that magnifies small objects for closer inspection',
+        'a flat screen used to display digital images and video content',
+      ],
     }
   ),
-  word('miss', '실수하다', 3, 'verb',
-    ['유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다'],
+  word('miss', '놓치다', 3, 'verb',
+    ['잡다', '맞히다', '성공하다', '따라잡다', '발견하다', '도착하다', '완성하다', '이루다', '획득하다', '포착하다'],
     tips({
       etymology: '고대 영어 \'missan\'에서 유래하여 \'목표를 맞히지 못하다\'라는 의미에서 \'실수하다\'로 발전했습니다.',
       visual: '농구 선수가 골대를 향해 던진 공이 림을 맞고 튕겨 나가는 아쉬운 장면을 상상해 보세요.',
@@ -721,6 +943,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The archer was disappointed to fail his target by such a narrow margin.', ko: '궁수는 아주 근소한 차이로 과녁을 맞히지 못해 실망했습니다.' },
         { en: 'Be careful not to overlook any important details during the final exam.', ko: '기말고사 동안 중요한 세부 사항을 놓치는 실수를 하지 않도록 주의하세요.' },
+      ],
+      wordDistractors: ['mist', 'mass', 'bliss'],
+      definitionDistractors: [
+        'to send a written communication to someone through postal service',
+        'to deliberately choose not to participate in an activity',
+        'to feel a deep sense of longing or nostalgia for someone absent',
       ],
     }
   ),
@@ -741,10 +969,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The military successfully intercepted the incoming long-range projectile during the drill.', ko: '군은 훈련 도중 날아오는 장거리 미사일을 성공적으로 요격했습니다.' },
         { en: 'Engineers are developing a new guidance system to improve the accuracy of the flight path.', ko: '기술자들은 비행 경로의 정확도를 높이기 위해 새로운 미사일 유도 시스템을 개발하고 있습니다.' },
       ],
+      wordDistractors: ['missal', 'morsel', 'mussel'],
+      definitionDistractors: [
+        'a defensive barrier constructed to protect against incoming attacks',
+        'a communication device used to send coded messages over long distances',
+        'a satellite placed in orbit for the purpose of scientific observation',
+      ],
     }
   ),
   word('mission', '사명', 5, 'noun',
-    ['문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인'],
+    ['진짜', '무게', '노련가', '원형', '전리품', '국경', '유기체, 생물', '판매원', '싹, 꽃봉오리', '무늬'],
     tips({
       etymology: '라틴어 \'mittere(보내다)\'에서 유래하여, 특정한 목적을 위해 보내진 임무나 사명을 뜻합니다.',
       visual: '우주선이 달을 향해 발사되는 장면이나 비밀 요원이 지령을 받는 모습을 상상해 보세요.',
@@ -759,6 +993,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The charitable organization is dedicated to its primary task of providing clean water to remote villages.', ko: '그 자선 단체는 오지 마을에 깨끗한 물을 제공한다는 주요 사명에 전념하고 있습니다.' },
         { en: 'Astronauts successfully completed their dangerous journey to repair the damaged satellite in orbit.', ko: '우주비행사들은 궤도에 있는 손상된 위성을 수리하는 위험한 임무를 성공적으로 마쳤습니다.' },
+      ],
+      wordDistractors: ['missile', 'mansion', 'emission'],
+      definitionDistractors: [
+        'a formal statement of personal beliefs or religious faith',
+        'a recreational trip taken for leisure and entertainment purposes',
+        'an error or failure in completing an assigned task properly',
       ],
     }
   ),
@@ -779,6 +1019,12 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'Everyone makes a small error in judgment from time to time.', ko: '누구나 때때로 판단에서 작은 실수를 저지르곤 합니다.' },
         { en: 'Please check your essay carefully to ensure there is no spelling fault.', ko: '철자 실수가 없는지 확인하기 위해 에세이를 주의 깊게 검토하세요.' },
       ],
+      wordDistractors: ['mistaken', 'mystique', 'milkshake'],
+      definitionDistractors: [
+        'a deliberate act of deception intended to mislead others',
+        'a calculated risk taken after careful analysis of the situation',
+        'an intentional choice made with full awareness of consequences',
+      ],
     }
   ),
   word('mix', '혼합', 7, 'noun',
@@ -798,10 +1044,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The DJ created an interesting blend of jazz and electronic beats in his latest set.', ko: '그 DJ는 최신 세트에서 재즈와 전자 비트의 흥미로운 조합을 만들어냈습니다.' },
         { en: 'Add a diverse variety of spices to the bowl to achieve the perfect flavor profile.', ko: '완벽한 맛을 내기 위해 그릇에 다양한 향신료 혼합물을 추가하세요.' },
       ],
+      wordDistractors: ['max', 'six', 'fix'],
+      definitionDistractors: [
+        'a single pure substance without any added ingredients',
+        'the process of separating components from a compound',
+        'a specific recipe or formula used in industrial manufacturing',
+      ],
     }
   ),
   word('mobile', '이동 가능한', 4, 'adjective',
-    ['기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건'],
+    ['고정된', '정지된', '움직일수없는', '무거운', '영구적인', '불변의', '안정된', '묶인', '정착한', '뿌리내린'],
     tips({
       etymology: '라틴어 \'mobilis\'에서 유래하여 \'움직이기 쉬운\'이라는 핵심 의미를 담고 있습니다.',
       visual: '천장에 매달려 바람에 따라 살랑살랑 움직이는 아기용 장난감을 떠올려 보세요.',
@@ -810,12 +1062,18 @@ export const vocabBatch45: VocabItem[] = [
       synonymAntonym: '움직임을 뜻하는 motion과 유사하며, 고정된 상태인 stillness와는 반대됩니다.',
     }),
     {
-      definition: 'A decorative structure that is suspended so as to turn freely in the air.',
-      synonyms: ['sculpture', 'ornament', 'decoration'],
-      antonyms: ['fixture', 'statue', 'monolith'],
+      definition: 'able to move or be moved freely and easily from one place or position to another',
+      synonyms: ['portable', 'movable', 'transportable'],
+      antonyms: ['fixed', 'stationary', 'immobile'],
       exampleSentences: [
         { en: 'The colorful figures on the baby\'s mobile spun slowly above the crib.', ko: '아기 침대 위의 알록달록한 모빌 인형들이 천천히 회전했습니다.' },
         { en: 'Alexander Calder is famous for inventing the modern kinetic mobile as an art form.', ko: '알렉산더 칼더는 예술 형태로서 현대적인 움직이는 모빌을 발명한 것으로 유명합니다.' },
+      ],
+      wordDistractors: ['morbid', 'noble', 'motile'],
+      definitionDistractors: [
+        'permanently attached or fastened to a specific location',
+        'relating to automobiles and motorized vehicle technology',
+        'a wireless telephone device used for making calls on the go',
       ],
     }
   ),
@@ -836,10 +1094,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The cruel students began to mimic his accent to show their contempt.', ko: '잔인한 학생들은 그를 경멸하기 위해 그의 말투를 흉내 내며 조롱하기 시작했습니다.' },
         { en: 'It is unkind to make fun of someone\'s efforts even if they fail.', ko: '누군가의 노력이 실패하더라도 그것을 비웃는 것은 불친절한 행동입니다.' },
       ],
+      wordDistractors: ['dock', 'muck', 'moat'],
+      definitionDistractors: [
+        'to create a practice version or simulation of something for testing',
+        'to express sincere admiration and deep respect for someone',
+        'to carefully imitate a technique in order to learn from it',
+      ],
     }
   ),
   word('mode', '방법', 5, 'noun',
-    ['목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계'],
+    ['상대성', '1. 주변, 인근\n2. 근접', '요술', '스펀지', '조화', '빼기, 마이너스', '아무것도', '따뜻함', '부사', '돌팔이, 사기꾼'],
     tips({
       etymology: '라틴어 \'modus\'에서 유래하여 척도, 방식, 또는 일정한 틀을 의미하게 되었습니다.',
       visual: '비행기 모드나 야간 모드처럼 스마트폰 설정 화면에서 특정 상태를 선택하는 아이콘을 떠올려 보세요.',
@@ -855,10 +1119,16 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'Switching the device to energy-saving settings will extend the battery life significantly.', ko: '장치를 절전 방식으로 전환하면 배터리 수명을 크게 늘릴 수 있습니다.' },
         { en: 'Rail travel remains a popular form of transport for commuters in the city.', ko: '철도 여행은 도시 통근자들에게 여전히 인기 있는 이동 방식입니다.' },
       ],
+      wordDistractors: ['modem', 'model', 'mole'],
+      definitionDistractors: [
+        'a temporary emotional state or feeling experienced by a person',
+        'a specific numerical code used to identify a product or item',
+        'a popular trend or style that is widely followed in society',
+      ],
     }
   ),
-  word('moderate', '절제하는', 10, 'verb',
-    ['결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다'],
+  word('moderate', '조절하다', 10, 'verb',
+    ['악화시키다', '강화하다', '증폭하다', '과장하다', '자극하다', '부추기다', '격화시키다', '촉진하다', '가속하다', '확대하다'],
     tips({
       etymology: '라틴어 \'moderari\'에서 유래하여 \'측정하다\' 혹은 \'한계를 두다\'라는 의미에서 \'조절하다\'로 발전했습니다.',
       visual: '뜨거운 물과 차가운 물을 섞어 미지근한 온도로 맞추는 수도꼭지 조절 레버를 상상해 보세요.',
@@ -873,6 +1143,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'The chairman had to intervene to control the debate and keep the discussion civil.', ko: '의장은 토론을 조절하고 논의를 예의 바르게 유지하기 위해 개입해야 했습니다.' },
         { en: 'You should try to limit your intake of caffeine if you want to sleep better at night.', ko: '밤에 잠을 더 잘 자고 싶다면 카페인 섭취량을 조절하려고 노력해야 합니다.' },
+      ],
+      wordDistractors: ['modulate', 'motivate', 'meditate'],
+      definitionDistractors: [
+        'to increase the intensity or severity of a situation dramatically',
+        'to hold a middle-of-the-road political position or viewpoint',
+        'to serve as the host or presenter of a public event',
       ],
     }
   ),
@@ -893,6 +1169,12 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The museum features a stunning collection of contemporary art and furniture.', ko: '그 박물관은 현대 미술과 가구의 멋진 소장품들을 전시하고 있습니다.' },
         { en: 'Many people prefer living in apartments with up-to-date amenities and technology.', ko: '많은 사람들이 최신 편의 시설과 기술을 갖춘 아파트에 사는 것을 선호합니다.' },
       ],
+      wordDistractors: ['modest', 'modem', 'molten'],
+      definitionDistractors: [
+        'having existed for a very long time without significant change',
+        'designed in a futuristic style that has not yet been widely adopted',
+        'fashionable and trendy but lacking substance or lasting value',
+      ],
     }
   ),
   word('modest', '겸손한', 8, 'adjective',
@@ -911,6 +1193,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'Despite winning the prestigious award, the scientist remained incredibly down-to-earth and redirected the praise to her team.', ko: '권위 있는 상을 받았음에도 불구하고, 그 과학자는 매우 겸손함을 유지하며 공로를 팀원들에게 돌렸습니다.' },
         { en: 'They live in a small, functional apartment that reflects their preference for a simple lifestyle.', ko: '그들은 단순한 생활 방식을 선호하는 성향이 반영된 작고 실용적인 아파트에 삽니다.' },
+      ],
+      wordDistractors: ['modern', 'modus', 'modish'],
+      definitionDistractors: [
+        'bold and confident in presenting one\'s achievements to others',
+        'extremely wealthy and accustomed to a luxurious lifestyle',
+        'shy and withdrawn due to a lack of social skills or experience',
       ],
     }
   ),
@@ -931,6 +1219,12 @@ export const vocabBatch45: VocabItem[] = [
         { en: 'The software engineers had to change the source code to improve the system performance.', ko: '소프트웨어 엔지니어들은 시스템 성능을 향상시키기 위해 소스 코드를 수정해야 했습니다.' },
         { en: 'You may need to adjust your diet based on the results of the medical checkup.', ko: '건강 검진 결과에 따라 식단을 조절해야 할 수도 있습니다.' },
       ],
+      wordDistractors: ['mollify', 'mortify', 'magnify'],
+      definitionDistractors: [
+        'to completely replace one system or structure with another',
+        'to verify that something meets a specific standard or requirement',
+        'to create an entirely new version of something from scratch',
+      ],
     }
   ),
   word('moisture', '습기', 7, 'noun',
@@ -949,6 +1243,12 @@ export const vocabBatch45: VocabItem[] = [
       exampleSentences: [
         { en: 'Plants absorb moisture from the soil through their roots to survive.', ko: '식물은 생존하기 위해 뿌리를 통해 토양으로부터 습기를 흡수합니다.' },
         { en: 'The morning mist left a thin layer of moisture on the car windshield.', ko: '아침 안개로 인해 자동차 앞 유리에 얇은 습기 층이 생겼습니다.' },
+      ],
+      wordDistractors: ['monster', 'mosture', 'mixture'],
+      definitionDistractors: [
+        'a type of soil rich in nutrients ideal for growing crops',
+        'the temperature at which a liquid begins to boil and evaporate',
+        'a protective coating applied to surfaces to prevent corrosion',
       ],
     }
   ),

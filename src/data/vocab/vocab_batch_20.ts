@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch20: VocabItem[] = [
-  word('Lassitude', '무기력', 10, 'noun',
+  word('lassitude', '무기력', 10, 'noun',
     ['활력', '에너지', '열정', '기운', '원기', '활성', '의욕', '생기', '활발', '각성'],
     tips({
       etymology: '라틴어 lassus(피곤한)에서 유래하여 몸과 마음이 지친 상태를 의미합니다.',
@@ -19,9 +19,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'A wave of lassitude overwhelmed her after the final exam.', ko: '기말고사가 끝난 후 무기력함이 그녀를 덮쳤다.' },
         { en: 'The humid heat induced a feeling of lassitude in everyone.', ko: '습한 더위가 모든 사람에게 무기력을 느끼게 했다.' },
       ],
+      wordDistractors: ['latitude', 'lassoing', 'lasagne'],
+      definitionDistractors: [
+        'A sudden burst of creative energy or inspiration',
+        'A feeling of intense anger or frustration toward others',
+        'A state of heightened awareness and mental alertness',
+      ],
     }
   ),
-  word('Legerdemain', '요술', 10, 'noun',
+  word('legerdemain', '요술', 10, 'noun',
     ['솔직함', '투명', '노골', '직설', '진실', '정직', '공개', '드러남', '순수', '속임없음'],
     tips({
       etymology: '프랑스어 léger(가벼운)와 de main(손의)이 합쳐져 \'가벼운 손놀림\'이라는 의미에서 유래했습니다.',
@@ -38,9 +44,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The contract was approved through a bit of legal legerdemain.', ko: '그 계약은 약간의 법적 요술과 같은 교묘한 속임수를 통해 승인되었습니다.' },
         { en: 'The magician amazed the audience with his incredible legerdemain.', ko: '마술사는 믿기지 않는 놀라운 손놀림으로 관객들을 깜짝 놀라게 했습니다.' },
       ],
+      wordDistractors: ['legerdomain', 'legendary', 'legerity'],
+      definitionDistractors: [
+        'A formal written document granting legal authority',
+        'The study of ancient languages and their origins',
+        'A public speech delivered to persuade an audience',
+      ],
     }
   ),
-  word('Licentious', '방종한', 10, 'adjective',
+  word('licentious', '방종한', 10, 'adjective',
     ['절제된', '도덕적인', '경건한', '엄격한', '자제하는', '청렴한', '정숙한', '순결한', '단정한', '금욕적인'],
     tips({
       etymology: '라틴어 licentia(허가)에서 유래했으며, 정해진 허용 범위를 넘어 제멋대로 행동하는 상태를 의미합니다.',
@@ -57,9 +69,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The licentious behavior of the tyrant shocked the entire community.', ko: '폭군의 방종한 행동이 지역사회 전체를 충격에 빠뜨렸다.' },
         { en: 'The novel was banned for its supposedly licentious content.', ko: '그 소설은 방종한 내용이 담겼다는 이유로 금지되었다.' },
       ],
+      wordDistractors: ['licentiate', 'luscious', 'litigious'],
+      definitionDistractors: [
+        'Having a formal license or official permission to practice',
+        'Showing careful obedience to social customs and etiquette',
+        'Relating to the granting of academic or professional credentials',
+      ],
     }
   ),
-  word('Lugubrious', '슬픈', 10, 'adjective',
+  word('lugubrious', '슬픈', 10, 'adjective',
     ['명랑한', '밝은', '유쾌한', '환한', '기쁜', '즐거운', '활기찬', '희망찬', '행복한', '상쾌한'],
     tips({
       etymology: '라틴어 lugere(슬퍼하다)에서 유래하여 매우 침울하고 비통한 상태를 나타냅니다.',
@@ -76,9 +94,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The cello played a lugubrious melody that filled the room with a sense of deep sorrow.', ko: '첼로가 방 안을 깊은 슬픔으로 채우는 아주 침울한 선율을 연주했습니다.' },
         { en: 'He spoke in a lugubrious tone, as if he were carrying the weight of the entire world on his shoulders.', ko: '그는 마치 온 세상의 짐을 어깨에 짊어진 듯이 매우 침울한 어조로 말했습니다.' },
       ],
+      wordDistractors: ['ludicrous', 'luminous', 'luxurious'],
+      definitionDistractors: [
+        'Extremely funny or absurd in a ridiculous way',
+        'Radiating warmth and a welcoming atmosphere',
+        'Showing elaborate and expensive taste in decoration',
+      ],
     }
   ),
-  word('Magnanimous', '관대한', 10, 'adjective',
+  word('magnanimous', '관대한', 10, 'adjective',
     ['인색한', '치졸한', '보복적인', '편협한', '속좁은', '야박한', '옹졸한', '이기적인', '무자비한', '냉혹한'],
     tips({
       etymology: '라틴어 magnus(큰)와 animus(마음)가 결합된 단어로, 말 그대로 \'커다란 마음을 가진\' 상태를 의미합니다.',
@@ -95,9 +119,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'It was magnanimous of the leader to forgive his critics.', ko: '비판자들을 용서한 것은 지도자로서 관대한 일이었다.' },
         { en: 'The winner made a magnanimous gesture by sharing the prize.', ko: '승자는 상금을 나눔으로써 관대한 태도를 보였다.' },
       ],
+      wordDistractors: ['magnificent', 'magnesium', 'magnanimity'],
+      definitionDistractors: [
+        'Having an impressively large or grand physical appearance',
+        'Showing extreme caution and reluctance to take action',
+        'Demanding strict obedience and punishing any deviation',
+      ],
     }
   ),
-  word('Malediction', '저주', 10, 'noun',
+  word('malediction', '저주', 10, 'noun',
     ['축복', '찬사', '축원', '기도', '찬미', '칭송', '덕담', '응원', '격려', '찬양'],
     tips({
       etymology: '라틴어 어근 male(나쁜)과 dict(말하다)가 결합되어 \'나쁜 말을 내뱉다\'라는 의미에서 유래되었습니다.',
@@ -114,9 +144,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'He hurled maledictions at the driver who cut him off.', ko: '그는 끼어든 운전자에게 저주 섞인 욕설을 퍼부었다.' },
         { en: 'The old witch uttered a terrifying malediction against the kingdom.', ko: '늙은 마녀는 왕국을 향해 무시무시한 저주를 내뱉었다.' },
       ],
+      wordDistractors: ['benediction', 'medication', 'meditation'],
+      definitionDistractors: [
+        'A formal prayer or blessing spoken at a ceremony',
+        'A written declaration of loyalty to a sovereign',
+        'An official proclamation announcing a new law or policy',
+      ],
     }
   ),
-  word('Maleficent', '해로운', 10, 'adjective',
+  word('maleficent', '해로운', 10, 'adjective',
     ['이로운', '선한', '도움이 되는', '박애적인', '친절한', '유익한', '자비로운', '건전한', '유용한', '긍정적인'],
     tips({
       etymology: '라틴어 \'male(나쁘게)\'와 \'facere(행하다)\'가 결합되어 남에게 해를 끼친다는 의미를 형성합니다.',
@@ -133,9 +169,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The villagers believed a maleficent supernatural force haunted the forest.', ko: '마을 사람들은 해로운 의도를 가진 초자연적인 힘이 숲에 출몰한다고 믿었다.' },
         { en: 'She was known for her maleficent influence on the young prince\'s decisions.', ko: '그녀는 어린 왕자의 결정에 해로운 영향력을 미치는 것으로 알려져 있었다.' },
       ],
+      wordDistractors: ['magnificent', 'beneficent', 'munificent'],
+      definitionDistractors: [
+        'Showing great generosity and kindness toward others',
+        'Having a grand and impressive quality or appearance',
+        'Producing positive results that benefit the community',
+      ],
     }
   ),
-  word('Malfeasance', '직무상 부정행위', 10, 'noun',
+  word('malfeasance', '직무상 부정행위', 10, 'noun',
     ['정직', '성실', '충실', '부지런함', '충성', '준법', '청렴', '도덕', '책임', '공정'],
     tips({
       etymology: '라틴어 어근 mal(나쁜)과 facere(행하다)에서 유래하여 \'나쁜 짓을 행함\'이라는 의미를 가집니다.',
@@ -152,9 +194,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The mayor was investigated for financial malfeasance during his term.', ko: '시장은 임기 중 재정적 부정 행위로 조사를 받았다.' },
         { en: 'The inquiry uncovered widespread malfeasance within the police department.', ko: '조사 결과 경찰 부서 내에 만연한 직무상의 위법 행위가 드러났다.' },
       ],
+      wordDistractors: ['maleficence', 'misfeasance', 'nonfeasance'],
+      definitionDistractors: [
+        'The successful execution of official duties with distinction',
+        'A minor procedural error made without harmful intent',
+        'The formal process of appointing someone to a public office',
+      ],
     }
   ),
-  word('Malleable', '구부리기 쉬운', 10, 'adjective',
+  word('malleable', '구부리기 쉬운', 10, 'adjective',
     ['단단한', '고집하는', '경직된', '굳은', '불변의', '견고한', '완고한', '뻣뻣한', '부동의', '강직한'],
     tips({
       etymology: '라틴어 malleus(망치)에서 유래하여 망치로 두드려 펼 수 있다는 의미를 담고 있습니다.',
@@ -171,9 +219,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'Gold is a highly malleable metal that can be beaten into thin sheets.', ko: '금은 얇은 판으로 두드려 펼 수 있는 매우 가소성이 높은 금속이다.' },
         { en: 'The minds of young children are very malleable and easily influenced by their surroundings.', ko: '어린 아이들의 마음은 매우 유연해서 주변 환경에 쉽게 영향을 받는다.' },
       ],
+      wordDistractors: ['mailable', 'maligned', 'malarial'],
+      definitionDistractors: [
+        'Resistant to any form of physical change or deformation',
+        'Capable of being sent through a postal delivery system',
+        'Tending to speak ill of others without justification',
+      ],
     }
   ),
-  word('Martinet', '군기반장', 10, 'noun',
+  word('martinet', '군기반장', 10, 'noun',
     ['관대한 지도자', '느슨한 사람', '자유주의자', '관용자', '유연한 사람', '방임주의자', '낙천가', '평화주의자', '친절한 교사', '방관자'],
     tips({
       etymology: '17세기 프랑스 국왕 루이 14세 휘하의 엄격한 훈련관이었던 장 마르티네(Jean Martinet)의 이름에서 유래했습니다.',
@@ -190,9 +244,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The army captain was a martinet known for punishing soldiers for even the slightest uniform imperfection.', ko: '그 육군 대위는 제복의 아주 작은 결점에도 병사들을 처벌하는 것으로 알려진 군기반장이었다.' },
         { en: 'Our music teacher was such a martinet that she expected us to arrive ten minutes before every rehearsal.', ko: '우리 음악 선생님은 모든 리허설 10분 전에 도착하기를 요구할 정도로 엄격한 원칙주의자였다.' },
       ],
+      wordDistractors: ['marionette', 'martinique', 'maritime'],
+      definitionDistractors: [
+        'A puppet controlled by strings attached to a wooden frame',
+        'A person who encourages creativity and free expression',
+        'A skilled craftsman who works with metal or stone',
+      ],
     }
   ),
-  word('Maudlin', '눈물겹게 술 취한', 10, 'adjective',
+  word('maudlin', '눈물겹게 술 취한', 10, 'adjective',
     ['냉정한', '단정한', '절제된', '차분한', '이성적인', '무감각한', '딱딱한', '냉담한', '강인한', '현실적인'],
     tips({
       etymology: '성경의 막달라 마리아(Magdalene)가 참회의 눈물을 흘리는 예술 작품 속 모습에서 유래했습니다.',
@@ -209,9 +269,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'After a few glasses of wine, he became quite maudlin and started crying about his childhood.', ko: '와인 몇 잔을 마신 후, 그는 몹시 감상적이 되어 어린 시절을 떠올리며 울기 시작했다.' },
         { en: 'The movie\'s ending was far too maudlin for my taste, with its forced emotional scenes.', ko: '그 영화의 결말은 억지스러운 감정 과잉 장면들 때문에 내 취향에는 너무 신파조였다.' },
       ],
+      wordDistractors: ['mandolin', 'maudling', 'modular'],
+      definitionDistractors: [
+        'Showing a calm and rational response to emotional situations',
+        'Displaying sharp wit and intellectual humor',
+        'Being excessively strict and demanding of proper behavior',
+      ],
     }
   ),
-  word('Mendacious', '거짓말하는', 10, 'adjective',
+  word('mendacious', '거짓말하는', 10, 'adjective',
     ['진실한', '정직한', '솔직한', '투명한', '믿을 만한', '사실적인', '청렴한', '성실한', '올바른', '정당한'],
     tips({
       etymology: '라틴어 mendax(거짓말쟁이)에서 유래했으며, 결점이나 실수를 뜻하는 mendum과도 관련이 있습니다.',
@@ -228,9 +294,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The newspaper was sued for publishing mendacious reports about the celebrity\'s private life.', ko: '그 신문사는 연예인의 사생활에 대한 허위 보도를 게재한 혐의로 고소당했다.' },
         { en: 'He gave a mendacious account of his whereabouts on the night of the crime.', ko: '그는 범행 당일 밤 자신의 행방에 대해 거짓 진술을 했다.' },
       ],
+      wordDistractors: ['mendicant', 'meticulous', 'audacious'],
+      definitionDistractors: [
+        'Showing careful attention to detail and accuracy',
+        'Living by begging or relying on charitable donations',
+        'Speaking with bold confidence and directness',
+      ],
     }
   ),
-  word('Mercurial', '변덕스러운', 10, 'adjective',
+  word('mercurial', '변덕스러운', 10, 'adjective',
     ['안정된', '일관된', '믿을 만한', '차분한', '고정된', '예측가능한', '변함없는', '정적인', '한결같은', '지속적인'],
     tips({
       etymology: '로마 신화에서 발이 빠른 전령의 신 머큐리(Mercury)의 성격처럼 민첩하고 변화무쌍하다는 점에서 유래했습니다.',
@@ -247,9 +319,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The artist was known for his mercurial temperament, being joyful one minute and depressed the next.', ko: '그 예술가는 방금 전까지 즐거워하다가 금세 우울해지는 변덕스러운 성격으로 유명했다.' },
         { en: 'Investors are worried about the stock market\'s mercurial behavior this week.', ko: '투자자들은 이번 주 주식 시장의 변덕스러운 움직임을 우려하고 있다.' },
       ],
+      wordDistractors: ['mercantile', 'mercury', 'mercenary'],
+      definitionDistractors: [
+        'Relating to trade, commerce, and business activities',
+        'Showing a steady and predictable pattern of behavior',
+        'Motivated primarily by financial gain or profit',
+      ],
     }
   ),
-  word('Meritorious', '공훈 있는', 10, 'adjective',
+  word('meritorious', '공훈 있는', 10, 'adjective',
     ['무가치한', '저급한', '비참한', '형편없는', '부끄러운', '비난받을', '쓸모없는', '열등한', '부도덕한', '사악한'],
     tips({
       etymology: '라틴어 meritum(공로, 가치)에서 유래하여 칭찬받을 만하다는 뜻을 가집니다.',
@@ -266,9 +344,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The committee decided to give her an award for her long and meritorious service to the community.', ko: '위원회는 지역 사회를 위한 그녀의 길고 공훈 있는 헌신적인 봉사에 대해 상을 주기로 결정했다.' },
         { en: 'The scholarship is granted to students who demonstrate meritorious academic achievement.', ko: '그 장학금은 뛰어난 학업적 성취를 보여준 공훈 있는 학생들에게 수여된다.' },
       ],
+      wordDistractors: ['meretricious', 'meticulous', 'meritious'],
+      definitionDistractors: [
+        'Attractive on the surface but lacking real value or substance',
+        'Causing harm or damage to others through negligence',
+        'Requiring excessive effort with little chance of success',
+      ],
     }
   ),
-  word('Meticulous', '꼼꼼한', 10, 'adjective',
+  word('meticulous', '꼼꼼한', 10, 'adjective',
     ['대충하는', '부주의한', '성의 없는', '황급한', '무관심한', '덤벙대는', '허술한', '태만한', '엉성한', '경솔한'],
     tips({
       etymology: '라틴어 metus(두려움)에서 유래하여, 실수할까 봐 두려워할 정도로 조심스럽고 세심하다는 의미를 담고 있습니다.',
@@ -285,9 +369,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The researcher kept meticulous records of every single observation during the experiment.', ko: '그 연구원은 실험 중 모든 관찰 사항을 매우 상세하고 꼼꼼하게 기록했다.' },
         { en: 'He is meticulous about his appearance, always making sure his suit is perfectly pressed.', ko: '그는 외모에 아주 세심해서 항상 정장이 완벽하게 다려졌는지 확인한다.' },
       ],
+      wordDistractors: ['meritorious', 'miraculous', 'methodical'],
+      definitionDistractors: [
+        'Acting with reckless speed and little regard for accuracy',
+        'Deserving of praise or reward for outstanding achievement',
+        'Relating to extraordinary events that defy natural explanation',
+      ],
     }
   ),
-  word('Milieu', '환경', 10, 'noun',
+  word('milieu', '환경', 10, 'noun',
     ['격리', '고립', '외부', '차단', '단절', '진공', '황무지', '개인', '내면', '폐쇄'],
     tips({
       etymology: '프랑스어 mi(중간)와 lieu(장소)가 합쳐져 \'중심이 되는 장소\' 즉 주변 환경을 뜻하게 되었습니다.',
@@ -304,9 +394,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'Growing up in a diplomatic milieu, she learned to speak four languages fluently.', ko: '외교적 환경에서 자라면서 그녀는 4개 국어를 유창하게 구사하게 되었다.' },
         { en: 'The young artist finally found a creative milieu that inspired his best work.', ko: '그 젊은 예술가는 마침내 최고의 작품을 만들 영감을 주는 창조적 환경을 찾았다.' },
       ],
+      wordDistractors: ['mileage', 'militia', 'million'],
+      definitionDistractors: [
+        'A unit of measurement used for calculating distance traveled',
+        'A decisive turning point in a historical sequence of events',
+        'A private armed force organized outside the regular military',
+      ],
     }
   ),
-  word('Misanthrope', '인간 혐오자', 10, 'noun',
+  word('misanthrope', '인간 혐오자', 10, 'noun',
     ['박애주의자', '사교가', '인도주의자', '자선가', '낙천주의자', '평화주의자', '외향주의자', '협력자', '동반자', '친화주의자'],
     tips({
       etymology: '그리스어 \'miso(증오)\'와 \'anthropos(인간)\'가 결합되어 탄생한 단어로, 말 그대로 인간을 싫어하는 사람을 뜻합니다.',
@@ -323,9 +419,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'After years of betrayal, he withdrew from society and lived as a bitter misanthrope.', ko: '수년간의 배신 끝에 그는 사회로부터 물러나 비관적인 인간 혐오자로 살았다.' },
         { en: 'The character in the play is a classic misanthrope who finds fault in everyone he meets.', ko: '그 연극 속 인물은 만나는 모든 사람에게서 결점을 찾아내는 전형적인 인간 혐오자이다.' },
       ],
+      wordDistractors: ['philanthrope', 'misandrist', 'anthropoid'],
+      definitionDistractors: [
+        'A person who loves all of humanity and works for social good',
+        'A scholar who studies ancient human civilizations and cultures',
+        'A person who avoids modern technology and prefers solitude',
+      ],
     }
   ),
-  word('Mordant', '통렬한', 10, 'adjective',
+  word('mordant', '통렬한', 10, 'adjective',
     ['부드러운', '온화한', '친절한', '자비로운', '칭찬하는', '완곡한', '무딘', '너그러운', '따뜻한', '긍정적인'],
     tips({
       etymology: '라틴어 mordere(물다)에서 유래하여, 말로 상대방을 \'물어뜯는 듯한\' 날카로운 느낌을 줍니다.',
@@ -342,9 +444,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The comedian is famous for his mordant humor regarding social issues.', ko: '그 코미디언은 사회적 문제에 대한 통렬한 유머로 유명하다.' },
         { en: 'The editorial offered a mordant attack on the government\'s new policy.', ko: '그 사설은 정부의 새로운 정책에 대해 통렬한 공격을 가했다.' },
       ],
+      wordDistractors: ['mordent', 'morbid', 'dormant'],
+      definitionDistractors: [
+        'Expressing gentle encouragement and warm affection',
+        'Having an unhealthy fascination with death or disease',
+        'Remaining inactive or in a state of suspended activity',
+      ],
     }
   ),
-  word('Moribund', '죽어 가는', 10, 'adjective',
+  word('moribund', '죽어 가는', 10, 'adjective',
     ['활발한', '번성하는', '생기 있는', '활력 있는', '활기에 찬', '성장하는', '왕성한', '유망한', '건강한', '강력한'],
     tips({
       etymology: '라틴어 \'mori(죽다)\'에서 유래했습니다. \'mortal(치명적인)\'이나 \'mortuary(영안실)\'와 같은 어원을 공유합니다.',
@@ -361,9 +469,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The heavy reliance on coal has left the local economy in a moribund state.', ko: '석탄에 대한 높은 의존도는 지역 경제를 침체된 상태로 만들었다.' },
         { en: 'Critics argued that the once-popular art movement had become moribund and repetitive.', ko: '비평가들은 한때 인기 있었던 그 예술 운동이 이제는 생명력을 잃고 반복적일 뿐이라고 주장했다.' },
       ],
+      wordDistractors: ['morbid', 'mordant', 'morose'],
+      definitionDistractors: [
+        'Experiencing rapid and uncontrollable growth or expansion',
+        'Having an abnormal interest in disturbing or unpleasant subjects',
+        'Feeling sullen and ill-tempered without clear reason',
+      ],
     }
   ),
-  word('Munificent', '아낌없이 주는', 10, 'adjective',
+  word('munificent', '아낌없이 주는', 10, 'adjective',
     ['인색한', '알뜰한', '구두쇠 같은', '검소한', '야박한', '탐욕스러운', '이기적인', '소극적인', '엄격한', '냉정한'],
     tips({
       etymology: '라틴어 munus(선물)와 facere(만들다)가 합쳐져 \'선물을 만드는\' 즉, 후한 사람을 뜻합니다.',
@@ -380,9 +494,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The university received a munificent grant from an anonymous benefactor.', ko: '그 대학교는 익명의 후원자로부터 대단히 후한 보조금을 받았습니다.' },
         { en: 'He was known for his munificent hospitality toward all his guests.', ko: '그는 모든 손님들에게 베푸는 아낌없는 환대로 유명했습니다.' },
       ],
+      wordDistractors: ['magnificent', 'municipal', 'mundane'],
+      definitionDistractors: [
+        'Relating to the everyday affairs of a local government',
+        'Lacking excitement or interest; dull and ordinary',
+        'Imposing strict rules and demanding complete obedience',
+      ],
     }
   ),
-  word('Myopic', '근시안적인', 10, 'adjective',
+  word('myopic', '근시안적인', 10, 'adjective',
     ['선견지명 있는', '원대한', '통찰력 있는', '전략적인', '멀리 내다보는', '현명한', '지혜로운', '포괄적인', '심사숙고하는', '앞날을 내다보는'],
     tips({
       etymology: '그리스어 \'myops\'에서 유래했으며, 눈을 가늘게 뜨고 가까운 것만 겨우 보는 상태를 의미합니다.',
@@ -399,9 +519,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The government was criticized for its myopic focus on short-term profits rather than environmental sustainability.', ko: '정부는 환경적 지속가능성보다 단기적 이익에만 치중한 근시안적인 태도로 비판을 받았다.' },
         { en: 'Without a broader perspective, your myopic approach to the problem will only lead to more complications later.', ko: '더 넓은 관점이 없다면, 문제에 대한 당신의 근시안적인 접근은 나중에 더 많은 복잡한 상황을 초래할 뿐이다.' },
       ],
+      wordDistractors: ['myopathy', 'mystic', 'miasmic'],
+      definitionDistractors: [
+        'Having a broad and far-reaching vision for the future',
+        'Relating to spiritual or supernatural experiences beyond reason',
+        'Suffering from a chronic disease affecting the muscles',
+      ],
     }
   ),
-  word('Nadir', '최저점', 10, 'noun',
+  word('nadir', '최저점', 10, 'noun',
     ['정점', '절정', '최고조', '극치', '전성기', '상승', '고도', '천장', '수평', '중간'],
     tips({
       etymology: '아랍어 \'nazir(반대쪽)\'에서 유래하여, 천문학에서 머리 위 정점인 천정(zenith)의 정반대인 발밑 지점을 뜻합니다.',
@@ -418,9 +544,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The relationship reached its nadir when they stopped speaking to each other entirely.', ko: '그들이 서로 완전히 말을 섞지 않게 되었을 때 그들의 관계는 최악의 상황에 도달했다.' },
         { en: 'Company profits hit their nadir in the third quarter before starting to recover.', ko: '회사의 이익은 회복되기 전인 3분기에 최저점을 기록했다.' },
       ],
+      wordDistractors: ['zenith', 'natter', 'nacelle'],
+      definitionDistractors: [
+        'The highest point of achievement or success in a career',
+        'A gradual and steady improvement over a long period',
+        'The midpoint between two extreme positions or values',
+      ],
     }
   ),
-  word('Nascent', '막 태어난', 10, 'adjective',
+  word('nascent', '막 태어난', 10, 'adjective',
     ['완성된', '성숙한', '발달한', '오래된', '종말의', '노련한', '쇠퇴하는', '확립된', '진부한', '고착된'],
     tips({
       etymology: '라틴어 nasci(태어나다)에서 유래하여, 이제 막 생겨나기 시작한 상태를 의미합니다.',
@@ -437,9 +569,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The nascent industry showed promise.', ko: '막 태어난 산업이 가능성을 보여주었다.' },
         { en: 'She supported the nascent democracy movement.', ko: '그녀는 막 태어난 민주화 운동을 지지했다.' },
       ],
+      wordDistractors: ['nascence', 'nacreous', 'nescient'],
+      definitionDistractors: [
+        'Fully developed and having reached its peak of maturity',
+        'In a state of rapid decline and approaching extinction',
+        'Exhibiting a shimmering or pearly iridescent quality',
+      ],
     }
   ),
-  word('Nefarious', '사악한', 10, 'adjective',
+  word('nefarious', '사악한', 10, 'adjective',
     ['정직한', '선량한', '도덕적인', '고결한', '정의로운', '자비로운', '순수한', '청렴한', '성실한', '윤리적인'],
     tips({
       etymology: '라틴어 ne(부정)와 fas(신의 법/천리)가 결합된 단어로, 하늘의 도리를 저버릴 만큼 극악무도함을 의미합니다.',
@@ -456,9 +594,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The hackers developed a nefarious scheme to steal the life savings of elderly citizens.', ko: '해커들은 노인들의 평생 저축액을 가로채기 위한 사악한 계획을 세웠다.' },
         { en: 'The movie features a nefarious villain who wants to control the world\'s water supply.', ko: '그 영화에는 전 세계의 용수 공급을 통제하려는 사악한 악당이 등장한다.' },
       ],
+      wordDistractors: ['nectarous', 'nebulous', 'notorious'],
+      definitionDistractors: [
+        'Widely known and respected for positive accomplishments',
+        'Vague and unclear in form or meaning',
+        'Sweet and pleasant to the taste like nectar',
+      ],
     }
   ),
-  word('Neophyte', '초보자', 10, 'noun',
+  word('neophyte', '초보자', 10, 'noun',
     ['숙련자', '전문가', '베테랑', '달인', '고수', '숙련공', '전문인', '선구자', '지도자', '권위자'],
     tips({
       etymology: '그리스어 neos(새로운)와 phytos(심겨진 것)가 합쳐져 \'새로 심겨진 나무\'처럼 갓 시작한 사람을 뜻합니다.',
@@ -475,9 +619,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The neophyte needed guidance from the senior staff to complete the complex task.', ko: '그 초보자는 복잡한 업무를 완수하기 위해 선임 직원들의 지도가 필요했습니다.' },
         { en: 'As a neophyte in the field of coding, she spent hours practicing the most basic commands.', ko: '코딩 분야의 입문자로서 그녀는 가장 기초적인 명령어들을 연습하는 데 몇 시간을 보냈습니다.' },
       ],
+      wordDistractors: ['neoplasm', 'nephrite', 'nematode'],
+      definitionDistractors: [
+        'An expert who has mastered a field through years of practice',
+        'An abnormal growth of tissue forming a tumor',
+        'A mineral prized for its green color used in jewelry',
+      ],
     }
   ),
-  word('Nihilism', '허무주의', 10, 'noun',
+  word('nihilism', '허무주의', 10, 'noun',
     ['낙관주의', '이상주의', '실재론', '유신론', '목적론', '긍정주의', '신념', '가치관', '의미론', '확신'],
     tips({
       etymology: '라틴어 \'nihil(아무것도 없음)\'에서 유래하여 세상의 모든 가치와 질서가 무의미하다는 사상을 뜻합니다.',
@@ -494,9 +644,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'His deep sense of nihilism led him to believe that no human achievement truly matters in the long run.', ko: '그의 깊은 허무주의는 장기적으로 볼 때 인간의 어떤 성취도 진정으로 중요하지 않다고 믿게 만들었습니다.' },
         { en: 'The novel explores the transition from youthful rebellion to a cold, intellectual nihilism.', ko: '그 소설은 젊은 날의 반항에서 차갑고 지적인 허무주의로 변해가는 과정을 탐구합니다.' },
       ],
+      wordDistractors: ['nativism', 'nepotism', 'altruism'],
+      definitionDistractors: [
+        'A belief system centered on devotion to one supreme deity',
+        'The practice of favoring relatives in positions of power',
+        'An optimistic philosophy that finds meaning in all experiences',
+      ],
     }
   ),
-  word('Nonchalant', '무관심한', 10, 'adjective',
+  word('nonchalant', '무관심한', 10, 'adjective',
     ['열정적인', '걱정하는', '안절부절못하는', '진지한', '예민한', '긴장한', '몰두하는', '열렬한', '조바심내는', '신중한'],
     tips({
       etymology: '프랑스어 non(부정)과 chaloir(관심을 갖다)가 결합되어, 어떤 일에도 뜨거워지지 않고 \'열의가 없는\' 상태를 뜻하게 되었습니다.',
@@ -513,9 +669,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'He was nonchalant about the crisis, acting as if nothing was wrong.', ko: '그는 아무 일도 없다는 듯 행동하며 위기에 대해 무관심했습니다.' },
         { en: 'She gave a nonchalant shrug when asked about the expensive loss.', ko: '막대한 손실에 대해 질문을 받았을 때 그녀는 무심하게 어깨를 으쓱했습니다.' },
       ],
+      wordDistractors: ['nonchalance', 'nondescript', 'nonplussed'],
+      definitionDistractors: [
+        'Deeply worried and unable to hide one\'s anxiety',
+        'Lacking any distinguishing features or characteristics',
+        'Extremely enthusiastic and eager to participate',
+      ],
     }
   ),
-  word('Nonplussed', '당황한', 10, 'adjective',
+  word('nonplussed', '당황한', 10, 'adjective',
     ['침착한', '냉정한', '여유로운', '확신에찬', '태연한', '이해하는', '준비된', '차분한', '결단력있는', '평온한'],
     tips({
       etymology: '라틴어 non(아니)과 plus(더)가 합쳐져 \'더 이상 어떻게 할 수 없는\' 당혹스러운 상태를 뜻합니다.',
@@ -532,9 +694,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'She was nonplussed by the sudden change in the schedule.', ko: '그녀는 갑작스러운 일정 변경에 당황했습니다.' },
         { en: 'The unexpected outcome of the experiment left the team nonplussed.', ko: '실험의 예상치 못한 결과로 인해 팀은 당혹감에 빠졌습니다.' },
       ],
+      wordDistractors: ['nonchalant', 'nonpareil', 'nonsensical'],
+      definitionDistractors: [
+        'Feeling completely calm and unaffected by surprising events',
+        'Having no equal; being the finest of its kind',
+        'Extremely pleased and satisfied with an unexpected result',
+      ],
     }
   ),
-  word('Obdurate', '완고한', 10, 'adjective',
+  word('obdurate', '완고한', 10, 'adjective',
     ['유연한', '순종적인', '부드러운', '타협하는', '자비로운', '수용적인', '온순한', '다정다감한', '변화무쌍한', '관대한'],
     tips({
       etymology: '라틴어 ob(강하게)와 durus(단단한)가 합쳐져 돌처럼 단단하게 굳은 마음을 뜻합니다.',
@@ -551,9 +719,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'He remained obdurate in his refusal to apologize despite the overwhelming evidence.', ko: '압도적인 증거에도 불구하고 그는 사과하기를 거부하며 완고한 태도를 유지했습니다.' },
         { en: 'The obdurate judge would not listen to any pleas for mercy from the defendant\'s family.', ko: '그 완고한 판사는 피고인 가족의 어떠한 선처 호소도 듣지 않았습니다.' },
       ],
+      wordDistractors: ['obturate', 'obstinate', 'obtrude'],
+      definitionDistractors: [
+        'Willing to compromise and open to changing one\'s mind',
+        'Blocking or sealing an opening to prevent passage',
+        'Forcing oneself or one\'s opinions upon others rudely',
+      ],
     }
   ),
-  word('Obfuscate', '흐리게 하다', 10, 'verb',
+  word('obfuscate', '흐리게 하다', 10, 'verb',
     ['명확히하다', '설명하다', '밝히다', '해명하다', '투명하게하다', '정리하다', '드러내다', '단순화하다', '노출하다', '입증하다'],
     tips({
       etymology: '라틴어 ob(강하게)와 fuscus(어두운)가 합쳐져 \'어둡게 만들다\'라는 뜻에서 유래했습니다.',
@@ -570,9 +744,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The witness tried to obfuscate the facts during the cross-examination.', ko: '증인은 반대 심문 중에 사실 관계를 흐리려 노력했습니다.' },
         { en: 'Technical jargon is often used to obfuscate simple concepts.', ko: '전문 용어는 종종 단순한 개념을 모호하게 만드는 데 사용됩니다.' },
       ],
+      wordDistractors: ['obturate', 'fabricate', 'abdicate'],
+      definitionDistractors: [
+        'To make something clearer and easier to understand',
+        'To create or manufacture something from raw materials',
+        'To formally renounce a position of power or authority',
+      ],
     }
   ),
-  word('Oblique', '간접적인', 10, 'adjective',
+  word('oblique', '간접적인', 10, 'adjective',
     ['직접적인', '솔직한', '정면의', '수직의', '명백한', '노골적인', '직선의', '단도직입적인', '분명한', '일직선의'],
     tips({
       etymology: '라틴어 obliquus(비스듬한)에서 유래하여 기하학의 빗각이나 간접적인 표현을 뜻합니다.',
@@ -589,9 +769,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'He made an oblique reference to his intention to resign.', ko: '그는 사임 의사를 간접적으로 언급했습니다.' },
         { en: 'The sunlight entered the room at an oblique angle.', ko: '햇빛이 방 안으로 비스듬한 각도로 들어왔습니다.' },
       ],
+      wordDistractors: ['opaque', 'oblong', 'oblate'],
+      definitionDistractors: [
+        'Perfectly straight, vertical, or at a right angle',
+        'Having an elongated rectangular shape with rounded corners',
+        'Completely transparent and allowing light to pass through',
+      ],
     }
   ),
-  word('Obsequious', '아첨하는', 10, 'adjective',
+  word('obsequious', '아첨하는', 10, 'adjective',
     ['거만한', '당당한', '독립적인', '반항적인', '무례한', '오만한', '도도한', '자신만만한', '고압적인', '무관심한'],
     tips({
       etymology: '라틴어 ob(뒤에서)와 sequi(따르다)가 합쳐져 졸졸 따라다니며 시중드는 모습을 뜻합니다.',
@@ -608,9 +794,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The manager was surrounded by obsequious assistants who never disagreed with him.', ko: '매니저는 그에게 절대 반대하지 않는 아첨하는 조수들에게 둘러싸여 있었습니다.' },
         { en: 'I found his obsequious behavior toward the celebrities quite embarrassing.', ko: '유명인들에 대한 그의 아첨하는 행동이 꽤 당혹스럽다고 느꼈습니다.' },
       ],
+      wordDistractors: ['ubiquitous', 'obstreperous', 'oblivious'],
+      definitionDistractors: [
+        'Being present everywhere at the same time',
+        'Completely unaware of what is happening around oneself',
+        'Boldly standing up against authority and refusing to comply',
+      ],
     }
   ),
-  word('Obstreperous', '떠들썩한', 10, 'adjective',
+  word('obstreperous', '떠들썩한', 10, 'adjective',
     ['조용한', '순종적인', '차분한', '온순한', '침착한', '정숙한', '유순한', '얌전한', '평온한', '말을 잘 듣는'],
     tips({
       etymology: '라틴어 ob(대항하여)와 strepere(소음을 내다)가 결합되어, 단순히 시끄러운 것을 넘어 무언가에 반항하며 소란을 피우는 상태를 의미합니다.',
@@ -627,9 +819,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The obstreperous crowd refused to leave the building even after the police arrived.', ko: '통제 불능의 떠들썩한 군중은 경찰이 도착한 후에도 건물 떠나기를 거부했다.' },
         { en: 'The teacher found it difficult to manage the obstreperous students during the field trip.', ko: '교사는 현장 학습 동안 통제하기 힘들 정도로 시끄러운 학생들을 지도하는 데 어려움을 겪었다.' },
       ],
+      wordDistractors: ['obsequious', 'obdurate', 'ostentatious'],
+      definitionDistractors: [
+        'Excessively eager to please and serve those in authority',
+        'Quiet and well-behaved in a group setting',
+        'Stubbornly refusing to change one\'s opinion or belief',
+      ],
     }
   ),
-  word('Obtuse', '둔한', 10, 'adjective',
+  word('obtuse', '둔한', 10, 'adjective',
     ['예리한', '영리한', '민첩한', '날카로운', '통찰력 있는', '명석한', '기민한', '똑똑한', '예민한', '지혜로운'],
     tips({
       etymology: '라틴어 obtusus에서 유래하여 \'두드려서 뭉툭해진\' 상태를 의미하며, 날카로움이 사라진 상태를 뜻합니다.',
@@ -646,9 +844,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'He was surprisingly obtuse, appearing almost intentionally unaware of the obvious tension.', ko: '그는 놀라울 정도로 반응이 느렸고, 명백한 긴장감을 거의 의도적으로 알아채지 못하는 것처럼 보였다.' },
         { en: 'The manager was so obtuse that he could not see the flaws in the plan, frustrating his entire team.', ko: '계획의 결함을 보지 않으려는 매니저의 거부는 팀원들에게 그가 상당히 둔한 사람처럼 보이게 만들었다.' },
       ],
+      wordDistractors: ['abstruse', 'obtrude', 'obscure'],
+      definitionDistractors: [
+        'Extremely difficult to understand due to complexity',
+        'Quick to perceive subtle details and hidden meanings',
+        'Deliberately pushing oneself forward in an unwelcome way',
+      ],
     }
   ),
-  word('Odious', '역겨운', 10, 'adjective',
+  word('odious', '역겨운', 10, 'adjective',
     ['매력적인', '사랑스러운', '유쾌한', '호감 가는', '아름다운', '훌륭한', '즐거운', '친절한', '상냥한', '기분 좋은'],
     tips({
       etymology: '라틴어 odium(증오)에서 유래하여 증오를 불러일으키는이라는 의미를 담고 있습니다.',
@@ -665,9 +869,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The criminal was convicted for his truly odious acts against the community.', ko: '그 범죄자는 참으로 역겹고 혐오스러운 행위로 유죄 판결을 받았습니다.' },
         { en: 'His odious behavior was so repulsive that he was soon asked to leave the party.', ko: '그의 행동이 너무나 불쾌했기에 그는 곧 파티에서 나가달라는 요청을 받았습니다.' },
       ],
+      wordDistractors: ['odorous', 'onerous', 'obvious'],
+      definitionDistractors: [
+        'Having a strong and noticeable smell or fragrance',
+        'Requiring great effort and carrying a heavy burden',
+        'Extremely pleasant and delightful to be around',
+      ],
     }
   ),
-  word('Officious', '참견 잘하는', 10, 'adjective',
+  word('officious', '참견 잘하는', 10, 'adjective',
     ['겸손한', '삼가는', '무관심한', '방관하는', '조심스러운', '내성적인', '소극적인', '냉담한', '절제하는', '자제하는'],
     tips({
       etymology: 'office(직무)에서 유래했지만, 자기 직무도 아닌데 남의 일에 과하게 나서는 부정적인 의미로 변했습니다.',
@@ -684,9 +894,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The officious clerk kept interrupting our conversation to offer unwanted advice.', ko: '그 참견하기 좋아하는 점원은 원치 않는 조언을 하려고 우리 대화를 계속 방해했다.' },
         { en: 'I found the security guard\'s officious manner quite irritating during the check-in.', ko: '체크인하는 동안 보안 요원의 참견하는 태도가 상당히 짜증스러웠다.' },
       ],
+      wordDistractors: ['official', 'auspicious', 'efficacious'],
+      definitionDistractors: [
+        'Holding a recognized position of authority or office',
+        'Showing signs that suggest a favorable future outcome',
+        'Producing the desired or intended result effectively',
+      ],
     }
   ),
-  word('Omniscient', '전지한', 10, 'adjective',
+  word('omniscient', '전지한', 10, 'adjective',
     ['무지한', '어리석은', '제한적인', '모르는', '부족한', '편협한', '미숙한', '둔감한', '어두운', '맹목적인'],
     tips({
       etymology: '라틴어 \'omni(모든)\'와 \'scire(알다)\'가 결합되어 \'모든 것을 다 아는\'이라는 의미가 되었습니다.',
@@ -703,9 +919,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The novel is told from the perspective of an omniscient narrator who knows every character\'s thoughts.', ko: '그 소설은 모든 등장인물의 생각을 알고 있는 화자의 관점에서 서술된다.' },
         { en: 'Many religions believe in an omniscient deity that is aware of everything happening in the universe.', ko: '많은 종교들은 우주에서 일어나는 모든 일을 알고 있으며 강력한 힘을 가진 신을 믿는다.' },
       ],
+      wordDistractors: ['omnipotent', 'omnivorous', 'omnipresent'],
+      definitionDistractors: [
+        'Having unlimited and absolute power over all things',
+        'Being present in all places at the same time simultaneously',
+        'Feeding on both plant and animal matter indiscriminately',
+      ],
     }
   ),
-  word('Onerous', '부담스러운', 10, 'adjective',
+  word('onerous', '부담스러운', 10, 'adjective',
     ['가벼운', '쉬운', '편안한', '수월한', '간편한', '즐거운', '단순한', '쾌적한', '부담 없는', '안락한'],
     tips({
       etymology: '라틴어 onus(짐)에서 유래하여 \'짐이 많이 실린\' 상태를 뜻합니다.',
@@ -722,9 +944,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The onerous task of cleaning the entire mansion alone proved to be overwhelming.', ko: '대저택 전체를 혼자 청소하는 일은 상당히 부담스러운 과업임이 드러났다.' },
         { en: 'New tax laws have imposed onerous requirements on small businesses.', ko: '새로운 세법은 소규모 사업체들에게 더 부담스러운 요구 사항들을 부과했다.' },
       ],
+      wordDistractors: ['ominous', 'oneiric', 'odious'],
+      definitionDistractors: [
+        'Giving the impression that something bad is about to happen',
+        'Relating to dreams or the experience of dreaming',
+        'Extremely simple and requiring almost no effort to complete',
+      ],
     }
   ),
-  word('Opaque', '불투명한', 10, 'adjective',
+  word('opaque', '불투명한', 10, 'adjective',
     ['투명한', '명확한', '맑은', '밝은', '이해하기 쉬운', '뚜렷한', '명백한', '비치는', '깨끗한', '환한'],
     tips({
       etymology: '라틴어 opacus(그늘진, 어두운)에서 유래하여 빛이 통과하지 못함을 의미합니다.',
@@ -741,9 +969,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The windows were painted with an opaque substance to prevent people from looking inside.', ko: '사람들이 안을 들여다보지 못하도록 창문에 불투명한 물질이 칠해져 있었다.' },
         { en: 'The technical jargon in the manual made the instructions feel opaque to the average user.', ko: '설명서의 전문 용어들 때문에 일반 사용자가 지침을 이해하기에는 너무 모호했다.' },
       ],
+      wordDistractors: ['oblique', 'ornate', 'obtuse'],
+      definitionDistractors: [
+        'Completely transparent and easy to see through clearly',
+        'Decorated with elaborate and intricate artistic detail',
+        'Allowing partial light to filter through in a soft glow',
+      ],
     }
   ),
-  word('Opprobrium', '악명', 10, 'noun',
+  word('opprobrium', '악명', 10, 'noun',
     ['명예', '칭찬', '영광', '존경', '찬사', '승인', '인정', '평판', '환호', '숭배'],
     tips({
       etymology: '라틴어 ob(대항하여)와 probrum(치욕)이 결합된 단어로, 대중의 비난에 직면한 수치스러운 상태를 의미합니다.',
@@ -760,9 +994,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The corrupt official faced severe public opprobrium after the truth was revealed.', ko: '진실이 밝혀진 후 그 부패한 관료는 대중의 극심한 비난과 악명에 직면했다.' },
         { en: 'The team\'s unsportsmanlike conduct brought opprobrium upon the entire institution.', ko: '그 팀의 비신사적인 행위는 기관 전체에 커다란 수치와 악명을 안겨주었다.' },
       ],
+      wordDistractors: ['opprobrious', 'equilibrium', 'oppression'],
+      definitionDistractors: [
+        'A state of balance between opposing forces or influences',
+        'Widespread public praise and admiration for one\'s actions',
+        'The prolonged cruel or unjust exercise of authority or power',
+      ],
     }
   ),
-  word('Oscillate', '흔들리다', 10, 'verb',
+  word('oscillate', '흔들리다', 10, 'verb',
     ['고정되다', '안정되다', '머무르다', '확정되다', '결정되다', '정지하다', '유지하다', '단단하다', '일정하다', '멈추다'],
     tips({
       etymology: '라틴어 oscillum(흔들림)에서 유래하여 시계추처럼 앞뒤로 움직이는 동작을 뜻합니다.',
@@ -779,9 +1019,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The fan began to oscillate from side to side to cool the entire room.', ko: '선풍기가 방 전체를 시원하게 하기 위해 좌우로 회전하며 흔들리기 시작했다.' },
         { en: 'He continues to oscillate between optimism and despair regarding the project\'s success.', ko: '그는 프로젝트의 성공에 대해 낙관과 절망 사이를 계속해서 오가고 있다.' },
       ],
+      wordDistractors: ['osculate', 'obstinate', 'obliterate'],
+      definitionDistractors: [
+        'To kiss or touch gently as a sign of affection',
+        'To remain completely fixed and motionless in one position',
+        'To destroy something entirely so that nothing remains',
+      ],
     }
   ),
-  word('Ostentatious', '과시적인', 10, 'adjective',
+  word('ostentatious', '과시적인', 10, 'adjective',
     ['검소한', '소박한', '수수한', '은밀한', '절제된', '겸손한', '평범한', '단조로운', '숨겨진', '내성적인'],
     tips({
       etymology: '라틴어 ostentare(자주 보여주다)에서 유래하여, 남의 시선을 끌기 위해 의도적으로 내보이는 성질을 뜻합니다.',
@@ -798,9 +1044,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The gold-plated faucets in the hotel bathroom seemed a bit too ostentatious for my taste.', ko: '호텔 욕실의 금도금 수도꼭지는 다분히 과시적이고 지나치게 화려해 보였다.' },
         { en: 'He preferred a simple lifestyle over the ostentatious displays of his wealthy neighbors.', ko: '그는 부유한 이웃들의 웅장하고 과시적인 모습보다 소박한 생활 방식을 선호했다.' },
       ],
+      wordDistractors: ['obstreperous', 'ostensible', 'ostracize'],
+      definitionDistractors: [
+        'Appearing to be true or real but possibly hiding the actual truth',
+        'Modest and understated in style and presentation',
+        'To exclude someone from a group as a form of punishment',
+      ],
     }
   ),
-  word('Palliate', '완화하다', 10, 'verb',
+  word('palliate', '완화하다', 10, 'verb',
     ['악화시키다', '가중시키다', '강화하다', '야기하다', '자극하다', '심화하다', '부추기다', '폭발하다', '훼손하다', '오염시키다'],
     tips({
       etymology: '라틴어 pallium(망토)에서 유래했습니다. 병의 근원을 고치기보다 망토로 덮어 겉으로 보이는 고통을 잠시 가린다는 의미를 담고 있습니다.',
@@ -817,9 +1069,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The doctor prescribed a strong medication to palliate the patient\'s suffering during the final stages of the illness.', ko: '의사는 질병의 마지막 단계 동안 환자의 고통을 완화하기 위해 강한 약을 처방했다.' },
         { en: 'Choosing to palliate the budget deficit will only delay the crisis rather than resolve it.', ko: '예산 적자를 무시하는 것은 위기를 해결하기보다는 그 심각성을 일시적으로 완화하는 역할만 할 뿐이다.' },
       ],
+      wordDistractors: ['palatable', 'palatial', 'pallid'],
+      definitionDistractors: [
+        'To completely cure a disease by eliminating its root cause',
+        'To worsen or intensify the severity of a condition',
+        'Resembling a grand palace in size and luxury',
+      ],
     }
   ),
-  word('Panacea', '만병통치약', 10, 'noun',
+  word('panacea', '만병통치약', 10, 'noun',
     ['고질병', '불치병', '재앙', '고통', '질병', '독약', '부작용', '원인', '장애물', '결함'],
     tips({
       etymology: '그리스어 pan(모든)과 akos(치료)가 합쳐져 모든 것을 고친다는 뜻에서 유래했습니다.',
@@ -836,9 +1094,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'Technology is often seen as a panacea for modern social issues, but it cannot solve everything.', ko: '기술은 종종 현대 사회 문제의 보편적인 해결책으로 여겨지지만, 그것이 만병통치약은 아니다.' },
         { en: 'The new economic policy was presented as a panacea for the country\'s financial crisis.', ko: '새로운 경제 정책은 국가 재정 위기에 대한 만병통치약으로 제시되었다.' },
       ],
+      wordDistractors: ['pancreas', 'panorama', 'panache'],
+      definitionDistractors: [
+        'A wide and comprehensive view of a surrounding area',
+        'A substance known to cause illness or toxic reactions',
+        'A flamboyant and confident style of doing things',
+      ],
     }
   ),
-  word('Paragon', '모범', 10, 'noun',
+  word('paragon', '모범', 10, 'noun',
     ['최악', '반면교사', '실패작', '반례', '오답', '악인', '졸작', '낙제점', '범죄자', '결함품'],
     tips({
       etymology: '그리스어 parakone(숫돌)에서 유래하여, 금속의 순도를 확인하기 위해 옆에 대고 문지르는 기준석을 의미하게 되었습니다.',
@@ -855,9 +1119,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The retired general was often cited as a paragon of integrity and courage.', ko: '그 은퇴한 장군은 청렴과 용기의 완벽한 귀감으로 자주 인용되었다.' },
         { en: 'In the novel, the protagonist is portrayed as a paragon of virtue who never wavers.', ko: '소설 속에서 주인공은 결코 흔들리지 않는 미덕의 전형으로 묘사된다.' },
       ],
+      wordDistractors: ['pariah', 'paradigm', 'paragraph'],
+      definitionDistractors: [
+        'A person rejected and avoided by the rest of society',
+        'A standard pattern or model used as an example for others',
+        'A deeply flawed individual who serves as a cautionary tale',
+      ],
     }
   ),
-  word('Pariah', '추방자', 10, 'noun',
+  word('pariah', '추방자', 10, 'noun',
     ['인기인', '영웅', '우상', '지도자', '유명인', '귀족', '동료', '친구', '중심인물', '권력자'],
     tips({
       etymology: '인도 카스트 제도에서 북을 치는 하층민을 뜻하는 타밀어 paraiyar에서 유래했습니다.',
@@ -874,9 +1144,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'After the scandal, the once-popular CEO became a social pariah whom nobody wanted to be seen with.', ko: '스캔들 이후, 한때 인기 있었던 그 CEO는 아무도 함께 있고 싶어 하지 않는 사회적 추방자가 되었다.' },
         { en: 'The country was treated as an international pariah due to its repeated violations of human rights.', ko: '그 나라는 반복적인 인권 침해로 인해 국제적인 추방자 취급을 받았다.' },
       ],
+      wordDistractors: ['paragon', 'parish', 'piranha'],
+      definitionDistractors: [
+        'A highly admired person who is a model of excellence',
+        'A local administrative district within a church community',
+        'A celebrated leader welcomed by all members of society',
+      ],
     }
   ),
-  word('Parsimonious', '인색한', 10, 'adjective',
+  word('parsimonious', '인색한', 10, 'adjective',
     ['관대한', '넉넉한', '아낌없는', '풍부한', '후한', '낭비하는', '사치스러운', '자비로운', '방만한', '헤픈'],
     tips({
       etymology: '라틴어 parsimonia(절약)에서 유래했으며, 절약의 정도가 지나쳐 남에게 베풀지 못하는 상태를 의미합니다.',
@@ -893,9 +1169,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'The parsimonious company was criticized for its treatment of employees, spending as little as possible on benefits.', ko: '그 회사는 예산 집행에 너무 인색하여 직원 대우에 대해 비판을 받았습니다.' },
         { en: 'Even though he was a billionaire, he was known for his remarkably parsimonious lifestyle.', ko: '그는 억만장자였음에도 불구하고 매우 인색한 생활 방식으로 잘 알려져 있었습니다.' },
       ],
+      wordDistractors: ['parlous', 'pugnacious', 'perspicacious'],
+      definitionDistractors: [
+        'Extremely generous and willing to share resources freely',
+        'Full of danger and likely to cause serious harm',
+        'Having a keen mental perception and sharp understanding',
+      ],
     }
   ),
-  word('Pedantic', '현학적인', 10, 'adjective',
+  word('pedantic', '현학적인', 10, 'adjective',
     ['대충하는', '느슨한', '실용적인', '유연한', '관대한', '무심한', '털털한', '단순한', '허술한', '직관적인'],
     tips({
       etymology: '이탈리아어 pedante(교사)에서 유래하여, 학생을 가르치듯 사소한 규칙에 집착함을 뜻합니다.',
@@ -912,9 +1194,15 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'I am tired of his pedantic attention to minor details that do not matter.', ko: '나는 사소한 세부 사항에 대한 그의 끊임없고 학구적인 집착에 질렸다.' },
         { en: 'The report was so pedantic in its focus on formal rules that it missed the main point.', ko: '그 보고서는 형식적인 규칙에 너무 치중한 나머지 핵심을 놓쳤다.' },
       ],
+      wordDistractors: ['pandemic', 'pediatric', 'pragmatic'],
+      definitionDistractors: [
+        'Approaching problems in a practical and realistic way',
+        'Relating to the medical care and treatment of children',
+        'Being relaxed and unconcerned about rules or formalities',
+      ],
     }
   ),
-  word('Penchant', '기호', 10, 'noun',
+  word('penchant', '기호', 10, 'noun',
     ['혐오', '기피', '무관심', '거부', '반감', '권태', '중립', '냉담', '증오', '불만'],
     tips({
       etymology: '프랑스어 \'pencher(기울다)\'에서 유래하여 마음이 한쪽으로 쏠리는 것을 의미합니다.',
@@ -931,10 +1219,16 @@ export const vocabBatch20: VocabItem[] = [
         { en: 'He has a penchant for collecting rare vintage watches.', ko: '그는 희귀한 빈티지 시계를 수집하는 강한 기호가 있다.' },
         { en: 'Her penchant for melodrama often makes small problems seem like disasters.', ko: '멜로드라마를 좋아하는 그녀의 성향은 종종 작은 문제를 재앙처럼 보이게 만든다.' },
       ],
+      wordDistractors: ['penchance', 'pendant', 'pungent'],
+      definitionDistractors: [
+        'A strong feeling of disgust or aversion toward something',
+        'A piece of jewelry that hangs from a chain around the neck',
+        'A brief moment of hesitation before making a decision',
+      ],
     }
   ),
-  word('Penitent', '회개하는', 10, 'adjective',
-    ['뻔뻔한', '오만한', '당당한', '무심한', '만족하는', '고집스러운', '냉혹한', '뻔덕스러운', '자만하는', '쾌활한'],
+  word('penitent', '회개하는', 10, 'adjective',
+    ['뻔뻔한', '오만한', '당당한', '무심한', '만족하는', '고집스러운', '냉혹한', '변덕스러운', '자만하는', '쾌활한'],
     tips({
       etymology: '라틴어 paenitere(후회하다)에서 유래하여 자신의 잘못을 깊이 뉘우치는 상태를 뜻합니다.',
       visual: '고해성사소 안에서 고개를 숙이고 자신의 잘못을 고백하는 사람의 모습',
@@ -949,6 +1243,12 @@ export const vocabBatch20: VocabItem[] = [
       exampleSentences: [
         { en: 'The thief stood before the judge with a penitent expression.', ko: '도둑은 참회하는 표정으로 판사 앞에 섰다.' },
         { en: 'She wrote a penitent letter to her parents explaining her mistakes.', ko: '그녀는 자신의 실수를 설명하며 부모님께 회개하는 마음을 담은 편지를 썼다.' },
+      ],
+      wordDistractors: ['pertinent', 'pendent', 'penitence'],
+      definitionDistractors: [
+        'Feeling proud and unapologetic about one\'s past actions',
+        'Directly relevant and applicable to the matter at hand',
+        'Hanging loosely or suspended from a fixed point above',
       ],
     }
   ),

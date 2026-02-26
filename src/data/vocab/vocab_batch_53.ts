@@ -15,6 +15,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'A type of job that requires special training, high-level education, and often a formal qualification',
       synonyms: ['occupation', 'career', 'vocation'],
       antonyms: ['hobby', 'pastime', 'avocation'],
+      wordDistractors: ['procession', 'profusion', 'progression'],
+      definitionDistractors: [
+        'A public declaration of belief or faith in a formal ceremony',
+        'The act of moving forward or advancing through stages',
+        'A large gathering of people for a social or cultural event',
+      ],
       exampleSentences: [
         { en: 'She chose medicine as her life-long career path and dedicated herself to the medical field.', ko: '그녀는 의학을 평생의 직업으로 선택하고 의료 분야에 헌신했습니다.' },
         { en: 'The legal field demands a high standard of ethics from everyone within the community.', ko: '법조계는 그 공동체 내의 모든 이들에게 높은 수준의 윤리 의식을 요구합니다.' },
@@ -34,13 +40,19 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'A high-ranking educator who conducts research and teaches students at a college or university level.',
       synonyms: ['academic', 'educator', 'lecturer'],
       antonyms: ['student', 'pupil', 'undergraduate'],
+      wordDistractors: ['professed', 'processor', 'possessor'],
+      definitionDistractors: [
+        'A person who publicly declares their opinions or beliefs',
+        'A device that handles and transforms data or materials',
+        'A person who manages the daily operations of a business',
+      ],
       exampleSentences: [
         { en: 'The history department hired a new faculty member to serve as a senior professor.', ko: '역사학과는 선임 교수로 재직할 새로운 교직원을 채용했습니다.' },
         { en: 'Many students visited the office to ask for advice regarding their research projects.', ko: '많은 학생들이 연구 프로젝트에 대한 조언을 구하기 위해 교수실을 방문했습니다.' },
       ],
     }
   ),
-  word('profile', '옆모습', 10, 'noun',
+  word('profile', '옆모습', 4, 'noun',
     ['정면', '배경', '윤곽', '초상', '모습', '실루엣', '형태', '모양', '이미지', '스케치'],
     tips({
       etymology: '라틴어 \'pro\'(앞으로)와 \'filare\'(실을 잣다)에서 유래하여 선으로 그린 옆모습을 뜻합니다.',
@@ -53,6 +65,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'an outline of something, especially a human face as seen from one side',
       synonyms: ['outline', 'silhouette', 'contour'],
       antonyms: ['full face', 'front view', 'head-on'],
+      wordDistractors: ['prolific', 'proofed', 'profiled'],
+      definitionDistractors: [
+        'A detailed written account of a person\'s life and achievements',
+        'A flat surface used for displaying images or text',
+        'A thin layer of material covering a surface for protection',
+      ],
       exampleSentences: [
         { en: 'The artist sketched the model\'s profile with a single charcoal stroke.', ko: '화가는 숯 한 번의 놀림으로 모델의 옆모습을 스케치했다.' },
         { en: 'A sharp profile was visible against the bright sunset.', ko: '밝은 석양을 배경으로 날카로운 옆모습 윤곽이 드러났다.' },
@@ -72,6 +90,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'The financial gain obtained when the amount of revenue earned exceeds the expenses and taxes needed to maintain the activity.',
       synonyms: ['gain', 'earnings', 'surplus'],
       antonyms: ['loss', 'deficit', 'shortfall'],
+      wordDistractors: ['prophet', 'profane', 'proffer'],
+      definitionDistractors: [
+        'A person who speaks on behalf of a divine authority or predicts the future',
+        'The total amount of money received before any deductions are made',
+        'A formal written record of financial transactions over a period',
+      ],
       exampleSentences: [
         { en: 'The tech company reported a record-breaking net profit for the fiscal year.', ko: '그 기술 기업은 해당 회계 연도에 기록적인 순이익을 보고했습니다.' },
         { en: 'Selling the vintage car at the auction brought him a substantial profit.', ko: '경매에서 빈티지 자동차를 판매한 것은 그에게 상당한 이익을 가져다주었습니다.' },
@@ -91,6 +115,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'showing great knowledge, insight, or intensity of emotion and effect',
       synonyms: ['deep', 'insightful', 'intense'],
       antonyms: ['superficial', 'shallow', 'slight'],
+      wordDistractors: ['profaned', 'profuse', 'propound'],
+      definitionDistractors: [
+        'Existing in great quantities or produced abundantly',
+        'Completely lacking in skill or practical experience',
+        'Relating to the ordinary or everyday rather than the sacred',
+      ],
       exampleSentences: [
         { en: 'The discovery of the new planet had a significant and lasting impact on the scientific community.', ko: '새로운 행성의 발견은 과학계에 깊고 지속적인 영향을 미쳤습니다.' },
         { en: 'She expressed her heartfelt gratitude for the support she received during the difficult time.', ko: '그녀는 힘든 시기에 받았던 지원에 대해 깊은 감사를 표했습니다.' },
@@ -110,6 +140,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'the process of improving or developing over a period of time toward a goal',
       synonyms: ['advancement', 'development', 'improvement'],
       antonyms: ['regression', 'decline', 'stagnation'],
+      wordDistractors: ['prodigal', 'prognosis', 'prologue'],
+      definitionDistractors: [
+        'A formal set of rules governing affairs of state or diplomacy',
+        'A prediction about the likely course of a medical condition',
+        'The act of traveling from one location to another on foot',
+      ],
       exampleSentences: [
         { en: 'The medical team is making significant headways in finding a cure for the disease.', ko: '의료진은 그 질병의 치료법을 찾는 데 있어 상당한 진전을 보이고 있습니다.' },
         { en: 'Technological innovation has accelerated the pace of social change in recent years.', ko: '기술 혁신은 최근 몇 년 동안 사회적 변화의 진행 속도를 가속화했습니다.' },
@@ -129,6 +165,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to formally forbid something by law, rule, or other authority',
       synonyms: ['forbid', 'ban', 'veto'],
       antonyms: ['allow', 'permit', 'authorize'],
+      wordDistractors: ['exhibit', 'inhabit', 'inhibit'],
+      definitionDistractors: [
+        'To display objects or artwork publicly for others to view',
+        'To live or dwell in a particular place permanently',
+        'To officially approve or endorse a proposed action',
+      ],
       exampleSentences: [
         { en: 'The new law will strictly forbid the use of plastic bags in grocery stores.', ko: '새로운 법은 식료품점에서 비닐봉지 사용을 엄격히 금지할 것입니다.' },
         { en: 'Local regulations prevent anyone from building high-rise structures near the historical site.', ko: '지역 규정은 누구든 사적지 근처에 고층 건물을 짓는 것을 금하고 있습니다.' },
@@ -148,6 +190,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'standing out so as to be easily seen or particularly noticeable and important',
       synonyms: ['conspicuous', 'noticeable', 'eminent'],
       antonyms: ['obscure', 'inconspicuous', 'unimportant'],
+      wordDistractors: ['permanent', 'promenade', 'preminent'],
+      definitionDistractors: [
+        'Lasting for an indefinite time without significant change',
+        'Occurring at regular intervals in a repeated pattern',
+        'Closely related to or resulting from a specific cause',
+      ],
       exampleSentences: [
         { en: 'The lighthouse stands in a position on the cliff to guide ships safely.', ko: '등대는 배들을 안전하게 인도하기 위해 절벽 위의 두드러진 위치에 서 있다.' },
         { en: 'She played a role in the environmental movement and influenced many people.', ko: '그녀는 환경 운동에서 중요한 역할을 수행하며 많은 사람들에게 영향을 끼쳤다.' },
@@ -167,6 +215,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to state confidently that you will definitely do something or that something will certainly happen',
       synonyms: ['pledge', 'guarantee', 'vow'],
       antonyms: ['deny', 'refuse', 'renege'],
+      wordDistractors: ['premise', 'primrose', 'promote'],
+      definitionDistractors: [
+        'To suggest or put forward an idea for consideration',
+        'To officially permit or give consent to an activity',
+        'To express strong disagreement with a decision or action',
+      ],
       exampleSentences: [
         { en: 'The young politician gave a firm assurance to improve the local education system.', ko: '그 젊은 정치인은 지역 교육 시스템을 개선하겠다는 확고한 약속을 했습니다.' },
         { en: 'Friends should always keep their word even when it becomes difficult to do so.', ko: '친구들은 상황이 어려워지더라도 항상 자신의 약속을 지켜야 합니다.' },
@@ -186,6 +240,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'To raise someone to a higher rank or more important position within an organization.',
       synonyms: ['advance', 'elevate', 'upgrade'],
       antonyms: ['demote', 'downgrade', 'relegate'],
+      wordDistractors: ['provoke', 'premote', 'primate'],
+      definitionDistractors: [
+        'To move from one place to another in a systematic way',
+        'To publicly advertise a product to increase its sales',
+        'To make an official announcement regarding a new policy',
+      ],
       exampleSentences: [
         { en: 'The board of directors decided to elevate the manager to a vice president position after the successful merger.', ko: '이사회는 성공적인 합병 이후 그 매니저를 부사장 직위로 승진시키기로 결정했습니다.' },
         { en: 'Hard work and consistent results often lead a company to advance its most dedicated employees.', ko: '성실한 업무와 일관된 성과는 종종 회사가 가장 헌신적인 직원들을 승진시키도록 이끕니다.' },
@@ -205,6 +265,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'Done without delay; moving or acting with great speed and efficiency.',
       synonyms: ['punctual', 'immediate', 'swift'],
       antonyms: ['delayed', 'sluggish', 'dilatory'],
+      wordDistractors: ['primp', 'plump', 'pomp'],
+      definitionDistractors: [
+        'Arranged or organized according to a strict set of rules',
+        'Firmly attached or fixed in a particular position',
+        'Carried out with great care and attention to detail',
+      ],
       exampleSentences: [
         { en: 'The customer service team provided a prompt response to my urgent inquiry.', ko: '고객 서비스 팀은 나의 긴급한 문의에 재빠른 답변을 제공했다.' },
         { en: 'Success in this industry requires prompt action whenever a new opportunity arises.', ko: '이 업계에서의 성공은 새로운 기회가 생길 때마다 즉각적인 행동을 필요로 한다.' },
@@ -212,7 +278,7 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('pronounce', '발음하다', 5, 'verb',
-    ['보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다'],
+    ['보완하다', '분석하다', '정리하다', '구걸하다', '강등시키다', '걸다', '침해하다', '생산하다', '(솔과 물로) 북북 문질러 닦다 / 샅샅이 뒤지다', '감정, 평가하다'],
     tips({
       etymology: '라틴어 \'pro(앞으로)\'와 \'nuntiare(알리다)\'가 합쳐져 사람들 앞에서 소리 내어 알린다는 의미에서 유래했습니다.',
       visual: '아나운서가 마이크 앞에서 입 모양을 정확하게 하며 뉴스 대본을 읽는 모습을 상상해 보세요.',
@@ -224,6 +290,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'To make the sound of a word or letter in a particular way using your voice.',
       synonyms: ['articulate', 'enunciate', 'utter'],
       antonyms: ['mumble', 'mispronounce', 'silence'],
+      wordDistractors: ['announce', 'denounce', 'renounce'],
+      definitionDistractors: [
+        'To make a public and formal declaration about an event',
+        'To officially state a judgment or verdict in court',
+        'To write down words in their correct spelled form',
+      ],
       exampleSentences: [
         { en: 'The teacher showed the students how to articulate the difficult vowels correctly.', ko: '선생님은 학생들에게 어려운 모음들을 어떻게 정확하게 발음하는지 보여주었습니다.' },
         { en: 'It is often difficult for non-native speakers to say certain English names properly.', ko: '원어민이 아닌 사람들이 특정 영어 이름들을 제대로 발음하는 것은 종종 어렵습니다.' },
@@ -231,7 +303,7 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('proof', '증명', 6, 'noun',
-    ['의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태'],
+    ['전복', '도미니크 장 라레 (프랑스 군의관)', '팀, 단체', '다름,차이', '조직화, 통제', '수박', '정직', '칼라', '생산성', '외교'],
     tips({
       etymology: '라틴어 probare(시험하다)에서 유래하여, 어떤 것이 참임을 시험하여 밝혀낸 결과물을 뜻합니다.',
       visual: '법정에서 결정적인 증거가 담긴 서류 뭉치에 \'CONFIRMED\' 도장이 찍히는 모습을 상상하세요.',
@@ -243,6 +315,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'evidence or argument establishing a fact or the truth of a statement',
       synonyms: ['evidence', 'confirmation', 'verification'],
       antonyms: ['disproof', 'refutation', 'contradiction'],
+      wordDistractors: ['spoof', 'prude', 'troop'],
+      definitionDistractors: [
+        'A flat surface used for sheltering or covering a building',
+        'A rough draft of a written document before final printing',
+        'The strength or concentration of an alcoholic beverage',
+      ],
       exampleSentences: [
         { en: 'The scientist provided mathematical evidence as final validation for the new theory.', ko: '그 과학자는 새로운 이론에 대한 최종 확인으로서 수학적 증거를 제시했습니다.' },
         { en: 'Keep your receipt as a record of purchase in case you need a refund.', ko: '환불이 필요할 경우를 대비해 구매 증빙 자료로 영수증을 보관하세요.' },
@@ -262,6 +340,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'belonging exclusively to a particular person, place, or thing',
       synonyms: ['specific', 'individual', 'characteristic'],
       antonyms: ['common', 'general', 'universal'],
+      wordDistractors: ['prosper', 'pepper', 'pauper'],
+      definitionDistractors: [
+        'Following established rules of behavior or etiquette',
+        'Having the correct or suitable qualities for a purpose',
+        'Free from errors or mistakes in form or structure',
+      ],
       exampleSentences: [
         { en: 'The customs and traditions are proper to this small mountain village.', ko: '그 관습과 전통은 이 작은 산골 마을 고유의 것이다.' },
         { en: 'London is a proper noun because it refers to a specific city.', ko: '런던은 특정 도시를 가리키기 때문에 고유 명사이다.' },
@@ -269,7 +353,7 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('property', '재산', 4, 'noun',
-    ['변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념'],
+    ['경험', '두루미; 기중기', '한 쌍, 부부', '플로피 배로우 (고유명사)', '누출', '징후, 조짐', '광고', '공학', '촉매', '봄,용수철'],
     tips({
       etymology: '라틴어 \'proprietas\'에서 유래했으며, \'자신만의 것\'이라는 의미를 담고 있습니다.',
       visual: '집 마당에 \'내 땅\'이라고 적힌 푯말이 꽂혀 있는 모습을 상상해 보세요.',
@@ -281,6 +365,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'things that are owned by someone, such as land, buildings, or personal belongings',
       synonyms: ['asset', 'possession', 'estate'],
       antonyms: ['debt', 'liability', 'poverty'],
+      wordDistractors: ['properly', 'propriety', 'poverty'],
+      definitionDistractors: [
+        'A distinctive quality or characteristic of a substance',
+        'The state of being correct or appropriate in behavior',
+        'A legal agreement transferring rights between two parties',
+      ],
       exampleSentences: [
         { en: 'The value of this residential area has increased significantly over the last decade.', ko: '이 주거 지역의 자산 가치는 지난 10년 동안 크게 상승했습니다.' },
         { en: 'Police recovered the stolen items and returned them to their rightful owner.', ko: '경찰은 도난당한 물건들을 회수하여 정당한 소유주에게 돌려주었습니다.' },
@@ -288,7 +378,7 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('proportion', '비율', 9, 'noun',
-    ['절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동'],
+    ['플랑크톤', '인장', '발생, 사건', '합창', '거지', '대리인', '객관성/타당성', '산출', '힘, 세기, 강점', '웃음(소리)'],
     tips({
       etymology: '라틴어 \'pro(에 따라)\'와 \'portio(부분)\'가 합쳐져 전체 중 특정 부분의 크기를 나타냅니다.',
       visual: '피자 한 판을 조각내어 각 조각이 전체에서 차지하는 크기를 비교하는 그림을 그려보세요.',
@@ -300,6 +390,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'The relationship of one part to another or to the whole in terms of size, quantity, or degree.',
       synonyms: ['ratio', 'percentage', 'fraction'],
       antonyms: ['imbalance', 'disproportion', 'unevenness'],
+      wordDistractors: ['proposition', 'promotion', 'portion'],
+      definitionDistractors: [
+        'A statement or plan put forward for discussion or approval',
+        'The physical dimensions or measurements of an object',
+        'A share of something divided among several recipients',
+      ],
       exampleSentences: [
         { en: 'The sugar and flour should be mixed in the correct ratio to ensure the cake rises properly.', ko: '케이크가 제대로 부풀어 오르게 하려면 설탕과 밀가루를 올바른 비율로 섞어야 합니다.' },
         { en: 'A large part of the city\'s budget is allocated to improving public transportation systems.', ko: '시 예산의 상당한 비율이 대중교통 체계 개선에 할당되었습니다.' },
@@ -307,7 +403,7 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('propose', '제의하다', 5, 'verb',
-    ['적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다'],
+    ['추론하다', '축소하다', '재개하다', '(세금 등을) 징수하다', '해치다', '부수다', '정착하다', '~을 비웃다', '멈추게 하다', '~라고 믿다, 간주하다 / 평판'],
     tips({
       etymology: '앞을 뜻하는 pro와 놓다를 뜻하는 pose가 합쳐져 상대방 앞에 의견을 내놓는다는 의미가 됩니다.',
       visual: '회의실 테이블 위에 새로운 기획안이 담긴 서류 뭉치를 정중하게 올려두는 모습을 상상하세요.',
@@ -319,6 +415,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to put forward a plan, idea, or suggestion for consideration by others',
       synonyms: ['suggest', 'recommend', 'advise'],
       antonyms: ['reject', 'withdraw', 'oppose'],
+      wordDistractors: ['purpose', 'dispose', 'compose'],
+      definitionDistractors: [
+        'To officially reject or vote against a motion in a meeting',
+        'To arrange items in a specific order or sequence',
+        'To ask someone to marry you in a romantic setting',
+      ],
       exampleSentences: [
         { en: 'The committee will meet tomorrow to discuss the changes that the manager intends to put forward.', ko: '위원회는 매니저가 제의하려는 변경 사항들을 논의하기 위해 내일 만날 것입니다.' },
         { en: 'Scientists often present a new theory to explain natural phenomena that have not been understood before.', ko: '과학자들은 종종 이전에 이해되지 않았던 자연 현상을 설명하기 위해 새로운 이론을 제의합니다.' },
@@ -326,7 +428,7 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('prospect', '전망', 6, 'noun',
-    ['문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인'],
+    ['길, 경로', '호수', '집토끼', '진취성', '마을', '교육, 훈련', '차원', '잠수부', '포기/포기 선언', '(크기, 무게 때문에) 다루기 힘든'],
     tips({
       etymology: '앞을 뜻하는 pro와 보다를 뜻하는 spect가 합쳐져 앞을 내다보는 시야를 의미합니다.',
       visual: '높은 산 정상에서 탁 트인 미래의 풍경을 망원경으로 바라보는 모습을 상상하세요.',
@@ -338,6 +440,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'The possibility or likelihood of some future event occurring, or a mental picture of a future situation.',
       synonyms: ['outlook', 'possibility', 'expectation'],
       antonyms: ['hopelessness', 'impossibility', 'past'],
+      wordDistractors: ['project', 'protest', 'precept'],
+      definitionDistractors: [
+        'A wide view of an area of land or a scenic landscape',
+        'A potential customer or client for a business venture',
+        'The act of searching an area for valuable minerals or resources',
+      ],
       exampleSentences: [
         { en: 'The economic outlook remains uncertain, but the long-term growth potential is promising.', ko: '경제 전망은 여전히 불확실하지만, 장기적인 성장 가능성은 유망합니다.' },
         { en: 'She was excited by the thought of starting a new career in a different country.', ko: '그녀는 다른 나라에서 새로운 경력을 시작할 가능성에 들떠 있었습니다.' },
@@ -357,6 +465,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to be successful in material terms or to grow and develop vigorously',
       synonyms: ['thrive', 'flourish', 'bloom'],
       antonyms: ['fail', 'decline', 'wither'],
+      wordDistractors: ['proffer', 'whisper', 'plaster'],
+      definitionDistractors: [
+        'To move quickly toward a specific destination or goal',
+        'To investigate or examine something in detail',
+        'To distribute resources evenly among a group of people',
+      ],
       exampleSentences: [
         { en: 'The small family business began to grow rapidly and eventually managed to reach every corner of the country.', ko: '그 작은 가족 기업은 빠르게 성장하기 시작했고 결국 전국 방방곡곡으로 번창해 나갔습니다.' },
         { en: 'Plants will only stay healthy and develop well if they receive adequate sunlight and water.', ko: '식물은 적절한 햇빛과 물을 받아야만 건강하게 유지되고 잘 번성할 것입니다.' },
@@ -376,6 +490,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to keep someone or something safe from injury, damage, or loss',
       synonyms: ['safeguard', 'shield', 'defend'],
       antonyms: ['attack', 'harm', 'endanger'],
+      wordDistractors: ['project', 'protest', 'prospect'],
+      definitionDistractors: [
+        'To officially register ownership of an invention or design',
+        'To carefully inspect or examine for potential faults',
+        'To conceal or hide something from public view',
+      ],
       exampleSentences: [
         { en: 'Parents always try their best to keep their children safe from any potential danger.', ko: '부모님은 항상 자녀를 잠재적인 위험으로부터 지키기 위해 최선을 다합니다.' },
         { en: 'Wearing sunscreen is essential to prevent your skin from being damaged by the sun.', ko: '태양에 의해 피부가 손상되는 것을 막기 위해 자외선 차단제를 바르는 것은 필수적입니다.' },
@@ -395,6 +515,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'A complex organic substance that is a fundamental component of all living cells and is necessary for the growth and repair of body tissues.',
       synonyms: ['nutrient', 'polypeptide', 'albumin'],
       antonyms: ['carbohydrate', 'lipid', 'mineral'],
+      wordDistractors: ['proton', 'protean', 'protege'],
+      definitionDistractors: [
+        'A subatomic particle carrying a positive electrical charge',
+        'A type of enzyme that breaks down food in the digestive system',
+        'A synthetic material used in manufacturing plastics and fibers',
+      ],
       exampleSentences: [
         { en: 'Lean chicken breast is an excellent source of high-quality dietary nutrients for muscle recovery.', ko: '기름기 없는 닭가슴살은 근육 회복을 위한 고품질 식이 영양소의 훌륭한 공급원입니다.' },
         { en: 'The biological structure of every cell in the human body relies on these essential building blocks.', ko: '인체 내 모든 세포의 생물학적 구조는 이러한 필수 구성 요소에 의존합니다.' },
@@ -414,6 +540,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'To express strong objection or disapproval of something, often through public demonstration or formal complaint.',
       synonyms: ['object', 'oppose', 'demonstrate'],
       antonyms: ['agree', 'accept', 'support'],
+      wordDistractors: ['protect', 'pretest', 'contest'],
+      definitionDistractors: [
+        'To make a solemn declaration affirming one\'s innocence',
+        'To compete against others in a formal athletic event',
+        'To conduct a preliminary examination before a main test',
+      ],
       exampleSentences: [
         { en: 'Thousands of citizens gathered to protest against the new tax policy.', ko: '수천 명의 시민들이 새로운 세금 정책에 항의하기 위해 모였다.' },
         { en: 'Workers protested the unfair working conditions by going on strike.', ko: '노동자들은 파업을 통해 불공정한 근무 조건에 항의했다.' },
@@ -433,6 +565,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'Feeling deep pleasure or satisfaction as a result of one\'s own achievements or qualities.',
       synonyms: ['arrogant', 'conceited', 'satisfied'],
       antonyms: ['humble', 'ashamed', 'modest'],
+      wordDistractors: ['prude', 'prowl', 'shroud'],
+      definitionDistractors: [
+        'Having a loud or noticeable presence in a social setting',
+        'Being overly cautious or reserved in personal matters',
+        'Experiencing a strong emotional reaction to unexpected news',
+      ],
       exampleSentences: [
         { en: 'The parents felt extremely happy and honored when their daughter graduated at the top of her class.', ko: '딸이 반에서 1등으로 졸업했을 때 부모님은 매우 기쁘고 자랑스러웠습니다.' },
         { en: 'He has a very high opinion of his own abilities and often acts superior to his colleagues.', ko: '그는 자신의 능력에 대해 매우 자부심이 강하며 종종 동료들보다 우월하게 행동합니다.' },
@@ -452,6 +590,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to demonstrate the truth or existence of something by evidence or argument',
       synonyms: ['verify', 'validate', 'confirm'],
       antonyms: ['disprove', 'refute', 'contradict'],
+      wordDistractors: ['grove', 'drove', 'probe'],
+      definitionDistractors: [
+        'To gradually increase in size or number over time',
+        'To officially approve or certify a document or agreement',
+        'To test the quality or durability of a material or product',
+      ],
       exampleSentences: [
         { en: 'The prosecutor presented new evidence to the jury to demonstrate the suspect\'s guilt.', ko: '검사는 피고인의 유죄를 입증하기 위해 배심원단에게 새로운 증거를 제시했습니다.' },
         { en: 'Recent laboratory tests show that the new medicine is effective against the virus.', ko: '최근의 실험실 테스트는 그 신약이 바이러스에 효과가 있음을 증명합니다.' },
@@ -471,6 +615,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to make something available for use or to supply someone with something they need',
       synonyms: ['supply', 'furnish', 'equip'],
       antonyms: ['withhold', 'deprive', 'remove'],
+      wordDistractors: ['provoke', 'prevail', 'preside'],
+      definitionDistractors: [
+        'To plan ahead for future events or possible difficulties',
+        'To oversee or manage a project from start to finish',
+        'To distribute profits equally among business partners',
+      ],
       exampleSentences: [
         { en: 'The local government will supply enough food to the refugees after the natural disaster.', ko: '지방 정부는 자연재해 이후 난민들에게 충분한 음식을 제공할 것입니다.' },
         { en: 'Our company aims to offer high-quality educational materials for students worldwide.', ko: '우리 회사는 전 세계 학생들에게 고품질의 교육 자료를 제공하는 것을 목표로 합니다.' },
@@ -490,6 +640,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'A principal administrative division of certain countries or empires.',
       synonyms: ['territory', 'region', 'district'],
       antonyms: ['metropolis', 'capital', 'center'],
+      wordDistractors: ['provence', 'proviso', 'prudence'],
+      definitionDistractors: [
+        'A field or area of specialized knowledge or responsibility',
+        'A fortified military outpost along a national border',
+        'A formal document granting authority over a territory',
+      ],
       exampleSentences: [
         { en: 'The northern province is famous for its beautiful mountains and cold winters.', ko: '그 북쪽 주는 아름다운 산과 추운 겨울로 유명합니다.' },
         { en: 'Each province has its own local government to manage regional affairs.', ko: '각 주는 지역 사무를 관리하기 위한 자체 지방 정부를 가지고 있습니다.' },
@@ -509,6 +665,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to deliberately cause a strong reaction, typically an annoying or angry one, in someone',
       synonyms: ['instigate', 'incite', 'arouse'],
       antonyms: ['appease', 'mollify', 'pacify'],
+      wordDistractors: ['provide', 'invoke', 'revoke'],
+      definitionDistractors: [
+        'To call upon a higher authority for assistance or guidance',
+        'To cancel or officially withdraw a previously granted right',
+        'To inspire someone to take positive and constructive action',
+      ],
       exampleSentences: [
         { en: 'The politician\'s controversial remarks were intended to a response from the opposition party.', ko: '그 정치인의 논란이 많은 발언은 야당의 반응을 유도하기 위한 의도였다.' },
         { en: 'Be careful not to the stray dog, as it might become aggressive and bite.', ko: '유기견이 공격적으로 변해 물 수도 있으니 자극하지 않도록 조심해라.' },
@@ -528,6 +690,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'The scientific study of the human mind and its functions, especially those affecting behavior in a given context.',
       synonyms: ['mentality', 'mindset', 'psychotherapy'],
       antonyms: ['physiology', 'biology', 'physics'],
+      wordDistractors: ['pathology', 'mythology', 'physiology'],
+      definitionDistractors: [
+        'The branch of medicine dealing with mental disorders and treatments',
+        'The study of the structure and function of the nervous system',
+        'The practice of treating emotional distress through conversation',
+      ],
       exampleSentences: [
         { en: 'Understanding child psychology helps parents respond better to their children\'s emotional needs.', ko: '아동 심리학을 이해하는 것은 부모가 자녀의 정서적 요구에 더 잘 대응하도록 도와줍니다.' },
         { en: 'The marketing team analyzed the psychology of consumers to improve their advertising strategy.', ko: '마케팅 팀은 광고 전략을 개선하기 위해 소비자 심리를 분석했습니다.' },
@@ -547,14 +715,20 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'An establishment where alcoholic beverages are served to be consumed on the premises, often providing food and a social atmosphere.',
       synonyms: ['tavern', 'bar', 'inn'],
       antonyms: ['residence', 'workplace', 'library'],
+      wordDistractors: ['hub', 'pup', 'tub'],
+      definitionDistractors: [
+        'A small retail shop selling newspapers and magazines',
+        'A community hall used for meetings and local events',
+        'A private club with membership fees and exclusive access',
+      ],
       exampleSentences: [
         { en: 'Local residents gathered at the neighborhood establishment to watch the football match together.', ko: '지역 주민들이 축구 경기를 함께 보기 위해 동네 선술집에 모였습니다.' },
         { en: 'After a long day of hiking, we found a cozy place in the village to have a warm meal and a drink.', ko: '긴 하이킹 끝에 우리는 마을에서 따뜻한 식사와 술 한 잔을 즐길 수 있는 아늑한 장소를 찾았습니다.' },
       ],
     }
   ),
-  word('public', '대중,공공', 4, 'noun',
-    ['개인', '사적', '비공개', '기밀', '소수', '내부', '독점', '사유화', '폐쇄성', '개인영역'],
+  word('public', '공공의', 4, 'adjective',
+    ['사적인', '비공개의', '기밀의', '개인적인', '내부의', '독점적인', '폐쇄적인', '비밀의', '제한된', '배타적인'],
     tips({
       etymology: '라틴어 publicus에서 유래하여 \'사람들\' 또는 \'공동체\'를 의미하며, 개인적인 것과 반대되는 개념입니다.',
       visual: '공원에 모여 있는 수많은 시민들의 모습을 상상하며 대중적인 이미지를 떠올려 보세요.',
@@ -566,6 +740,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'Relating to or involving people in general rather than being limited to a specific small group.',
       synonyms: ['communal', 'general', 'universal'],
       antonyms: ['private', 'personal', 'confidential'],
+      wordDistractors: ['publish', 'puddle', 'pulpit'],
+      definitionDistractors: [
+        'Known or recognized widely by a large audience or population',
+        'Funded entirely by government taxes and official budgets',
+        'Open and transparent in communicating information to others',
+      ],
       exampleSentences: [
         { en: 'The government decided to open the new park to the general population.', ko: '정부는 새 공원을 일반 대중에게 개방하기로 결정했습니다.' },
         { en: 'Smoking is strictly prohibited in all shared indoor spaces.', ko: '모든 공공 실내 장소에서는 흡연이 엄격히 금지됩니다.' },
@@ -573,7 +753,7 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('publish', '출판하다', 5, 'verb',
-    ['은폐', '삭제', '보류', '수정', '거절', '침묵', '비밀', '중단', '연기', '폐기'],
+    ['은폐하다', '삭제하다', '보류하다', '수정하다', '거절하다', '숨기다', '철회하다', '중단하다', '연기하다', '폐기하다'],
     tips({
       etymology: '라틴어 \'publicare\'에서 유래하여 \'대중에게 널리 알리다\'라는 의미를 담고 있습니다.',
       visual: '인쇄기에서 갓 나온 따끈따끈한 책들이 서점 매대에 진열되는 모습을 상상해 보세요.',
@@ -585,14 +765,20 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'To prepare and issue a book, journal, or piece of music for public sale or distribution.',
       synonyms: ['issue', 'release', 'distribute'],
       antonyms: ['conceal', 'suppress', 'withhold'],
+      wordDistractors: ['punish', 'polish', 'perish'],
+      definitionDistractors: [
+        'To edit and revise written content for grammatical accuracy',
+        'To print multiple copies of a document using a machine',
+        'To broadcast news or information through television or radio',
+      ],
       exampleSentences: [
         { en: 'The academic journal decided to issue the groundbreaking research findings in their next volume.', ko: '그 학술지는 다음 호에 획기적인 연구 결과를 발표하기로 결정했습니다.' },
         { en: 'Many independent authors now choose to release their novels through digital platforms.', ko: '많은 독립 작가들이 이제 디지털 플랫폼을 통해 자신의 소설을 출판하는 것을 선택합니다.' },
       ],
     }
   ),
-  word('pull', '끌다', 6, 'verb',
-    ['밀기', '정지', '거절', '해방', '방출', '압박', '회피', '고정', '상승', '분리'],
+  word('pull', '당기다', 6, 'verb',
+    ['밀다', '멈추다', '놓다', '던지다', '올리다', '내리다', '흔들다', '비틀다', '접다', '누르다'],
     tips({
       etymology: '고대 영어 \'pullian\'에서 유래하여 무언가를 움켜쥐고 자기 쪽으로 당기는 동작을 의미합니다.',
       visual: '문 손잡이에 \'PULL\'이라고 적힌 표지판을 보고 몸쪽으로 힘껏 당기는 모습을 상상하세요.',
@@ -601,9 +787,15 @@ export const vocabBatch53: VocabItem[] = [
       synonymAntonym: 'tug나 drag는 강하게 끄는 느낌을 주며, 반대로 push는 반대 방향으로 힘을 가하는 것입니다.',
     }),
     {
-      definition: 'the act of applying force to something so that it moves towards the source of the force',
-      synonyms: ['tug', 'jerk', 'attraction'],
-      antonyms: ['push', 'repulsion', 'shove'],
+      definition: 'to apply force to something in order to move it towards oneself or the source of the force',
+      synonyms: ['tug', 'drag', 'haul'],
+      antonyms: ['push', 'shove', 'thrust'],
+      wordDistractors: ['poll', 'pill', 'hull'],
+      definitionDistractors: [
+        'To lift an object vertically from the ground upward',
+        'To twist or rotate something around a central point',
+        'To strike a surface repeatedly with a sharp instrument',
+      ],
       exampleSentences: [
         { en: 'The child gave a sharp tug on his mother\'s sleeve to get her attention.', ko: '아이는 엄마의 주의를 끌기 위해 소매를 세게 잡아당겼습니다.' },
         { en: 'Magnetic force exerts a powerful downward move on the metal filings.', ko: '자기력은 금속 가루에 강력한 하향 인력을 행사합니다.' },
@@ -623,6 +815,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'A light shoe that has a low-cut front, no fastens, and is typically worn by women for formal occasions.',
       synonyms: ['court shoe', 'stiletto', 'slip-on'],
       antonyms: ['boot', 'sneaker', 'sandal'],
+      wordDistractors: ['plump', 'bump', 'dump'],
+      definitionDistractors: [
+        'A mechanical device used to move fluids through pipes',
+        'A padded cushion placed inside a shoe for extra comfort',
+        'A decorative buckle or ornament attached to footwear',
+      ],
       exampleSentences: [
         { en: 'She decided to wear a classic black leather pair for the wedding ceremony.', ko: '그녀는 결혼식을 위해 클래식한 검은색 가죽 구두를 신기로 결정했다.' },
         { en: 'These elegant shoes are comfortable enough to wear throughout the entire work day.', ko: '이 우아한 펌프스는 근무 시간 내내 신고 있을 수 있을 만큼 편안하다.' },
@@ -642,6 +840,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'a forceful blow delivered with a closed fist',
       synonyms: ['blow', 'strike', 'hit'],
       antonyms: ['caress', 'tap', 'stroke'],
+      wordDistractors: ['bunch', 'pinch', 'crunch'],
+      definitionDistractors: [
+        'A flavored beverage made by mixing fruit juices together',
+        'A small hole made in a surface using a sharp tool',
+        'A quick jabbing motion used to press a button or key',
+      ],
       exampleSentences: [
         { en: 'The boxer landed a powerful right to his opponent\'s jaw.', ko: '그 권투 선수는 상대의 턱에 강력한 오른손 주먹질을 날렸다.' },
         { en: 'He dodged the swing and countered with a quick jab.', ko: '그는 휘두르는 주먹을 피하고 빠른 주먹질로 반격했다.' },
@@ -661,6 +865,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to impose a penalty on someone as a result of their fault or transgression',
       synonyms: ['penalize', 'chastise', 'discipline'],
       antonyms: ['reward', 'pardon', 'forgive'],
+      wordDistractors: ['publish', 'furnish', 'vanish'],
+      definitionDistractors: [
+        'To warn someone firmly about the consequences of their actions',
+        'To confine a person to a specific location as a precaution',
+        'To formally accuse someone of committing a crime in court',
+      ],
       exampleSentences: [
         { en: 'The judge decided to penalize the criminal with a heavy fine to discourage future crimes.', ko: '판사는 향후 범죄를 방지하기 위해 그 범죄자에게 무거운 벌금을 부과하여 벌하기로 결정했습니다.' },
         { en: 'Parents often find it difficult to discipline their children when they break important household rules.', ko: '부모들은 아이들이 중요한 집안 규칙을 어겼을 때 그들을 벌하는 것을 종종 어렵게 느낍니다.' },
@@ -668,7 +878,7 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('pupil', '학생, 제자', 6, 'noun',
-    ['빠르게', '천천히', '자주', '가끔', '항상', '이미', '곧', '직접', '간접적으로', '정확히'],
+    ['교사', '교수', '강사', '학부모', '교장', '멘토', '조교', '상담사', '관리자', '보호자'],
     tips({
       etymology: '라틴어 pupilla에서 유래하여 \'작은 인형\'을 뜻하며, 눈동자에 비친 작은 모습이나 가르침을 받는 어린 학생을 의미합니다.',
       visual: '교실 책상에 앉아 선생님을 초롱초롱한 눈망울로 바라보는 어린 학생의 눈동자를 상상해 보세요.',
@@ -680,6 +890,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'A person, especially a child at school, who is being taught by a teacher, or the small black round area in the center of the eye.',
       synonyms: ['student', 'learner', 'schoolchild'],
       antonyms: ['teacher', 'instructor', 'educator'],
+      wordDistractors: ['pulpit', 'puppet', 'papal'],
+      definitionDistractors: [
+        'A young person under the guidance of a professional mentor',
+        'The colored ring surrounding the central opening of the eye',
+        'A formal apprentice learning a skilled trade or craft',
+      ],
       exampleSentences: [
         { en: 'The primary school teacher welcomed every new learner to the classroom on the first day.', ko: '초등학교 선생님은 첫날 교실로 들어오는 모든 새로운 학생들을 환영했습니다.' },
         { en: 'Bright light causes the dark circular opening in the center of the eye to contract quickly.', ko: '밝은 빛은 눈 중앙의 검은 구멍이 빠르게 수축하게 만듭니다.' },
@@ -699,6 +915,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'A young domestic dog, specifically one that is less than a year old.',
       synonyms: ['pup', 'whelp', 'pooch'],
       antonyms: ['adult dog', 'hound', 'beast'],
+      wordDistractors: ['poppy', 'pulpy', 'peppy'],
+      definitionDistractors: [
+        'A small stuffed animal made of fabric and designed as a toy',
+        'Any young animal that has not yet reached maturity',
+        'A friendly or playful person who behaves in an energetic way',
+      ],
       exampleSentences: [
         { en: 'The golden retriever gave birth to five healthy littermates yesterday.', ko: '그 골든 리트리버는 어제 다섯 마리의 건강한 강아지들을 낳았습니다.' },
         { en: 'A small furry creature chewed on my slippers while I was sleeping.', ko: '내가 자는 동안 작고 털이 많은 강아지가 내 슬리퍼를 물어뜯었습니다.' },
@@ -718,6 +940,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to acquire something by paying money for it',
       synonyms: ['buy', 'acquire', 'procure'],
       antonyms: ['sell', 'market', 'vend'],
+      wordDistractors: ['perchance', 'parchment', 'puncture'],
+      definitionDistractors: [
+        'To borrow an item temporarily with the intention of returning it',
+        'To negotiate the terms of a commercial deal or contract',
+        'To reserve or set aside goods for future collection',
+      ],
       exampleSentences: [
         { en: 'The company decided to purchase new equipment to increase production efficiency.', ko: '그 회사는 생산 효율을 높이기 위해 새로운 장비를 구입하기로 결정했습니다.' },
         { en: 'Customers can purchase tickets online or at the box office directly.', ko: '고객들은 온라인이나 매표소에서 직접 티켓을 구매할 수 있습니다.' },
@@ -737,6 +965,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'not mixed with any other substance or material; clean and free from harmful elements',
       synonyms: ['unadulterated', 'spotless', 'genuine'],
       antonyms: ['contaminated', 'polluted', 'mixed'],
+      wordDistractors: ['purge', 'lure', 'cure'],
+      definitionDistractors: [
+        'Having a smooth and unblemished surface or appearance',
+        'Occurring naturally without any human intervention',
+        'Extremely rare and difficult to find in the wild',
+      ],
       exampleSentences: [
         { en: 'The mountain stream provides a source of pure water for the local village.', ko: '그 산의 시냇물은 지역 마을에 순수한 물의 원천을 제공합니다.' },
         { en: 'She showed pure joy when she heard the wonderful news about her promotion.', ko: '그녀는 승진에 관한 멋진 소식을 들었을 때 순수한 기쁨을 보여주었습니다.' },
@@ -756,6 +990,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'having a color that is a mixture of red and blue, often associated with royalty or luxury',
       synonyms: ['violet', 'lavender', 'plum'],
       antonyms: ['yellow', 'colorless', 'pale'],
+      wordDistractors: ['purse', 'pebble', 'triple'],
+      definitionDistractors: [
+        'A deep shade of red with warm undertones resembling crimson',
+        'A bright and vivid color created by mixing green and yellow',
+        'A dark neutral tone that absorbs all visible light',
+      ],
       exampleSentences: [
         { en: 'The sunset painted the entire sky in deep shades of violet and magenta.', ko: '노을이 온 하늘을 진한 보랏빛과 자줏빛으로 물들였습니다.' },
         { en: 'Kings and queens in ancient times often wore robes of this regal color.', ko: '고대 왕과 왕비들은 종종 이 제왕적인 색상의 예복을 입었습니다.' },
@@ -763,7 +1003,7 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('purpose', '목적', 6, 'noun',
-    ['기준', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '우연'],
+    ['도서관', '발언, 논평', '망령든 노인', '지나치게 규칙을 찾는 사람', '쾌락주의자', '기능', '공고, 발표', '덮개, (날개를) 퍼덕이다', '싸움', '우연'],
     tips({
       etymology: '라틴어 \'pro(앞에)\'와 \'ponere(두다)\'가 합쳐져 \'앞에 놓인 목표\'라는 의미에서 유래했습니다.',
       visual: '달리기 선수가 결승선(목표)을 향해 전력 질주하는 모습을 상상해 보세요.',
@@ -775,6 +1015,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'the reason for which something is done or created or for which something exists',
       synonyms: ['objective', 'intention', 'goal'],
       antonyms: ['chance', 'accident', 'randomness'],
+      wordDistractors: ['porpoise', 'propose', 'purport'],
+      definitionDistractors: [
+        'A strong feeling of determination to achieve something',
+        'The final result or outcome of a series of actions',
+        'A specific task assigned to a person by an authority',
+      ],
       exampleSentences: [
         { en: 'The main objective of this meeting is to discuss the new project.', ko: '이 회의의 주요 목적은 새 프로젝트를 논의하는 것입니다.' },
         { en: 'She traveled to London for the sole intent of visiting the national museum.', ko: '그녀는 국립 박물관을 방문하려는 오직 하나의 목적을 위해 런던으로 여행했습니다.' },
@@ -782,7 +1028,7 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('pursue', '쫓다', 7, 'verb',
-    ['행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다'],
+    ['충분히 만족시키다, 물리게 하다', '망설이다, 우유부단하다', '동 좋아하다', '동 과거', '강화하다, 심화하다', '(병이) 나아지다, 회복하다', '보완하다', '(자금, 물건 등을) 책정하다', '선택하다', '결정하다'],
     tips({
       etymology: '라틴어 prosequi에서 유래했으며, pro(앞으로)와 sequi(따르다)가 합쳐져 목표를 향해 계속 나아가는 이미지를 담고 있습니다.',
       visual: '어두운 밤, 형사가 범인을 잡기 위해 골목길을 끝까지 달려가는 긴박한 추격 장면을 상상해 보세요.',
@@ -794,6 +1040,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to follow someone or something in order to catch them, or to try to achieve a specific goal over a period of time',
       synonyms: ['chase', 'seek', 'track'],
       antonyms: ['flee', 'avoid', 'retreat'],
+      wordDistractors: ['peruse', 'purse', 'purvey'],
+      definitionDistractors: [
+        'To read or examine something carefully and in detail',
+        'To persuade or convince someone to change their mind',
+        'To wander aimlessly without a clear destination in mind',
+      ],
       exampleSentences: [
         { en: 'The police officer had to sprint through the narrow alleyway to catch the suspect.', ko: '경찰관은 용의자를 잡기 위해 좁은 골목길을 전력 질주해야 했습니다.' },
         { en: 'She decided to move to New York to follow her lifelong dream of becoming a professional dancer.', ko: '그녀는 전문 무용수가 되겠다는 평생의 꿈을 쫓기 위해 뉴욕으로 이사하기로 결심했습니다.' },
@@ -813,6 +1065,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to use physical pressure against an object to move it away from oneself',
       synonyms: ['shove', 'thrust', 'propel'],
       antonyms: ['pull', 'drag', 'tow'],
+      wordDistractors: ['plush', 'gush', 'bush'],
+      definitionDistractors: [
+        'To carry a heavy object from one location to another',
+        'To press a button or switch to activate a mechanism',
+        'To squeeze or compress something into a smaller space',
+      ],
       exampleSentences: [
         { en: 'Heavy glass doors require a lot of strength to open when you need to enter the building.', ko: '건물에 들어가야 할 때 무거운 유리문은 열기 위해 많은 힘으로 밀어야 합니다.' },
         { en: 'Parents often encourage their children to excel in school by giving them a gentle motivational nudge.', ko: '부모님들은 종종 아이들에게 가벼운 동기부여를 주어 학교에서 두각을 나타내도록 독려하곤 합니다.' },
@@ -832,14 +1090,20 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'To move something into a particular place or position.',
       synonyms: ['place', 'set', 'position'],
       antonyms: ['remove', 'take', 'displace'],
+      wordDistractors: ['putt', 'pat', 'pit'],
+      definitionDistractors: [
+        'To throw an object with force toward a specific target',
+        'To hold or grasp something tightly in one\'s hands',
+        'To arrange objects in a neat and orderly pattern',
+      ],
       exampleSentences: [
         { en: 'Please leave your keys on the table near the entrance.', ko: '입구 근처 탁자 위에 열쇠를 놓아 주세요.' },
         { en: 'She decided to express her feelings into words in a letter.', ko: '그녀는 자신의 감정을 편지에 글로 옮기기로 결심했습니다.' },
       ],
     }
   ),
-  word('puzzle', '당황', 1, 'noun',
-    ['기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건'],
+  word('puzzle', '수수께끼', 1, 'noun',
+    ['꾸러미', '반란', '형 ant', '잃음', '테러리스트', '깊이', '동창생들, 졸업생들', '공연, 쇼', '공간', '확장, 연장'],
     tips({
       etymology: '16세기경 \'pose(당황하게 하다)\'에서 유래하여 복잡한 문제나 상황을 뜻하게 되었습니다.',
       visual: '조각들이 엉망으로 섞여 있어 어디서부터 손을 대야 할지 몰라 머리를 긁적이는 모습을 상상하세요.',
@@ -851,14 +1115,20 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'a situation, person, or thing that is difficult to understand or explain',
       synonyms: ['mystery', 'enigma', 'conundrum'],
       antonyms: ['solution', 'explanation', 'clarity'],
+      wordDistractors: ['muzzle', 'nuzzle', 'guzzle'],
+      definitionDistractors: [
+        'A game or toy designed to test ingenuity or problem-solving',
+        'A state of confusion caused by too many choices at once',
+        'A riddle presented in verse form for entertainment purposes',
+      ],
       exampleSentences: [
         { en: 'The sudden disappearance of the documents remains a complete mystery to the entire office.', ko: '서류가 갑자기 사라진 사건은 사무실 전체에 큰 당혹감을 주는 미스터리로 남아 있다.' },
         { en: 'Her strange behavior last night was a real head-scratcher for all her friends.', ko: '어젯밤 그녀의 이상한 행동은 모든 친구들에게 정말 당황스러운 수수께끼였다.' },
       ],
     }
   ),
-  word('qualify', '부여하다', 4, 'verb',
-    ['반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다'],
+  word('qualify', '자격을 갖추다', 4, 'verb',
+    ['간청하다, 요청하다 (=beseech, entreat, implore, invoke, plead, supplicate)', '교섭하다', '(힘·영향력을) 가하다', '진화하다', '질문하다', '더럽히다, 모독하다', '해고하다', '가다', '~하고 싶다', '선택하다'],
     tips({
       etymology: '라틴어 \'qualis(어떤 종류의)\'와 \'facere(만들다)\'가 합쳐져 특정 자격을 갖추게 만든다는 의미에서 유래했습니다.',
       visual: '올림픽 국가대표 선발전에서 결승선을 통과하며 본선 진출권을 획득하는 선수의 모습을 상상해 보세요.',
@@ -870,6 +1140,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'to reach the necessary standard or to have the right to do something, or to limit the strength of a previous statement',
       synonyms: ['certify', 'empower', 'modify'],
       antonyms: ['disqualify', 'fail', 'prohibit'],
+      wordDistractors: ['quantify', 'pacify', 'liquify'],
+      definitionDistractors: [
+        'To measure or express the amount of something numerically',
+        'To officially approve someone for a professional license',
+        'To arrange candidates in order based on their test scores',
+      ],
       exampleSentences: [
         { en: 'The athlete worked hard for years to earn the right to compete in the championship finals.', ko: '그 선수는 챔피언십 결승전에 출전할 자격을 얻기 위해 수년간 열심히 노력했습니다.' },
         { en: 'She felt the need to limit her previous praise by adding that the project still had some flaws.', ko: '그녀는 프로젝트에 여전히 몇 가지 결함이 있다는 점을 덧붙임으로써 이전의 칭찬을 수정할 필요를 느꼈습니다.' },
@@ -877,7 +1153,7 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('quality', '질', 5, 'noun',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['대리, 대행', '불안, 불편함', '전쟁', '제거, 탈락', '시계소리', '인류학', '성냥', '편안함', '티베트', '소나기'],
     tips({
       etymology: '라틴어 qualis(어떤 종류의)에서 유래하여 사물의 본질적인 특성이나 우수함을 뜻하게 되었습니다.',
       visual: '명품 가방의 꼼꼼한 바느질과 저가 제품의 거친 마감을 비교하는 장면을 상상해 보세요.',
@@ -889,6 +1165,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'the degree of excellence of something or a distinctive attribute possessed by someone',
       synonyms: ['standard', 'excellence', 'characteristic'],
       antonyms: ['inferiority', 'imperfection', 'worthlessness'],
+      wordDistractors: ['qualify', 'quantity', 'quarrel'],
+      definitionDistractors: [
+        'The total number or amount of items produced or available',
+        'A certificate proving that a product meets safety standards',
+        'The process of testing and inspecting manufactured goods',
+      ],
       exampleSentences: [
         { en: 'The company focuses on improving the durability and overall value of its products.', ko: '그 회사는 제품의 내구성과 전반적인 질을 개선하는 데 집중합니다.' },
         { en: 'Patience is a necessary trait for anyone working in the teaching profession.', ko: '인내심은 교육직에 종사하는 누구에게나 필요한 자질입니다.' },
@@ -896,7 +1178,7 @@ export const vocabBatch53: VocabItem[] = [
     }
   ),
   word('quantity', '양', 6, 'noun',
-    ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
+    ['수익금', '공연, 수행', '수의사', '큰 이익, 혜택', '한 쌍, 부부', '1. 생존 능력\n2. 실행 가능성', '산업화', '후대', '과다, 과잉', '체육관, 체조'],
     tips({
       etymology: '라틴어 \'quantus(얼마나 많은)\'에서 유래하여 사물의 수량이나 분량을 나타냅니다.',
       visual: '창고에 가득 쌓여 있는 박스들의 엄청난 숫자를 세고 있는 장면을 상상해 보세요.',
@@ -908,6 +1190,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'The total amount or number of something that can be measured or counted.',
       synonyms: ['amount', 'volume', 'measure'],
       antonyms: ['quality', 'scarcity', 'nothingness'],
+      wordDistractors: ['quantify', 'quandary', 'quarantine'],
+      definitionDistractors: [
+        'The specific type or grade of a material or product',
+        'A fixed limit placed on the production of certain goods',
+        'The weight of an object as measured by a standard scale',
+      ],
       exampleSentences: [
         { en: 'The factory produces a vast amount of goods in large numbers every single day.', ko: '그 공장은 매일 엄청난 양의 제품을 대량으로 생산합니다.' },
         { en: 'It is often better to focus on the excellence of your work rather than the total number of tasks completed.', ko: '완료된 업무의 총량보다는 업무의 우수성에 집중하는 것이 대개 더 낫습니다.' },
@@ -927,6 +1215,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'one of four equal parts into which something is or can be divided',
       synonyms: ['fourth', 'quadrant', 'portion'],
       antonyms: ['whole', 'entirety', 'total'],
+      wordDistractors: ['quarrel', 'charter', 'quaver'],
+      definitionDistractors: [
+        'A residential area or neighborhood within a city',
+        'A coin worth exactly half of the standard currency unit',
+        'A period of three months used in business reporting',
+      ],
       exampleSentences: [
         { en: 'The meeting is scheduled to begin at a quarter past ten.', ko: '회의는 10시 15분에 시작될 예정입니다.' },
         { en: 'Cut the apple into a quarter so that everyone can have a piece.', ko: '모두가 한 조각씩 먹을 수 있도록 사과를 4등분으로 자르세요.' },
@@ -946,6 +1240,12 @@ export const vocabBatch53: VocabItem[] = [
       definition: 'A sentence or phrase used to find out information or to test someone\'s knowledge.',
       synonyms: ['inquiry', 'query', 'interrogation'],
       antonyms: ['answer', 'reply', 'response'],
+      wordDistractors: ['quotient', 'questionnaire', 'quintet'],
+      definitionDistractors: [
+        'A formal debate or discussion about a controversial topic',
+        'An expression of doubt or uncertainty about a belief',
+        'A written examination used to evaluate academic progress',
+      ],
       exampleSentences: [
         { en: 'The teacher encouraged every student to ask a difficult inquiry during the lecture.', ko: '선생님은 강의 중에 모든 학생이 어려운 질문을 하도록 격려했습니다.' },
         { en: 'Please raise your hand if you have any doubt regarding the new project rules.', ko: '새로운 프로젝트 규칙에 대해 질의 사항이 있으면 손을 들어 주세요.' },

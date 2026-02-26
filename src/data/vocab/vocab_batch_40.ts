@@ -19,6 +19,12 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The total price of the tour will incorporate all meals and accommodation.', ko: '투어 총 가격에는 모든 식사와 숙박 시설이 포함됩니다.' },
         { en: 'Please remember to add your contact information on the final page of the report.', ko: '보고서 마지막 페이지에 연락처 정보를 포함하는 것을 잊지 마세요.' },
       ],
+      wordDistractors: ['incline', 'enclose', 'conclude'],
+      definitionDistractors: [
+        'to lean or slope in a particular direction',
+        'to send something along with a letter or package',
+        'to bring an event or process to an end',
+      ],
     }
   ),
   word('income', '수입', 6, 'noun',
@@ -37,6 +43,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'The family struggled to live on a single source of monthly earnings.', ko: '그 가족은 단일한 월 수입원으로 생활하느라 애를 먹었습니다.' },
         { en: 'High tax rates can significantly reduce the net amount of money people take home.', ko: '높은 세율은 사람들이 실제로 가져가는 순수입을 크게 줄일 수 있습니다.' },
+      ],
+      wordDistractors: ['outcome', 'income', 'become'],
+      definitionDistractors: [
+        'the result or consequence of an action',
+        'a pleasant feeling of relaxation after work',
+        'the process of arriving at a destination',
       ],
     }
   ),
@@ -57,10 +69,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The designer decided to incorporate sustainable materials into the new clothing line.', ko: '디자이너는 새로운 의류 라인에 지속 가능한 소재를 통합하기로 결정했습니다.' },
         { en: 'Many modern smartphones incorporate advanced camera technology with powerful processing chips.', ko: '많은 현대식 스마트폰은 고급 카메라 기술을 강력한 프로세싱 칩과 통합합니다.' },
       ],
+      wordDistractors: ['incubate', 'implicate', 'invigorate'],
+      definitionDistractors: [
+        'to keep something warm until it hatches or develops',
+        'to show that someone is involved in a crime',
+        'to give strength or energy to something',
+      ],
     }
   ),
   word('increase', '늘다', 7, 'verb',
-    ['감소', '축소', '삭감', '하락', '감소분', '줄어듦', '축소분', '감소세', '둔화', '감소율'],
+    ['줄이다', '감소하다', '축소하다', '삭감하다', '하락하다', '줄어들다', '둔화하다', '낮추다', '떨어지다', '약화하다'],
     tips({
       etymology: '라틴어 \'increscere\'에서 유래하며, \'안에서(in)\' \'자라나다(crescere)\'라는 의미가 합쳐져 양이 커짐을 뜻합니다.',
       visual: '우상향하는 주식 그래프나 계단식으로 높아지는 막대그래프의 모양을 상상해 보세요.',
@@ -69,12 +87,18 @@ export const vocabBatch40: VocabItem[] = [
       synonymAntonym: '상승을 뜻하는 rise와 반대되는 하락인 decrease를 세트로 묶어 외우면 효과적입니다.',
     }),
     {
-      definition: 'a rise in the size, amount, or degree of something',
-      synonyms: ['growth', 'expansion', 'increment'],
-      antonyms: ['reduction', 'decline', 'diminution'],
+      definition: 'to become or make greater in size, amount, intensity, or degree',
+      synonyms: ['grow', 'expand', 'rise'],
+      antonyms: ['decrease', 'reduce', 'diminish'],
       exampleSentences: [
         { en: 'The company reported a significant rise in sales during the last quarter.', ko: '그 회사는 지난 분기 동안 매출의 상당한 증가를 보고했습니다.' },
         { en: 'A sudden surge in demand for electric cars has led to higher prices.', ko: '전기차 수요의 갑작스러운 증가는 가격 상승으로 이어졌습니다.' },
+      ],
+      wordDistractors: ['incense', 'crease', 'incase'],
+      definitionDistractors: [
+        'to make someone extremely angry or frustrated',
+        'a line or ridge produced on a surface by folding',
+        'to enclose or surround something completely',
       ],
     }
   ),
@@ -95,6 +119,12 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The view from the top of the mountain was absolutely breathtaking and beyond belief.', ko: '산 정상에서 본 풍경은 정말 숨이 막힐 정도로 믿기지 않았습니다.' },
         { en: 'She showed such remarkable talent at a young age that everyone was stunned.', ko: '그녀는 어린 나이에 너무나 놀라운 재능을 보여주어 모두를 깜짝 놀라게 했습니다.' },
       ],
+      wordDistractors: ['indelible', 'incurable', 'inedible'],
+      definitionDistractors: [
+        'making a mark that cannot be removed or erased',
+        'not able to be healed or remedied',
+        'not suitable or safe for eating',
+      ],
     }
   ),
   word('indeed', '참으로', 5, 'adverb',
@@ -112,7 +142,13 @@ export const vocabBatch40: VocabItem[] = [
       antonyms: ['doubtfully', 'hardly', 'possibly'],
       exampleSentences: [
         { en: 'The scenery from the top of the mountain was very beautiful.', ko: '산 정상에서 본 풍경은 참으로 아름다웠습니다.' },
-        { en: 'A friend in need is a friend.', ko: '어려울 때 돕는 친구가 참된 친구입니다.' },
+        { en: 'A friend in need is a friend indeed.', ko: '어려울 때 돕는 친구가 참된 친구입니다.' },
+      ],
+      wordDistractors: ['indigo', 'indent', 'inbreed'],
+      definitionDistractors: [
+        'a deep blue color derived from a plant dye',
+        'to create a space or notch at the beginning of a line',
+        'to produce offspring by mating closely related individuals',
       ],
     }
   ),
@@ -133,6 +169,12 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The young adult moved out of his parents\' house to become more self-sufficient and free.', ko: '그 청년은 더 자립적이고 자유로워지기 위해 부모님 집에서 이사했다.' },
         { en: 'Many nations fought long wars to achieve their status as a sovereign and separate country.', ko: '많은 국가들이 주권이 있는 분리된 국가로서의 지위를 얻기 위해 긴 전쟁을 치렀다.' },
       ],
+      wordDistractors: ['indifferent', 'indulgent', 'indignant'],
+      definitionDistractors: [
+        'having no particular interest or concern about something',
+        'allowing someone to have or do whatever they want',
+        'feeling or showing anger because of something unjust',
+      ],
     }
   ),
   word('index', '색인', 9, 'noun',
@@ -151,6 +193,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'Please check the back of the textbook to find the specific page number for that term.', ko: '해당 용어의 정확한 페이지 번호를 찾으려면 교과서 뒷면의 색인을 확인하세요.' },
         { en: 'The consumer price serves as a crucial measure of inflation for the national economy.', ko: '소비자 물가 지수는 국가 경제의 인플레이션을 측정하는 중요한 척도 역할을 합니다.' },
+      ],
+      wordDistractors: ['indent', 'indict', 'annex'],
+      definitionDistractors: [
+        'to set text back from the margin in writing',
+        'to formally accuse someone of a serious crime',
+        'to attach or add something to a larger entity',
       ],
     }
   ),
@@ -171,6 +219,12 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'Recent statistics indicate a trend that might suggest a recovery in the local economy.', ko: '최근 통계는 지역 경제 회복을 나타낼 수도 있는 추세를 보여줍니다.' },
         { en: 'The flashing red light on the dashboard is designed to indicate that the fuel level is low.', ko: '대시보드의 깜빡이는 빨간 불은 연료 잔량이 적다는 것을 나타내기 위해 설계되었습니다.' },
       ],
+      wordDistractors: ['implicate', 'intimate', 'inundate'],
+      definitionDistractors: [
+        'to involve someone in a questionable act or crime',
+        'to hint or suggest something indirectly',
+        'to flood or overwhelm with a large amount',
+      ],
     }
   ),
   word('individual', '개인', 4, 'noun',
@@ -189,6 +243,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'Every single person has the right to express their own unique opinions.', ko: '모든 개개인은 자신만의 독특한 의견을 표현할 권리가 있습니다.' },
         { en: 'The coach focuses on improving the skills of each player rather than just the team as a whole.', ko: '그 코치는 팀 전체뿐만 아니라 각 선수의 기량을 향상시키는 데 집중합니다.' },
+      ],
+      wordDistractors: ['indivisible', 'industrial', 'indignant'],
+      definitionDistractors: [
+        'unable to be divided or separated into parts',
+        'relating to the production of goods in factories',
+        'feeling or showing anger at unfair treatment',
       ],
     }
   ),
@@ -209,10 +269,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The doctors decided to induce labor because the baby was two weeks overdue.', ko: '아기가 예정일보다 2주나 지났기 때문에 의사들은 분만을 유도하기로 결정했습니다.' },
         { en: 'High levels of stress can often induce sleep deprivation and physical exhaustion.', ko: '높은 수준의 스트레스는 종종 수면 부족과 육체적 피로를 유도할 수 있습니다.' },
       ],
+      wordDistractors: ['deduce', 'reduce', 'produce'],
+      definitionDistractors: [
+        'to arrive at a conclusion by reasoning from evidence',
+        'to make something smaller or less in amount',
+        'to manufacture or create goods in large quantities',
+      ],
     }
   ),
   word('industry', '공업', 5, 'noun',
-    ['결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회'],
+    ['두통', '경치, 풍경', '수신자', '기질, 성격', '자원봉사 정신', '외과', '위급, 긴급함', '식품 저장고', '칭송, 찬양, 송덕문', '단거리 선수'],
     tips({
       etymology: '라틴어 \'industria\'에서 유래했으며, \'부지런함\'이라는 뜻에서 현대의 대규모 생산 체계인 \'공업\'으로 발전했습니다.',
       visual: '거대한 톱니바퀴가 돌아가는 공장 단지와 연기가 솟아오르는 굴뚝들을 상상해 보세요.',
@@ -227,6 +293,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'The heavy steel sector is a vital part of the national economy.', ko: '중공업 부문은 국가 경제의 핵심적인 부분입니다.' },
         { en: 'Rapid technological advances are transforming the modern automotive sector.', ko: '급격한 기술 발전이 현대 자동차 산업을 변화시키고 있습니다.' },
+      ],
+      wordDistractors: ['infantry', 'indignity', 'inquiry'],
+      definitionDistractors: [
+        'soldiers who fight on foot rather than on horseback',
+        'treatment that causes a feeling of shame or humiliation',
+        'a formal request for information or assistance',
       ],
     }
   ),
@@ -247,6 +319,12 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'Aging is a natural and certain process that every living being must face.', ko: '노화는 모든 생명체가 직면해야 하는 자연스럽고 피할 수 없는 과정입니다.' },
         { en: 'The collapse of the old building seemed certain after the massive earthquake.', ko: '거대한 지진 이후 그 오래된 건물의 붕괴는 피할 수 없는 일처럼 보였습니다.' },
       ],
+      wordDistractors: ['invaluable', 'invertible', 'invisible'],
+      definitionDistractors: [
+        'extremely useful or priceless beyond measure',
+        'capable of being reversed or turned inside out',
+        'unable to be seen by the naked eye',
+      ],
     }
   ),
   word('infant', '유아', 6, 'noun',
@@ -265,6 +343,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'The nurse carefully placed the newborn child into the warm cradle.', ko: '간호사는 갓 태어난 유아를 따뜻한 요람에 조심스럽게 눕혔습니다.' },
         { en: 'Specific nutrition is essential for healthy growth during the first year of a human\'s life.', ko: '인간 생애의 첫해 동안 유아의 건강한 성장을 위해서는 특정 영양 공급이 필수적입니다.' },
+      ],
+      wordDistractors: ['infirm', 'infarct', 'influx'],
+      definitionDistractors: [
+        'physically weak, especially due to old age or illness',
+        'an area of tissue death caused by blocked blood supply',
+        'a large number of people or things arriving at once',
       ],
     }
   ),
@@ -285,10 +369,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'A single mosquito can carry enough parasites to many people in the village.', ko: '단 한 마리의 모기가 마을의 많은 사람들을 감염시킬 만큼의 기생충을 옮길 수 있습니다.' },
         { en: 'Her cheerful attitude tended to everyone in the office, lifting the overall mood.', ko: '그녀의 쾌활한 태도는 사무실의 모든 사람에게 전염되어 전반적인 분위기를 고조시켰습니다.' },
       ],
+      wordDistractors: ['inflect', 'affect', 'ingest'],
+      definitionDistractors: [
+        'to change the tone or pitch of one\'s voice',
+        'to have an influence on or cause a change in',
+        'to take food or drink into the body by swallowing',
+      ],
     }
   ),
   word('infer', '추론하다', 10, 'verb',
-    ['행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다'],
+    ['운전했다 (drive의 과거)', '낙담시키다', '의견이 다르다', '탐내다, 갈망하다', '존재하다', '(구름, 안개 등을) 흩뜨리다, 흩어지다', '잠시 들르다', '노력하다, 분투하다', '선택하다', '결정하다'],
     tips({
       etymology: '라틴어 \'inferre\'에서 유래되었으며, \'안으로(in)\' \'가져오다(fer)\'라는 의미가 합쳐져 결론을 이끌어낸다는 뜻이 되었습니다.',
       visual: '셜록 홈즈가 돋보기를 들고 흩어진 단서들을 모아 하나의 결론을 도출하는 장면을 상상해 보세요.',
@@ -303,6 +393,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'From the data presented in the report, we can reasonably conclude that sales will increase next quarter.', ko: '보고서에 제시된 자료를 통해 다음 분기 매출이 증가할 것이라고 합리적으로 추론할 수 있습니다.' },
         { en: 'The audience was able to understand the character\'s true motives through her subtle facial expressions.', ko: '관객들은 그녀의 미묘한 표정을 통해 캐릭터의 진정한 동기를 추론할 수 있었습니다.' },
+      ],
+      wordDistractors: ['defer', 'refer', 'confer'],
+      definitionDistractors: [
+        'to postpone or delay an action to a later time',
+        'to direct someone to a different source for help',
+        'to discuss something in order to reach a decision',
       ],
     }
   ),
@@ -323,10 +419,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The mechanic used a pump to fill the bicycle tires with air until they were firm.', ko: '정비공은 자전거 타이어가 단단해질 때까지 펌프를 사용하여 공기를 주입했습니다.' },
         { en: 'Governments often worry that printing too much money will cause prices to rise rapidly.', ko: '정부는 너무 많은 화폐를 발행하는 것이 물가를 급격히 상승시킬까 봐 종종 걱정합니다.' },
       ],
+      wordDistractors: ['inflame', 'instate', 'inflict'],
+      definitionDistractors: [
+        'to provoke strong feelings of anger or passion',
+        'to place someone in an official position',
+        'to cause suffering or harm to someone',
+      ],
     }
   ),
   word('influence', '영향력', 7, 'noun',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['절충, 트레이드오프', '미라; 엄마(영국식)', '운율, 리듬', '형 al', '시리얼, 곡물', '조카딸', '비난', '밖(에[으로], 의)', '담론', '재정'],
     tips({
       etymology: '안으로(in) 흐르다(flu)라는 어원에서 유래하여 타인의 마음속으로 흘러 들어가 변화를 일으키는 힘을 뜻합니다.',
       visual: '잔잔한 호수에 돌을 던졌을 때 물결이 사방으로 퍼져나가는 파동의 이미지를 떠올려 보세요.',
@@ -341,6 +443,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'Peer pressure can have a significant effect on the choices teenagers make regarding their hobbies.', ko: '또래 집단의 압박은 십 대들이 취미를 선택하는 데 있어 상당한 영향력을 미칠 수 있습니다.' },
         { en: 'Her artistic style shows a clear inspiration from the classical painters of the Renaissance era.', ko: '그녀의 예술적 스타일은 르네상스 시대 고전 화가들로부터 받은 명확한 영향력을 보여줍니다.' },
+      ],
+      wordDistractors: ['affluence', 'influenza', 'confluence'],
+      definitionDistractors: [
+        'the state of having a great deal of wealth',
+        'a highly contagious viral respiratory illness',
+        'the point where two rivers or streams merge',
       ],
     }
   ),
@@ -361,6 +469,12 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'Please contact the office to tell them about your decision as soon as possible.', ko: '가능한 한 빨리 사무실에 연락하여 당신의 결정을 알려주세요.' },
         { en: 'The manager will update the staff regarding the new safety protocols tomorrow morning.', ko: '매니저는 내일 아침 직원들에게 새로운 안전 규정에 대해 알릴 것입니다.' },
       ],
+      wordDistractors: ['infirm', 'reform', 'conform'],
+      definitionDistractors: [
+        'physically weak or frail due to age or illness',
+        'to make changes to improve a system or institution',
+        'to comply with rules or accepted standards of behavior',
+      ],
     }
   ),
   word('informal', '비공식의', 5, 'adjective',
@@ -380,10 +494,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The dress code for the company picnic is completely relaxed and casual.', ko: '회사 야유회의 복장 규정은 완전히 편안하고 비공식적입니다.' },
         { en: 'We had a brief and friendly chat over coffee to discuss the new project ideas.', ko: '우리는 새 프로젝트 아이디어를 논의하기 위해 커피를 마시며 짧고 비공식적인 대화를 나누었습니다.' },
       ],
+      wordDistractors: ['infernal', 'internal', 'maternal'],
+      definitionDistractors: [
+        'relating to or resembling hell or the underworld',
+        'situated on the inside of something',
+        'relating to a mother or motherhood',
+      ],
     }
   ),
   word('ingredient', '성분', 6, 'noun',
-    ['행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계', '계획', '절차'],
+    ['문법', '라켓, 소란', '가려움, 가렵다', '입장', '매듭', '톱니바퀴', '초목, 식물', '요건, 필요조건', '목적지', '해결책, 해결'],
     tips({
       etymology: '라틴어 \'ingredi(들어가다)\'에서 유래하여, 어떤 결과물 안에 \'들어가는 것\'을 의미합니다.',
       visual: '요리사가 냄비 안에 신선한 채소와 향신료를 하나씩 집어넣는 모습을 상상해 보세요.',
@@ -398,6 +518,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'Fresh garlic is a vital component for making this pasta sauce taste authentic.', ko: '신선한 마늘은 이 파스타 소스의 맛을 정통으로 만드는 데 필수적인 성분입니다.' },
         { en: 'Hard work and persistence are the main elements of any great achievement.', ko: '노력과 끈기는 모든 위대한 성취의 주요 요소입니다.' },
+      ],
+      wordDistractors: ['increment', 'agreement', 'regiment'],
+      definitionDistractors: [
+        'an increase or addition, especially one of a series',
+        'a mutual arrangement between two or more parties',
+        'a permanent unit of an army typically led by a colonel',
       ],
     }
   ),
@@ -418,10 +544,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'Many rare species of birds continue to inhabit these remote islands.', ko: '많은 희귀종의 새들이 이 외딴 섬들에 계속해서 서식하고 있다.' },
         { en: 'Ancient tribes used to inhabit the caves along the river banks.', ko: '고대 부족들은 강둑을 따라 있는 동굴에 거주하곤 했다.' },
       ],
+      wordDistractors: ['inhibit', 'exhibit', 'inherit'],
+      definitionDistractors: [
+        'to prevent or restrain an action from happening',
+        'to display something publicly for others to see',
+        'to receive property or a trait from a predecessor',
+      ],
     }
   ),
   word('inherent', '고유의', 9, 'adjective',
-    ['부적절한', '긍정적인', '부정적인', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인'],
+    ['안달하는, 초조해 하는, 화내는, 언짢아하는', '가설적인', '맑은, 투명한', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인'],
     tips({
       etymology: '라틴어 \'inhaerere\'에서 유래했으며, \'안에(in) 달라붙어 있다(stick)\'는 의미가 합쳐져 본질적인 특성을 뜻하게 되었습니다.',
       visual: '태어날 때부터 DNA 속에 깊이 새겨져 있어 절대 지워지지 않는 문신 같은 이미지를 떠올려 보세요.',
@@ -436,6 +568,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'Every form of mountain climbing has some risks that cannot be completely removed.', ko: '모든 형태의 등산에는 완전히 제거할 수 없는 몇 가지 내재된 위험이 있습니다.' },
         { en: 'The desire for freedom is a natural part of human nature from birth.', ko: '자유에 대한 갈망은 태어날 때부터 인간 본성에 내재된 부분입니다.' },
+      ],
+      wordDistractors: ['incoherent', 'adherent', 'coherent'],
+      definitionDistractors: [
+        'lacking logical connection or clarity in speech',
+        'a person who supports a particular party or belief',
+        'logically connected and consistent throughout',
       ],
     }
   ),
@@ -456,6 +594,12 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'Strict laws may prevent growth and effectively stifle new business ventures in the region.', ko: '엄격한 법률은 성장을 방해하고 해당 지역의 새로운 사업 시도를 효과적으로 저해할 수 있습니다.' },
         { en: 'Cold temperatures often slow down the chemical reaction and keep the bacteria from spreading.', ko: '낮은 온도는 종종 화학 반응을 늦추고 박테리아가 퍼지는 것을 억제합니다.' },
       ],
+      wordDistractors: ['inhabit', 'exhibit', 'prohibit'],
+      definitionDistractors: [
+        'to live in or occupy a particular place',
+        'to display something publicly in an exhibition',
+        'to formally forbid something by law or rule',
+      ],
     }
   ),
   word('initial', '처음의', 4, 'adjective',
@@ -475,6 +619,12 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The company\'s starting investment was much higher than they had originally planned.', ko: '회사의 초기 투자금은 원래 계획했던 것보다 훨씬 높았습니다.' },
         { en: 'My first reaction to the news was one of complete shock and disbelief.', ko: '그 소식에 대한 나의 첫 반응은 완전한 충격과 불신이었습니다.' },
       ],
+      wordDistractors: ['innate', 'inertial', 'digital'],
+      definitionDistractors: [
+        'present from birth rather than learned or acquired',
+        'relating to the property of matter to resist changes in motion',
+        'involving or relating to computer technology or data',
+      ],
     }
   ),
   word('initiate', '시작하다', 5, 'verb',
@@ -491,13 +641,19 @@ export const vocabBatch40: VocabItem[] = [
       synonyms: ['commence', 'launch', 'instigate'],
       antonyms: ['terminate', 'conclude', 'halt'],
       exampleSentences: [
-        { en: 'The government plans to new programs to improve public health services.', ko: '정부는 공공 보건 서비스를 개선하기 위한 새로운 프로그램들을 시작할 계획이다.' },
-        { en: 'Only a senior manager has the authority to a formal investigation into the matter.', ko: '오직 고위 관리자만이 그 문제에 대한 공식적인 조사를 개시할 권한을 갖는다.' },
+        { en: 'The government plans to initiate new programs to improve public health services.', ko: '정부는 공공 보건 서비스를 개선하기 위한 새로운 프로그램들을 시작할 계획이다.' },
+        { en: 'Only a senior manager has the authority to initiate a formal investigation into the matter.', ko: '오직 고위 관리자만이 그 문제에 대한 공식적인 조사를 개시할 권한을 갖는다.' },
+      ],
+      wordDistractors: ['imitate', 'intimate', 'irrigate'],
+      definitionDistractors: [
+        'to copy the actions or appearance of someone else',
+        'to suggest something in an indirect way',
+        'to supply water to land for growing crops',
       ],
     }
   ),
   word('inject', '주사하다', 6, 'verb',
-    ['반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다'],
+    ['제의하다', '요약하다', '탈출하다', '반등하다, 되튀다', '회전하다', '변형시키다', '함축하다', '결정하다', '양육하다', '선택하다'],
     tips({
       etymology: '라틴어 \'in-\'(안으로)과 \'jacere\'(던지다)가 합쳐져 액체를 몸 안으로 던져 넣는다는 의미에서 유래했습니다.',
       visual: '간호사가 주사기 피스톤을 꾹 눌러 약물을 팔에 밀어 넣는 장면을 상상해 보세요.',
@@ -512,6 +668,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'The nurse had to administer a sedative to the patient before the surgery.', ko: '간호사는 수술 전에 환자에게 진정제를 주사해야 했습니다.' },
         { en: 'Adding fresh talent can bring new energy into a failing project.', ko: '새로운 인재를 영입하는 것은 실패해가는 프로젝트에 새로운 활력을 불어넣을 수 있습니다.' },
+      ],
+      wordDistractors: ['ingest', 'object', 'eject'],
+      definitionDistractors: [
+        'to take food or drink into the body by swallowing',
+        'to express disagreement or opposition to something',
+        'to push or throw something out forcefully',
       ],
     }
   ),
@@ -532,6 +694,12 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The professional athlete feared that a sudden fall might permanently damage his knee.', ko: '그 프로 선수는 갑작스러운 낙상이 무릎에 영구적인 부상을 입힐까 봐 두려워했습니다.' },
         { en: 'Be careful not to hurt yourself while using those sharp gardening tools in the yard.', ko: '마당에서 날카로운 원예 도구를 사용하는 동안 다치지 않도록 조심하세요.' },
       ],
+      wordDistractors: ['inure', 'incur', 'endure'],
+      definitionDistractors: [
+        'to accustom someone to something unpleasant over time',
+        'to become subject to something unwelcome as a result of one\'s actions',
+        'to suffer through something painful without giving up',
+      ],
     }
   ),
   word('inn', '여인숙', 4, 'noun',
@@ -550,6 +718,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'The weary travelers decided to stay at a cozy roadside establishment for the night.', ko: '지친 여행객들은 하룻밤을 묵기 위해 길가의 아늑한 여인숙에 머물기로 했다.' },
         { en: 'Local villagers gathered at the village pub to share news and warm drinks.', ko: '마을 주민들은 소식을 나누고 따뜻한 음료를 마시기 위해 마을 여관에 모였다.' },
+      ],
+      wordDistractors: ['ink', 'bin', 'din'],
+      definitionDistractors: [
+        'a colored fluid used for writing or printing',
+        'a container for storing or disposing of waste',
+        'a loud and unpleasant noise that continues for some time',
       ],
     }
   ),
@@ -570,10 +744,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The jury found the defendant not guilty, declaring him free and clear of all charges.', ko: '배심원단은 피고인에게 무죄 판결을 내리며 그가 모든 혐의에 대해 결백함을 선언했습니다.' },
         { en: 'Children often ask very simple questions because of their naive and curious nature.', ko: '아이들은 특유의 천진난만하고 호기심 많은 본성 때문에 종종 매우 단순한 질문을 던지곤 합니다.' },
       ],
+      wordDistractors: ['insolent', 'inoculate', 'innovate'],
+      definitionDistractors: [
+        'showing rude and disrespectful behavior toward others',
+        'to treat with a vaccine to produce immunity',
+        'to introduce new methods or ideas for improvement',
+      ],
     }
   ),
   word('innovate', '혁신하다', 6, 'verb',
-    ['관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다'],
+    ['관리하다', '보완하다', '분석하다', '정리하다', '함축하다', '정돈하다', '대처하다', '주저하다, 거부하다', '강화하다, 심화하다', '연상하다'],
     tips({
       etymology: '라틴어 \'novus(새로운)\'에서 유래하여 안에서부터 새롭게 만든다는 의미를 담고 있습니다.',
       visual: '낡고 오래된 기계 부품을 최첨단 반도체 칩으로 교체하는 엔지니어의 모습을 상상해 보세요.',
@@ -588,6 +768,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'The tech giant must constantly develop new features to stay ahead of its competitors.', ko: '그 거대 IT 기업은 경쟁자들보다 앞서 나가기 위해 끊임없이 새로운 기능을 혁신해야 합니다.' },
         { en: 'Small businesses often find creative ways to improve their services despite having a limited budget.', ko: '중소기업들은 제한된 예산에도 불구하고 서비스를 혁신하기 위한 창의적인 방법들을 자주 찾아냅니다.' },
+      ],
+      wordDistractors: ['instigate', 'renovate', 'nominate'],
+      definitionDistractors: [
+        'to provoke or encourage someone to begin an action',
+        'to restore something old to a good state of repair',
+        'to propose someone as a candidate for an award',
       ],
     }
   ),
@@ -608,6 +794,12 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The marketing team provided valuable advice as their contribution to the new project.', ko: '마케팅 팀은 새 프로젝트에 대한 투입의 일환으로 귀중한 조언을 제공했습니다.' },
         { en: 'Computers process data after receiving the necessary information from the user.', ko: '컴퓨터는 사용자로부터 필요한 정보를 입력받은 후 데이터를 처리합니다.' },
       ],
+      wordDistractors: ['output', 'imprint', 'impute'],
+      definitionDistractors: [
+        'the information or product that comes out of a system',
+        'a mark made by pressing something onto a surface',
+        'to attribute a fault or action to someone else',
+      ],
     }
   ),
   word('inquire', '묻다', 8, 'verb',
@@ -626,6 +818,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'The detective arrived at the scene to seek more details about the incident from the witnesses.', ko: '형사는 목격자들로부터 사건에 대한 더 자세한 내용을 묻기 위해 현장에 도착했습니다.' },
         { en: 'Potential buyers often call the office to ask about the current availability of the property.', ko: '잠재적 구매자들은 종종 부동산의 현재 매물 여부를 문의하기 위해 사무실로 전화합니다.' },
+      ],
+      wordDistractors: ['require', 'acquire', 'inspire'],
+      definitionDistractors: [
+        'to need something as a necessary condition',
+        'to gain possession of something through effort',
+        'to fill someone with the urge to do something creative',
       ],
     }
   ),
@@ -646,10 +844,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'A rare species of butterfly is the most beautiful creature in this forest.', ko: '희귀한 나비 종은 이 숲에서 가장 아름다운 생명체입니다.' },
         { en: 'Many farmers use natural methods to keep every harmful pest away from their crops.', ko: '많은 농부들은 농작물로부터 해로운 벌레들을 멀리하기 위해 천연 방법을 사용합니다.' },
       ],
+      wordDistractors: ['inset', 'incest', 'intact'],
+      definitionDistractors: [
+        'a thing that is put in or inserted into something else',
+        'a close familial relationship that violates social norms',
+        'not damaged or impaired; remaining whole and complete',
+      ],
     }
   ),
   word('insert', '끼워넣다', 5, 'verb',
-    ['삭제', '추출', '배제', '분리', '거부', '이동', '복사', '수정', '정지', '파괴'],
+    ['빼내다', '제거하다', '추출하다', '삭제하다', '분리하다', '거부하다', '이동하다', '복사하다', '수정하다', '파괴하다'],
     tips({
       etymology: '라틴어 \'inserere\'에서 유래했으며, \'in(안으로)\'과 \'serere(결합하다)\'가 합쳐져 안으로 끼워 넣는다는 의미가 되었습니다.',
       visual: '신문 사이에 끼워져 있는 광고 전단지나 잡지 속의 별책 부록을 상상해 보세요.',
@@ -658,17 +862,23 @@ export const vocabBatch40: VocabItem[] = [
       synonymAntonym: '추가물인 enclosure와 유사하며, 전체를 의미하는 whole이나 본체와는 반대되는 개념입니다.',
     }),
     {
-      definition: 'An extra leaf or section printed separately and placed within the pages of a magazine or book.',
-      synonyms: ['enclosure', 'addition', 'supplement'],
-      antonyms: ['extraction', 'removal', 'deletion'],
+      definition: 'to place, fit, or push something into something else, especially into a narrow space or opening',
+      synonyms: ['introduce', 'place', 'embed'],
+      antonyms: ['extract', 'remove', 'withdraw'],
       exampleSentences: [
         { en: 'The Sunday newspaper often includes a colorful advertising insert for local supermarkets.', ko: '일요일 신문에는 종종 지역 슈퍼마켓을 위한 화려한 광고 전단지가 끼워져 있다.' },
         { en: 'Check the product packaging for a small paper insert containing the instructions for use.', ko: '사용 설명서가 담긴 작은 종이 삽입물을 제품 포장에서 확인하십시오.' },
       ],
+      wordDistractors: ['invert', 'assert', 'desert'],
+      definitionDistractors: [
+        'to turn something upside down or reverse its position',
+        'to state a fact or belief confidently and forcefully',
+        'to abandon a person or place without intending to return',
+      ],
     }
   ),
   word('inside', '안쪽', 3, 'noun',
-    ['관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표'],
+    ['좁은길', '주디 (여성 이름)', '변명', '한국인', '순환', '어려움, 고난', '청중', '준비, 대비', '(배의) 노', '위로, 조의'],
     tips({
       etymology: '안을 뜻하는 \'in\'과 옆면을 뜻하는 \'side\'가 결합되어 내부라는 의미가 되었습니다.',
       visual: '상자 안에 소중한 물건이 담겨 있는 모습을 상상해 보세요.',
@@ -683,6 +893,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'The walls on the interior were painted a bright shade of white.', ko: '안쪽 벽면은 밝은 흰색으로 칠해져 있었습니다.' },
         { en: 'She felt a sense of calm deep within her heart.', ko: '그녀는 마음 깊은 곳에서 평온함을 느꼈습니다.' },
+      ],
+      wordDistractors: ['incite', 'beside', 'aside'],
+      definitionDistractors: [
+        'to encourage or stir up violent or unlawful behavior',
+        'at the side of or next to something or someone',
+        'to one side or out of the way of something',
       ],
     }
   ),
@@ -703,6 +919,12 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The researcher provided a valuable perspective that gave us a new understanding of consumer behavior.', ko: '그 연구원은 소비자 행동에 대한 새로운 이해를 제공하는 귀중한 통찰을 제시했습니다.' },
         { en: 'Years of experience in the industry have given her a profound grasp of market trends.', ko: '업계에서의 수년간의 경험은 그녀에게 시장 트렌드에 대한 깊은 통찰력을 주었습니다.' },
       ],
+      wordDistractors: ['incite', 'indict', 'insult'],
+      definitionDistractors: [
+        'to encourage or stir up violent or unlawful behavior',
+        'to formally charge someone with a serious crime',
+        'to speak to someone in a rude and disrespectful manner',
+      ],
     }
   ),
   word('insist', '주장하다', 7, 'verb',
@@ -721,6 +943,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'The customer continued to demand a full refund despite the store policy.', ko: '그 고객은 매장 규정에도 불구하고 전액 환불을 계속해서 주장했다.' },
         { en: 'My parents always make sure that we finish all our vegetables before leaving the table.', ko: '우리 부모님은 식탁을 떠나기 전에 우리가 채소를 다 먹어야 한다고 항상 고집하신다.' },
+      ],
+      wordDistractors: ['consist', 'resist', 'desist'],
+      definitionDistractors: [
+        'to be composed or made up of particular elements',
+        'to withstand the action or effect of something',
+        'to stop doing something or cease an activity',
       ],
     }
   ),
@@ -741,6 +969,12 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The customs officer will check your luggage to ensure no illegal items are brought into the country.', ko: '세관원은 불법 물품이 국내로 반입되지 않도록 당신의 수하물을 검사할 것입니다.' },
         { en: 'Safety experts arrived at the construction site to evaluate the structural integrity of the new bridge.', ko: '안전 전문가들이 새 다리의 구조적 무결성을 점검하기 위해 건설 현장에 도착했습니다.' },
       ],
+      wordDistractors: ['suspect', 'respect', 'expect'],
+      definitionDistractors: [
+        'to have a feeling that someone is guilty without proof',
+        'a feeling of admiration for someone\'s qualities or abilities',
+        'to regard something as likely to happen in the future',
+      ],
     }
   ),
   word('inspire', '영감을 주다', 5, 'verb',
@@ -759,6 +993,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'The coach gave a powerful speech to motivate the team and fill them with confidence before the final match.', ko: '코치는 결승전 전에 팀원들에게 동기를 부여하고 자신감을 불어넣기 위해 강력한 연설을 했습니다.' },
         { en: 'Beautiful landscapes often help painters create their most famous masterpieces.', ko: '아름다운 풍경은 종종 화가들이 가장 유명한 걸작들을 만들어내도록 자극을 줍니다.' },
+      ],
+      wordDistractors: ['aspire', 'perspire', 'expire'],
+      definitionDistractors: [
+        'to direct one\'s hopes or ambitions toward achieving something',
+        'to release moisture through the pores of the skin',
+        'to come to the end of a period of validity',
       ],
     }
   ),
@@ -779,10 +1019,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The technician will arrive tomorrow to set up the new air conditioning unit.', ko: '기술자가 내일 새 에어컨 장치를 설치하러 올 것입니다.' },
         { en: 'You need to download the latest security patch before you can use the application.', ko: '애플리케이션을 사용하기 전에 최신 보안 패치를 설치해야 합니다.' },
       ],
+      wordDistractors: ['instill', 'instal', 'enthrall'],
+      definitionDistractors: [
+        'to gradually introduce an idea or attitude into a person\'s mind',
+        'to place someone in a new position of authority',
+        'to capture the fascinated attention of someone completely',
+      ],
     }
   ),
   word('instance', '실례', 7, 'noun',
-    ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
+    ['그래프, 도표', '(주택, 방, 건물)사용자/입주자', '정신', '전신', '간격, 틈', '로잘린 (여성 이름)', '속담, 격언', '그래픽', '동창생들, 졸업생들', '내일'],
     tips({
       etymology: '라틴어 \'instantia\'에서 유래했으며, \'가까이 서 있는 것\' 즉 눈앞에 나타난 구체적인 사례를 뜻합니다.',
       visual: '수많은 추상적인 규칙들 사이에서 실제로 툭 튀어나와 있는 구체적인 예시 하나를 상상해 보세요.',
@@ -798,10 +1044,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'There have been several cases where the software failed, and this is just one specific example.', ko: '소프트웨어가 실패한 사례가 여러 번 있었는데, 이것은 단지 하나의 구체적인 실례일 뿐입니다.' },
         { en: 'Let us consider a particular situation where a small mistake led to a major disaster.', ko: '작은 실수가 큰 재앙으로 이어진 특정한 실례를 하나 살펴봅시다.' },
       ],
+      wordDistractors: ['instant', 'distance', 'substance'],
+      definitionDistractors: [
+        'happening or coming immediately without any delay',
+        'the amount of space between two points or places',
+        'the real physical matter of which a thing consists',
+      ],
     }
   ),
   word('instant', '즉시의', 4, 'adjective',
-    ['간접적인', '명확한', '모호한', '적절한', '부적절한', '긍정적인', '부정적인', '대표적인', '기본적인', '중요한'],
+    ['만장일치의, 동의하는\n(unanimously  만장일치로)', '주장하는/단언하는', '만연한, 널리 퍼진', '가설적인', '부러지기 쉬운, 깨지기 쉬운', '덧 없는, 영속하지 않는', '다른', '대표적인', '기본적인', '중요한'],
     tips({
       etymology: '라틴어 instans에서 유래하여 \'가까이 서 있는\' 즉, 바로 눈앞에 닥친 긴박한 상태를 의미합니다.',
       visual: '뜨거운 물만 부으면 바로 완성되는 컵라면이나 커피 믹스 포장지를 떠올려 보세요.',
@@ -814,8 +1066,14 @@ export const vocabBatch40: VocabItem[] = [
       synonyms: ['immediate', 'prompt', 'instantaneous'],
       antonyms: ['delayed', 'gradual', 'eventual'],
       exampleSentences: [
-        { en: 'The new software provided an response to every user command.', ko: '새 소프트웨어는 모든 사용자 명령에 즉각적인 반응을 제공했습니다.' },
+        { en: 'The new software provided an instant response to every user command.', ko: '새 소프트웨어는 모든 사용자 명령에 즉각적인 반응을 제공했습니다.' },
         { en: 'The photograph brought back memories of that summer afternoon.', ko: '그 사진은 그해 여름 오후의 기억을 즉각적으로 불러일으켰습니다.' },
+      ],
+      wordDistractors: ['instinct', 'instance', 'distant'],
+      definitionDistractors: [
+        'a natural impulse that causes a particular behavior',
+        'a particular case or example of something occurring',
+        'far away in space or time from a given point',
       ],
     }
   ),
@@ -836,10 +1094,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The restaurant was out of fish, so we ordered chicken.', ko: '식당에 생선이 떨어져서 우리는 대신 치킨을 주문했습니다.' },
         { en: 'She did not go to the cinema; she stayed home and read a book.', ko: '그녀는 영화관에 가지 않았습니다. 대신 집에 머물며 책을 읽었습니다.' },
       ],
+      wordDistractors: ['instate', 'instep', 'insisted'],
+      definitionDistractors: [
+        'to place someone in a position of authority officially',
+        'the top surface of a person\'s foot between the ankle and toes',
+        'to have demanded something forcefully in the past',
+      ],
     }
   ),
   word('instinct', '본능', 6, 'noun',
-    ['결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회'],
+    ['기념일', '갈대', '보행자', '해군 장군[제독]', '백만장자', '오렌지', '건강 진단', '교향곡', '담론', '삼각형'],
     tips({
       etymology: '라틴어 \'instinctus\'에서 유래했으며, \'안에서(in) 찌르다(stinct)\'라는 의미로 마음속에서 저절로 일어나는 충동을 뜻합니다.',
       visual: '갓 태어난 새끼 오리가 태어나자마자 엄마를 따라 줄지어 걷는 모습을 상상해 보세요.',
@@ -855,10 +1119,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'Birds have a natural tendency to migrate south for the winter by following their internal drive.', ko: '새들은 내면의 이끌림을 따라 겨울을 나기 위해 남쪽으로 이동하는 타고난 본능을 가지고 있습니다.' },
         { en: 'Her first reaction was to trust the stranger, even though she had no logical reason to do so.', ko: '논리적인 이유는 없었지만, 그녀의 첫 번째 본능은 그 낯선 사람을 믿는 것이었습니다.' },
       ],
+      wordDistractors: ['distinct', 'extinct', 'restrict'],
+      definitionDistractors: [
+        'recognizably different from something else; unique',
+        'no longer existing because all members have died',
+        'to put a limit on or keep under control',
+      ],
     }
   ),
   word('institute', '만들다', 7, 'verb',
-    ['기관', '협회', '연구소', '학원', '설립', '제도', '학회', '시설', '단체', '기구'],
+    ['폐지하다', '해체하다', '중단하다', '철회하다', '취소하다', '무시하다', '거부하다', '파괴하다', '방치하다', '포기하다'],
     tips({
       etymology: '라틴어 \'instituere\'에서 유래하여 \'세우다\' 혹은 \'설립하다\'라는 의미를 담고 있습니다.',
       visual: '대학 캠퍼스 정문에 커다란 돌기둥이 세워져 있는 연구소 건물을 상상해 보세요.',
@@ -867,17 +1137,23 @@ export const vocabBatch40: VocabItem[] = [
       synonymAntonym: 'organization과 유사하며, 개별적인 개인을 뜻하는 individual과는 반대되는 개념입니다.',
     }),
     {
-      definition: 'An organization having a particular purpose, especially one that is involved with science, education, or specific social work.',
-      synonyms: ['foundation', 'academy', 'establishment'],
-      antonyms: ['disorganization', 'individual', 'destruction'],
+      definition: 'to set up or establish a system, rule, or organization, especially by introducing it officially for the first time',
+      synonyms: ['establish', 'found', 'inaugurate'],
+      antonyms: ['abolish', 'dismantle', 'terminate'],
       exampleSentences: [
         { en: 'The research group decided to join a prestigious technological institute to further their studies.', ko: '그 연구 그룹은 연구를 심화하기 위해 명성 있는 기술 연구소에 합류하기로 결정했습니다.' },
         { en: 'A new policy was proposed by the policy institute to improve urban transportation systems.', ko: '도시 교통 체계를 개선하기 위해 정책 연구소에서 새로운 정책을 제안했습니다.' },
       ],
+      wordDistractors: ['constitute', 'substitute', 'prostitute'],
+      definitionDistractors: [
+        'to be a component or essential part of something',
+        'to use or add something in place of another',
+        'a person who engages in an activity for unworthy motives',
+      ],
     }
   ),
   word('instruct', '가르치다', 4, 'verb',
-    ['결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회'],
+    ['배우다', '따르다', '무시하다', '잊다', '방치하다', '모르다', '오해하다', '혼동하다', '묻다', '듣다'],
     tips({
       etymology: '라틴어 \'instruere\'에서 유래하며, \'안에(in) 쌓아 올리다(struere)\'라는 뜻으로 지식을 쌓아주는 것을 의미합니다.',
       visual: '칠판 앞에서 지휘봉을 들고 학생들에게 하나하나 길을 안내하는 선생님의 모습을 상상해 보세요.',
@@ -893,10 +1169,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'The manual will show you how to assemble the furniture correctly.', ko: '설명서는 가구를 올바르게 조립하는 방법을 가르쳐 줄 것입니다.' },
         { en: 'She was hired to train the new employees on the safety protocols.', ko: '그녀는 신입 사원들에게 안전 수칙을 교육하기 위해 고용되었습니다.' },
       ],
+      wordDistractors: ['obstruct', 'construct', 'destruct'],
+      definitionDistractors: [
+        'to block or get in the way of a passage or process',
+        'to build or put together from separate parts',
+        'to cause deliberate and severe damage to something',
+      ],
     }
   ),
   word('instrument', '기구', 5, 'noun',
-    ['조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준'],
+    ['마룻바닥', '갤런 (액량 단위)', '예선 참가자, 한정사', '구성, 구조', '책망/나무람', '꺼림, 마지못해 함', '해초의 일종', '참나무', '의무', '수렁, 곤경'],
     tips({
       etymology: '라틴어 \'instruere\'에서 유래하여 \'준비하다\' 혹은 \'구축하다\'라는 의미에서 무언가를 수행하기 위한 도구라는 뜻으로 발전했습니다.',
       visual: '과학 실험실에서 정밀하게 측정하는 금속 도구나 오케스트라의 반짝이는 악기를 상상해 보세요.',
@@ -911,6 +1193,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'The surgeon reached for a sterilized instrument to begin the delicate operation.', ko: '외과 의사는 정밀한 수술을 시작하기 위해 소독된 기구에 손을 뻗었다.' },
         { en: 'Each musical instrument in the orchestra contributes to the complex harmony of the symphony.', ko: '오케스트라의 각 악기들은 교향곡의 복잡한 화음에 기여한다.' },
+      ],
+      wordDistractors: ['increment', 'ornament', 'impediment'],
+      definitionDistractors: [
+        'an increase or addition in a regular series of amounts',
+        'a decorative object used to make something look attractive',
+        'a hindrance or obstruction that delays progress',
       ],
     }
   ),
@@ -931,10 +1219,16 @@ export const vocabBatch40: VocabItem[] = [
         { en: 'He felt deeply hurt when his colleagues began to mock his ideas and openly mock his efforts.', ko: '동료들이 그의 아이디어를 비웃고 공개적으로 그의 노력을 모욕했을 때 그는 깊은 상처를 받았습니다.' },
         { en: 'The politician refused to respond to the personal attacks intended to degrade his reputation.', ko: '그 정치인은 자신의 명성을 깎아내리려는 의도의 개인적인 모욕에 대응하기를 거부했습니다.' },
       ],
+      wordDistractors: ['insure', 'result', 'consult'],
+      definitionDistractors: [
+        'to arrange compensation for damage or loss through payments',
+        'a consequence or outcome of an action or situation',
+        'to seek information or advice from an expert',
+      ],
     }
   ),
   word('insure', '보증하다', 7, 'verb',
-    ['처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다'],
+    ['좌절시키다; 호일', '실행하다, 처형하다', '화나게하다', '내리다', '게걸스럽게 먹다', '감히 하다', '선택하다', '결정하다', '요청하다', '설명하다'],
     tips({
       etymology: '접두사 in-(안으로)과 sure(확실한)가 결합하여 어떤 상태를 확실하게 만든다는 의미에서 유래했습니다.',
       visual: '사고가 났을 때 보험사에서 증서를 내밀며 안심시키는 장면을 상상해 보세요.',
@@ -949,6 +1243,12 @@ export const vocabBatch40: VocabItem[] = [
       exampleSentences: [
         { en: 'The company decided to protect its assets and provide coverage for the new warehouse against fire damage.', ko: '회사는 자산을 보호하고 화재 피해에 대비해 새 창고를 보증하기로 결정했습니다.' },
         { en: 'Many travelers choose to protect their trips against unexpected cancellations or medical emergencies abroad.', ko: '많은 여행객들이 해외에서의 예기치 못한 취소나 의료 비상사태에 대비해 여행을 보증하는 것을 선택합니다.' },
+      ],
+      wordDistractors: ['ensure', 'endure', 'inure'],
+      definitionDistractors: [
+        'to make certain that something will happen correctly',
+        'to suffer through something painful without giving up',
+        'to accustom someone to something unpleasant over time',
       ],
     }
   ),

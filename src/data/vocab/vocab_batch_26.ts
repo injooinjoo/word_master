@@ -40,7 +40,7 @@ export const vocabBatch26: VocabItem[] = [
       ],
     }
   ),
-  word('breathe', '숨쉬다', 7, 'verb',
+  word('breathe', '숨쉬다', 3, 'verb',
     ['참다', '멈추다', '막다', '말하다', '울다', '웃다', '먹다', '마시다', '뱉다', '삼키다'],
     tips({
       etymology: '고대 영어 \'bræth\'에서 유래했으며, 원래는 \'냄새\'나 \'증기\'를 뜻하다가 생명 유지에 필수적인 \'호흡\'으로 의미가 확장되었습니다.',
@@ -97,7 +97,7 @@ export const vocabBatch26: VocabItem[] = [
       ],
     }
   ),
-  word('brew', '양조하다', 10, 'verb',
+  word('brew', '양조하다', 4, 'verb',
     ['분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '유지하다', '확인하다'],
     tips({
       etymology: '고대 영어 \'breowan\'에서 유래되었으며, 끓이다 혹은 거품이 일다라는 의미를 담고 있습니다.',
@@ -496,7 +496,7 @@ export const vocabBatch26: VocabItem[] = [
       ],
     }
   ),
-  word('business', '직업', 2, 'noun',
+  word('business', '사업, 업무', 2, 'noun',
     ['취미', '휴식', '무직', '은퇴', '공부', '놀이', '여가', '휴가', '방학', '게으름'],
     tips({
       etymology: '바쁜 상태를 뜻하는 busy에 명사형 접미사 ness가 붙어, 늘 바쁘게 일하는 상태인 생업이나 직업을 의미하게 되었습니다.',
@@ -610,7 +610,7 @@ export const vocabBatch26: VocabItem[] = [
       ],
     }
   ),
-  word('cab', '택시', 7, 'noun',
+  word('cab', '택시', 3, 'noun',
     ['버스', '기차', '비행기', '배', '자전거', '오토바이', '트럭', '헬리콥터', '지하철', '유모차'],
     tips({
       etymology: '마차를 뜻하는 cabriolet에서 유래하여, 오늘날 승객을 태우는 영업용 차량을 뜻하게 되었습니다.',
@@ -800,7 +800,7 @@ export const vocabBatch26: VocabItem[] = [
       ],
     }
   ),
-  word('caption', '표제', 10, 'noun',
+  word('caption', '표제', 4, 'noun',
     ['본문', '각주', '빈칸', '삽화', '표', '차트', '인덱스', '목차', '부록', '주석'],
     tips({
       etymology: '라틴어 \'capere(잡다)\'에서 유래하여, 독자의 시선을 사로잡는 머리말이나 제목을 뜻하게 되었습니다.',

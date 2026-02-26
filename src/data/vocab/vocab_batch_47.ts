@@ -19,6 +19,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'Constant criticism can create a very harmful and pessimistic atmosphere in the workplace.', ko: '지속적인 비판은 직장 내에서 매우 해롭고 부정적인 분위기를 조성할 수 있습니다.' },
         { en: 'The medical tests returned a result showing that the patient did not have the virus.', ko: '의학 검사 결과 환자가 바이러스에 감염되지 않았음을 나타내는 음성 판정이 나왔습니다.' },
       ],
+      wordDistractors: ['narrative', 'native', 'negligent'],
+      definitionDistractors: [
+        'to actively oppose or resist a proposed change',
+        'a numerical value less than zero in mathematics',
+        'the process of removing unwanted elements from a system',
+      ],
     }
   ),
   word('neglect', '소홀히 하다', 6, 'verb',
@@ -38,10 +44,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The old garden fell into ruin because the owners began to fail in their duties and leave it alone.', ko: '주인들이 의무를 다하지 않고 방치하기 시작하면서 그 오래된 정원은 폐허가 되었습니다.' },
         { en: 'Parents should never leave their children without proper supervision or basic needs.', ko: '부모는 자녀를 적절한 감독이나 기본적인 욕구 충족 없이 방치해서는 안 됩니다.' },
       ],
+      wordDistractors: ['necklace', 'needle', 'nestle'],
+      definitionDistractors: [
+        'to carefully examine something before making a decision',
+        'to reject a formal proposal or offer outright',
+        'to arrange items in a specific order or sequence',
+      ],
     }
   ),
   word('negotiate', '교섭하다', 7, 'verb',
-    ['요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다'],
+    ['요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '믿다', '혼합하다', '위험에 빠뜨리다', '(표본) 해부하다, 분석하다'],
     tips({
       etymology: '라틴어 \'neg(부정)\'와 \'otium(여가)\'이 합쳐져 \'쉴 틈 없이 일하다\'라는 의미에서 비즈니스적 합의를 이끌어내는 과정으로 발전했습니다.',
       visual: '테이블 양쪽에 앉은 두 사람이 서로의 조건을 맞추기 위해 서류를 주고받는 회의실 풍경을 상상해 보세요.',
@@ -56,6 +68,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The two companies are meeting today to discuss the terms of the merger.', ko: '두 회사는 합병 조건을 협의하기 위해 오늘 만납니다.' },
         { en: 'Experienced diplomats were called in to help settle the border dispute between the nations.', ko: '국가 간의 국경 분쟁 해결을 돕기 위해 노련한 외교관들이 소집되었습니다.' },
+      ],
+      wordDistractors: ['negate', 'nominate', 'navigable'],
+      definitionDistractors: [
+        'to formally decline a business proposal or contract',
+        'to establish a new set of rules for an organization',
+        'to calculate the cost of goods before making a purchase',
       ],
     }
   ),
@@ -76,6 +94,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'My next-door resident kindly helped me move the heavy boxes into my garage.', ko: '옆집 이웃이 제가 무거운 상자들을 차고로 옮기는 것을 친절하게 도와주었습니다.' },
         { en: 'The friendly family living in the apartment above us has been a wonderful presence in the building.', ko: '우리 윗집 아파트에 사는 친절한 가족은 이 건물에서 아주 좋은 이웃이 되어주었습니다.' },
       ],
+      wordDistractors: ['neither', 'nephron', 'nimble'],
+      definitionDistractors: [
+        'a professional colleague working in the same office or department',
+        'a government official responsible for managing local affairs',
+        'a temporary guest staying at a hotel or lodging facility',
+      ],
     }
   ),
   word('neither', '어느 쪽도 아니다', 5, 'conjunction',
@@ -94,6 +118,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The two candidates were interviewed, but the manager liked neither of them for the position.', ko: '두 명의 후보자가 면접을 보았지만, 매니저는 그들 중 어느 쪽도 직책에 마음에 들어 하지 않았다.' },
         { en: 'One twin wanted pizza and the other wanted pasta, so they settled on a burger which was neither of those.', ko: '쌍둥이 중 한 명은 피자를 원하고 다른 한 명은 파스타를 원해서, 결국 둘 다 아닌 버거로 결정했다.' },
+      ],
+      wordDistractors: ['nether', 'neuter', 'nettle'],
+      definitionDistractors: [
+        'used to indicate a preference for one option over another',
+        'a word connecting two similar ideas in a sentence',
+        'describing something that belongs to both parties equally',
       ],
     }
   ),
@@ -114,10 +144,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'My young nephew loves playing with building blocks whenever he visits my house.', ko: '내 어린 조카는 우리 집에 놀러 올 때마다 블록 쌓기 놀이를 하는 것을 좋아한다.' },
         { en: 'She bought a beautiful blue sweater as a birthday gift for her brother\'s son.', ko: '그녀는 남동생의 아들을 위한 생일 선물로 예쁜 파란색 스웨터를 샀다.' },
       ],
+      wordDistractors: ['nephron', 'neutral', 'neophyte'],
+      definitionDistractors: [
+        'a daughter of one\'s brother or sister',
+        'a male guardian appointed by the court for a minor',
+        'the eldest son in a royal or noble family lineage',
+      ],
     }
   ),
   word('nervous', '긴장한', 7, 'adjective',
-    ['효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한', '적절한', '부적절한', '긍정적인', '부정적인'],
+    ['거꾸로, 머리를 아래로 / 뒤죽박죽', '급진적인, 근본적인', '~에 감염되기 쉬운, 영향 받기 쉬운', '엄격한, 딱딱한', '기운찬', '가장 쉬운 (easy의 최상급)', '수동적인, 소극적인', '탄성있는', '건강에 좋은', '편안한, 평화로운'],
     tips({
       etymology: '라틴어 \'nervosus\'에서 유래했으며, 원래 \'근육질의\'라는 뜻이었으나 현대에는 \'신경계\'와 관련된 의미로 정착되었습니다.',
       visual: '뇌에서 온몸으로 뻗어 나가는 가느다란 전기선 같은 신경 다발의 이미지를 떠올려 보세요.',
@@ -132,6 +168,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The patient suffered from a rare disorder affecting the central system of the body.', ko: '그 환자는 신체의 중추 신경계에 영향을 미치는 희귀 질환을 앓았습니다.' },
         { en: 'She felt extremely shaky before her first public performance on stage.', ko: '그녀는 무대 위에서의 첫 대중 공연을 앞두고 몹시 긴장했습니다.' },
+      ],
+      wordDistractors: ['narcous', 'noxious', 'numerous'],
+      definitionDistractors: [
+        'showing great enthusiasm and excitement about a new opportunity',
+        'physically strong and resistant to fatigue or illness',
+        'deliberately causing harm or discomfort to others',
       ],
     }
   ),
@@ -152,10 +194,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The robin carefully gathered small twigs and dried grass to build a sturdy home for its eggs.', ko: '울새는 알을 위한 튼튼한 집을 짓기 위해 작은 나뭇가지와 마른 풀을 정성스럽게 모았습니다.' },
         { en: 'After a long day of traveling, the hikers finally found a cozy spot to rest that felt like a private sanctuary.', ko: '긴 여행 끝에 도보 여행자들은 마침내 개인적인 안식처처럼 느껴지는 아늑한 휴식처를 찾았습니다.' },
       ],
+      wordDistractors: ['next', 'net', 'best'],
+      definitionDistractors: [
+        'a woven fabric used for catching fish or insects',
+        'a period of rest or sleep during the nighttime hours',
+        'a small community of houses in a rural setting',
+      ],
     }
   ),
   word('net', '그물', 5, 'noun',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['완고함, 고집', '감사, 존경, 찬양의 표시', '잉글랜드', '속임수', '라레이 (성)', '독재 정치', '위함, 이유', '버스', '(위계질서의) 계층', '도매, 대규모의'],
     tips({
       etymology: '고대 영어 \'net\'에서 유래하여 실이나 끈을 엮어 만든 도구를 뜻하게 되었습니다.',
       visual: '테니스 코트 중앙에 길게 쳐져 있는 격자무늬 칸막이를 상상해 보세요.',
@@ -171,10 +219,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The fisherman spent the entire afternoon repairing a large hole in his fishing gear.', ko: '어부는 오후 내내 그의 낚시 그물에 난 커다란 구멍을 수선하며 보냈다.' },
         { en: 'The ball hit the top of the white barrier and dropped onto the opponent\'s side of the court.', ko: '공이 흰색 네트 상단을 맞고 코트의 상대방 쪽으로 떨어졌다.' },
       ],
+      wordDistractors: ['nest', 'neat', 'knit'],
+      definitionDistractors: [
+        'a thin transparent material used for making curtains',
+        'the total profit remaining after all expenses are deducted',
+        'a small handheld device used for communication',
+      ],
     }
   ),
   word('network', '네트워크', 6, 'noun',
-    ['기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건'],
+    ['간섭, 방해', '입술', '체류', '배구', '휴식', '기밀, 비밀', '성가심/짜증', '위층(으로, 의)', '생물학자', '리듬'],
     tips({
       etymology: '그물을 뜻하는 net과 일이나 구조를 뜻하는 work가 합쳐져 서로 연결된 시스템을 의미합니다.',
       visual: '전 세계를 연결하는 인터넷 케이블이나 사람들이 서로 연결된 소셜 미디어 구조를 상상하세요.',
@@ -190,10 +244,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The company built a global network of offices in over thirty countries.', ko: '그 회사는 30개국 이상에 걸친 글로벌 네트워크를 구축했습니다.' },
         { en: 'A strong professional network can help you find better career opportunities.', ko: '강력한 전문 인맥 네트워크는 더 나은 경력 기회를 찾는 데 도움이 될 수 있습니다.' },
       ],
+      wordDistractors: ['networth', 'nutwork', 'patchwork'],
+      definitionDistractors: [
+        'a single cable or wire used for transmitting electricity',
+        'a physical location where people gather for meetings',
+        'a private storage facility for digital documents and files',
+      ],
     }
   ),
   word('neutral', '중립의', 7, 'adjective',
-    ['불안정한', '효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한', '적절한', '부적절한', '긍정적인'],
+    ['불안정한', '지리적인', '신중한', '예상하지 못한', '특정한 조로 쓰이지 않은/(음악)무조의', '지나치게 꼼꼼한 / 지나치게 장식된 / 쉽게 성내는', '친절한, 친한', '(입) 상스런, 저속한, 욕하는', '정통의', '편안한, 평화로운'],
     tips({
       etymology: '라틴어 \'neuter\'에서 유래하여 \'어느 쪽도 아닌\'이라는 의미를 담고 있습니다.',
       visual: '저울의 양쪽 무게가 똑같아서 바늘이 정중앙 0을 가리키고 있는 모습을 상상하세요.',
@@ -208,6 +268,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'Switzerland remained a non-belligerent country during the global conflict.', ko: '스위스는 세계적인 갈등 상황 속에서 중립국으로 남았습니다.' },
         { en: 'The journalist tried to maintain a balanced perspective while reporting the controversial news.', ko: '그 기자는 논란이 되는 뉴스를 보도하는 동안 중립적인 시각을 유지하려 노력했습니다.' },
+      ],
+      wordDistractors: ['natural', 'neural', 'neuter'],
+      definitionDistractors: [
+        'strongly favoring one side in an argument or debate',
+        'lacking any opinion or interest in a particular matter',
+        'related to the study of nature and the environment',
       ],
     }
   ),
@@ -228,6 +294,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'Success comes to those who refuse to quit and give up.', ko: '성공은 그만두거나 포기하기를 거부하는 사람들에게 찾아옵니다.' },
         { en: 'The old man claimed he had been late for a meeting in forty years.', ko: '그 노인은 40년 동안 회의에 늦은 적이 한 번도 없었다고 주장했습니다.' },
       ],
+      wordDistractors: ['ever', 'lever', 'clever'],
+      definitionDistractors: [
+        'occurring frequently and on a regular basis',
+        'at some point in the distant future',
+        'only under very specific or rare circumstances',
+      ],
     }
   ),
   word('nevertheless', '그럼에도 불구하고', 4, 'adverb',
@@ -246,6 +318,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The team was exhausted from the long journey; they played with great energy.', ko: '팀은 긴 여정으로 기진맥진했지만, 그럼에도 불구하고 엄청난 에너지를 발휘하며 경기에 임했습니다.' },
         { en: 'The economy is showing signs of slowing down; many investors remain optimistic about the future.', ko: '경제가 둔화될 조짐을 보이고 있음에도 불구하고, 많은 투자자들은 여전히 미래를 낙관하고 있습니다.' },
+      ],
+      wordDistractors: ['nonetheless', 'wherever', 'nevermore'],
+      definitionDistractors: [
+        'as a direct result of a previously mentioned cause',
+        'in addition to what has already been stated',
+        'under the condition that something else also occurs',
       ],
     }
   ),
@@ -266,6 +344,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The company launched a revolutionary product to attract younger customers.', ko: '그 회사는 젊은 고객들을 끌어들이기 위해 혁신적인 신제품을 출시했습니다.' },
         { en: 'Moving to a different city gave her a chance to start a fresh life.', ko: '다른 도시로 이사한 것은 그녀에게 새로운 삶을 시작할 기회를 주었습니다.' },
       ],
+      wordDistractors: ['knew', 'few', 'dew'],
+      definitionDistractors: [
+        'well-established and widely recognized over a long period',
+        'repaired or restored to its original working condition',
+        'belonging to a previous era or historical period',
+      ],
     }
   ),
   word('newspaper', '신문', 3, 'noun',
@@ -284,6 +368,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'My grandfather reads the local daily publication every morning while drinking coffee.', ko: '우리 할아버지는 매일 아침 커피를 마시며 지역 일간 신문을 읽으신다.' },
         { en: 'The front page of this morning\'s edition features a major story about the economic crisis.', ko: '오늘 아침 신문 1면에는 경제 위기에 대한 주요 기사가 실려 있다.' },
+      ],
+      wordDistractors: ['newsstand', 'newsletter', 'newsreel'],
+      definitionDistractors: [
+        'a digital platform for broadcasting live video content',
+        'a bound collection of fictional stories and illustrations',
+        'a handwritten personal letter sent through postal service',
       ],
     }
   ),
@@ -304,6 +394,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The passengers are waiting for the arrival of the arrival of the train at the station.', ko: '승객들은 역에서 다음 열차의 도착을 기다리고 있습니다.' },
         { en: 'Our manager scheduled the team meeting for Monday morning.', ko: '우리 매니저는 팀 회의를 다음 주 월요일 아침으로 잡았습니다.' },
       ],
+      wordDistractors: ['neat', 'text', 'hex'],
+      definitionDistractors: [
+        'the last item in a series or sequence of events',
+        'occurring at random intervals without any predictable order',
+        'located far away from the current position or place',
+      ],
     }
   ),
   word('nice', '좋은, 친절한', 2, 'adjective',
@@ -322,6 +418,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'She is always nice to everyone she meets, greeting them with a warm smile.', ko: '그녀는 만나는 모든 사람에게 항상 친절하며, 따뜻한 미소로 인사합니다.' },
         { en: 'What a nice day it is today! Let\'s go for a walk in the park.', ko: '오늘 정말 좋은 날이다! 공원에 산책하러 가자.' },
+      ],
+      wordDistractors: ['niece', 'mice', 'rice'],
+      definitionDistractors: [
+        'extremely precise and accurate in measurement or detail',
+        'having a sharp or unpleasant taste or smell',
+        'overly formal and rigid in social interactions',
       ],
     }
   ),
@@ -342,24 +444,36 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The little boy woke up crying after having a terrifying nightmare about monsters.', ko: '어린 소년은 괴물에 관한 무서운 악몽을 꾸고 나서 울면서 깨어났다.' },
         { en: 'Being stuck in a massive traffic jam for five hours was a complete nightmare for the commuters.', ko: '5시간 동안 거대한 교통 체증에 갇혀 있었던 것은 통근자들에게 완전히 악몽 같은 일이었다.' },
       ],
+      wordDistractors: ['nightfall', 'nightcap', 'nightshade'],
+      definitionDistractors: [
+        'a vivid and pleasant dream that occurs during deep sleep',
+        'a nocturnal animal that hunts during the night hours',
+        'the period of darkness between sunset and sunrise',
+      ],
     }
   ),
-  word('no', '아니오', 3, 'interjection',
-    ['부정적인', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인', '불안정한', '효율적인'],
+  word('no', '아니오', 1, 'interjection',
+    ['네', '물론', '당연히', '좋아', '그래', '맞아', '물론이지', '동의해', '승낙', '찬성'],
     tips({
       etymology: '고대 영어 \'nā\'에서 유래하여 어떤 존재나 수량이 전혀 없음을 나타내는 강력한 부정의 의미를 담고 있습니다.',
-      visual: '텅 빈 상자나 빨간색 X 표시가 그려진 금지 표지판을 떠올리며 아무것도 없는 상태를 이미지화하세요.',
+      visual: '고개를 가로저으며 손을 흔들어 거절하는 사람의 모습을 상상해 보세요.',
       soundAlike: '\'노\'라고 짧고 강하게 발음하며 고개를 가로젓는 동작을 함께하면 거절과 부재의 느낌이 더 잘 기억됩니다.',
-      context: '질문에 대한 부정적인 답변뿐만 아니라, 명사 앞에서 수량이 전혀 없음을 강조할 때 주로 쓰입니다.',
-      synonymAntonym: '하나도 없음을 뜻하는 none과 유사하며, 모든 것을 뜻하는 all이나 긍정의 yes와 반대됩니다.',
+      context: '질문에 대한 부정적인 답변이나 거절, 반대 의사를 나타낼 때 가장 기본적으로 쓰이는 표현입니다.',
+      synonymAntonym: '하나도 없음을 뜻하는 none과 유사하며, 긍정의 yes와 반대됩니다.',
     }),
     {
-      definition: 'Not any; used to indicate that something does not exist or is not present.',
-      synonyms: ['none', 'not any', 'zero'],
-      antonyms: ['all', 'some', 'every'],
+      definition: 'used to give a negative response to a question, request, or offer; expressing disagreement or refusal',
+      synonyms: ['nope', 'nay', 'negative'],
+      antonyms: ['yes', 'yeah', 'affirmative'],
       exampleSentences: [
         { en: 'There is sugar left in the jar after we baked the cake.', ko: '우리가 케이크를 구운 후에 단지 안에 설탕이 전혀 남아 있지 않다.' },
         { en: 'The sign clearly stated that parking was allowed in this private area.', ko: '표지판에는 이 사유지에 주차가 허용되지 않는다고 명확히 적혀 있었다.' },
+      ],
+      wordDistractors: ['know', 'now', 'nor'],
+      definitionDistractors: [
+        'a specific quantity or numerical value assigned to something',
+        'an expression of partial agreement with certain conditions',
+        'a greeting exchanged between people upon first meeting',
       ],
     }
   ),
@@ -380,6 +494,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'He made a sacrifice for the sake of his country, showing a truly courageous spirit.', ko: '그는 나라를 위해 희생하며 진정으로 용기 있고 고귀한 정신을 보여주었습니다.' },
         { en: 'The ancient family lived in a grand mansion that reflected their long history of status.', ko: '그 고대 가문은 그들의 오랜 신분적 역사를 반영하는 웅장한 저택에 살았습니다.' },
       ],
+      wordDistractors: ['novel', 'notable', 'nozzle'],
+      definitionDistractors: [
+        'belonging to the common or ordinary social class',
+        'related to an award given for outstanding achievements in science',
+        'physically large and imposing in size or stature',
+      ],
     }
   ),
   word('nobody', '아무도', 7, 'pronoun',
@@ -398,6 +518,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The old house was completely silent because there was nobody inside.', ko: '안에 아무도 없었기 때문에 그 낡은 집은 완전히 고요했습니다.' },
         { en: 'I knocked on the door several times, but nobody answered.', ko: '문을 여러 번 두드렸지만 아무도 대답하지 않았습니다.' },
+      ],
+      wordDistractors: ['noddy', 'hobby', 'nosy'],
+      definitionDistractors: [
+        'a famous person known widely by the public',
+        'a large group of people assembled in one place',
+        'an unidentified person whose name is not yet known',
       ],
     }
   ),
@@ -418,6 +544,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The manager gave a brief movement of his head to signal that the meeting could begin.', ko: '매니저는 회의를 시작해도 좋다는 신호로 고개를 짧게 끄덕였다.' },
         { en: 'She answered my question with a simple silent affirmation instead of speaking aloud.', ko: '그녀는 크게 말하는 대신 단순한 고개 끄덕임으로 내 질문에 답했다.' },
       ],
+      wordDistractors: ['nob', 'knod', 'pod'],
+      definitionDistractors: [
+        'a loud verbal expression of disapproval or anger',
+        'a sideways movement of the head indicating refusal',
+        'a written document confirming official approval',
+      ],
     }
   ),
   word('noise', '소음', 5, 'noun',
@@ -437,10 +569,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The constant drilling from the construction site created a terrible racket all day.', ko: '공사장에서 들려오는 끊임없는 드릴 소리가 하루 종일 끔찍한 소음을 만들어냈다.' },
         { en: 'Heavy rain hitting the metal roof produced a loud drumming sound that drowned out our voices.', ko: '금속 지붕을 때리는 굵은 빗줄기가 우리 목소리가 안 들릴 정도의 큰 소리를 냈다.' },
       ],
+      wordDistractors: ['noose', 'nose', 'moist'],
+      definitionDistractors: [
+        'a pleasant and melodious sound produced by an instrument',
+        'complete absence of any audible vibration or sound',
+        'a specific frequency of electromagnetic radiation',
+      ],
     }
   ),
   word('nominate', '추천하다', 8, 'verb',
-    ['확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다'],
+    ['(화산이) 폭발하다', '탄력이 붙다', '여러 일을 동시에 하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다'],
     tips({
       etymology: '라틴어 \'nomen(이름)\'에서 유래하여 누군가의 이름을 공식적으로 불러 올린다는 의미입니다.',
       visual: '시상식 무대 위 스크린에 후보자들의 얼굴이 하나씩 나타나는 장면을 상상해 보세요.',
@@ -455,6 +593,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The committee decided to propose her for the prestigious award this year.', ko: '위원회는 올해 그녀를 그 권위 있는 상의 후보로 추천하기로 결정했습니다.' },
         { en: 'Each member of the club has the right to suggest a new president.', ko: '클럽의 각 회원은 새로운 회장을 추천할 권리가 있습니다.' },
+      ],
+      wordDistractors: ['dominate', 'culminate', 'illuminate'],
+      definitionDistractors: [
+        'to officially remove someone from a position of authority',
+        'to assign a specific name or title to a newly discovered item',
+        'to vote directly for a candidate in a general election',
       ],
     }
   ),
@@ -475,6 +619,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The students were asked for the answer, but of them knew it.', ko: '학생들에게 정답을 물었지만, 그들 중 아무도 그것을 알지 못했다.' },
         { en: 'We looked for a spare key in the drawer, but there was to be found.', ko: '우리는 서랍에서 여분의 열쇠를 찾았지만, 아무것도 발견되지 않았다.' },
       ],
+      wordDistractors: ['noun', 'nonce', 'bone'],
+      definitionDistractors: [
+        'a small or partial amount of something remaining',
+        'exactly one item selected from a larger group',
+        'the majority or greater portion of a collection',
+      ],
     }
   ),
   word('nonetheless', '그럼에도 불구하고', 9, 'adverb',
@@ -493,6 +643,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The hike was exhausting and the weather was cold; we enjoyed the view from the summit nonetheless.', ko: '하이킹은 지치고 날씨는 추웠지만, 그럼에도 불구하고 우리는 정상에서의 경치를 즐겼다.' },
         { en: 'There were many obstacles in the project, but the team completed it on schedule nonetheless.', ko: '프로젝트에 많은 장애물이 있었음에도 불구하고 팀은 예정대로 작업을 완료했다.' },
+      ],
+      wordDistractors: ['nevertheless', 'nothingness', 'numbness'],
+      definitionDistractors: [
+        'as a logical consequence of the preceding statement',
+        'in complete agreement with what was previously mentioned',
+        'without any connection to the topic being discussed',
       ],
     }
   ),
@@ -513,6 +669,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'Stop talking such absolute rubbish; everyone knows that story is not true.', ko: '그런 말도 안 되는 소리는 그만해. 그 이야기가 사실이 아니라는 건 누구나 다 알아.' },
         { en: 'The theory was dismissed by the scientific community as complete and utter foolishness.', ko: '그 이론은 과학계에서 완전히 터무니없는 헛소리로 치부되어 거부되었다.' },
       ],
+      wordDistractors: ['nonstop', 'nonplus', 'nuisance'],
+      definitionDistractors: [
+        'a carefully reasoned and well-supported logical argument',
+        'a type of humorous wordplay or clever riddle',
+        'information that is widely accepted as factually accurate',
+      ],
     }
   ),
   word('noon', '정오', 1, 'noun',
@@ -531,6 +693,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The bright sun reached its highest point in the sky at exactly twelve.', ko: '밝은 태양이 정확히 12시에 하늘 가장 높은 곳에 도달했습니다.' },
         { en: 'Most employees in this office head out for lunch right after the clock strikes twelve.', ko: '이 사무실의 대부분의 직원들은 시계가 12시를 치자마자 점심을 먹으러 나갑니다.' },
+      ],
+      wordDistractors: ['moon', 'boon', 'loon'],
+      definitionDistractors: [
+        'the time of day when the sun sets below the horizon',
+        'the exact middle of the nighttime hours at twelve AM',
+        'a brief period of rest taken during the early afternoon',
       ],
     }
   ),
@@ -551,10 +719,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'He neither called his parents nor sent them a message during the trip.', ko: '그는 여행 중에 부모님께 전화를 드리지도 않았고 메시지를 보내지도 않았다.' },
         { en: 'The old engine would not start, nor would it even make a sound.', ko: '오래된 엔진은 시동이 걸리지 않았고, 심지어 아무런 소리조차 나지 않았다.' },
       ],
+      wordDistractors: ['for', 'bore', 'core'],
+      definitionDistractors: [
+        'used to add a positive statement to a previous one',
+        'a conjunction that introduces an alternative choice',
+        'a word indicating the reason or purpose behind an action',
+      ],
     }
   ),
   word('norm', '표준', 10, 'noun',
-    ['절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동'],
+    ['동기', '전자레인지', '사자', '모피', '요정', '창고', '조수, 보조의', '미끄러짐', '경멸', '덧 없음/소실'],
     tips({
       etymology: '라틴어 \'norma\'에서 유래했으며, 이는 목수가 직각을 맞출 때 쓰는 \'자\'를 의미합니다. 즉, 올바른 기준을 뜻하게 되었습니다.',
       visual: '모든 사람이 똑같은 높이의 울타리 뒤에 서 있는 모습이나, 평균치를 나타내는 그래프의 중심선을 상상해 보세요.',
@@ -570,10 +744,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'Working late every evening has unfortunately become the accepted social practice in this company.', ko: '매일 저녁 늦게까지 일하는 것이 불행히도 이 회사에서는 용인되는 사회적 관행이 되었다.' },
         { en: 'The statistical average provides a useful baseline for comparing individual test results.', ko: '통계적 평균은 개별 시험 결과를 비교하기 위한 유용한 기준을 제공한다.' },
       ],
+      wordDistractors: ['form', 'worm', 'storm'],
+      definitionDistractors: [
+        'an unusual or exceptional event that deviates from expectations',
+        'a legal regulation enforced by a governing authority',
+        'a personal preference or individual habit of behavior',
+      ],
     }
   ),
   word('normal', '정상적인', 5, 'adjective',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['비정상적인', '특이한', '이상한', '예외적인', '독특한', '기이한', '별난', '괴상한', '특별한', '비범한'],
     tips({
       etymology: '라틴어 \'norma\'에서 유래했으며, 이는 목수가 사용하는 \'직각자\'를 의미하여 올바른 기준이나 척도를 뜻하게 되었습니다.',
       visual: '그래프의 중앙에 높게 솟아오른 종 모양의 정규 분포 곡선을 상상하면 평균적인 상태를 떠올리기 쉽습니다.',
@@ -589,10 +769,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The heavy rain made it difficult for the city to return to its regular state of operations.', ko: '폭우로 인해 도시가 표준적인 운영 상태로 복귀하는 데 어려움을 겪었습니다.' },
         { en: 'Scientists established a new baseline to determine what constitutes a healthy heart rate for athletes.', ko: '과학자들은 운동선수들에게 건강한 심박수의 표준이 무엇인지 결정하기 위해 새로운 기준선을 세웠습니다.' },
       ],
+      wordDistractors: ['nominal', 'formal', 'thermal'],
+      definitionDistractors: [
+        'extremely unusual and rarely seen in everyday life',
+        'officially approved or sanctioned by an authority figure',
+        'perfectly ideal and without any flaws or imperfections',
+      ],
     }
   ),
   word('not', '아니다', 2, 'adverb',
-    ['목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계'],
+    ['항상', '반드시', '확실히', '분명히', '틀림없이', '당연히', '완전히', '절대로', '정말로', '진심으로'],
     tips({
       etymology: '고대 영어 \'nawiht\'에서 유래하여 \'아무것도 아님\'을 뜻하던 것이 부정의 의미로 굳어졌습니다.',
       visual: '빨간색 X 표시가 그려진 금지 표지판을 떠올리며 부정하는 이미지를 연상하세요.',
@@ -608,10 +794,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The weather is cold today, but it is raining.', ko: '오늘 날씨는 춥지만 비가 오지는 않습니다.' },
         { en: 'She decided to stay home because she was feeling well.', ko: '그녀는 몸 상태가 좋지 않아서 집에 머물기로 결정했습니다.' },
       ],
+      wordDistractors: ['knot', 'nit', 'naught'],
+      definitionDistractors: [
+        'used to emphasize or strengthen a positive statement',
+        'a word that connects two similar clauses together',
+        'an adverb indicating something happened very recently',
+      ],
     }
   ),
   word('note', '기록', 3, 'noun',
-    ['문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인'],
+    ['선구자/선발대', '소설, 허구', '정말 같음 , 진실성 / 있을법함, 사실 같음', '헛간', '상품', '흔적, 각인', '제빵사', '만병통치약', '시리얼, 곡물', '카페인'],
     tips({
       etymology: '라틴어 \'notare(표시하다)\'에서 유래하여 무언가를 기억하기 위해 남긴 흔적을 뜻합니다.',
       visual: '포스트잇에 중요한 할 일을 적어 모니터 옆에 붙여두는 모습을 상상해 보세요.',
@@ -627,10 +819,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'She scribbled a quick reminder on a small piece of paper to buy milk later.', ko: '그녀는 나중에 우유를 사기 위해 작은 종이에 짧은 메모를 휘갈겨 썼다.' },
         { en: 'The student took careful observations during the chemistry experiment to study for the exam.', ko: '그 학생은 시험 공부를 하기 위해 화학 실험 동안 꼼꼼하게 기록을 했다.' },
       ],
+      wordDistractors: ['node', 'nose', 'moat'],
+      definitionDistractors: [
+        'a formal speech delivered at an important public ceremony',
+        'a musical tone produced by an instrument or voice',
+        'a unit of currency used in financial transactions',
+      ],
     }
   ),
   word('nothing', '아무것도', 1, 'noun',
-    ['기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과'],
+    ['바늘땀', '일상적인 일, 루틴', '새우', '사무실', '위미스 (성)', '약점, 나약함', '번영 (prosper 번영하다)', '흠집, 긁힌 자국', '칼로리', '소송'],
     tips({
       etymology: 'no(없음)와 thing(물건/것)이 합쳐져 \'어떤 것도 없음\'을 뜻하게 되었습니다.',
       visual: '텅 빈 상자 안에 먼지만 날리는 모습을 상상하며 단어를 떠올려 보세요.',
@@ -645,6 +843,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'There was absolutely not a single item left in the refrigerator.', ko: '냉장고 안에는 정말 아무것도 남아있지 않았습니다.' },
         { en: 'He stared at the blank page but could think of not a single word to write.', ko: '그는 빈 페이지를 응시했지만 쓸 말이 아무것도 생각나지 않았습니다.' },
+      ],
+      wordDistractors: ['clothing', 'soothing', 'loathing'],
+      definitionDistractors: [
+        'a very small or insignificant amount of something',
+        'an abstract concept that cannot be physically measured',
+        'a feeling of emptiness caused by loneliness or boredom',
       ],
     }
   ),
@@ -665,10 +869,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The company gave a one-month notice before terminating the contract.', ko: '회사는 계약을 해지하기 한 달 전에 통지를 보냈다.' },
         { en: 'A short notice was posted on the board regarding the meeting schedule change.', ko: '회의 일정 변경에 관한 짧은 공고가 게시판에 붙었다.' },
       ],
+      wordDistractors: ['novice', 'notion', 'noting'],
+      definitionDistractors: [
+        'the act of carefully observing details in the environment',
+        'a private message sent between two individuals',
+        'a legal document granting permission to perform an action',
+      ],
     }
   ),
   word('notion', '관념', 8, 'noun',
-    ['조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준'],
+    ['사치, 호화로움', '담요', '돌팔이, 꽥꽥', '사치', '일정, 시간표', '선물', '동물원', '적대감, 적의', '실험실', '중앙'],
     tips({
       etymology: '라틴어 \'notio\'에서 유래했으며 \'알게 됨\' 혹은 \'지식\'이라는 의미에서 추상적인 생각으로 발전했습니다.',
       visual: '머릿속에 구름처럼 떠다니는 막연한 생각이나 아이디어를 상상해 보세요.',
@@ -683,6 +893,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The author challenged the traditional belief that success is solely measured by wealth.', ko: '작가는 성공이 오직 부에 의해서만 측정된다는 전통적인 관념에 도전했다.' },
         { en: 'She had a vague thought that the project would take much longer than expected.', ko: '그녀는 그 프로젝트가 예상보다 훨씬 오래 걸릴 것이라는 막연한 생각을 가지고 있었다.' },
+      ],
+      wordDistractors: ['motion', 'potion', 'lotion'],
+      definitionDistractors: [
+        'a proven scientific fact supported by extensive research',
+        'a physical movement or gesture made to express something',
+        'a formal written proposal submitted to an authority',
       ],
     }
   ),
@@ -703,6 +919,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'She spent the entire weekend reading a historical fiction book set in the nineteenth century.', ko: '그녀는 19세기를 배경으로 한 역사 소설을 읽으며 주말 내내 시간을 보냈다.' },
         { en: 'Writing a successful book requires not only creativity but also immense dedication and patience.', ko: '성공적인 소설을 쓰는 것은 창의성뿐만 아니라 엄청난 헌신과 인내를 필요로 한다.' },
       ],
+      wordDistractors: ['noble', 'navel', 'hovel'],
+      definitionDistractors: [
+        'a short poem that rhymes and follows a strict meter',
+        'a factual account of real historical events and people',
+        'a brief essay or article published in an academic journal',
+      ],
     }
   ),
   word('now', '지금', 2, 'adverb',
@@ -721,6 +943,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The best time to start your new project is right now.', ko: '새로운 프로젝트를 시작하기 가장 좋은 시기는 바로 지금입니다.' },
         { en: 'Everything we have is the power of the here and now.', ko: '우리가 가진 모든 것은 현재 이 순간의 힘입니다.' },
+      ],
+      wordDistractors: ['how', 'bow', 'vow'],
+      definitionDistractors: [
+        'at a specific point in the distant past',
+        'at some unspecified time in the future',
+        'during a brief and temporary pause in activity',
       ],
     }
   ),
@@ -741,6 +969,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'Most people prefer to shop online rather than visit physical stores nowadays.', ko: '오늘날에는 대부분의 사람들이 오프라인 매장을 방문하기보다 온라인 쇼핑을 선호합니다.' },
         { en: 'Children spend more time playing video games than running outside nowadays.', ko: '요즘 아이들은 밖에서 뛰어노는 것보다 비디오 게임을 하는 데 더 많은 시간을 보냅니다.' },
       ],
+      wordDistractors: ['noways', 'doorways', 'hallways'],
+      definitionDistractors: [
+        'during a period that existed many centuries ago',
+        'occasionally and without any regular pattern',
+        'exclusively during weekdays and business hours',
+      ],
     }
   ),
   word('nowhere', '아무데도', 5, 'adverb',
@@ -759,6 +993,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The missing keys were found in a corner that seemed to lead to a dead end.', ko: '잃어버린 열쇠는 아무데도 연결되지 않는 듯한 구석진 곳에서 발견되었습니다.' },
         { en: 'After hours of driving through the thick fog, we realized we were in the middle of a vast empty field.', ko: '짙은 안개 속을 몇 시간 동안 운전한 끝에, 우리는 우리가 허허벌판 한가운데에 있다는 것을 깨달았습니다.' },
+      ],
+      wordDistractors: ['somehow', 'nowise', 'knowhere'],
+      definitionDistractors: [
+        'in a specific and well-known location or destination',
+        'moving rapidly toward a clearly defined goal',
+        'spread out across a wide and expansive area',
       ],
     }
   ),
@@ -779,10 +1019,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'Many countries are debating the safety and efficiency of building more power plants.', ko: '많은 국가들이 더 많은 발전소를 건설하는 것의 안전성과 효율성에 대해 토론하고 있습니다.' },
         { en: 'The sun produces a vast amount of energy through a continuous process of fusion.', ko: '태양은 지속적인 융합 과정을 통해 막대한 양의 에너지를 생성합니다.' },
       ],
+      wordDistractors: ['nucleic', 'nucleus', 'unclear'],
+      definitionDistractors: [
+        'powered by wind or water flowing through turbines',
+        'relating to the outermost layer or surface of an object',
+        'a type of chemical reaction that occurs naturally in soil',
+      ],
     }
   ),
   word('number', '수', 3, 'noun',
-    ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
+    ['날씨', '아메리카, 미국', '저널리스트, 기자', '진입', '시작', '민첩', '예외', '우주 비행사', '현수막, 깃발', '위함, 이유'],
     tips({
       etymology: '라틴어 numerus에서 유래하여 양이나 수치를 세는 단위를 뜻하게 되었습니다.',
       visual: '주판의 알이나 디지털 시계의 숫자가 하나씩 올라가는 모습을 상상해 보세요.',
@@ -797,6 +1043,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'Please write down your phone contact details and your house address.', ko: '전화번호와 집 주소를 적어 주세요.' },
         { en: 'A large quantity of students gathered in the hall to hear the speech.', ko: '많은 수의 학생들이 연설을 듣기 위해 강당에 모였습니다.' },
+      ],
+      wordDistractors: ['lumber', 'slumber', 'cumber'],
+      definitionDistractors: [
+        'a written symbol representing a letter of the alphabet',
+        'a unique identifier assigned to a physical location',
+        'the position or rank held by someone in an organization',
       ],
     }
   ),
@@ -817,6 +1069,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The scientist conducted experiments on numerous occasions to ensure the accuracy of the results.', ko: '그 과학자는 결과의 정확성을 보장하기 위해 수차례에 걸쳐 실험을 수행했습니다.' },
         { en: 'Despite facing numerous obstacles during the project, the team managed to finish on time.', ko: '프로젝트 도중 수많은 장애물에 직면했음에도 불구하고 팀은 제시간에 마칠 수 있었습니다.' },
       ],
+      wordDistractors: ['luminous', 'humorous', 'numinous'],
+      definitionDistractors: [
+        'extremely rare and difficult to find or obtain',
+        'having precise measurements and exact specifications',
+        'arranged in a specific sequential or chronological order',
+      ],
     }
   ),
   word('nun', '수녀', 10, 'noun',
@@ -836,24 +1094,36 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'She decided to join the convent and live her life as a devoted sister of the church.', ko: '그녀는 수녀원에 들어가 교회에 헌신하는 수녀로서 삶을 살기로 결심했습니다.' },
         { en: 'The elderly woman spent forty years serving the community before retiring from her religious duties.', ko: '그 노년의 여성은 종교적 의무에서 은퇴하기 전까지 40년 동안 지역 사회를 위해 봉사하며 보냈습니다.' },
       ],
+      wordDistractors: ['gun', 'bun', 'sun'],
+      definitionDistractors: [
+        'a male priest who leads religious services at a church',
+        'a teacher who instructs students in a school setting',
+        'a woman who manages the daily operations of a hospital',
+      ],
     }
   ),
-  word('nurse', '유모', 1, 'noun',
-    ['의사', '환자', '약사', '보호자', '조수', '요리사', '가정부', '선생님', '운전사', '경비원'],
+  word('nurse', '간호사', 1, 'noun',
+    ['의사', '약사', '치료사', '수의사', '조산사', '위생사', '상담사', '영양사', '검사관', '응급구조사'],
     tips({
-      etymology: '라틴어 \'nutricia\'에서 유래되었으며, 이는 \'젖을 먹여 기르다\'라는 뜻을 가지고 있어 아이를 돌보는 사람을 의미합니다.',
-      visual: '옛날 귀족 가문에서 아이에게 우유를 먹이거나 요람을 흔들어주는 여성의 모습을 상상해 보세요.',
-      soundAlike: '\'너스\'라고 발음하며, 아이를 \'너(너그럽게) 스스로\' 돌봐주는 사람이라고 연상하면 쉽습니다.',
-      context: '현대에는 병원 간호사를 주로 뜻하지만, 고전 소설이나 역사적 맥락에서는 아이를 돌보는 보모를 지칭합니다.',
-      synonymAntonym: '아이를 돌보는 nanny와 비슷하지만, 젖을 먹여 키운다는 점에서는 wet nurse가 더 구체적인 표현입니다.',
+      etymology: '라틴어 \'nutricia\'에서 유래되었으며, 이는 \'젖을 먹여 기르다\'라는 뜻을 가지고 있어 돌보는 사람을 의미합니다.',
+      visual: '하얀 가운을 입고 청진기를 들고 병원에서 환자를 돌보는 모습을 상상해 보세요.',
+      soundAlike: '\'너스\'라고 발음하며, 병원에서 \'너(너그럽게)\' 환자를 돌봐주는 사람이라고 연상하면 쉽습니다.',
+      context: '병원이나 클리닉에서 의사를 도와 환자를 돌보고 치료하는 의료 전문직을 뜻합니다.',
+      synonymAntonym: '의료인을 뜻하는 caregiver와 비슷하며, 돌봄을 받는 patient와는 반대되는 역할입니다.',
     }),
     {
-      definition: 'A woman employed to take care of a young child in a private household.',
-      synonyms: ['nanny', 'governess', 'wet nurse'],
-      antonyms: ['charge', 'ward', 'dependent'],
+      definition: 'A person trained to care for sick or injured people, usually in a hospital or clinic.',
+      synonyms: ['caregiver', 'caretaker', 'medic'],
+      antonyms: ['patient', 'invalid', 'sufferer'],
       exampleSentences: [
-        { en: 'The wealthy family hired a dedicated woman to act as a nurse for their newborn son.', ko: '그 부유한 가족은 갓 태어난 아들의 유모 역할을 할 헌신적인 여성을 고용했습니다.' },
-        { en: 'Romeo was raised primarily by his nurse rather than his own mother.', ko: '로미오는 친어머니보다는 주로 그의 유모에 의해 길러졌습니다.' },
+        { en: 'The kind nurse checked the patient\'s temperature every two hours during the night.', ko: '친절한 간호사가 밤새 두 시간마다 환자의 체온을 확인했습니다.' },
+        { en: 'She decided to study nursing and become a healthcare professional after volunteering at the hospital.', ko: '그녀는 병원에서 자원봉사를 한 후 간호학을 공부하여 간호사가 되기로 결심했습니다.' },
+      ],
+      wordDistractors: ['purse', 'curse', 'verse'],
+      definitionDistractors: [
+        'a doctor who performs surgical operations on patients',
+        'a pharmacist who prepares and dispenses medications',
+        'an administrator who manages hospital staff and schedules',
       ],
     }
   ),
@@ -874,6 +1144,12 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'The squirrel hid a small brown seed inside the hollow tree for winter.', ko: '다람쥐는 겨울을 위해 나무 구멍 안에 작은 갈색 견과를 숨겼습니다.' },
         { en: 'Many people have a severe allergy to this specific type of crunchy snack.', ko: '많은 사람들이 이 특정한 종류의 바삭한 견과류에 심한 알레르기가 있습니다.' },
       ],
+      wordDistractors: ['knot', 'gut', 'hut'],
+      definitionDistractors: [
+        'a soft, fleshy fruit that grows on tropical vines',
+        'a small metal fastener used to secure bolts and screws',
+        'a type of grain used in baking bread and pastries',
+      ],
     }
   ),
   word('oak', '참나무', 4, 'noun',
@@ -892,6 +1168,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The antique dining table was crafted from solid wood harvested from an ancient forest.', ko: '그 골동품 식탁은 고대 숲에서 채취한 단단한 참나무로 정교하게 만들어졌다.' },
         { en: 'Squirrels often gather acorns dropped by the massive branches in the backyard.', ko: '다람쥐들은 종종 뒷마당에 있는 거대한 참나무 가지에서 떨어진 도토리들을 모은다.' },
+      ],
+      wordDistractors: ['oat', 'oar', 'oath'],
+      definitionDistractors: [
+        'a type of evergreen tree commonly found in tropical climates',
+        'the bark or outer covering stripped from a fallen tree',
+        'a decorative shrub planted in gardens for its colorful flowers',
       ],
     }
   ),
@@ -912,10 +1194,16 @@ export const vocabBatch47: VocabItem[] = [
         { en: 'All citizens must follow the laws to maintain social order and safety.', ko: '모든 시민들은 사회 질서와 안전을 유지하기 위해 법을 준수해야 한다.' },
         { en: 'The well-trained dog would immediately perform the actions its owner commanded.', ko: '잘 훈련된 개는 주인이 명령하는 동작들을 즉각 따르곤 했다.' },
       ],
+      wordDistractors: ['obese', 'abbey', 'okay'],
+      definitionDistractors: [
+        'to openly challenge or argue against an authority figure',
+        'to carefully observe and study the behavior of others',
+        'to give instructions or commands to subordinates',
+      ],
     }
   ),
   word('object', '사물', 6, 'noun',
-    ['변화', '문제', '기회', '기준', '목표', '행동', '사건', '상태', '개념', '사과'],
+    ['청소년기', '활동', '관자놀이', '공고, 발표', '혼란, 소동', '이웃(사람들), 지역', '거지', '개인', '식이요법', '사과'],
     tips({
       etymology: '라틴어 \'ob-\'(앞에)와 \'jacere\'(던지다)가 합쳐져 눈앞에 던져진 것, 즉 눈에 보이는 구체적인 대상을 뜻하게 되었습니다.',
       visual: '책상 위에 놓인 연필이나 컵처럼 손으로 만질 수 있고 눈에 보이는 구체적인 물건을 상상해 보세요.',
@@ -930,6 +1218,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'The museum displayed a mysterious metallic found at the bottom of the ocean.', ko: '박물관은 바다 밑바닥에서 발견된 신비한 금속 물체를 전시했습니다.' },
         { en: 'Scientists carefully examined the strange circular lying in the middle of the field.', ko: '과학자들은 들판 한가운데 놓여 있는 이상한 원형 사물을 주의 깊게 조사했습니다.' },
+      ],
+      wordDistractors: ['abject', 'subject', 'project'],
+      definitionDistractors: [
+        'to express strong disagreement or protest against something',
+        'a goal or purpose that someone is trying to achieve',
+        'the act of throwing or projecting something forward',
       ],
     }
   ),
@@ -949,6 +1243,12 @@ export const vocabBatch47: VocabItem[] = [
       exampleSentences: [
         { en: 'A journalist must provide an impartial and fair account of the events to remain truly unbiased.', ko: '기자는 진정으로 공정함을 유지하기 위해 사건에 대해 치우치지 않고 공평한 설명을 제공해야 합니다.' },
         { en: 'The scientific study requires a neutral approach to ensure the results are not skewed by expectations.', ko: '과학적 연구는 결과가 기대치에 의해 왜곡되지 않도록 중립적인 접근 방식을 필요로 합니다.' },
+      ],
+      wordDistractors: ['obsessive', 'obstructive', 'obligative'],
+      definitionDistractors: [
+        'based entirely on personal emotions and individual preferences',
+        'a specific target or goal that must be accomplished',
+        'extremely critical and harsh in evaluating the work of others',
       ],
     }
   ),

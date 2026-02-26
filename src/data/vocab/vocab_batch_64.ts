@@ -19,6 +19,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'Please take a seat and wait for your name to be called.', ko: '자리에 앉아서 이름이 불릴 때까지 기다려 주세요.' },
         { en: 'She asked him to take her bag while she opened the door.', ko: '그녀는 문을 여는 동안 그에게 가방을 들어달라고 부탁했다.' },
       ],
+      wordDistractors: ['tack', 'fake', 'lake'],
+      definitionDistractors: [
+        'To prepare food by combining ingredients and applying heat.',
+        'To slowly examine something by looking at it from multiple angles.',
+        'To leave an object behind intentionally for someone else to find.',
+      ],
     }
   ),
   word('tale', '이야기', 4, 'noun',
@@ -37,6 +43,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'The old sailor shared a fascinating legend about a giant sea monster.', ko: '늙은 선원은 거대한 바다 괴물에 관한 매혹적인 전설 이야기를 들려주었다.' },
         { en: 'Children gathered around the fireplace to hear a classic fairy adventure.', ko: '아이들은 고전적인 요정 모험 이야기를 듣기 위해 벽난로 주위에 모였다.' },
+      ],
+      wordDistractors: ['tile', 'tall', 'pale'],
+      definitionDistractors: [
+        'A short rhythmic composition performed with musical instruments.',
+        'A factual document used for legal proceedings in a court.',
+        'A series of instructions given to complete a mechanical task.',
       ],
     }
   ),
@@ -57,6 +69,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The young pianist showed a remarkable gift for composing original melodies.', ko: '그 어린 피아니스트는 독창적인 멜로디를 작곡하는 데 놀라운 재주를 보였다.' },
         { en: 'Finding someone with a natural flair for leadership is essential for this project.', ko: '이 프로젝트를 위해 리더십에 타고난 소질이 있는 사람을 찾는 것이 필수적이다.' },
       ],
+      wordDistractors: ['talon', 'tally', 'tenant'],
+      definitionDistractors: [
+        'A formal certification awarded after completing a training program.',
+        'A physical tool used for measuring distances in construction.',
+        'The process of acquiring knowledge through repetitive practice.',
+      ],
     }
   ),
   word('talk', '말하다', 2, 'verb',
@@ -75,6 +93,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'We need to sit down and have a serious conversation about our future plans.', ko: '우리는 자리에 앉아 우리의 미래 계획에 대해 진지하게 대화할 필요가 있다.' },
         { en: 'The students were told not to communicate with each other during the exam.', ko: '학생들은 시험 중에 서로 말하지 말라는 지시를 받았다.' },
+      ],
+      wordDistractors: ['talc', 'tuck', 'balk'],
+      definitionDistractors: [
+        'To write down detailed notes during an important meeting.',
+        'To move quickly from one location to another without pausing.',
+        'To carefully arrange objects in a specific pattern or order.',
       ],
     }
   ),
@@ -95,6 +119,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The basketball player is so tall that he can reach the hoop without jumping.', ko: '그 농구 선수는 키가 아주 커서 점프하지 않고도 농구 림에 손이 닿을 수 있다.' },
         { en: 'A tall oak tree provides plenty of shade for the entire backyard.', ko: '키 큰 떡갈나무 한 그루가 뒷마당 전체에 충분한 그늘을 만들어 준다.' },
       ],
+      wordDistractors: ['toll', 'tail', 'tell'],
+      definitionDistractors: [
+        'Having a wide and flat shape that extends in all directions.',
+        'Being extremely heavy or dense compared to surrounding objects.',
+        'Moving at a rapid pace across a smooth horizontal surface.',
+      ],
     }
   ),
   word('tap', '가볍게 두드리다', 6, 'verb',
@@ -113,6 +143,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'She tapped him on the shoulder to get his attention during the meeting.', ko: '그녀는 회의 중에 그의 주의를 끌기 위해 어깨를 가볍게 두드렸다.' },
         { en: 'He tapped his fingers on the desk impatiently while waiting for the results.', ko: '그는 결과를 기다리며 초조하게 책상 위를 손가락으로 톡톡 두드렸다.' },
+      ],
+      wordDistractors: ['tip', 'top', 'tab'],
+      definitionDistractors: [
+        'To pull something forcefully toward oneself with both hands.',
+        'To twist an object repeatedly until it changes its original shape.',
+        'To push a heavy item across the floor using steady pressure.',
       ],
     }
   ),
@@ -133,6 +169,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'Please use some sticky material to seal the cardboard box securely.', ko: '판지 상자를 단단히 밀봉하기 위해 접착 테이프를 사용해 주세요.' },
         { en: 'The finish line was marked by a long white ribbon for the runners to cross.', ko: '결승선에는 주자들이 통과할 수 있도록 긴 흰색 테이프가 표시되어 있었습니다.' },
       ],
+      wordDistractors: ['tarp', 'cape', 'gape'],
+      definitionDistractors: [
+        'A rigid container used for storing dry goods in a warehouse.',
+        'A thin transparent sheet placed over windows for insulation.',
+        'A woven fabric used as a decorative covering for furniture.',
+      ],
     }
   ),
   word('target', '과녁', 7, 'noun',
@@ -151,6 +193,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'The archer took a deep breath and released the arrow toward the center of the red circle.', ko: '궁수는 심호흡을 하고 빨간 원의 중심을 향해 화살을 날렸다.' },
         { en: 'Marketing teams often identify a specific demographic as their primary audience for new products.', ko: '마케팅 팀은 종종 특정 인구 집단을 신제품의 주요 대상으로 설정한다.' },
+      ],
+      wordDistractors: ['tariff', 'tangent', 'garnet'],
+      definitionDistractors: [
+        'A financial penalty imposed for violating rules or regulations.',
+        'A written summary of events submitted to a supervisor for review.',
+        'A decorative ornament placed at the entrance of a building.',
       ],
     }
   ),
@@ -171,6 +219,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The manager assigned a difficult project to the team as their primary objective for the month.', ko: '매니저는 이번 달의 주요 목표로 팀에게 어려운 프로젝트 업무를 배정했습니다.' },
         { en: 'Completing every daily chore requires a lot of discipline and time management.', ko: '매일의 모든 과업을 완수하는 것은 많은 절제력과 시간 관리를 필요로 합니다.' },
       ],
+      wordDistractors: ['tusk', 'flask', 'mask'],
+      definitionDistractors: [
+        'A reward given to employees for exceeding their monthly quota.',
+        'A brief period of rest taken between two scheduled activities.',
+        'An official document granting permission to operate a business.',
+      ],
     }
   ),
   word('taste', '맛', 2, 'noun',
@@ -189,6 +243,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'The chef added a pinch of salt to improve the overall flavor of the soup.', ko: '요리사는 수프의 전체적인 맛을 개선하기 위해 소금 한 꼬집을 넣었습니다.' },
         { en: 'She has excellent judgment in furniture and home decor.', ko: '그녀는 가구와 집 꾸미기에 있어 아주 훌륭한 안목을 가지고 있습니다.' },
+      ],
+      wordDistractors: ['haste', 'paste', 'baste'],
+      definitionDistractors: [
+        'The texture of a surface detected by running fingers over it.',
+        'A strong emotional reaction triggered by hearing unexpected news.',
+        'The visible color pattern found on the outer layer of fruit.',
       ],
     }
   ),
@@ -209,10 +269,16 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'He got a tattoo of a dragon on his left arm when he turned eighteen.', ko: '그는 열여덟 살이 되었을 때 왼팔에 용 문신을 새겼다.' },
         { en: 'The artist specializes in creating intricate floral tattoo designs for her clients.', ko: '그 아티스트는 고객들을 위해 정교한 꽃무늬 문신 디자인을 전문으로 만든다.' },
       ],
+      wordDistractors: ['taboo', 'tango', 'tassel'],
+      definitionDistractors: [
+        'A temporary stain on fabric caused by accidental contact with dye.',
+        'A medical bandage applied to a wound to promote healing.',
+        'A decorative patch sewn onto clothing for identification purposes.',
+      ],
     }
   ),
   word('tax', '세금', 6, 'noun',
-    ['계획', '절차', '정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물'],
+    ['벌금', '보조금', '이자', '임금', '수수료', '관세', '연금', '보험료', '배당금', '수당'],
     tips({
       etymology: '라틴어 \'taxare\'에서 유래했으며, 이는 가치를 평가하거나 추산한다는 의미를 담고 있습니다.',
       visual: '월급 명세서에서 \'공제\' 항목으로 빠져나가는 돈의 액수를 떠올려 보세요.',
@@ -227,6 +293,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'The government decided to increase the income levy for high earners this year.', ko: '정부는 올해 고소득자에 대한 소득세를 인상하기로 결정했습니다.' },
         { en: 'Every citizen is required to pay a certain amount of their earnings to support public infrastructure.', ko: '모든 시민은 공공 기반 시설을 지원하기 위해 수입의 일정 금액을 세금으로 납부해야 합니다.' },
+      ],
+      wordDistractors: ['taxi', 'tack', 'wax'],
+      definitionDistractors: [
+        'A voluntary donation made to a charitable organization.',
+        'A bonus payment distributed to employees at the end of the year.',
+        'An interest rate applied to savings held in a bank account.',
       ],
     }
   ),
@@ -247,6 +319,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'She enjoys drinking a cup of green herbal infusion every morning.', ko: '그녀는 매일 아침 따뜻한 녹차 한 잔을 마시는 것을 즐깁니다.' },
         { en: 'The host served some biscuits along with the hot drinks to the guests.', ko: '주인은 손님들에게 뜨거운 차와 함께 비스킷을 내놓았습니다.' },
       ],
+      wordDistractors: ['tee', 'pea', 'sea'],
+      definitionDistractors: [
+        'A thick paste made from ground grains used as a cooking base.',
+        'A carbonated liquid served chilled in a tall glass with ice.',
+        'A fermented dairy product consumed as a breakfast staple.',
+      ],
     }
   ),
   word('teach', '가르치다', 3, 'verb',
@@ -266,10 +344,16 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The experienced professor will guide the students and impart new skills during the seminar.', ko: '경험 많은 교수는 세미나 동안 학생들을 지도하고 새로운 기술을 가르칠 것입니다.' },
         { en: 'Parents often show their children how to behave properly in social situations.', ko: '부모님은 종종 자녀들에게 사회적 상황에서 올바르게 행동하는 법을 가르칩니다.' },
       ],
+      wordDistractors: ['touch', 'beach', 'reach'],
+      definitionDistractors: [
+        'To evaluate the performance of someone through a formal review process.',
+        'To physically demonstrate a product to potential customers.',
+        'To memorize a set of facts by reading them aloud repeatedly.',
+      ],
     }
   ),
   word('tear', '눈물', 4, 'noun',
-    ['의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태'],
+    ['침', '콧물', '피', '땀', '점액', '타액', '혈장', '분비물', '체액', '진물'],
     tips({
       etymology: '고대 영어 \'teahor\'에서 유래되었으며, 슬픔이나 자극으로 인해 눈에서 흐르는 액체를 뜻합니다.',
       visual: '슬픈 영화를 보며 뺨 위로 투명한 물방울이 한 방울 톡 떨어지는 모습을 상상해 보세요.',
@@ -284,6 +368,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'A single salty drop rolled down her cheek as she finished reading the letter.', ko: '그녀가 편지를 다 읽었을 때 뺨 위로 짠 눈물 한 방울이 흘러내렸다.' },
         { en: 'The child wiped away a tiny moisture from his eye after falling down.', ko: '아이는 넘어지고 나서 눈에서 작은 눈물을 닦아냈다.' },
+      ],
+      wordDistractors: ['tier', 'tare', 'dear'],
+      definitionDistractors: [
+        'A sharp pain felt in the muscles after intense physical exercise.',
+        'A small opening in a wall that allows air to pass through.',
+        'A thin layer of moisture that forms on cold glass surfaces.',
       ],
     }
   ),
@@ -304,6 +394,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The older boys used to laugh and make fun of his haircut every morning.', ko: '나이 많은 소년들은 매일 아침 그의 머리 모양을 비웃고 놀리곤 했다.' },
         { en: 'Stop trying to provoke your sister by hiding her favorite toys.', ko: '여동생이 가장 좋아하는 장난감을 숨겨서 화나게 하는 짓 좀 그만해라.' },
       ],
+      wordDistractors: ['lease', 'cease', 'grease'],
+      definitionDistractors: [
+        'To gently encourage someone to try a new and difficult challenge.',
+        'To carefully untangle knots from a piece of string or rope.',
+        'To polish a surface by rubbing it with a soft cloth repeatedly.',
+      ],
     }
   ),
   word('teen', '십 대', 1, 'noun',
@@ -322,6 +418,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'The summer camp is designed specifically for teens between thirteen and eighteen.', ko: '그 여름 캠프는 13세에서 18세 사이의 십 대를 위해 특별히 마련되었다.' },
         { en: 'Many teens struggle with peer pressure during their high school years.', ko: '많은 십 대들이 고등학교 시절 또래 압력으로 어려움을 겪는다.' },
+      ],
+      wordDistractors: ['keen', 'seen', 'ten'],
+      definitionDistractors: [
+        'A small child who has not yet reached school age.',
+        'A professional athlete competing at the highest level of sport.',
+        'A retired individual receiving a monthly pension from the government.',
       ],
     }
   ),
@@ -342,9 +444,15 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'Many people experience significant emotional changes during their teenage years.', ko: '많은 사람들이 10대 시절에 상당한 감정적 변화를 경험합니다.' },
         { en: 'The magazine is specifically designed to appeal to a teenage audience.', ko: '그 잡지는 특히 10대 독자들의 흥미를 끌기 위해 제작되었습니다.' },
       ],
+      wordDistractors: ['tonnage', 'tentage', 'hostage'],
+      definitionDistractors: [
+        'Relating to the period of early childhood before formal schooling begins.',
+        'Characteristic of professionals in their mid-career development stage.',
+        'Pertaining to the final years of active employment before retirement.',
+      ],
     }
   ),
-  word('telegraph', '전신', 10, 'noun',
+  word('telegraph', '전신', 5, 'noun',
     ['전화기', '라디오', '텔레비전', '편지', '신문', '인터넷', '위성', '팩스', '컴퓨터', '스마트폰'],
     tips({
       etymology: '멀리라는 뜻의 tele와 쓰다라는 뜻의 graph가 합쳐져 멀리 글자를 보낸다는 의미가 됩니다.',
@@ -360,6 +468,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'The news of the peace treaty was sent across the country via the electric wire system.', ko: '평화 조약 소식은 전기 통신망을 통해 전국으로 전달되었습니다.' },
         { en: 'Ships used to rely on this method of communication to signal for help during emergencies at sea.', ko: '배들은 바다에서 비상 상황 발생 시 도움을 요청하기 위해 이 통신 방식에 의존하곤 했습니다.' },
+      ],
+      wordDistractors: ['telegram', 'telescope', 'telepath'],
+      definitionDistractors: [
+        'A device that amplifies sound waves for large public gatherings.',
+        'A printed publication distributed daily with current news articles.',
+        'A mechanical instrument used for measuring atmospheric pressure changes.',
       ],
     }
   ),
@@ -380,6 +494,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The office worker answered the ringing device immediately to assist the customer.', ko: '사무실 직원은 고객을 돕기 위해 울리는 전화를 즉시 받았습니다.' },
         { en: 'Communication became much faster after the invention of this long-distance voice transmitter.', ko: '이 원거리 음성 송신기의 발명 이후 통신은 훨씬 빨라졌습니다.' },
       ],
+      wordDistractors: ['telescope', 'televise', 'telltale'],
+      definitionDistractors: [
+        'A portable screen used for displaying visual images and videos.',
+        'A handwritten letter delivered by a postal courier service.',
+        'A musical instrument that produces sound through vibrating strings.',
+      ],
     }
   ),
   word('tell', '말하다', 3, 'verb',
@@ -398,6 +518,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'Please let me know if you decide to disclose the secret to your best friend.', ko: '가장 친한 친구에게 그 비밀을 말하기로 결정했다면 나에게 알려줘.' },
         { en: 'The witness had to recount exactly what happened during the accident.', ko: '목격자는 사고 당시에 정확히 무슨 일이 있었는지 말해야 했다.' },
+      ],
+      wordDistractors: ['toll', 'bell', 'yell'],
+      definitionDistractors: [
+        'To carefully listen to someone without offering any response.',
+        'To write a detailed account of events in a personal journal.',
+        'To sing a melody softly to calm a restless child to sleep.',
       ],
     }
   ),
@@ -418,6 +544,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The boiling point of water occurs at a specific degree depending on the atmospheric pressure.', ko: '물의 끓는점은 기압에 따라 특정 온도에서 발생합니다.' },
         { en: 'Doctors monitored the patient\'s condition closely because his body heat remained unusually high.', ko: '의사들은 환자의 체온이 비정상적으로 높게 유지되었기 때문에 그의 상태를 면밀히 관찰했습니다.' },
       ],
+      wordDistractors: ['temperate', 'temperament', 'template'],
+      definitionDistractors: [
+        'The speed at which an object moves through a given medium.',
+        'The amount of moisture present in the surrounding atmosphere.',
+        'The level of brightness emitted by a light source in a room.',
+      ],
     }
   ),
   word('temple', '관자놀이', 7, 'noun',
@@ -436,6 +568,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'He rubbed his left side gently to relieve the throbbing pressure of the headache.', ko: '그는 두통으로 인한 욱신거리는 압박감을 완화하기 위해 왼쪽 관자놀이를 부드럽게 문질렀다.' },
         { en: 'The stray bullet grazed the soldier\'s side, narrowly missing a fatal injury.', ko: '유탄이 군인의 관자놀이를 스치고 지나가며 치명적인 부상을 간신히 면했다.' },
+      ],
+      wordDistractors: ['temper', 'trample', 'sample'],
+      definitionDistractors: [
+        'A large religious structure built for worship and spiritual ceremonies.',
+        'The rounded tip of the elbow where two bones connect.',
+        'A bony ridge located along the bridge of the nose.',
       ],
     }
   ),
@@ -456,6 +594,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The heavy rain caused a temporary power outage throughout the entire neighborhood.', ko: '폭우로 인해 동네 전체에 일시적인 정전이 발생했습니다.' },
         { en: 'She found a temporary job at the department store during the busy holiday season.', ko: '그녀는 바쁜 연휴 기간 동안 백화점에서 임시 일자리를 구했습니다.' },
       ],
+      wordDistractors: ['template', 'temporal', 'tempered'],
+      definitionDistractors: [
+        'Designed to remain in place for an extended or indefinite period.',
+        'Occurring on a regular and predictable schedule throughout the year.',
+        'Built with materials intended to withstand extreme weather conditions.',
+      ],
     }
   ),
   word('tempt', '유혹하다', 9, 'verb',
@@ -475,9 +619,15 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The warm smell of fresh bread began to entice the hungry passersby into the bakery.', ko: '갓 구운 빵의 따뜻한 냄새가 배고픈 행인들을 빵집 안으로 유혹하기 시작했다.' },
         { en: 'Nothing could persuade him to break his diet, even though the dessert menu looked incredible.', ko: '디저트 메뉴가 엄청나 보였음에도 불구하고, 그 어떤 것도 그가 다이어트를 포기하도록 유혹할 수 없었다.' },
       ],
+      wordDistractors: ['tempo', 'tramp', 'tamp'],
+      definitionDistractors: [
+        'To strongly advise someone against taking a risky course of action.',
+        'To carefully inspect an item before making a purchase decision.',
+        'To remove impurities from a liquid by passing it through a filter.',
+      ],
     }
   ),
-  word('tenant', '임차인', 10, 'noun',
+  word('tenant', '임차인', 5, 'noun',
     ['건물주', '관리인', '중개인', '소유주', '경비원', '방문객', '상속인', '거주지', '임대료', '계약서'],
     tips({
       etymology: '라틴어 tenere(잡다, 보유하다)에서 유래하여 땅이나 건물을 빌려 점유하고 있는 사람을 뜻합니다.',
@@ -494,10 +644,16 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The new resident signed a two-year lease agreement for the downtown apartment.', ko: '새로운 세입자는 시내 아파트에 대해 2년 임대 계약서에 서명했습니다.' },
         { en: 'Every person living in the building must follow the noise regulations after midnight.', ko: '건물에 거주하는 모든 임차인은 자정 이후 소음 규정을 준수해야 합니다.' },
       ],
+      wordDistractors: ['tenet', 'tendon', 'tandem'],
+      definitionDistractors: [
+        'A legal representative who argues cases on behalf of clients in court.',
+        'A construction worker responsible for maintaining building exteriors.',
+        'A government official who inspects commercial properties for safety.',
+      ],
     }
   ),
   word('tend', '경향이 있다', 4, 'verb',
-    ['변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태', '개념'],
+    ['피하다', '거부하다', '외면하다', '무시하다', '거절하다', '저항하다', '벗어나다', '중단하다', '방해하다', '포기하다'],
     tips({
       etymology: '라틴어 tendere(뻗다, 향하다)에서 유래하여 마음이나 행동이 특정 방향으로 기울어지는 것을 의미합니다.',
       visual: '저울의 한쪽 접시가 아래로 서서히 기울어지는 모습을 상상하며 마음의 무게가 쏠리는 느낌을 연상하세요.',
@@ -512,6 +668,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'People often forget their passwords when they are under a lot of stress.', ko: '사람들은 스트레스를 많이 받을 때 비밀번호를 잊어버리는 경향이 있다.' },
         { en: 'Prices for seasonal fruits decrease during the peak harvest months.', ko: '제철 과일 가격은 수확이 가장 활발한 달에 하락하는 경향이 있다.' },
+      ],
+      wordDistractors: ['tent', 'bend', 'fend'],
+      definitionDistractors: [
+        'To deliberately avoid a particular behavior or activity.',
+        'To complete a task in an unusually short amount of time.',
+        'To suddenly change direction without any prior indication.',
       ],
     }
   ),
@@ -532,10 +694,16 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The construction company submitted a competitive tender for the new bridge project.', ko: '그 건설 회사는 새 교량 프로젝트를 위해 경쟁력 있는 입찰서를 제출했습니다.' },
         { en: 'The shopkeeper refused to accept high-denomination banknotes as legal tender.', ko: '가게 주인은 고액권 지폐를 법정 화폐로 받아들이기를 거부했습니다.' },
       ],
+      wordDistractors: ['tinder', 'render', 'vendor'],
+      definitionDistractors: [
+        'A harsh criticism delivered publicly to express strong disapproval.',
+        'A detailed receipt listing all items purchased during a transaction.',
+        'A physical act of returning borrowed goods to their original owner.',
+      ],
     }
   ),
   word('tense', '시제', 6, 'noun',
-    ['목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계'],
+    ['문법', '어휘', '발음', '구문', '문장', '어미', '조사', '접미사', '접두사', '어근'],
     tips({
       etymology: '라틴어 \'tempus(시간)\'에서 유래하여 문법에서 동작이 일어나는 시간대를 나타냅니다.',
       visual: '타임라인 위에 과거, 현재, 미래를 가리키는 화살표가 그려진 문법 책 페이지를 상상하세요.',
@@ -550,6 +718,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'The teacher explained how to change the verb into the past form to indicate a completed action.', ko: '선생님은 완료된 동작을 나타내기 위해 동사를 과거 시제로 바꾸는 방법을 설명했습니다.' },
         { en: 'Many students find it difficult to master the perfect forms in English grammar.', ko: '많은 학생이 영어 문법에서 완료 시제 형태를 익히는 것을 어려워합니다.' },
+      ],
+      wordDistractors: ['terse', 'dense', 'sense'],
+      definitionDistractors: [
+        'A feeling of physical relaxation experienced after vigorous exercise.',
+        'The rhythmic pattern of syllables within a line of poetry.',
+        'A numerical value assigned to classify objects by their weight.',
       ],
     }
   ),
@@ -570,6 +744,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The president served a four-year period in office before the next election.', ko: '대통령은 다음 선거 전까지 4년의 임기 동안 재임했습니다.' },
         { en: 'Students are required to complete several assignments during the spring semester.', ko: '학생들은 봄 학기 기간 동안 여러 과제를 완료해야 합니다.' },
       ],
+      wordDistractors: ['tern', 'stern', 'fern'],
+      definitionDistractors: [
+        'A specific word or phrase used exclusively in academic writing.',
+        'A monetary unit used for international currency exchange.',
+        'A formal agreement between two parties regarding property ownership.',
+      ],
     }
   ),
   word('terminal', '종점의', 4, 'adjective',
@@ -588,6 +768,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'The patient was diagnosed with a terminal illness that required specialized palliative care.', ko: '그 환자는 전문적인 완화 치료가 필요한 말기 질환 진단을 받았습니다.' },
         { en: 'All passengers must disembark at this station because it is the terminal stop of the line.', ko: '이 역은 노선의 종점이기 때문에 모든 승객은 하차해야 합니다.' },
+      ],
+      wordDistractors: ['terminus', 'thermal', 'nominal'],
+      definitionDistractors: [
+        'Occurring at the very beginning of a long developmental process.',
+        'Capable of being repaired or restored to its original condition.',
+        'Happening repeatedly at regular intervals throughout the year.',
       ],
     }
   ),
@@ -608,6 +794,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The company decided to terminate the contract due to a series of serious policy violations.', ko: '그 회사는 일련의 심각한 정책 위반으로 인해 계약을 종료하기로 결정했습니다.' },
         { en: 'You must terminate the running application before installing the new software update.', ko: '새 소프트웨어 업데이트를 설치하기 전에 실행 중인 응용 프로그램을 종료해야 합니다.' },
       ],
+      wordDistractors: ['determine', 'germinate', 'laminate'],
+      definitionDistractors: [
+        'To begin a new project or initiative with great enthusiasm.',
+        'To temporarily pause an activity with the intention of resuming later.',
+        'To gradually expand the scope of an ongoing operation.',
+      ],
     }
   ),
   word('terrace', '테라스', 9, 'noun',
@@ -626,6 +818,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'We sat on the terrace and enjoyed our coffee while watching the sunset.', ko: '우리는 테라스에 앉아 일몰을 바라보며 커피를 즐겼다.' },
         { en: 'The rice terraces in the Philippines are a UNESCO World Heritage Site.', ko: '필리핀의 계단식 논 테라스는 유네스코 세계문화유산이다.' },
+      ],
+      wordDistractors: ['terrain', 'terrarium', 'furnace'],
+      definitionDistractors: [
+        'An enclosed indoor garden used for growing tropical plants.',
+        'A narrow underground passage connecting two separate buildings.',
+        'A tall vertical structure built to support overhead power lines.',
       ],
     }
   ),
@@ -646,6 +844,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The survivors told a story about a nightmare involving a giant, fearsome beast.', ko: '생존자들은 거대하고 무시무시한 짐승이 등장하는 악몽에 대해 이야기했습니다.' },
         { en: 'Heavy rain caused a series of accidents on the highway during the rush hour.', ko: '폭우로 인해 출퇴근 시간 고속도로에서 끔찍한 사고들이 연이어 발생했습니다.' },
       ],
+      wordDistractors: ['terrific', 'tangible', 'sensible'],
+      definitionDistractors: [
+        'Mildly inconvenient but ultimately manageable without assistance.',
+        'Perfectly ordinary and unremarkable in every observable way.',
+        'Slightly disappointing but still within acceptable standards.',
+      ],
     }
   ),
   word('terrific', '훌륭한', 6, 'adjective',
@@ -665,10 +869,16 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'You did a terrific job on the presentation today.', ko: '오늘 발표를 정말 훌륭하게 잘 했어요.' },
         { en: 'The band gave a terrific performance that had the audience cheering for more.', ko: '그 밴드는 관객들이 앙코르를 외칠 정도로 훌륭한 공연을 펼쳤다.' },
       ],
+      wordDistractors: ['terrible', 'specific', 'prolific'],
+      definitionDistractors: [
+        'Moderately acceptable but lacking any distinctive qualities.',
+        'Extremely frightening and causing widespread panic among people.',
+        'Barely noticeable and having no significant impact on the outcome.',
+      ],
     }
   ),
   word('territory', '영토', 7, 'noun',
-    ['의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태'],
+    ['국경', '식민지', '왕국', '대륙', '반도', '섬', '해안', '국가', '지방', '도시'],
     tips({
       etymology: '라틴어 \'terra(땅)\'에서 유래하여 특정 국가나 개인이 소유하고 관리하는 땅의 범위를 뜻합니다.',
       visual: '지도 위에 국경선이 그어져 있고 그 안쪽이 색칠되어 있는 모습을 상상해 보세요.',
@@ -683,6 +893,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'The stray cat fiercely defended its territory from other intruders in the neighborhood.', ko: '그 길고양이는 동네의 다른 침입자들로부터 자신의 영역을 격렬하게 방어했다.' },
         { en: 'Explorers claimed the newly discovered island as a territory of their home country.', ko: '탐험가들은 새로 발견된 섬을 자신들 본국의 영토로 선포했다.' },
+      ],
+      wordDistractors: ['terrace', 'tributary', 'dormitory'],
+      definitionDistractors: [
+        'A formal ceremony held to celebrate the founding of a nation.',
+        'A natural body of water surrounded entirely by dry land.',
+        'A tall structure built along a coastline to guide passing ships.',
       ],
     }
   ),
@@ -703,9 +919,15 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'Students are studying hard in the library to prepare for their final chemistry examination.', ko: '학생들은 기말 화학 시험을 준비하기 위해 도서관에서 열심히 공부하고 있습니다.' },
         { en: 'Engineers conducted a rigorous trial of the new vehicle to ensure its safety on the road.', ko: '엔지니어들은 도로 위에서의 안전을 보장하기 위해 새 차량에 대한 엄격한 테스트를 실시했습니다.' },
       ],
+      wordDistractors: ['text', 'jest', 'nest'],
+      definitionDistractors: [
+        'A period of rest given to workers between their scheduled shifts.',
+        'A formal invitation to participate in a competitive sporting event.',
+        'A written summary of rules that govern behavior in a classroom.',
+      ],
     }
   ),
-  word('testify', '증명하다', 10, 'verb',
+  word('testify', '증명하다', 5, 'verb',
     ['부인하다', '침묵하다', '조작하다', '은폐하다', '무시하다', '거절하다', '망설이다', '반대하다', '포기하다', '왜곡하다'],
     tips({
       etymology: '라틴어 testis(증인)에서 유래하여 법정에서 증인이 진실을 말하는 행위를 뜻합니다.',
@@ -721,6 +943,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'Several witnesses were called to give evidence and speak about what they saw during the accident.', ko: '사고 당시 목격한 것에 대해 증언하고 증거를 제시하기 위해 여러 명의 목격자들이 소환되었습니다.' },
         { en: 'The high quality of these ancient artifacts speaks to the advanced skills of the craftsmen who made them.', ko: '이 고대 유물들의 높은 품질은 그것을 만든 장인들의 뛰어난 기술력을 증명해 줍니다.' },
+      ],
+      wordDistractors: ['terrify', 'justify', 'fortify'],
+      definitionDistractors: [
+        'To formally request additional funding for a government project.',
+        'To secretly plan a strategy without informing the other participants.',
+        'To carefully examine a document for spelling and grammatical errors.',
       ],
     }
   ),
@@ -741,6 +969,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The scholar spent years analyzing the ancient Greek manuscript to understand the original meaning.', ko: '그 학자는 원래의 의미를 이해하기 위해 고대 그리스 사본의 원문을 분석하는 데 수년을 보냈습니다.' },
         { en: 'Please refer to the printed version of the speech for the exact wording used by the president.', ko: '대통령이 사용한 정확한 어휘를 확인하려면 연설문의 인쇄된 원문을 참조하십시오.' },
       ],
+      wordDistractors: ['next', 'textile', 'texture'],
+      definitionDistractors: [
+        'A short spoken message delivered informally between close friends.',
+        'A graphic illustration used to explain a scientific concept visually.',
+        'A handwritten signature placed at the bottom of an official document.',
+      ],
     }
   ),
   word('textbook', '교과서', 2, 'noun',
@@ -759,6 +993,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'Students are required to bring their history book to every class.', ko: '학생들은 매 수업 시간마다 역사 교과서를 가져와야 합니다.' },
         { en: 'The professor published a new edition of the biology guide this year.', ko: '교수님은 올해 생물학 교과서의 개정판을 출판하셨습니다.' },
+      ],
+      wordDistractors: ['textual', 'notebook', 'casebook'],
+      definitionDistractors: [
+        'A fictional novel intended for entertainment during leisure time.',
+        'A blank journal used for recording personal thoughts and reflections.',
+        'A collection of photographs arranged chronologically in an album.',
       ],
     }
   ),
@@ -779,6 +1019,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'She can run much faster than before after practicing for months.', ko: '그녀는 몇 달 동안 연습한 덕분에 전보다 훨씬 더 빨리 달릴 수 있습니다.' },
         { en: 'This new laptop is significantly lighter than the previous model.', ko: '이 새 노트북은 이전 모델보다 훨씬 가볍습니다.' },
       ],
+      wordDistractors: ['then', 'thin', 'thane'],
+      definitionDistractors: [
+        'A word used to connect two equal clauses in a compound sentence.',
+        'A preposition indicating the location of an object inside a container.',
+        'An adverb expressing the frequency of a recurring daily event.',
+      ],
     }
   ),
   word('thank', '감사하다', 1, 'verb',
@@ -798,10 +1044,16 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'I would like to express my gratitude and show how much I appreciate your help.', ko: '당신의 도움에 대해 감사를 표하고 제가 얼마나 고마워하는지 보여드리고 싶습니다.' },
         { en: 'She forgot to say those polite words after receiving the birthday present from her friend.', ko: '그녀는 친구에게 생일 선물을 받은 후 고맙다는 말을 하는 것을 잊었습니다.' },
       ],
+      wordDistractors: ['think', 'thane', 'shank'],
+      definitionDistractors: [
+        'To formally apologize for causing an inconvenience to someone.',
+        'To request assistance from a stranger in an unfamiliar place.',
+        'To demand compensation for damages caused by another party.',
+      ],
     }
   ),
   word('that', '그것, 저것', 2, 'pronoun',
-    ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
+    ['이것', '여기', '이쪽', '누구', '아무것', '어떤것', '모든것', '각각', '어느것', '자기'],
     tips({
       etymology: '고대 영어 \'thæt\'에서 유래하여 특정한 대상을 지목하는 지시어로 발전했습니다.',
       visual: '멀리 떨어져 있는 물건을 손가락으로 가리키는 모습을 상상해 보세요.',
@@ -816,6 +1068,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'Look at the tall tree on the top of the hill.', ko: '언덕 꼭대기에 있는 저 높은 나무를 보세요.' },
         { en: 'Who is the person standing by the entrance?', ko: '입구 옆에 서 있는 저 사람은 누구입니까?' },
+      ],
+      wordDistractors: ['what', 'chat', 'flat'],
+      definitionDistractors: [
+        'A word used to ask a question about the identity of a person.',
+        'A conjunction that links two independent clauses together.',
+        'An exclamation expressing surprise at an unexpected outcome.',
       ],
     }
   ),
@@ -836,6 +1094,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'Look at masterpiece hanging on the wall of the gallery.', ko: '갤러리 벽에 걸려 있는 그 걸작을 보세요.' },
         { en: 'She is artist who redefined modern sculpture in this century.', ko: '그녀는 이번 세기에 현대 조각을 재정의한 바로 그 예술가입니다.' },
       ],
+      wordDistractors: ['thee', 'thaw', 'them'],
+      definitionDistractors: [
+        'A general article used before any noun regardless of context.',
+        'A pronoun replacing the name of a person in casual speech.',
+        'A verb form indicating an action performed in the distant past.',
+      ],
     }
   ),
   word('theater', '극장', 5, 'noun',
@@ -854,6 +1118,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'The local community gathered at the grand building to watch the new musical performance.', ko: '지역 주민들은 새로운 뮤지컬 공연을 관람하기 위해 그 웅장한 건물에 모였습니다.' },
         { en: 'Many actors dream of performing on a famous stage in the heart of the city.', ko: '많은 배우들이 도시 중심가에 있는 유명한 무대에서 공연하는 것을 꿈꿉니다.' },
+      ],
+      wordDistractors: ['feather', 'heater', 'weather'],
+      definitionDistractors: [
+        'A large open field used for growing crops and raising livestock.',
+        'A private office where business negotiations are conducted.',
+        'A covered market where vendors sell fresh produce and goods.',
       ],
     }
   ),
@@ -874,10 +1144,16 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'The recurring motif of loss is a central part of the story\'s overall message.', ko: '상실이라는 반복되는 모티프는 그 이야기 전체 메시지의 중심적인 논제입니다.' },
         { en: 'Each department was asked to prepare a presentation based on the annual conference\'s main focus.', ko: '각 부서는 연례 컨퍼런스의 주요 논제에 기초하여 발표를 준비하라는 요청을 받았습니다.' },
       ],
+      wordDistractors: ['thyme', 'scheme', 'gleam'],
+      definitionDistractors: [
+        'A detailed set of instructions for operating complex machinery.',
+        'A decorative border applied around the edges of a picture frame.',
+        'A specific color palette chosen for painting interior walls.',
+      ],
     }
   ),
   word('then', '그때', 7, 'adverb',
-    ['원인', '결과', '조건', '관계', '계획', '절차', '정보', '의미', '변화', '문제'],
+    ['지금', '여기서', '항상', '절대로', '어쩌면', '이미', '아직', '곧', '자주', '거의'],
     tips({
       etymology: '고대 영어 \'thanne\'에서 유래하여 시간의 흐름이나 특정 시점을 가리키는 부사적 성격이 명사화된 형태입니다.',
       visual: '달력의 특정 날짜에 빨간 동그라미를 치고 과거의 한 장면을 회상하는 모습을 상상하세요.',
@@ -892,6 +1168,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'Life was much simpler back then before the internet changed everything.', ko: '인터넷이 모든 것을 바꾸기 전인 그때는 삶이 훨씬 단순했습니다.' },
         { en: 'We agreed to meet at noon, but I had already finished my work by then.', ko: '우리는 정오에 만나기로 했지만, 나는 그때까지 이미 일을 마친 상태였습니다.' },
+      ],
+      wordDistractors: ['than', 'when', 'den'],
+      definitionDistractors: [
+        'A word used to describe the manner in which an action is performed.',
+        'A conjunction that introduces a reason or cause for an event.',
+        'An indefinite pronoun referring to all members of a group collectively.',
       ],
     }
   ),
@@ -912,6 +1194,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'Einstein developed a groundbreaking explanation of how gravity affects time and space.', ko: '아인슈타인은 중력이 시간과 공간에 어떻게 영향을 미치는지에 대한 획기적인 이론을 발전시켰습니다.' },
         { en: 'Many scholars debate whether this sociological framework can be applied to modern digital cultures.', ko: '많은 학자들은 이 사회학적 이론이 현대 디지털 문화에 적용될 수 있는지에 대해 토론합니다.' },
       ],
+      wordDistractors: ['theorem', 'thorax', 'thirsty'],
+      definitionDistractors: [
+        'A confirmed law of nature that has been universally accepted.',
+        'A practical demonstration of how a machine operates in real time.',
+        'A personal opinion expressed without any supporting evidence.',
+      ],
     }
   ),
   word('therapy', '치료법', 8, 'noun',
@@ -931,6 +1219,12 @@ export const vocabBatch64: VocabItem[] = [
         { en: 'Many people find that physical exercise serves as a form of stress relief and mental healing.', ko: '많은 사람들은 신체적 운동이 스트레스 해소와 정신적 치료의 한 형태가 된다는 것을 알고 있습니다.' },
         { en: 'The patient showed significant improvement after attending several sessions of speech rehabilitation.', ko: '그 환자는 여러 차례의 언어 치료 세션에 참석한 후 상당한 호전을 보였습니다.' },
       ],
+      wordDistractors: ['theory', 'thirsty', 'thorny'],
+      definitionDistractors: [
+        'A surgical procedure performed to remove damaged tissue from the body.',
+        'A diagnostic test conducted to identify the cause of an illness.',
+        'A preventive measure taken to stop a disease from spreading further.',
+      ],
     }
   ),
   word('there', '거기에', 1, 'adverb',
@@ -949,6 +1243,12 @@ export const vocabBatch64: VocabItem[] = [
       exampleSentences: [
         { en: 'Please put the heavy boxes over by the door.', ko: '무거운 상자들을 저기 문 옆에 두세요.' },
         { en: 'We visited the museum last year and enjoyed our time spent at that location.', ko: '우리는 작년에 그 박물관을 방문했고 그곳에서 즐거운 시간을 보냈습니다.' },
+      ],
+      wordDistractors: ['their', 'where', 'here'],
+      definitionDistractors: [
+        'A possessive form indicating ownership by a group of people.',
+        'An adverb used to describe the current moment in time.',
+        'A conjunction linking a cause to its immediate consequence.',
       ],
     }
   ),

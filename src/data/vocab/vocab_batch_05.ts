@@ -2,7 +2,7 @@ import type { VocabItem } from '../models/vocab';
 import { word, tips } from './helpers';
 
 export const vocabBatch05: VocabItem[] = [
-  word('Achieve', '달성하다', 3, 'verb',
+  word('achieve', '달성하다', 3, 'verb',
     ['실패하다', '포기하다', '미루다', '회피하다', '무시하다', '잃다', '거절하다', '망설이다', '낭비하다', '지연하다'],
     tips({
       etymology: '프랑스어 \'à chef(끝에 도달하다)\'에서 유래하여, 일의 머리(끝)에 마침내 도달했다는 뜻을 담고 있습니다.',
@@ -15,13 +15,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to succeed in reaching a goal or completing something through effort',
       synonyms: ['accomplish', 'attain', 'fulfill'],
       antonyms: ['fail', 'forfeit', 'abandon'],
+      wordDistractors: ['Archive', 'Active', 'Attach'],
+      definitionDistractors: [
+        'to obtain something by paying money or trading',
+        'to gain knowledge through study or experience',
+        'to officially receive an award in a formal ceremony',
+      ],
       exampleSentences: [
         { en: 'She achieved her goal of graduating with honors.', ko: '그녀는 우등으로 졸업한다는 목표를 달성했다.' },
         { en: 'It took years of hard work to achieve success.', ko: '성공을 거두기 위해 수년간의 노력이 필요했다.' },
       ],
     }
   ),
-  word('Admire', '존경하다', 3, 'verb',
+  word('admire', '존경하다', 3, 'verb',
     ['무시하다', '비난하다', '싫어하다', '경멸하다', '질시하다', '부러워하다', '질투하다', '모욕하다', '불신하다', '조롱하다'],
     tips({
       etymology: '라틴어 ad(~를 향해)와 mirari(놀라다)가 결합되어, 누군가를 경이로운 시선으로 바라본다는 어원을 가집니다.',
@@ -34,13 +40,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to regard someone or something with respect and warm approval',
       synonyms: ['respect', 'esteem', 'venerate'],
       antonyms: ['despise', 'scorn', 'disdain'],
+      wordDistractors: ['Admit', 'Adhere', 'Admiral'],
+      definitionDistractors: [
+        'to confess or acknowledge a fault or wrongdoing',
+        'to feel envious of someone else\'s possessions or status',
+        'to formally agree with a proposed plan or decision',
+      ],
       exampleSentences: [
         { en: 'I admire her courage and determination.', ko: '나는 그녀의 용기와 결단력을 존경한다.' },
         { en: 'We all admire his dedication to the cause.', ko: '우리 모두는 그 대의를 향한 그의 헌신에 감탄한다.' },
       ],
     }
   ),
-  word('Advance', '앞으로 나아가다', 3, 'verb',
+  word('advance', '앞으로 나아가다', 3, 'verb',
     ['후퇴하다', '물러서다', '지연하다', '미루다', '멈추다', '정체하다', '퇴보하다', '되돌아가다', '느리다', '늦추다'],
     tips({
       etymology: '라틴어 ab(앞으로)와 ante(먼저)가 결합되어 남들보다 앞서서 나아간다는 의미를 담고 있습니다.',
@@ -53,13 +65,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to move forward or make progress toward a goal',
       synonyms: ['progress', 'proceed', 'flourish'],
       antonyms: ['retreat', 'recede', 'withdraw'],
+      wordDistractors: ['Advice', 'Advent', 'Adverse'],
+      definitionDistractors: [
+        'to give a recommendation or suggestion to someone',
+        'to arrive at a new location after a long journey',
+        'to promote someone to a higher rank or position',
+      ],
       exampleSentences: [
         { en: 'Technology continues to advance rapidly.', ko: '기술은 계속해서 빠르게 발전하고 있다.' },
         { en: 'The army advanced toward the enemy position.', ko: '군대는 적진을 향해 전진했다.' },
       ],
     }
   ),
-  word('Allow', '허용하다', 3, 'verb',
+  word('allow', '허용하다', 3, 'verb',
     ['금지하다', '막다', '거절하다', '차단하다', '방해하다', '제한하다', '억제하다', '거부하다', '말리다', '반대하다'],
     tips({
       etymology: '라틴어 allaudare(칭찬하다)에서 유래해 승인해준다는 의미로 발전했습니다.',
@@ -72,13 +90,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to give permission for someone to do something or to let a particular event take place',
       synonyms: ['permit', 'authorize', 'grant'],
       antonyms: ['forbid', 'prohibit', 'ban'],
+      wordDistractors: ['Allot', 'Allay', 'Avow'],
+      definitionDistractors: [
+        'to distribute or assign a portion of something',
+        'to publicly express a strong opinion or belief',
+        'to set aside time or resources for a specific purpose',
+      ],
       exampleSentences: [
         { en: 'Smoking is not allowed in this building.', ko: '이 건물 내에서는 흡연이 허용되지 않습니다.' },
         { en: 'Please allow me to introduce myself to the group.', ko: '제가 제 소개를 할 수 있게 허락해 주세요.' },
       ],
     }
   ),
-  word('Amount', '양, 금액', 3, 'noun',
+  word('amount', '양, 금액', 3, 'noun',
     ['품질', '개수', '종류', '단위', '무게', '부피', '길이', '면적', '비율', '정도'],
     tips({
       etymology: '라틴어 ad(~로)와 mons(산)가 결합되어 산처럼 높이 쌓인 전체 합계를 뜻하게 되었습니다.',
@@ -91,13 +115,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'A quantity of something, such as a substance or a sum of money, especially when considered as a whole.',
       synonyms: ['quantity', 'volume', 'total'],
       antonyms: ['nothing', 'zero', 'lack'],
+      wordDistractors: ['Account', 'Amend', 'Abound'],
+      definitionDistractors: [
+        'the speed at which something increases over time',
+        'a specific category or type of item in a collection',
+        'the relative proportion between two measured values',
+      ],
       exampleSentences: [
         { en: 'The amount of rainfall was unexpected.', ko: '강우량이 예상 밖이었다.' },
         { en: 'She donated a large amount to charity.', ko: '그녀는 자선 단체에 거액을 기부했다.' },
       ],
     }
   ),
-  word('Ancient', '고대의', 3, 'adjective',
+  word('ancient', '고대의', 3, 'adjective',
     ['현대의', '최신의', '새로운', '젊은', '최근의', '미래의', '현대적', '세련된', '신선한', '최신'],
     tips({
       etymology: '라틴어 \'ante(이전의)\'에서 유래하여 아주 먼 옛날의 시기를 가리킵니다.',
@@ -110,13 +140,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'belonging to a very distant past or having existed for many thousands of years',
       synonyms: ['primeval', 'antique', 'archaic'],
       antonyms: ['modern', 'contemporary', 'recent'],
+      wordDistractors: ['Anchor', 'Ankle', 'Angel'],
+      definitionDistractors: [
+        'relating to a foreign or unfamiliar culture',
+        'extremely old and no longer functioning properly',
+        'preserved in excellent condition despite its age',
+      ],
       exampleSentences: [
         { en: 'The ancient ruins attract many tourists from all over the world.', ko: '그 고대 유적지는 전 세계에서 온 많은 관광객들을 끌어모은다.' },
         { en: 'Ancient civilizations developed complex systems of writing and agriculture.', ko: '고대 문명들은 복잡한 문자 체계와 농업을 발전시켰다.' },
       ],
     }
   ),
-  word('Announce', '알리다', 3, 'verb',
+  word('announce', '알리다', 3, 'verb',
     ['숨기다', '비밀로 하다', '침묵하다', '은폐하다', '가리다', '덮다', '무시하다', '부인하다', '취소하다', '보류하다'],
     tips({
       etymology: '라틴어 \'ad(~에게)\'와 \'nuntiare(보고하다)\'가 결합되어 대중에게 소식을 전달한다는 의미가 되었습니다.',
@@ -129,13 +165,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'To make a formal or public statement about a fact, occurrence, or intention.',
       synonyms: ['declare', 'proclaim', 'broadcast'],
       antonyms: ['conceal', 'hide', 'suppress'],
+      wordDistractors: ['Annoy', 'Annual', 'Denounce'],
+      definitionDistractors: [
+        'to cause irritation or displeasure to someone repeatedly',
+        'to cancel or withdraw a previously made decision',
+        'to send a written message to a specific recipient',
+      ],
       exampleSentences: [
         { en: 'The government will announce the new tax policy during the press conference.', ko: '정부는 기자회견 중에 새로운 세금 정책을 발표할 것이다.' },
         { en: 'The airline had to announce a delay due to the heavy snowstorm.', ko: '항공사는 폭설로 인한 지연을 안내해야만 했다.' },
       ],
     }
   ),
-  word('Appear', '나타나다', 3, 'verb',
+  word('appear', '나타나다', 3, 'verb',
     ['사라지다', '숨다', '닫다', '가리다', '은폐하다', '떠나다', '없어지다', '잠수하다', '후퇴하다', '물러나다'],
     tips({
       etymology: '라틴어 ad(~에)와 parere(보이다)가 결합되어 눈앞에 존재를 드러낸다는 어원을 가집니다.',
@@ -148,13 +190,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to become visible or come into sight',
       synonyms: ['emerge', 'materialize', 'surface'],
       antonyms: ['disappear', 'vanish', 'fade'],
+      wordDistractors: ['Appeal', 'Apparel', 'Applier'],
+      definitionDistractors: [
+        'to make an earnest request for help or support',
+        'to seem attractive or interesting to someone',
+        'to apply a coating or layer onto a surface',
+      ],
       exampleSentences: [
         { en: 'A rainbow appeared after the rain.', ko: '비가 온 뒤에 무지개가 나타났다.' },
         { en: 'She suddenly appeared at the door.', ko: '그녀가 갑자기 문 앞에 나타났다.' },
       ],
     }
   ),
-  word('Arrange', '정리하다', 3, 'verb',
+  word('arrange', '정리하다', 3, 'verb',
     ['흐트러뜨리다', '섞다', '뒤죽박죽', '해체하다', '무질서', '어지럽히다', '분산하다', '흩다', '무시하다', '방치하다'],
     tips({
       etymology: '라틴어 ad(~에)와 range(줄, 열)가 결합되어 \'특정한 줄에 맞춰 놓다\'라는 의미에서 유래했습니다.',
@@ -167,13 +215,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to put objects or tasks into a specific order, position, or plan',
       synonyms: ['organize', 'classify', 'marshal'],
       antonyms: ['disarrange', 'disturb', 'jumble'],
+      wordDistractors: ['Arraign', 'Range', 'Arouse'],
+      definitionDistractors: [
+        'to formally accuse someone of a crime in court',
+        'to decorate or furnish a room with new items',
+        'to repair or restore something to its original state',
+      ],
       exampleSentences: [
         { en: 'She arranged the flowers in a vase.', ko: '그녀는 꽃병에 꽃을 보기 좋게 꽂았다.' },
         { en: 'I arranged to meet him at the café.', ko: '나는 그와 카페에서 만나기로 약속을 잡았다.' },
       ],
     }
   ),
-  word('Article', '기사, 물품', 3, 'noun',
+  word('article', '기사, 물품', 3, 'noun',
     ['제목', '부록', '총론', '논문', '소설', '시', '대본', '편지', '보고서', '책'],
     tips({
       etymology: '라틴어 articulus(작은 마디)에서 유래하여 전체를 구성하는 개별적인 부분을 의미합니다.',
@@ -186,13 +240,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'A distinct piece of writing on a specific topic that forms an independent part of a publication.',
       synonyms: ['report', 'feature', 'column'],
       antonyms: ['book', 'anthology', 'collection'],
+      wordDistractors: ['Articulate', 'Artifact', 'Arterial'],
+      definitionDistractors: [
+        'a physical object made by human craftsmanship',
+        'a section of a legal contract that outlines penalties',
+        'a small item of clothing or personal accessory',
+      ],
       exampleSentences: [
         { en: 'I read an interesting article about climate change.', ko: '나는 기후 변화에 관한 흥미로운 기사를 읽었다.' },
         { en: 'This article explains the new policy.', ko: '이 기사는 새로운 정책을 설명해 준다.' },
       ],
     }
   ),
-  word('Attend', '참석하다', 3, 'verb',
+  word('attend', '참석하다', 3, 'verb',
     ['결석하다', '도망치다', '회피하다', '건너뛰다', '무시하다', '거절하다', '취소하다', '이탈하다', '떠나다', '방치하다'],
     tips({
       etymology: '라틴어 attendere에서 유래하며, ad(~로)와 tendere(뻗다)가 결합되어 마음을 특정 방향으로 뻗는다는 의미를 담고 있습니다.',
@@ -205,13 +265,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to be present at a specific event, meeting, or location for a particular purpose',
       synonyms: ['visit', 'frequent', 'participate'],
       antonyms: ['miss', 'skip', 'abandon'],
+      wordDistractors: ['Attain', 'Attempt', 'Attest'],
+      definitionDistractors: [
+        'to pay close attention to details in a document',
+        'to take care of or provide service to someone',
+        'to try to accomplish a difficult or challenging task',
+      ],
       exampleSentences: [
         { en: 'Over 500 people attended the conference.', ko: '500명 이상의 사람들이 그 회의에 참석했다.' },
         { en: 'She attends classes every weekday.', ko: '그녀는 평일마다 수업에 출석한다.' },
       ],
     }
   ),
-  word('Average', '평균', 3, 'noun',
+  word('average', '평균', 3, 'noun',
     ['극단', '최고', '최저', '예외', '특이', '특별', '흔함', '드묾', '보통', '일반'],
     tips({
       etymology: '아랍어 awariya(손상된 상품의 손실 분담)에서 유래해 공평한 수치를 뜻하게 됐어요.',
@@ -224,13 +290,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'The result obtained by adding several quantities together and then dividing this total by the number of quantities.',
       synonyms: ['mean', 'median', 'standard'],
       antonyms: ['extreme', 'exception', 'outlier'],
+      wordDistractors: ['Averse', 'Avenge', 'Leverage'],
+      definitionDistractors: [
+        'the highest value in a set of numerical data',
+        'a typical example that represents a larger group',
+        'the most frequently occurring number in a dataset',
+      ],
       exampleSentences: [
         { en: 'The average temperature in July is 25°C.', ko: '7월의 평균 기온은 25도이다.' },
         { en: 'Her grades are above average for the class.', ko: '그녀의 성적은 학급 평균 이상이다.' },
       ],
     }
   ),
-  word('Aware', '알고 있는', 3, 'adjective',
+  word('aware', '알고 있는', 3, 'adjective',
     ['무지한', '모르는', '무관심한', '멍한', '부주의한', '수면 중', '의식 없는', '잊어버린', '눈치채지 못한', '어리석은'],
     tips({
       etymology: '고대 영어 gewær에서 유래하여 주변 상황을 주의 깊게 살피는 상태를 의미합니다.',
@@ -243,13 +315,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'having knowledge or perception of a situation or fact',
       synonyms: ['conscious', 'mindful', 'cognizant'],
       antonyms: ['unaware', 'ignorant', 'oblivious'],
+      wordDistractors: ['Awake', 'Award', 'Beware'],
+      definitionDistractors: [
+        'to be cautious and alert about potential dangers',
+        'feeling worried or anxious about a future event',
+        'to deliberately choose to ignore certain information',
+      ],
       exampleSentences: [
         { en: 'Are you aware of the risks involved?', ko: '수반되는 위험에 대해 알고 계신가요?' },
         { en: 'She was fully aware of what was happening.', ko: '그녀는 무슨 일이 일어나고 있는지 완전히 알고 있었다.' },
       ],
     }
   ),
-  word('Balance', '균형', 3, 'noun',
+  word('balance', '균형', 3, 'noun',
     ['불균형', '기울음', '전도', '넘어짐', '불안정', '흔들림', '편향', '한쪽짐', '과잉', '부족'],
     tips({
       etymology: '라틴어 \'bi(둘)\'와 \'lanx(접시)\'가 결합되어 양쪽 접시의 무게가 똑같은 저울 상태를 의미합니다.',
@@ -262,13 +340,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'a state of stability where opposing forces or elements are equal in proportion or weight',
       synonyms: ['equilibrium', 'stability', 'poise'],
       antonyms: ['imbalance', 'instability', 'disproportion'],
+      wordDistractors: ['Ballot', 'Balcony', 'Ballast'],
+      definitionDistractors: [
+        'the remaining amount of money owed on a debt',
+        'a device used to measure the weight of objects',
+        'the ability to coordinate physical movements smoothly',
+      ],
       exampleSentences: [
         { en: 'It is important to maintain work-life balance.', ko: '일과 삶의 균형을 유지하는 것이 중요하다.' },
         { en: 'She lost her balance and fell.', ko: '그녀는 중심을 잃고 넘어졌다.' },
       ],
     }
   ),
-  word('Basic', '기본적인', 3, 'adjective',
+  word('basic', '기본적인', 3, 'adjective',
     ['고급의', '복잡한', '특별한', '특수한', '진보한', '난해한', '세련된', '정교한', '첨단의', '최신의'],
     tips({
       etymology: '라틴어 \'basis\'에서 유래하여 사물의 가장 아래쪽인 바닥이나 토대를 의미합니다.',
@@ -281,13 +365,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'forming the foundation or starting point',
       synonyms: ['fundamental', 'essential', 'elementary'],
       antonyms: ['advanced', 'complex', 'secondary'],
+      wordDistractors: ['Basin', 'Basis', 'Basil'],
+      definitionDistractors: [
+        'lacking in quality or sophistication compared to others',
+        'required by law or regulation to be included',
+        'simple enough for anyone to understand without training',
+      ],
       exampleSentences: [
         { en: 'You need to learn the basic rules first.', ko: '먼저 기본적인 규칙들을 배워야 한다.' },
         { en: 'The course covers basic grammar and vocabulary.', ko: '이 과정은 기초 문법과 어휘를 다룬다.' },
       ],
     }
   ),
-  word('Behave', '행동하다', 3, 'verb',
+  word('behave', '행동하다', 3, 'verb',
     ['비행하다', '버릇없이', '난폭히', '무례히', '반항하다', '불순종하다', '도망치다', '나쁘게', '거친', '막되게'],
     tips({
       etymology: '접두사 be-(철저히)와 have(가지다)가 결합하여 자기 자신을 잘 다스리고 유지한다는 의미에서 유래했습니다.',
@@ -300,13 +390,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to act or conduct oneself in a specified way, especially with respect to propriety and good manners',
       synonyms: ['act', 'function', 'operate'],
       antonyms: ['misbehave', 'rebel', 'disobey'],
+      wordDistractors: ['Believe', 'Behold', 'Behalf'],
+      definitionDistractors: [
+        'to respond emotionally to a stressful situation',
+        'to perform a specific task or duty at work',
+        'to move or gesture in a particular physical manner',
+      ],
       exampleSentences: [
         { en: 'The children behaved well at the party.', ko: '아이들이 파티에서 얌전하게 행동했다.' },
         { en: 'Please behave yourself in public.', ko: '공공장소에서는 예의 바르게 행동해 주세요.' },
       ],
     }
   ),
-  word('Benefit', '이익', 3, 'noun',
+  word('benefit', '이익', 3, 'noun',
     ['손해', '불이익', '해악', '피해', '비용', '지출', '낭비', '손실', '해', '부작용'],
     tips({
       etymology: '라틴어 \'bene(좋은)\'와 \'facere(하다)\'가 결합되어 \'좋은 일을 행함\' 또는 \'좋은 결과\'를 뜻하게 되었습니다.',
@@ -319,13 +415,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'a helpful or good effect, or something intended to help',
       synonyms: ['advantage', 'profit', 'asset'],
       antonyms: ['disadvantage', 'detriment', 'drawback'],
+      wordDistractors: ['Beneath', 'Benign', 'Benevolent'],
+      definitionDistractors: [
+        'a payment made in exchange for goods or services',
+        'a charitable event organized to raise funds for a cause',
+        'a formal privilege granted by an employer to workers',
+      ],
       exampleSentences: [
         { en: 'The new tax law will be a significant benefit to small business owners.', ko: '새로운 세법은 소상공인들에게 상당한 이익이 될 것이다.' },
         { en: 'Regular meditation can bring the benefit of peace and mental clarity.', ko: '규칙적인 명상은 평온함과 정신적 명료함이라는 혜택을 가져다줄 수 있다.' },
       ],
     }
   ),
-  word('Besides', '게다가', 3, 'preposition',
+  word('besides', '게다가', 3, 'preposition',
     ['단지', '오직', '그만', '대신', '반대로', '그러나', '따라서', '결과적으로', '그래서', '그러므로'],
     tips({
       etymology: 'be(옆에)와 side(측면)가 결합된 형태에 s가 붙어 \'옆에 하나 더\'라는 의미가 확장되었습니다.',
@@ -338,13 +440,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'in addition to or apart from something',
       synonyms: ['moreover', 'furthermore', 'additionally'],
       antonyms: ['excluding', 'except', 'instead'],
+      wordDistractors: ['Beside', 'Betides', 'Resides'],
+      definitionDistractors: [
+        'located physically next to or adjacent to something',
+        'in contrast to or as opposed to what was stated',
+        'as a replacement for something previously mentioned',
+      ],
       exampleSentences: [
         { en: 'Besides English, she speaks French and Spanish.', ko: '영어 외에도 그녀는 프랑스어와 스페인어를 할 줄 안다.' },
         { en: 'Besides being tired, I also feel hungry.', ko: '피곤한 것 외에도 배가 고프다.' },
       ],
     }
   ),
-  word('Blame', '비난하다', 3, 'verb',
+  word('blame', '비난하다', 3, 'verb',
     ['칭찬하다', '변호하다', '방어하다', '옹호하다', '감사하다', '인정하다', '칭송하다', '찬양하다', '면책하다', '용서하다'],
     tips({
       etymology: '라틴어 blasphemare에서 유래하여 신성모독이나 비방을 통해 잘못을 남에게 돌리는 행위를 뜻하게 되었습니다.',
@@ -357,13 +465,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to say or think that a person or thing is responsible for something bad that has happened',
       synonyms: ['accuse', 'reproach', 'condemn'],
       antonyms: ['praise', 'commend', 'exonerate'],
+      wordDistractors: ['Blaze', 'Bland', 'Flame'],
+      definitionDistractors: [
+        'to feel ashamed or guilty about one\'s own actions',
+        'to investigate the cause of an accident or failure',
+        'to criticize the quality of someone\'s work publicly',
+      ],
       exampleSentences: [
         { en: 'Don\'t blame me for your mistake.', ko: '너의 실수를 내 탓으로 돌리지 마.' },
         { en: 'She always blames others for her problems.', ko: '그녀는 항상 자신의 문제를 남 탓으로 돌린다.' },
       ],
     }
   ),
-  word('Block', '막다', 3, 'verb',
+  word('block', '막다', 3, 'verb',
     ['열다', '통과시키다', '허용하다', '돕다', '촉진하다', '지원하다', '개방하다', '해제하다', '해방하다', '통과하다'],
     tips({
       etymology: '네덜란드어 blok(나무 덩어리)에서 유래하여 길을 가로막는 커다란 물체를 의미하게 되었습니다.',
@@ -376,13 +490,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to obstruct or prevent passage or progress',
       synonyms: ['obstruct', 'hinder', 'bar'],
       antonyms: ['clear', 'open', 'facilitate'],
+      wordDistractors: ['Blank', 'Black', 'Blink'],
+      definitionDistractors: [
+        'a rectangular section of a city surrounded by streets',
+        'to separate something into smaller individual pieces',
+        'to stack objects on top of one another in layers',
+      ],
       exampleSentences: [
         { en: 'A fallen tree blocked the road.', ko: '쓰러진 나무가 도로를 가로막았다.' },
         { en: 'The firewall blocks unauthorized access.', ko: '방화벽이 승인되지 않은 접근을 차단한다.' },
       ],
     }
   ),
-  word('Bomb', '폭탄', 3, 'noun',
+  word('bomb', '폭탄', 3, 'noun',
     ['미사일', '로켓', '화살', '창', '검', '방패', '헬멧', '갑옷', '무기', '총'],
     tips({
       etymology: '그리스어 bombos(웅웅거리는 소리)에서 유래해 폭발할 때의 큰 소리를 뜻하게 되었습니다.',
@@ -395,13 +515,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'an explosive weapon designed to cause destruction',
       synonyms: ['explosive', 'missile', 'shell'],
       antonyms: ['shield', 'protection', 'safeguard'],
+      wordDistractors: ['Bond', 'Bone', 'Tomb'],
+      definitionDistractors: [
+        'a loud noise caused by a sudden impact or collision',
+        'a container designed to store hazardous materials safely',
+        'a device that emits a signal to alert nearby people',
+      ],
       exampleSentences: [
         { en: 'The building was destroyed by a bomb.', ko: '그 건물은 폭탄에 의해 파괴되었다.' },
         { en: 'The bomb exploded at midnight.', ko: '폭탄은 자정에 폭발했다.' },
       ],
     }
   ),
-  word('Borrow', '빌리다', 3, 'verb',
+  word('borrow', '빌리다', 3, 'verb',
     ['빌려주다', '돌려주다', '갚다', '갚아주다', '반환하다', '기부하다', '선물하다', '증여하다', '보관하다', '소유하다'],
     tips({
       etymology: '고대 영어 borgian에서 유래되었으며, 원래는 무언가를 가져오기 위해 담보를 제공한다는 의미를 담고 있습니다.',
@@ -414,13 +540,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to take and use something that belongs to someone else with the intention of returning it later',
       synonyms: ['loan', 'hire', 'take'],
       antonyms: ['lend', 'return', 'give'],
+      wordDistractors: ['Burrow', 'Barrow', 'Borough'],
+      definitionDistractors: [
+        'to lend money or possessions to someone in need',
+        'to steal something without the owner\'s knowledge',
+        'to purchase goods on credit to be paid later',
+      ],
       exampleSentences: [
         { en: 'Can I borrow your pen for a moment?', ko: '잠깐 펜 좀 빌릴 수 있을까?' },
         { en: 'She borrowed a large sum of money from the bank to start her business.', ko: '그녀는 사업을 시작하기 위해 은행에서 거액의 돈을 빌렸다.' },
       ],
     }
   ),
-  word('Bow', '인사하다', 3, 'verb',
+  word('bow', '인사하다', 3, 'verb',
     ['서다', '고개 들다', '등지다', '무시하다', '거절하다', '돌아서다', '얼굴 숙이다', '무례히', '지나가다', '먹다'],
     tips({
       etymology: '고대 영어 bugan(굽히다)에서 유래하여 몸을 숙이는 동작을 뜻해요.',
@@ -433,13 +565,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to bend the body or head as a sign of respect or greeting',
       synonyms: ['bend', 'nod', 'curtsy'],
       antonyms: ['straighten', 'rise', 'defy'],
+      wordDistractors: ['Bowl', 'Blow', 'Vow'],
+      definitionDistractors: [
+        'to wave one\'s hand as a casual farewell gesture',
+        'to tie a decorative ribbon into a looped knot',
+        'to curve or arch something into a rounded shape',
+      ],
       exampleSentences: [
         { en: 'The actors bowed to the audience.', ko: '배우들이 관객들에게 절을 했다.' },
         { en: 'In Japan, people bow when greeting each other.', ko: '일본에서는 사람들이 인사할 때 고개를 숙인다.' },
       ],
     }
   ),
-  word('Branch', '가지', 3, 'noun',
+  word('branch', '가지', 3, 'noun',
     ['뿌리', '줄기', '잎', '꽃', '열매', '씨', '껍질', '나무', '숲', '정원'],
     tips({
       etymology: '라틴어 branca(발바닥)에서 유래해 나뭇가지가 뻗어 나가는 모양을 뜻하게 되었습니다.',
@@ -452,13 +590,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'A part of a tree that grows out from the main central stem',
       synonyms: ['limb', 'bough', 'offshoot'],
       antonyms: ['trunk', 'root', 'main'],
+      wordDistractors: ['Blanch', 'Ranch', 'Brunch'],
+      definitionDistractors: [
+        'the main trunk or stem of a large tree',
+        'a local office of a company or organization',
+        'a narrow path that diverges from the main road',
+      ],
       exampleSentences: [
         { en: 'A bird sat on a branch of the tree.', ko: '새 한 마리가 나뭇가지에 앉아 있었다.' },
         { en: 'The bank has opened a new branch downtown.', ko: '그 은행은 시내에 새로운 지점을 열었다.' },
       ],
     }
   ),
-  word('Bunch', '한 묶음', 3, 'noun',
+  word('bunch', '한 묶음', 3, 'noun',
     ['낱개', '한 개', '조금', '조각', '일부', '분리', '흩어짐', '단독', '홀로', '개별'],
     tips({
       etymology: '중세 영어에서 유래하여 여러 개가 툭 튀어나와 뭉쳐 있는 모양을 나타냅니다.',
@@ -471,13 +615,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'A number of things of the same kind fastened or grouped together',
       synonyms: ['cluster', 'bundle', 'collection'],
       antonyms: ['individual', 'single', 'fragment'],
+      wordDistractors: ['Bench', 'Brunch', 'Hunch'],
+      definitionDistractors: [
+        'a large quantity of loose items scattered about',
+        'a single serving or portion of food or drink',
+        'a pair of items that are matched or coordinated',
+      ],
       exampleSentences: [
         { en: 'She bought a bunch of grapes.', ko: '그녀는 포도 한 송이를 샀다.' },
         { en: 'He gave her a bunch of flowers.', ko: '그는 그녀에게 꽃 한 다발을 주었다.' },
       ],
     }
   ),
-  word('Burst', '터지다', 3, 'verb',
+  word('burst', '터지다', 3, 'verb',
     ['수리하다', '봉합하다', '막다', '멈추다', '완전한', '온전한', '보존하다', '유지하다', '천천히', '조용히'],
     tips({
       etymology: '고대 영어 berstan에서 유래하여 내부 압력을 견디지 못하고 갑자기 파괴되는 현상을 뜻합니다.',
@@ -490,13 +640,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to break open or apart suddenly and violently, usually due to internal pressure',
       synonyms: ['explode', 'rupture', 'shatter'],
       antonyms: ['mend', 'repair', 'seal'],
+      wordDistractors: ['Burnt', 'Blurt', 'Thrust'],
+      definitionDistractors: [
+        'to release air or gas slowly from a container',
+        'to ignite or catch fire suddenly and intensely',
+        'to crack gradually under sustained pressure over time',
+      ],
       exampleSentences: [
         { en: 'The balloon will burst if you keep blowing air into it.', ko: '공기를 계속 불어넣으면 풍선이 터질 것이다.' },
         { en: 'She burst into tears after holding back her emotions all day.', ko: '그녀는 하루 종일 감정을 억누르다가 울음을 터뜨렸다.' },
       ],
     }
   ),
-  word('Cable', '케이블', 3, 'noun',
+  word('cable', '케이블', 3, 'noun',
     ['안테나', '수신기', '송신기', '연결', '무선', '신호', '전파', '배터리', '충전기', '전원'],
     tips({
       etymology: '라틴어 capulum(잡는 끈)에서 유래하여 무언가를 묶거나 잇는 선을 뜻합니다.',
@@ -509,13 +665,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'A thick rope or wire used for tying, supporting, or transmitting electricity or data signals.',
       synonyms: ['wire', 'cord', 'line'],
       antonyms: ['wireless', 'radio', 'wifi'],
+      wordDistractors: ['Cabin', 'Cabal', 'Fable'],
+      definitionDistractors: [
+        'a television broadcasting system that uses satellite signals',
+        'a thin flexible thread used for sewing or stitching',
+        'a metal chain used to secure heavy objects in place',
+      ],
       exampleSentences: [
         { en: 'The cable connects the computer to the monitor.', ko: '케이블이 컴퓨터와 모니터를 연결한다.' },
         { en: 'We need a longer cable for the phone charger.', ko: '충전기에 더 긴 케이블이 필요하다.' },
       ],
     }
   ),
-  word('Calculate', '계산하다', 3, 'verb',
+  word('calculate', '계산하다', 3, 'verb',
     ['추측하다', '대략하다', '어림하다', '틀리다', '잘못하다', '무시하다', '추측', '대충', '임의', '짐작'],
     tips({
       etymology: '라틴어 calculus(작은 돌)에서 유래했는데, 고대에 작은 돌을 이용해 수를 세던 방식에서 시작되었습니다.',
@@ -528,13 +690,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to determine a number or amount using mathematical operations',
       synonyms: ['compute', 'figure', 'enumerate'],
       antonyms: ['guess', 'estimate', 'miscalculate'],
+      wordDistractors: ['Calibrate', 'Circulate', 'Capsulate'],
+      definitionDistractors: [
+        'to make a rough approximation without precise data',
+        'to record numerical data into a spreadsheet or log',
+        'to predict a future outcome based on current trends',
+      ],
       exampleSentences: [
         { en: 'Please calculate the total cost of all the items.', ko: '모든 물품의 총 비용을 계산해 주세요.' },
         { en: 'Scientists calculated the exact distance to the moon.', ko: '과학자들이 달까지의 정확한 거리를 계산했다.' },
       ],
     }
   ),
-  word('Calendar', '달력', 3, 'noun',
+  word('calendar', '달력', 3, 'noun',
     ['시계', '타이머', '알람', '일정', '기념일', '시간표', '스케줄', '날짜', '요일', '월'],
     tips({
       etymology: '라틴어 kalendae에서 유래했으며, 고대 로마에서 매달의 첫날을 의미하던 단어가 날짜를 기록하는 체계로 발전했습니다.',
@@ -547,13 +715,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'A system or chart that organizes time into days, weeks, and months for tracking dates and events.',
       synonyms: ['almanac', 'timetable', 'agenda'],
       antonyms: ['clock', 'watch', 'stopwatch'],
+      wordDistractors: ['Caliber', 'Cylinder', 'Calender'],
+      definitionDistractors: [
+        'a device used to measure the passage of hours and minutes',
+        'a written list of tasks to be completed in order',
+        'a journal or diary used for recording personal thoughts',
+      ],
       exampleSentences: [
         { en: 'I need to check the calendar to see when the holiday starts.', ko: '휴일이 언제 시작되는지 달력을 확인해야 한다.' },
         { en: 'She marked her graduation day with a red circle on the calendar.', ko: '그녀는 달력에 졸업 날짜를 빨간색 동그라미로 표시했다.' },
       ],
     }
   ),
-  word('Campaign', '운동, 캠페인', 3, 'noun',
+  word('campaign', '운동, 캠페인', 3, 'noun',
     ['휴전', '평화', '무행동', '미동', '침묵', '정지', '중단', '포기', '해산', '종료'],
     tips({
       etymology: '라틴어 campus(들판)에서 유래하여 원래 탁 트인 들판에서 벌이는 군사 작전을 의미했습니다.',
@@ -566,13 +740,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'an organized series of activities or efforts to achieve a goal',
       synonyms: ['drive', 'movement', 'operation'],
       antonyms: ['inaction', 'stoppage', 'halt'],
+      wordDistractors: ['Champion', 'Champagne', 'Companion'],
+      definitionDistractors: [
+        'a single event or protest held at a specific location',
+        'a competition between teams or individuals for a prize',
+        'a formal agreement between two political parties',
+      ],
       exampleSentences: [
         { en: 'The charity started a campaign to raise money for the homeless.', ko: '자선 단체가 노숙자를 위한 모금 캠페인을 시작했다.' },
         { en: 'The election campaign lasted for three months.', ko: '선거 운동은 3개월 동안 지속되었다.' },
       ],
     }
   ),
-  word('Cancer', '암', 3, 'noun',
+  word('cancer', '암', 3, 'noun',
     ['감기', '독감', '두통', '위염', '당뇨', '고혈압', '심장병', '간염', '폐렴', '천식'],
     tips({
       etymology: '라틴어 cancer(게)에서 유래했는데, 종양의 혈관이 게 다리처럼 뻗어 나가는 모습에서 붙여진 이름입니다.',
@@ -585,13 +765,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'A serious disease caused by an uncontrolled division of abnormal cells in a part of the body.',
       synonyms: ['malignancy', 'tumor', 'carcinoma'],
       antonyms: ['health', 'wellness', 'fitness'],
+      wordDistractors: ['Canker', 'Canter', 'Dancer'],
+      definitionDistractors: [
+        'a chronic condition that causes recurring pain in joints',
+        'an infectious disease that spreads rapidly between people',
+        'a temporary illness caused by exposure to toxic substances',
+      ],
       exampleSentences: [
         { en: 'Early detection of cancer significantly increases the chances of successful treatment.', ko: '암을 조기에 발견하는 것은 성공적인 치료 가능성을 크게 높여준다.' },
         { en: 'Scientists are working tirelessly to find a cure for cancer.', ko: '과학자들은 암 치료법을 찾기 위해 끊임없이 노력하고 있다.' },
       ],
     }
   ),
-  word('Carbon', '탄소', 3, 'noun',
+  word('carbon', '탄소', 3, 'noun',
     ['수소', '산소', '질소', '금', '은', '철', '구리', '물', '공기', '대기'],
     tips({
       etymology: '라틴어 carbo(숯)에서 유래하여 모든 생명체의 기본이 되는 원소를 뜻합니다.',
@@ -604,13 +790,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'a chemical element that is the basis of all organic compounds',
       synonyms: ['element', 'graphite', 'charcoal'],
       antonyms: ['oxygen', 'hydrogen', 'nitrogen'],
+      wordDistractors: ['Carton', 'Carbine', 'Cordon'],
+      definitionDistractors: [
+        'a type of fuel derived from fossilized plant material',
+        'a dark powdery residue left after burning wood',
+        'a gas released during the process of respiration',
+      ],
       exampleSentences: [
         { en: 'Carbon is the foundation of all living things.', ko: '탄소는 모든 생명체의 기초이다.' },
         { en: 'Reducing carbon emissions is very important for the earth.', ko: '탄소 배출을 줄이는 것은 지구에 매우 중요하다.' },
       ],
     }
   ),
-  word('Career', '경력', 3, 'noun',
+  word('career', '경력', 3, 'noun',
     ['취미', '여가', '휴식', '은퇴', '실업', '공백', '무직', '학생', '신입', '초보'],
     tips({
       etymology: '라틴어 carrus(수레)에서 유래하여 인생이라는 길을 달려가는 수레의 궤적을 뜻합니다.',
@@ -623,13 +815,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'An occupation undertaken for a significant period of a person\'s life and with opportunities for progress.',
       synonyms: ['profession', 'vocation', 'calling'],
       antonyms: ['unemployment', 'hobby', 'avocation'],
+      wordDistractors: ['Carrier', 'Carer', 'Careen'],
+      definitionDistractors: [
+        'a temporary position or job held for a short time',
+        'the total amount of money earned during one\'s lifetime',
+        'a formal document listing one\'s educational background',
+      ],
       exampleSentences: [
         { en: 'She is looking for opportunities to advance her career in marketing.', ko: '그녀는 마케팅 분야에서 경력을 발전시킬 기회를 찾고 있다.' },
         { en: 'Choosing a career requires careful consideration of one\'s talents.', ko: '직업을 선택하는 것은 개인의 재능에 대한 신중한 고민이 필요하다.' },
       ],
     }
   ),
-  word('Celebrate', '축하하다', 3, 'verb',
+  word('celebrate', '축하하다', 3, 'verb',
     ['슬퍼하다', '애도하다', '비난하다', '무시하다', '지나가다', '냉담하다', '무관심하다', '우울하다', '한탄하다', '거절하다'],
     tips({
       etymology: '라틴어 celebrare에서 유래했으며 본래 \'사람들이 많이 모이다\'라는 의미에서 축제의 의미로 확장되었습니다.',
@@ -642,13 +840,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'To perform a public or private ritual to mark a happy day, event, or period of time.',
       synonyms: ['commemorate', 'rejoice', 'observe'],
       antonyms: ['mourn', 'grieve', 'lament'],
+      wordDistractors: ['Celebrity', 'Calibrate', 'Cerebrate'],
+      definitionDistractors: [
+        'to gather a group of people for a formal meeting',
+        'to remember and honor someone who has passed away',
+        'to publicly recognize an individual\'s achievements with praise',
+      ],
       exampleSentences: [
         { en: 'The entire city gathered to celebrate the team\'s championship victory.', ko: '팀의 우승을 축하하기 위해 도시 전체가 모였다.' },
         { en: 'How do you plan to celebrate your twentieth wedding anniversary?', ko: '결혼 20주년을 어떻게 축하할 계획인가요?' },
       ],
     }
   ),
-  word('Ceremony', '의식', 3, 'noun',
+  word('ceremony', '의식', 3, 'noun',
     ['일상', '무례', '생략', '간소화', '비공식', '쉬운', '편한', '무작위', '자유', '휴식'],
     tips({
       etymology: '라틴어 caerimonia에서 유래하여 신성한 종교적 의례나 격식을 갖춘 절차를 뜻합니다.',
@@ -661,13 +865,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'a formal event performed on a special occasion',
       synonyms: ['ritual', 'rite', 'observance'],
       antonyms: ['informality', 'casualness', 'neglect'],
+      wordDistractors: ['Cemetery', 'Ceramic', 'Certify'],
+      definitionDistractors: [
+        'an informal gathering of friends for socializing',
+        'a rehearsed performance presented before an audience',
+        'a traditional custom practiced within a specific culture',
+      ],
       exampleSentences: [
         { en: 'The award ceremony will be held next week.', ko: '시상식이 다음 주에 열릴 예정이다.' },
         { en: 'The wedding ceremony was very beautiful and touching.', ko: '결혼식은 매우 아름답고 감동적이었다.' },
       ],
     }
   ),
-  word('Chapter', '장', 3, 'noun',
+  word('chapter', '장', 3, 'noun',
     ['머리말', '부록', '찾아보기', '표지', '페이지', '절', '문단', '문장', '단어', '글자'],
     tips({
       etymology: '라틴어 capitulum(작은 머리)에서 유래하여 책의 주요 머리 부분을 뜻합니다.',
@@ -680,13 +890,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'a main division of a book, typically with a number or title',
       synonyms: ['section', 'part', 'segment'],
       antonyms: ['whole', 'entirety', 'preface'],
+      wordDistractors: ['Charter', 'Chatter', 'Chaplain'],
+      definitionDistractors: [
+        'a brief summary or overview at the beginning of a book',
+        'a single page within a printed document or publication',
+        'the concluding remarks at the end of a written work',
+      ],
       exampleSentences: [
         { en: 'Please read the fifth chapter of the book for class.', ko: '수업을 위해 책의 다섯 번째 장을 읽어 오세요.' },
         { en: 'This chapter of the book explains the history of the war.', ko: '책의 이 장은 전쟁의 역사를 설명한다.' },
       ],
     }
   ),
-  word('Character', '성격', 3, 'noun',
+  word('character', '성격', 3, 'noun',
     ['외모', '몸매', '얼굴', '신장', '체중', '의상', '머리모양', '행위', '습관', '버릇'],
     tips({
       etymology: '그리스어 kharakter(새겨진 도구)에서 유래하여 사람의 내면에 깊이 새겨진 고유한 성질을 의미합니다.',
@@ -699,13 +915,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'the mental and moral qualities that make a person unique',
       synonyms: ['personality', 'nature', 'temperament'],
       antonyms: ['appearance', 'physique', 'exterior'],
+      wordDistractors: ['Charter', 'Chariot', 'Charade'],
+      definitionDistractors: [
+        'a fictional person in a novel, play, or movie',
+        'a letter or symbol used in a writing system',
+        'the reputation or public image of a person or brand',
+      ],
       exampleSentences: [
         { en: 'She is a person of very strong and brave character.', ko: '그녀는 매우 강하고 용감한 성격을 가진 사람이다.' },
         { en: 'The main character in the movie was very funny.', ko: '영화 속 주인공 캐릭터는 매우 재미있었다.' },
       ],
     }
   ),
-  word('Chart', '차트', 3, 'noun',
+  word('chart', '차트', 3, 'noun',
     ['글', '문장', '사진', '도면', '설명', '서술', '이야기', '논문', '소설', '수필'],
     tips({
       etymology: '라틴어 charta(종이)에서 유래하여 정보를 한눈에 보게 정리한 종이를 뜻합니다.',
@@ -718,13 +940,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'a sheet of information in the form of a graph or table',
       synonyms: ['graph', 'diagram', 'table'],
       antonyms: ['text', 'prose', 'narrative'],
+      wordDistractors: ['Charm', 'Chair', 'Chant'],
+      definitionDistractors: [
+        'a detailed written report analyzing statistical data',
+        'a map used for navigation on sea or land',
+        'a ranked list of the most popular songs or albums',
+      ],
       exampleSentences: [
         { en: 'The chart shows how our sales grew this year.', ko: '이 차트는 올해 매출이 어떻게 성장했는지 보여준다.' },
         { en: 'Look at the chart to see the results.', ko: '결과를 보려면 차트를 확인하세요.' },
       ],
     }
   ),
-  word('Chemical', '화학 물질', 3, 'noun',
+  word('chemical', '화학 물질', 3, 'noun',
     ['물리', '생물', '지질', '천문', '수학', '자연', '유기', '무기', '원소', '화합물'],
     tips({
       etymology: '연금술을 뜻하는 alchemy에서 유래하여 물질의 성질과 변화를 다루는 단어가 되었습니다.',
@@ -737,13 +965,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'a distinct substance that has been purified or prepared, especially artificially',
       synonyms: ['substance', 'compound', 'element'],
       antonyms: ['natural', 'organic', 'biological'],
+      wordDistractors: ['Clerical', 'Clinical', 'Comical'],
+      definitionDistractors: [
+        'a naturally occurring mineral found in the earth\'s crust',
+        'a reaction that produces heat when two substances mix',
+        'a type of medication prescribed for treating illness',
+      ],
       exampleSentences: [
         { en: 'The lab technician analyzed the unknown chemical to identify its properties.', ko: '실험실 기술자는 미지의 화학 물질의 성질을 확인하기 위해 분석했다.' },
         { en: 'Farmers are trying to reduce the use of harmful chemicals on their crops.', ko: '농부들은 농작물에 사용하는 유해 화학 물질의 사용을 줄이려 노력하고 있다.' },
       ],
     }
   ),
-  word('Citizen', '시민', 3, 'noun',
+  word('citizen', '시민', 3, 'noun',
     ['외국인', '이민자', '난민', '왕', '귀족', '노예', '군인', '피난민', '무국적', '여행자'],
     tips({
       etymology: '라틴어 civitas(도시)에서 유래하여 도시에 거주하며 권리를 가진 사람을 의미합니다.',
@@ -756,13 +990,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'a person who is a legally recognized member of a particular country or state',
       synonyms: ['national', 'subject', 'inhabitant'],
       antonyms: ['foreigner', 'alien', 'immigrant'],
+      wordDistractors: ['Civilian', 'Citation', 'Cistern'],
+      definitionDistractors: [
+        'a person who lives in a particular city or town',
+        'an elected official who represents a district in government',
+        'a person who has been granted temporary residency status',
+      ],
       exampleSentences: [
         { en: 'Every citizen has the right to vote in the election.', ko: '모든 시민은 선거에서 투표할 권리가 있다.' },
         { en: 'He officially became a citizen of this country after the ceremony.', ko: '그는 의식을 마친 후 공식적으로 이 나라의 시민이 되었다.' },
       ],
     }
   ),
-  word('Claim', '주장하다', 3, 'verb',
+  word('claim', '주장하다', 3, 'verb',
     ['부인하다', '거절하다', '포기하다', '양보하다', '인정하다', '동의하다', '수용하다', '받아들이다', '승인하다', '허락하다'],
     tips({
       etymology: '라틴어 clamare(외치다)에서 유래하여 자신의 권리를 큰 소리로 말함을 뜻합니다.',
@@ -775,13 +1015,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to state that something is true or is a fact, often without providing evidence or proof',
       synonyms: ['assert', 'declare', 'maintain'],
       antonyms: ['deny', 'reject', 'disclaim'],
+      wordDistractors: ['Clam', 'Climb', 'Cling'],
+      definitionDistractors: [
+        'to demand payment or compensation from an institution',
+        'to formally register ownership of a piece of property',
+        'to provide convincing evidence to support a theory',
+      ],
       exampleSentences: [
         { en: 'He claims that he was not present at the scene of the crime.', ko: '그는 범죄 현장에 자신이 없었다고 주장한다.' },
         { en: 'You must present your ticket to claim your lost luggage at the counter.', ko: '카운터에서 잃어버린 수하물을 찾으려면 티켓을 제시해야 한다.' },
       ],
     }
   ),
-  word('Climate', '기후', 3, 'noun',
+  word('climate', '기후', 3, 'noun',
     ['날씨', '온도', '습도', '바람', '비', '눈', '폭풍', '일기', '대기', '환경'],
     tips({
       etymology: '그리스어 klima(기울기)에서 유래했으며, 지구가 기울어진 각도에 따라 태양열을 받는 양이 달라져 지역별 기후가 결정된다는 의미를 담고 있습니다.',
@@ -794,13 +1040,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'The general weather conditions prevailing in an area over a long period of time.',
       synonyms: ['meteorological conditions', 'weather patterns', 'clime'],
       antonyms: ['daily weather', 'short-term forecast', 'temporary atmosphere'],
+      wordDistractors: ['Climb', 'Climax', 'Clique'],
+      definitionDistractors: [
+        'the daily temperature and precipitation in a specific area',
+        'the overall atmosphere or mood in a social setting',
+        'the amount of sunlight received during a particular season',
+      ],
       exampleSentences: [
         { en: 'The Mediterranean region is famous for its mild and sunny climate.', ko: '지중해 지역은 온화하고 화창한 기후로 유명하다.' },
         { en: 'Global warming is causing a significant shift in the world\'s climate.', ko: '지구 온난화는 전 세계 기후에 중대한 변화를 일으키고 있다.' },
       ],
     }
   ),
-  word('Combine', '결합하다', 3, 'verb',
+  word('combine', '결합하다', 3, 'verb',
     ['분리하다', '나누다', '갈라놓다', '해체하다', '분해하다', '흩뜨리다', '해산하다', '격리하다', '차단하다', '단절하다'],
     tips({
       etymology: '라틴어 com(함께)과 bini(둘씩)가 결합하여 두 요소를 하나로 묶는다는 의미에서 유래되었습니다.',
@@ -813,13 +1065,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to join or mix two or more things together to form a single unit or substance',
       synonyms: ['merge', 'unite', 'blend'],
       antonyms: ['separate', 'divide', 'detach'],
+      wordDistractors: ['Combat', 'Confine', 'Compile'],
+      definitionDistractors: [
+        'to compare two or more items to find differences',
+        'to place items next to each other for organization',
+        'to gather separate elements into a single collection',
+      ],
       exampleSentences: [
         { en: 'The chef decided to combine the various spices to create a unique flavor.', ko: '요리사는 독특한 풍미를 만들기 위해 다양한 양념을 결합하기로 했다.' },
         { en: 'The two small companies will combine to compete with larger corporations.', ko: '두 작은 회사는 더 큰 기업들과 경쟁하기 위해 합칠 것이다.' },
       ],
     }
   ),
-  word('Comfort', '위로', 3, 'noun',
+  word('comfort', '위로', 3, 'noun',
     ['불편', '고통', '슬픔', '고민', '걱정', '불안', '두려움', '스트레스', '고난', '역경'],
     tips({
       etymology: '라틴어 com(강조)과 fortis(강한)가 합쳐져 함께 힘을 주어 강하게 만든다는 의미에서 유래했습니다.',
@@ -832,13 +1090,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'a state of physical ease and freedom from pain or constraint, or the easing of a person\'s feelings of grief or distress',
       synonyms: ['solace', 'ease', 'relief'],
       antonyms: ['discomfort', 'misery', 'distress'],
+      wordDistractors: ['Commit', 'Compost', 'Concert'],
+      definitionDistractors: [
+        'a feeling of deep satisfaction after completing a task',
+        'luxury or expensive items that provide physical pleasure',
+        'the act of encouraging someone to continue their efforts',
+      ],
       exampleSentences: [
         { en: 'The soft music brought comfort to everyone in the room.', ko: '부드러운 음악이 방 안의 모든 사람에게 위로를 가져다주었다.' },
         { en: 'He sought comfort from his old friends after the loss.', ko: '그는 상실감을 겪은 후 옛 친구들에게서 위로를 찾았다.' },
       ],
     }
   ),
-  word('Command', '명령', 3, 'noun',
+  word('command', '명령', 3, 'noun',
     ['복종', '순종', '요청', '제안', '허락', '승인', '동의', '거절', '반대', '거부'],
     tips({
       etymology: '라틴어 com(강조)과 mandare(맡기다)가 합쳐져 공식적으로 지시를 맡긴다는 뜻에서 유래했습니다.',
@@ -851,13 +1115,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'an authoritative order or instruction given by someone in a position of power',
       synonyms: ['order', 'instruction', 'directive'],
       antonyms: ['request', 'suggestion', 'plea'],
+      wordDistractors: ['Commend', 'Comment', 'Demand'],
+      definitionDistractors: [
+        'a polite request made to someone of equal standing',
+        'a strong ability to control or influence a situation',
+        'a verbal agreement between two parties to cooperate',
+      ],
       exampleSentences: [
         { en: 'The soldiers waited for the command to advance.', ko: '군인들은 전진 명령을 기다렸다.' },
         { en: 'She has an excellent command of the English language.', ko: '그녀는 영어에 대한 훌륭한 구사력을 갖추고 있다.' },
       ],
     }
   ),
-  word('Common', '흔한', 3, 'adjective',
+  word('common', '흔한', 3, 'adjective',
     ['희귀한', '특별한', '독특한', '드문', '비범한', '예외적', '놀라운', '이상한', '특이한', '유일한'],
     tips({
       etymology: '라틴어 communis에서 유래하여 여러 사람이 함께 공유하고 나누는 상태를 의미합니다.',
@@ -870,13 +1140,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'occurring or found often; shared by more than one person or group',
       synonyms: ['ordinary', 'usual', 'frequent'],
       antonyms: ['rare', 'unusual', 'unique'],
+      wordDistractors: ['Comma', 'Commune', 'Comet'],
+      definitionDistractors: [
+        'belonging to or shared equally by a community',
+        'considered inferior or of low social status',
+        'widely known and recognized by the general public',
+      ],
       exampleSentences: [
         { en: 'It is very common to see people using smartphones on the subway.', ko: '지하철에서 사람들이 스마트폰을 사용하는 것은 매우 흔한 일이다.' },
         { en: 'They discovered a common interest in classical music.', ko: '그들은 클래식 음악이라는 공통의 관심사를 발견했다.' },
       ],
     }
   ),
-  word('Compare', '비교하다', 3, 'verb',
+  word('compare', '비교하다', 3, 'verb',
     ['동일시하다', '혼동하다', '무시하다', '별개로', '독립적으로', '분리해서', '구분 없이', '섞다', '합치다', '통합하다'],
     tips({
       etymology: '라틴어 com(함께)과 par(동등한)가 합쳐져 두 대상을 나란히 두고 같고 다름을 살핀다는 의미에서 유래했습니다.',
@@ -889,13 +1165,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to examine two or more objects, ideas, or people in order to show the likeness or difference between them',
       synonyms: ['contrast', 'match', 'correlate'],
       antonyms: ['ignore', 'disregard', 'neglect'],
+      wordDistractors: ['Compass', 'Compel', 'Compose'],
+      definitionDistractors: [
+        'to evaluate the quality of a single item in isolation',
+        'to arrange items in order from best to worst',
+        'to choose one option over another after deliberation',
+      ],
       exampleSentences: [
         { en: 'You should compare the prices of both items before buying.', ko: '사기 전에 두 물건의 가격을 비교해야 한다.' },
         { en: 'It is not easy to compare the two cars and find the differences.', ko: '두 자동차를 비교해서 차이점을 알아내기는 쉽지 않다.' },
       ],
     }
   ),
-  word('Compete', '경쟁하다', 3, 'verb',
+  word('compete', '경쟁하다', 3, 'verb',
     ['협력하다', '협동하다', '도와주다', '배려하다', '양보하다', '포기하다', '기권하다', '물러나다', '퇴장하다', '중단하다'],
     tips({
       etymology: '라틴어 com(함께)과 petere(추구하다)가 합쳐져 같은 목표를 향해 함께 달린다는 의미에서 유래했습니다.',
@@ -908,13 +1190,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to strive to gain or win something by defeating others who are trying to do the same',
       synonyms: ['contend', 'vie', 'rival'],
       antonyms: ['cooperate', 'collaborate', 'assist'],
+      wordDistractors: ['Complete', 'Compute', 'Compote'],
+      definitionDistractors: [
+        'to participate in an activity without concern for winning',
+        'to work alongside others toward a shared objective',
+        'to practice repeatedly in order to improve a skill',
+      ],
       exampleSentences: [
         { en: 'Many runners will compete for the gold medal in the upcoming race.', ko: '다가오는 경주에서 많은 주자들이 금메달을 위해 경쟁할 것이다.' },
         { en: 'Small stores find it hard to compete against big malls.', ko: '작은 상점들은 대형 쇼핑몰과 경쟁하기 어렵다.' },
       ],
     }
   ),
-  word('Complain', '불평하다', 3, 'verb',
+  word('complain', '불평하다', 3, 'verb',
     ['칭찬하다', '감사하다', '만족하다', '찬성하다', '동의하다', '수용하다', '인정하다', '기뻐하다', '즐기다', '응원하다'],
     tips({
       etymology: '라틴어 com(함께)과 plangere(가슴을 치다)가 합쳐져 슬픔이나 고통을 강하게 표현하던 것에서 유래했습니다.',
@@ -927,13 +1215,19 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to express dissatisfaction, pain, or resentment about a particular situation or person',
       synonyms: ['grumble', 'gripe', 'protest'],
       antonyms: ['praise', 'commend', 'approve'],
+      wordDistractors: ['Comply', 'Complex', 'Contain'],
+      definitionDistractors: [
+        'to report a problem to the authorities for investigation',
+        'to explain the reasons behind a personal decision',
+        'to argue passionately in defense of one\'s own beliefs',
+      ],
       exampleSentences: [
         { en: 'The neighbors began to complain about the loud music late at night.', ko: '이웃들은 밤늦은 시간의 시끄러운 음악에 대해 불평하기 시작했다.' },
         { en: 'He never complains even when the service is poor.', ko: '그는 서비스가 좋지 않을 때조차 절대 불평하지 않는다.' },
       ],
     }
   ),
-  word('Complete', '완성하다', 3, 'verb',
+  word('complete', '완성하다', 3, 'verb',
     ['시작하다', '중단하다', '미완성', '미완료', '부분적', '불완전', '결함', '부족', '반쯤', '절반'],
     tips({
       etymology: '라틴어 com(강조)과 plere(채우다)가 결합되어 빈틈없이 가득 채웠다는 의미에서 유래했습니다.',
@@ -946,6 +1240,12 @@ export const vocabBatch05: VocabItem[] = [
       definition: 'to finish making or doing something in its entirety so that nothing remains to be done',
       synonyms: ['finish', 'accomplish', 'conclude'],
       antonyms: ['begin', 'start', 'abandon'],
+      wordDistractors: ['Compete', 'Compile', 'Compose'],
+      definitionDistractors: [
+        'to add the final decorative touches to a project',
+        'to review and verify that all parts are in order',
+        'to fill in missing information on a form or document',
+      ],
       exampleSentences: [
         { en: 'You need to complete all the fields to finish the registration process.', ko: '등록 절차를 마치려면 모든 칸을 채워야 한다.' },
         { en: 'The construction of the new stadium is expected to be complete by next month.', ko: '새 경기장 건설은 다음 달까지 완료될 것으로 예상된다.' },

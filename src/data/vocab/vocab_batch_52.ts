@@ -3,7 +3,7 @@ import { word, tips } from './helpers';
 
 export const vocabBatch52: VocabItem[] = [
   word('practice', '연습', 6, 'noun',
-    ['목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계'],
+    ['천재', '디저트, 후식', '팔걸이', '통증, 아픔', '나라', '식품 저장고', '차원', '결함, 결점', '신화', '두려움'],
     tips({
       etymology: '그리스어 \'praktikos(실행 가능한)\'에서 유래하여, 이론이 아닌 실제로 몸을 움직여 익히는 과정을 의미합니다.',
       visual: '피아노 앞에 앉아 같은 곡을 수십 번 반복하며 손가락 근육을 길들이는 연주자의 모습을 상상하세요.',
@@ -18,6 +18,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'Daily repetition is essential to improve your skills through consistent effort.', ko: '꾸준한 노력을 통해 기술을 향상시키려면 매일 반복하는 연습이 필수적입니다.' },
         { en: 'The soccer team gathered on the field for their final session before the big game.', ko: '축구팀은 큰 경기를 앞두고 마지막 연습 세션을 위해 경기장에 모였습니다.' },
+      ],
+      wordDistractors: ['pragmatic', 'prance', 'plaice'],
+      definitionDistractors: [
+        'A customary or habitual way of acting or doing things in a particular society',
+        'A formal statement of rules or principles governing affairs within a profession',
+        'A period of time set aside for physical exercise or athletic competition',
       ],
     }
   ),
@@ -38,10 +44,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The teacher decided to applaud the student for her exceptional hard work on the final project.', ko: '선생님은 기말 프로젝트에 쏟은 학생의 각별한 노력에 대해 그녀를 칭찬하기로 했다.' },
         { en: 'Many critics across the country continue to admire the director for his innovative approach to filmmaking.', ko: '전국의 많은 비평가들이 감독의 혁신적인 영화 제작 방식에 대해 그를 계속해서 찬양하고 있다.' },
       ],
+      wordDistractors: ['phrase', 'drape', 'braise'],
+      definitionDistractors: [
+        'To make a formal request or plea to a higher authority for assistance',
+        'To increase the amount or level of something gradually over time',
+        'To present an argument or case in a convincing and detailed manner',
+      ],
     }
   ),
   word('pray', '빌다', 4, 'verb',
-    ['놀이', '회색', '먹이', '자랑', '지불', '광선', '점토', '쟁반', '지연', '분무'],
+    ['바라다', '명상하다', '맹세하다', '참회하다', '노래하다', '외치다', '속삭이다', '기원하다', '축복하다', '찬양하다'],
     tips({
       etymology: '라틴어 precari에서 유래되었으며, 이는 \'간절히 요청하다\'라는 의미를 담고 있습니다.',
       visual: '두 손을 정중히 모으고 무릎을 꿇은 채 하늘을 향해 고개를 숙인 모습을 상상해 보세요.',
@@ -57,10 +69,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'Many people gather at the temple to ask for peace and health for their families.', ko: '많은 사람들이 가족의 평화와 건강을 빌기 위해 사원에 모입니다.' },
         { en: 'The farmers began to hope for rain after a long period of severe drought.', ko: '농부들은 오랜 가뭄 끝에 비가 내리기를 간절히 빌기 시작했습니다.' },
       ],
+      wordDistractors: ['prey', 'pry', 'bray'],
+      definitionDistractors: [
+        'To move quickly and lightly with small graceful steps',
+        'To make a strong emotional appeal for justice or fairness',
+        'To express deep sorrow or regret for a past action or mistake',
+      ],
     }
   ),
   word('preach', '설교하다', 8, 'verb',
-    ['수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다'],
+    ['동의하다', '걸다', '굴복시키다, 지배하다', '내리다', '받아들이다', '줄이다, 줄어들다', '무시하다', '선택하다', '결정하다', '요청하다'],
     tips({
       etymology: '라틴어 praedicare에서 유래했으며, \'앞에서(pre) 말하다(dic)\'라는 의미가 합쳐져 대중에게 가르침을 전한다는 뜻이 되었습니다.',
       visual: '교회 단상 위에 선 목사님이 성경책을 펼치고 열정적으로 청중에게 훈계하는 모습을 상상해 보세요.',
@@ -75,6 +93,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The minister will deliver a powerful message to the congregation on Sunday morning.', ko: '목사님은 일요일 아침 신도들에게 강력한 설교를 할 것입니다.' },
         { en: 'Many people dislike it when others constantly lecture them about their lifestyle choices.', ko: '많은 사람들은 다른 이들이 자신의 라이프스타일 선택에 대해 끊임없이 훈계하는 것을 싫어합니다.' },
+      ],
+      wordDistractors: ['breach', 'peach', 'bleach'],
+      definitionDistractors: [
+        'To instruct someone in a particular skill or subject through repeated lessons',
+        'To make a formal public announcement regarding a new policy or law',
+        'To stretch or extend something to its full length or capacity',
       ],
     }
   ),
@@ -95,6 +119,12 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'A brief introduction should always come before the main body of the report.', ko: '보고서의 본문 앞에는 항상 짧은 서문이 먼저 나와야 합니다.' },
         { en: 'Dark clouds usually go before a heavy rainstorm.', ko: '폭우가 내리기 전에는 보통 먹구름이 먼저 나타납니다.' },
       ],
+      wordDistractors: ['proceed', 'preside', 'recede'],
+      definitionDistractors: [
+        'To move forward or continue an action after a brief pause',
+        'To officially take the place of someone in a role or position',
+        'To arrange items in a specific sequence based on size or importance',
+      ],
     }
   ),
   word('precious', '소중한', 5, 'adjective',
@@ -113,6 +143,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The museum displays many items made of gold and other highly valued materials.', ko: '그 박물관은 금과 다른 매우 귀중한 재료들로 만들어진 많은 물품들을 전시합니다.' },
         { en: 'Every second spent with family is a rare gift that should never be wasted.', ko: '가족과 함께 보내는 매 초는 절대 낭비해서는 안 될 소중한 선물입니다.' },
+      ],
+      wordDistractors: ['precocious', 'prescient', 'specious'],
+      definitionDistractors: [
+        'Extremely cautious and careful when handling delicate objects or materials',
+        'Having a strong emotional attachment to a particular memory or event',
+        'Made of a material that is transparent and allows light to pass through easily',
       ],
     }
   ),
@@ -133,9 +169,15 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The surgeon made a series of small, careful cuts with extreme care.', ko: '외과 의사는 극도로 주의를 기울여 일련의 작고 세밀한 절개를 수행했습니다.' },
         { en: 'Please provide the measurements of the room so the carpet fits perfectly.', ko: '카펫이 완벽하게 맞을 수 있도록 방의 정확한 치수를 제공해 주세요.' },
       ],
+      wordDistractors: ['concise', 'premise', 'precinct'],
+      definitionDistractors: [
+        'Expressed in a brief and clear manner without unnecessary detail',
+        'Following established rules and conventions without deviation',
+        'Performed quickly and efficiently with minimal waste of time or resources',
+      ],
     }
   ),
-  word('predator', '약탈자', 10, 'noun',
+  word('predator', '포식자', 10, 'noun',
     ['피식자', '초식동물', '희생양', '동반자', '수호자', '조력자', '방관자', '피해자', '중재자', '추종자'],
     tips({
       etymology: '라틴어 \'praedari(약탈하다)\'에서 유래하여 남을 잡아먹거나 해치는 존재를 뜻합니다.',
@@ -152,9 +194,15 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The great white shark is a fearsome marine hunter that sits at the top of the food chain.', ko: '백상아리는 먹이사슬의 최정점에 위치한 무시무시한 해양 포식자입니다.' },
         { en: 'Online safety courses help children identify how a digital harasser might try to gain their trust.', ko: '온라인 안전 교육은 아이들이 디지털 약탈자가 어떻게 신뢰를 얻으려 하는지 식별하도록 돕습니다.' },
       ],
+      wordDistractors: ['predictor', 'praetor', 'precursor'],
+      definitionDistractors: [
+        'A device or tool used to detect the presence of harmful substances in water',
+        'A large herbivorous animal that feeds primarily on grasses and plants',
+        'A person who studies the behavioral patterns of wildlife in natural habitats',
+      ],
     }
   ),
-  word('predict', '예언하다', 7, 'verb',
+  word('predict', '예측하다', 7, 'verb',
     ['중단하다', '선택하다', '결정하다', '요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다'],
     tips({
       etymology: '라틴어 \'pre(미리)\'와 \'dicere(말하다)\'가 합쳐져 어떤 일이 일어나기 전에 미리 말한다는 의미가 되었습니다.',
@@ -170,6 +218,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'Meteorologists use complex data to estimate how the storm will move across the coast.', ko: '기상학자들은 폭풍이 해안을 따라 어떻게 이동할지 추정하기 위해 복잡한 데이터를 사용합니다.' },
         { en: 'Economists failed to foresee the sudden crash of the stock market last year.', ko: '경제학자들은 작년에 발생한 갑작스러운 주식 시장의 폭락을 예견하지 못했습니다.' },
+      ],
+      wordDistractors: ['precinct', 'verdict', 'indict'],
+      definitionDistractors: [
+        'To carefully examine data or evidence before making a final decision',
+        'To arrange future events according to a detailed and fixed schedule',
+        'To deliberately mislead someone by providing false or inaccurate information',
       ],
     }
   ),
@@ -190,6 +244,12 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'Most people would choose to live in a quiet neighborhood rather than a noisy city center.', ko: '대부분의 사람들은 시끄러운 도심보다는 조용한 동네에서 사는 것을 선호할 것이다.' },
         { en: 'She would always drink green tea instead of coffee in the morning.', ko: '그녀는 아침에 커피 대신 항상 녹차를 마시는 것을 더 좋아했다.' },
       ],
+      wordDistractors: ['proffer', 'preface', 'defer'],
+      definitionDistractors: [
+        'To offer or present something to someone for their consideration or acceptance',
+        'To arrange items in order of priority based on urgency or importance',
+        'To delay or postpone a decision until a later and more convenient time',
+      ],
     }
   ),
   word('pregnant', '임신한', 5, 'adjective',
@@ -208,6 +268,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'She decided to quit smoking immediately after finding out she was carrying a child.', ko: '그녀는 임신했다는 사실을 알게 된 직후 즉시 담배를 끊기로 결심했습니다.' },
         { en: 'The doctor advised the woman to take folic acid supplements throughout her first trimester.', ko: '의사는 그 여성에게 임신 초기 3개월 동안 엽산 보충제를 복용하라고 권고했습니다.' },
+      ],
+      wordDistractors: ['prevalent', 'pungent', 'poignant'],
+      definitionDistractors: [
+        'Feeling extremely tired or exhausted after a long period of physical activity',
+        'Experiencing a strong sense of anticipation or excitement about a future event',
+        'Being in a state of rapid physical growth during adolescence or early childhood',
       ],
     }
   ),
@@ -228,6 +294,12 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The judge must remain neutral and free from any personal bias or preconceived notions.', ko: '판사는 중립을 유지해야 하며 어떠한 개인적인 편견이나 선입견도 없어야 합니다.' },
         { en: 'Education is the most effective tool to fight against social discrimination and narrow-minded views.', ko: '교육은 사회적 차별과 편협한 시각에 맞서 싸우는 가장 효과적인 도구입니다.' },
       ],
+      wordDistractors: ['prelude', 'precipice', 'premise'],
+      definitionDistractors: [
+        'A formal legal ruling issued by a court following a lengthy trial process',
+        'A deeply held personal conviction based on extensive research and experience',
+        'An established tradition or custom that has been passed down through generations',
+      ],
     }
   ),
   word('premier', '총리', 9, 'noun',
@@ -246,6 +318,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The newly elected leader will meet with the foreign dignitaries to discuss the trade agreement.', ko: '새로 선출된 수상은 무역 협정을 논의하기 위해 외국 귀빈들을 만날 것입니다.' },
         { en: 'National policies are often directed by the office of the chief executive in this parliamentary democracy.', ko: '이 의원내각제 민주주의 국가에서 국가 정책은 종종 수상실에 의해 지도됩니다.' },
+      ],
+      wordDistractors: ['premiere', 'premise', 'primmer'],
+      definitionDistractors: [
+        'The first public showing of a movie, play, or other performance',
+        'A senior military officer who commands a large division of troops',
+        'The official representative of one country stationed in another nation',
       ],
     }
   ),
@@ -266,6 +344,12 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'Customers are often willing to pay a high amount for organic produce.', ko: '고객들은 종종 유기농 농산물에 대해 높은 할증금을 기꺼이 지불하곤 합니다.' },
         { en: 'The monthly insurance cost has increased significantly due to the new policy changes.', ko: '새로운 정책 변화로 인해 월간 보험료 할증금이 크게 인상되었습니다.' },
       ],
+      wordDistractors: ['primeval', 'podium', 'primal'],
+      definitionDistractors: [
+        'A financial penalty imposed for failing to meet a contractual obligation on time',
+        'A regular fixed payment made by an employer to an employee for services rendered',
+        'A refund or rebate given to a customer after a product return or cancellation',
+      ],
     }
   ),
   word('prepare', '준비하다', 6, 'verb',
@@ -285,10 +369,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The chef needs to chop all the vegetables to get ready for the dinner service.', ko: '주방장은 저녁 식사 서비스를 위해 모든 채소를 다져서 준비해야 합니다.' },
         { en: 'Students should study hard to get ready for their final examinations next week.', ko: '학생들은 다음 주 기말고사를 대비해 열심히 공부해야 합니다.' },
       ],
+      wordDistractors: ['compare', 'prepaid', 'impair'],
+      definitionDistractors: [
+        'To fix or mend something that has been broken or is not working properly',
+        'To deliver or transport goods from one location to a designated destination',
+        'To predict or estimate the likely outcome of a particular situation or event',
+      ],
     }
   ),
   word('prescribe', '처방하다', 7, 'verb',
-    ['수행하다', '처리하다', '변경하다', '유지하다', '확인하다', '시작하다', '중단하다', '선택하다', '결정하다', '요청하다'],
+    ['끼어들다, 불쑥 말하다', '재촉하다, 촉진하다', '빈둥거리다', '검증하다, 유효화하다', '조직하다, 정리하다', '받아쓰게 하다', '자극하다, 촉진하다', '선택하다', '결정하다', '요청하다'],
     tips({
       etymology: '라틴어 \'pre(미리)\'와 \'scribe(쓰다)\'가 합쳐져, 미리 적어둔 대로 따르라고 지시하는 느낌을 줍니다.',
       visual: '의사가 환자에게 약을 먹으라고 처방전을 써주거나, 법전이 행동 지침을 정해주는 모습을 상상하세요.',
@@ -304,10 +394,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The law can dictate the penalties that the court should impose for specific crimes.', ko: '법은 법원이 특정 범죄에 대해 부과해야 하는 처벌을 규정할 수 있습니다.' },
         { en: 'Doctors often recommend specific exercises to help patients recover from back injuries.', ko: '의사들은 환자들이 허리 부상에서 회복하도록 돕기 위해 특정 운동을 처방하곤 합니다.' },
       ],
+      wordDistractors: ['proscribe', 'describe', 'inscribe'],
+      definitionDistractors: [
+        'To write down detailed observations in a formal scientific journal or record',
+        'To strongly recommend avoiding a particular action or substance',
+        'To sign or endorse a document by adding your official name at the bottom',
+      ],
     }
   ),
   word('presence', '존재', 4, 'noun',
-    ['목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건', '관계'],
+    ['단서', '반대', '도전', '경이', '귀스타브 플로베르 (프랑스 작가)', '파티, 정당', '감각', '적의', '오작동, 기능불량', '서비스'],
     tips({
       etymology: '라틴어 \'praesentia\'에서 유래했으며, \'pre(앞에)\'와 \'esse(있다)\'가 합쳐져 내 앞에 실재함을 뜻합니다.',
       visual: '어두운 방 안에 누군가 서 있는 실루엣을 보며 그 사람의 기운이 느껴지는 장면을 상상하세요.',
@@ -322,6 +418,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'Her calming influence was felt by everyone in the room despite her silence.', ko: '그녀의 침묵에도 불구하고 방 안의 모든 이들이 그녀의 차분한 존재감을 느꼈다.' },
         { en: 'The sudden appearance of security guards made the protesters nervous.', ko: '보안 요원들의 갑작스러운 등장은 시위대들을 긴장하게 만들었다.' },
+      ],
+      wordDistractors: ['presents', 'prestige', 'pretense'],
+      definitionDistractors: [
+        'A strong feeling of confidence or self-assurance in social situations',
+        'The power or ability to influence others through personal authority',
+        'A formal ceremony held to honor distinguished guests or dignitaries',
       ],
     }
   ),
@@ -342,10 +444,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'Every guest at the wedding received a small handmade gift to take home.', ko: '결혼식의 모든 하객들은 집에 가져갈 작은 수제 선물을 받았습니다.' },
         { en: 'Focusing on the current moment helps reduce anxiety about what might happen later.', ko: '현재의 순간에 집중하는 것은 나중에 일어날 일에 대한 불안감을 줄이는 데 도움이 됩니다.' },
       ],
+      wordDistractors: ['pleasant', 'crescent', 'resent'],
+      definitionDistractors: [
+        'A written document that outlines the terms and conditions of an agreement',
+        'An award or trophy given to the winner of a competition or contest',
+        'A brief summary or introduction placed at the beginning of a formal report',
+      ],
     }
   ),
-  word('preserve', '보호하다', 5, 'verb',
-    ['분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다', '변경하다', '파괴하다', '확인하다'],
+  word('preserve', '보존하다', 5, 'verb',
+    ['분석하다', '정리하다', '씻다', '먹이를 찾다, 약탈하다', '유혹하다', '붕괴하다', '뛰놀다, 들뜨다', '연기하다, 뒤로 미루다', '파괴하다', '(세밀히) 조사하다'],
     tips({
       etymology: '라틴어 \'pre(미리)\'와 \'servare(지키다)\'가 합쳐져 미리 손상되지 않게 지킨다는 의미를 가집니다.',
       visual: '박물관 유리 상자 안에 소중하게 보관된 오래된 유물을 상상해 보세요.',
@@ -361,10 +469,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The local community worked hard to maintain the historical integrity of the old building.', ko: '지역 사회는 그 오래된 건물의 역사적 온전함을 지키기 위해 열심히 노력했습니다.' },
         { en: 'Adding salt is a traditional method used to keep meat from spoiling for a long time.', ko: '소금을 치는 것은 고기가 오랫동안 상하지 않게 보존하기 위해 사용되는 전통적인 방법입니다.' },
       ],
+      wordDistractors: ['persevere', 'perceive', 'reserve'],
+      definitionDistractors: [
+        'To restore something to its original condition after it has been damaged',
+        'To carefully observe and record changes in a natural environment over time',
+        'To divide or separate a large quantity into smaller individual portions',
+      ],
     }
   ),
   word('president', '대통령', 6, 'noun',
-    ['기준', '목표', '사물', '행동', '사건', '상태', '개념', '원인', '결과', '조건'],
+    ['판벽널', '지느러미', '망치', '신부', '안내, 지도', '애들레이드', '앙코르', '제국', '해군', '헬멧'],
     tips({
       etymology: '라틴어 praesidere에서 유래하며 \'앞에(pre) 앉아 있는(side) 사람\'이라는 뜻에서 우두머리를 의미하게 되었습니다.',
       visual: '청와대나 백악관 같은 집무실 책상 앞에 앉아 중요한 서류에 서명하는 지도자의 모습을 상상해 보세요.',
@@ -379,6 +493,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The newly elected leader promised to improve the national economy during his term.', ko: '새로 당선된 대통령은 임기 동안 국가 경제를 개선하겠다고 약속했습니다.' },
         { en: 'She was appointed as the first female head of the international corporation.', ko: '그녀는 그 국제 기업의 첫 번째 여성 회장으로 임명되었습니다.' },
+      ],
+      wordDistractors: ['precedent', 'resident', 'persistent'],
+      definitionDistractors: [
+        'A formal document that grants legal authority to act on behalf of another person',
+        'The elected representative of a local district or municipal government area',
+        'A senior academic official who oversees research programs at a major university',
       ],
     }
   ),
@@ -399,6 +519,12 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'Please press the button to open the door.', ko: '문을 열려면 버튼을 눌러 주세요.' },
         { en: 'She pressed the flowers between the pages of a heavy book.', ko: '그녀는 두꺼운 책 페이지 사이에 꽃을 눌러 말렸다.' },
       ],
+      wordDistractors: ['stress', 'dress', 'crest'],
+      definitionDistractors: [
+        'To print or publish written material in large quantities for public distribution',
+        'To fold or crease fabric along a straight line using heat and moisture',
+        'To express strong opinions publicly through organized demonstrations or rallies',
+      ],
     }
   ),
   word('presume', '가정하다', 8, 'verb',
@@ -418,10 +544,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'Many people would naturally suppose that a person is innocent until proven guilty.', ko: '많은 사람들은 유죄가 입증될 때까지 그 사람이 무죄라고 당연히 가정할 것입니다.' },
         { en: 'Scientists often take for granted that certain physical laws remain constant throughout the universe.', ko: '과학자들은 종종 특정 물리 법칙들이 우주 전체에서 일정하게 유지된다고 가정합니다.' },
       ],
+      wordDistractors: ['consume', 'resume', 'perfume'],
+      definitionDistractors: [
+        'To take bold or unauthorized action without proper permission or authority',
+        'To confirm or verify a fact through careful investigation and evidence gathering',
+        'To make a formal declaration under oath in a court of law or legal proceeding',
+      ],
     }
   ),
   word('pretend', '~인 척하다', 4, 'verb',
-    ['의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태'],
+    ['고백하다', '인정하다', '드러내다', '숨기다', '속이다', '연기하다', '거짓말하다', '꾸미다', '위장하다', '변장하다'],
     tips({
       etymology: '라틴어 \'praetendere\'에서 유래했으며, \'앞으로(pre) 내밀다(tend)\'라는 뜻이 합쳐져 사실이 아닌 것을 겉으로 내세우는 행위를 의미합니다.',
       visual: '어린아이가 왕관을 쓰고 자신이 진짜 왕인 것처럼 행동하며 노는 모습을 상상해 보세요.',
@@ -436,6 +568,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'Children often like to act as superheroes and fight imaginary monsters in the backyard.', ko: '아이들은 종종 슈퍼히어로인 척하며 뒷마당에서 가상의 괴물들과 싸우는 것을 좋아한다.' },
         { en: 'She tried to look surprised even though she had already heard the news from her brother.', ko: '그녀는 이미 오빠에게 그 소식을 들었음에도 불구하고 놀란 척하려고 노력했다.' },
+      ],
+      wordDistractors: ['portend', 'contend', 'distend'],
+      definitionDistractors: [
+        'To formally propose or suggest an idea during a meeting or discussion',
+        'To carefully plan and rehearse a performance before presenting it to an audience',
+        'To extend or stretch something beyond its normal or usual limits',
       ],
     }
   ),
@@ -456,6 +594,12 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The little girl wore a colorful dress that looked very attractive on her.', ko: '그 어린 소녀는 자신에게 매우 잘 어울리는 화려한 드레스를 입었습니다.' },
         { en: 'Spring flowers make the entire park look charming and bright.', ko: '봄꽃들이 공원 전체를 매력적이고 밝게 보이게 만듭니다.' },
       ],
+      wordDistractors: ['petty', 'witty', 'gritty'],
+      definitionDistractors: [
+        'Having a small or insignificant size that is barely noticeable to others',
+        'Moderately warm or comfortable in temperature and pleasant to the touch',
+        'Arranged in a neat and orderly manner with careful attention to symmetry',
+      ],
     }
   ),
   word('prevail', '우세하다', 9, 'verb',
@@ -475,10 +619,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'Justice will eventually win out and truth will find a way to be recognized by everyone.', ko: '정의는 결국 승리할 것이며 진실은 모든 이에게 인정받을 방법을 찾을 것입니다.' },
         { en: 'Despite the fierce competition from new startups, the established company managed to remain dominant in the market.', ko: '신생 기업들의 치열한 경쟁에도 불구하고, 그 기존 기업은 시장에서 우위를 점할 수 있었습니다.' },
       ],
+      wordDistractors: ['travail', 'preview', 'curtail'],
+      definitionDistractors: [
+        'To exist or be found in large numbers across a wide geographic region',
+        'To carefully review and assess the quality of a completed project or task',
+        'To gradually weaken or diminish in strength or intensity over a long period',
+      ],
     }
   ),
   word('prevent', '방지하다', 5, 'verb',
-    ['요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다'],
+    ['요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '~을 없애다', '쭈글쭈글한, 쇠약한, 시든', '폐지하다', '위협하다, 겁나게 하다'],
     tips({
       etymology: '라틴어 \'praevenire\'에서 유래했으며, \'미리(pre)\' \'오다(vent)\'라는 의미가 합쳐져 어떤 일이 일어나기 전에 막는다는 뜻이 되었습니다.',
       visual: '축구 골키퍼가 상대방의 공이 골대 안으로 들어오지 못하게 몸을 날려 막아내는 장면을 상상해 보세요.',
@@ -494,10 +644,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'Regular exercise and a balanced diet can help certain diseases.', ko: '규칙적인 운동과 균형 잡힌 식단은 특정 질병을 예방하는 데 도움이 될 수 있습니다.' },
         { en: 'The heavy snow will likely the commuters from reaching their offices on time.', ko: '폭설로 인해 통근자들이 제시간에 사무실에 도착하는 것이 어려워질 것입니다.' },
       ],
+      wordDistractors: ['pervert', 'invent', 'fervent'],
+      definitionDistractors: [
+        'To allow or enable something to happen without any interference or restriction',
+        'To cause something to occur earlier than originally planned or scheduled',
+        'To repair or restore something to its proper functioning condition after damage',
+      ],
     }
   ),
   word('previous', '앞의', 6, 'adjective',
-    ['부적절한', '긍정적인', '부정적인', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인'],
+    ['용감한', '위쪽의', '(날씨가) 혹독한', '대표적인', '기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인'],
     tips({
       etymology: '라틴어 \'prae(미리)\'와 \'via(길)\'가 합쳐져 \'길을 앞서가는\'이라는 의미에서 유래했습니다.',
       visual: '영화관에서 영화가 시작되기 전 상영되는 \'이전 줄거리 요약\' 화면을 상상해 보세요.',
@@ -512,6 +668,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The new manager decided to change the policies established by the former administration.', ko: '새 매니저는 이전 행정부에서 수립한 정책들을 바꾸기로 결정했습니다.' },
         { en: 'Please refer to the information provided in the earlier chapter for more details.', ko: '더 자세한 내용은 앞선 장에서 제공된 정보를 참조하십시오.' },
+      ],
+      wordDistractors: ['precious', 'prevalent', 'devious'],
+      definitionDistractors: [
+        'Happening at the same time as another event or occurring simultaneously',
+        'Expected to happen in the near future based on current trends and conditions',
+        'Related to or concerned with the final outcome or conclusion of a matter',
       ],
     }
   ),
@@ -532,10 +694,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The owl silently swooped down from the tree to catch its small prey.', ko: '올빼미는 작은 먹잇감을 잡기 위해 나무에서 소리 없이 급강하했다.' },
         { en: 'Vulnerable animals often fall easy prey to larger carnivores in the wild.', ko: '취약한 동물들은 야생에서 종종 거대한 육식동물들의 쉬운 먹잇감이 된다.' },
       ],
+      wordDistractors: ['pray', 'gray', 'tray'],
+      definitionDistractors: [
+        'A natural shelter or den where wild animals rest during the daytime hours',
+        'A large open area of grassland where animals graze freely without fences',
+        'The seasonal migration pattern followed by birds and marine creatures annually',
+      ],
     }
   ),
   word('price', '값', 4, 'noun',
-    ['정보', '의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건'],
+    ['한가운데', '여왕', '광선, 빛줄기', '거짓말쟁이', '박물관', '총리', '자기', '정밀, 정확', '공생', '신원 확인, 식별'],
     tips({
       etymology: '라틴어 pretium에서 유래되었으며, 가치나 보상을 의미하는 뿌리를 가지고 있습니다.',
       visual: '상점에 진열된 물건 아래에 붙어 있는 숫자표와 달러 표시를 상상해 보세요.',
@@ -550,6 +718,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The market fluctuates daily, causing the fuel amount to rise significantly.', ko: '시장이 매일 변동하여 연료비가 크게 상승하고 있습니다.' },
         { en: 'Success often comes with a heavy sacrifice that one must be willing to pay.', ko: '성공은 종종 기꺼이 지불해야 하는 큰 희생이라는 대가를 수반합니다.' },
+      ],
+      wordDistractors: ['prise', 'prince', 'splice'],
+      definitionDistractors: [
+        'A reward or recognition given to someone for outstanding achievement or service',
+        'The total quantity or amount of goods available for purchase at a given time',
+        'A standard unit of measurement used to compare the relative worth of items',
       ],
     }
   ),
@@ -570,6 +744,12 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'She took great satisfaction in her daughter\'s academic success and felt a sense of accomplishment.', ko: '그녀는 딸의 학업적 성공에 큰 만족감을 느꼈고 자부심을 가졌다.' },
         { en: 'His refusal to accept any financial help was driven by his stubborn sense of dignity.', ko: '어떠한 경제적 도움도 거절한 그의 행동은 완고한 자존심 때문이었다.' },
       ],
+      wordDistractors: ['pried', 'bride', 'stride'],
+      definitionDistractors: [
+        'A group of animals that travel together for protection and companionship',
+        'A strong emotional reaction caused by an unexpected or shocking event',
+        'The desire to compete with and outperform others in a particular field',
+      ],
     }
   ),
   word('priest', '성직자', 6, 'noun',
@@ -588,6 +768,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The local village leader asked the holy man to perform the wedding ceremony.', ko: '마을 이장은 그 성직자에게 결혼식을 집행해 달라고 요청했습니다.' },
         { en: 'He decided to dedicate his entire life to God by becoming a member of the clergy.', ko: '그는 성직자가 됨으로써 자신의 전 생애를 신에게 바치기로 결심했습니다.' },
+      ],
+      wordDistractors: ['pieced', 'priced', 'fiesta'],
+      definitionDistractors: [
+        'A skilled craftsperson who creates decorative objects from precious metals and gems',
+        'A scholar who studies ancient texts and translates them into modern languages',
+        'A community leader who organizes local events and charitable fundraising activities',
       ],
     }
   ),
@@ -608,10 +794,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The safety of the passengers remains our concern during the flight.', ko: '비행 중 승객의 안전이 우리의 가장 중요한 관심사로 남아 있습니다.' },
         { en: 'Solar energy is the source of power for this new eco-friendly building.', ko: '태양 에너지는 이 새로운 친환경 건물의 주요 동력원입니다.' },
       ],
+      wordDistractors: ['primal', 'priory', 'premier'],
+      definitionDistractors: [
+        'Relating to the earliest or most basic stage of development in a process',
+        'Occurring only once in a lifetime and therefore extremely rare and unique',
+        'Produced naturally without any artificial additives or chemical processing',
+      ],
     }
   ),
   word('prime', '수위의', 4, 'adjective',
-    ['기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인', '불안정한', '효율적인', '비효율적인', '직접적인'],
+    ['기본적인', '중요한', '핵심적인', '일반적인', '예외적인', '안정적인', '불안정한', '설명적인, 설명의', '가지가지의', '막 태어난'],
     tips({
       etymology: '라틴어 primus에서 유래하여 \'첫 번째의\' 또는 \'가장 중요한\'이라는 의미를 담고 있습니다.',
       visual: '시상대 맨 윗자리에 서 있는 1등 선수나 황금빛으로 빛나는 가장 좋은 품질의 물건을 상상해 보세요.',
@@ -626,6 +818,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The chef uses only the most expensive and high-quality cuts of beef for his signature dish.', ko: '그 주방장은 자신의 시그니처 요리를 위해 오직 가장 비싸고 최고급인 소고기 부위만을 사용합니다.' },
         { en: 'Reducing carbon emissions is a major objective for the international environmental committee this year.', ko: '탄소 배출을 줄이는 것은 올해 국제 환경 위원회의 가장 주요한 목표입니다.' },
+      ],
+      wordDistractors: ['grime', 'prism', 'rhyme'],
+      definitionDistractors: [
+        'Belonging to the middle period of a historical era, neither early nor late',
+        'Designed for temporary or short-term use before being replaced or upgraded',
+        'Commonly available and easily obtained without special effort or resources',
       ],
     }
   ),
@@ -646,6 +844,12 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'Early humans used primitive tools made of stone and bone to hunt for food.', ko: '초기 인류는 먹이를 사냥하기 위해 돌과 뼈로 만든 원시적인 도구를 사용했습니다.' },
         { en: 'The remote tribe lived in primitive conditions without electricity or running water.', ko: '그 외딴 부족은 전기나 수도가 없는 원시적인 환경에서 살았습니다.' },
       ],
+      wordDistractors: ['figurative', 'primate', 'privative'],
+      definitionDistractors: [
+        'Constructed using highly advanced technology and innovative engineering methods',
+        'Belonging to a culture that values tradition and resists rapid social change',
+        'Located in a remote and isolated region far from any major population center',
+      ],
     }
   ),
   word('prince', '왕자', 3, 'noun',
@@ -664,6 +868,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The young heir was officially crowned as the new leader of the kingdom.', ko: '그 젊은 후계자는 왕국의 새로운 지도자로 공식적으로 즉위했습니다.' },
         { en: 'Many fairy tales begin with a brave hero rescuing a kingdom from a dragon.', ko: '많은 동화는 용으로부터 왕국을 구하는 용감한 영웅의 이야기로 시작됩니다.' },
+      ],
+      wordDistractors: ['prance', 'prune', 'mince'],
+      definitionDistractors: [
+        'A high-ranking military commander who leads a large army into battle',
+        'A wealthy landowner who governs a large rural estate and its workers',
+        'A young apprentice who is training under the guidance of a skilled master',
       ],
     }
   ),
@@ -684,10 +894,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The lack of funding was the principal reason for the project\'s failure.', ko: '자금 부족이 그 프로젝트가 실패한 주요한 이유였습니다.' },
         { en: 'Vegetables are the principal ingredient in this traditional soup recipe.', ko: '채소는 이 전통 수프 레시피의 주요 재료입니다.' },
       ],
+      wordDistractors: ['principle', 'provincial', 'princely'],
+      definitionDistractors: [
+        'Relating to or involving a formal ceremony or official public occasion',
+        'Occurring at regular intervals throughout a specific time period',
+        'Derived from or based on personal experience rather than formal training',
+      ],
     }
   ),
   word('principle', '원리', 7, 'noun',
-    ['의미', '변화', '문제', '기회', '기준', '목표', '사물', '행동', '사건', '상태'],
+    ['경치, 풍경', '급송 택배, 운반인', '효과, 유효성', '재기, 부활', '상대, 짝', '유개트럭', '진부하고 상투적인 말', '지방', '환자', '여행'],
     tips({
       etymology: '라틴어 \'principium\'에서 유래하여 \'시작\'이나 \'근원\'을 뜻하며, 사물의 근본이 되는 법칙을 의미합니다.',
       visual: '기계의 톱니바퀴가 맞물려 돌아가는 가장 기초적인 설계도를 상상해 보세요.',
@@ -703,10 +919,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The machine operates on a simple physical law that governs motion.', ko: '그 기계는 운동을 제어하는 단순한 물리적 원리에 따라 작동합니다.' },
         { en: 'She refused to compromise her moral values even under great pressure.', ko: '그녀는 큰 압박 속에서도 자신의 도덕적 원칙을 굽히기를 거부했습니다.' },
       ],
+      wordDistractors: ['principal', 'pinnacle', 'participle'],
+      definitionDistractors: [
+        'A specific example or instance used to illustrate a broader concept or idea',
+        'A detailed plan of action designed to achieve a long-term strategic goal',
+        'The primary source of income or revenue for a business or organization',
+      ],
     }
   ),
   word('print', '인쇄하다', 1, 'verb',
-    ['설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다', '처리하다'],
+    ['설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '압도하다, 억누르다', '노력하다, 시도하다', '잠에서 깨다', '부수다', '갈망하다'],
     tips({
       etymology: '라틴어 premere(누르다)에서 유래하여 종이에 잉크를 눌러 찍어내는 행위를 뜻하게 되었습니다.',
       visual: '프린터기에서 잉크 냄새가 나는 따끈따끈한 종이가 한 장씩 밀려 나오는 모습을 상상하세요.',
@@ -722,10 +944,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The teacher asked the students to produce a hard copy of their essays.', ko: '선생님은 학생들에게 에세이를 종이로 인쇄해 오라고 요청하셨습니다.' },
         { en: 'Many companies no longer issue physical catalogs to save paper.', ko: '많은 기업들이 종이를 아끼기 위해 더 이상 실물 카탈로그를 인쇄하지 않습니다.' },
       ],
+      wordDistractors: ['pint', 'sprint', 'glint'],
+      definitionDistractors: [
+        'To draw or sketch an image by hand using pencils, charcoal, or ink pens',
+        'To record spoken words in written form by transcribing audio or speech',
+        'To display or project digital images onto a screen for public viewing',
+      ],
     }
   ),
   word('prior', '이전의', 10, 'adjective',
-    ['효율적인', '비효율적인', '직접적인', '간접적인', '명확한', '모호한', '적절한', '부적절한', '긍정적인', '부정적인'],
+    ['병든', '집중적인, 강도 높은', '태평양의; 평화로운', '헌신적인, 전용의', '멸종한', '과장된, 허풍 떠는', '파삭파삭한', '비천한 / 하인', '비할 데 없는', '침체된, 불경기의, (stagnance침체, 정체, 불황)'],
     tips({
       etymology: '라틴어 \'prior\'에서 유래했으며 \'먼저의\' 또는 \'앞선\'이라는 뜻을 가집니다.',
       visual: '달력에서 오늘 날짜보다 앞선 날짜들에 동그라미가 쳐진 모습을 상상해 보세요.',
@@ -740,6 +968,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The applicant had no prior experience in the hospitality industry.', ko: '지원자는 서비스 업계에서의 이전 경력이 전혀 없었습니다.' },
         { en: 'Please notify the office at least two days prior to your arrival.', ko: '도착하기 최소 이틀 전에는 사무실에 알려주시기 바랍니다.' },
+      ],
+      wordDistractors: ['priory', 'primer', 'friar'],
+      definitionDistractors: [
+        'Happening at a future date that has not yet been determined or confirmed',
+        'Considered to be more important or urgent than all other competing matters',
+        'Related to the final stage or concluding phase of a lengthy process',
       ],
     }
   ),
@@ -760,6 +994,12 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The judge sentenced the criminal to ten years in a maximum-security facility.', ko: '판사는 그 범죄자에게 엄중 경비 시설에서의 10년 형을 선고했습니다.' },
         { en: 'Many reformers believe that the current penal system should focus more on rehabilitation than punishment.', ko: '많은 개혁가들은 현재의 교도소 시스템이 처벌보다는 재활에 더 집중해야 한다고 믿습니다.' },
       ],
+      wordDistractors: ['prism', 'poison', 'bison'],
+      definitionDistractors: [
+        'A heavily guarded military base where soldiers undergo intensive combat training',
+        'A government facility designed to house refugees and displaced persons temporarily',
+        'A secure institution where valuable national treasures and documents are stored',
+      ],
     }
   ),
   word('privacy', '사생활, 프라이버시', 5, 'noun',
@@ -778,6 +1018,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The celebrity requested more space to protect her family\'s personal life from the media.', ko: '그 연예인은 언론으로부터 가족의 사생활을 보호하기 위해 더 많은 공간을 요청했습니다.' },
         { en: 'New digital regulations aim to enhance the security of user data on social media platforms.', ko: '새로운 디지털 규정은 소셜 미디어 플랫폼에서 사용자 데이터의 보안을 강화하는 것을 목표로 합니다.' },
+      ],
+      wordDistractors: ['piracy', 'primacy', 'lunacy'],
+      definitionDistractors: [
+        'The quality of being honest and transparent in all personal and professional dealings',
+        'A legal right that allows individuals to access public records and government documents',
+        'The practice of sharing personal information openly with friends and family members',
       ],
     }
   ),
@@ -798,6 +1044,12 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The two world leaders held a secret meeting to discuss the peace treaty away from the media.', ko: '두 정상은 언론을 피해 평화 조약을 논의하기 위해 비공개 회담을 가졌습니다.' },
         { en: 'Please respect my space and do not enter my room without knocking first.', ko: '제 사적인 공간을 존중해 주시고 노크 없이 제 방에 들어오지 말아 주세요.' },
       ],
+      wordDistractors: ['primate', 'privation', 'pirate'],
+      definitionDistractors: [
+        'Owned or operated by a government agency and open to all citizens equally',
+        'Performed secretly or covertly without the knowledge of other parties involved',
+        'Relating to matters of national security that require the highest level of clearance',
+      ],
     }
   ),
   word('privilege', '특권', 8, 'noun',
@@ -817,9 +1069,15 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'Education should be a universal right rather than a restricted benefit for the wealthy.', ko: '교육은 부유층을 위한 제한된 혜택이라기보다 보편적인 권리여야 합니다.' },
         { en: 'It was a great honor to meet the world-renowned scientist in person.', ko: '세계적으로 유명한 과학자를 직접 만나 뵙게 되어 큰 영광이었습니다.' },
       ],
+      wordDistractors: ['prestige', 'pavilion', 'prevalent'],
+      definitionDistractors: [
+        'A heavy burden or responsibility placed upon someone by law or social expectation',
+        'A formal invitation extended to someone asking them to attend a special event',
+        'A basic necessity or essential requirement that must be met for daily survival',
+      ],
     }
   ),
-  word('prize', '상, 상품', 2, 'noun',
+  word('prize', '소중히 여기다', 2, 'verb',
     ['무시하다', '버리다', '경시하다', '파괴하다', '거절하다', '잊다', '비난하다', '낭비하다', '숨기다', '포기하다'],
     tips({
       etymology: '라틴어 \'pretium(가치)\'에서 유래하여 어떤 대상을 매우 가치 있게 여기는 마음을 담고 있습니다.',
@@ -835,6 +1093,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'Many cultures prize hospitality and treat every guest with the utmost respect.', ko: '많은 문화권에서 환대를 소중히 여기며 모든 손님을 최고의 예우로 대접합니다.' },
         { en: 'Collectors often prize these rare stamps because of their unique historical significance.', ko: '수집가들은 독특한 역사적 중요성 때문에 이 희귀한 우표들을 종종 매우 소중하게 여깁니다.' },
+      ],
+      wordDistractors: ['prise', 'price', 'guise'],
+      definitionDistractors: [
+        'To compete fiercely against rivals in order to win an award or trophy',
+        'To sell or trade a rare item at auction for the highest possible amount',
+        'To display or showcase an object publicly for others to admire and appreciate',
       ],
     }
   ),
@@ -855,6 +1119,12 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The heavy dark clouds mean it will rain within an hour.', ko: '짙고 어두운 구름을 보니 한 시간 내에 십중팔구 비가 올 것이다.' },
         { en: 'She is late for the meeting because her flight was delayed.', ko: '비행기가 지연되었기 때문에 그녀는 아마도 회의에 늦을 것이다.' },
       ],
+      wordDistractors: ['provably', 'notably', 'palpably'],
+      definitionDistractors: [
+        'Used to indicate that something is absolutely certain and beyond any reasonable doubt',
+        'Used to express a surprising or unexpected outcome that defies logical explanation',
+        'Used to suggest that something happened completely by accident or random chance',
+      ],
     }
   ),
   word('problem', '문제', 3, 'noun',
@@ -874,9 +1144,15 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The technical team is working hard to identify the root cause of the system failure.', ko: '기술팀은 시스템 장애의 근본적인 원인 문제를 파악하기 위해 열심히 노력하고 있습니다.' },
         { en: 'Global warming remains a significant challenge that requires international cooperation.', ko: '지구 온난화는 국제적인 협력을 필요로 하는 중대한 문제로 남아 있습니다.' },
       ],
+      wordDistractors: ['emblem', 'probing', 'goblet'],
+      definitionDistractors: [
+        'A correct answer or explanation that resolves a question or eliminates confusion',
+        'A fortunate opportunity that leads to personal growth and professional advancement',
+        'A formal agreement reached between two or more parties after lengthy negotiations',
+      ],
     }
   ),
-  word('procedure', '진행', 9, 'noun',
+  word('procedure', '절차', 9, 'noun',
     ['결과', '중단', '혼란', '정지', '우연', '본능', '감정', '기억', '상상', '거절'],
     tips({
       etymology: '라틴어 \'procedere\'에서 유래했으며 \'pro(앞으로)\'와 \'cedere(가다)\'가 합쳐져 단계적으로 나아가는 과정을 뜻합니다.',
@@ -892,6 +1168,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The surgical team followed a strict safety protocol to ensure the patient\'s recovery.', ko: '수술팀은 환자의 회복을 보장하기 위해 엄격한 안전 절차를 따랐습니다.' },
         { en: 'New employees must learn the standard operating steps for handling customer complaints.', ko: '신입 사원들은 고객 불만을 처리하기 위한 표준 운영 절차를 익혀야 합니다.' },
+      ],
+      wordDistractors: ['procure', 'brochure', 'structure'],
+      definitionDistractors: [
+        'The final result or outcome achieved after completing a task or experiment',
+        'A spontaneous action taken without any prior planning or deliberate thought',
+        'An informal discussion or conversation held between colleagues about a shared topic',
       ],
     }
   ),
@@ -912,9 +1194,15 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'The passengers were told to wait for a moment before they could to the boarding gate.', ko: '승객들은 탑승구로 이동하기 전에 잠시 기다려 달라는 안내를 받았습니다.' },
         { en: 'After the brief interruption, the chairperson decided to with the scheduled presentation.', ko: '잠시 중단된 후, 의장은 예정된 발표를 계속 진행하기로 결정했습니다.' },
       ],
+      wordDistractors: ['precede', 'recede', 'concede'],
+      definitionDistractors: [
+        'To pause and carefully reconsider a decision before taking further action',
+        'To return to a previous location or state after a temporary departure',
+        'To formally announce the cancellation of an event or scheduled meeting',
+      ],
     }
   ),
-  word('process', '진행', 5, 'noun',
+  word('process', '과정', 5, 'noun',
     ['결과', '중단', '정체', '고정', '완성', '파괴', '무시', '우연', '본질', '기원'],
     tips({
       etymology: '라틴어 \'procedere\'에서 유래했으며, \'앞으로(pro)\' \'가다(cedere)\'라는 의미가 합쳐져 무언가가 진행되는 과정을 뜻합니다.',
@@ -931,10 +1219,16 @@ export const vocabBatch52: VocabItem[] = [
         { en: 'Learning a new language is a long and gradual development that requires patience.', ko: '새로운 언어를 배우는 것은 인내심을 필요로 하는 길고 점진적인 과정입니다.' },
         { en: 'The manufacturing system must be efficient to reduce the total production time.', ko: '전체 생산 시간을 단축하기 위해서는 제조 공정이 효율적이어야 합니다.' },
       ],
+      wordDistractors: ['profess', 'progress', 'prowess'],
+      definitionDistractors: [
+        'The final product or outcome obtained at the end of a lengthy experiment',
+        'A single isolated event that occurs without any connection to preceding actions',
+        'A sudden change in direction or approach taken in response to new information',
+      ],
     }
   ),
   word('produce', '생산하다', 6, 'verb',
-    ['요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '적용하다', '반복하다', '행동하다', '수행하다'],
+    ['요청하다', '설명하다', '관리하다', '보완하다', '분석하다', '정리하다', '헐뜯다/비난하다', '생산하기 (produce의 현재분사)', '아부하다', '펄럭이다, 떨리다'],
     tips({
       etymology: '라틴어 \'pro(앞으로)\'와 \'ducere(이끌다)\'가 합쳐져 물건을 세상 밖으로 끌어낸다는 의미에서 유래했습니다.',
       visual: '공장 컨베이어 벨트에서 갓 만들어진 새 제품들이 줄지어 나오는 장면을 상상해 보세요.',
@@ -949,6 +1243,12 @@ export const vocabBatch52: VocabItem[] = [
       exampleSentences: [
         { en: 'The local factory can manufacture over a thousand units of this device every single day.', ko: '현지 공장은 매일 이 장치를 천 대 이상 생산할 수 있습니다.' },
         { en: 'Organic farms usually yield smaller quantities of fruits compared to industrial ones.', ko: '유기농 농장은 보통 산업형 농장에 비해 적은 양의 과일을 생산합니다.' },
+      ],
+      wordDistractors: ['induce', 'deduce', 'spruce'],
+      definitionDistractors: [
+        'To transport or deliver goods from a warehouse to a retail store for sale',
+        'To carefully inspect and evaluate the quality of finished goods before shipping',
+        'To reduce or minimize the total output of a facility for maintenance purposes',
       ],
     }
   ),
