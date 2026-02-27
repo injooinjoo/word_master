@@ -2875,7 +2875,7 @@ export const vocabBatch81: VocabItem[] = [
       synonymAntonym: '관련 어휘는 사전을 참고하여 학습',
     })
   ),
-  word('literate', '해방하다', 3, 'verb',
+  word('literate', '읽고 쓸 줄 아는', 4, 'adjective',
     ['아프다, 아픔[통증]', '공공연하게, 명백하게', '유개트럭', '급증하다', '명 단위', '촉진하다', '예언', '부분, 구획', '사슴', '간격, 틈'],
     tips({
       etymology: 'literate의 어원 정보는 추후 보강 예정',

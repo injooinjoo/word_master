@@ -802,7 +802,7 @@ export const vocabBatch16: VocabItem[] = [
       ],
     }
   ),
-  word('garner', '쌓다', 8, 'verb',
+  word('garner', '모으다, 얻다', 8, 'verb',
     ['흩다', '분산하다', '잃다', '버리다', '해체하다', '방출하다', '낭비하다', '소모하다', '거절하다', '무시하다'],
     tips({
       etymology: '라틴어 granarium(곡물창고)에서 유래하여 수확한 곡식을 창고에 차곡차곡 모아 두는 행위를 의미합니다.',
@@ -1127,7 +1127,7 @@ export const vocabBatch16: VocabItem[] = [
       ],
     }
   ),
-  word('idiosyncrasy', '성벽', 8, 'noun',
+  word('idiosyncrasy', '특이한 버릇, 특이 체질', 8, 'noun',
     ['보편성', '일반성', '표준', '정상', '공통점', '유사성', '전형', '규범', '일치', '대중성'],
     tips({
       etymology: '그리스어 \'idios(개인의)\'와 \'synkrasis(함께 섞임)\'가 결합되어, 한 개인에게만 나타나는 독특한 기질의 혼합을 의미합니다.',

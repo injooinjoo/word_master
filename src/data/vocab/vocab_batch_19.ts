@@ -402,7 +402,7 @@ export const vocabBatch19: VocabItem[] = [
       ],
     }
   ),
-  word('filibuster', '논진 연설', 9, 'noun',
+  word('filibuster', '의사진행 방해 (연설)', 9, 'noun',
     ['간결한 동의', '즉각적 표결', '조용한 통과', '만장일치', '신속 집행', '정책 승인', '의안 철회', '법안 찬성', '행정 명령', '의사 협력'],
     tips({
       etymology: '네덜란드어 \'vrijbuiter(해적)\'에서 유래하여, 의사 진행 과정을 약탈하듯 방해한다는 비유적 의미를 담고 있습니다.',
@@ -752,7 +752,7 @@ export const vocabBatch19: VocabItem[] = [
       ],
     }
   ),
-  word('impervious', '둔감한', 10, 'adjective',
+  word('impervious', '영향받지 않는, 통하지 않는', 10, 'adjective',
     ['민감한', '취약한', '영향받는', '투과되는', '예민한', '약한', '열린', '반응하는', '부드러운', '유연한'],
     tips({
       etymology: '부정 접두사 \'im-\'과 \'통과하다\'라는 뜻의 \'pervius\'가 합쳐져 \'통과할 수 없는\'이라는 의미에서 유래했습니다.',
@@ -802,7 +802,7 @@ export const vocabBatch19: VocabItem[] = [
       ],
     }
   ),
-  word('impugn', '의심하다', 10, 'verb',
+  word('impugn', '이의를 제기하다, 비난하다', 10, 'verb',
     ['확인하다', '옹호하다', '지지하다', '믿다', '인정하다', '입증하다', '찬성하다', '신뢰하다', '보증하다', '수용하다'],
     tips({
       etymology: '라틴어 pugnare(싸우다)에서 유래하여, 상대의 의견에 맞서 싸우듯 의문을 제기하는 것을 뜻합니다.',
@@ -1002,7 +1002,7 @@ export const vocabBatch19: VocabItem[] = [
       ],
     }
   ),
-  word('insidious', '은근한', 10, 'adjective',
+  word('insidious', '교활한, 은밀히 해로운', 10, 'adjective',
     ['노골적인', '솔직한', '직접적인', '명시적인', '공개적인', '투명한', '정직한', '명백한', '드러난', '확연한'],
     tips({
       etymology: '라틴어 \'insidiosus\'에서 유래했으며, \'in(안에) + sedere(앉다)\'가 결합되어 \'안에서 잠복하여 기회를 엿보는\'이라는 의미를 담고 있습니다.',
