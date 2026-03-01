@@ -180,12 +180,6 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   }, [feedbackOpacity, hintOpacity, eloDeltaAnim, wordEloDeltaAnim, timeBonusAnim]);
 
   const loadNext = useCallback(() => {
-    if (quizService.isRoundComplete) {
-      quizService.endSession();
-      onSessionEnd();
-      return;
-    }
-
     const type = quizService.pickAdaptiveType();
     const q = quizService.nextQuestion(type);
     if (q == null) {
@@ -433,6 +427,15 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
     [answered, current, selectedChoice, isCorrect],
   );
 
+  const onPause = useCallback(() => {
+    setTimerRunning(false);
+    if (hintTimeoutRef.current) {
+      clearTimeout(hintTimeoutRef.current);
+      hintTimeoutRef.current = null;
+    }
+    onSessionEnd();
+  }, [onSessionEnd]);
+
   if (current == null) {
     if (!initialized) {
       return (
@@ -480,9 +483,6 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   const promptIsLong = q.prompt.length > 15;
   const promptFontSize = promptIsLong ? layout.longPromptFontSize : layout.wordFontSize;
 
-  // Progress bar percentage
-  const progressPercent = Math.round((questionNum / quizService.roundSize) * 100);
-
   return (
     <SafeAreaView style={styles.safe}>
       {/* Timer bar */}
@@ -500,20 +500,17 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
             <Text style={styles.typeBadgeText}>{typeLabel}</Text>
           </View>
           <Text style={styles.progressCount}>
-            <Text style={[styles.progressCurrent, { color: typeColor }]}>{questionNum}</Text>
-            <Text style={styles.progressSlash}> / {quizService.roundSize}</Text>
+            <Text style={[styles.progressCurrent, { color: typeColor }]}>#{questionNum}</Text>
           </Text>
         </View>
         <View style={styles.progressRight}>
           <View style={[styles.diffBadge, { backgroundColor: diffColor + '18' }]}>
             <Text style={[styles.diffText, { color: diffColor }]}>{diffLabel}</Text>
           </View>
+          <TouchableOpacity style={styles.pauseButton} onPress={onPause} activeOpacity={0.7}>
+            <Text style={styles.pauseButtonText}>| |</Text>
+          </TouchableOpacity>
         </View>
-      </View>
-
-      {/* Progress bar */}
-      <View style={styles.progressBarTrack}>
-        <View style={[styles.progressBarFill, { width: `${progressPercent}%`, backgroundColor: typeColor }]} />
       </View>
 
       {/* ELO info row */}
@@ -755,11 +752,6 @@ const styles = StyleSheet.create({
     fontSize: 17,
     fontWeight: '800',
   },
-  progressSlash: {
-    fontSize: 14,
-    fontWeight: '600',
-    color: Colors.textFaint,
-  },
   progressRight: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -774,17 +766,19 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '700',
   },
-  // ── Progress bar ──
-  progressBarTrack: {
-    height: 3,
-    backgroundColor: Colors.divider,
-    marginHorizontal: 16,
-    borderRadius: 2,
-    overflow: 'hidden',
+  pauseButton: {
+    width: 34,
+    height: 34,
+    borderRadius: 10,
+    backgroundColor: Colors.borderLight,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  progressBarFill: {
-    height: 3,
-    borderRadius: 2,
+  pauseButtonText: {
+    fontSize: 13,
+    fontWeight: '800',
+    color: Colors.textMuted,
+    letterSpacing: 2,
   },
   // ── ELO info row ──
   eloRow: {

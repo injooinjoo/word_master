@@ -33,11 +33,10 @@ const QUIZ_TYPE_SHORT: Record<QuizType, string> = {
 
 interface ResultScreenProps {
   quizService: QuizService;
-  onBackToQuiz: () => void;
-  onBackToPicker: () => void;
+  onResume: () => void;
 }
 
-export function ResultScreen({ quizService, onBackToQuiz, onBackToPicker }: ResultScreenProps) {
+export function ResultScreen({ quizService, onResume }: ResultScreenProps) {
   const summary = quizService.resultSummary;
   const avgRating = summary.compositeRating;
   const localTier = GradeTable.gradeLabel(avgRating);
@@ -239,11 +238,8 @@ export function ResultScreen({ quizService, onBackToQuiz, onBackToPicker }: Resu
 
       {/* ── Footer buttons ── */}
       <View style={styles.footer}>
-        <TouchableOpacity style={styles.primaryBtn} onPress={onBackToQuiz} activeOpacity={0.8}>
-          <Text style={styles.primaryBtnText}>다시 {quizService.roundSize}문제 풀기</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.secondaryBtn} onPress={onBackToPicker} activeOpacity={0.8}>
-          <Text style={styles.secondaryBtnText}>문제 수 다시 선택</Text>
+        <TouchableOpacity style={styles.primaryBtn} onPress={onResume} activeOpacity={0.8}>
+          <Text style={styles.primaryBtnText}>다시 풀기</Text>
         </TouchableOpacity>
       </View>
       {BannerAdComponent && (

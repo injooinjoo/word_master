@@ -1,12 +1,11 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Platform } from 'react-native';
+import { Platform, View, Text, StyleSheet, ActivityIndicator } from 'react-native';
 import { QuizScreen } from '../features/quiz/ui/QuizScreen';
 import { ResultScreen } from '../features/quiz/ui/ResultScreen';
-import { RoundSizePickerScreen } from '../features/quiz/ui/RoundSizePickerScreen';
 import { QuizService } from '../services/quizService';
-import type { RoundSizeOption } from '../services/quizService';
 import { AudioService } from '../services/audioService';
+import { StorageService } from '../services/storageService';
 import { allVocabData } from '../data/vocab';
 import { AdIds } from '../shared/constants/adIds';
 import { ErrorBoundary } from '../shared/components/ErrorBoundary';
@@ -15,12 +14,37 @@ import { MobileAds, InterstitialAd } from '../services/adService';
 const quizService = new QuizService(allVocabData);
 const audioService = new AudioService();
 
-type Screen = 'picker' | 'quiz' | 'result';
+type Screen = 'quiz' | 'result';
 
 export default function App() {
-  const [screen, setScreen] = useState<Screen>('picker');
+  const [screen, setScreen] = useState<Screen>('quiz');
+  const [loading, setLoading] = useState(true);
   const [adInitialized, setAdInitialized] = useState(false);
+  const wordEloTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // ── Restore persisted ELO + wire persistence callback ──
+  useEffect(() => {
+    (async () => {
+      const [userRatings, wordElo] = await Promise.all([
+        StorageService.loadUserRatings(),
+        StorageService.loadWordElo(),
+      ]);
+      quizService.restoreState(userRatings, wordElo);
+
+      // Wire persistence: save user ratings immediately, word ELO debounced
+      quizService.setOnRatingsChanged(() => {
+        StorageService.saveUserRatings(quizService.getPersistedUserRatings());
+        if (wordEloTimerRef.current) clearTimeout(wordEloTimerRef.current);
+        wordEloTimerRef.current = setTimeout(() => {
+          StorageService.saveWordElo(quizService.getPersistedWordElo());
+        }, 5000);
+      });
+
+      setLoading(false);
+    })();
+  }, []);
+
+  // ── Ad initialization ──
   useEffect(() => {
     if (MobileAds && (Platform.OS === 'android' || Platform.OS === 'ios')) {
       MobileAds()
@@ -62,51 +86,66 @@ export default function App() {
     }, 5000);
   }, [adInitialized]);
 
-  const onPickSize = useCallback((size: RoundSizeOption) => {
-    quizService.setRoundSize(size);
-    quizService.resetRound();
-    setScreen('quiz');
-  }, []);
-
-  const onSessionEnd = useCallback(() => {
+  const onPause = useCallback(() => {
+    // Flush pending word ELO save immediately
+    if (wordEloTimerRef.current) {
+      clearTimeout(wordEloTimerRef.current);
+      wordEloTimerRef.current = null;
+    }
+    StorageService.saveWordElo(quizService.getPersistedWordElo());
+    quizService.endSession();
     showInterstitialThenResult();
   }, [showInterstitialThenResult]);
 
-  const onBackToQuiz = useCallback(() => {
-    quizService.resetRound();
+  const onResume = useCallback(() => {
+    quizService.resetSession();
     setScreen('quiz');
   }, []);
 
-  const onBackToPicker = useCallback(() => {
-    quizService.resetRound();
-    setScreen('picker');
+  const onErrorReset = useCallback(() => {
+    quizService.resetSession();
+    setScreen('quiz');
   }, []);
 
-  const onErrorReset = useCallback(() => {
-    quizService.resetRound();
-    setScreen('picker');
-  }, []);
+  if (loading) {
+    return (
+      <View style={loadingStyles.container}>
+        <ActivityIndicator size="large" color="#3B82F6" />
+        <Text style={loadingStyles.text}>불러오는 중...</Text>
+      </View>
+    );
+  }
 
   return (
     <ErrorBoundary onReset={onErrorReset}>
       <StatusBar style="auto" />
-      {screen === 'picker' && (
-        <RoundSizePickerScreen onPickSize={onPickSize} />
-      )}
       {screen === 'quiz' && (
         <QuizScreen
           quizService={quizService}
           audioService={audioService}
-          onSessionEnd={onSessionEnd}
+          onSessionEnd={onPause}
         />
       )}
       {screen === 'result' && (
         <ResultScreen
           quizService={quizService}
-          onBackToQuiz={onBackToQuiz}
-          onBackToPicker={onBackToPicker}
+          onResume={onResume}
         />
       )}
     </ErrorBoundary>
   );
 }
+
+const loadingStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#FAFAFA',
+  },
+  text: {
+    marginTop: 16,
+    fontSize: 16,
+    color: '#6B7280',
+  },
+});

@@ -1,5 +1,6 @@
 import type { PartOfSpeech, VocabItem } from '../data/models/vocab';
 import { GradeTable } from '../shared/constants/gradeTable';
+import type { PersistedUserRatings, PersistedWordElo } from './storageService';
 
 // ── Quiz types ───────────────────────────────────────────────
 
@@ -148,9 +149,7 @@ export interface RoundRecord {
   quizType: QuizType;
 }
 
-/** Available round-size options */
-export const ROUND_SIZE_OPTIONS = [10, 20, 50, 100] as const;
-export type RoundSizeOption = (typeof ROUND_SIZE_OPTIONS)[number];
+/** @deprecated Round-size options removed — quiz is now continuous */
 
 // ── Constants ────────────────────────────────────────────────
 
@@ -252,8 +251,10 @@ export class QuizService {
   /** Word ELO map: vocabItem.id → ELO per quiz type */
   private readonly _wordElo: Map<string, EloByType> = new Map();
 
-  // ── Round tracking ──────────────────────────────────────
-  private _roundSize: RoundSizeOption = 10;
+  /** Callback invoked after each answer for persistence */
+  private _onRatingsChanged?: () => void;
+
+  // ── Session tracking ──────────────────────────────────
   private _roundTotal = 0;
   private _roundCorrect = 0;
   private _roundHistory: RoundRecord[] = [];
@@ -349,23 +350,13 @@ export class QuizService {
     return this._roundHistory;
   }
 
-  /** Current round size */
-  get roundSize(): RoundSizeOption {
-    return this._roundSize;
-  }
-
-  /** Set round size for the next round */
-  setRoundSize(size: RoundSizeOption): void {
-    this._roundSize = size;
-  }
-
-  /** Whether the current round is complete */
+  /** Continuous mode — quiz never auto-ends */
   get isRoundComplete(): boolean {
-    return this._roundTotal >= this._roundSize;
+    return false;
   }
 
-  /** Reset round counters for a new round */
-  resetRound(): void {
+  /** Reset session counters (ELO ratings are preserved) */
+  resetSession(): void {
     this._roundTotal = 0;
     this._roundCorrect = 0;
     this._roundHistory = [];
@@ -907,6 +898,65 @@ export class QuizService {
     if (ctx.correct) this._typePerformance[type].correct++;
     if (roundRecord) {
       this._roundHistory.push({ ...roundRecord, correct: ctx.correct });
+    }
+
+    this._onRatingsChanged?.();
+  }
+
+  // ── Persistence ──────────────────────────────────────────
+
+  /** Register callback invoked after each answer (for saving to storage) */
+  setOnRatingsChanged(cb: () => void): void {
+    this._onRatingsChanged = cb;
+  }
+
+  /** Extract current user ratings for persistence */
+  getPersistedUserRatings(): PersistedUserRatings {
+    return {
+      ratings: { ...this._ratings },
+      overallRating: this._overallRating,
+      sessionCount: this._sessionCount,
+    };
+  }
+
+  /** Extract word ELO map for persistence */
+  getPersistedWordElo(): PersistedWordElo {
+    const out: PersistedWordElo = {};
+    for (const [wordId, elo] of this._wordElo) {
+      out[wordId] = { ...elo };
+    }
+    return out;
+  }
+
+  /** Restore state from persisted data */
+  restoreState(
+    userRatings: PersistedUserRatings | null,
+    wordElo: PersistedWordElo | null,
+  ): void {
+    if (userRatings) {
+      const r = userRatings.ratings;
+      this._ratings = {
+        e2k: r.e2k ?? INITIAL_RATING,
+        k2e: r.k2e ?? INITIAL_RATING,
+        e2e: r.e2e ?? INITIAL_RATING,
+        syn: r.syn ?? INITIAL_RATING,
+        ant: r.ant ?? INITIAL_RATING,
+      };
+      this._overallRating = userRatings.overallRating ?? INITIAL_RATING;
+      this._sessionCount = userRatings.sessionCount ?? 0;
+    }
+    if (wordElo) {
+      for (const [wordId, elo] of Object.entries(wordElo)) {
+        if (this._wordElo.has(wordId)) {
+          this._wordElo.set(wordId, {
+            e2k: elo.e2k ?? INITIAL_RATING,
+            k2e: elo.k2e ?? INITIAL_RATING,
+            e2e: elo.e2e ?? INITIAL_RATING,
+            syn: elo.syn ?? INITIAL_RATING,
+            ant: elo.ant ?? INITIAL_RATING,
+          });
+        }
+      }
     }
   }
 
