@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import { View, StyleSheet, Animated } from 'react-native';
-import { Colors } from '../../../shared/constants/theme';
+import { Colors, Radius } from '../../../shared/constants/theme';
 
-const BAR_HEIGHT = 5;
+const BAR_HEIGHT = 6;
 
 interface TimerBarProps {
   /** Total duration in milliseconds */
@@ -87,10 +87,11 @@ const styles = StyleSheet.create({
     height: BAR_HEIGHT,
     backgroundColor: Colors.timerTrack,
     width: '100%',
+    borderRadius: Radius.pill,
+    overflow: 'hidden',
   },
   bar: {
     height: BAR_HEIGHT,
-    borderTopRightRadius: BAR_HEIGHT,
-    borderBottomRightRadius: BAR_HEIGHT,
+    borderRadius: Radius.pill,
   },
 });

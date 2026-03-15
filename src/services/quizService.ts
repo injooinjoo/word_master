@@ -282,7 +282,7 @@ export class QuizService {
     return { ...this._ratings };
   }
 
-  /** Tracked ratings used by result/ranking (e2k, k2e, e2e, syn only) */
+  /** Tracked ratings used by result/score sync (e2k, k2e, e2e, syn only) */
   get trackedRatings(): Readonly<Record<TrackedQuizType, number>> {
     return {
       e2k: this._ratings.e2k,
@@ -731,6 +731,86 @@ export class QuizService {
     );
   }
 
+  private _meaningSimilarityScore(answerMeaning: string, candidateMeaning: string): number {
+    const answer = answerMeaning.trim();
+    const candidate = candidateMeaning.trim();
+    if (!answer || !candidate) return -999;
+
+    const answerTokens = tokenizeMeaning(answer);
+    const candidateTokens = tokenizeMeaning(candidate);
+    let overlap = 0;
+    for (const token of answerTokens) {
+      if (candidateTokens.has(token)) overlap++;
+    }
+    const tokenCoverage = answerTokens.size > 0 ? overlap / answerTokens.size : 0;
+    const lengthPenalty = Math.abs(answer.length - candidate.length) * 0.02;
+    const prefixBonus = answer[0] === candidate[0] ? 0.2 : 0;
+    return overlap * 1.8 + tokenCoverage * 1.6 + prefixBonus - lengthPenalty;
+  }
+
+  private _englishLexicalSimilarityScore(answer: string, candidate: string): number {
+    const ans = normalizeWord(answer);
+    const cand = normalizeWord(candidate);
+    if (!ans || !cand) return -999;
+
+    let score = 0;
+    if (ans[0] === cand[0]) score += 1.2;
+    if (ans.slice(0, 2) === cand.slice(0, 2)) score += 0.8;
+    if (ans.slice(-2) === cand.slice(-2)) score += 0.6;
+    score -= editDistance(ans, cand) * 0.22;
+    score -= Math.abs(ans.length - cand.length) * 0.08;
+    return score;
+  }
+
+  private _definitionSimilarityScore(answerDefinition: string, candidateDefinition: string): number {
+    const answerTokens = tokenizeMeaning(answerDefinition);
+    const candidateTokens = tokenizeMeaning(candidateDefinition);
+    let overlap = 0;
+    for (const token of answerTokens) {
+      if (candidateTokens.has(token)) overlap++;
+    }
+    const tokenCoverage = answerTokens.size > 0 ? overlap / answerTokens.size : 0;
+    const lexicalScore = this._englishLexicalSimilarityScore(answerDefinition, candidateDefinition) * 0.35;
+    return overlap * 1.5 + tokenCoverage * 1.7 + lexicalScore;
+  }
+
+  private _distractorSimilarityScore(type: QuizType, correctAnswer: string, candidate: string): number {
+    switch (type) {
+      case 'e2k':
+        return this._meaningSimilarityScore(correctAnswer, candidate);
+      case 'k2e':
+        return this._k2eSimilarityScore(correctAnswer, candidate);
+      case 'e2e':
+        return this._definitionSimilarityScore(correctAnswer, candidate);
+      case 'syn':
+      case 'ant':
+        return this._englishLexicalSimilarityScore(correctAnswer, candidate);
+    }
+  }
+
+  private _rankDistractorsByDifficulty(
+    type: QuizType,
+    correctAnswer: string,
+    distractors: string[],
+  ): string[] {
+    const unique = [...new Set(distractors.map((d) => d.trim()).filter(Boolean))].filter(
+      (d) => d !== correctAnswer,
+    );
+
+    // Per-type rule:
+    // - e2k: meaning token overlap + surface similarity
+    // - k2e: spelling + Korean-meaning overlap heuristic
+    // - e2e: definition token overlap + lexical proximity
+    // - syn/ant: lexical proximity between answer and choice
+    return unique.sort((a, b) => {
+      const scoreDiff =
+        this._distractorSimilarityScore(type, correctAnswer, b) -
+        this._distractorSimilarityScore(type, correctAnswer, a);
+      if (Math.abs(scoreDiff) > 1e-9) return scoreDiff;
+      return a.localeCompare(b);
+    });
+  }
+
   /** E→E: pick from definitionDistractors or auto-generate from vocab pool */
   private _pickE2eDistractors(item: VocabItem, count: number): string[] {
     const explicit = (item.definitionDistractors ?? []).filter(
@@ -827,10 +907,7 @@ export class QuizService {
         break;
     }
 
-    // distractorRanking: ordered by similarity (index 0 = most similar to correct)
-    // The _pickDistractors methods already return preferred (same POS/level) first,
-    // so the order is preserved as the similarity ranking.
-    const distractorRanking = distractors.slice(0, 3);
+    const distractorRanking = this._rankDistractorsByDifficulty(type, correctAnswer, distractors).slice(0, 3);
 
     const choices = shuffle([correctAnswer, ...distractorRanking], this._random);
     const wordElo = this._wordElo.get(item.id)?.[type] ?? INITIAL_RATING;
