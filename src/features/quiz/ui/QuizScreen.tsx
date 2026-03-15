@@ -524,6 +524,14 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   const choiceCardHeight = clamp(availableChoiceGridHeight / 2, layout.cardHeight, layout.cardHeight + 36);
   const choiceTextFontSize = clamp(layout.choiceFontSize - longChoiceFactor * 2.5, 11, 22);
   const choiceTextLineHeight = Math.round(choiceTextFontSize * 1.28);
+  const choiceRows = q.choices.reduce<Array<Array<{ choice: string; idx: number }>>>((rows, choice, idx) => {
+    if (idx % 2 === 0) {
+      rows.push([{ choice, idx }]);
+    } else {
+      rows[rows.length - 1].push({ choice, idx });
+    }
+    return rows;
+  }, []);
 
   const promptIsLong = q.prompt.length > 15;
   const promptFontSize = promptIsLong ? layout.longPromptFontSize : layout.wordFontSize;
@@ -731,25 +739,37 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
               ]}
             >
               <View style={[styles.grid, { gap: layout.gap }]}>
-                {q.choices.map((choice, idx) => (
-                  <ChoiceCard
-                    key={`${choice}-${idx}`}
-                    label={CHOICE_LABELS[idx]}
-                    text={choice}
-                    state={getChoiceState(choice)}
-                    selected={selectedChoice === choice}
-                    onPress={() => onChoiceSelected(choice)}
-                    disabled={answered}
-                    style={{
-                      width: layout.cellWidth,
-                      height: choiceCardHeight,
-                      borderRadius: layout.cardRadius,
-                      paddingVertical: layout.cardPaddingVertical,
-                      paddingHorizontal: layout.cardPaddingHorizontal,
-                      shadowRadius: layout.cardShadowRadius,
-                    }}
-                    textStyle={{ fontSize: choiceTextFontSize, lineHeight: choiceTextLineHeight }}
-                  />
+                {choiceRows.map((row, rowIndex) => (
+                  <View key={`row-${rowIndex}`} style={[styles.gridRow, { gap: layout.gap }]}>
+                    {row.map(({ choice, idx }) => {
+                      return (
+                        <ChoiceCard
+                          key={`${choice}-${idx}`}
+                          label={CHOICE_LABELS[idx]}
+                          text={choice}
+                          state={getChoiceState(choice)}
+                          selected={selectedChoice === choice}
+                          onPress={() => onChoiceSelected(choice)}
+                          disabled={answered}
+                          style={{
+                            width: layout.cellWidth,
+                            height: choiceCardHeight,
+                            borderRadius: layout.cardRadius,
+                            paddingVertical: layout.cardPaddingVertical,
+                            paddingHorizontal: layout.cardPaddingHorizontal,
+                            shadowRadius: layout.cardShadowRadius,
+                          }}
+                          textStyle={{
+                            fontSize: choiceTextFontSize,
+                            lineHeight: choiceTextLineHeight,
+                          }}
+                        />
+                      );
+                    })}
+                    {row.length < 2 ? (
+                      <View style={{ width: layout.cellWidth, height: choiceCardHeight }} />
+                    ) : null}
+                  </View>
                 ))}
               </View>
             </View>
@@ -984,10 +1004,12 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.md,
   },
   grid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
+    flexDirection: 'column',
     gap: Spacing.md,
+  },
+  gridRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   centered: {
     flex: 1,
