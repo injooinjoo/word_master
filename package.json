@@ -11,7 +11,7 @@
     "web": "expo start --web --port 8082",
     "check:release-config": "cross-env APP_VARIANT=production EXPO_PUBLIC_ENABLE_AUTH=true EXPO_PUBLIC_ENABLE_SCORE_SYNC=false EXPO_PUBLIC_ENABLE_ADS=false node scripts/verify-release-config.mjs",
     "check:ipa": "node scripts/inspect-ios-ipa.mjs",
-    "test": "tsx --test tests/**/*.test.ts",
+    "test": "tsx --test tests/*.test.ts",
     "test:adaptive": "tsx --test tests/adaptiveProgressService.test.ts"
   },
   "dependencies": {
