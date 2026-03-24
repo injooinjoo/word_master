@@ -218,7 +218,7 @@ export function ResultScreen({
     ? !authEnabled
       ? '이 기기 전용'
       : isGuestSession
-        ? '게스트 사용 중'
+        ? '이 기기 전용 저장'
         : '계정 연결됨'
     : isGuestSession
       ? '게스트'
@@ -242,7 +242,7 @@ export function ResultScreen({
     ? !authEnabled
       ? '학습 기록은 이 기기에 저장됩니다.'
       : isGuestSession
-        ? '로그인하면 다음 라운드부터 기록과 프로필을 계정에 이어갈 수 있어요.'
+        ? '지금은 이 기기에만 저장되고, 로그인하면 다음 라운드부터 기록과 프로필을 계정에 이어갈 수 있어요.'
         : '이 계정으로 학습 기록과 캐릭터 프로필을 이어가고 있습니다.'
     : bestScore
       ? `최고 ${bestScore.compositeRating}`
@@ -467,14 +467,6 @@ export function ResultScreen({
 
         <View style={styles.footerShell}>
           <ScreenCard padded={false} style={styles.footer}>
-            {viewState.showGuestSignInAction && (
-              <View style={styles.footerNotice}>
-                <Text style={styles.footerNoticeTitle}>로그인은 선택입니다</Text>
-                <Text style={styles.footerNoticeText}>
-                  지금은 게스트로 계속 풀어도 되고, 로그인하면 다음 라운드부터 기록과 프로필을 계정에 이어갈 수 있어요.
-                </Text>
-              </View>
-            )}
             <Button label="다시 풀기" variant="primary" onPress={onResume} />
             {viewState.showGuestSignInAction && (
               <Button
@@ -803,21 +795,6 @@ function useResultStyles() {
     gap: Spacing.sm,
     paddingHorizontal: Spacing.md,
     paddingVertical: Spacing.md,
-  },
-  footerNotice: {
-    gap: Spacing.xs,
-    paddingBottom: Spacing.xs,
-  },
-  footerNoticeTitle: {
-    fontSize: typography.sizes.size13,
-    fontWeight: Typography.weightBold,
-    color: Colors.textPrimary,
-  },
-  footerNoticeText: {
-    fontSize: typography.sizes.size12,
-    lineHeight: typography.lineHeight(Typography.size12, 18 / Typography.size12),
-    color: Colors.textSecondary,
-    fontWeight: Typography.weightMedium,
   },
   }), [typography]);
 }
