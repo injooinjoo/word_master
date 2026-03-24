@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform, StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
+import { StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
 
 export interface ResponsiveContainerProps {
   children: React.ReactNode;
@@ -19,7 +19,7 @@ export function ResponsiveContainer({
       <View
         style={[
           styles.inner,
-          Platform.OS === 'web' ? { maxWidth, width: '100%' } : styles.mobile,
+          { maxWidth, width: '100%' },
           paddingHorizontal > 0 ? { paddingHorizontal } : null,
           style,
         ]}
@@ -39,8 +39,5 @@ const styles = StyleSheet.create({
   inner: {
     flex: 1,
     width: '100%',
-  },
-  mobile: {
-    maxWidth: undefined,
   },
 });

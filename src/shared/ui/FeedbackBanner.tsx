@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Colors, Radius, Spacing, Typography } from '../constants/theme';
+import { useResponsiveTypography } from './responsiveTypography';
 
 export type FeedbackKind = 'success' | 'error' | 'timeout';
 
@@ -10,6 +11,7 @@ export interface FeedbackBannerProps {
 }
 
 export function FeedbackBanner({ kind, message }: FeedbackBannerProps) {
+  const typography = useResponsiveTypography();
   const tone =
     kind === 'success'
       ? {
@@ -31,7 +33,18 @@ export function FeedbackBanner({ kind, message }: FeedbackBannerProps) {
 
   return (
     <View style={[styles.container, tone]}>
-      <Text style={[styles.text, { color: tone.color }]}>{message}</Text>
+      <Text
+        style={[
+          styles.text,
+          {
+            color: tone.color,
+            fontSize: typography.sizes.size15,
+            lineHeight: typography.lineHeight(Typography.size15, 22 / Typography.size15),
+          },
+        ]}
+      >
+        {message}
+      </Text>
     </View>
   );
 }
@@ -44,7 +57,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   text: {
-    fontSize: Typography.size15,
     fontWeight: Typography.weightBold,
     textAlign: 'center',
   },

@@ -9,6 +9,7 @@ import {
   type ViewStyle,
 } from 'react-native';
 import { Colors, Elevation, Radius, Spacing, Typography, withAlpha } from '../constants/theme';
+import { useResponsiveTypography } from './responsiveTypography';
 
 export type ChoiceCardState = 'default' | 'correct' | 'wrong' | 'dimmed';
 
@@ -33,8 +34,15 @@ export function ChoiceCard({
   style,
   textStyle,
 }: ChoiceCardProps) {
+  const typography = useResponsiveTypography();
   return (
     <TouchableOpacity
+      accessibilityRole="button"
+      accessibilityLabel={`${label}. ${text}`}
+      accessibilityState={{
+        disabled: disabled ?? false,
+        selected,
+      }}
       activeOpacity={0.78}
       onPress={onPress}
       disabled={disabled}
@@ -48,11 +56,15 @@ export function ChoiceCard({
       ]}
     >
       <View style={[styles.badge, state !== 'default' && styles.badgeDimmed]}>
-        <Text style={styles.badgeText}>{label}</Text>
+        <Text style={[styles.badgeText, { fontSize: typography.sizes.size11 }]}>{label}</Text>
       </View>
       <Text
         style={[
           styles.text,
+          {
+            fontSize: typography.sizes.size18,
+            lineHeight: typography.lineHeight(Typography.size18, 24 / Typography.size18),
+          },
           state === 'correct' && styles.correctText,
           state === 'wrong' && styles.wrongText,
           state === 'dimmed' && styles.dimmedText,
@@ -115,13 +127,10 @@ const styles = StyleSheet.create({
     opacity: 0.45,
   },
   badgeText: {
-    fontSize: Typography.size11,
     fontWeight: Typography.weightBold,
     color: Colors.choiceLabelText,
   },
   text: {
-    fontSize: Typography.size18,
-    lineHeight: 24,
     textAlign: 'center',
     color: Colors.choiceText,
     width: '100%',

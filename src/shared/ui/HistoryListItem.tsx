@@ -1,10 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Colors, Radius, Spacing, Typography, withAlpha } from '../constants/theme';
+import { useResponsiveTypography } from './responsiveTypography';
 
 interface HistoryListItemProps {
   index: number;
   word: string;
+  meaning?: string;
   answerText: string;
   correct: boolean;
   typeLabel: string;
@@ -14,30 +16,61 @@ interface HistoryListItemProps {
 export function HistoryListItem({
   index,
   word,
+  meaning,
   answerText,
   correct,
   typeLabel,
   typeColor,
 }: HistoryListItemProps) {
+  const typography = useResponsiveTypography();
   const accentColor = correct ? Colors.correct : Colors.wrong;
 
   return (
     <View style={[styles.row, { borderLeftColor: accentColor }]}>
       <View style={styles.left}>
         <View style={[styles.numBadge, { backgroundColor: withAlpha(accentColor, '18') }]}>
-          <Text style={[styles.numText, { color: accentColor }]}>{index}</Text>
+          <Text style={[styles.numText, { color: accentColor, fontSize: typography.sizes.size12 }]}>
+            {index}
+          </Text>
         </View>
         <View style={styles.info}>
-          <Text style={styles.word}>{word}</Text>
-          <Text style={styles.answer}>{answerText}</Text>
+          <Text style={[styles.word, { fontSize: typography.sizes.size15 }]}>{word}</Text>
+          {meaning ? (
+            <Text
+              style={[
+                styles.meaning,
+                {
+                  fontSize: typography.sizes.size13,
+                  lineHeight: typography.lineHeight(Typography.size13, 18 / Typography.size13),
+                },
+              ]}
+            >
+              {meaning}
+            </Text>
+          ) : null}
+          <Text
+            style={[
+              styles.answer,
+              {
+                fontSize: typography.sizes.size12,
+                lineHeight: typography.lineHeight(Typography.size12, 18 / Typography.size12),
+              },
+            ]}
+          >
+            {answerText}
+          </Text>
         </View>
       </View>
 
       <View style={styles.right}>
         <View style={[styles.typeTag, { backgroundColor: withAlpha(typeColor, '18') }]}>
-          <Text style={[styles.typeText, { color: typeColor }]}>{typeLabel}</Text>
+          <Text style={[styles.typeText, { color: typeColor, fontSize: typography.sizes.size11 }]}>
+            {typeLabel}
+          </Text>
         </View>
-        <Text style={[styles.icon, { color: accentColor }]}>{correct ? 'O' : 'X'}</Text>
+        <Text style={[styles.icon, { color: accentColor, fontSize: typography.sizes.size18 }]}>
+          {correct ? 'O' : 'X'}
+        </Text>
       </View>
     </View>
   );
@@ -71,7 +104,6 @@ const styles = StyleSheet.create({
     marginRight: Spacing.sm,
   },
   numText: {
-    fontSize: Typography.size12,
     fontWeight: Typography.weightExtraBold,
   },
   info: {
@@ -79,15 +111,17 @@ const styles = StyleSheet.create({
     minWidth: 0,
   },
   word: {
-    fontSize: Typography.size15,
     fontWeight: Typography.weightBold,
     color: Colors.textPrimary,
   },
-  answer: {
+  meaning: {
     marginTop: 3,
-    fontSize: Typography.size12,
     color: Colors.textSecondary,
-    lineHeight: 18,
+    fontWeight: Typography.weightSemiBold,
+  },
+  answer: {
+    marginTop: 4,
+    color: Colors.textMuted,
     fontWeight: Typography.weightSemiBold,
   },
   right: {
@@ -101,11 +135,9 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.xs,
   },
   typeText: {
-    fontSize: Typography.size11,
     fontWeight: Typography.weightBold,
   },
   icon: {
-    fontSize: Typography.size18,
     fontWeight: Typography.weightExtraBold,
   },
 });

@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Colors, Radius, Spacing, Typography } from '../constants/theme';
+import { useResponsiveTypography } from './responsiveTypography';
 
 export type BadgeTone = 'difficulty' | 'status';
 
@@ -11,6 +12,7 @@ interface BadgeProps {
 }
 
 export function Badge({ label, tone = 'difficulty', color }: BadgeProps) {
+  const typography = useResponsiveTypography();
   const resolvedColor = color ?? Colors.primary;
 
   return (
@@ -21,7 +23,9 @@ export function Badge({ label, tone = 'difficulty', color }: BadgeProps) {
         { borderColor: `${resolvedColor}40`, backgroundColor: `${resolvedColor}1A` },
       ]}
     >
-      <Text style={[styles.text, { color: resolvedColor }]}>{label}</Text>
+      <Text style={[styles.text, { color: resolvedColor, fontSize: typography.sizes.size11 }]}>
+        {label}
+      </Text>
     </View>
   );
 }
@@ -43,7 +47,6 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
   },
   text: {
-    fontSize: Typography.size11,
     fontWeight: Typography.weightBold,
     letterSpacing: 0.2,
   },

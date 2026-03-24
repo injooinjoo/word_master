@@ -9,6 +9,7 @@ import {
   type ViewStyle,
 } from 'react-native';
 import { Colors, Radius, Spacing, Typography } from '../constants/theme';
+import { useResponsiveTypography } from './responsiveTypography';
 
 type TextFieldStatus = 'default' | 'error' | 'success';
 
@@ -27,6 +28,7 @@ export function TextField({
   style,
   ...inputProps
 }: TextFieldProps) {
+  const typography = useResponsiveTypography();
   const borderColor =
     status === 'error'
       ? Colors.wrong
@@ -48,15 +50,29 @@ export function TextField({
 
   return (
     <View style={containerStyle}>
-      <Text style={styles.label}>{label}</Text>
+      <Text style={[styles.label, { fontSize: typography.sizes.size12 }]}>{label}</Text>
       <View style={[styles.inputShell, { borderColor, backgroundColor }]}>
         <TextInput
+          accessibilityLabel={label}
           {...inputProps}
           placeholderTextColor={Colors.textFaint}
-          style={[styles.input, style]}
+          style={[styles.input, { fontSize: typography.sizes.size15 }, style]}
         />
       </View>
-      {caption ? <Text style={[styles.caption, { color: captionColor }]}>{caption}</Text> : null}
+      {caption ? (
+        <Text
+          style={[
+            styles.caption,
+            {
+              color: captionColor,
+              fontSize: typography.sizes.size12,
+              lineHeight: typography.lineHeight(Typography.size12, 18 / Typography.size12),
+            },
+          ]}
+        >
+          {caption}
+        </Text>
+      ) : null}
     </View>
   );
 }
@@ -64,7 +80,6 @@ export function TextField({
 const styles = StyleSheet.create({
   label: {
     marginBottom: Spacing.sm,
-    fontSize: Typography.size12,
     fontWeight: Typography.weightBold,
     color: Colors.textPrimary,
     letterSpacing: 0.2,
@@ -79,13 +94,10 @@ const styles = StyleSheet.create({
   input: {
     paddingVertical: Spacing.md,
     color: Colors.textPrimary,
-    fontSize: Typography.size15,
     fontWeight: Typography.weightSemiBold,
   },
   caption: {
     marginTop: Spacing.sm,
-    fontSize: Typography.size12,
-    lineHeight: 18,
     fontWeight: Typography.weightSemiBold,
   },
 });

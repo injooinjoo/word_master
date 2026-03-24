@@ -14,4 +14,4 @@ When reporting an issue, include:
 - What screen you were on
 - What happened just before the issue
 
-The first App Store release is a guest-only study mode for iPhone and iPad.
+The iPhone and iPad release starts in guest study mode by default and also offers optional email login from the result screen.

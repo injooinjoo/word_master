@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Colors, Radius, Typography, withAlpha } from '../constants/theme';
+import { useResponsiveTypography } from './responsiveTypography';
 
 interface StatRingProps {
   percent: number;
@@ -10,12 +11,31 @@ interface StatRingProps {
 }
 
 export function StatRing({ percent, numerator, denominator, color }: StatRingProps) {
+  const typography = useResponsiveTypography();
   return (
-    <View style={[styles.outer, { backgroundColor: withAlpha(color, '12') }]}>
+    <View
+      accessible
+      accessibilityRole="text"
+      accessibilityLabel={`정확도 ${percent}퍼센트, ${numerator}개 중 ${denominator}개`}
+      style={[styles.outer, { backgroundColor: withAlpha(color, '12') }]}
+    >
       <View style={[styles.middle, { borderColor: withAlpha(color, '30') }]}>
         <View style={[styles.inner, { borderColor: color }]}>
-        <Text style={[styles.percent, { color }]}>{percent}%</Text>
-        <Text style={styles.ratio}>{numerator}/{denominator}</Text>
+        <Text
+          style={[
+            styles.percent,
+            {
+              color,
+              fontSize: typography.sizes.size30,
+              lineHeight: typography.lineHeight(Typography.size30, 34 / Typography.size30),
+            },
+          ]}
+        >
+          {percent}%
+        </Text>
+        <Text style={[styles.ratio, { fontSize: typography.sizes.size12 }]}>
+          {numerator}/{denominator}
+        </Text>
         </View>
       </View>
     </View>
@@ -48,13 +68,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   percent: {
-    fontSize: Typography.size30,
     fontWeight: Typography.weightExtraBold,
-    lineHeight: 34,
   },
   ratio: {
     marginTop: 1,
-    fontSize: Typography.size12,
     fontWeight: Typography.weightSemiBold,
     color: Colors.textMuted,
   },

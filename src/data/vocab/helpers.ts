@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import type {
   ExampleSentence,
   LearningTipEntry,
@@ -50,6 +49,35 @@ export interface WordExtra {
   pronunciationUrl?: string;
 }
 
+function normalizeIdentityValue(value: string): string {
+  return value.trim().toLowerCase().replace(/\s+/g, ' ');
+}
+
+function slugifyWord(value: string): string {
+  const slug = normalizeIdentityValue(value)
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+  return slug || 'item';
+}
+
+function fnv1aHash(value: string): string {
+  let hash = 0x811c9dc5;
+  for (let index = 0; index < value.length; index++) {
+    hash ^= value.charCodeAt(index);
+    hash = Math.imul(hash, 0x01000193);
+  }
+  return (hash >>> 0).toString(36);
+}
+
+export function makeStableVocabId(word: string, meaning: string, partOfSpeech: PartOfSpeech): string {
+  const identity = [
+    normalizeIdentityValue(word),
+    normalizeIdentityValue(meaning),
+    partOfSpeech,
+  ].join('::');
+  return `vocab_${slugifyWord(word)}_${fnv1aHash(identity)}`;
+}
+
 /**
  * Shorthand to build a VocabItem.
  *
@@ -66,7 +94,7 @@ export function word(
   extra?: WordExtra,
 ): VocabItem {
   return {
-    id: uuidv4(),
+    id: makeStableVocabId(w, meaning, partOfSpeech),
     word: w,
     meaning,
     definition: extra?.definition ?? null,

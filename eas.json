@@ -6,13 +6,32 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "APP_VARIANT": "development",
+        "EXPO_PUBLIC_ENABLE_AUTH": "true",
+        "EXPO_PUBLIC_ENABLE_SCORE_SYNC": "true",
+        "EXPO_PUBLIC_ENABLE_ADS": "true"
+      }
     },
     "preview": {
-      "distribution": "internal"
+      "autoIncrement": true,
+      "distribution": "internal",
+      "env": {
+        "APP_VARIANT": "preview",
+        "EXPO_PUBLIC_ENABLE_AUTH": "true",
+        "EXPO_PUBLIC_ENABLE_SCORE_SYNC": "false",
+        "EXPO_PUBLIC_ENABLE_ADS": "false"
+      }
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "env": {
+        "APP_VARIANT": "production",
+        "EXPO_PUBLIC_ENABLE_AUTH": "true",
+        "EXPO_PUBLIC_ENABLE_SCORE_SYNC": "false",
+        "EXPO_PUBLIC_ENABLE_ADS": "false"
+      }
     }
   },
   "submit": {

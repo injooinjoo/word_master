@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Colors, QuizTypeColors, Radius, Spacing, Typography, withAlpha } from '../constants/theme';
+import { useResponsiveTypography } from './responsiveTypography';
 
 export type ChipType = 'e2k' | 'k2e' | 'e2e' | 'syn' | 'ant';
 
@@ -10,11 +11,12 @@ interface ChipProps {
 }
 
 export function Chip({ label, type }: ChipProps) {
+  const typography = useResponsiveTypography();
   const color = QuizTypeColors[type];
   return (
     <View style={[styles.container, { backgroundColor: withAlpha(color, '1A'), borderColor: withAlpha(color, '40') }]}>
       <View style={[styles.dot, { backgroundColor: color }]} />
-      <Text style={styles.text}>{label}</Text>
+      <Text style={[styles.text, { fontSize: typography.sizes.size11 }]}>{label}</Text>
     </View>
   );
 }
@@ -35,7 +37,6 @@ const styles = StyleSheet.create({
     borderRadius: Radius.pill,
   },
   text: {
-    fontSize: Typography.size11,
     fontWeight: Typography.weightBold,
     color: Colors.textPrimary,
     letterSpacing: 0.3,

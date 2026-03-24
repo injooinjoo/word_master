@@ -34,6 +34,27 @@ export interface LearningTips {
   synonymAntonym: LearningTipEntry;
 }
 
+const PLACEHOLDER_LEARNING_TIP_PATTERNS = [
+  /추후 보강 예정/u,
+  /시각적으로 기억/u,
+  /발음을 반복해 암기/u,
+] as const;
+
+function normalizeLearningTipText(text: string): string {
+  return text.replace(/\s+/g, ' ').trim();
+}
+
+export function isRenderableLearningTipEntry(
+  entry: LearningTipEntry | null | undefined,
+): entry is LearningTipEntry {
+  if (!entry) return false;
+
+  const normalizedText = normalizeLearningTipText(entry.text);
+  if (normalizedText.length === 0) return false;
+
+  return !PLACEHOLDER_LEARNING_TIP_PATTERNS.some((pattern) => pattern.test(normalizedText));
+}
+
 /** All entries in fixed order for random pick */
 export function getLearningTipEntries(tips: LearningTips): LearningTipEntry[] {
   return [
@@ -43,6 +64,15 @@ export function getLearningTipEntries(tips: LearningTips): LearningTipEntry[] {
     tips.context,
     tips.synonymAntonym,
   ];
+}
+
+export function getRenderableLearningTipEntries(tips: LearningTips): LearningTipEntry[] {
+  return getLearningTipEntries(tips)
+    .filter(isRenderableLearningTipEntry)
+    .map((entry) => ({
+      ...entry,
+      text: normalizeLearningTipText(entry.text),
+    }));
 }
 
 // ── Vocabulary Item ──────────────────────────────────────────

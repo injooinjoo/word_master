@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import {
   Colors,
@@ -9,6 +9,10 @@ import {
   withAlpha,
 } from '../../../shared/constants/theme';
 import {
+  createDefaultCharacterProfile,
+  sanitizeCharacterProfile,
+} from '../../../shared/models/characterProfile';
+import {
   Badge,
   Button,
   Chip,
@@ -17,15 +21,18 @@ import {
   HistoryListItem,
   ResponsiveContainer,
   ScreenCard,
-  SharedStyles,
   StatRing,
   TextField,
+  useResponsiveTypography,
+  useSharedTextStyles,
 } from '../../../shared/ui';
+import { CharacterProfileEditor } from '../../profile/ui/ProfileScreen';
 
 export type PreviewMode =
   | 'foundations'
   | 'components'
   | 'auth'
+  | 'profile'
   | 'quiz'
   | 'result'
   | 'system'
@@ -36,7 +43,10 @@ interface PreviewDeckProps {
 }
 
 export function PreviewDeck({ mode }: PreviewDeckProps) {
+  const styles = usePreviewStyles();
   useEffect(() => {
+    if (!__DEV__) return;
+
     const webGlobal =
       globalThis as {
         location?: { hash?: string };
@@ -76,6 +86,7 @@ export function PreviewDeck({ mode }: PreviewDeckProps) {
           {mode === 'foundations' && <FoundationsPreview />}
           {mode === 'components' && <ComponentsPreview />}
           {mode === 'auth' && <AuthPreview />}
+          {mode === 'profile' && <ProfilePreview />}
           {mode === 'quiz' && <QuizPreview />}
           {mode === 'result' && <ResultPreview />}
           {mode === 'system' && <SystemPreview />}
@@ -95,9 +106,12 @@ function PreviewHeader({
   title: string;
   description: string;
 }) {
+  const styles = usePreviewStyles();
+  const sharedTextStyles = useSharedTextStyles();
+
   return (
     <View style={styles.header}>
-      <Text style={SharedStyles.eyebrow}>{eyebrow}</Text>
+      <Text style={sharedTextStyles.eyebrow}>{eyebrow}</Text>
       <Text style={styles.headerTitle}>{title}</Text>
       <Text style={styles.headerDescription}>{description}</Text>
     </View>
@@ -105,6 +119,8 @@ function PreviewHeader({
 }
 
 function FoundationsPreview() {
+  const styles = usePreviewStyles();
+  const typography = useResponsiveTypography();
   const swatches = [
     ['bg/base', Colors.background],
     ['bg/surface', Colors.surface],
@@ -171,7 +187,10 @@ function FoundationsPreview() {
             key={label}
             style={[
               styles.typeRow,
-              { fontSize: size as number, lineHeight: Math.round((size as number) * 1.25) },
+              {
+                fontSize: typography.fontSize(size as number),
+                lineHeight: typography.lineHeight(size as number, 1.25),
+              },
             ]}
           >
             {label}
@@ -183,6 +202,7 @@ function FoundationsPreview() {
 }
 
 function ComponentsPreview() {
+  const styles = usePreviewStyles();
   return (
     <View style={styles.page}>
       <PreviewHeader
@@ -240,9 +260,9 @@ function ComponentsPreview() {
       <ScreenCard style={styles.sectionCard}>
         <Text style={styles.sectionTitle}>Feedback / Stats</Text>
         <View style={styles.stack}>
-          <FeedbackBanner kind="success" message="정답!" />
-          <FeedbackBanner kind="error" message="오답 — 정답: subtle" />
-          <FeedbackBanner kind="timeout" message="시간 초과 — 정답: obvious" />
+          <FeedbackBanner kind="success" message={`정답!\nsubtle · 미묘한\n정답: delicate`} />
+          <FeedbackBanner kind="error" message={`오답\nobvious · 명백한\n내 답: blunt\n정답: explicit`} />
+          <FeedbackBanner kind="timeout" message={`시간 초과\nobvious · 명백한\n정답: evident`} />
         </View>
         <View style={styles.statWrap}>
           <StatRing percent={84} numerator={42} denominator={50} color={Colors.correct} />
@@ -255,7 +275,8 @@ function ComponentsPreview() {
           <HistoryListItem
             index={1}
             word="subtle"
-            answerText="미묘한"
+            meaning="미묘한"
+            answerText="정답: delicate"
             correct
             typeLabel="영한"
             typeColor={QuizTypeColors.e2k}
@@ -263,7 +284,8 @@ function ComponentsPreview() {
           <HistoryListItem
             index={2}
             word="obvious"
-            answerText="분명한 → 명백한"
+            meaning="명백한"
+            answerText="내 답: blunt → 정답: explicit"
             correct={false}
             typeLabel="반의"
             typeColor={QuizTypeColors.ant}
@@ -274,13 +296,54 @@ function ComponentsPreview() {
   );
 }
 
+function ProfilePreview() {
+  const styles = usePreviewStyles();
+  const profile = useMemo(
+    () =>
+      sanitizeCharacterProfile({
+        ...createDefaultCharacterProfile(),
+        avatar: {
+          hairStyle: 'bob',
+          hairColor: 'rose',
+          expression: 'wink',
+          outfitColor: 'gold',
+        },
+        likes: '퍼즐, 민트색',
+        dislikes: '시간 초과',
+      }),
+    [],
+  );
+
+  return (
+    <View style={styles.page}>
+      <PreviewHeader
+        eyebrow="02 Profile"
+        title="Character Profile"
+        description="전용 프로필 편집 화면과 요약 카드 조합."
+      />
+
+      <CharacterProfileEditor
+        initialProfile={profile}
+        viewerLabel="프리뷰 캐릭터"
+        storageLabel="프리뷰에서는 저장되지 않습니다."
+        onClose={() => undefined}
+        onSave={async (nextProfile) => ({
+          profile: nextProfile,
+          notice: '프리뷰 저장 시뮬레이션입니다.',
+        })}
+      />
+    </View>
+  );
+}
+
 function AuthPreview() {
+  const styles = usePreviewStyles();
   return (
     <View style={styles.page}>
       <PreviewHeader
         eyebrow="02 Auth"
         title="Auth States"
-        description="로그인 기본, 회원가입, 성공/오류 메시지 상태."
+        description="선택 로그인, 회원가입, 성공/오류 메시지 상태."
       />
 
       <ScreenCard style={styles.sectionCard}>
@@ -288,7 +351,7 @@ function AuthPreview() {
         <View style={styles.stack}>
           <TextField label="이메일" value="learner@wordmaster.app" editable={false} />
           <TextField label="비밀번호" value="secret123" editable={false} secureTextEntry />
-          <Button label="학습 시작하기" onPress={() => undefined} />
+          <Button label="로그인" onPress={() => undefined} />
         </View>
       </ScreenCard>
 
@@ -319,6 +382,7 @@ function AuthPreview() {
 }
 
 function QuizPreview() {
+  const styles = usePreviewStyles();
   return (
     <View style={styles.page}>
       <PreviewHeader
@@ -357,6 +421,7 @@ function QuizPreview() {
 }
 
 function ResultPreview() {
+  const styles = usePreviewStyles();
   return (
     <View style={styles.page}>
       <PreviewHeader
@@ -397,7 +462,8 @@ function ResultPreview() {
           <HistoryListItem
             index={1}
             word="obvious"
-            answerText="명백한"
+            meaning="명백한"
+            answerText="정답"
             correct
             typeLabel="영한"
             typeColor={QuizTypeColors.e2k}
@@ -405,7 +471,8 @@ function ResultPreview() {
           <HistoryListItem
             index={2}
             word="subtle"
-            answerText="직설적 → 미묘한"
+            meaning="미묘한"
+            answerText="내 답: direct → 정답: delicate"
             correct={false}
             typeLabel="반의"
             typeColor={QuizTypeColors.ant}
@@ -417,6 +484,8 @@ function ResultPreview() {
 }
 
 function SystemPreview() {
+  const styles = usePreviewStyles();
+  const sharedTextStyles = useSharedTextStyles();
   return (
     <View style={styles.page}>
       <PreviewHeader
@@ -426,13 +495,13 @@ function SystemPreview() {
       />
 
       <ScreenCard style={styles.sectionCardCenter}>
-        <Text style={SharedStyles.eyebrow}>Boot Sequence</Text>
+        <Text style={sharedTextStyles.eyebrow}>Boot Sequence</Text>
         <Text style={styles.systemStateTitle}>불러오는 중...</Text>
         <Text style={styles.systemStateBody}>학습 데이터를 준비하고 있어요.</Text>
       </ScreenCard>
 
       <ScreenCard style={styles.sectionCardCenter}>
-        <Text style={SharedStyles.eyebrow}>Configuration Required</Text>
+        <Text style={sharedTextStyles.eyebrow}>Configuration Required</Text>
         <Text style={styles.systemStateTitle}>Supabase 설정 필요</Text>
         <Text style={styles.systemStateBody}>
           `EXPO_PUBLIC_SUPABASE_URL`과 `EXPO_PUBLIC_SUPABASE_ANON_KEY`가 필요합니다.
@@ -440,7 +509,7 @@ function SystemPreview() {
       </ScreenCard>
 
       <ScreenCard style={styles.sectionCardCenter}>
-        <Text style={SharedStyles.eyebrow}>System Error</Text>
+        <Text style={sharedTextStyles.eyebrow}>System Error</Text>
         <Text style={styles.systemStateTitle}>문제가 발생했습니다</Text>
         <Text style={styles.systemStateBody}>아래 버튼으로 세션을 초기화하고 다시 시작합니다.</Text>
         <Button label="처음으로 돌아가기" onPress={() => undefined} />
@@ -450,6 +519,7 @@ function SystemPreview() {
 }
 
 function HandoffPreview() {
+  const styles = usePreviewStyles();
   return (
     <View style={styles.page}>
       <PreviewHeader
@@ -471,7 +541,10 @@ function HandoffPreview() {
   );
 }
 
-const styles = StyleSheet.create({
+function usePreviewStyles() {
+  const typography = useResponsiveTypography();
+
+  return useMemo(() => StyleSheet.create({
   safe: {
     flex: 1,
     backgroundColor: Colors.background,
@@ -509,14 +582,14 @@ const styles = StyleSheet.create({
     gap: Spacing.xs,
   },
   headerTitle: {
-    fontSize: Typography.size30,
+    fontSize: typography.sizes.size30,
     fontWeight: Typography.weightExtraBold,
     color: Colors.textPrimary,
     letterSpacing: -0.6,
   },
   headerDescription: {
-    fontSize: Typography.size13,
-    lineHeight: 20,
+    fontSize: typography.sizes.size13,
+    lineHeight: typography.lineHeight(Typography.size13, 20 / Typography.size13),
     fontWeight: Typography.weightMedium,
     color: Colors.textSecondary,
   },
@@ -528,7 +601,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   sectionTitle: {
-    fontSize: Typography.size18,
+    fontSize: typography.sizes.size18,
     fontWeight: Typography.weightExtraBold,
     color: Colors.textPrimary,
   },
@@ -548,7 +621,7 @@ const styles = StyleSheet.create({
     borderColor: Colors.borderLight,
   },
   swatchLabel: {
-    fontSize: Typography.size11,
+    fontSize: typography.sizes.size11,
     color: Colors.textSecondary,
     fontWeight: Typography.weightBold,
   },
@@ -566,7 +639,7 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.sm,
   },
   tokenPillText: {
-    fontSize: Typography.size12,
+    fontSize: typography.sizes.size12,
     fontWeight: Typography.weightBold,
     color: Colors.textPrimary,
   },
@@ -606,8 +679,8 @@ const styles = StyleSheet.create({
   },
   successCalloutText: {
     color: Colors.correctDark,
-    fontSize: Typography.size13,
-    lineHeight: 20,
+    fontSize: typography.sizes.size13,
+    lineHeight: typography.lineHeight(Typography.size13, 20 / Typography.size13),
     fontWeight: Typography.weightBold,
   },
   quizHeaderRow: {
@@ -618,7 +691,7 @@ const styles = StyleSheet.create({
   quizPrompt: {
     marginTop: Spacing.lg,
     marginBottom: Spacing.lg,
-    fontSize: Typography.size30,
+    fontSize: typography.sizes.size30,
     fontWeight: Typography.weightExtraBold,
     color: Colors.textPrimary,
     textAlign: 'center',
@@ -633,25 +706,25 @@ const styles = StyleSheet.create({
     gap: Spacing.xs,
   },
   hintTag: {
-    fontSize: Typography.size11,
+    fontSize: typography.sizes.size11,
     fontWeight: Typography.weightExtraBold,
     color: Colors.warningDark,
     letterSpacing: 0.8,
   },
   hintBody: {
-    fontSize: Typography.size13,
-    lineHeight: 20,
+    fontSize: typography.sizes.size13,
+    lineHeight: typography.lineHeight(Typography.size13, 20 / Typography.size13),
     color: Colors.hintText,
     fontWeight: Typography.weightMedium,
   },
   resultHeadline: {
-    fontSize: Typography.size23,
+    fontSize: typography.sizes.size23,
     fontWeight: Typography.weightExtraBold,
     color: Colors.textPrimary,
   },
   resultSubhead: {
-    fontSize: Typography.size13,
-    lineHeight: 20,
+    fontSize: typography.sizes.size13,
+    lineHeight: typography.lineHeight(Typography.size13, 20 / Typography.size13),
     color: Colors.textSecondary,
     fontWeight: Typography.weightMedium,
   },
@@ -672,32 +745,33 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.md,
   },
   resultTypeTitle: {
-    fontSize: Typography.size12,
+    fontSize: typography.sizes.size12,
     fontWeight: Typography.weightBold,
   },
   resultTypeValue: {
     marginTop: Spacing.xs,
-    fontSize: Typography.size23,
+    fontSize: typography.sizes.size23,
     fontWeight: Typography.weightExtraBold,
     color: Colors.textPrimary,
   },
   systemStateTitle: {
-    fontSize: Typography.size23,
+    fontSize: typography.sizes.size23,
     fontWeight: Typography.weightExtraBold,
     color: Colors.textPrimary,
     textAlign: 'center',
   },
   systemStateBody: {
-    fontSize: Typography.size13,
-    lineHeight: 20,
+    fontSize: typography.sizes.size13,
+    lineHeight: typography.lineHeight(Typography.size13, 20 / Typography.size13),
     color: Colors.textSecondary,
     fontWeight: Typography.weightMedium,
     textAlign: 'center',
   },
   ruleText: {
-    fontSize: Typography.size13,
-    lineHeight: 20,
+    fontSize: typography.sizes.size13,
+    lineHeight: typography.lineHeight(Typography.size13, 20 / Typography.size13),
     color: Colors.textPrimary,
     fontWeight: Typography.weightSemiBold,
   },
-});
+  }), [typography]);
+}

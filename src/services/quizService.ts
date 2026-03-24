@@ -1,6 +1,11 @@
 import type { PartOfSpeech, VocabItem } from '../data/models/vocab';
+import type {
+  AdaptiveUpdateResult,
+  LearningDashboard,
+  QuestionSourceBucket,
+} from './adaptiveProgressService';
+import { AdaptiveProgressService } from './adaptiveProgressService';
 import { GradeTable } from '../shared/constants/gradeTable';
-import type { PersistedUserRatings, PersistedWordElo } from './storageService';
 
 // ── Quiz types ───────────────────────────────────────────────
 
@@ -43,6 +48,7 @@ export interface QuizResultSummary {
 export interface QuizQuestion {
   vocabItem: VocabItem;
   quizType: QuizType;
+  sourceBucket: QuestionSourceBucket;
   /** Text shown as the question prompt */
   prompt: string;
   /** Four answer choices (shuffled) */
@@ -78,6 +84,14 @@ export interface AnswerContext {
   correctAnswer: string;
   /** Distractors ordered by similarity (from QuizQuestion.distractorRanking) */
   distractorRanking: string[];
+  /** Whether the user saw the hint banner before answering */
+  hintShown: boolean;
+  /** Why this question was selected */
+  sourceBucket: QuestionSourceBucket;
+  /** 1-based question number in the current round */
+  questionOrdinal: number;
+  /** Selected distractor rank when wrong (0 = close wrong, 2 = hard wrong) */
+  distractorRank?: number;
 }
 
 // ── Helpers ──────────────────────────────────────────────────
@@ -131,16 +145,12 @@ function tokenizeMeaning(value: string): Set<string> {
   return new Set(tokens);
 }
 
-/** Standard ELO expected score */
-function expectedScore(self: number, opponent: number): number {
-  return 1 / (1 + Math.pow(10, (opponent - self) / 400));
-}
-
 // ── Round record ─────────────────────────────────────────────
 
 /** Record of a single answered question within a round */
 export interface RoundRecord {
   word: string;
+  meaning: string;
   prompt: string;
   correctAnswer: string;
   /** User's chosen answer, or null if timed out */
@@ -153,10 +163,9 @@ export interface RoundRecord {
 
 // ── Constants ────────────────────────────────────────────────
 
-const ELO_MATCH_RANGE = 300;
-const K_USER = 32;
-const K_WORD = 16;
-const INITIAL_RATING = 1000;
+const SKILL_MATCH_RANGE = 250;
+const EXPLORATION_BASE_RANGE = 200;
+const EXPLORATION_MAX_RANGE = 600;
 const K2E_EXPLICIT_STRONG_SCORE = 3.2;
 const K2E_EXPLICIT_MIN_SCORE = 2.0;
 
@@ -216,14 +225,7 @@ const TEMPLATE_ANTONYM_POOLS: Record<PartOfSpeech, string[]> = {
   pronoun: ['nobody', 'nothing', 'none', 'neither', 'nowhere', 'noone'],
 };
 
-// ── Per-type ELO record ──────────────────────────────────────
-
-type EloByType = Record<QuizType, number>;
 type PerformanceByType = Record<QuizType, TypePerformance>;
-
-function makeElo(value: number): EloByType {
-  return { e2k: value, k2e: value, e2e: value, syn: value, ant: value };
-}
 
 function makePerformance(): PerformanceByType {
   return {
@@ -238,63 +240,58 @@ function makePerformance(): PerformanceByType {
 // ── QuizService ──────────────────────────────────────────────
 
 export class QuizService {
-  /** User ratings — one per quiz type */
-  private _ratings: EloByType = makeElo(INITIAL_RATING);
-  /** Unified overall rating for difficulty matching across quiz types */
-  private _overallRating = INITIAL_RATING;
   private _sessionCount = 0;
   private readonly _random = () => Math.random();
+  private readonly _vocabById: Map<string, VocabItem>;
   private readonly _vocabWordSet: Set<string>;
   private readonly _meaningByWord: Map<string, string>;
   private _typePerformance: PerformanceByType = makePerformance();
-
-  /** Word ELO map: vocabItem.id → ELO per quiz type */
-  private readonly _wordElo: Map<string, EloByType> = new Map();
-
-  /** Callback invoked after each answer for persistence */
-  private _onRatingsChanged?: () => void;
+  private _lastUpdateResult: AdaptiveUpdateResult | null = null;
 
   // ── Session tracking ──────────────────────────────────
   private _roundTotal = 0;
   private _roundCorrect = 0;
   private _roundHistory: RoundRecord[] = [];
 
-  constructor(public readonly vocabItems: VocabItem[]) {
+  constructor(
+    public readonly vocabItems: VocabItem[],
+    private readonly _progressService: AdaptiveProgressService,
+  ) {
+    this._vocabById = new Map(vocabItems.map((item) => [item.id, item]));
     this._vocabWordSet = new Set(vocabItems.map((v) => normalizeWord(v.word)));
     this._meaningByWord = new Map(vocabItems.map((v) => [normalizeWord(v.word), v.meaning ?? '']));
-    this._initWordElo();
   }
 
   // ── Getters ──────────────────────────────────────────────
 
   /** Get user rating for a specific quiz type */
   getRating(type: QuizType): number {
-    return this._ratings[type];
+    return this._progressService.getSkillRating(type);
   }
 
   /** Legacy getter — returns e2k rating for backward compat */
   get rating(): number {
-    return this._ratings.e2k;
+    return this._progressService.getSkillRating('e2k');
   }
 
   /** Get all ratings */
-  get ratings(): Readonly<EloByType> {
-    return { ...this._ratings };
+  get ratings(): Readonly<Record<QuizType, number>> {
+    return {
+      e2k: this._progressService.getSkillRating('e2k'),
+      k2e: this._progressService.getSkillRating('k2e'),
+      e2e: this._progressService.getSkillRating('e2e'),
+      syn: this._progressService.getSkillRating('syn'),
+      ant: this._progressService.getSkillRating('ant'),
+    };
   }
 
   /** Tracked ratings used by result/score sync (e2k, k2e, e2e, syn only) */
   get trackedRatings(): Readonly<Record<TrackedQuizType, number>> {
-    return {
-      e2k: this._ratings.e2k,
-      k2e: this._ratings.k2e,
-      e2e: this._ratings.e2e,
-      syn: this._ratings.syn,
-    };
+    return this._progressService.getTrackedRatings();
   }
 
   get compositeRating(): number {
-    const sum = ALL_QUIZ_TYPES.reduce((acc, type) => acc + this._ratings[type], 0);
-    return Math.round(sum / ALL_QUIZ_TYPES.length);
+    return this._progressService.getOverallSkill();
   }
 
   get resultSummary(): QuizResultSummary {
@@ -304,8 +301,8 @@ export class QuizService {
       const correct = perf.correct;
       const accuracyPercent = attempts > 0 ? Math.round((correct / attempts) * 100) : 0;
       acc[type] = {
-        rating: this._ratings[type],
-        tierLabel: GradeTable.gradeLabel(this._ratings[type]),
+        rating: this._progressService.getSkillRating(type),
+        tierLabel: GradeTable.gradeLabel(this._progressService.getSkillRating(type)),
         attempts,
         correct,
         accuracyPercent,
@@ -321,7 +318,7 @@ export class QuizService {
 
   /** Unified rating used to pick questions by difficulty regardless of type */
   get overallRating(): number {
-    return this._overallRating;
+    return this._progressService.getOverallSkill();
   }
 
   get sessionCount(): number {
@@ -333,7 +330,15 @@ export class QuizService {
   }
 
   getWordElo(wordId: string, type: QuizType): number {
-    return this._wordElo.get(wordId)?.[type] ?? INITIAL_RATING;
+    return this._progressService.peekWordProgress(wordId, type).challengeRating;
+  }
+
+  get learningDashboard(): LearningDashboard {
+    return this._progressService.fetchLearningDashboard();
+  }
+
+  get lastUpdateResult(): AdaptiveUpdateResult | null {
+    return this._lastUpdateResult;
   }
 
   // ── Round getters ───────────────────────────────────────
@@ -361,15 +366,8 @@ export class QuizService {
     this._roundCorrect = 0;
     this._roundHistory = [];
     this._typePerformance = makePerformance();
-  }
-
-  // ── Word ELO initialisation ──────────────────────────────
-
-  private _initWordElo(): void {
-    for (const item of this.vocabItems) {
-      const baseElo = item.level * 200;
-      this._wordElo.set(item.id, makeElo(baseElo));
-    }
+    this._lastUpdateResult = null;
+    this._progressService.resetSessionState();
   }
 
   // ── Availability check ───────────────────────────────────
@@ -479,55 +477,259 @@ export class QuizService {
     return out;
   }
 
-  /** Pick type by closest match to overall rating (type-agnostic difficulty) */
+  /** Legacy helper kept for compatibility with older callers. */
   pickAdaptiveType(): QuizType {
-    const candidates = ALL_QUIZ_TYPES.map((type) => {
-      const pool = this.vocabItems.filter((v) => this._canServe(v, type));
-      if (pool.length === 0) return { type, diff: Number.POSITIVE_INFINITY };
-      let minDiff = Number.POSITIVE_INFINITY;
-      for (const item of pool) {
-        const wElo = this._wordElo.get(item.id)?.[type] ?? INITIAL_RATING;
-        const diff = Math.abs(wElo - this._overallRating);
-        if (diff < minDiff) minDiff = diff;
-      }
-      return { type, diff: minDiff };
-    }).filter((x) => Number.isFinite(x.diff));
-
-    if (candidates.length === 0) return 'e2k';
-
-    const min = Math.min(...candidates.map((c) => c.diff));
-    const best = candidates.filter((c) => c.diff === min);
-    return best[Math.floor(this._random() * best.length)]?.type ?? 'e2k';
+    return [...ALL_QUIZ_TYPES].sort(
+      (left, right) =>
+        this._progressService.getSkillRating(left) - this._progressService.getSkillRating(right),
+    )[0] ?? 'e2k';
   }
 
-  // ── Word selection (ELO-matched) ─────────────────────────
+  // ── Helpers for improved word selection ─────────────────
 
-  private _pickNextWord(type: QuizType): VocabItem | null {
-    const pool = this.vocabItems.filter((v) => this._canServe(v, type));
-    if (pool.length === 0) return null;
+  private _countUniqueSeenWords(): number {
+    const seen = new Set<string>();
+    for (const record of this._progressService.getAllWordProgress()) {
+      if (record.seenCount > 0) seen.add(record.vocabId);
+    }
+    return seen.size;
+  }
 
-    const userElo = this._overallRating;
-    const candidates: VocabItem[] = [];
+  private _weightedRandomPick<T>(items: T[], weights: number[]): T {
+    const totalWeight = weights.reduce((sum, w) => sum + w, 0);
+    let roll = this._random() * totalWeight;
+    for (let i = 0; i < items.length; i++) {
+      roll -= weights[i];
+      if (roll <= 0) return items[i];
+    }
+    return items[items.length - 1];
+  }
 
-    for (const item of pool) {
-      const wElo = this._wordElo.get(item.id)?.[type] ?? INITIAL_RATING;
-      if (Math.abs(wElo - userElo) <= ELO_MATCH_RANGE) {
-        candidates.push(item);
+  private _slotBucketForQuestion(questionOrdinal: number): Exclude<QuestionSourceBucket, 'retry'> {
+    const slot = ((questionOrdinal - 1) % 10) + 1;
+    const uniqueSeen = this._countUniqueSeenWords();
+
+    if (uniqueSeen < 50) {
+      // New user: heavy exploration (4 review / 2 weakness / 4 exploration)
+      if (slot <= 4) return 'due_review';
+      if (slot <= 6) return 'weakness_target';
+      return 'exploration';
+    }
+
+    if (uniqueSeen < 200) {
+      // Growing user: balanced (5 review / 2 weakness / 3 exploration)
+      if (slot <= 5) return 'due_review';
+      if (slot <= 7) return 'weakness_target';
+      return 'exploration';
+    }
+
+    // Mature user: retention focus (6 review / 2 weakness / 2 exploration)
+    if (slot <= 6) return 'due_review';
+    if (slot <= 8) return 'weakness_target';
+    return 'exploration';
+  }
+
+  private _pickRetryTarget(questionOrdinal: number): {
+    item: VocabItem;
+    type: QuizType;
+    sourceBucket: QuestionSourceBucket;
+  } | null {
+    const retry = this._progressService.takeRetryCandidate(questionOrdinal, (wordId, quizType) => {
+      const item = this._vocabById.get(wordId);
+      return !!item && this._canServe(item, quizType);
+    });
+    if (!retry) return null;
+
+    const item = this._vocabById.get(retry.wordId);
+    if (!item) return null;
+
+    return {
+      item,
+      type: retry.quizType,
+      sourceBucket: 'retry',
+    };
+  }
+
+  private _pickDueReviewTarget(): {
+    item: VocabItem;
+    type: QuizType;
+    sourceBucket: QuestionSourceBucket;
+  } | null {
+    const now = Date.now();
+    const recentWordIds = new Set(this._progressService.getRecentWordIds());
+    const candidates = this._progressService
+      .getAllWordProgress()
+      .filter(
+        (record) =>
+          record.seenCount > 0 &&
+          Date.parse(record.dueAt) <= now &&
+          ALL_QUIZ_TYPES.includes(record.quizType as TrackedQuizType) &&
+          !recentWordIds.has(record.vocabId),
+      )
+      .sort((left, right) => {
+        const overdueDiff = Date.parse(left.dueAt) - Date.parse(right.dueAt);
+        if (overdueDiff !== 0) return overdueDiff;
+        if (left.memoryStrength !== right.memoryStrength) {
+          return left.memoryStrength - right.memoryStrength;
+        }
+        return right.wrongStreak - left.wrongStreak;
+      });
+
+    // Pick from top 5 servable candidates with weighted preference for most overdue
+    const topN: typeof candidates = [];
+    for (const candidate of candidates) {
+      const item = this._vocabById.get(candidate.vocabId);
+      if (!item || !this._canServe(item, candidate.quizType)) continue;
+      topN.push(candidate);
+      if (topN.length >= 5) break;
+    }
+
+    if (topN.length === 0) return null;
+
+    const weights = topN.map((_, i) => topN.length - i);
+    const chosen = this._weightedRandomPick(topN, weights);
+    const item = this._vocabById.get(chosen.vocabId)!;
+
+    return {
+      item,
+      type: chosen.quizType,
+      sourceBucket: 'due_review',
+    };
+  }
+
+  private _pickWeaknessTarget(): {
+    item: VocabItem;
+    type: QuizType;
+    sourceBucket: QuestionSourceBucket;
+  } | null {
+    const recentWordIds = new Set(this._progressService.getRecentWordIds());
+    const weakestTypes = [...ALL_QUIZ_TYPES].sort(
+      (left, right) =>
+        this._progressService.getSkillRating(left) - this._progressService.getSkillRating(right),
+    );
+
+    const progressRows = this._progressService.getAllWordProgress();
+    for (const type of weakestTypes) {
+      const skillRating = this._progressService.getSkillRating(type);
+      const candidates = progressRows.filter(
+        (record) =>
+          record.quizType === type &&
+          record.seenCount > 0 &&
+          record.memoryStrength < 70 &&
+          Math.abs(record.challengeRating - skillRating) <= SKILL_MATCH_RANGE,
+      );
+
+      if (candidates.length === 0) continue;
+
+      // Weighted random: prioritize low memory strength, close ELO, wrong streaks
+      const weights = candidates.map((c) => {
+        if (recentWordIds.has(c.vocabId)) return 0;
+        const item = this._vocabById.get(c.vocabId);
+        if (!item || !this._canServe(item, type)) return 0;
+
+        const memoryWeight = 1.0 - c.memoryStrength / 70;
+        const proximityWeight = 1.0 - Math.abs(c.challengeRating - skillRating) / SKILL_MATCH_RANGE;
+        const streakBonus = 1.0 + c.wrongStreak * 0.3;
+        return memoryWeight * proximityWeight * streakBonus;
+      });
+
+      const totalWeight = weights.reduce((s, w) => s + w, 0);
+      if (totalWeight === 0) continue;
+
+      const chosen = this._weightedRandomPick(candidates, weights);
+      const item = this._vocabById.get(chosen.vocabId);
+      if (!item) continue;
+
+      return { item, type, sourceBucket: 'weakness_target' };
+    }
+
+    return null;
+  }
+
+  private _pickExplorationTarget(): {
+    item: VocabItem;
+    type: QuizType;
+    sourceBucket: QuestionSourceBucket;
+  } | null {
+    const overallSkill = this._progressService.getOverallSkill();
+    const recentWordIds = new Set(this._progressService.getRecentWordIds());
+
+    // Dynamic range: starts at 200 (±1 level), grows to 600 (±3 levels) as user sees more words
+    const totalUniqueSeen = this._countUniqueSeenWords();
+    const expansionFactor = Math.min(totalUniqueSeen / 200, 1.0);
+    const explorationRange =
+      EXPLORATION_BASE_RANGE + expansionFactor * (EXPLORATION_MAX_RANGE - EXPLORATION_BASE_RANGE);
+
+    const candidates: Array<{
+      item: VocabItem;
+      type: QuizType;
+      totalSeenCount: number;
+      eloDist: number;
+    }> = [];
+
+    for (const item of this.vocabItems) {
+      if (recentWordIds.has(item.id)) continue;
+
+      for (const type of ALL_QUIZ_TYPES) {
+        if (!this._canServe(item, type)) continue;
+
+        const progress = this._progressService.peekWordProgress(item.id, type);
+        const eloDist = Math.abs(progress.challengeRating - overallSkill);
+        if (eloDist > explorationRange) continue;
+
+        candidates.push({
+          item,
+          type,
+          totalSeenCount: this._progressService.getTotalSeenCount(item.id),
+          eloDist,
+        });
       }
     }
 
-    // Fallback: closest 5 words
-    if (candidates.length === 0) {
-      const sorted = [...pool].sort((a, b) => {
-        const da = Math.abs((this._wordElo.get(a.id)?.[type] ?? INITIAL_RATING) - userElo);
-        const db = Math.abs((this._wordElo.get(b.id)?.[type] ?? INITIAL_RATING) - userElo);
-        return da - db;
-      });
-      const n = Math.min(5, sorted.length);
-      for (let i = 0; i < n; i++) candidates.push(sorted[i]);
+    if (candidates.length === 0) return null;
+
+    // Weighted random: prefer unseen words close to user's skill level
+    const weights = candidates.map((c) => {
+      const unseenBonus = c.totalSeenCount === 0 ? 3.0 : 1.0 / (1 + c.totalSeenCount);
+      const proximityScore = 1.0 - c.eloDist / explorationRange;
+      return unseenBonus * (0.3 + 0.7 * proximityScore);
+    });
+
+    const chosen = this._weightedRandomPick(candidates, weights);
+    return {
+      item: chosen.item,
+      type: chosen.type,
+      sourceBucket: 'exploration',
+    };
+  }
+
+  private _pickNextQuestionTarget(questionOrdinal: number): {
+    item: VocabItem;
+    type: QuizType;
+    sourceBucket: QuestionSourceBucket;
+  } | null {
+    const retry = this._pickRetryTarget(questionOrdinal);
+    if (retry) return retry;
+
+    const scheduled = this._slotBucketForQuestion(questionOrdinal);
+    const orderedBuckets: Array<Exclude<QuestionSourceBucket, 'retry'>> =
+      scheduled === 'due_review'
+        ? ['due_review', 'weakness_target', 'exploration']
+        : scheduled === 'weakness_target'
+          ? ['weakness_target', 'due_review', 'exploration']
+          : ['exploration', 'due_review', 'weakness_target'];
+
+    for (const bucket of orderedBuckets) {
+      const next =
+        bucket === 'due_review'
+          ? this._pickDueReviewTarget()
+          : bucket === 'weakness_target'
+            ? this._pickWeaknessTarget()
+            : this._pickExplorationTarget();
+      if (next) return next;
     }
 
-    return candidates[Math.floor(this._random() * candidates.length)] ?? null;
+    return null;
   }
 
   // ── Distractor selection ─────────────────────────────────
@@ -858,9 +1060,12 @@ export class QuizService {
   // ── Question generation ──────────────────────────────────
 
   /** Build next question for the given quiz type */
-  nextQuestion(type: QuizType = 'e2k'): QuizQuestion | null {
-    const item = this._pickNextWord(type);
-    if (!item) return null;
+  nextQuestion(_type?: QuizType): QuizQuestion | null {
+    const questionOrdinal = this._roundTotal + 1;
+    const target = this._pickNextQuestionTarget(questionOrdinal);
+    if (!target) return null;
+
+    const { item, type, sourceBucket } = target;
 
     const distractors = this._pickDistractors(item, 3, type);
     if (distractors.length < 3) {
@@ -910,131 +1115,39 @@ export class QuizService {
     const distractorRanking = this._rankDistractorsByDifficulty(type, correctAnswer, distractors).slice(0, 3);
 
     const choices = shuffle([correctAnswer, ...distractorRanking], this._random);
-    const wordElo = this._wordElo.get(item.id)?.[type] ?? INITIAL_RATING;
+    const wordElo = this._progressService.peekWordProgress(item.id, type).challengeRating;
 
-    return { vocabItem: item, quizType: type, prompt, choices, correctAnswer, wordElo, distractorRanking };
+    this._progressService.recordPresentedWord(item.id);
+
+    return {
+      vocabItem: item,
+      quizType: type,
+      sourceBucket,
+      prompt,
+      choices,
+      correctAnswer,
+      wordElo,
+      distractorRanking,
+    };
   }
 
-  // ── Nuanced score calculation ─────────────────────────────
-
-  /**
-   * Compute a continuous score in [0, 1] reflecting:
-   * - correctness (base)
-   * - response speed (time multiplier: 1.0 for instant, 0.7 at deadline)
-   * - quality of wrong answer (similar wrong = forgivable, absurd wrong = worst)
-   */
-  private _computeScore(ctx: AnswerContext): number {
-    // Time-out → worst possible score
-    if (ctx.selectedChoice === null) return 0;
-
-    // Time multiplier: instant = 1.0, deadline = 0.7
-    const ratio = Math.min(1, ctx.elapsedMs / Math.max(1, ctx.totalMs));
-    const timeMul = 1.0 - 0.3 * ratio;
-
-    if (ctx.correct) {
-      // Correct: full base × time multiplier → 0.7 – 1.0
-      return 1.0 * timeMul;
-    }
-
-    // Wrong: base depends on how "bad" the chosen distractor was.
-    // distractorRanking[0] = most similar (forgivable), [2] = most different (worst)
-    const idx = ctx.distractorRanking.indexOf(ctx.selectedChoice);
-    const wrongBase = [0.3, 0.15, 0.0]; // similar → medium → absurd
-    const base = idx >= 0 && idx < wrongBase.length ? wrongBase[idx] : 0.0;
-    return base * timeMul;
-  }
-
-  // ── Answer submission (dual ELO update, per-type) ────────
-
-  submitAnswer(ctx: AnswerContext, roundRecord?: Omit<RoundRecord, 'correct'>): void {
-    const wordEloRecord = this._wordElo.get(ctx.wordId);
-    if (!wordEloRecord) return;
-
-    const type = ctx.quizType;
-    const wordElo = wordEloRecord[type];
-    const userElo = this._ratings[type];
-
-    const eUser = expectedScore(userElo, wordElo);
-    const eWord = expectedScore(wordElo, userElo);
-
-    const score = this._computeScore(ctx);
-    const sUser = score;
-    const sWord = 1 - score;
-
-    this._ratings[type] = Math.max(0, Math.round(userElo + K_USER * (sUser - eUser)));
-    wordEloRecord[type] = Math.max(0, Math.round(wordElo + K_WORD * (sWord - eWord)));
-
-    // Unified overall rating update: drives type-agnostic difficulty matching.
-    const eOverall = expectedScore(this._overallRating, wordElo);
-    this._overallRating = Math.max(0, Math.round(this._overallRating + K_USER * (sUser - eOverall)));
+  submitAnswer(
+    ctx: AnswerContext,
+    roundRecord?: Omit<RoundRecord, 'correct'>,
+  ): AdaptiveUpdateResult {
+    const result = this._progressService.applyAdaptiveUpdate(ctx);
+    this._lastUpdateResult = result;
 
     // Track round progress
     this._roundTotal++;
     if (ctx.correct) this._roundCorrect++;
-    this._typePerformance[type].attempts++;
-    if (ctx.correct) this._typePerformance[type].correct++;
+    this._typePerformance[ctx.quizType].attempts++;
+    if (ctx.correct) this._typePerformance[ctx.quizType].correct++;
     if (roundRecord) {
       this._roundHistory.push({ ...roundRecord, correct: ctx.correct });
     }
 
-    this._onRatingsChanged?.();
-  }
-
-  // ── Persistence ──────────────────────────────────────────
-
-  /** Register callback invoked after each answer (for saving to storage) */
-  setOnRatingsChanged(cb: () => void): void {
-    this._onRatingsChanged = cb;
-  }
-
-  /** Extract current user ratings for persistence */
-  getPersistedUserRatings(): PersistedUserRatings {
-    return {
-      ratings: { ...this._ratings },
-      overallRating: this._overallRating,
-      sessionCount: this._sessionCount,
-    };
-  }
-
-  /** Extract word ELO map for persistence */
-  getPersistedWordElo(): PersistedWordElo {
-    const out: PersistedWordElo = {};
-    for (const [wordId, elo] of this._wordElo) {
-      out[wordId] = { ...elo };
-    }
-    return out;
-  }
-
-  /** Restore state from persisted data */
-  restoreState(
-    userRatings: PersistedUserRatings | null,
-    wordElo: PersistedWordElo | null,
-  ): void {
-    if (userRatings) {
-      const r = userRatings.ratings;
-      this._ratings = {
-        e2k: r.e2k ?? INITIAL_RATING,
-        k2e: r.k2e ?? INITIAL_RATING,
-        e2e: r.e2e ?? INITIAL_RATING,
-        syn: r.syn ?? INITIAL_RATING,
-        ant: r.ant ?? INITIAL_RATING,
-      };
-      this._overallRating = userRatings.overallRating ?? INITIAL_RATING;
-      this._sessionCount = userRatings.sessionCount ?? 0;
-    }
-    if (wordElo) {
-      for (const [wordId, elo] of Object.entries(wordElo)) {
-        if (this._wordElo.has(wordId)) {
-          this._wordElo.set(wordId, {
-            e2k: elo.e2k ?? INITIAL_RATING,
-            k2e: elo.k2e ?? INITIAL_RATING,
-            e2e: elo.e2e ?? INITIAL_RATING,
-            syn: elo.syn ?? INITIAL_RATING,
-            ant: elo.ant ?? INITIAL_RATING,
-          });
-        }
-      }
-    }
+    return result;
   }
 
   // ── Session lifecycle ────────────────────────────────────

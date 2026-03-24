@@ -1,14 +1,15 @@
 import React from 'react';
 import {
   ActivityIndicator,
-  StyleProp,
   StyleSheet,
+  StyleProp,
   Text,
   TouchableOpacity,
   type TouchableOpacityProps,
   type ViewStyle,
 } from 'react-native';
 import { Colors, Elevation, Radius, Spacing, Typography } from '../constants/theme';
+import { useResponsiveTypography } from './responsiveTypography';
 
 export type ButtonVariant = 'primary' | 'secondary' | 'ghost';
 
@@ -29,10 +30,14 @@ export function Button({
   style,
   ...touchableProps
 }: ButtonProps) {
+  const typography = useResponsiveTypography();
   const isDisabled = disabled || loading;
 
   return (
     <TouchableOpacity
+      accessibilityRole="button"
+      accessibilityLabel={label}
+      accessibilityState={{ disabled: isDisabled }}
       {...touchableProps}
       activeOpacity={0.85}
       disabled={isDisabled}
@@ -52,6 +57,7 @@ export function Button({
         <Text
           style={[
             styles.label,
+            { fontSize: typography.sizes.size15 },
             variant === 'primary'
               ? styles.primaryLabel
               : variant === 'secondary'
@@ -99,7 +105,6 @@ const styles = StyleSheet.create({
     elevation: 0,
   },
   label: {
-    fontSize: Typography.size15,
     fontWeight: Typography.weightBold,
     letterSpacing: 0.15,
   },

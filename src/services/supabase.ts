@@ -1,41 +1,14 @@
 import 'react-native-url-polyfill/auto';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createClient } from '@supabase/supabase-js';
-import Constants from 'expo-constants';
+import { appConfig } from '../shared/config/appConfig';
 
-type AppExtra = {
-  supabaseUrl?: string;
-  supabaseAnonKey?: string;
-};
-
-const appExtra = (Constants.expoConfig?.extra ?? {}) as AppExtra;
-
-function resolveConfigValue(...candidates: Array<string | undefined>): string {
-  for (const candidate of candidates) {
-    if (typeof candidate === 'string') {
-      const normalized = candidate.trim();
-      if (normalized.length > 0) {
-        return normalized;
-      }
-    }
-  }
-  return '';
-}
-
-const SUPABASE_URL = resolveConfigValue(
-  process.env.EXPO_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_URL,
-  appExtra.supabaseUrl,
-);
-
-const SUPABASE_ANON_KEY = resolveConfigValue(
-  process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY,
-  process.env.SUPABASE_ANON_KEY,
-  appExtra.supabaseAnonKey,
-);
+const backendEnabled = appConfig.features.authEnabled || appConfig.features.scoreSyncEnabled;
+const SUPABASE_URL = appConfig.supabaseUrl;
+const SUPABASE_ANON_KEY = appConfig.supabaseAnonKey;
 
 export function isSupabaseConfigured(): boolean {
-  return SUPABASE_URL.length > 0 && SUPABASE_ANON_KEY.length > 0;
+  return backendEnabled && SUPABASE_URL.length > 0 && SUPABASE_ANON_KEY.length > 0;
 }
 
 export const supabase = isSupabaseConfigured()

@@ -1,4 +1,5 @@
 import { isSupabaseConfigured, supabase } from './supabase';
+import { appFeatures } from '../shared/config/appConfig';
 
 export interface ScorePayload {
   userId: string;
@@ -43,8 +44,12 @@ interface SubmissionRow {
   created_at: string;
 }
 
+interface UserProfileIdentityRow {
+  user_id: string;
+}
+
 function requireClient() {
-  if (!isSupabaseConfigured() || !supabase) {
+  if (!appFeatures.scoreSyncEnabled || !isSupabaseConfigured() || !supabase) {
     throw new Error('Supabase is not configured.');
   }
   return supabase;
@@ -67,7 +72,47 @@ function toLeaderboardEntry(row: LeaderboardRow, fallbackRank: number): Leaderbo
 }
 
 export function isScoreSyncAvailable(): boolean {
-  return isSupabaseConfigured();
+  return appFeatures.scoreSyncEnabled && isSupabaseConfigured();
+}
+
+async function syncUserProfileIdentity(userId: string, email: string | null): Promise<void> {
+  const client = requireClient();
+  const timestamp = new Date().toISOString();
+  const { data, error } = await client
+    .from('user_profiles')
+    .select('user_id')
+    .eq('user_id', userId)
+    .maybeSingle<UserProfileIdentityRow>();
+
+  if (error) {
+    console.warn('profile lookup failed:', error.message);
+    return;
+  }
+
+  if (!data) {
+    const { error: insertError } = await client.from('user_profiles').insert({
+      user_id: userId,
+      email,
+      updated_at: timestamp,
+    });
+
+    if (insertError) {
+      console.warn('profile insert failed:', insertError.message);
+    }
+    return;
+  }
+
+  const { error: updateError } = await client
+    .from('user_profiles')
+    .update({
+      email,
+      updated_at: timestamp,
+    })
+    .eq('user_id', userId);
+
+  if (updateError) {
+    console.warn('profile update failed:', updateError.message);
+  }
 }
 
 export async function submitScore(payload: ScorePayload): Promise<void> {
@@ -81,19 +126,7 @@ export async function submitScore(payload: ScorePayload): Promise<void> {
   const accuracyPercent =
     payload.roundTotal > 0 ? Math.round((payload.roundCorrect / payload.roundTotal) * 100) : 0;
 
-  const { error: profileError } = await client.from('user_profiles').upsert(
-    {
-      user_id: payload.userId,
-      email: payload.email,
-      updated_at: new Date().toISOString(),
-    },
-    { onConflict: 'user_id' },
-  );
-
-  if (profileError) {
-    // Profile sync failure should not block score submission.
-    console.warn('profile upsert failed:', profileError.message);
-  }
+  await syncUserProfileIdentity(payload.userId, payload.email);
 
   const { error } = await client.from('score_submissions').insert({
     user_id: payload.userId,

@@ -5,11 +5,22 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
+  useWindowDimensions,
   View,
 } from 'react-native';
 import { signInWithEmail, signUpWithEmail } from '../../../services/authService';
+import type { CharacterProfile } from '../../../shared/models/characterProfile';
+import { AppExternalLinks } from '../../../shared/constants/externalLinks';
 import { Colors, Radius, Spacing, Typography, withAlpha } from '../../../shared/constants/theme';
-import { Button, ResponsiveContainer, ScreenCard, SharedStyles, TextField } from '../../../shared/ui';
+import {
+  Button,
+  ResponsiveContainer,
+  ScreenCard,
+  TextField,
+  useResponsiveTypography,
+  useSharedTextStyles,
+} from '../../../shared/ui';
+import { CharacterSummaryCard } from '../../profile/components/CharacterSummaryCard';
 
 type AuthMode = 'signIn' | 'signUp';
 
@@ -25,13 +36,31 @@ interface AuthPreviewState {
 
 interface AuthScreenProps {
   previewState?: AuthPreviewState;
+  characterProfile: CharacterProfile;
+  authEnabled?: boolean;
+  authDisabledReason?: string | null;
+  allowGuestMode?: boolean;
+  onContinueAsGuest?: () => void;
+  onOpenProfile?: () => void;
 }
 
 function normalizeEmail(value: string): string {
   return value.trim().toLowerCase();
 }
 
-export function AuthScreen({ previewState }: AuthScreenProps) {
+export function AuthScreen({
+  previewState,
+  characterProfile,
+  authEnabled = true,
+  authDisabledReason = null,
+  allowGuestMode = false,
+  onContinueAsGuest,
+  onOpenProfile,
+}: AuthScreenProps) {
+  const styles = useAuthStyles();
+  const sharedTextStyles = useSharedTextStyles();
+  const { width: windowWidth } = useWindowDimensions();
+  const contentMaxWidth = windowWidth >= 1180 ? 760 : windowWidth >= 820 ? 700 : 640;
   const locked = previewState?.locked ?? false;
   const [mode, setMode] = useState<AuthMode>(previewState?.mode ?? 'signIn');
   const [email, setEmail] = useState(previewState?.email ?? '');
@@ -43,17 +72,25 @@ export function AuthScreen({ previewState }: AuthScreenProps) {
   const title = mode === 'signIn' ? '로그인' : '회원가입';
   const subtitle =
     mode === 'signIn'
-      ? '기록과 랭킹을 이어가려면 계정으로 로그인하세요.'
-      : '새 계정을 만들고 적응형 학습 기록을 저장하세요.';
-  const submitLabel = mode === 'signIn' ? '학습 시작하기' : '계정 만들기';
+      ? '로그인하면 학습 기록과 캐릭터 프로필을 계정에 이어갈 수 있어요.'
+      : '몇 초 만에 시작하고 학습 기록을 계정에 저장하세요.';
+  const submitLabel = mode === 'signIn' ? '로그인' : '가입하기';
+  const guestDescription = authEnabled
+    ? '로그인 없이 계속 풀어도 되고, 필요할 때만 로그인하면 돼요.'
+    : '로그인 없이 바로 학습을 시작할 수 있어요.';
+  const guestButtonLabel = authEnabled ? '게스트로 계속하기' : '바로 시작';
+  const compactDisabledReason =
+    authDisabledReason != null && authDisabledReason.trim().length > 0
+      ? authDisabledReason
+      : guestDescription;
 
   const canSubmit = useMemo(
-    () => normalizeEmail(email).includes('@') && password.length >= 6 && !loading,
-    [email, password, loading],
+    () => authEnabled && normalizeEmail(email).includes('@') && password.length >= 6 && !loading,
+    [authEnabled, email, password, loading],
   );
 
   const onSubmit = async () => {
-    if (locked) return;
+    if (locked || !authEnabled) return;
     const normalizedEmail = normalizeEmail(email);
 
     if (!normalizedEmail || !normalizedEmail.includes('@')) {
@@ -92,7 +129,7 @@ export function AuthScreen({ previewState }: AuthScreenProps) {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <ResponsiveContainer>
+      <ResponsiveContainer maxWidth={contentMaxWidth}>
         <ScrollView
           style={styles.scroll}
           contentContainerStyle={styles.scrollContent}
@@ -105,16 +142,16 @@ export function AuthScreen({ previewState }: AuthScreenProps) {
 
             <View style={styles.headerWrap}>
               <View style={styles.brandTag}>
-                <Text style={styles.brandTagText}>Adaptive Vocabulary</Text>
+                <Text style={styles.brandTagText}>Adaptive</Text>
               </View>
               <Text style={styles.brand}>Word Master</Text>
               <Text style={styles.subtitle}>
-                정답률이 아니라 성장 속도를 기준으로 다음 문제를 제안하는 영어 단어 학습 앱.
+                실력 변화에 맞춰 다음 단어를 고르는 학습 앱.
               </Text>
             </View>
 
             <View style={styles.featureRow}>
-              {['Adaptive', 'Supabase Sync', 'Top 10'].map((item) => (
+              {['실력 반영', '기록 저장'].map((item) => (
                 <View key={item} style={styles.featureChip}>
                   <Text style={styles.featureChipText}>{item}</Text>
                 </View>
@@ -123,88 +160,158 @@ export function AuthScreen({ previewState }: AuthScreenProps) {
 
             <ScreenCard style={styles.formCard}>
               <View style={styles.formHeader}>
-                <Text style={SharedStyles.eyebrow}>Account Access</Text>
-                <Text style={styles.formTitle}>{title}</Text>
-                <Text style={styles.formSubtitle}>{subtitle}</Text>
-              </View>
-
-              <View style={styles.modeSwitch}>
-                {([
-                  ['signIn', '로그인'],
-                  ['signUp', '회원가입'],
-                ] as const).map(([value, label]) => {
-                  const active = mode === value;
-                  return (
-                    <TouchableOpacity
-                      key={value}
-                      style={[styles.modeButton, active && styles.modeButtonActive]}
-                      onPress={() => {
-                        if (locked) return;
-                        setMode(value);
-                        setError(null);
-                        setMessage(null);
-                      }}
-                      activeOpacity={0.85}
-                    >
-                      <Text style={[styles.modeButtonText, active && styles.modeButtonTextActive]}>
-                        {label}
-                      </Text>
-                    </TouchableOpacity>
-                  );
-                })}
-              </View>
-
-              <TextField
-                label="이메일"
-                placeholder="you@example.com"
-                autoCapitalize="none"
-                keyboardType="email-address"
-                value={email}
-                editable={!locked && !loading}
-                onChangeText={setEmail}
-              />
-              <TextField
-                label="비밀번호"
-                placeholder="6자 이상 입력"
-                secureTextEntry
-                value={password}
-                editable={!locked && !loading}
-                onChangeText={setPassword}
-              />
-
-              {!!error && (
-                <View style={styles.feedbackError}>
-                  <Text style={styles.feedbackErrorText}>{error}</Text>
-                </View>
-              )}
-              {!!message && (
-                <View style={styles.feedbackSuccess}>
-                  <Text style={styles.feedbackSuccessText}>{message}</Text>
-                </View>
-              )}
-
-              <Button
-                variant="primary"
-                label={submitLabel}
-                loading={loading}
-                disabled={!canSubmit}
-                onPress={onSubmit}
-                style={styles.submitButton}
-              />
-
-              <View style={styles.footnote}>
-                <Text style={styles.footnoteTitle}>왜 계정이 필요한가요?</Text>
-                <Text style={styles.footnoteText}>
-                  레이팅, 최고 점수, 글로벌 랭킹, 학습 이력을 Supabase에 안전하게 저장합니다.
+                <Text style={sharedTextStyles.eyebrow}>
+                  {authEnabled ? 'Account' : 'Preview'}
+                </Text>
+                <Text style={styles.formTitle}>{authEnabled ? title : '바로 학습하기'}</Text>
+                <Text style={styles.formSubtitle}>
+                  {authEnabled
+                    ? subtitle
+                    : compactDisabledReason}
                 </Text>
               </View>
-            </ScreenCard>
 
-            <ScreenCard tone="tint" style={styles.infoCard}>
-              <Text style={styles.infoTitle}>현재 라운드에서 추적하는 것</Text>
-              <Text style={styles.infoText}>
-                유형별 Rating, 단어 난이도 ELO, 정답/오답 이력, 개인 최고점과 글로벌 Top 10.
-              </Text>
+              {authEnabled ? (
+                <>
+                  <View style={styles.modeSwitch}>
+                    {([
+                      ['signIn', '로그인'],
+                      ['signUp', '회원가입'],
+                    ] as const).map(([value, label]) => {
+                      const active = mode === value;
+                      return (
+                        <TouchableOpacity
+                          key={value}
+                          accessibilityRole="tab"
+                          accessibilityLabel={label}
+                          accessibilityState={{ selected: active }}
+                          style={[styles.modeButton, active && styles.modeButtonActive]}
+                          onPress={() => {
+                            if (locked) return;
+                            setMode(value);
+                            setError(null);
+                            setMessage(null);
+                          }}
+                          activeOpacity={0.85}
+                        >
+                          <Text style={[styles.modeButtonText, active && styles.modeButtonTextActive]}>
+                            {label}
+                          </Text>
+                        </TouchableOpacity>
+                      );
+                    })}
+                  </View>
+
+                  <TextField
+                    label="이메일"
+                    placeholder="you@example.com"
+                    autoCapitalize="none"
+                    keyboardType="email-address"
+                    value={email}
+                    editable={!locked && !loading}
+                    onChangeText={setEmail}
+                  />
+                  <TextField
+                    label="비밀번호"
+                    placeholder="6자 이상 입력"
+                    secureTextEntry
+                    value={password}
+                    editable={!locked && !loading}
+                    onChangeText={setPassword}
+                  />
+
+                  {!!error && (
+                    <View style={styles.feedbackError}>
+                      <Text style={styles.feedbackErrorText}>{error}</Text>
+                    </View>
+                  )}
+                  {!!message && (
+                    <View style={styles.feedbackSuccess}>
+                      <Text style={styles.feedbackSuccessText}>{message}</Text>
+                    </View>
+                  )}
+
+                  <Button
+                    variant="primary"
+                    label={submitLabel}
+                    loading={loading}
+                    disabled={!canSubmit}
+                    onPress={onSubmit}
+                    style={styles.submitButton}
+                  />
+                </>
+              ) : (
+                <View style={styles.guestOnlyNotice}>
+                  <Text style={styles.guestOnlyNoticeTitle}>게스트 모드만 사용 가능</Text>
+                  <Text style={styles.guestOnlyNoticeText}>{guestDescription}</Text>
+                </View>
+              )}
+
+              {allowGuestMode && onContinueAsGuest && (
+                <View style={styles.guestSection}>
+                  {authEnabled && <View style={styles.guestDivider} />}
+                  <Text style={styles.guestTitle}>게스트로 계속하기</Text>
+                  <Text style={styles.guestText}>{guestDescription}</Text>
+                  <Button
+                    variant={authEnabled ? 'secondary' : 'primary'}
+                    label={guestButtonLabel}
+                    onPress={onContinueAsGuest}
+                    style={styles.guestButton}
+                  />
+                </View>
+              )}
+
+              {onOpenProfile && (
+                <View style={styles.profileSection}>
+                  <CharacterSummaryCard
+                    profile={characterProfile}
+                    title="시작 전 내 캐릭터"
+                    caption="퀴즈 전에도 꾸미기와 좋아/싫어 프로필을 먼저 저장할 수 있어요."
+                    compact
+                  />
+                  <Button
+                    variant="ghost"
+                    label="캐릭터 꾸미기"
+                    onPress={onOpenProfile}
+                    style={styles.profileButton}
+                  />
+                </View>
+              )}
+
+              {authEnabled && (
+                <View style={styles.footnote}>
+                  <Text style={styles.footnoteTitle}>로그인 시</Text>
+                  <Text style={styles.footnoteText}>학습 기록 · 캐릭터 프로필 동기화</Text>
+                </View>
+              )}
+
+              <View style={styles.resourcesSection}>
+                <Text style={styles.resourcesTitle}>지원 및 개인정보</Text>
+                <Text style={styles.resourcesText}>
+                  게스트 학습과 선택 로그인에 대한 자세한 안내는 지원 페이지와 개인정보처리방침에서 확인할 수 있습니다.
+                </Text>
+                <View style={styles.resourcesActions}>
+                  <Button
+                    label="지원"
+                    variant="ghost"
+                    fullWidth={false}
+                    onPress={() => {
+                      void AppExternalLinks.open(AppExternalLinks.supportPageUrl);
+                    }}
+                    style={styles.resourceButton}
+                  />
+                  <Button
+                    label="개인정보"
+                    variant="ghost"
+                    fullWidth={false}
+                    onPress={() => {
+                      void AppExternalLinks.open(AppExternalLinks.privacyPageUrl);
+                    }}
+                    style={styles.resourceButton}
+                  />
+                </View>
+                <Text style={styles.resourcesMeta}>문의: {AppExternalLinks.supportEmail}</Text>
+              </View>
             </ScreenCard>
           </View>
         </ScrollView>
@@ -213,196 +320,290 @@ export function AuthScreen({ previewState }: AuthScreenProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  safe: {
-    flex: 1,
-    backgroundColor: Colors.background,
-  },
-  scroll: {
-    flex: 1,
-  },
-  scrollContent: {
-    flexGrow: 1,
-  },
-  container: {
-    flex: 1,
-    paddingHorizontal: Spacing.lg,
-    paddingVertical: Spacing.xxl,
-    gap: Spacing.lg,
-    justifyContent: 'center',
-    overflow: 'hidden',
-  },
-  backdropTop: {
-    position: 'absolute',
-    top: -64,
-    right: -28,
-    width: 180,
-    height: 180,
-    borderRadius: 90,
-    backgroundColor: withAlpha(Colors.primary, '18'),
-  },
-  backdropBottom: {
-    position: 'absolute',
-    left: -44,
-    bottom: 80,
-    width: 140,
-    height: 140,
-    borderRadius: 70,
-    backgroundColor: withAlpha(Colors.warning, '12'),
-  },
-  headerWrap: {
-    gap: Spacing.sm,
-  },
-  brand: {
-    fontSize: Typography.size34,
-    fontWeight: Typography.weightExtraBold,
-    color: Colors.textPrimary,
-    letterSpacing: -0.8,
-    lineHeight: 40,
-  },
-  brandTag: {
-    alignSelf: 'flex-start',
-    borderRadius: Radius.pill,
-    backgroundColor: Colors.primaryLight,
-    borderWidth: 1,
-    borderColor: Colors.primaryBorder,
-    paddingHorizontal: Spacing.md,
-    paddingVertical: Spacing.xs,
-  },
-  brandTagText: {
-    fontSize: Typography.size11,
-    fontWeight: Typography.weightBold,
-    color: Colors.primaryStrong,
-    letterSpacing: 0.4,
-  },
-  subtitle: {
-    fontSize: Typography.size13,
-    lineHeight: 21,
-    fontWeight: Typography.weightMedium,
-    color: Colors.textSecondary,
-    maxWidth: 320,
-  },
-  featureRow: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: Spacing.sm,
-  },
-  featureChip: {
-    borderRadius: Radius.pill,
-    backgroundColor: Colors.surfaceTint,
-    borderWidth: 1,
-    borderColor: Colors.borderLight,
-    paddingHorizontal: Spacing.md,
-    paddingVertical: Spacing.sm,
-  },
-  featureChipText: {
-    fontSize: Typography.size11,
-    fontWeight: Typography.weightBold,
-    color: Colors.textMuted,
-  },
-  formCard: {
-    gap: Spacing.lg,
-  },
-  formHeader: {
-    gap: Spacing.xs,
-  },
-  formTitle: {
-    fontSize: Typography.size23,
-    fontWeight: Typography.weightExtraBold,
-    color: Colors.textPrimary,
-  },
-  formSubtitle: {
-    fontSize: Typography.size13,
-    lineHeight: 20,
-    color: Colors.textSecondary,
-    fontWeight: Typography.weightMedium,
-  },
-  modeSwitch: {
-    flexDirection: 'row',
-    padding: Spacing.xs,
-    borderRadius: Radius.pill,
-    backgroundColor: Colors.surfaceTint,
-    borderWidth: 1,
-    borderColor: Colors.borderLight,
-    gap: Spacing.xs,
-  },
-  modeButton: {
-    flex: 1,
-    minHeight: 40,
-    borderRadius: Radius.pill,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  modeButtonActive: {
-    backgroundColor: Colors.surface,
-    borderWidth: 1,
-    borderColor: Colors.border,
-  },
-  modeButtonText: {
-    fontSize: Typography.size13,
-    fontWeight: Typography.weightBold,
-    color: Colors.textMuted,
-  },
-  modeButtonTextActive: {
-    color: Colors.textPrimary,
-  },
-  submitButton: {
-    marginTop: Spacing.xs,
-  },
-  feedbackError: {
-    borderRadius: Radius.lg,
-    backgroundColor: Colors.wrongLight,
-    borderWidth: 1,
-    borderColor: withAlpha(Colors.wrong, '35'),
-    paddingHorizontal: Spacing.lg,
-    paddingVertical: Spacing.md,
-  },
-  feedbackErrorText: {
-    color: Colors.wrongDark,
-    fontSize: Typography.size13,
-    fontWeight: Typography.weightBold,
-    lineHeight: 20,
-  },
-  feedbackSuccess: {
-    borderRadius: Radius.lg,
-    backgroundColor: Colors.correctLight,
-    borderWidth: 1,
-    borderColor: withAlpha(Colors.correct, '35'),
-    paddingHorizontal: Spacing.lg,
-    paddingVertical: Spacing.md,
-  },
-  feedbackSuccessText: {
-    color: Colors.correctDark,
-    fontSize: Typography.size13,
-    fontWeight: Typography.weightBold,
-    lineHeight: 20,
-  },
-  footnote: {
-    gap: Spacing.xs,
-  },
-  footnoteTitle: {
-    fontSize: Typography.size12,
-    fontWeight: Typography.weightBold,
-    color: Colors.textPrimary,
-  },
-  footnoteText: {
-    fontSize: Typography.size12,
-    lineHeight: 19,
-    color: Colors.textSecondary,
-    fontWeight: Typography.weightMedium,
-  },
-  infoCard: {
-    gap: Spacing.xs,
-  },
-  infoTitle: {
-    fontSize: Typography.size13,
-    fontWeight: Typography.weightBold,
-    color: Colors.textPrimary,
-  },
-  infoText: {
-    fontSize: Typography.size12,
-    lineHeight: 19,
-    color: Colors.textSecondary,
-    fontWeight: Typography.weightMedium,
-  },
-});
+function useAuthStyles() {
+  const typography = useResponsiveTypography();
+
+  return useMemo(
+    () =>
+      StyleSheet.create({
+        safe: {
+          flex: 1,
+          backgroundColor: Colors.background,
+        },
+        scroll: {
+          flex: 1,
+        },
+        scrollContent: {
+          flexGrow: 1,
+        },
+        container: {
+          flex: 1,
+          width: '100%',
+          alignSelf: 'center',
+          paddingHorizontal: Spacing.lg,
+          paddingTop: Spacing.xxl,
+          paddingBottom: Spacing.xxxl,
+          gap: Spacing.md,
+          justifyContent: 'center',
+          overflow: 'hidden',
+        },
+        backdropTop: {
+          position: 'absolute',
+          top: -64,
+          right: -28,
+          width: 180,
+          height: 180,
+          borderRadius: 90,
+          backgroundColor: withAlpha(Colors.primary, '18'),
+        },
+        backdropBottom: {
+          position: 'absolute',
+          left: -44,
+          bottom: 80,
+          width: 140,
+          height: 140,
+          borderRadius: 70,
+          backgroundColor: withAlpha(Colors.warning, '12'),
+        },
+        headerWrap: {
+          gap: 6,
+        },
+        brand: {
+          fontSize: typography.sizes.size34,
+          fontWeight: Typography.weightExtraBold,
+          color: Colors.textPrimary,
+          letterSpacing: -0.8,
+          lineHeight: typography.lineHeight(Typography.size34, 40 / Typography.size34),
+        },
+        brandTag: {
+          alignSelf: 'flex-start',
+          borderRadius: Radius.pill,
+          backgroundColor: Colors.primaryLight,
+          borderWidth: 1,
+          borderColor: Colors.primaryBorder,
+          paddingHorizontal: Spacing.md,
+          paddingVertical: Spacing.xs,
+        },
+        brandTagText: {
+          fontSize: typography.sizes.size11,
+          fontWeight: Typography.weightBold,
+          color: Colors.primaryStrong,
+          letterSpacing: 0.2,
+        },
+        subtitle: {
+          fontSize: typography.sizes.size13,
+          lineHeight: typography.lineHeight(Typography.size13, 20 / Typography.size13),
+          fontWeight: Typography.weightMedium,
+          color: Colors.textSecondary,
+          maxWidth: 288,
+        },
+        featureRow: {
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          gap: 10,
+        },
+        featureChip: {
+          borderRadius: Radius.pill,
+          backgroundColor: Colors.surfaceTint,
+          borderWidth: 1,
+          borderColor: Colors.borderLight,
+          paddingHorizontal: Spacing.md,
+          paddingVertical: 6,
+        },
+        featureChipText: {
+          fontSize: typography.sizes.size11,
+          fontWeight: Typography.weightBold,
+          color: Colors.textMuted,
+        },
+        formCard: {
+          gap: 18,
+        },
+        formHeader: {
+          gap: 6,
+        },
+        formTitle: {
+          fontSize: typography.sizes.size23,
+          fontWeight: Typography.weightExtraBold,
+          color: Colors.textPrimary,
+        },
+        formSubtitle: {
+          fontSize: typography.sizes.size13,
+          lineHeight: typography.lineHeight(Typography.size13, 19 / Typography.size13),
+          color: Colors.textSecondary,
+          fontWeight: Typography.weightMedium,
+          maxWidth: 280,
+        },
+        modeSwitch: {
+          flexDirection: 'row',
+          padding: Spacing.xs,
+          borderRadius: Radius.pill,
+          backgroundColor: Colors.surfaceTint,
+          borderWidth: 1,
+          borderColor: Colors.borderLight,
+          gap: Spacing.xs,
+        },
+        modeButton: {
+          flex: 1,
+          minHeight: 40,
+          borderRadius: Radius.pill,
+          justifyContent: 'center',
+          alignItems: 'center',
+        },
+        modeButtonActive: {
+          backgroundColor: Colors.surface,
+          borderWidth: 1,
+          borderColor: Colors.border,
+        },
+        modeButtonText: {
+          fontSize: typography.sizes.size13,
+          fontWeight: Typography.weightBold,
+          color: Colors.textMuted,
+        },
+        modeButtonTextActive: {
+          color: Colors.textPrimary,
+        },
+        submitButton: {
+          marginTop: Spacing.xs,
+          minHeight: 54,
+          borderRadius: Radius.xl,
+          shadowOpacity: 0.08,
+          shadowRadius: 18,
+          elevation: 2,
+        },
+        guestOnlyNotice: {
+          gap: Spacing.xs,
+          borderRadius: Radius.lg,
+          padding: Spacing.md,
+          backgroundColor: withAlpha(Colors.warning, '10'),
+          borderWidth: 1,
+          borderColor: Colors.warningBorder,
+        },
+        guestOnlyNoticeTitle: {
+          fontSize: typography.sizes.size13,
+          fontWeight: Typography.weightBold,
+          color: Colors.warningDark,
+        },
+        guestOnlyNoticeText: {
+          fontSize: typography.sizes.size12,
+          lineHeight: typography.lineHeight(Typography.size12, 18 / Typography.size12),
+          color: Colors.textSecondary,
+          fontWeight: Typography.weightMedium,
+        },
+        guestSection: {
+          gap: Spacing.sm,
+        },
+        guestDivider: {
+          height: 1,
+          backgroundColor: Colors.borderLight,
+          marginBottom: Spacing.xs,
+        },
+        guestTitle: {
+          fontSize: typography.sizes.size13,
+          fontWeight: Typography.weightBold,
+          color: Colors.textPrimary,
+        },
+        guestText: {
+          fontSize: typography.sizes.size12,
+          lineHeight: typography.lineHeight(Typography.size12, 18 / Typography.size12),
+          color: Colors.textSecondary,
+          fontWeight: Typography.weightMedium,
+        },
+        guestButton: {
+          minHeight: 54,
+          borderRadius: Radius.xl,
+        },
+        profileSection: {
+          gap: Spacing.sm,
+          borderTopWidth: 1,
+          borderTopColor: Colors.borderLight,
+          paddingTop: Spacing.md,
+        },
+        profileButton: {
+          minHeight: 50,
+          borderRadius: Radius.xl,
+        },
+        feedbackError: {
+          borderRadius: Radius.lg,
+          backgroundColor: Colors.wrongLight,
+          borderWidth: 1,
+          borderColor: withAlpha(Colors.wrong, '35'),
+          paddingHorizontal: Spacing.lg,
+          paddingVertical: Spacing.md,
+        },
+        feedbackErrorText: {
+          color: Colors.wrongDark,
+          fontSize: typography.sizes.size13,
+          fontWeight: Typography.weightBold,
+          lineHeight: typography.lineHeight(Typography.size13, 20 / Typography.size13),
+        },
+        feedbackSuccess: {
+          borderRadius: Radius.lg,
+          backgroundColor: Colors.correctLight,
+          borderWidth: 1,
+          borderColor: withAlpha(Colors.correct, '35'),
+          paddingHorizontal: Spacing.lg,
+          paddingVertical: Spacing.md,
+        },
+        feedbackSuccessText: {
+          color: Colors.correctDark,
+          fontSize: typography.sizes.size13,
+          fontWeight: Typography.weightBold,
+          lineHeight: typography.lineHeight(Typography.size13, 20 / Typography.size13),
+        },
+        footnote: {
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          borderTopWidth: 1,
+          borderTopColor: Colors.borderLight,
+          paddingTop: Spacing.md,
+          gap: Spacing.md,
+        },
+        footnoteTitle: {
+          fontSize: typography.sizes.size12,
+          fontWeight: Typography.weightBold,
+          color: Colors.textPrimary,
+        },
+        footnoteText: {
+          fontSize: typography.sizes.size12,
+          lineHeight: typography.lineHeight(Typography.size12, 18 / Typography.size12),
+          color: Colors.textSecondary,
+          fontWeight: Typography.weightMedium,
+          textAlign: 'right',
+        },
+        resourcesSection: {
+          gap: Spacing.sm,
+          borderTopWidth: 1,
+          borderTopColor: Colors.borderLight,
+          paddingTop: Spacing.md,
+        },
+        resourcesTitle: {
+          fontSize: typography.sizes.size12,
+          fontWeight: Typography.weightBold,
+          color: Colors.textPrimary,
+        },
+        resourcesText: {
+          fontSize: typography.sizes.size12,
+          lineHeight: typography.lineHeight(Typography.size12, 18 / Typography.size12),
+          color: Colors.textSecondary,
+          fontWeight: Typography.weightMedium,
+        },
+        resourcesActions: {
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          gap: Spacing.sm,
+        },
+        resourceButton: {
+          minWidth: 112,
+          paddingHorizontal: Spacing.lg,
+        },
+        resourcesMeta: {
+          fontSize: typography.sizes.size11,
+          lineHeight: typography.lineHeight(Typography.size11, 16 / Typography.size11),
+          color: Colors.textMuted,
+          fontWeight: Typography.weightMedium,
+        },
+      }),
+    [typography],
+  );
+}

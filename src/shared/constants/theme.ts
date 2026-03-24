@@ -158,7 +158,7 @@ export const RoundSizeColors: Record<number, string> = {
 
 // ── Timing ────────────────────────────────────────────────────
 export const Timing = {
-  feedbackDelay: 5000,
+  feedbackDelay: 3000,
   hintThreshold: 0.4,
   animationFast: 200,
   animationMedium: 400,
