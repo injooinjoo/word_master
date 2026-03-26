@@ -26,11 +26,13 @@ import {
   useResponsiveTypography,
   useSharedTextStyles,
 } from '../../../shared/ui';
+import { CharacterSummaryCard } from '../../profile/components/CharacterSummaryCard';
 import { CharacterProfileEditor } from '../../profile/ui/ProfileScreen';
 
 export type PreviewMode =
   | 'foundations'
   | 'components'
+  | 'home'
   | 'auth'
   | 'profile'
   | 'quiz'
@@ -85,6 +87,7 @@ export function PreviewDeck({ mode }: PreviewDeckProps) {
           <View style={styles.backdropBottom} />
           {mode === 'foundations' && <FoundationsPreview />}
           {mode === 'components' && <ComponentsPreview />}
+          {mode === 'home' && <HomePreview />}
           {mode === 'auth' && <AuthPreview />}
           {mode === 'profile' && <ProfilePreview />}
           {mode === 'quiz' && <QuizPreview />}
@@ -290,6 +293,100 @@ function ComponentsPreview() {
             typeLabel="반의"
             typeColor={QuizTypeColors.ant}
           />
+        </View>
+      </ScreenCard>
+    </View>
+  );
+}
+
+function HomePreview() {
+  const styles = usePreviewStyles();
+  const profile = useMemo(
+    () =>
+      sanitizeCharacterProfile({
+        ...createDefaultCharacterProfile(),
+        avatar: {
+          hairStyle: 'short',
+          hairColor: 'teal',
+          expression: 'smile',
+          outfitColor: 'mint',
+        },
+        likes: '퍼즐, 민트색',
+        dislikes: '시간 초과',
+      }),
+    [],
+  );
+
+  return (
+    <View style={styles.page}>
+      <PreviewHeader
+        eyebrow="02 Home"
+        title="Learning Hub"
+        description="퀴즈 진입 전 홈 허브, 프로필, 로그인 분기를 묶는 새 프론트 레이어."
+      />
+
+      <CharacterSummaryCard
+        profile={profile}
+        title="민트 러너"
+        caption="게스트 프로필은 기기에 저장되고, 로그인 시 계정과 동기화됩니다."
+        compact
+      />
+
+      <ScreenCard style={styles.sectionCard}>
+        <Text style={styles.sectionTitle}>Primary Actions</Text>
+        <View style={styles.stack}>
+          <Button label="학습 시작하기" onPress={() => undefined} />
+          <View style={styles.homeActionRow}>
+            <Button
+              variant="secondary"
+              label="프로필 열기"
+              onPress={() => undefined}
+              fullWidth={false}
+              style={styles.homeActionButton}
+            />
+            <Button
+              variant="ghost"
+              label="로그인"
+              onPress={() => undefined}
+              fullWidth={false}
+              style={styles.homeActionButton}
+            />
+          </View>
+        </View>
+      </ScreenCard>
+
+      <View style={styles.homeMetricGrid}>
+        {[
+          ['현재 티어', 'Gold II', '고등학교 기초'],
+          ['복습 대기', '18', '다시 볼 단어 수'],
+          ['취약 유형', '동의어', '지금 가장 흔들리는 축'],
+          ['주의 응답', '7', '불안 정답, 오답, 시간 초과'],
+        ].map(([label, value, caption]) => (
+          <ScreenCard key={label} style={styles.homeMetricCard}>
+            <Text style={styles.homeMetricLabel}>{label}</Text>
+            <Text style={styles.homeMetricValue}>{value}</Text>
+            <Text style={styles.homeMetricCaption}>{caption}</Text>
+          </ScreenCard>
+        ))}
+      </View>
+
+      <ScreenCard style={styles.sectionCard}>
+        <Text style={styles.sectionTitle}>Tracked Ratings</Text>
+        <View style={styles.stack}>
+          {([
+            ['e2k', '영한', '1260', 'Gold II'],
+            ['k2e', '한영', '1180', 'Gold III'],
+            ['e2e', '영영', '1110', 'Silver I'],
+            ['syn', '동의어', '1086', 'Silver I'],
+          ] as const).map(([type, label, rating, tier]) => (
+            <View key={type} style={styles.homeTrackRow}>
+              <View style={styles.homeTrackLabelWrap}>
+                <Chip label={label} type={type} />
+                <Text style={styles.homeTrackTier}>{tier}</Text>
+              </View>
+              <Text style={styles.homeTrackValue}>{rating}</Text>
+            </View>
+          ))}
         </View>
       </ScreenCard>
     </View>
@@ -650,6 +747,41 @@ function usePreviewStyles() {
   stack: {
     gap: Spacing.sm,
   },
+  homeActionRow: {
+    flexDirection: 'row',
+    gap: Spacing.sm,
+  },
+  homeActionButton: {
+    flex: 1,
+  },
+  homeMetricGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: Spacing.sm,
+  },
+  homeMetricCard: {
+    flexBasis: 0,
+    flexGrow: 1,
+    minWidth: 150,
+  },
+  homeMetricLabel: {
+    fontSize: typography.sizes.size11,
+    color: Colors.textMuted,
+    fontWeight: Typography.weightBold,
+    letterSpacing: 0.5,
+    textTransform: 'uppercase',
+  },
+  homeMetricValue: {
+    fontSize: typography.sizes.size23,
+    fontWeight: Typography.weightExtraBold,
+    color: Colors.textPrimary,
+  },
+  homeMetricCaption: {
+    fontSize: typography.sizes.size12,
+    lineHeight: typography.lineHeight(Typography.size12, 18 / Typography.size12),
+    color: Colors.textSecondary,
+    fontWeight: Typography.weightMedium,
+  },
   inlineRow: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -753,6 +885,32 @@ function usePreviewStyles() {
     fontSize: typography.sizes.size23,
     fontWeight: Typography.weightExtraBold,
     color: Colors.textPrimary,
+  },
+  homeTrackRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: Spacing.md,
+    borderRadius: Radius.lg,
+    borderWidth: 1,
+    borderColor: Colors.borderLight,
+    backgroundColor: Colors.surfaceTint,
+    paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.md,
+  },
+  homeTrackLabelWrap: {
+    flex: 1,
+    gap: Spacing.xs,
+  },
+  homeTrackTier: {
+    fontSize: typography.sizes.size12,
+    color: Colors.textSecondary,
+    fontWeight: Typography.weightMedium,
+  },
+  homeTrackValue: {
+    fontSize: typography.sizes.size18,
+    color: Colors.textPrimary,
+    fontWeight: Typography.weightExtraBold,
   },
   systemStateTitle: {
     fontSize: typography.sizes.size23,

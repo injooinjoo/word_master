@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Platform, View, Text, StyleSheet, ActivityIndicator } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { AuthScreen } from '../features/auth/ui/AuthScreen';
+import { HomeScreen } from '../features/home/ui/HomeScreen';
 import { ProfileScreen, type CharacterProfileSaveResponse } from '../features/profile/ui/ProfileScreen';
 import { PreviewDeck, type PreviewMode } from '../features/preview/ui/PreviewDeck';
 import { QuizScreen } from '../features/quiz/ui/QuizScreen';
@@ -33,8 +34,8 @@ const adaptiveProgressService = new AdaptiveProgressService(allVocabData);
 const quizService = new QuizService(allVocabData, adaptiveProgressService);
 const audioService = new AudioService();
 
-type Screen = 'quiz' | 'result';
-type ProfileOverlaySource = 'auth' | 'quiz' | 'result';
+type Screen = 'home' | 'quiz' | 'result';
+type ProfileOverlaySource = 'auth' | 'home' | 'quiz' | 'result';
 
 function resolvePreviewMode(): PreviewMode | null {
   if (!__DEV__) return null;
@@ -47,6 +48,7 @@ function resolvePreviewMode(): PreviewMode | null {
   const allowedModes: PreviewMode[] = [
     'foundations',
     'components',
+    'home',
     'auth',
     'profile',
     'quiz',
@@ -115,7 +117,7 @@ export default function App() {
 function MainApp() {
   const loadingStyles = useLoadingStyles();
   const sharedTextStyles = useSharedTextStyles();
-  const [screen, setScreen] = useState<Screen>('quiz');
+  const [screen, setScreen] = useState<Screen>('home');
   const [loading, setLoading] = useState(true);
   const [initError, setInitError] = useState<string | null>(null);
   const [user, setUser] = useState<User | null>(null);
@@ -226,14 +228,14 @@ function MainApp() {
                 });
               if (event === 'SIGNED_IN') {
                 quizService.resetSession();
-                setScreen('quiz');
+                setScreen('home');
               }
             }
             if (!nextSession) {
               setGuestMode(true);
               void adaptiveProgressService.setSyncUser(null);
               quizService.resetSession();
-              setScreen('quiz');
+              setScreen('home');
             }
             void refreshCharacterProfile(nextUser);
           });
@@ -277,6 +279,11 @@ function MainApp() {
     setScreen('result');
   }, []);
 
+  const onStartLearning = useCallback(() => {
+    quizService.resetSession();
+    setScreen('quiz');
+  }, []);
+
   const onResume = useCallback(() => {
     quizService.resetSession();
     setScreen('quiz');
@@ -287,7 +294,7 @@ function MainApp() {
     quizService.resetSession();
     setGuestMode(true);
     setUser(null);
-    setScreen('quiz');
+    setScreen('home');
     void refreshCharacterProfile(null);
   }, [refreshCharacterProfile]);
 
@@ -299,7 +306,7 @@ function MainApp() {
     } finally {
       void adaptiveProgressService.setSyncUser(null);
       quizService.resetSession();
-      setScreen('quiz');
+      setScreen('home');
       setGuestMode(true);
       setUser(null);
       void refreshCharacterProfile(null);
@@ -313,7 +320,7 @@ function MainApp() {
 
   const onErrorReset = useCallback(() => {
     quizService.resetSession();
-    setScreen('quiz');
+    setScreen('home');
     setProfileOverlaySource(null);
   }, []);
 
@@ -415,6 +422,19 @@ function MainApp() {
   return (
     <ErrorBoundary onReset={onErrorReset}>
       <StatusBar style="auto" />
+      {screen === 'home' && (
+        <HomeScreen
+          characterProfile={characterProfile}
+          quizService={quizService}
+          viewerLabel={profileViewerLabel}
+          storageLabel={profileStorageLabel}
+          authEnabled={authConfigured}
+          isGuestSession={isGuestSession}
+          onStartLearning={onStartLearning}
+          onOpenProfile={() => onOpenProfile('home')}
+          onSignInRequest={authConfigured && isGuestSession ? onSignInRequest : undefined}
+        />
+      )}
       {screen === 'quiz' && (
         <QuizScreen
           quizService={quizService}
