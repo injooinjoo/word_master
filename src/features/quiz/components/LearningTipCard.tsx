@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Image } from 'expo-image';
 import { StyleSheet, Text, View } from 'react-native';
 import type { LearningTipEntry } from '../../../data/models/vocab';
 import { Colors } from '../../../shared/constants/theme';
+import { useResponsiveTypography } from '../../../shared/ui';
 
 interface LearningTipCardProps {
   entry: LearningTipEntry;
@@ -10,6 +11,7 @@ interface LearningTipCardProps {
 }
 
 export function LearningTipCard({ entry, title }: LearningTipCardProps) {
+  const styles = useLearningTipStyles();
   const hasImage = entry.imageUrl && entry.imageUrl.length > 0;
   return (
     <View style={styles.card}>
@@ -35,43 +37,51 @@ export function LearningTipCard({ entry, title }: LearningTipCardProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  card: {
-    marginHorizontal: 24,
-    marginVertical: 12,
-    backgroundColor: Colors.surface,
-    borderRadius: 12,
-    shadowColor: Colors.shadow,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.08,
-    shadowRadius: 8,
-    elevation: 3,
-  },
-  inner: {
-    padding: 16,
-  },
-  title: {
-    color: Colors.primary,
-    fontWeight: '700',
-    fontSize: 14,
-    marginBottom: 8,
-  },
-  imageWrap: {
-    height: 160,
-    width: '100%',
-    borderRadius: 8,
-    overflow: 'hidden',
-  },
-  image: {
-    width: '100%',
-    height: '100%',
-  },
-  spacer: {
-    height: 12,
-  },
-  text: {
-    fontSize: 16,
-    color: Colors.textSecondary,
-    lineHeight: 22,
-  },
-});
+function useLearningTipStyles() {
+  const typography = useResponsiveTypography();
+
+  return useMemo(
+    () =>
+      StyleSheet.create({
+        card: {
+          marginHorizontal: 24,
+          marginVertical: 12,
+          backgroundColor: Colors.surface,
+          borderRadius: 12,
+          shadowColor: Colors.shadow,
+          shadowOffset: { width: 0, height: 2 },
+          shadowOpacity: 0.08,
+          shadowRadius: 8,
+          elevation: 3,
+        },
+        inner: {
+          padding: 16,
+        },
+        title: {
+          color: Colors.primary,
+          fontWeight: '700',
+          fontSize: typography.fontSize(14),
+          marginBottom: 8,
+        },
+        imageWrap: {
+          height: 160,
+          width: '100%',
+          borderRadius: 8,
+          overflow: 'hidden',
+        },
+        image: {
+          width: '100%',
+          height: '100%',
+        },
+        spacer: {
+          height: 12,
+        },
+        text: {
+          fontSize: typography.fontSize(16),
+          color: Colors.textSecondary,
+          lineHeight: typography.lineHeight(16, 22 / 16),
+        },
+      }),
+    [typography],
+  );
+}

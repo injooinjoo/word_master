@@ -96,7 +96,42 @@ import { vocabBatch87 } from './vocab_batch_87';
 import { vocabBatch88 } from './vocab_batch_88';
 import { vocabBatch89 } from './vocab_batch_89';
 
-export const allVocabData: VocabItem[] = [
+function vocabRichnessScore(item: VocabItem): number {
+  return (
+    (item.definition?.trim() ? 8 : 0) +
+    (item.synonyms?.length ?? 0) * 2 +
+    (item.antonyms?.length ?? 0) * 2 +
+    item.distractors.length +
+    (item.wordDistractors?.length ?? 0) +
+    (item.definitionDistractors?.length ?? 0) +
+    (item.exampleSentences?.length ?? 0) * 2 +
+    (item.pronunciationUrl ? 1 : 0) +
+    (item.audioUrl ? 1 : 0) +
+    (item.imageUrl ? 1 : 0)
+  );
+}
+
+function dedupeVocabItems(items: readonly VocabItem[]): VocabItem[] {
+  const deduped = new Map<string, VocabItem>();
+  const order: string[] = [];
+
+  for (const item of items) {
+    const existing = deduped.get(item.id);
+    if (!existing) {
+      deduped.set(item.id, item);
+      order.push(item.id);
+      continue;
+    }
+
+    if (vocabRichnessScore(item) > vocabRichnessScore(existing)) {
+      deduped.set(item.id, item);
+    }
+  }
+
+  return order.map((id) => deduped.get(id)!);
+}
+
+const rawVocabData: VocabItem[] = [
   ...vocabBatch01,
   ...vocabBatch02,
   ...vocabBatch03,
@@ -193,3 +228,5 @@ export const allVocabData: VocabItem[] = [
   ...vocabBatch88,
   ...vocabBatch89,
 ];
+
+export const allVocabData: VocabItem[] = dedupeVocabItems(rawVocabData);

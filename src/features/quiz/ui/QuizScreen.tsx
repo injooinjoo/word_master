@@ -3,26 +3,51 @@ import {
   View,
   Text,
   StyleSheet,
-  TouchableOpacity,
   Platform,
+  TouchableOpacity,
   Vibration,
   SafeAreaView,
   Animated,
   useWindowDimensions,
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import type { QuizQuestion, QuizType, AnswerContext } from '../../../services/quizService';
 import { QUIZ_TYPE_LABELS } from '../../../services/quizService';
 import type { QuizService } from '../../../services/quizService';
 import type { AudioService } from '../../../services/audioService';
-import { getLearningTipEntries } from '../../../data/models/vocab';
+import { StorageService, type AudioPreferences } from '../../../services/storageService';
+import { getRenderableLearningTipEntries } from '../../../data/models/vocab';
 import type { LearningTipEntry } from '../../../data/models/vocab';
 import { GradeTable } from '../../../shared/constants/gradeTable';
-import { Colors, QuizTypeColors, difficultyColor, Timing } from '../../../shared/constants/theme';
+import {
+  Colors,
+  QuizTypeColors,
+  Radius,
+  Spacing,
+  Typography,
+  difficultyColor,
+  Timing,
+  withAlpha,
+} from '../../../shared/constants/theme';
 import { TimerBar } from '../components/TimerBar';
+import {
+  Badge,
+  Button,
+  Chip,
+  ChoiceCard,
+  FeedbackBanner,
+  ResponsiveContainer,
+  ScreenCard,
+  useResponsiveTypography,
+} from '../../../shared/ui';
 
 function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value));
 }
+
+const STAGE_GAP_TOTAL = Spacing.md * 2;
+const STAGE_VERTICAL_PADDING = Spacing.md * 2;
+const PROGRESS_CARD_ESTIMATE = 156;
 
 interface ChoiceLayoutMetrics {
   horizontalPadding: number;
@@ -48,10 +73,10 @@ function getChoiceLayoutMetrics(width: number, height: number): ChoiceLayoutMetr
   const topPadding = clamp(height * 0.015, 8, 18);
   const bottomPadding = clamp(height * 0.025, 10, 22);
   const gap = clamp(shortest * 0.028, 8, 16);
-  const bottomSectionHeight = clamp(height * 0.34, 220, 420);
+  const bottomSectionHeight = clamp(height * 0.3, 210, 360);
   const cellWidth = Math.max(120, (width - horizontalPadding * 2 - gap) / 2);
   const availableGridHeight = bottomSectionHeight - topPadding - bottomPadding - gap;
-  const cardHeight = clamp(availableGridHeight / 2, 90, 210);
+  const cardHeight = clamp(availableGridHeight / 2, 86, 180);
   const cardRadius = clamp(shortest * 0.04, 14, 24);
   const cardPaddingVertical = clamp(cardHeight * 0.12, 8, 18);
   const cardPaddingHorizontal = clamp(cellWidth * 0.08, 8, 16);
@@ -98,21 +123,96 @@ function timerDurationForElo(wordElo: number): number {
 /** Choice number labels */
 const CHOICE_LABELS = ['A', 'B', 'C', 'D'];
 
+function formatWordMeaning(word: string, meaning: string): string {
+  const trimmedMeaning = meaning.trim();
+  return trimmedMeaning ? `${word} · ${trimmedMeaning}` : word;
+}
+
+function shouldShowCorrectAnswerOnSuccess(type: QuizType): boolean {
+  return type === 'e2e' || type === 'syn' || type === 'ant';
+}
+
+function autoplayWordForQuestion(question: QuizQuestion): string | null {
+  return question.quizType === 'k2e' ? null : question.vocabItem.word;
+}
+
+function replayWordForQuestion(question: QuizQuestion, answered: boolean): string | null {
+  if (question.quizType === 'k2e') {
+    return answered ? question.correctAnswer : null;
+  }
+  return question.vocabItem.word;
+}
+
+const DEFAULT_AUDIO_PREFERENCES: AudioPreferences = {
+  autoplayEnabled: Platform.OS !== 'web',
+};
+
+function buildFeedbackMessage(
+  question: QuizQuestion,
+  options: {
+    correct: boolean;
+    timedOut: boolean;
+    selectedChoice: string | null;
+  },
+): string {
+  const lines = [
+    options.correct ? '정답!' : options.timedOut ? '시간 초과' : '오답',
+    formatWordMeaning(question.vocabItem.word, question.vocabItem.meaning),
+  ];
+
+  if (options.correct) {
+    if (shouldShowCorrectAnswerOnSuccess(question.quizType)) {
+      lines.push(`정답: ${question.correctAnswer}`);
+    }
+    return lines.join('\n');
+  }
+
+  if (options.selectedChoice) {
+    lines.push(`내 답: ${options.selectedChoice}`);
+  }
+  lines.push(`정답: ${question.correctAnswer}`);
+  return lines.join('\n');
+}
+
 interface QuizScreenProps {
   quizService: QuizService;
   audioService: AudioService;
+  onOpenProfile: () => void;
   onSessionEnd: () => void;
 }
 
-export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScreenProps) {
+export function QuizScreen({
+  quizService,
+  audioService,
+  onOpenProfile,
+  onSessionEnd,
+}: QuizScreenProps) {
+  const typography = useResponsiveTypography();
+  const styles = useQuizStyles();
+  const safeAreaInsets = useSafeAreaInsets();
   const { width: windowWidth, height: windowHeight } = useWindowDimensions();
-  const layout = useMemo(
-    () => getChoiceLayoutMetrics(windowWidth, windowHeight),
-    [windowWidth, windowHeight],
+  const stageMaxWidth = windowWidth >= 1280 ? 760 : windowWidth >= 1024 ? 700 : 560;
+  const stageMaxHeight = 940;
+  const layoutWidth = Math.min(windowWidth, stageMaxWidth);
+  const availableStageHeight = Math.max(
+    520,
+    windowHeight -
+      safeAreaInsets.top -
+      safeAreaInsets.bottom -
+      STAGE_VERTICAL_PADDING -
+      STAGE_GAP_TOTAL,
   );
+  const layoutHeight = Math.min(availableStageHeight, stageMaxHeight);
+  const layout = useMemo(
+    () => getChoiceLayoutMetrics(layoutWidth, layoutHeight),
+    [layoutWidth, layoutHeight],
+  );
+  const [progressCardHeight, setProgressCardHeight] = useState(PROGRESS_CARD_ESTIMATE);
   const [current, setCurrent] = useState<QuizQuestion | null>(null);
   const [questionNum, setQuestionNum] = useState(0);
   const [initialized, setInitialized] = useState(false);
+  const [audioPreferences, setAudioPreferences] = useState<AudioPreferences>(DEFAULT_AUDIO_PREFERENCES);
+  const [audioReady, setAudioReady] = useState(false);
 
   // --- feedback state ---
   const [answered, setAnswered] = useState(false);
@@ -136,11 +236,9 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   // Ref to prevent stale closures in the timer callback
   const answeredRef = useRef(false);
 
-  // Pre-pick hint entry for the current question so it's ready when threshold triggers
-  const hintEntryRef = useRef<LearningTipEntry | null>(null);
-
   // Ref for the hint timeout so we can clear it
   const hintTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const feedbackTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Ref to record when each question was presented (for elapsed time calc)
   const startTimeRef = useRef<number>(Date.now());
@@ -177,11 +275,15 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       clearTimeout(hintTimeoutRef.current);
       hintTimeoutRef.current = null;
     }
+    if (feedbackTimeoutRef.current) {
+      clearTimeout(feedbackTimeoutRef.current);
+      feedbackTimeoutRef.current = null;
+    }
   }, [feedbackOpacity, hintOpacity, eloDeltaAnim, wordEloDeltaAnim, timeBonusAnim]);
 
   const loadNext = useCallback(() => {
-    const type = quizService.pickAdaptiveType();
-    const q = quizService.nextQuestion(type);
+    void audioService.stop();
+    const q = quizService.nextQuestion();
     if (q == null) {
       quizService.endSession();
       onSessionEnd();
@@ -191,9 +293,8 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
     setQuestionNum(quizService.roundTotal + 1);
     setInitialized(true);
 
-    const entries = getLearningTipEntries(q.vocabItem.learningTips);
-    const entry = entries[Math.floor(Math.random() * entries.length)];
-    hintEntryRef.current = entry;
+    const entries = getRenderableLearningTipEntries(q.vocabItem.learningTips);
+    const entry = entries.length > 0 ? entries[Math.floor(Math.random() * entries.length)] : null;
     setHintEntry(entry);
 
     const duration = timerDurationForElo(q.wordElo);
@@ -204,29 +305,114 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
 
     startTimeRef.current = Date.now();
 
-    const hintDelayMs = Math.round(duration * (1 - Timing.hintThreshold));
-    hintTimeoutRef.current = setTimeout(() => {
-      if (!answeredRef.current) {
-        setShowHint(true);
-        Animated.timing(hintOpacity, {
-          toValue: 1,
-          duration: Timing.animationMedium,
-          useNativeDriver: true,
-        }).start();
-      }
-    }, hintDelayMs);
+    if (entry) {
+      const hintDelayMs = Math.round(duration * (1 - Timing.hintThreshold));
+      hintTimeoutRef.current = setTimeout(() => {
+        if (!answeredRef.current) {
+          setShowHint(true);
+          Animated.timing(hintOpacity, {
+            toValue: 1,
+            duration: Timing.animationMedium,
+            useNativeDriver: true,
+          }).start();
+        }
+      }, hintDelayMs);
+    }
 
     requestAnimationFrame(() => setTimerRunning(true));
-  }, [quizService, onSessionEnd, resetFeedback, hintOpacity]);
+  }, [audioService, quizService, onSessionEnd, resetFeedback, hintOpacity]);
 
   useEffect(() => {
-    loadNext();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    let mounted = true;
+
+    const loadAudioPreferences = async () => {
+      const persisted = await StorageService.loadAudioPreferences();
+      if (!mounted) return;
+      setAudioPreferences(
+        Platform.OS === 'web' ? DEFAULT_AUDIO_PREFERENCES : persisted ?? DEFAULT_AUDIO_PREFERENCES,
+      );
+      setAudioReady(true);
+    };
+
+    loadAudioPreferences().catch(() => {
+      if (!mounted) return;
+      setAudioPreferences(DEFAULT_AUDIO_PREFERENCES);
+      setAudioReady(true);
+    });
+
+    return () => {
+      mounted = false;
+    };
   }, []);
+
+  useEffect(() => {
+    if (!audioReady) return;
+    loadNext();
+  }, [audioReady, loadNext]);
+
+  useEffect(() => {
+    return () => {
+      void audioService.stop();
+      if (hintTimeoutRef.current) {
+        clearTimeout(hintTimeoutRef.current);
+        hintTimeoutRef.current = null;
+      }
+      if (feedbackTimeoutRef.current) {
+        clearTimeout(feedbackTimeoutRef.current);
+        feedbackTimeoutRef.current = null;
+      }
+    };
+  }, [audioService]);
+
+  useEffect(() => {
+    if (!audioReady || !current || answeredRef.current || !audioPreferences.autoplayEnabled) return;
+
+    const wordToSpeak = autoplayWordForQuestion(current);
+    if (!wordToSpeak) return;
+
+    const timeoutId = setTimeout(() => {
+      void audioService.speakWord(wordToSpeak, {
+        reason: 'autoplay',
+        interrupt: true,
+        dedupeKey: `question:${current.vocabItem.id}:${current.quizType}`,
+      });
+    }, 280);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [audioPreferences.autoplayEnabled, audioReady, audioService, current]);
+
+  const onToggleAutoplay = useCallback(() => {
+    setAudioPreferences((currentPreferences) => {
+      const nextPreferences = {
+        autoplayEnabled: !currentPreferences.autoplayEnabled,
+      };
+      if (!nextPreferences.autoplayEnabled) {
+        void audioService.stop();
+      }
+      void StorageService.saveAudioPreferences(nextPreferences);
+      return nextPreferences;
+    });
+  }, [audioService]);
+
+  const onReplayWord = useCallback(() => {
+    if (!current) return;
+    const wordToSpeak = replayWordForQuestion(current, answered);
+    if (!wordToSpeak) return;
+
+    void audioService.speakWord(wordToSpeak, {
+      reason: 'manual',
+      interrupt: true,
+      dedupeKey: `manual:${current.vocabItem.id}:${current.quizType}:${answered ? 'feedback' : 'prompt'}`,
+      dedupeWindowMs: 0,
+    });
+  }, [answered, audioService, current]);
 
   // --- Time's up handler ---
   const onTimeUp = useCallback(() => {
     if (answeredRef.current) return;
+    void audioService.stop();
 
     const q = current;
     if (!q) return;
@@ -249,9 +435,13 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       selectedChoice: null,
       correctAnswer: q.correctAnswer,
       distractorRanking: q.distractorRanking,
+      hintShown: showHint,
+      sourceBucket: q.sourceBucket,
+      questionOrdinal: questionNum,
     };
     quizService.submitAnswer(answerCtx, {
       word: q.vocabItem.word,
+      meaning: q.vocabItem.meaning,
       prompt: q.prompt,
       correctAnswer: q.correctAnswer,
       userAnswer: null,
@@ -300,16 +490,21 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
       useNativeDriver: true,
     }).start();
 
-    setTimeout(() => {
+    if (feedbackTimeoutRef.current) {
+      clearTimeout(feedbackTimeoutRef.current);
+    }
+    feedbackTimeoutRef.current = setTimeout(() => {
+      feedbackTimeoutRef.current = null;
       loadNext();
     }, Timing.feedbackDelay);
-  }, [current, quizService, loadNext, feedbackOpacity, timerDuration, eloDeltaAnim, wordEloDeltaAnim]);
+  }, [audioService, current, quizService, loadNext, feedbackOpacity, timerDuration, eloDeltaAnim, wordEloDeltaAnim, questionNum, showHint]);
 
   // --- Choice selection handler ---
   const onChoiceSelected = useCallback(
     (choice: string) => {
       const q = current;
       if (!q || answeredRef.current) return;
+      void audioService.stop();
 
       if (hintTimeoutRef.current) {
         clearTimeout(hintTimeoutRef.current);
@@ -332,9 +527,14 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
         selectedChoice: choice,
         correctAnswer: q.correctAnswer,
         distractorRanking: q.distractorRanking,
+        hintShown: showHint,
+        sourceBucket: q.sourceBucket,
+        questionOrdinal: questionNum,
+        distractorRank: correct ? undefined : q.distractorRanking.indexOf(choice),
       };
       quizService.submitAnswer(answerCtx, {
         word: q.vocabItem.word,
+        meaning: q.vocabItem.meaning,
         prompt: q.prompt,
         correctAnswer: q.correctAnswer,
         userAnswer: choice,
@@ -389,70 +589,73 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
         useNativeDriver: true,
       }).start();
 
-      setTimeout(() => {
+      if (feedbackTimeoutRef.current) {
+        clearTimeout(feedbackTimeoutRef.current);
+      }
+      feedbackTimeoutRef.current = setTimeout(() => {
+        feedbackTimeoutRef.current = null;
         loadNext();
       }, Timing.feedbackDelay);
     },
-    [current, quizService, loadNext, feedbackOpacity, timerDuration, eloDeltaAnim, wordEloDeltaAnim, timeBonusAnim],
+    [audioService, current, quizService, loadNext, feedbackOpacity, timerDuration, eloDeltaAnim, wordEloDeltaAnim, timeBonusAnim, questionNum, showHint],
   );
 
-  /** Determine card style based on feedback state */
-  const getChoiceStyle = useCallback(
+  const getChoiceState = useCallback(
     (choice: string) => {
-      if (!answered) return {};
-
+      if (!answered) return 'default';
       if (choice === current?.correctAnswer) {
-        return styles.choiceCorrect;
+        return 'correct';
       }
       if (choice === selectedChoice && !isCorrect) {
-        return styles.choiceWrong;
+        return 'wrong';
       }
-      return styles.choiceDimmed;
-    },
-    [answered, current, selectedChoice, isCorrect],
-  );
-
-  const getChoiceTextStyle = useCallback(
-    (choice: string) => {
-      if (!answered) return {};
-
-      if (choice === current?.correctAnswer) {
-        return styles.choiceTextCorrect;
-      }
-      if (choice === selectedChoice && !isCorrect) {
-        return styles.choiceTextWrong;
-      }
-      return styles.choiceTextDimmed;
+      return 'dimmed';
     },
     [answered, current, selectedChoice, isCorrect],
   );
 
   const onPause = useCallback(() => {
+    void audioService.stop();
     setTimerRunning(false);
     if (hintTimeoutRef.current) {
       clearTimeout(hintTimeoutRef.current);
       hintTimeoutRef.current = null;
     }
+    if (feedbackTimeoutRef.current) {
+      clearTimeout(feedbackTimeoutRef.current);
+      feedbackTimeoutRef.current = null;
+    }
     onSessionEnd();
-  }, [onSessionEnd]);
+  }, [audioService, onSessionEnd]);
 
   if (current == null) {
     if (!initialized) {
       return (
         <SafeAreaView style={styles.safe}>
-          <View style={styles.centered}>
-            <Text style={styles.loadingText}>문제 준비 중...</Text>
-          </View>
+          <ResponsiveContainer>
+            <View style={styles.centered}>
+              <ScreenCard style={styles.stateCard}>
+                <Text style={styles.stateEyebrow}>Quiz State</Text>
+                <Text style={styles.loadingText}>문제 준비 중...</Text>
+                <Text style={styles.stateText}>다음 문제와 힌트 데이터를 정리하고 있습니다.</Text>
+              </ScreenCard>
+            </View>
+          </ResponsiveContainer>
         </SafeAreaView>
       );
     }
     return (
       <SafeAreaView style={styles.safe}>
-        <View style={styles.centered}>
-          <TouchableOpacity style={styles.resultButton} onPress={onSessionEnd}>
-            <Text style={styles.resultButtonText}>결과 보기</Text>
-          </TouchableOpacity>
-        </View>
+        <ResponsiveContainer>
+          <View style={styles.centered}>
+            <ScreenCard style={styles.stateCard}>
+              <Text style={styles.stateEyebrow}>Session Complete</Text>
+              <Text style={styles.loadingText}>세션이 종료되었습니다</Text>
+              <Text style={styles.stateText}>현재 라운드 결과를 확인하고 다음 학습을 준비하세요.</Text>
+              <Button label="결과 보기" variant="primary" onPress={onSessionEnd} fullWidth={false} />
+            </ScreenCard>
+          </View>
+        </ResponsiveContainer>
       </SafeAreaView>
     );
   }
@@ -461,344 +664,519 @@ export function QuizScreen({ quizService, audioService, onSessionEnd }: QuizScre
   const activeType = q.quizType;
   const userRating = quizService.getRating(activeType);
   const userTier = GradeTable.gradeLabel(userRating);
+  const userTierDescriptor = GradeTable.gradeDescriptor(userRating);
   const compositeRating = quizService.compositeRating;
   const wElo = q.wordElo;
   const diffLabel = difficultyLabel(wElo);
   const diffColor = difficultyColor(wElo);
   const typeColor = QuizTypeColors[activeType];
   const typeLabel = QUIZ_TYPE_LABELS[activeType];
+  const replayWord = replayWordForQuestion(q, answered);
+  const canReplayWord = !!replayWord;
   const longestChoiceLength = Math.max(...q.choices.map((choice) => choice.length));
   const longChoiceFactor = clamp((longestChoiceLength - 18) / 22, 0, 1);
-  const choiceSectionHeight = clamp(
+  const minWordSectionHeight = clamp(layoutHeight * 0.2, 148, 210);
+  const maxWordSectionHeight = clamp(layoutHeight * 0.38, 250, 360);
+  const desiredChoiceSectionHeight = clamp(
     layout.bottomSectionHeight + longChoiceFactor * 80,
     layout.bottomSectionHeight,
-    Math.min(500, windowHeight * 0.5),
+    Math.min(420, layoutHeight * 0.45),
   );
-  const availableChoiceGridHeight =
-    choiceSectionHeight - layout.topPadding - layout.bottomPadding - layout.gap;
-  const choiceCardHeight = clamp(availableChoiceGridHeight / 2, layout.cardHeight, layout.cardHeight + 36);
-  const choiceTextFontSize = clamp(layout.choiceFontSize - longChoiceFactor * 2.5, 11, 22);
-  const choiceTextLineHeight = Math.round(choiceTextFontSize * 1.28);
+  const choiceSectionMaxHeight = Math.max(
+    clamp(layoutHeight * 0.27, 210, 300),
+    layoutHeight - progressCardHeight - minWordSectionHeight,
+  );
+  const choiceSectionHeight = Math.min(desiredChoiceSectionHeight, choiceSectionMaxHeight);
+  const availableChoiceGridHeight = Math.max(
+    choiceSectionHeight - layout.topPadding - layout.bottomPadding - layout.gap,
+    168,
+  );
+  const minChoiceCardHeight = clamp(layoutHeight * 0.1, 84, 116);
+  const choiceCardHeight = clamp(
+    availableChoiceGridHeight / 2,
+    minChoiceCardHeight,
+    layout.cardHeight + 24,
+  );
+  const cardCompression = clamp(
+    (layout.cardHeight - choiceCardHeight) / Math.max(layout.cardHeight, 1),
+    0,
+    1,
+  );
+  const choiceCardPaddingVertical = clamp(
+    layout.cardPaddingVertical - cardCompression * 6,
+    6,
+    layout.cardPaddingVertical,
+  );
+  const choiceTextFontSize = clamp(
+    layout.choiceFontSize - longChoiceFactor * 2.5 - cardCompression * 3,
+    10.5,
+    22,
+  );
+  const scaledChoiceTextFontSize = typography.fontSize(choiceTextFontSize);
+  const choiceTextLineHeight = typography.lineHeight(choiceTextFontSize, 1.28);
+  const choiceGridWidth = layout.cellWidth * 2 + layout.gap;
+  const choiceRows = q.choices.reduce<Array<Array<{ choice: string; idx: number }>>>((rows, choice, idx) => {
+    if (idx % 2 === 0) {
+      rows.push([{ choice, idx }]);
+    } else {
+      rows[rows.length - 1].push({ choice, idx });
+    }
+    return rows;
+  }, []);
 
   const promptIsLong = q.prompt.length > 15;
-  const promptFontSize = promptIsLong ? layout.longPromptFontSize : layout.wordFontSize;
+  const promptBaseFontSize = promptIsLong ? layout.longPromptFontSize : layout.wordFontSize;
+  const promptFontSize = typography.fontSize(promptBaseFontSize);
 
   return (
     <SafeAreaView style={styles.safe}>
-      {/* Timer bar */}
-      <TimerBar
-        key={timerKey}
-        durationMs={timerDuration}
-        running={timerRunning}
-        onTimeUp={onTimeUp}
-      />
+      <View style={styles.glowTop} />
+      <View style={styles.glowBottom} />
+      <ResponsiveContainer
+        maxWidth={stageMaxWidth}
+        style={windowHeight > stageMaxHeight ? styles.cappedStage : undefined}
+      >
+        <View style={styles.stage}>
+          <ScreenCard
+            tone="tint"
+            padded={false}
+            style={styles.progressCard}
+            onLayout={({ nativeEvent }) => {
+              const nextHeight = Math.round(nativeEvent.layout.height);
+              setProgressCardHeight((currentHeight) =>
+                Math.abs(currentHeight - nextHeight) > 1 ? nextHeight : currentHeight,
+              );
+            }}
+          >
+            <TimerBar
+              key={timerKey}
+              durationMs={timerDuration}
+              running={timerRunning}
+              onTimeUp={onTimeUp}
+            />
 
-      {/* Progress header */}
-      <View style={styles.progressHeader}>
-        <View style={styles.progressLeft}>
-          <View style={[styles.typeBadge, { backgroundColor: typeColor }]}>
-            <Text style={styles.typeBadgeText}>{typeLabel}</Text>
-          </View>
-          <Text style={styles.progressCount}>
-            <Text style={[styles.progressCurrent, { color: typeColor }]}>#{questionNum}</Text>
-          </Text>
-        </View>
-        <View style={styles.progressRight}>
-          <View style={[styles.diffBadge, { backgroundColor: diffColor + '18' }]}>
-            <Text style={[styles.diffText, { color: diffColor }]}>{diffLabel}</Text>
-          </View>
-          <TouchableOpacity style={styles.pauseButton} onPress={onPause} activeOpacity={0.7}>
-            <Text style={styles.pauseButtonText}>| |</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
+            <View style={[styles.progressHeader, { paddingHorizontal: layout.horizontalPadding }]}>
+              <View style={styles.progressLeft}>
+                <Chip type={activeType} label={typeLabel} />
+                <Text style={styles.progressCount}>
+                  <Text style={[styles.progressCurrent, { color: typeColor }]}>#{questionNum}</Text>
+                </Text>
+              </View>
+              <View style={styles.progressRight}>
+                <Badge label={diffLabel} tone="difficulty" color={diffColor} />
+                {Platform.OS !== 'web' && (
+                  <TouchableOpacity
+                    accessibilityRole="button"
+                    accessibilityLabel={
+                      audioPreferences.autoplayEnabled ? '자동 음성 끄기' : '자동 음성 켜기'
+                    }
+                    activeOpacity={0.85}
+                    onPress={onToggleAutoplay}
+                    style={[
+                      styles.audioToggleButton,
+                      audioPreferences.autoplayEnabled && styles.audioToggleButtonActive,
+                    ]}
+                  >
+                    <Text
+                      style={[
+                        styles.audioToggleText,
+                        audioPreferences.autoplayEnabled && styles.audioToggleTextActive,
+                      ]}
+                    >
+                      {audioPreferences.autoplayEnabled ? '음성 ON' : '음성 OFF'}
+                    </Text>
+                  </TouchableOpacity>
+                )}
+                <Button
+                  label="캐릭터"
+                  variant="ghost"
+                  onPress={onOpenProfile}
+                  fullWidth={false}
+                  style={styles.profileButton}
+                />
+                <Button
+                  label="II"
+                  variant="ghost"
+                  onPress={onPause}
+                  fullWidth={false}
+                  accessibilityLabel="일시정지"
+                  style={styles.pauseButton}
+                />
+              </View>
+            </View>
 
-      {/* ELO info row */}
-      <View style={[styles.eloRow, { paddingHorizontal: layout.horizontalPadding }]}>
-        <View style={styles.eloLeft}>
-          <View style={styles.eloContainer}>
-            <Text style={[styles.eloValue, { color: typeColor }]}>{userRating}</Text>
-            {answered && eloDelta !== null && eloDelta !== 0 && (
-              <Animated.View
-                style={[
-                  styles.eloDeltaBadge,
-                  {
-                    opacity: eloDeltaAnim.interpolate({
-                      inputRange: [0, 0.2, 0.7, 1],
-                      outputRange: [0, 1, 1, 0],
-                    }),
-                    transform: [
+            <View style={[styles.eloRow, { paddingHorizontal: layout.horizontalPadding }]}>
+              <View style={styles.eloLeft}>
+                <View style={styles.eloBlock}>
+                  <Text style={styles.eloLabel}>현재 Rating</Text>
+                  <View style={styles.eloContainer}>
+                    <Text style={[styles.eloValue, { color: typeColor }]}>{userRating}</Text>
+                    {answered && eloDelta !== null && eloDelta !== 0 && (
+                      <Animated.View
+                        style={[
+                          styles.eloDeltaBadge,
+                          {
+                            opacity: eloDeltaAnim.interpolate({
+                              inputRange: [0, 0.2, 0.7, 1],
+                              outputRange: [0, 1, 1, 0],
+                            }),
+                            transform: [
+                              {
+                                translateY: eloDeltaAnim.interpolate({
+                                  inputRange: [0, 1],
+                                  outputRange: [0, -22],
+                                }),
+                              },
+                            ],
+                          },
+                        ]}
+                      >
+                        <Text
+                          style={[
+                            styles.eloDeltaText,
+                            { color: eloDelta > 0 ? Colors.correct : Colors.wrong },
+                          ]}
+                        >
+                          {eloDelta > 0 ? `+${eloDelta}` : `${eloDelta}`}
+                        </Text>
+                      </Animated.View>
+                    )}
+                  </View>
+                </View>
+                <View style={[styles.tierBadge, { backgroundColor: `${typeColor}1F` }]}>
+                  <Text style={[styles.tierText, { color: typeColor }]}>{userTier}</Text>
+                </View>
+                <Text style={styles.tierDescriptor}>{userTierDescriptor}</Text>
+              </View>
+              <View style={styles.eloRight}>
+                <Text style={styles.compositeLabel}>종합 {compositeRating}</Text>
+                {answered && wordEloDelta !== null && wordEloDelta !== 0 && (
+                  <Animated.View
+                    style={[
+                      styles.wordEloDeltaBadge,
                       {
-                        translateY: eloDeltaAnim.interpolate({
-                          inputRange: [0, 1],
-                          outputRange: [0, -22],
+                        opacity: wordEloDeltaAnim.interpolate({
+                          inputRange: [0, 0.2, 0.7, 1],
+                          outputRange: [0, 1, 1, 0],
                         }),
+                        transform: [
+                          {
+                            translateY: wordEloDeltaAnim.interpolate({
+                              inputRange: [0, 1],
+                              outputRange: [0, -20],
+                            }),
+                          },
+                        ],
                       },
-                    ],
+                    ]}
+                  >
+                    <Text
+                      style={[
+                        styles.wordEloDeltaText,
+                        { color: wordEloDelta > 0 ? Colors.wrong : Colors.correct },
+                      ]}
+                    >
+                      {wordEloDelta > 0 ? `+${wordEloDelta}` : `${wordEloDelta}`}
+                    </Text>
+                  </Animated.View>
+                )}
+              </View>
+            </View>
+          </ScreenCard>
+
+          <ScreenCard padded={false} style={styles.wordCard}>
+            <View
+              style={[
+                styles.wordSection,
+                {
+                  paddingHorizontal: layout.horizontalPadding,
+                  minHeight: minWordSectionHeight,
+                  maxHeight: maxWordSectionHeight,
+                },
+              ]}
+            >
+              <Text
+                style={[
+                  styles.wordText,
+                  {
+                    fontSize: promptFontSize,
+                    lineHeight: typography.lineHeight(promptBaseFontSize, 1.28) + 2,
                   },
                 ]}
+                numberOfLines={3}
+                adjustsFontSizeToFit
               >
-                <Text
+                {q.prompt}
+              </Text>
+
+              {canReplayWord && (
+                <TouchableOpacity
+                  accessibilityRole="button"
+                  accessibilityLabel={activeType === 'k2e' ? '정답 단어 듣기' : '단어 듣기'}
+                  activeOpacity={0.85}
+                  onPress={onReplayWord}
+                  style={styles.listenButton}
+                >
+                  <Text style={styles.listenButtonText}>
+                    {activeType === 'k2e' ? '정답 듣기' : '듣기'}
+                  </Text>
+                </TouchableOpacity>
+              )}
+
+              {showHint && hintEntry && !answered && (
+                <Animated.View style={[styles.hintContainer, { opacity: hintOpacity }]}>
+                  <View style={styles.hintHeader}>
+                    <Text style={styles.hintLabel}>Hint</Text>
+                  </View>
+                  <Text style={styles.hintText}>{hintEntry.text}</Text>
+                </Animated.View>
+              )}
+
+              {answered && (
+                <Animated.View
                   style={[
-                    styles.eloDeltaText,
-                    { color: eloDelta > 0 ? Colors.correct : Colors.wrong },
+                    styles.feedbackBanner,
+                    {
+                      opacity: feedbackOpacity,
+                    },
                   ]}
                 >
-                  {eloDelta > 0 ? `+${eloDelta}` : `${eloDelta}`}
-                </Text>
-              </Animated.View>
-            )}
-          </View>
-          <View style={[styles.tierBadge, { backgroundColor: typeColor + '12' }]}>
-            <Text style={[styles.tierText, { color: typeColor }]}>{userTier}</Text>
-          </View>
-        </View>
-        <View style={styles.eloRight}>
-          <Text style={styles.compositeLabel}>종합 {compositeRating}</Text>
-          {answered && wordEloDelta !== null && wordEloDelta !== 0 && (
-            <Animated.View
-              style={[
-                styles.wordEloDeltaBadge,
-                {
-                  opacity: wordEloDeltaAnim.interpolate({
-                    inputRange: [0, 0.2, 0.7, 1],
-                    outputRange: [0, 1, 1, 0],
-                  }),
-                  transform: [
+                  <FeedbackBanner
+                    kind={timedOut ? 'timeout' : isCorrect ? 'success' : 'error'}
+                    message={buildFeedbackMessage(q, {
+                      correct: !!isCorrect,
+                      timedOut,
+                      selectedChoice,
+                    })}
+                  />
+                </Animated.View>
+              )}
+
+              {answered && remainingSec !== null && remainingSec > 0 && (
+                <Animated.View
+                  style={[
+                    styles.timeBonusBadge,
                     {
-                      translateY: wordEloDeltaAnim.interpolate({
-                        inputRange: [0, 1],
-                        outputRange: [0, -20],
+                      opacity: timeBonusAnim.interpolate({
+                        inputRange: [0, 0.15, 0.6, 1],
+                        outputRange: [0, 1, 1, 0],
                       }),
+                      transform: [
+                        {
+                          translateY: timeBonusAnim.interpolate({
+                            inputRange: [0, 1],
+                            outputRange: [6, -10],
+                          }),
+                        },
+                        {
+                          scale: timeBonusAnim.interpolate({
+                            inputRange: [0, 0.15, 0.5, 1],
+                            outputRange: [0.6, 1.15, 1, 0.9],
+                          }),
+                        },
+                      ],
                     },
-                  ],
-                },
-              ]}
-            >
-              <Text
-                style={[
-                  styles.wordEloDeltaText,
-                  // Word ELO going up = word became harder (user got it wrong) = red,
-                  // going down = word became easier (user got it right) = green.
-                  { color: wordEloDelta > 0 ? Colors.wrong : Colors.correct },
-                ]}
-              >
-                {wordEloDelta > 0 ? `+${wordEloDelta}` : `${wordEloDelta}`}
-              </Text>
-            </Animated.View>
-          )}
-        </View>
-      </View>
-
-      {/* Word / Prompt section */}
-      <View style={[styles.wordSection, { paddingHorizontal: layout.horizontalPadding }]}>
-        <Text
-          style={[
-            styles.wordText,
-            { fontSize: promptFontSize, lineHeight: Math.round(promptFontSize * 1.3) + 1 },
-          ]}
-          numberOfLines={3}
-          adjustsFontSizeToFit
-        >
-          {q.prompt}
-        </Text>
-
-        {/* Inline hint */}
-        {showHint && hintEntry && !answered && (
-          <Animated.View style={[styles.hintContainer, { opacity: hintOpacity }]}>
-            <View style={styles.hintHeader}>
-              <Text style={styles.hintLabel}>HINT</Text>
+                  ]}
+                >
+                  <Text style={styles.timeBonusText}>{remainingSec.toFixed(1)}s</Text>
+                </Animated.View>
+              )}
             </View>
-            <Text style={styles.hintText}>{hintEntry.text}</Text>
-          </Animated.View>
-        )}
+          </ScreenCard>
 
-        {/* Feedback banner */}
-        {answered && (
-          <Animated.View
-            style={[
-              styles.feedbackBanner,
-              {
-                opacity: feedbackOpacity,
-                backgroundColor: isCorrect ? Colors.correct : Colors.wrong,
-              },
-            ]}
-          >
-            <Text style={styles.feedbackText}>
-              {isCorrect ? '정답!' : `오답 — 정답: ${q.correctAnswer}`}
-            </Text>
-          </Animated.View>
-        )}
-
-        {/* Remaining time floating badge */}
-        {answered && remainingSec !== null && remainingSec > 0 && (
-          <Animated.View
-            style={[
-              styles.timeBonusBadge,
-              {
-                opacity: timeBonusAnim.interpolate({
-                  inputRange: [0, 0.15, 0.6, 1],
-                  outputRange: [0, 1, 1, 0],
-                }),
-                transform: [
-                  {
-                    translateY: timeBonusAnim.interpolate({
-                      inputRange: [0, 1],
-                      outputRange: [6, -10],
-                    }),
-                  },
-                  {
-                    scale: timeBonusAnim.interpolate({
-                      inputRange: [0, 0.15, 0.5, 1],
-                      outputRange: [0.6, 1.15, 1, 0.9],
-                    }),
-                  },
-                ],
-              },
-            ]}
-          >
-            <Text style={styles.timeBonusText}>
-              {remainingSec.toFixed(1)}s
-            </Text>
-          </Animated.View>
-        )}
-      </View>
-
-      {/* Choices 2x2 grid */}
-      <View
-        style={[
-          styles.choicesSection,
-          {
-            height: choiceSectionHeight,
-            paddingHorizontal: layout.horizontalPadding,
-            paddingTop: layout.topPadding,
-            paddingBottom: layout.bottomPadding,
-          },
-        ]}
-      >
-        <View style={[styles.grid, { gap: layout.gap }]}>
-          {q.choices.map((choice, idx) => (
-            <TouchableOpacity
-              key={`${choice}-${idx}`}
+          <ScreenCard padded={false} style={styles.choicesCard}>
+            <View
               style={[
-                styles.choiceCard,
+                styles.choicesSection,
                 {
-                  width: layout.cellWidth,
-                  height: choiceCardHeight,
-                  borderRadius: layout.cardRadius,
-                  paddingVertical: layout.cardPaddingVertical,
-                  paddingHorizontal: layout.cardPaddingHorizontal,
-                  shadowRadius: layout.cardShadowRadius,
+                  height: choiceSectionHeight,
+                  paddingHorizontal: layout.horizontalPadding,
+                  paddingTop: layout.topPadding,
+                  paddingBottom: layout.bottomPadding,
                 },
-                getChoiceStyle(choice),
               ]}
-              onPress={() => onChoiceSelected(choice)}
-              activeOpacity={0.75}
-              disabled={answered}
             >
-              <View style={[styles.choiceLabelBadge, answered ? { opacity: 0.4 } : {}]}>
-                <Text style={styles.choiceLabelText}>{CHOICE_LABELS[idx]}</Text>
+              <View style={[styles.grid, { gap: layout.gap, width: choiceGridWidth }]}>
+                {choiceRows.map((row, rowIndex) => (
+                  <View key={`row-${rowIndex}`} style={[styles.gridRow, { gap: layout.gap }]}>
+                    {row.map(({ choice, idx }) => {
+                      return (
+                        <ChoiceCard
+                          key={`${choice}-${idx}`}
+                          label={CHOICE_LABELS[idx]}
+                          text={choice}
+                          state={getChoiceState(choice)}
+                          selected={selectedChoice === choice}
+                          onPress={() => onChoiceSelected(choice)}
+                          disabled={answered}
+                          style={{
+                            width: layout.cellWidth,
+                            height: choiceCardHeight,
+                            borderRadius: layout.cardRadius,
+                            paddingVertical: choiceCardPaddingVertical,
+                            paddingHorizontal: layout.cardPaddingHorizontal,
+                            shadowRadius: layout.cardShadowRadius,
+                          }}
+                          textStyle={{
+                            fontSize: scaledChoiceTextFontSize,
+                            lineHeight: choiceTextLineHeight,
+                          }}
+                        />
+                      );
+                    })}
+                    {row.length < 2 ? (
+                      <View style={{ width: layout.cellWidth, height: choiceCardHeight }} />
+                    ) : null}
+                  </View>
+                ))}
               </View>
-              <Text
-                style={[
-                  styles.choiceText,
-                  { fontSize: choiceTextFontSize, lineHeight: choiceTextLineHeight },
-                  getChoiceTextStyle(choice),
-                ]}
-              >
-                {choice}
-              </Text>
-            </TouchableOpacity>
-          ))}
+            </View>
+          </ScreenCard>
         </View>
-      </View>
+      </ResponsiveContainer>
     </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
+function useQuizStyles() {
+  const typography = useResponsiveTypography();
+
+  return useMemo(() => StyleSheet.create({
   safe: {
     flex: 1,
     backgroundColor: Colors.background,
+  },
+  glowTop: {
+    position: 'absolute',
+    top: 48,
+    right: -64,
+    width: 200,
+    height: 200,
+    borderRadius: 100,
+    backgroundColor: withAlpha(Colors.primary, '10'),
+  },
+  glowBottom: {
+    position: 'absolute',
+    bottom: 100,
+    left: -48,
+    width: 164,
+    height: 164,
+    borderRadius: 82,
+    backgroundColor: withAlpha(Colors.warning, '10'),
+  },
+  cappedStage: {
+    maxHeight: 940,
+  },
+  stage: {
+    flex: 1,
+    gap: Spacing.md,
+    paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.md,
+  },
+  progressCard: {
+    overflow: 'hidden',
+  },
+  wordCard: {
+    flexGrow: 1,
+    flexShrink: 1,
+    minHeight: 0,
+    justifyContent: 'center',
+  },
+  choicesCard: {
+    overflow: 'hidden',
   },
   // ── Progress header ──
   progressHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingVertical: 10,
+    paddingVertical: Spacing.md,
   },
   progressLeft: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
-  },
-  typeBadge: {
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 8,
-  },
-  typeBadgeText: {
-    fontSize: 12,
-    fontWeight: '700',
-    color: Colors.white,
-    letterSpacing: 0.3,
+    gap: Spacing.sm,
   },
   progressCount: {
     textAlign: 'center',
   },
   progressCurrent: {
-    fontSize: 17,
-    fontWeight: '800',
+    fontSize: typography.sizes.size18,
+    fontWeight: Typography.weightExtraBold,
   },
   progressRight: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: Spacing.xs,
   },
-  diffBadge: {
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 8,
+  profileButton: {
+    minHeight: 40,
+    paddingHorizontal: Spacing.md,
+    shadowOpacity: 0,
+    elevation: 0,
+    borderRadius: Radius.lg,
+    backgroundColor: Colors.surface,
   },
-  diffText: {
-    fontSize: 12,
-    fontWeight: '700',
-  },
-  pauseButton: {
-    width: 34,
-    height: 34,
-    borderRadius: 10,
-    backgroundColor: Colors.borderLight,
+  audioToggleButton: {
+    minHeight: 36,
+    paddingHorizontal: Spacing.md,
+    borderRadius: Radius.pill,
+    borderWidth: 1,
+    borderColor: Colors.border,
+    backgroundColor: Colors.surface,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  pauseButtonText: {
-    fontSize: 13,
-    fontWeight: '800',
-    color: Colors.textMuted,
-    letterSpacing: 2,
+  audioToggleButtonActive: {
+    borderColor: Colors.primaryBorder,
+    backgroundColor: Colors.primaryLight,
+  },
+  audioToggleText: {
+    fontSize: typography.sizes.size11,
+    fontWeight: Typography.weightBold,
+    color: Colors.textSecondary,
+    letterSpacing: 0.2,
+  },
+  audioToggleTextActive: {
+    color: Colors.primaryStrong,
+  },
+  pauseButton: {
+    width: 42,
+    minHeight: 40,
+    paddingHorizontal: 0,
+    shadowOpacity: 0,
+    elevation: 0,
+    borderRadius: Radius.lg,
+    backgroundColor: Colors.surface,
   },
   // ── ELO info row ──
   eloRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingVertical: 8,
-    paddingHorizontal: 16,
+    paddingVertical: Spacing.md,
+    paddingBottom: Spacing.lg,
   },
   eloLeft: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: Spacing.sm,
+  },
+  eloBlock: {
+    gap: 2,
+  },
+  eloLabel: {
+    fontSize: typography.sizes.size11,
+    fontWeight: Typography.weightBold,
+    color: Colors.textMuted,
+    letterSpacing: 0.2,
   },
   eloContainer: {
     position: 'relative',
   },
   eloValue: {
-    fontSize: 16,
-    fontWeight: '800',
+    fontSize: typography.sizes.size18,
+    fontWeight: Typography.weightExtraBold,
   },
   eloDeltaBadge: {
     position: 'absolute',
@@ -808,31 +1186,38 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   eloDeltaText: {
-    fontSize: 13,
-    fontWeight: '800',
+    fontSize: typography.sizes.size13,
+    fontWeight: Typography.weightExtraBold,
     textShadowColor: 'rgba(255,255,255,0.95)',
     textShadowOffset: { width: 0, height: 0 },
     textShadowRadius: 3,
   },
   tierBadge: {
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-    borderRadius: 6,
+    paddingHorizontal: Spacing.sm,
+    paddingVertical: Spacing.xs,
+    borderRadius: Radius.pill,
   },
   tierText: {
-    fontSize: 11,
-    fontWeight: '700',
+    fontSize: typography.sizes.size11,
+    fontWeight: Typography.weightBold,
+  },
+  tierDescriptor: {
+    marginTop: 4,
+    fontSize: typography.sizes.size11,
+    lineHeight: typography.lineHeight(Typography.size11, 16 / Typography.size11),
+    color: Colors.textSecondary,
+    fontWeight: Typography.weightMedium,
   },
   eloRight: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: Spacing.sm,
     position: 'relative',
   },
   compositeLabel: {
-    fontSize: 12,
+    fontSize: typography.sizes.size12,
     color: Colors.textMuted,
-    fontWeight: '600',
+    fontWeight: Typography.weightSemiBold,
   },
   wordEloDeltaBadge: {
     position: 'absolute',
@@ -841,34 +1226,50 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   wordEloDeltaText: {
-    fontSize: 12,
-    fontWeight: '800',
+    fontSize: typography.sizes.size12,
+    fontWeight: Typography.weightExtraBold,
     textShadowColor: 'rgba(255,255,255,0.95)',
     textShadowOffset: { width: 0, height: 0 },
     textShadowRadius: 3,
   },
   // ── Word section ──
   wordSection: {
-    flex: 1,
+    flexGrow: 1,
+    flexShrink: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingHorizontal: 16,
+    paddingVertical: Spacing.xxl,
   },
   wordText: {
-    fontSize: 40,
-    fontWeight: '700',
+    fontSize: typography.fontSize(40),
+    fontWeight: Typography.weightExtraBold,
     textAlign: 'center',
-    letterSpacing: -0.5,
-    lineHeight: 44,
+    letterSpacing: -0.8,
+    lineHeight: typography.lineHeight(40, 44 / 40),
     color: Colors.textPrimary,
     includeFontPadding: true,
   },
+  listenButton: {
+    marginTop: Spacing.md,
+    paddingHorizontal: Spacing.lg,
+    paddingVertical: Spacing.sm,
+    borderRadius: Radius.pill,
+    borderWidth: 1,
+    borderColor: Colors.primaryBorder,
+    backgroundColor: Colors.primaryLight,
+  },
+  listenButtonText: {
+    fontSize: typography.sizes.size13,
+    fontWeight: Typography.weightBold,
+    color: Colors.primaryStrong,
+    letterSpacing: 0.2,
+  },
   hintContainer: {
-    marginTop: 18,
-    paddingVertical: 12,
-    paddingHorizontal: 18,
+    marginTop: Spacing.xl,
+    paddingVertical: Spacing.md,
+    paddingHorizontal: Spacing.xl,
     backgroundColor: Colors.hintBg,
-    borderRadius: 12,
+    borderRadius: Radius.lg,
     borderWidth: 1,
     borderColor: Colors.hintBorder,
     maxWidth: '90%',
@@ -876,150 +1277,90 @@ const styles = StyleSheet.create({
   hintHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 6,
+    marginBottom: Spacing.xs,
   },
   hintLabel: {
-    fontSize: 11,
-    fontWeight: '800',
+    fontSize: typography.sizes.size11,
+    fontWeight: Typography.weightExtraBold,
     color: Colors.hintLabel,
-    letterSpacing: 1,
+    letterSpacing: 0.8,
   },
   hintText: {
-    fontSize: 14,
+    fontSize: typography.sizes.size13,
     color: Colors.hintText,
-    lineHeight: 22,
+    lineHeight: typography.lineHeight(Typography.size13, 22 / Typography.size13),
     includeFontPadding: true,
+    fontWeight: Typography.weightMedium,
   },
   feedbackBanner: {
-    marginTop: 16,
-    paddingVertical: 10,
-    paddingHorizontal: 24,
-    borderRadius: 12,
-  },
-  feedbackText: {
-    color: Colors.white,
-    fontSize: 16,
-    fontWeight: '700',
-    textAlign: 'center',
+    marginTop: Spacing.lg,
   },
   timeBonusBadge: {
-    marginTop: 10,
-    paddingVertical: 5,
-    paddingHorizontal: 14,
+    marginTop: Spacing.md,
+    paddingVertical: 6,
+    paddingHorizontal: Spacing.lg,
     backgroundColor: Colors.primaryLight,
-    borderRadius: 20,
+    borderRadius: Radius.pill,
     borderWidth: 1,
     borderColor: Colors.primaryBorder,
     alignSelf: 'center',
   },
   timeBonusText: {
-    fontSize: 13,
-    fontWeight: '700',
-    color: Colors.primary,
+    fontSize: typography.sizes.size13,
+    fontWeight: Typography.weightBold,
+    color: Colors.primaryStrong,
     letterSpacing: 0.3,
   },
   choicesSection: {
-    paddingHorizontal: 16,
-    paddingTop: 10,
-    paddingBottom: 12,
+    paddingHorizontal: Spacing.lg,
+    paddingTop: Spacing.sm,
+    paddingBottom: Spacing.md,
+    justifyContent: 'center',
   },
   grid: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    gap: Spacing.md,
+  },
+  gridRow: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    gap: 12,
-  },
-  choiceCard: {
-    width: 160,
-    height: 120,
-    backgroundColor: Colors.surface,
-    borderRadius: 16,
-    paddingVertical: 12,
-    paddingHorizontal: 12,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderWidth: 1.5,
-    borderColor: Colors.border,
-    shadowColor: Colors.shadow,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.06,
-    shadowRadius: 6,
-    elevation: 2,
-  },
-  choiceCorrect: {
-    borderColor: Colors.correct,
-    backgroundColor: Colors.correctLight,
-    elevation: 0,
-    shadowOpacity: 0,
-  },
-  choiceWrong: {
-    borderColor: Colors.wrong,
-    backgroundColor: Colors.wrongLight,
-    elevation: 0,
-    shadowOpacity: 0,
-  },
-  choiceDimmed: {
-    opacity: 0.35,
-    elevation: 0,
-    shadowOpacity: 0,
-  },
-  choiceLabelBadge: {
-    position: 'absolute',
-    top: 8,
-    left: 10,
-    width: 22,
-    height: 22,
-    borderRadius: 6,
-    backgroundColor: Colors.choiceLabelBg,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  choiceLabelText: {
-    fontSize: 11,
-    fontWeight: '700',
-    color: Colors.choiceLabelText,
-  },
-  choiceText: {
-    fontSize: 16,
-    color: Colors.choiceText,
-    textAlign: 'center',
-    lineHeight: 22,
-    paddingHorizontal: 4,
     width: '100%',
-    maxWidth: '100%',
-    flexShrink: 1,
-  },
-  choiceTextCorrect: {
-    fontWeight: '700',
-    color: Colors.correctDark,
-  },
-  choiceTextWrong: {
-    fontWeight: '700',
-    color: Colors.wrongDark,
-  },
-  choiceTextDimmed: {
-    color: Colors.textMuted,
+    justifyContent: 'space-between',
   },
   centered: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Colors.background,
+    paddingHorizontal: Spacing.lg,
+  },
+  stateCard: {
+    width: '100%',
+    maxWidth: 360,
+    alignItems: 'center',
+    gap: Spacing.sm,
+  },
+  stateEyebrow: {
+    fontSize: typography.sizes.size11,
+    fontWeight: Typography.weightBold,
+    color: Colors.textMuted,
+    textTransform: 'uppercase',
+    letterSpacing: 0.8,
   },
   loadingText: {
-    fontSize: 16,
-    fontWeight: '600',
-    color: Colors.textMuted,
+    fontSize: typography.sizes.size23,
+    fontWeight: Typography.weightExtraBold,
+    color: Colors.textPrimary,
+    textAlign: 'center',
   },
-  resultButton: {
-    backgroundColor: Colors.primary,
-    paddingVertical: 14,
-    paddingHorizontal: 28,
-    borderRadius: 12,
+  stateText: {
+    fontSize: typography.sizes.size13,
+    lineHeight: typography.lineHeight(Typography.size13, 20 / Typography.size13),
+    fontWeight: Typography.weightMedium,
+    color: Colors.textSecondary,
+    textAlign: 'center',
   },
-  resultButtonText: {
-    color: Colors.white,
-    fontSize: 16,
-    fontWeight: '600',
-  },
-});
+  }), [typography]);
+}

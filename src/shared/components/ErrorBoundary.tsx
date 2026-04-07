@@ -1,6 +1,13 @@
-import React, { Component, type ErrorInfo, type ReactNode } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView } from 'react-native';
-import { Colors } from '../constants/theme';
+import React, { Component, useMemo, type ErrorInfo, type ReactNode } from 'react';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { Colors, Radius, Spacing, Typography, withAlpha } from '../constants/theme';
+import {
+  Button,
+  ResponsiveContainer,
+  ScreenCard,
+  useResponsiveTypography,
+  useSharedTextStyles,
+} from '../ui';
 
 interface Props {
   children: ReactNode;
@@ -28,78 +35,111 @@ export class ErrorBoundary extends Component<Props, State> {
   };
 
   render() {
-    if (this.state.hasError) {
-      return (
-        <SafeAreaView style={styles.safe}>
-          <View style={styles.container}>
+    if (!this.state.hasError) return this.props.children;
+
+    return <ErrorFallback onReset={this.handleReset} />;
+  }
+}
+
+function ErrorFallback({ onReset }: { onReset: () => void }) {
+  const styles = useErrorBoundaryStyles();
+  const sharedTextStyles = useSharedTextStyles();
+
+  return (
+    <SafeAreaView style={styles.safe}>
+      <ResponsiveContainer>
+        <View style={styles.centered}>
+          <View style={styles.backdropTop} />
+          <View style={styles.backdropBottom} />
+          <ScreenCard style={styles.card}>
+            <Text style={sharedTextStyles.eyebrow}>System State</Text>
             <View style={styles.iconWrap}>
               <Text style={styles.icon}>!</Text>
             </View>
             <Text style={styles.title}>문제가 발생했습니다</Text>
             <Text style={styles.message}>
-              앱에서 오류가 발생했습니다.{'\n'}
+              앱에서 오류가 발생했습니다.{"\n"}
               아래 버튼을 눌러 다시 시작해주세요.
             </Text>
-            <TouchableOpacity
-              style={styles.button}
-              onPress={this.handleReset}
-              activeOpacity={0.8}
-            >
-              <Text style={styles.buttonText}>처음으로 돌아가기</Text>
-            </TouchableOpacity>
-          </View>
-        </SafeAreaView>
-      );
-    }
-
-    return this.props.children;
-  }
+            <Button label="처음으로 돌아가기" variant="primary" onPress={onReset} />
+          </ScreenCard>
+        </View>
+      </ResponsiveContainer>
+    </SafeAreaView>
+  );
 }
 
-const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: Colors.background },
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingHorizontal: 32,
-  },
-  iconWrap: {
-    width: 64,
-    height: 64,
-    borderRadius: 18,
-    backgroundColor: Colors.wrong,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 20,
-  },
-  icon: {
-    fontSize: 32,
-    fontWeight: '900',
-    color: Colors.white,
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: '700',
-    color: Colors.textPrimary,
-    marginBottom: 12,
-  },
-  message: {
-    fontSize: 14,
-    color: Colors.textMuted,
-    textAlign: 'center',
-    lineHeight: 22,
-    marginBottom: 32,
-  },
-  button: {
-    backgroundColor: Colors.primary,
-    paddingVertical: 14,
-    paddingHorizontal: 32,
-    borderRadius: 14,
-  },
-  buttonText: {
-    color: Colors.white,
-    fontSize: 16,
-    fontWeight: '700',
-  },
-});
+function useErrorBoundaryStyles() {
+  const typography = useResponsiveTypography();
+
+  return useMemo(
+    () =>
+      StyleSheet.create({
+        safe: {
+          flex: 1,
+          backgroundColor: Colors.background,
+        },
+        centered: {
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+          paddingHorizontal: Spacing.lg,
+          overflow: 'hidden',
+        },
+        backdropTop: {
+          position: 'absolute',
+          top: 80,
+          right: -48,
+          width: 160,
+          height: 160,
+          borderRadius: 80,
+          backgroundColor: withAlpha(Colors.wrong, '12'),
+        },
+        backdropBottom: {
+          position: 'absolute',
+          left: -56,
+          bottom: 60,
+          width: 180,
+          height: 180,
+          borderRadius: 90,
+          backgroundColor: withAlpha(Colors.primary, '14'),
+        },
+        card: {
+          width: '100%',
+          maxWidth: 360,
+          alignItems: 'center',
+          gap: Spacing.sm,
+        },
+        iconWrap: {
+          width: 76,
+          height: 76,
+          borderRadius: 24,
+          backgroundColor: withAlpha(Colors.wrong, '12'),
+          borderWidth: 1,
+          borderColor: withAlpha(Colors.wrong, '40'),
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginBottom: Spacing.sm,
+        },
+        icon: {
+          fontSize: typography.sizes.size30,
+          fontWeight: Typography.weightExtraBold,
+          color: Colors.wrong,
+        },
+        title: {
+          fontSize: typography.sizes.size23,
+          fontWeight: Typography.weightExtraBold,
+          color: Colors.textPrimary,
+        },
+        message: {
+          fontSize: typography.sizes.size13,
+          color: Colors.textSecondary,
+          textAlign: 'center',
+          lineHeight: typography.lineHeight(Typography.size13, 20 / Typography.size13),
+          marginBottom: Spacing.lg,
+          fontWeight: Typography.weightMedium,
+        },
+      }),
+    [typography],
+  );
+}

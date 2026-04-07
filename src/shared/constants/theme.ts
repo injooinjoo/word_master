@@ -1,86 +1,164 @@
 import type { QuizType } from '../../services/quizService';
 
-// ── Base Palette ──────────────────────────────────────────────
+export const Spacing = {
+  xs: 4,
+  sm: 8,
+  md: 12,
+  lg: 16,
+  xl: 20,
+  xxl: 24,
+  xxxl: 32,
+} as const;
+
+export const Radius = {
+  sm: 8,
+  md: 12,
+  lg: 16,
+  xl: 20,
+  pill: 999,
+} as const;
+
+export const Typography = {
+  size11: 11,
+  size12: 12,
+  size13: 13,
+  size15: 15,
+  size18: 18,
+  size23: 23,
+  size30: 30,
+  size34: 34,
+  weightMedium: '500',
+  weightSemiBold: '600',
+  weightBold: '700',
+  weightExtraBold: '800',
+} as const;
+
 export const Colors = {
-  // Brand
-  primary: '#3B82F6',
-  primaryLight: '#EFF6FF',
-  primaryBorder: '#BFDBFE',
+  // Foundations
+  bgBase: '#F2F7F7',
+  bgCanvas: '#E6F0F0',
+  bgSurface: '#FFFFFF',
+  bgSurfaceTint: '#F7FBFB',
+  bgAccentSoft: '#DDF4F2',
+  bgAccentWarm: '#FFF5E6',
+
+  textPrimary: '#10212B',
+  textSecondary: '#556976',
+  textMuted: '#738693',
+  textFaint: '#9BAAB4',
+
+  borderDefault: '#D4E2E6',
+  borderSubtle: '#E5EEF0',
+  borderStrong: '#BCD1D7',
+
+  accentBrand: '#118A8F',
+  accentBrandStrong: '#0C6E74',
+  accentBrandSoft: '#DDF5F3',
+  accentBrandBorder: '#A6DAD5',
 
   // Semantic
-  correct: '#22C55E',
-  correctLight: '#F0FDF4',
-  correctDark: '#166534',
-  wrong: '#EF4444',
-  wrongLight: '#FEF2F2',
-  wrongDark: '#991B1B',
-  warning: '#F59E0B',
-  warningLight: '#FFFBEB',
-  warningBorder: '#FDE68A',
-  warningDark: '#D97706',
-
-  // Neutrals
-  background: '#F8FAFB',
-  surface: '#FFFFFF',
-  textPrimary: '#1A1D26',
-  textSecondary: '#6B7280',
-  textMuted: '#9CA3AF',
-  textFaint: '#C4C9D4',
-  border: '#E5E7EB',
-  borderLight: '#F1F5F9',
-  divider: '#E8ECF0',
-  shadow: '#64748B',
-
-  // Choice cards
-  choiceLabelBg: '#F1F5F9',
-  choiceLabelText: '#94A3B8',
-  choiceText: '#374151',
-
-  // Hint
-  hintBg: '#FFFBEB',
-  hintBorder: '#FDE68A',
-  hintLabel: '#D97706',
-  hintText: '#78716C',
+  stateSuccess: '#198754',
+  stateSuccessSoft: '#EAF7F0',
+  stateSuccessStrong: '#145D3E',
+  stateDanger: '#D24D57',
+  stateDangerSoft: '#FFF1F2',
+  stateDangerStrong: '#8F313A',
+  stateWarning: '#B96D14',
+  stateWarningSoft: '#FFF6E9',
+  stateWarningBorder: '#EFCFA3',
+  stateWarningStrong: '#8D540F',
 
   // Timer
-  timerFull: '#22C55E',
-  timerMid: '#FBBF24',
-  timerLow: '#EF4444',
-  timerTrack: '#F1F5F9',
+  timerTrack: '#DDE8EB',
 
-  // Common
+  shadow: '#16313F',
   white: '#FFFFFF',
+
+  // Backwards-compatible aliases
+  primary: '#118A8F',
+  primaryStrong: '#0C6E74',
+  primaryLight: '#DDF5F3',
+  primaryBorder: '#A6DAD5',
+  correct: '#198754',
+  correctLight: '#EAF7F0',
+  correctDark: '#145D3E',
+  wrong: '#D24D57',
+  wrongLight: '#FFF1F2',
+  wrongDark: '#8F313A',
+  warning: '#B96D14',
+  warningLight: '#FFF6E9',
+  warningBorder: '#EFCFA3',
+  warningDark: '#8D540F',
+  background: '#F2F7F7',
+  surface: '#FFFFFF',
+  surfaceTint: '#F7FBFB',
+  surfaceAccent: '#DDF5F3',
+  text: '#10212B',
+  border: '#D4E2E6',
+  borderLight: '#E5EEF0',
+  divider: '#DCE7EA',
+  choiceLabelBg: '#EEF5F7',
+  choiceLabelText: '#5E7382',
+  choiceText: '#173142',
+  hintBg: '#FFF6E9',
+  hintBorder: '#EFCFA3',
+  hintLabel: '#B96D14',
+  hintText: '#7C5B34',
+  timerFull: '#198754',
+  timerMid: '#B96D14',
+  timerLow: '#D24D57',
 } as const;
+
+export const Elevation = {
+  sm: {
+    shadowColor: Colors.shadow,
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.07,
+    shadowRadius: 14,
+    elevation: 3,
+  },
+  md: {
+    shadowColor: Colors.shadow,
+    shadowOffset: { width: 0, height: 12 },
+    shadowOpacity: 0.1,
+    shadowRadius: 24,
+    elevation: 5,
+  },
+} as const;
+
+export function withAlpha(color: string, alphaHex: string): string {
+  return `${color}${alphaHex}`;
+}
 
 // ── Quiz Type Colors ──────────────────────────────────────────
 export const QuizTypeColors: Record<QuizType, string> = {
-  e2k: '#3B82F6',
-  k2e: '#F59E0B',
-  e2e: '#8B5CF6',
-  syn: '#10B981',
-  ant: '#EF4444',
+  e2k: '#1A99C2',
+  k2e: '#E08F22',
+  e2e: '#6F7BF6',
+  syn: '#1D9E74',
+  ant: '#D24D57',
 };
 
 // ── Difficulty Colors ─────────────────────────────────────────
 export function difficultyColor(wordElo: number): string {
-  if (wordElo <= 400) return '#22C55E';
-  if (wordElo <= 800) return '#3B82F6';
-  if (wordElo <= 1200) return '#F59E0B';
-  if (wordElo <= 1600) return '#EF4444';
-  return '#8B5CF6';
+  if (wordElo <= 400) return Colors.correct;
+  if (wordElo <= 800) return QuizTypeColors.e2k;
+  if (wordElo <= 1200) return Colors.warning;
+  if (wordElo <= 1600) return Colors.wrong;
+  return QuizTypeColors.e2e;
 }
 
 // ── Round Size Card Colors ────────────────────────────────────
 export const RoundSizeColors: Record<number, string> = {
-  10: '#22C55E',
-  20: '#3B82F6',
-  50: '#F59E0B',
-  100: '#8B5CF6',
+  10: '#16A34A',
+  20: '#0EA5E9',
+  50: '#D97706',
+  100: '#7C83FD',
 };
 
 // ── Timing ────────────────────────────────────────────────────
 export const Timing = {
-  feedbackDelay: 5000,
+  feedbackDelay: 3000,
   hintThreshold: 0.4,
   animationFast: 200,
   animationMedium: 400,
