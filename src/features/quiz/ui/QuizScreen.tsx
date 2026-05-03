@@ -11,7 +11,7 @@ import {
   useWindowDimensions,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import type { QuizQuestion, QuizType, AnswerContext } from '../../../services/quizService';
+import type { QuizQuestion, AnswerContext } from '../../../services/quizService';
 import { QUIZ_TYPE_LABELS } from '../../../services/quizService';
 import type { QuizService } from '../../../services/quizService';
 import type { AudioService } from '../../../services/audioService';
@@ -30,12 +30,14 @@ import {
   withAlpha,
 } from '../../../shared/constants/theme';
 import { TimerBar } from '../components/TimerBar';
+import { NextButton } from '../components/NextButton';
+import { WrongAnswerInsightSheet } from '../components/WrongAnswerInsightSheet';
+import type { AnsweredOutcome } from '../components/WrongAnswerInsightSheet';
 import {
   Badge,
   Button,
   Chip,
   ChoiceCard,
-  FeedbackBanner,
   ResponsiveContainer,
   ScreenCard,
   useResponsiveTypography,
@@ -123,15 +125,6 @@ function timerDurationForElo(wordElo: number): number {
 /** Choice number labels */
 const CHOICE_LABELS = ['A', 'B', 'C', 'D'];
 
-function formatWordMeaning(word: string, meaning: string): string {
-  const trimmedMeaning = meaning.trim();
-  return trimmedMeaning ? `${word} · ${trimmedMeaning}` : word;
-}
-
-function shouldShowCorrectAnswerOnSuccess(type: QuizType): boolean {
-  return type === 'e2e' || type === 'syn' || type === 'ant';
-}
-
 function autoplayWordForQuestion(question: QuizQuestion): string | null {
   return question.quizType === 'k2e' ? null : question.vocabItem.word;
 }
@@ -146,33 +139,6 @@ function replayWordForQuestion(question: QuizQuestion, answered: boolean): strin
 const DEFAULT_AUDIO_PREFERENCES: AudioPreferences = {
   autoplayEnabled: Platform.OS !== 'web',
 };
-
-function buildFeedbackMessage(
-  question: QuizQuestion,
-  options: {
-    correct: boolean;
-    timedOut: boolean;
-    selectedChoice: string | null;
-  },
-): string {
-  const lines = [
-    options.correct ? '정답!' : options.timedOut ? '시간 초과' : '오답',
-    formatWordMeaning(question.vocabItem.word, question.vocabItem.meaning),
-  ];
-
-  if (options.correct) {
-    if (shouldShowCorrectAnswerOnSuccess(question.quizType)) {
-      lines.push(`정답: ${question.correctAnswer}`);
-    }
-    return lines.join('\n');
-  }
-
-  if (options.selectedChoice) {
-    lines.push(`내 답: ${options.selectedChoice}`);
-  }
-  lines.push(`정답: ${question.correctAnswer}`);
-  return lines.join('\n');
-}
 
 interface QuizScreenProps {
   quizService: QuizService;
@@ -490,14 +456,8 @@ export function QuizScreen({
       useNativeDriver: true,
     }).start();
 
-    if (feedbackTimeoutRef.current) {
-      clearTimeout(feedbackTimeoutRef.current);
-    }
-    feedbackTimeoutRef.current = setTimeout(() => {
-      feedbackTimeoutRef.current = null;
-      loadNext();
-    }, Timing.feedbackDelay);
-  }, [audioService, current, quizService, loadNext, feedbackOpacity, timerDuration, eloDeltaAnim, wordEloDeltaAnim, questionNum, showHint]);
+    // 자동 진행 제거 — NextButton / Enter / Space 로 onAdvance() 호출
+  }, [audioService, current, quizService, feedbackOpacity, timerDuration, eloDeltaAnim, wordEloDeltaAnim, questionNum, showHint]);
 
   // --- Choice selection handler ---
   const onChoiceSelected = useCallback(
@@ -589,15 +549,9 @@ export function QuizScreen({
         useNativeDriver: true,
       }).start();
 
-      if (feedbackTimeoutRef.current) {
-        clearTimeout(feedbackTimeoutRef.current);
-      }
-      feedbackTimeoutRef.current = setTimeout(() => {
-        feedbackTimeoutRef.current = null;
-        loadNext();
-      }, Timing.feedbackDelay);
+      // 자동 진행 제거 — NextButton / Enter / Space 로 onAdvance() 호출
     },
-    [audioService, current, quizService, loadNext, feedbackOpacity, timerDuration, eloDeltaAnim, wordEloDeltaAnim, timeBonusAnim, questionNum, showHint],
+    [audioService, current, quizService, feedbackOpacity, timerDuration, eloDeltaAnim, wordEloDeltaAnim, timeBonusAnim, questionNum, showHint],
   );
 
   const getChoiceState = useCallback(
@@ -613,6 +567,40 @@ export function QuizScreen({
     },
     [answered, current, selectedChoice, isCorrect],
   );
+
+  const onAdvance = useCallback(() => {
+    if (!answeredRef.current) return;
+    loadNext();
+  }, [loadNext]);
+
+  // Web keyboard shortcuts: 1-4 select choice, R replay, Enter/Space advance.
+  useEffect(() => {
+    if (Platform.OS !== 'web') return;
+    const win = (globalThis as { window?: any }).window;
+    if (!win || typeof win.addEventListener !== 'function') return;
+    const onKeyDown = (e: any) => {
+      const tag = e?.target?.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+      const key: string = e?.key ?? '';
+      if (!answeredRef.current) {
+        if (key >= '1' && key <= '4') {
+          const choice = current?.choices[Number(key) - 1];
+          if (choice) {
+            e.preventDefault?.();
+            onChoiceSelected(choice);
+          }
+        } else if (key.toLowerCase() === 'r') {
+          e.preventDefault?.();
+          onReplayWord();
+        }
+      } else if (key === 'Enter' || key === ' ') {
+        e.preventDefault?.();
+        onAdvance();
+      }
+    };
+    win.addEventListener('keydown', onKeyDown);
+    return () => win.removeEventListener('keydown', onKeyDown);
+  }, [current, onChoiceSelected, onAdvance, onReplayWord]);
 
   const onPause = useCallback(() => {
     void audioService.stop();
@@ -885,103 +873,69 @@ export function QuizScreen({
           </ScreenCard>
 
           <ScreenCard padded={false} style={styles.wordCard}>
-            <View
-              style={[
-                styles.wordSection,
-                {
-                  paddingHorizontal: layout.horizontalPadding,
-                  minHeight: minWordSectionHeight,
-                  maxHeight: maxWordSectionHeight,
-                },
-              ]}
-            >
-              <Text
+            {answered ? (
+              <Animated.View
                 style={[
-                  styles.wordText,
+                  styles.insightSection,
+                  { paddingHorizontal: layout.horizontalPadding, opacity: feedbackOpacity },
+                ]}
+              >
+                <WrongAnswerInsightSheet
+                  vocab={q.vocabItem}
+                  outcome={(timedOut ? 'timeout' : isCorrect ? 'correct' : 'wrong') as AnsweredOutcome}
+                  selectedChoice={selectedChoice}
+                  correctAnswer={q.correctAnswer}
+                />
+              </Animated.View>
+            ) : (
+              <View
+                style={[
+                  styles.wordSection,
                   {
-                    fontSize: promptFontSize,
-                    lineHeight: typography.lineHeight(promptBaseFontSize, 1.28) + 2,
+                    paddingHorizontal: layout.horizontalPadding,
+                    minHeight: minWordSectionHeight,
+                    maxHeight: maxWordSectionHeight,
                   },
                 ]}
-                numberOfLines={3}
-                adjustsFontSizeToFit
               >
-                {q.prompt}
-              </Text>
-
-              {canReplayWord && (
-                <TouchableOpacity
-                  accessibilityRole="button"
-                  accessibilityLabel={activeType === 'k2e' ? '정답 단어 듣기' : '단어 듣기'}
-                  activeOpacity={0.85}
-                  onPress={onReplayWord}
-                  style={styles.listenButton}
-                >
-                  <Text style={styles.listenButtonText}>
-                    {activeType === 'k2e' ? '정답 듣기' : '듣기'}
-                  </Text>
-                </TouchableOpacity>
-              )}
-
-              {showHint && hintEntry && !answered && (
-                <Animated.View style={[styles.hintContainer, { opacity: hintOpacity }]}>
-                  <View style={styles.hintHeader}>
-                    <Text style={styles.hintLabel}>Hint</Text>
-                  </View>
-                  <Text style={styles.hintText}>{hintEntry.text}</Text>
-                </Animated.View>
-              )}
-
-              {answered && (
-                <Animated.View
+                <Text
                   style={[
-                    styles.feedbackBanner,
+                    styles.wordText,
                     {
-                      opacity: feedbackOpacity,
+                      fontSize: promptFontSize,
+                      lineHeight: typography.lineHeight(promptBaseFontSize, 1.28) + 2,
                     },
                   ]}
+                  numberOfLines={3}
+                  adjustsFontSizeToFit
                 >
-                  <FeedbackBanner
-                    kind={timedOut ? 'timeout' : isCorrect ? 'success' : 'error'}
-                    message={buildFeedbackMessage(q, {
-                      correct: !!isCorrect,
-                      timedOut,
-                      selectedChoice,
-                    })}
-                  />
-                </Animated.View>
-              )}
+                  {q.prompt}
+                </Text>
 
-              {answered && remainingSec !== null && remainingSec > 0 && (
-                <Animated.View
-                  style={[
-                    styles.timeBonusBadge,
-                    {
-                      opacity: timeBonusAnim.interpolate({
-                        inputRange: [0, 0.15, 0.6, 1],
-                        outputRange: [0, 1, 1, 0],
-                      }),
-                      transform: [
-                        {
-                          translateY: timeBonusAnim.interpolate({
-                            inputRange: [0, 1],
-                            outputRange: [6, -10],
-                          }),
-                        },
-                        {
-                          scale: timeBonusAnim.interpolate({
-                            inputRange: [0, 0.15, 0.5, 1],
-                            outputRange: [0.6, 1.15, 1, 0.9],
-                          }),
-                        },
-                      ],
-                    },
-                  ]}
-                >
-                  <Text style={styles.timeBonusText}>{remainingSec.toFixed(1)}s</Text>
-                </Animated.View>
-              )}
-            </View>
+                {canReplayWord && (
+                  <TouchableOpacity
+                    accessibilityRole="button"
+                    accessibilityLabel={activeType === 'k2e' ? '정답 단어 듣기' : '단어 듣기'}
+                    activeOpacity={0.85}
+                    onPress={onReplayWord}
+                    style={styles.listenButton}
+                  >
+                    <Text style={styles.listenButtonText}>
+                      {activeType === 'k2e' ? '정답 듣기' : '듣기'}
+                    </Text>
+                  </TouchableOpacity>
+                )}
+
+                {showHint && hintEntry && (
+                  <Animated.View style={[styles.hintContainer, { opacity: hintOpacity }]}>
+                    <View style={styles.hintHeader}>
+                      <Text style={styles.hintLabel}>Hint</Text>
+                    </View>
+                    <Text style={styles.hintText}>{hintEntry.text}</Text>
+                  </Animated.View>
+                )}
+              </View>
+            )}
           </ScreenCard>
 
           <ScreenCard padded={false} style={styles.choicesCard}>
@@ -1032,6 +986,8 @@ export function QuizScreen({
               </View>
             </View>
           </ScreenCard>
+
+          {answered && <NextButton onPress={onAdvance} />}
         </View>
       </ResponsiveContainer>
     </SafeAreaView>
@@ -1239,6 +1195,11 @@ function useQuizStyles() {
     justifyContent: 'center',
     alignItems: 'center',
     paddingVertical: Spacing.xxl,
+  },
+  insightSection: {
+    flex: 1,
+    width: '100%',
+    paddingVertical: Spacing.md,
   },
   wordText: {
     fontSize: typography.fontSize(40),
