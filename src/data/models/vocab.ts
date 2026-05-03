@@ -38,6 +38,8 @@ const PLACEHOLDER_LEARNING_TIP_PATTERNS = [
   /추후 보강 예정/u,
   /시각적으로 기억/u,
   /발음을 반복해 암기/u,
+  /다양한 맥락에서 활용되는 단어/u,
+  /관련 어휘는 사전을 참고하여 학습/u,
 ] as const;
 
 function normalizeLearningTipText(text: string): string {
@@ -53,6 +55,14 @@ export function isRenderableLearningTipEntry(
   if (normalizedText.length === 0) return false;
 
   return !PLACEHOLDER_LEARNING_TIP_PATTERNS.some((pattern) => pattern.test(normalizedText));
+}
+
+/** Same placeholder filter as learning tips, applied to free-form insight text. */
+export function isRenderableInsightString(s: string | null | undefined): s is string {
+  if (!s) return false;
+  const t = normalizeLearningTipText(s);
+  if (t.length === 0) return false;
+  return !PLACEHOLDER_LEARNING_TIP_PATTERNS.some((pattern) => pattern.test(t));
 }
 
 /** All entries in fixed order for random pick */
@@ -73,6 +83,27 @@ export function getRenderableLearningTipEntries(tips: LearningTips): LearningTip
       ...entry,
       text: normalizeLearningTipText(entry.text),
     }));
+}
+
+// ── Insights ─────────────────────────────────────────────────
+
+/** A single morpheme in a Latin/Greek root breakdown. */
+export interface RootMorpheme {
+  morph: string;                                 // "bene-"
+  origin?: 'Latin' | 'Greek' | 'Old English' | string;
+  gloss: string;                                 // "good, well"
+}
+
+/**
+ * Optional rich explanation payload shown after answering.
+ * Coexists with `learningTips` — selectors prefer `insights` and
+ * fall back to `learningTips` to keep older data renderable.
+ */
+export interface VocabInsights {
+  etymologyDetail?: string;     // Longer etymology narrative
+  roots?: RootMorpheme[];       // Morpheme breakdown (Latin/Greek)
+  koreanMnemonic?: string;      // Korean phonetic association
+  originStory?: string;         // Birth-of-word storytelling tone
 }
 
 // ── Vocabulary Item ──────────────────────────────────────────
@@ -108,4 +139,7 @@ export interface VocabItem {
 
   // --- Learning tips ---
   learningTips: LearningTips;
+
+  // --- Optional rich insights (post-answer explanation) ---
+  insights?: VocabInsights;
 }

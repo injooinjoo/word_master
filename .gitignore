@@ -40,3 +40,16 @@ yarn-error.*
 /ios
 /android
 temp_vocab.xls
+
+# Build artifacts
+output/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local Claude settings
+.claude/
+
+# Gemini refine logs (keep checkpoint, drop logs)
+docs/gemini_refine_*.log

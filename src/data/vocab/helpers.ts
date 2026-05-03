@@ -3,6 +3,7 @@ import type {
   LearningTipEntry,
   LearningTips,
   PartOfSpeech,
+  VocabInsights,
   VocabItem,
 } from '../models/vocab';
 
@@ -47,6 +48,7 @@ export interface WordExtra {
   audioUrl?: string;
   imageUrl?: string;
   pronunciationUrl?: string;
+  insights?: VocabInsights;
 }
 
 function normalizeIdentityValue(value: string): string {
@@ -110,5 +112,6 @@ export function word(
     audioUrl: extra?.audioUrl ?? null,
     imageUrl: extra?.imageUrl ?? null,
     learningTips,
+    insights: extra?.insights,
   };
 }

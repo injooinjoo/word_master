@@ -57,6 +57,13 @@ npm test
 - 릴리즈 검증: `npm run check:release-config`
 - IPA 검사: `npm run check:ipa -- /absolute/path/to/build.ipa`
 
+## iOS 빌드 주의사항
+
+- `development` 빌드는 dev client 입니다. 메트로 없이 앱 아이콘만 열면 `No script URL provided`가 뜹니다.
+- dev client 는 항상 `npm start` 또는 `expo start` 를 켠 상태에서 실행하세요.
+- 실기기에서 메트로 없이 바로 열 수 있는 내부 배포본이 필요하면 `preview` 프로필을 사용하세요.
+- `development` 빌드는 앱 이름이 `Word Master Dev`, 번들 ID가 `com.beyond.wordmaster.dev` 로 분리됩니다.
+
 ## 핵심 구조
 
 - `src/entry/App.tsx` — 앱 루트, 릴리즈 플래그, 퀴즈/결과 전환

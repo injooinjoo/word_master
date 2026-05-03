@@ -25,6 +25,17 @@ export const vocabBatch01: VocabItem[] = [
         { en: 'She bit into a crisp red apple.', ko: '그녀는 아삭한 빨간 사과를 한 입 베어 물었다.' },
         { en: 'Apple trees bloom in the spring.', ko: '사과나무는 봄에 꽃을 피운다.' },
       ],
+      insights: {
+        etymologyDetail:
+          '고대 영어 æppel(과일)에서 유래했으며 옛날에는 모든 둥근 과일을 통칭하던 단어였습니다. 라틴어 pomum, 그리스어 mēlon과도 닿아 있어, 중세 유럽에서는 토마토·감귤조차 “apple”로 불리던 시기가 있었습니다.',
+        roots: [
+          { morph: 'æppel', origin: 'Old English', gloss: 'fruit, apple' },
+        ],
+        koreanMnemonic:
+          '"애플(Apple)" → "에이(A) 등급의 풀(과일)"로 연상해 보세요. A급 과일 = 사과.',
+        originStory:
+          '아담과 이브 신화 속 “선악과”가 사과로 굳어진 것은 라틴어 malum(악)과 mālum(사과)의 발음이 같았던 우연한 동음 충돌에서 비롯됐다는 설이 있습니다. 이후 셰익스피어와 뉴턴의 사과까지, 단순한 과일 이름이 서양 문화의 핵심 상징어로 확장되었습니다.',
+      },
     }
   ),
   word('book', '책', 1, 'noun',

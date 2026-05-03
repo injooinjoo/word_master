@@ -29,6 +29,7 @@ function resolveBooleanEnv(keys, fallback) {
 }
 
 const appVariant = resolveEnv('APP_VARIANT', 'EAS_BUILD_PROFILE') || 'development';
+const isDevelopmentVariant = appVariant === 'development';
 const isReleaseLikeVariant = appVariant === 'preview' || appVariant === 'production';
 const authEnabled = resolveBooleanEnv(['EXPO_PUBLIC_ENABLE_AUTH', 'ENABLE_AUTH'], true);
 const scoreSyncEnabled = resolveBooleanEnv(
@@ -46,8 +47,13 @@ const iosInfoPlist = {
   ITSAppUsesNonExemptEncryption: false,
 };
 
+const appName = isDevelopmentVariant ? 'Word Master Dev' : 'Word Master';
+const iosBundleIdentifier = isDevelopmentVariant
+  ? 'com.beyond.wordmaster.dev'
+  : 'com.beyond.wordmaster';
+
 module.exports = {
-  name: 'Word Master',
+  name: appName,
   slug: 'word_master',
   version: '1.0.0',
   description: 'Adaptive English vocabulary practice with guest mode, optional sign-in, and on-device progress.',
@@ -62,7 +68,7 @@ module.exports = {
   },
   ios: {
     supportsTablet: true,
-    bundleIdentifier: 'com.beyond.wordmaster',
+    bundleIdentifier: iosBundleIdentifier,
     infoPlist: iosInfoPlist,
   },
   android: {
