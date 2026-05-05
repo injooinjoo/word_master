@@ -1,12 +1,11 @@
 import type { User } from '@supabase/supabase-js';
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Platform, View, Text, StyleSheet, ActivityIndicator } from 'react-native';
+import { View, Text, StyleSheet, ActivityIndicator } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { AuthScreen } from '../features/auth/ui/AuthScreen';
 import { HomeScreen } from '../features/home/ui/HomeScreen';
 import { ProfileScreen, type CharacterProfileSaveResponse } from '../features/profile/ui/ProfileScreen';
-import { PreviewDeck, type PreviewMode } from '../features/preview/ui/PreviewDeck';
 import { QuizScreen } from '../features/quiz/ui/QuizScreen';
 import { ResultScreen } from '../features/quiz/ui/ResultScreen';
 import { AdaptiveProgressService } from '../services/adaptiveProgressService';
@@ -37,74 +36,7 @@ const audioService = new AudioService();
 type Screen = 'home' | 'quiz' | 'result';
 type ProfileOverlaySource = 'auth' | 'home' | 'quiz' | 'result';
 
-function resolvePreviewMode(): PreviewMode | null {
-  if (!__DEV__) return null;
-
-  const webLocation =
-    Platform.OS === 'web' ? (globalThis as { location?: { search?: string } }).location : undefined;
-  if (webLocation?.search == null) return null;
-
-  const mode = new URLSearchParams(webLocation.search).get('preview');
-  const allowedModes: PreviewMode[] = [
-    'foundations',
-    'components',
-    'home',
-    'auth',
-    'profile',
-    'quiz',
-    'result',
-    'system',
-    'handoff',
-  ];
-
-  if (mode == null) return null;
-
-  return allowedModes.includes(mode as PreviewMode) ? (mode as PreviewMode) : null;
-}
-
 export default function App() {
-  const previewMode = resolvePreviewMode();
-
-  useEffect(() => {
-    if (!__DEV__) return;
-
-    const webGlobal =
-      globalThis as {
-        location?: { hash?: string };
-        document?: {
-          head?: { appendChild: (node: unknown) => void };
-          getElementById?: (id: string) => unknown;
-          createElement?: (tag: string) => {
-            id?: string;
-            src?: string;
-            async?: boolean;
-          };
-        };
-      };
-
-    if (!webGlobal.location?.hash?.includes('figmacapture=')) return;
-    if (webGlobal.document?.getElementById?.('figma-capture-script')) return;
-
-    const script = webGlobal.document?.createElement?.('script');
-    if (!script || !webGlobal.document?.head) return;
-
-    script.id = 'figma-capture-script';
-    script.src = 'https://mcp.figma.com/mcp/html-to-design/capture.js';
-    script.async = true;
-    webGlobal.document.head.appendChild(script);
-  }, []);
-
-  if (previewMode) {
-    return (
-      <SafeAreaProvider>
-        <ResponsiveTypographyProvider>
-          <StatusBar style="auto" />
-          <PreviewDeck mode={previewMode} />
-        </ResponsiveTypographyProvider>
-      </SafeAreaProvider>
-    );
-  }
-
   return (
     <SafeAreaProvider>
       <ResponsiveTypographyProvider>
