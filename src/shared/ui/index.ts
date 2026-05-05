@@ -8,6 +8,5 @@ export * from './ResponsiveContainer';
 export * from './responsiveTypography';
 export * from './responsiveTypographyUtils';
 export * from './ScreenCard';
-export * from './StatRing';
 export * from './TextField';
 export * from './sharedStyles';

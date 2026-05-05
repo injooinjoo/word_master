@@ -30,7 +30,6 @@ import {
   HistoryListItem,
   ResponsiveContainer,
   ScreenCard,
-  StatRing,
   useResponsiveTypography,
   useSharedTextStyles,
 } from '../../../shared/ui';
@@ -104,7 +103,7 @@ export function ResultScreen({
   onResume,
   onSignInRequest,
   onSignOut,
-}: ResultScreenProps) {
+}: ResultScreenProps): React.ReactElement {
   const styles = useResultStyles();
   const sharedTextStyles = useSharedTextStyles();
   const { width: windowWidth } = useWindowDimensions();
@@ -126,11 +125,16 @@ export function ResultScreen({
   const roundTotal = quizService.roundTotal;
   const accuracy = roundTotal > 0 ? Math.round((roundCorrect / roundTotal) * 100) : 0;
   const weakestTypeLabel = QUIZ_TYPE_LABELS[learningDashboard.weakestType];
-  const viewState = resolveResultVisibility({
-    authEnabled,
-    scoreSyncEnabled,
-    isGuestSession,
-  });
+  const viewState = useMemo(
+    () =>
+      resolveResultVisibility({
+        authEnabled,
+        scoreSyncEnabled,
+        isGuestSession,
+      }),
+    [authEnabled, scoreSyncEnabled, isGuestSession],
+  );
+  const trackedRatings = quizService.trackedRatings;
 
   useEffect(() => {
     let mounted = true;
@@ -172,7 +176,7 @@ export function ResultScreen({
           userId: user.id,
           email: user.email ?? null,
           compositeRating: avgRating,
-          ratings: quizService.trackedRatings,
+          ratings: trackedRatings,
           roundCorrect,
           roundTotal,
         });
@@ -199,9 +203,8 @@ export function ResultScreen({
     return () => {
       mounted = false;
     };
-  }, [isGuestSession, user, avgRating, roundCorrect, roundTotal, quizService, viewState.showScoreSync]);
+  }, [isGuestSession, user, avgRating, roundCorrect, roundTotal, trackedRatings, viewState.showScoreSync]);
 
-  const accuracyColor = accuracy >= 70 ? Colors.correct : accuracy >= 40 ? Colors.warning : Colors.wrong;
   const encouragement =
     accuracy >= 80
       ? '훌륭해요!'
@@ -256,18 +259,26 @@ export function ResultScreen({
         <View style={styles.glowTop} />
         <View style={styles.glowBottom} />
         <ScrollView style={styles.scroll} contentContainerStyle={styles.scrollContent}>
-          <ScreenCard tone="tint" style={styles.heroSection}>
-            <Text style={sharedTextStyles.eyebrow}>Round Summary</Text>
-            <Text style={styles.heroTitle}>라운드 결과</Text>
-            <Text style={styles.heroSubtitle}>{heroSubtitle}</Text>
-            <StatRing
-              percent={accuracy}
-              numerator={roundCorrect}
-              denominator={roundTotal}
-              color={accuracyColor}
-            />
-            <Text style={[styles.encouragement, { color: accuracyColor }]}>{encouragement}</Text>
-          </ScreenCard>
+          <View style={styles.brandHero}>
+            <View style={styles.heroRingDecoLg} />
+            <View style={styles.heroRingDecoSm} />
+            <Text style={styles.brandHeroEyebrow}>라운드 완료</Text>
+            <Text style={styles.brandHeroTitle}>{encouragement} 👏</Text>
+            <View
+              accessible
+              accessibilityRole="text"
+              accessibilityLabel={`정확도 ${accuracy}퍼센트, ${roundTotal}개 중 ${roundCorrect}개`}
+              style={styles.heroRingOuter}
+            >
+              <View style={styles.heroRingInner}>
+                <Text style={styles.heroRingPercent}>{accuracy}%</Text>
+                <Text style={styles.heroRingRatio}>
+                  {roundCorrect}/{roundTotal} 정답
+                </Text>
+              </View>
+            </View>
+            <Text style={styles.brandHeroSubtitle}>{heroSubtitle}</Text>
+          </View>
 
           <View style={styles.summaryGrid}>
             <ScreenCard style={styles.metricCard}>
@@ -523,29 +534,88 @@ function useResultStyles() {
     paddingBottom: Spacing.xxl,
     gap: Spacing.md,
   },
-  heroSection: {
+  brandHero: {
     width: '100%',
+    // primaryStrong (#2563EB) gives WCAG AA (≥4.5:1) for white at 12-13pt.
+    backgroundColor: Colors.primaryStrong,
+    paddingTop: Spacing.xxxl,
+    paddingBottom: Spacing.xxl,
+    paddingHorizontal: Spacing.xl,
+    borderRadius: Radius.xxl,
     alignItems: 'center',
+    overflow: 'hidden',
   },
-  heroTitle: {
+  heroRingDecoLg: {
+    position: 'absolute',
+    right: -60,
+    top: -60,
+    width: 200,
+    height: 200,
+    borderRadius: 100,
+    borderWidth: 1,
+    borderColor: withAlpha(Colors.white, '1F'),
+  },
+  heroRingDecoSm: {
+    position: 'absolute',
+    left: -40,
+    bottom: -40,
+    width: 140,
+    height: 140,
+    borderRadius: 70,
+    borderWidth: 1,
+    borderColor: withAlpha(Colors.white, '26'),
+  },
+  // Korean string — letterSpacing: 0 (positive tracking breaks syllable rhythm)
+  brandHeroEyebrow: {
+    color: Colors.white,
+    fontSize: typography.sizes.size12,
+    fontWeight: Typography.weightBold,
+  },
+  brandHeroTitle: {
     marginTop: Spacing.xs,
+    color: Colors.white,
     fontSize: typography.sizes.size23,
     fontWeight: Typography.weightExtraBold,
-    color: Colors.textPrimary,
   },
-  heroSubtitle: {
-    marginTop: Spacing.xs,
-    marginBottom: Spacing.lg,
+  heroRingOuter: {
+    marginTop: Spacing.xl,
+    width: 168,
+    height: 168,
+    borderRadius: 84,
+    borderWidth: 10,
+    borderColor: withAlpha(Colors.white, '26'),
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  heroRingInner: {
+    width: 132,
+    height: 132,
+    borderRadius: 66,
+    borderWidth: 4,
+    borderColor: Colors.white,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  heroRingPercent: {
+    color: Colors.white,
+    fontSize: typography.sizes.size30,
+    fontWeight: Typography.weightExtraBold,
+    letterSpacing: -1.2,
+    lineHeight: typography.lineHeight(Typography.size30, 1.05),
+  },
+  heroRingRatio: {
+    color: Colors.white,
+    fontSize: typography.sizes.size12,
+    fontWeight: Typography.weightSemiBold,
+    marginTop: 4,
+  },
+  brandHeroSubtitle: {
+    marginTop: Spacing.lg,
+    color: Colors.white,
     fontSize: typography.sizes.size13,
     lineHeight: typography.lineHeight(Typography.size13, 20 / Typography.size13),
     textAlign: 'center',
-    color: Colors.textSecondary,
     fontWeight: Typography.weightMedium,
-  },
-  encouragement: {
-    marginTop: Spacing.md,
-    fontSize: typography.sizes.size15,
-    fontWeight: Typography.weightBold,
   },
   summaryGrid: {
     width: '100%',
