@@ -20,7 +20,7 @@
       "distribution": "internal",
       "env": {
         "APP_VARIANT": "preview",
-        "EXPO_PUBLIC_ENABLE_AUTH": "true",
+        "EXPO_PUBLIC_ENABLE_AUTH": "false",
         "EXPO_PUBLIC_ENABLE_SCORE_SYNC": "false",
         "EXPO_PUBLIC_ENABLE_ADS": "false"
       }
@@ -30,7 +30,7 @@
       "channel": "production",
       "env": {
         "APP_VARIANT": "production",
-        "EXPO_PUBLIC_ENABLE_AUTH": "true",
+        "EXPO_PUBLIC_ENABLE_AUTH": "false",
         "EXPO_PUBLIC_ENABLE_SCORE_SYNC": "false",
         "EXPO_PUBLIC_ENABLE_ADS": "false"
       }

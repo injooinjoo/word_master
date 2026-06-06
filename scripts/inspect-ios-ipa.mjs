@@ -121,8 +121,8 @@ if (!expoConfigPath) {
     if (expoConfig?.extra?.appVariant !== 'production') {
       issues.push('Embedded Expo config must resolve to the production app variant.');
     }
-    if (features.authEnabled !== true) {
-      issues.push('Embedded Expo config must enable auth (optional sign-in is part of the App Store release).');
+    if (features.authEnabled !== false) {
+      issues.push('Embedded Expo config must keep auth disabled for the guest-only App Store release.');
     }
     if (features.scoreSyncEnabled !== false) {
       issues.push('Embedded Expo config must disable score sync.');
@@ -130,13 +130,17 @@ if (!expoConfigPath) {
     if (features.adsEnabled !== false) {
       issues.push('Embedded Expo config must disable ads.');
     }
-    if (typeof expoConfig?.extra?.supabaseUrl !== 'string' || expoConfig.extra.supabaseUrl.trim() === '') {
-      issues.push('Embedded Expo config must include a Supabase URL when auth is enabled.');
-    }
-    if (typeof expoConfig?.extra?.supabaseAnonKey !== 'string' || expoConfig.extra.supabaseAnonKey.trim() === '') {
-      issues.push('Embedded Expo config must include a Supabase anon key when auth is enabled.');
-    } else if (readJwtRole(expoConfig.extra.supabaseAnonKey) !== 'anon') {
-      issues.push('Embedded Expo config Supabase key must be an anon JWT, never service_role.');
+    if (features.authEnabled === true) {
+      if (typeof expoConfig?.extra?.supabaseUrl !== 'string' || expoConfig.extra.supabaseUrl.trim() === '') {
+        issues.push('Embedded Expo config must include a Supabase URL when auth is enabled.');
+      }
+      if (typeof expoConfig?.extra?.supabaseAnonKey !== 'string' || expoConfig.extra.supabaseAnonKey.trim() === '') {
+        issues.push('Embedded Expo config must include a Supabase anon key when auth is enabled.');
+      } else if (readJwtRole(expoConfig.extra.supabaseAnonKey) !== 'anon') {
+        issues.push('Embedded Expo config Supabase key must be an anon JWT, never service_role.');
+      }
+    } else if (expoConfig?.extra?.supabaseUrl || expoConfig?.extra?.supabaseAnonKey) {
+      issues.push('Guest-only embedded Expo config must omit Supabase credentials.');
     }
     if (expoConfig?.ios?.supportsTablet !== true) {
       issues.push('Embedded Expo config must keep iPad support enabled.');

@@ -10,7 +10,7 @@ const SAMPLE_PROJECT_ID = '2504435b-37fc-4b2e-8232-37af5b525221';
 const SAMPLE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlzcyI6InN1cGFiYXNlIn0.signature';
 const SAMPLE_SERVICE_ROLE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2VydmljZV9yb2xlIiwiaXNzIjoic3VwYWJhc2UifQ.signature';
 
-test('validateResolvedExpoConfig accepts auth-enabled release config', () => {
+test('validateResolvedExpoConfig accepts guest-only release config', () => {
   const issues = validateResolvedExpoConfig({
     name: 'Word Master',
     slug: 'word_master',
@@ -26,10 +26,8 @@ test('validateResolvedExpoConfig accepts auth-enabled release config', () => {
     plugins: [],
     extra: {
       eas: { projectId: SAMPLE_PROJECT_ID },
-      supabaseUrl: 'https://example.supabase.co',
-      supabaseAnonKey: SAMPLE_ANON_KEY,
       features: {
-        authEnabled: true,
+        authEnabled: false,
         scoreSyncEnabled: false,
         adsEnabled: false,
       },
@@ -227,7 +225,7 @@ test('validateBuildProfileEnvs rejects guest-only auth drift in release profiles
     },
   });
 
-  assert.equal(issues.includes('build.preview.env.EXPO_PUBLIC_ENABLE_AUTH must be "true".'), true);
+  assert.equal(issues.includes('build.production.env.EXPO_PUBLIC_ENABLE_AUTH must be "false".'), true);
 });
 
 test('validateBuildProfileEnvs rejects channel drift', () => {
@@ -277,6 +275,9 @@ test('validateStoreConfig requires support and privacy URLs', () => {
           marketingUrl: 'https://example.com',
           supportUrl: 'https://example.com/support',
           privacyPolicyUrl: 'https://example.com/privacy',
+        },
+        ko: {
+          title: 'Word Master',
         },
       },
     },

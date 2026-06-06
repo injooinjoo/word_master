@@ -1,6 +1,6 @@
 export const RELEASE_ENV = {
   APP_VARIANT: 'production',
-  EXPO_PUBLIC_ENABLE_AUTH: 'true',
+  EXPO_PUBLIC_ENABLE_AUTH: 'false',
   EXPO_PUBLIC_ENABLE_SCORE_SYNC: 'false',
   EXPO_PUBLIC_ENABLE_ADS: 'false',
 };
@@ -62,7 +62,7 @@ export function validateResolvedExpoConfig(exp) {
     'Expo config must define a non-empty app description.',
   );
   pushIssue(issues, exp?.ios?.supportsTablet === true, 'iOS build must keep iPad support enabled.');
-  pushIssue(issues, features.authEnabled === true, 'Release config must enable auth.');
+  pushIssue(issues, features.authEnabled === false, 'Release config must keep auth disabled for the guest-only App Store release.');
   pushIssue(issues, features.scoreSyncEnabled === false, 'Release config must disable score sync.');
   pushIssue(issues, features.adsEnabled === false, 'Release config must disable ads.');
   pushIssue(issues, hasAdMobPlugin === false, 'Release config must not include the AdMob plugin.');
@@ -76,21 +76,29 @@ export function validateResolvedExpoConfig(exp) {
     typeof infoPlist.NSUserTrackingUsageDescription === 'undefined',
     'Release config must omit NSUserTrackingUsageDescription because tracking is disabled.',
   );
-  pushIssue(
-    issues,
-    typeof exp?.extra?.supabaseUrl === 'string' && exp.extra.supabaseUrl.trim().length > 0,
-    'Release config must include a Supabase URL when auth is enabled.',
-  );
-  pushIssue(
-    issues,
-    typeof exp?.extra?.supabaseAnonKey === 'string' && exp.extra.supabaseAnonKey.trim().length > 0,
-    'Release config must include a Supabase anon key when auth is enabled.',
-  );
-  pushIssue(
-    issues,
-    isSupabaseAnonKey(exp?.extra?.supabaseAnonKey),
-    'Release config Supabase key must be an anon JWT, never service_role.',
-  );
+  if (features.authEnabled === true) {
+    pushIssue(
+      issues,
+      typeof exp?.extra?.supabaseUrl === 'string' && exp.extra.supabaseUrl.trim().length > 0,
+      'Release config must include a Supabase URL when auth is enabled.',
+    );
+    pushIssue(
+      issues,
+      typeof exp?.extra?.supabaseAnonKey === 'string' && exp.extra.supabaseAnonKey.trim().length > 0,
+      'Release config must include a Supabase anon key when auth is enabled.',
+    );
+    pushIssue(
+      issues,
+      isSupabaseAnonKey(exp?.extra?.supabaseAnonKey),
+      'Release config Supabase key must be an anon JWT, never service_role.',
+    );
+  } else {
+    pushIssue(
+      issues,
+      !exp?.extra?.supabaseUrl && !exp?.extra?.supabaseAnonKey,
+      'Guest-only release config must omit Supabase credentials.',
+    );
+  }
 
   const projectId = exp?.extra?.eas?.projectId;
   pushIssue(
@@ -155,6 +163,7 @@ export function validateBuildProfileEnvs(easConfig) {
 export function validateStoreConfig(storeConfig) {
   const issues = [];
   const info = storeConfig?.apple?.info?.['en-US'];
+  const appleInfo = storeConfig?.apple?.info ?? {};
 
   pushIssue(issues, storeConfig?.configVersion === 0, 'store.config.json must use configVersion 0.');
   pushIssue(issues, typeof info?.title === 'string' && info.title.trim().length > 0, 'Store config must define an app title.');
@@ -182,6 +191,11 @@ export function validateStoreConfig(storeConfig) {
     issues,
     !String(info?.privacyPolicyUrl ?? '').includes('/blob/'),
     'Privacy policy URL must point to a public page, not a GitHub blob URL.',
+  );
+  pushIssue(
+    issues,
+    typeof appleInfo['ko-KR'] === 'undefined' && typeof appleInfo.ko === 'object',
+    'Store config Korean locale must be "ko" for EAS Metadata, not "ko-KR".',
   );
 
   return issues;
