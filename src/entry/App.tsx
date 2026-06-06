@@ -322,6 +322,7 @@ function MainApp() {
         <StatusBar style="auto" />
         <ProfileScreen
           initialProfile={characterProfile}
+          quizService={quizService}
           viewerLabel={profileViewerLabel}
           storageLabel={profileStorageLabel}
           onSave={onSaveProfile}

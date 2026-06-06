@@ -61,6 +61,13 @@ module.exports = {
   icon: './assets/icon.png',
   userInterfaceStyle: 'light',
   newArchEnabled: true,
+  runtimeVersion: {
+    policy: 'fingerprint',
+  },
+  updates: {
+    url: 'https://u.expo.dev/2504435b-37fc-4b2e-8232-37af5b525221',
+    fallbackToCacheTimeout: 0,
+  },
   splash: {
     image: './assets/splash-icon.png',
     resizeMode: 'contain',

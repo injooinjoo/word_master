@@ -4,6 +4,8 @@ Word Master 1.0.0 for iOS starts in guest study mode and offers optional email l
 
 - No account is required for this App Store release.
 - No advertising SDK is included in this App Store release.
+- App Tracking Transparency is not used in this App Store release because Word Master does not track users across apps or websites.
+- The binary should not include `NSUserTrackingUsageDescription`, `GADApplicationIdentifier`, or an AppTrackingTransparency permission request.
 - By default, quiz progress and adaptive learning state are stored on-device.
 - If the user chooses to sign in, email login and account-linked learning progress are handled by Supabase.
 - There are no purchases, subscriptions, or unlock flows in this release.

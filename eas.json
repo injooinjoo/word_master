@@ -16,6 +16,7 @@
     },
     "preview": {
       "autoIncrement": true,
+      "channel": "preview",
       "distribution": "internal",
       "env": {
         "APP_VARIANT": "preview",
@@ -26,6 +27,7 @@
     },
     "production": {
       "autoIncrement": true,
+      "channel": "production",
       "env": {
         "APP_VARIANT": "production",
         "EXPO_PUBLIC_ENABLE_AUTH": "true",

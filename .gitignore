@@ -44,6 +44,10 @@ temp_vocab.xls
 # Build artifacts
 output/
 
+# Local agent/design artifacts
+.hermes/
+claude_design/
+
 # Python cache
 __pycache__/
 *.pyc

@@ -12,6 +12,7 @@ export interface WrongAnswerInsightSheetProps {
   outcome: AnsweredOutcome;
   selectedChoice: string | null;
   correctAnswer: string;
+  scrollEnabled?: boolean;
 }
 
 const OUTCOME_TONE: Record<
@@ -46,14 +47,19 @@ export function WrongAnswerInsightSheet({
   outcome,
   selectedChoice,
   correctAnswer,
+  scrollEnabled = true,
 }: WrongAnswerInsightSheetProps) {
   const tone = OUTCOME_TONE[outcome];
   const cards = useMemo(() => buildInsightCards(vocab), [vocab]);
+  const cardNodes = useMemo(
+    () => cards.map((spec, i) => <InsightCard key={`${spec.variant}-${i}`} spec={spec} />),
+    [cards],
+  );
   const showComparison = outcome !== 'correct';
 
   return (
     <View
-      style={styles.container}
+      style={[styles.container, !scrollEnabled && styles.staticContainer]}
       accessibilityLabel={`${tone.label} ${vocab.word}, 정답 ${correctAnswer}`}
     >
       <View
@@ -85,15 +91,17 @@ export function WrongAnswerInsightSheet({
       </View>
 
       {cards.length > 0 && (
-        <ScrollView
-          style={styles.scroll}
-          contentContainerStyle={styles.scrollContent}
-          showsVerticalScrollIndicator={false}
-        >
-          {cards.map((spec, i) => (
-            <InsightCard key={`${spec.variant}-${i}`} spec={spec} />
-          ))}
-        </ScrollView>
+        scrollEnabled ? (
+          <ScrollView
+            style={styles.scroll}
+            contentContainerStyle={styles.scrollContent}
+            showsVerticalScrollIndicator={false}
+          >
+            {cardNodes}
+          </ScrollView>
+        ) : (
+          <View style={styles.staticContent}>{cardNodes}</View>
+        )
       )}
     </View>
   );
@@ -104,6 +112,11 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     gap: Spacing.md,
+  },
+  staticContainer: {
+    flex: 0,
+    flexGrow: 0,
+    flexShrink: 0,
   },
   header: {
     flexDirection: 'row',
@@ -175,5 +188,9 @@ const styles = StyleSheet.create({
   scrollContent: {
     gap: Spacing.md,
     paddingBottom: Spacing.xxl,
+  },
+  staticContent: {
+    gap: Spacing.md,
+    paddingBottom: Spacing.lg,
   },
 });

@@ -12,10 +12,39 @@ export const DEVELOPMENT_ENV = {
   EXPO_PUBLIC_ENABLE_ADS: 'true',
 };
 
+export const EXPECTED_CHANNELS = {
+  development: undefined,
+  preview: 'preview',
+  production: 'production',
+};
+
+export const EXPECTED_RUNTIME_VERSION_POLICY = 'fingerprint';
+export const EXPECTED_UPDATES_HOST = 'u.expo.dev';
+
 function pushIssue(issues, condition, message) {
   if (!condition) {
     issues.push(message);
   }
+}
+
+export function readJwtRole(rawKey) {
+  if (typeof rawKey !== 'string') return null;
+  const [, payload] = rawKey.split('.');
+  if (!payload) return null;
+
+  try {
+    const normalized = payload.replace(/-/g, '+').replace(/_/g, '/');
+    const padded = normalized.padEnd(Math.ceil(normalized.length / 4) * 4, '=');
+    const decoded = Buffer.from(padded, 'base64').toString('utf8');
+    const parsed = JSON.parse(decoded);
+    return typeof parsed?.role === 'string' ? parsed.role : null;
+  } catch {
+    return null;
+  }
+}
+
+export function isSupabaseAnonKey(rawKey) {
+  return readJwtRole(rawKey) === 'anon';
 }
 
 export function validateResolvedExpoConfig(exp) {
@@ -44,6 +73,11 @@ export function validateResolvedExpoConfig(exp) {
   );
   pushIssue(
     issues,
+    typeof infoPlist.NSUserTrackingUsageDescription === 'undefined',
+    'Release config must omit NSUserTrackingUsageDescription because tracking is disabled.',
+  );
+  pushIssue(
+    issues,
     typeof exp?.extra?.supabaseUrl === 'string' && exp.extra.supabaseUrl.trim().length > 0,
     'Release config must include a Supabase URL when auth is enabled.',
   );
@@ -52,6 +86,36 @@ export function validateResolvedExpoConfig(exp) {
     typeof exp?.extra?.supabaseAnonKey === 'string' && exp.extra.supabaseAnonKey.trim().length > 0,
     'Release config must include a Supabase anon key when auth is enabled.',
   );
+  pushIssue(
+    issues,
+    isSupabaseAnonKey(exp?.extra?.supabaseAnonKey),
+    'Release config Supabase key must be an anon JWT, never service_role.',
+  );
+
+  const projectId = exp?.extra?.eas?.projectId;
+  pushIssue(
+    issues,
+    typeof projectId === 'string' && projectId.trim().length > 0,
+    'Release config must define extra.eas.projectId for EAS Update.',
+  );
+  pushIssue(
+    issues,
+    exp?.runtimeVersion?.policy === EXPECTED_RUNTIME_VERSION_POLICY,
+    `Release config runtimeVersion.policy must be "${EXPECTED_RUNTIME_VERSION_POLICY}".`,
+  );
+  const updatesUrl = exp?.updates?.url;
+  pushIssue(
+    issues,
+    typeof updatesUrl === 'string' && updatesUrl.startsWith(`https://${EXPECTED_UPDATES_HOST}/`),
+    `Release config updates.url must be hosted on ${EXPECTED_UPDATES_HOST}.`,
+  );
+  if (typeof updatesUrl === 'string' && typeof projectId === 'string') {
+    pushIssue(
+      issues,
+      updatesUrl === `https://${EXPECTED_UPDATES_HOST}/${projectId}`,
+      'Release config updates.url must point to the same EAS project as extra.eas.projectId.',
+    );
+  }
 
   return issues;
 }
@@ -72,6 +136,16 @@ export function validateBuildProfileEnvs(easConfig) {
       if (actualEnv?.[key] !== expectedValue) {
         issues.push(`build.${profileName}.env.${key} must be "${expectedValue}".`);
       }
+    }
+
+    const expectedChannel = EXPECTED_CHANNELS[profileName];
+    const actualChannel = build?.[profileName]?.channel;
+    if (expectedChannel === undefined) {
+      if (typeof actualChannel === 'string') {
+        issues.push(`build.${profileName} must not declare an EAS Update channel.`);
+      }
+    } else if (actualChannel !== expectedChannel) {
+      issues.push(`build.${profileName}.channel must be "${expectedChannel}".`);
     }
   }
 

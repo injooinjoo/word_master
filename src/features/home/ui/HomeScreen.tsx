@@ -8,8 +8,13 @@ import {
   View,
 } from 'react-native';
 import type { QuizService, TrackedQuizType } from '../../../services/quizService';
-import { QUIZ_TYPE_LABELS } from '../../../services/quizService';
+import { QUIZ_TYPE_LABELS, TRACKED_QUIZ_TYPES } from '../../../services/quizService';
 import type { CharacterProfile } from '../../../shared/models/characterProfile';
+import { GradeTable } from '../../../shared/constants/gradeTable';
+import {
+  estimateLearningRankLabel,
+  resolveLearningPositionLabel,
+} from '../../../shared/models/learningPosition';
 import {
   Colors,
   QuizTypeColors,
@@ -19,8 +24,9 @@ import {
   withAlpha,
 } from '../../../shared/constants/theme';
 import { useResponsiveTypography } from '../../../shared/ui';
+import { CharacterAvatar } from '../../profile/components/CharacterAvatar';
 
-const TRACK_ORDER: TrackedQuizType[] = ['e2k', 'k2e', 'e2e', 'syn'];
+const TRACK_ORDER = [...TRACKED_QUIZ_TYPES];
 
 const TYPE_DESCRIPTIONS: Record<TrackedQuizType, string> = {
   e2k: 'English → 한국어',
@@ -42,6 +48,7 @@ interface HomeScreenProps {
 }
 
 export function HomeScreen({
+  characterProfile,
   quizService,
   viewerLabel,
   storageLabel,
@@ -52,9 +59,11 @@ export function HomeScreen({
   onSignInRequest,
 }: HomeScreenProps): React.ReactElement {
   const styles = useHomeStyles();
-  const dashboard = quizService.learningDashboard;
   const summary = quizService.resultSummary;
   const compositeRating = Math.round(quizService.compositeRating);
+  const tierLabel = GradeTable.gradeLabel(compositeRating);
+  const positionLabel = resolveLearningPositionLabel(compositeRating);
+  const rankLabel = estimateLearningRankLabel(compositeRating);
 
   const trackRows = useMemo(
     () =>
@@ -83,23 +92,21 @@ export function HomeScreen({
   const accuracyPercent =
     totalAttempts > 0 ? Math.round((totalCorrect / totalAttempts) * 100) : 0;
 
-  // Spread to first grapheme so emoji/surrogate-pair starts don't render \uD83C orphans.
-  const avatarLetter = ([...viewerLabel.trim()][0] ?? '나').toUpperCase();
   // CharacterProfile has no display-name field; viewerLabel doubles as the
   // friendly handle (email local-part for signed-in users, "내 캐릭터" otherwise).
-  const greetingName = viewerLabel.trim() || '학습자';
 
   const heroStats: { value: string; label: string }[] = [
-    { value: totalAttempts.toLocaleString(), label: '학습한 단어' },
-    { value: `${accuracyPercent}%`, label: '전체 정답률' },
-    { value: `${dashboard.dueReviewCount}`, label: '복습 대기' },
+    { value: rankLabel, label: '점수 기반 위치' },
+    { value: tierLabel, label: '티어' },
+    { value: compositeRating.toLocaleString(), label: '전체 점수' },
   ];
 
   const heroAccessibilityLabel =
-    `전체 등급 ${compositeRating}, ` +
-    `학습한 단어 ${totalAttempts.toLocaleString()}개, ` +
-    `전체 정답률 ${accuracyPercent}퍼센트, ` +
-    `복습 대기 ${dashboard.dueReviewCount}개`;
+    `현재 위치 ${positionLabel}, ` +
+    `점수 기반 위치 ${rankLabel}, ` +
+    `티어 ${tierLabel}, ` +
+    `전체 점수 ${compositeRating.toLocaleString()}점, ` +
+    `정답률 ${accuracyPercent}퍼센트`;
 
   const showSignInPrompt = authEnabled && isGuestSession && onSignInRequest != null;
 
@@ -110,15 +117,16 @@ export function HomeScreen({
         contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
-        {/* Hero — 내 등급 카드 */}
-        <View style={styles.hero} accessible accessibilityLabel={heroAccessibilityLabel}>
+        {/* Hero — 현재 학습 위치 카드 */}
+        <View style={styles.hero}>
           <View style={styles.heroRingLarge} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" />
           <View style={styles.heroRingSmall} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" />
 
           <View style={styles.heroTopRow}>
             <View style={styles.heroTopLeft}>
-              <Text style={styles.heroEyebrow}>WORDMASTER</Text>
-              <Text style={styles.heroGreeting}>{`안녕하세요, ${greetingName} 👋`}</Text>
+              <Text style={styles.heroEyebrow}>LEARNING POSITION</Text>
+              <Text style={styles.heroGreeting}>현재 학습 위치</Text>
+              <Text style={styles.heroViewerLabel}>{viewerLabel.trim() || '내 캐릭터'}</Text>
             </View>
             <TouchableOpacity
               style={styles.heroAvatarButton}
@@ -128,18 +136,18 @@ export function HomeScreen({
               hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
               activeOpacity={0.85}
             >
-              <Text style={styles.heroAvatarText}>{avatarLetter}</Text>
+              <CharacterAvatar profile={characterProfile} size={38} />
             </TouchableOpacity>
           </View>
 
-          <View style={styles.heroRatingRow}>
-            <View>
-              <Text style={styles.heroRatingEyebrow}>전체 등급</Text>
-              <Text style={styles.heroRatingValue}>{compositeRating.toLocaleString()}</Text>
+          <View style={styles.heroRatingRow} accessible accessibilityLabel={heroAccessibilityLabel}>
+            <View style={styles.heroRatingCopy}>
+              <Text style={styles.heroRatingEyebrow}>현재 위치 · 정답률 {accuracyPercent}%</Text>
+              <Text style={styles.heroRatingValue}>{positionLabel}</Text>
             </View>
             <View style={styles.heroDeltaPill}>
               <Text style={styles.heroDeltaText}>
-                {summary.compositeRating >= 1000 ? '안정 구간' : '성장 중'}
+                {`티어 ${tierLabel}`}
               </Text>
             </View>
           </View>
@@ -302,26 +310,37 @@ function useHomeStyles() {
           fontWeight: Typography.weightExtraBold,
           marginTop: 2,
         },
+        heroViewerLabel: {
+          color: withAlpha(Colors.white, 'CC'),
+          fontSize: typography.sizes.size13,
+          fontWeight: Typography.weightMedium,
+          marginTop: Spacing.xs,
+        },
         heroAvatarButton: {
-          width: 44,
-          height: 44,
-          borderRadius: 22,
-          backgroundColor: withAlpha(Colors.white, '2E'),
+          width: 48,
+          height: 48,
+          borderRadius: 24,
+          backgroundColor: withAlpha(Colors.white, 'F2'),
           borderWidth: 1,
-          borderColor: withAlpha(Colors.white, '33'),
+          borderColor: withAlpha(Colors.white, 'B8'),
           alignItems: 'center',
           justifyContent: 'center',
-        },
-        heroAvatarText: {
-          color: Colors.white,
-          fontSize: typography.sizes.size15,
-          fontWeight: Typography.weightBold,
+          shadowColor: Colors.shadow,
+          shadowOffset: { width: 0, height: 3 },
+          shadowOpacity: 0.14,
+          shadowRadius: 6,
+          elevation: 3,
         },
         heroRatingRow: {
           marginTop: Spacing.xxl,
           flexDirection: 'row',
           alignItems: 'flex-end',
+          flexWrap: 'wrap',
           gap: Spacing.md,
+        },
+        heroRatingCopy: {
+          flex: 1,
+          minWidth: 180,
         },
         // 전체 등급 — Korean label, no positive letter-spacing
         heroRatingEyebrow: {
@@ -345,6 +364,7 @@ function useHomeStyles() {
           borderWidth: 1,
           borderColor: withAlpha(Colors.white, '40'),
           marginBottom: 6,
+          flexShrink: 0,
         },
         heroDeltaText: {
           color: Colors.white,

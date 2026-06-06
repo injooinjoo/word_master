@@ -1,3 +1,5 @@
+import { Colors } from '../constants/theme';
+
 export const CHARACTER_TEXT_LIMIT = 20;
 
 export const HAIR_STYLE_VALUES = ['short', 'bob', 'tuft'] as const;
@@ -37,10 +39,10 @@ export const CHARACTER_HAIR_STYLE_OPTIONS: CharacterOption<HairStyleId>[] = [
 ];
 
 export const CHARACTER_HAIR_COLOR_OPTIONS: CharacterOption<HairColorId>[] = [
-  { value: 'teal', label: '틸', swatch: '#138D90' },
-  { value: 'amber', label: '앰버', swatch: '#D68A18' },
-  { value: 'charcoal', label: '차콜', swatch: '#34424F' },
-  { value: 'rose', label: '로즈', swatch: '#D26A79' },
+  { value: 'teal', label: '틸', swatch: Colors.correctDark },
+  { value: 'amber', label: '앰버', swatch: Colors.warningDark },
+  { value: 'charcoal', label: '차콜', swatch: Colors.textSecondary },
+  { value: 'rose', label: '로즈', swatch: Colors.wrongDark },
 ];
 
 export const CHARACTER_EXPRESSION_OPTIONS: CharacterOption<ExpressionId>[] = [
@@ -50,10 +52,10 @@ export const CHARACTER_EXPRESSION_OPTIONS: CharacterOption<ExpressionId>[] = [
 ];
 
 export const CHARACTER_OUTFIT_COLOR_OPTIONS: CharacterOption<OutfitColorId>[] = [
-  { value: 'mint', label: '민트', swatch: '#7ECFB4' },
-  { value: 'sky', label: '스카이', swatch: '#5CA8EB' },
-  { value: 'gold', label: '골드', swatch: '#E0A11C' },
-  { value: 'coral', label: '코랄', swatch: '#E57C63' },
+  { value: 'mint', label: '민트', swatch: Colors.correct },
+  { value: 'sky', label: '스카이', swatch: Colors.primary },
+  { value: 'gold', label: '골드', swatch: Colors.warning },
+  { value: 'coral', label: '코랄', swatch: Colors.wrong },
 ];
 
 const DEFAULT_PROFILE: CharacterProfile = {

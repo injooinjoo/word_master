@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { Colors, withAlpha } from '../../../shared/constants/theme';
+import { StyleSheet, Text, View } from 'react-native';
+import { Colors, Typography, withAlpha } from '../../../shared/constants/theme';
 import type { CharacterProfile, ExpressionId, HairColorId, OutfitColorId } from '../../../shared/models/characterProfile';
 
 interface CharacterAvatarProps {
@@ -9,112 +9,322 @@ interface CharacterAvatarProps {
 }
 
 const HAIR_COLORS: Record<HairColorId, string> = {
-  teal: '#138D90',
-  amber: '#D68A18',
-  charcoal: '#34424F',
-  rose: '#D26A79',
+  teal: Colors.correctDark,
+  amber: Colors.warningDark,
+  charcoal: Colors.textSecondary,
+  rose: Colors.wrongDark,
 };
 
 const OUTFIT_COLORS: Record<OutfitColorId, string> = {
-  mint: '#7ECFB4',
-  sky: '#5CA8EB',
-  gold: '#E0A11C',
-  coral: '#E57C63',
+  mint: Colors.correct,
+  sky: Colors.primary,
+  gold: Colors.warning,
+  coral: Colors.wrong,
 };
 
-function Eye({ closed = false }: { closed?: boolean }) {
-  return <View style={[styles.eye, closed && styles.eyeClosed]} />;
+const px = (size: number, ratio: number) => Math.round(size * ratio);
+
+function Eye({ closed = false, size }: { closed?: boolean; size: number }) {
+  if (closed) {
+    return (
+      <View
+        style={[
+          styles.eyeClosed,
+          {
+            width: px(size, 0.11),
+            height: Math.max(2, px(size, 0.018)),
+            borderRadius: px(size, 0.02),
+            marginTop: px(size, 0.025),
+          },
+        ]}
+      />
+    );
+  }
+
+  return (
+    <View
+      style={[
+        styles.eye,
+        {
+          width: px(size, 0.09),
+          height: px(size, 0.105),
+          borderRadius: px(size, 0.045),
+        },
+      ]}
+    >
+      <View
+        style={[
+          styles.eyeHighlight,
+          {
+            width: Math.max(2, px(size, 0.025)),
+            height: Math.max(2, px(size, 0.025)),
+            borderRadius: px(size, 0.02),
+            top: px(size, 0.018),
+            left: px(size, 0.018),
+          },
+        ]}
+      />
+    </View>
+  );
 }
 
-function Mouth({ expression }: { expression: ExpressionId }) {
+function Mouth({ expression, size }: { expression: ExpressionId; size: number }) {
   if (expression === 'calm') {
-    return <View style={styles.calmMouth} />;
+    return (
+      <View
+        style={[
+          styles.calmMouth,
+          {
+            width: px(size, 0.18),
+            height: Math.max(2, px(size, 0.022)),
+            borderRadius: px(size, 0.02),
+            marginTop: px(size, 0.02),
+          },
+        ]}
+      />
+    );
   }
 
   return (
     <View
       style={[
         styles.mouth,
-        expression === 'wink' && styles.winkMouth,
+        {
+          width: px(size, expression === 'wink' ? 0.24 : 0.2),
+          height: px(size, 0.11),
+          borderBottomWidth: Math.max(2, px(size, 0.026)),
+          borderRadius: px(size, 0.08),
+          marginTop: px(size, 0.004),
+        },
       ]}
     />
   );
 }
 
 export function CharacterAvatar({ profile, size = 132 }: CharacterAvatarProps) {
-  const headSize = Math.round(size * 0.48);
-  const outfitWidth = Math.round(size * 0.56);
-  const outfitHeight = Math.round(size * 0.34);
   const hairColor = HAIR_COLORS[profile.avatar.hairColor];
   const outfitColor = OUTFIT_COLORS[profile.avatar.outfitColor];
+  const headSize = px(size, 0.56);
+  const faceTop = px(size, 0.18);
+  const bodyWidth = px(size, 0.66);
+  const bodyHeight = px(size, 0.36);
+  const earSize = px(size, 0.13);
+  const isCompact = size < 64;
 
   return (
-    <View style={[styles.frame, { width: size, height: size }]}>
+    <View
+      style={[styles.frame, { width: size, height: size, borderRadius: px(size, 0.28) }]}
+      pointerEvents="none"
+      accessibilityElementsHidden
+      importantForAccessibility="no-hide-descendants"
+    >
+      <View
+        style={[
+          styles.backplate,
+          {
+            inset: px(size, 0.035),
+            borderRadius: px(size, 0.28),
+          },
+        ]}
+      />
+      <View
+        style={[
+          styles.orbitLarge,
+          {
+            width: px(size, 0.72),
+            height: px(size, 0.72),
+            borderRadius: px(size, 0.36),
+            top: px(size, 0.02),
+            left: px(size, 0.08),
+          },
+        ]}
+      />
+      <View
+        style={[
+          styles.orbitSmall,
+          {
+            width: px(size, 0.42),
+            height: px(size, 0.42),
+            borderRadius: px(size, 0.21),
+            right: px(size, 0.05),
+            top: px(size, 0.12),
+          },
+        ]}
+      />
       <View
         style={[
           styles.shadow,
           {
-            width: size * 0.62,
-            height: size * 0.12,
-            borderRadius: size * 0.06,
-            bottom: size * 0.08,
+            width: px(size, 0.62),
+            height: px(size, 0.11),
+            borderRadius: px(size, 0.08),
+            bottom: px(size, 0.065),
           },
         ]}
       />
+
       <View
         style={[
-          styles.glow,
+          styles.leftArm,
           {
-            width: size,
-            height: size,
-            borderRadius: size / 2,
-          },
-        ]}
-      />
-      <View
-        style={[
-          styles.outfit,
-          {
-            width: outfitWidth,
-            height: outfitHeight,
-            borderRadius: outfitHeight * 0.46,
+            width: px(size, 0.2),
+            height: px(size, 0.1),
+            borderRadius: px(size, 0.06),
+            left: px(size, 0.13),
+            bottom: px(size, 0.23),
             backgroundColor: outfitColor,
-            bottom: size * 0.14,
           },
         ]}
       />
+      <View
+        style={[
+          styles.rightArm,
+          {
+            width: px(size, 0.2),
+            height: px(size, 0.1),
+            borderRadius: px(size, 0.06),
+            right: px(size, 0.13),
+            bottom: px(size, 0.23),
+            backgroundColor: outfitColor,
+          },
+        ]}
+      />
+
+      <View
+        style={[
+          styles.body,
+          {
+            width: bodyWidth,
+            height: bodyHeight,
+            borderRadius: px(size, 0.18),
+            bottom: px(size, 0.095),
+            backgroundColor: outfitColor,
+          },
+        ]}
+      >
+        <View
+          style={[
+            styles.bodyHighlight,
+            {
+              width: px(size, 0.3),
+              height: px(size, 0.1),
+              borderRadius: px(size, 0.06),
+              top: px(size, 0.055),
+              left: px(size, 0.08),
+            },
+          ]}
+        />
+        {!isCompact ? (
+          <View
+            style={[
+              styles.studyBook,
+              {
+                width: px(size, 0.3),
+                height: px(size, 0.13),
+                borderRadius: px(size, 0.035),
+                bottom: px(size, 0.035),
+              },
+            ]}
+          >
+            <View style={styles.bookDivider} />
+          </View>
+        ) : null}
+        <View
+          style={[
+            styles.collar,
+            {
+              width: px(size, 0.2),
+              height: px(size, 0.075),
+              borderBottomLeftRadius: px(size, 0.05),
+              borderBottomRightRadius: px(size, 0.05),
+            },
+          ]}
+        />
+      </View>
+
+      <View
+        style={[
+          styles.neck,
+          {
+            width: px(size, 0.18),
+            height: px(size, 0.16),
+            borderRadius: px(size, 0.06),
+            top: px(size, 0.5),
+          },
+        ]}
+      />
+
+      <View
+        style={[
+          styles.ear,
+          {
+            width: earSize,
+            height: earSize,
+            borderRadius: earSize / 2,
+            top: faceTop + px(size, 0.19),
+            left: px(size, 0.185),
+          },
+        ]}
+      />
+      <View
+        style={[
+          styles.ear,
+          {
+            width: earSize,
+            height: earSize,
+            borderRadius: earSize / 2,
+            top: faceTop + px(size, 0.19),
+            right: px(size, 0.185),
+          },
+        ]}
+      />
+
       <View
         style={[
           styles.head,
           {
             width: headSize,
             height: headSize,
-            borderRadius: headSize / 2,
-            top: size * 0.14,
+            borderRadius: px(size, 0.24),
+            top: faceTop,
           },
         ]}
       >
         <View
           style={[
-            styles.hairCap,
+            styles.hairBase,
             {
               backgroundColor: hairColor,
-              height: headSize * 0.42,
+              height: px(size, 0.22),
+              borderBottomLeftRadius: px(size, profile.avatar.hairStyle === 'bob' ? 0.12 : 0.16),
+              borderBottomRightRadius: px(size, profile.avatar.hairStyle === 'short' ? 0.08 : 0.15),
             },
-            profile.avatar.hairStyle === 'bob' && styles.hairCapBob,
-            profile.avatar.hairStyle === 'tuft' && styles.hairCapTuft,
           ]}
         />
-        {profile.avatar.hairStyle === 'bob' && (
+        <View
+          style={[
+            styles.hairShine,
+            {
+              width: px(size, 0.24),
+              height: px(size, 0.04),
+              borderRadius: px(size, 0.03),
+              top: px(size, 0.055),
+              left: px(size, 0.18),
+            },
+          ]}
+        />
+        {profile.avatar.hairStyle === 'bob' ? (
           <>
             <View
               style={[
                 styles.sideLock,
                 {
                   backgroundColor: hairColor,
-                  left: headSize * 0.04,
-                  height: headSize * 0.34,
-                  top: headSize * 0.18,
+                  width: px(size, 0.12),
+                  height: px(size, 0.28),
+                  borderRadius: px(size, 0.07),
+                  left: px(size, -0.005),
+                  top: px(size, 0.13),
                 },
               ]}
             />
@@ -123,51 +333,88 @@ export function CharacterAvatar({ profile, size = 132 }: CharacterAvatarProps) {
                 styles.sideLock,
                 {
                   backgroundColor: hairColor,
-                  right: headSize * 0.04,
-                  height: headSize * 0.34,
-                  top: headSize * 0.18,
+                  width: px(size, 0.12),
+                  height: px(size, 0.28),
+                  borderRadius: px(size, 0.07),
+                  right: px(size, -0.005),
+                  top: px(size, 0.13),
                 },
               ]}
             />
           </>
-        )}
-        {profile.avatar.hairStyle === 'tuft' && (
-          <View
-            style={[
-              styles.tuft,
-              {
-                backgroundColor: hairColor,
-                width: headSize * 0.18,
-                height: headSize * 0.32,
-                left: headSize * 0.54,
-                top: headSize * -0.02,
-                borderRadius: headSize * 0.12,
-              },
-            ]}
-          />
-        )}
-        <View style={[styles.face, { paddingTop: headSize * 0.42 }]}>
-          <View style={styles.eyesRow}>
-            <Eye closed={profile.avatar.expression === 'calm'} />
-            <Eye closed={profile.avatar.expression === 'wink'} />
+        ) : null}
+        {profile.avatar.hairStyle === 'tuft' ? (
+          <>
+            <View
+              style={[
+                styles.tuft,
+                {
+                  backgroundColor: hairColor,
+                  width: px(size, 0.16),
+                  height: px(size, 0.29),
+                  borderRadius: px(size, 0.08),
+                  left: px(size, 0.34),
+                  top: px(size, -0.02),
+                },
+              ]}
+            />
+            <View
+              style={[
+                styles.tuftSecondary,
+                {
+                  backgroundColor: hairColor,
+                  width: px(size, 0.11),
+                  height: px(size, 0.2),
+                  borderRadius: px(size, 0.07),
+                  left: px(size, 0.43),
+                  top: px(size, 0.015),
+                },
+              ]}
+            />
+          </>
+        ) : null}
+
+        <View style={[styles.face, { paddingTop: px(size, 0.255) }]}>
+          <View style={[styles.eyesRow, { gap: px(size, 0.115), marginBottom: px(size, 0.035) }]}>
+            <Eye closed={profile.avatar.expression === 'calm'} size={size} />
+            <Eye closed={profile.avatar.expression === 'wink'} size={size} />
           </View>
-          <Mouth expression={profile.avatar.expression} />
+          <View style={styles.cheekRow}>
+            <View style={[styles.cheek, { width: px(size, 0.08), height: px(size, 0.035), borderRadius: px(size, 0.03) }]} />
+            <View style={[styles.cheek, { width: px(size, 0.08), height: px(size, 0.035), borderRadius: px(size, 0.03) }]} />
+          </View>
+          <Mouth expression={profile.avatar.expression} size={size} />
         </View>
       </View>
-      <View
-        style={[
-          styles.badge,
-          {
-            width: size * 0.18,
-            height: size * 0.18,
-            borderRadius: size * 0.09,
-            top: size * 0.08,
-            right: size * 0.06,
-            backgroundColor: withAlpha(outfitColor, '30'),
-            borderColor: withAlpha(outfitColor, '60'),
-          },
-        ]}
-      />
+
+      {!isCompact ? (
+        <View
+          style={[
+            styles.badge,
+            {
+              width: px(size, 0.22),
+              height: px(size, 0.22),
+              borderRadius: px(size, 0.11),
+              top: px(size, 0.085),
+              right: px(size, 0.04),
+              backgroundColor: Colors.warningLight,
+              borderColor: withAlpha(outfitColor, '70'),
+            },
+          ]}
+        >
+          <Text
+            style={[
+              styles.badgeStar,
+              {
+                fontSize: px(size, 0.105),
+                lineHeight: px(size, 0.14),
+              },
+            ]}
+          >
+            ★
+          </Text>
+        </View>
+      ) : null}
     </View>
   );
 }
@@ -176,51 +423,111 @@ const styles = StyleSheet.create({
   frame: {
     justifyContent: 'center',
     alignItems: 'center',
+    overflow: 'hidden',
   },
-  glow: {
+  backplate: {
     position: 'absolute',
-    backgroundColor: withAlpha(Colors.primary, '14'),
+    backgroundColor: Colors.surface,
+    borderWidth: 1,
+    borderColor: Colors.primaryBorder,
+  },
+  orbitLarge: {
+    position: 'absolute',
+    backgroundColor: withAlpha(Colors.primary, '12'),
+  },
+  orbitSmall: {
+    position: 'absolute',
+    borderWidth: 1,
+    borderColor: withAlpha(Colors.primary, '20'),
+    backgroundColor: withAlpha(Colors.white, '70'),
   },
   shadow: {
     position: 'absolute',
-    backgroundColor: withAlpha(Colors.shadow, '16'),
+    backgroundColor: withAlpha(Colors.shadow, '18'),
   },
-  outfit: {
+  body: {
+    position: 'absolute',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: withAlpha(Colors.shadow, '14'),
+    overflow: 'hidden',
+  },
+  bodyHighlight: {
+    position: 'absolute',
+    backgroundColor: withAlpha(Colors.white, '30'),
+  },
+  leftArm: {
     position: 'absolute',
     borderWidth: 1,
     borderColor: withAlpha(Colors.shadow, '12'),
+    transform: [{ rotate: '20deg' }],
+  },
+  rightArm: {
+    position: 'absolute',
+    borderWidth: 1,
+    borderColor: withAlpha(Colors.shadow, '12'),
+    transform: [{ rotate: '-20deg' }],
+  },
+  studyBook: {
+    position: 'absolute',
+    backgroundColor: Colors.white,
+    borderWidth: 1,
+    borderColor: withAlpha(Colors.shadow, '14'),
+    alignItems: 'center',
+  },
+  bookDivider: {
+    width: 1,
+    height: '100%',
+    backgroundColor: Colors.borderLight,
+  },
+  collar: {
+    position: 'absolute',
+    top: 0,
+    backgroundColor: Colors.white,
+    borderWidth: 1,
+    borderTopWidth: 0,
+    borderColor: withAlpha(Colors.shadow, '10'),
+  },
+  neck: {
+    position: 'absolute',
+    backgroundColor: Colors.warningLight,
+    borderWidth: 1,
+    borderColor: withAlpha(Colors.warning, '18'),
+  },
+  ear: {
+    position: 'absolute',
+    backgroundColor: Colors.warningLight,
+    borderWidth: 1,
+    borderColor: withAlpha(Colors.warning, '18'),
   },
   head: {
     position: 'absolute',
     overflow: 'hidden',
-    backgroundColor: '#F7D7BE',
+    backgroundColor: Colors.warningLight,
     borderWidth: 1,
-    borderColor: withAlpha(Colors.shadow, '12'),
+    borderColor: withAlpha(Colors.warning, '24'),
   },
-  hairCap: {
+  hairBase: {
     position: 'absolute',
     left: 0,
     right: 0,
     top: 0,
-    borderBottomLeftRadius: 26,
-    borderBottomRightRadius: 18,
   },
-  hairCapBob: {
-    borderBottomLeftRadius: 30,
-    borderBottomRightRadius: 30,
-  },
-  hairCapTuft: {
-    borderBottomRightRadius: 8,
+  hairShine: {
+    position: 'absolute',
+    backgroundColor: withAlpha(Colors.white, '26'),
+    transform: [{ rotate: '-12deg' }],
   },
   sideLock: {
     position: 'absolute',
-    width: 14,
-    borderBottomLeftRadius: 12,
-    borderBottomRightRadius: 12,
   },
   tuft: {
     position: 'absolute',
     transform: [{ rotate: '-18deg' }],
+  },
+  tuftSecondary: {
+    position: 'absolute',
+    transform: [{ rotate: '18deg' }],
   },
   face: {
     flex: 1,
@@ -228,38 +535,48 @@ const styles = StyleSheet.create({
   },
   eyesRow: {
     flexDirection: 'row',
-    gap: 14,
-    marginBottom: 12,
+    alignItems: 'center',
   },
   eye: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
     backgroundColor: Colors.textPrimary,
   },
+  eyeHighlight: {
+    position: 'absolute',
+    backgroundColor: Colors.white,
+  },
   eyeClosed: {
-    height: 3,
-    borderRadius: 999,
-    marginTop: 4,
+    backgroundColor: Colors.textPrimary,
+  },
+  cheekRow: {
+    position: 'absolute',
+    top: '53%',
+    left: '20%',
+    right: '20%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  cheek: {
+    backgroundColor: withAlpha(Colors.wrong, '22'),
   },
   mouth: {
-    width: 24,
-    height: 12,
-    borderBottomWidth: 3,
     borderBottomColor: Colors.textPrimary,
-    borderRadius: 12,
-  },
-  winkMouth: {
-    width: 28,
   },
   calmMouth: {
-    width: 22,
-    height: 3,
-    borderRadius: 999,
     backgroundColor: Colors.textPrimary,
   },
   badge: {
     position: 'absolute',
     borderWidth: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: Colors.shadow,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  badgeStar: {
+    color: Colors.warning,
+    fontWeight: Typography.weightExtraBold,
   },
 });

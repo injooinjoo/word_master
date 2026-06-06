@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import {
+  AccessibilityInfo,
   View,
   Text,
   StyleSheet,
@@ -7,6 +8,7 @@ import {
   TouchableOpacity,
   Vibration,
   SafeAreaView,
+  ScrollView,
   Animated,
   useWindowDimensions,
 } from 'react-native';
@@ -602,6 +604,14 @@ export function QuizScreen({
     return () => win.removeEventListener('keydown', onKeyDown);
   }, [current, onChoiceSelected, onAdvance, onReplayWord]);
 
+  useEffect(() => {
+    if (!answered || current == null) return;
+    const outcomeLabel = timedOut ? '시간 초과' : isCorrect ? '정답' : '오답';
+    AccessibilityInfo.announceForAccessibility(
+      `${outcomeLabel}. 정답은 ${current.correctAnswer}입니다. 해설을 확인한 뒤 다음 버튼을 누르세요.`,
+    );
+  }, [answered, current, isCorrect, timedOut]);
+
   const onPause = useCallback(() => {
     void audioService.stop();
     setTimerRunning(false);
@@ -716,15 +726,8 @@ export function QuizScreen({
   const promptBaseFontSize = promptIsLong ? layout.longPromptFontSize : layout.wordFontSize;
   const promptFontSize = typography.fontSize(promptBaseFontSize);
 
-  return (
-    <SafeAreaView style={styles.safe}>
-      <View style={styles.glowTop} />
-      <View style={styles.glowBottom} />
-      <ResponsiveContainer
-        maxWidth={stageMaxWidth}
-        style={windowHeight > stageMaxHeight ? styles.cappedStage : undefined}
-      >
-        <View style={styles.stage}>
+  const stageContent = (
+    <>
           <ScreenCard
             tone="tint"
             padded={false}
@@ -872,11 +875,12 @@ export function QuizScreen({
             </View>
           </ScreenCard>
 
-          <ScreenCard padded={false} style={styles.wordCard}>
+          <ScreenCard padded={false} style={[styles.wordCard, answered && styles.answeredWordCard]}>
             {answered ? (
               <Animated.View
                 style={[
                   styles.insightSection,
+                  answered && styles.answeredInsightSection,
                   { paddingHorizontal: layout.horizontalPadding, opacity: feedbackOpacity },
                 ]}
               >
@@ -885,6 +889,7 @@ export function QuizScreen({
                   outcome={(timedOut ? 'timeout' : isCorrect ? 'correct' : 'wrong') as AnsweredOutcome}
                   selectedChoice={selectedChoice}
                   correctAnswer={q.correctAnswer}
+                  scrollEnabled={false}
                 />
               </Animated.View>
             ) : (
@@ -943,7 +948,7 @@ export function QuizScreen({
               style={[
                 styles.choicesSection,
                 {
-                  height: choiceSectionHeight,
+                  ...(answered ? { minHeight: choiceSectionHeight } : { height: choiceSectionHeight }),
                   paddingHorizontal: layout.horizontalPadding,
                   paddingTop: layout.topPadding,
                   paddingBottom: layout.bottomPadding,
@@ -965,7 +970,7 @@ export function QuizScreen({
                           disabled={answered}
                           style={{
                             width: layout.cellWidth,
-                            height: choiceCardHeight,
+                            ...(answered ? { minHeight: choiceCardHeight } : { height: choiceCardHeight }),
                             borderRadius: layout.cardRadius,
                             paddingVertical: choiceCardPaddingVertical,
                             paddingHorizontal: layout.cardPaddingHorizontal,
@@ -979,7 +984,7 @@ export function QuizScreen({
                       );
                     })}
                     {row.length < 2 ? (
-                      <View style={{ width: layout.cellWidth, height: choiceCardHeight }} />
+                      <View style={{ width: layout.cellWidth, minHeight: choiceCardHeight }} />
                     ) : null}
                   </View>
                 ))}
@@ -988,7 +993,26 @@ export function QuizScreen({
           </ScreenCard>
 
           {answered && <NextButton onPress={onAdvance} />}
-        </View>
+    </>
+  );
+
+  return (
+    <SafeAreaView style={styles.safe}>
+      <View style={styles.glowTop} />
+      <View style={styles.glowBottom} />
+      <ResponsiveContainer
+        maxWidth={stageMaxWidth}
+        style={windowHeight > stageMaxHeight ? styles.cappedStage : undefined}
+      >
+        <ScrollView
+          style={styles.stageScroll}
+          contentContainerStyle={[styles.stageScrollContent, !answered && styles.stageScrollContentLocked]}
+          scrollEnabled={answered}
+          showsVerticalScrollIndicator={answered}
+          keyboardShouldPersistTaps="handled"
+        >
+          {stageContent}
+        </ScrollView>
       </ResponsiveContainer>
     </SafeAreaView>
   );
@@ -1023,11 +1047,17 @@ function useQuizStyles() {
   cappedStage: {
     maxHeight: 940,
   },
-  stage: {
+  stageScroll: {
     flex: 1,
+  },
+  stageScrollContent: {
     gap: Spacing.md,
     paddingHorizontal: Spacing.md,
     paddingVertical: Spacing.md,
+    paddingBottom: Spacing.xxl,
+  },
+  stageScrollContentLocked: {
+    flexGrow: 1,
   },
   progressCard: {
     overflow: 'hidden',
@@ -1037,6 +1067,11 @@ function useQuizStyles() {
     flexShrink: 1,
     minHeight: 0,
     justifyContent: 'center',
+  },
+  answeredWordCard: {
+    flexGrow: 0,
+    flexShrink: 0,
+    justifyContent: 'flex-start',
   },
   choicesCard: {
     overflow: 'hidden',
@@ -1066,7 +1101,8 @@ function useQuizStyles() {
     gap: Spacing.xs,
   },
   profileButton: {
-    minHeight: 40,
+    minHeight: 44,
+    minWidth: 44,
     paddingHorizontal: Spacing.md,
     shadowOpacity: 0,
     elevation: 0,
@@ -1074,7 +1110,8 @@ function useQuizStyles() {
     backgroundColor: Colors.surface,
   },
   audioToggleButton: {
-    minHeight: 36,
+    minHeight: 44,
+    minWidth: 44,
     paddingHorizontal: Spacing.md,
     borderRadius: Radius.pill,
     borderWidth: 1,
@@ -1097,8 +1134,8 @@ function useQuizStyles() {
     color: Colors.primaryStrong,
   },
   pauseButton: {
-    width: 42,
-    minHeight: 40,
+    width: 44,
+    minHeight: 44,
     paddingHorizontal: 0,
     shadowOpacity: 0,
     elevation: 0,
@@ -1201,6 +1238,11 @@ function useQuizStyles() {
     width: '100%',
     paddingVertical: Spacing.md,
   },
+  answeredInsightSection: {
+    flex: 0,
+    flexGrow: 0,
+    flexShrink: 0,
+  },
   wordText: {
     fontSize: typography.fontSize(40),
     fontWeight: Typography.weightExtraBold,
@@ -1212,8 +1254,12 @@ function useQuizStyles() {
   },
   listenButton: {
     marginTop: Spacing.md,
+    minHeight: 44,
+    minWidth: 44,
     paddingHorizontal: Spacing.lg,
     paddingVertical: Spacing.sm,
+    alignItems: 'center',
+    justifyContent: 'center',
     borderRadius: Radius.pill,
     borderWidth: 1,
     borderColor: Colors.primaryBorder,
